@@ -1,9 +1,9 @@
 Everything curl
 ===============
 
- Intro
+ 1. Intro
 
- the cURL project
+ 2. the cURL project
 
    how it started
 
@@ -33,7 +33,7 @@ Everything curl
 
    users of curl
 
- curl and open source
+ 3. curl and open source
 
    the license
 
@@ -41,7 +41,7 @@ Everything curl
 
    source code on github
 
- the curl source code
+ 4. the curl source code
 
    code layout
 
@@ -51,7 +51,7 @@ Everything curl
 
    contributing
 
- the curl command line tool
+ 5. the curl command line tool
 
    binaries and different platforms
 
@@ -65,11 +65,19 @@ Everything curl
 
    passwords and snooping
 
- using the curl tool
+   the progress meter
+
+ 6. using the curl tool
 
    .netrc
 
    proxies
+
+     HTTP
+
+     SOCKS
+
+     proxy authentication
 
    the supported protocols
 
@@ -84,6 +92,8 @@ Everything curl
      PUT
 
      HTTP/2
+
+     HTTP authentication
 
      scripting browser-like tasks
 
@@ -101,13 +111,13 @@ Everything curl
 
    when things don't run the way you thought they would
 
- building and installing libcurl
+ 7. building and installing libcurl
 
    linux
 
    windows
 
- using libcurl
+ 8. using libcurl
 
    curl --libcurl
 
@@ -127,7 +137,7 @@ Everything curl
 
    when things don't run the way you thought they would
 
- bindings
+ 9. bindings
 
    PHP
 

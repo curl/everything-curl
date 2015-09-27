@@ -37,6 +37,8 @@ Everything curl
 
    the license
 
+   code of conduct
+
    development
 
    source code on github

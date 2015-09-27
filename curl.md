@@ -34,17 +34,102 @@ kept.)
 
 ## the name
 
+Naming things is hard.
+
+The tool was about uploading and downloading data specified with a URL. It
+would show the data (by default). The user would "see" the URL perhaps and
+"see" then spelled with the single letter 'c'. It was also a client-side
+program, a URL client. So 'c' for Client and URL: cURL.
+
+Nothing more was needed so the name was selected and we never looked back
+again.
+
+Later on, someone suggested that curl could actually be a clever "backronym"
+(where the first letter in the akronym refers back to the same word): "Curl
+URL Request Library"
+
+While that is awesome, it was actually not the original thought. We sort of
+wish we were that clever though...
+
 ## what does curl do?
 
-## what does the project produce?
+cURL is a project and its primary purpose and focus is to make two products:
+
+- curl, the command line tool
+
+- libcurl the transfer library with a C API
+
+Both the tool and the library do internet transfers for resources specified as
+URLs using internet protocols.
+
+Everything and anything that is related to internet protocol transfers can be
+considered curl's business. Things that are not related to that should be
+avoided and be left for other projects and products.
+
+Both products are frequently used not only to drive thousands or millions
+scripts and applications for an internet connection world, but also for a lot
+of server testing, protocol fiddling and trying out new things.
+
+The library is used in every imaginable sort of embedded device where internet
+transfers are needed: car infotainment, televisions, blurayplayers, settop
+boxes, printers, routers, game systems etc.
 
 ## communication
 
+cURL is a an open source project consisting of voluntary members from all over
+the world. To make this work, communication and openness is key. We keep all
+communication public and we use open communication channels. Most discussions
+are held on mailing lists, we use bug trackers where all issues are discussed
+and handled with full insight for everyone who cares to look.
+
+It is important to realize that we're all jointly taking care of the project,
+we fix problems and we add features. Sometimes a regular contributer grows
+bored and fades away, sometimes a new eager contributer steps out from the
+shadows and start helping out more. To keep this ship going forward as good as
+possible it is important that we maintain open discussions and that's one of
+the reasons why we frown upon users who take discussions privately or try to
+email individual develop team members for development issues, questions,
+debugging or whatever.
+
+In this day and age, mailing lists may be considered sort of the old style of
+communication - no fancy web forum or similar. Using a mailing list is
+therefore become an art that isn't practiced everywhere and may be a bit
+strange and unusual to you. But fear not. It is just about sending emails to
+an address that then sends that email out to all the subscribers. Our mailing
+lists have at most a few thousand subscribers. If you're mailing for the first
+time, it might be good to read a few old mails first to get to learn the
+culture and what's considered good practice.
+
+The mailing lists and the bug tracker have changed hostings a few times and
+there are reasons to suspect it might happen again in a future. It is just
+things that happen to a project that lives for a long time.
+
+A few users also hang out on IRC in the #curl channel on freenode.
+
+### mailing list etiquette
+
+As many communities and sub cultures, we have developed guidelines and rules
+of what we think is the right way to behave and how to communicate on the
+mailing lists. The [curl mailing list
+etiquette](http://curl.haxx.se/mail/etiquette.html) follows the style of
+traditional open source projects, nothing new there if you're used to this
+culture but it could be worth checking out if you're new in the area.
+
 ### curl-users
+
+The main mailing list for users and developers of the curl command line
+tool. See http://cool.haxx.se/mailman/listinfo/curl-users
 
 ### curl-library
 
+The main development list, and also for users of libcurl. See
+http://cool.haxx.se/mailman/listinfo/curl-library
+
 ### curl-announce
+
+The mailing list that only gets announcements about new releases and security
+problems. Nothing else. For those who wants a more casual feed of information
+from the project. http://cool.haxx.se/mailman/listinfo/curl-announce
 
 ## reporting bugs
 

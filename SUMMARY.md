@@ -1,2 +1,2 @@
 * [Intro](intro.md)
-* [the cURL project](curl.md)
+* [The cURL project](curl.md)

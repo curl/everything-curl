@@ -1,4 +1,4 @@
-# 2. the cURL project
+# 2. The cURL project
 
 A funny detail about open source projects is that they're called "projects",
 as if they were somehow limited in time or ever can get done. The cURL
@@ -6,7 +6,7 @@ as if they were somehow limited in time or ever can get done. The cURL
 writing software together with a common mission: to do reliable data transfers
 with internet protocols. And giving away the code for free for anyone to use.
 
-## how it started
+## How it started
 
 Back in 1996, [Daniel Stenberg](http://daniel.haxx.se/) was writing an IRC bot
 for an Amiga related channel on the IRC network EFnet, when he came to think
@@ -32,7 +32,7 @@ name once again was misleading, a second name change was made and on March 20,
 1998 curl 4 was released. (The version numbering from the previous names was
 kept.)
 
-## the name
+## The name
 
 Naming things is hard.
 
@@ -51,7 +51,7 @@ URL Request Library"
 While that is awesome, it was actually not the original thought. We sort of
 wish we were that clever though...
 
-## what does curl do?
+## What does curl do?
 
 cURL is a project and its primary purpose and focus is to make two products:
 
@@ -79,7 +79,7 @@ The library is used in every imaginable sort of embedded device where internet
 transfers are needed: car infotainment, televisions, blurayplayers, settop
 boxes, printers, routers, game systems etc.
 
-## communication
+## Communication
 
 cURL is a an open source project consisting of voluntary members from all over
 the world. To make this work, communication and openness is key. We keep all
@@ -111,7 +111,7 @@ things that happen to a project that lives for a long time.
 
 A few users also hang out on IRC in the #curl channel on freenode.
 
-### mailing list etiquette
+### Mailing list etiquette
 
 As many communities and sub cultures, we have developed guidelines and rules
 of what we think is the right way to behave and how to communicate on the
@@ -136,7 +136,7 @@ The mailing list that only gets announcements about new releases and security
 problems. Nothing else. For those who wants a more casual feed of information
 from the project. http://cool.haxx.se/mailman/listinfo/curl-announce
 
-## reporting bugs
+## Reporting bugs
 
 The development team does a lot of testing. We have a whole test suite that is
 run freuquently every day on numerous platforms to in order to exercise all
@@ -189,14 +189,14 @@ problems when working on it. Don't abandon your report!
 Report curl bugs in the [curl bug tracker on
 github](https://github.com/bagder/curl/issues)!
 
-## testing
+## Testing
 
-## releases
+## Releases
 
-## security
+## Security
 
-## the development team
+## The development team
 
-## future
+## Future
 
-## users of curl
+## Users of curl

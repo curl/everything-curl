@@ -8,7 +8,7 @@ code and bug reports and why all those millions of existing users use it.
 
 This book is meant to be readable by both casual readers and the somewhat more
 experienced developers, and I hope to offer something for you to pick and
-choose from. Don't read it from front to pack. Read the chapters you're
+choose from. Don't read it from front to back. Read the chapters you're
 curious about and go back and forth as you see fit.
 
 I hope to run this book project as I do all other projects I work on: in the
@@ -24,8 +24,8 @@ insurmountable goal), the curl project will continue to move so there will be
 things to update here as well.
 
 This book project started at the end of September 2015. I have a basic layout
-plan f or a first "edition". While I have no fixed time schedule for this, my
-hope is to have some thing decent by the summer 2016.
+plan for a first "edition". While I have no fixed time schedule for this, my
+hope is to have something decent by the summer 2016.
 
 ## The book site
 

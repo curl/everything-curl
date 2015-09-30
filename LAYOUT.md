@@ -35,59 +35,73 @@ Everything curl
 
  3. curl and open source
 
-   the license
+   The license
 
-   code of conduct
+   Code of conduct
 
-   development
+   Development
 
-   source code on github
+   Source code on github
 
- 4. the curl source code
+ 4. The curl source code
 
-   code layout
+   Code layout
 
-   handling different build options
+   Handling different build options
 
-   style and code requirements
+   Style and code requirements
 
-   contributing
+   Contributing
 
- 5. the curl command line tool
+   About adhering to standards and who's right
 
-   binaries and different platforms
+ 5. Network prototocols
 
-   command lines, quotes and aliases
+   What's the purpose of a protocol and what are they for?
 
-   many options and URLs
+   What protocols do curl support?
 
-   separate options per URL
+   What other protocols are there?
 
-   config file
+   How are protocols developed?
 
-   passwords and snooping
+   How much do protocols change?
 
-   the progress meter
+ 6. The curl command line tool
 
- 6. using the curl tool
+   Binaries and different platforms
+
+   Command lines, quotes and aliases
+
+   Many options and URLs
+
+   Separate options per URL
+
+   Config file
+
+   Passwords and snooping
+
+   The progress meter
+
+ 7. Using the curl tool
 
    .netrc
 
-   proxies
+   Proxies
 
      HTTP
 
      SOCKS
 
-     proxy authentication
+     Proxy authentication
 
-   the supported protocols
+   The supported protocols
 
-   persistent connections
+   Persistent connections
 
    HTTP
 
-     protocol basics
+     Protocol basics
 
      POST
 
@@ -97,52 +111,52 @@ Everything curl
 
      HTTP authentication
 
-     scripting browser-like tasks
+     Scripting browser-like tasks
 
-     cheat sheet
+     Cheat sheet
 
    FTP
 
    TLS usage
 
-     verifying server certificates
+     Verifying server certificates
 
-     client certificates
+     Client certificates
 
-   other protocols
+   Other protocols
 
-   when things don't run the way you thought they would
+   When things don't run the way you thought they would
 
- 7. building and installing libcurl
+ 9. Building and installing libcurl
 
-   linux
+   Linux
 
-   windows
+   Windows
 
- 8. using libcurl
+ 9. Using libcurl
 
    curl --libcurl
 
-   easy API
+   Easy API
 
-     easy examples
+     Easy examples
 
-   multi API
+   Multi API
 
-     multi examples
+     Multi examples
 
    multi_socket API
 
      multi_socket examples
 
-   common mistakes
+   Common mistakes
 
-   when things don't run the way you thought they would
+   When things don't run the way you thought they would
 
- 9. bindings
+ 10. Bindings
 
    PHP
 
-   perl
+   Perl
 
-   python
+   Python

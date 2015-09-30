@@ -2,7 +2,7 @@
 
 A funny detail about open source projects is that they're called "projects",
 as if they were somehow limited in time or ever can get done. The cURL
-"project" is a number of loosly coupled voluntary individuals working on
+"project" is a number of loosely coupled voluntary individuals working on
 writing software together with a common mission: to do reliable data transfers
 with internet protocols. And giving away the code for free for anyone to use.
 
@@ -14,14 +14,16 @@ that it would be fun to get some updated currency rates and offer a service
 online for users to get current exchange rates. To ask the bot "please
 exchange 200 USD into SEK" or similar.
 
-To have the exchange rates as accurate as possibly, it would download rates
-daily from a web site hosting rates. A small tool to download data over HTTP
-was needed for this task. A quick look-around at the time made Daniel find a
-tiny tool named httpget (written by a Brazilian named Rafael Sagula). It did
-the job, almost, just needed a little a tweaks here and there and soon Daniel
-had taken over maintenance of the few hundered lines of code it was.
+In order to have the provided exchange rates as accurate as possible, the bot
+would download the rates daily from a web site that was hosting them. A small
+tool to download data over HTTP was needed for this task. A quick look-around
+at the time made Daniel find a tiny tool named httpget (written by a Brazilian
+named Rafael Sagula). It did the job, almost, just needed a little a tweaks
+here and there and soon Daniel had taken over maintenance of the few hundred
+lines of code it was.
 
-HttpGet 1.0 was released on April 8th 1997 with brand new HTTP proxy support.
+HttpGet 1.0 was subsequently released on April 8th 1997 with brand new HTTP
+proxy support.
 
 We soon found and fixed support for getting currencies over GOPHER.  Once FTP
 download support was added, the name of the project was changed and urlget 2.0
@@ -45,7 +47,7 @@ Nothing more was needed so the name was selected and we never looked back
 again.
 
 Later on, someone suggested that curl could actually be a clever "backronym"
-(where the first letter in the akronym refers back to the same word): "Curl
+(where the first letter in the acronym refers back to the same word): "Curl
 URL Request Library"
 
 While that is awesome, it was actually not the original thought. We sort of
@@ -67,7 +69,7 @@ considered curl's business. Things that are not related to that should be
 avoided and be left for other projects and products.
 
 It could be important to also consider that curl and libcurl try to avoid
-handling the actual data that is transfered. It has for example no knowledge
+handling the actual data that is transferred. It has for example no knowledge
 about HTML or anything else of the content that is popular to transfer over
 HTTP, but it knows all about how to transfer such data over HTTP.
 
@@ -79,17 +81,32 @@ The library is used in every imaginable sort of embedded device where internet
 transfers are needed: car infotainment, televisions, blurayplayers, settop
 boxes, printers, routers, game systems etc.
 
-## Communication
+### Command line tool
+
+Running curl from the command line, it was natural and Daniel never even
+during a short moment considered anything else than that it would output data
+on stdout, to the terminal, by default. The "everything is a pipe" mantra of
+standard Unix philosophy was something Daniel believed in. curl is like 'cat'
+or one of the other unix tools. It sends data to stdout to make it easy to
+chain together with other tools to do what you want. That's also why virtually
+all curl options that allow reading from a file or writing to a file, also
+have the ability to select doing it to stdout or from stdin.
+
+Following that style of what unix command line tools worked, it was also never
+any question about that it should support multiple URLs on the command line.
+
+## Project communication
 
 cURL is a an open source project consisting of voluntary members from all over
-the world. To make this work, communication and openness is key. We keep all
-communication public and we use open communication channels. Most discussions
-are held on mailing lists, we use bug trackers where all issues are discussed
-and handled with full insight for everyone who cares to look.
+the world, living and working in a large amount of the world's time zones. To
+make such a setup actually work, communication and openness is key. We keep
+all communication public and we use open communication channels. Most
+discussions are held on mailing lists, we use bug trackers where all issues
+are discussed and handled with full insight for everyone who cares to look.
 
 It is important to realize that we're all jointly taking care of the project,
-we fix problems and we add features. Sometimes a regular contributer grows
-bored and fades away, sometimes a new eager contributer steps out from the
+we fix problems and we add features. Sometimes a regular contributor grows
+bored and fades away, sometimes a new eager contributor steps out from the
 shadows and start helping out more. To keep this ship going forward as good as
 possible it is important that we maintain open discussions and that's one of
 the reasons why we frown upon users who take discussions privately or try to
@@ -105,7 +122,7 @@ lists have at most a few thousand subscribers. If you're mailing for the first
 time, it might be good to read a few old mails first to get to learn the
 culture and what's considered good practice.
 
-The mailing lists and the bug tracker have changed hostings a few times and
+The mailing lists and the bug tracker have changed hosting providers a few times and
 there are reasons to suspect it might happen again in a future. It is just
 things that happen to a project that lives for a long time.
 
@@ -139,7 +156,7 @@ from the project. http://cool.haxx.se/mailman/listinfo/curl-announce
 ## Reporting bugs
 
 The development team does a lot of testing. We have a whole test suite that is
-run freuquently every day on numerous platforms to in order to exercise all
+run frequently every day on numerous platforms to in order to exercise all
 code and make sure everything works as supposed.
 
 Still, there are times when things aren't working the way they should. Then we
@@ -155,7 +172,7 @@ to? That's a problem and we should fix it!
 
 ### Problems must be known to get fixed
 
-This may sound easy and uncomplicted but is a fundamental truth in our and
+This may sound easy and uncomplicated but is a fundamental truth in our and
 other projects. Just because it is an old project and have thousands of users
 don't mean that the development team knows about the problem you just fell
 over. Maybe users haven't paid enough attention to details like you, or

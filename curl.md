@@ -66,6 +66,11 @@ Everything and anything that is related to internet protocol transfers can be
 considered curl's business. Things that are not related to that should be
 avoided and be left for other projects and products.
 
+It could be important to also consider that curl and libcurl try to avoid
+handling the actual data that is transfered. It has for example no knowledge
+about HTML or anything else of the content that is popular to transfer over
+HTTP, but it knows all about how to transfer such data over HTTP.
+
 Both products are frequently used not only to drive thousands or millions
 scripts and applications for an internet connection world, but also for a lot
 of server testing, protocol fiddling and trying out new things.

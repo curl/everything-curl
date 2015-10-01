@@ -188,7 +188,7 @@ problem a developer needs to understand how to repeat it and to do that the
 debugging person needs to be told what set of circumstances that made the
 problem trigger.
 
-### A good report
+### A good bug report
 
 A good report explains what happened and what you thought was going to
 happen. Tell us exactly what versions of the different components you used and
@@ -208,7 +208,71 @@ github](https://github.com/bagder/curl/issues)!
 
 ## Testing
 
+Testing software thoroughly and properly is a lot of work. Testing software
+that runs on dozens on operating systems and dozens of CPU architectures with
+server implementations with their owns sets of bugs and intrepretations of the
+specs even more so.
+
+The curl project has a test suite that when run iterates over all existing
+test cases, runs the teset and verifies that the outcome is the correct one
+and that no other problem happened - like a memory leak or something fishy in
+the protocol layer.
+
+The test suite is meant to be possible to run after you've built curl yourself
+and there are a fair amount of volunteers who also help out by running the
+test suite automatically a few days per day to make sure the latest commits
+get a run. This way, we hopefully discover the worst flaws pretty soon after
+they were introduced.
+
+We don't test everything and even when we try to test things there will always
+be subtle details that get through and that we, sometimes years after the
+fact, figure out was wrong.
+
+Due to the nature of different systems and funny use cases on the Internet,
+eventually some of the best testing is done by users when they run the code to
+perform their uses cases.
+
+Another limiting factor with the test suite is that the test setup itself is
+less portable than curl and libcurl so there are in fact platforms where curl
+runs fine but the test suite cannot execute at all.
+
 ## Releases
+
+A release in the curl project means packaging up all the source code that is
+in the master branch of the code repository, signing the package, tagging the
+point in time in the code repo, and then putting it up on the web site for the
+world to download.
+
+It is one single source code archive for all platforms curl can run on. It is
+the one and only package for both curl and libcurl.
+
+We never ship any curl or libcurl _binaries_ from the project. All the
+packaged binaries that are provided with operating systems or on other
+download sites are done by gracious volunteers outside of the project.
+
+As of a few years back, we make an effort to do our releases on an eight week
+cycle and unless somereally serious and urgent problem shows up we stick to
+this schedule. On a Wednesday, and then again a Wednesday eight weeks later
+and so it continues. Non-stop.
+
+## Daily snapshots
+
+Every single change to the source code is committed and pushed to the source
+code repository. This repository is hosted on github.com and is using git
+these days (but hasn't always been this way). When building curl off the
+repository, there are a few things you need to generate and setup that
+sometimes cause people some problems or just friction. To help with that, we
+provide daily snapshots.
+
+The daily snapshots are generated daily (clever naming right?) as if a release
+had been made at that point in time. It produces a package of all sources code
+and all files that are normally part of a release and puts it in a package and
+uploads it to a special place
+([http://curl.haxx.se/snapshots/](http://curl.haxx.se/snapshots/)) to allow
+interested people to get the very latest code. To test, to experiment and
+whatever.
+
+Each snapshot aare only kept for 20 days before they are deleted.
 
 ## Security
 

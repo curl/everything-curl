@@ -318,7 +318,7 @@ during the last several years include these stellar individuals:
 - Steve Holme
 - Jay Satiro
 - Dan Fandrich
-. Marc Hörsken
+- Marc Hörsken
 - Kamil Dudka
 - Alessandro Ghedini
 - Yang Tse

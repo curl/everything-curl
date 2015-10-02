@@ -255,6 +255,9 @@ cycle and unless somereally serious and urgent problem shows up we stick to
 this schedule. On a Wednesday, and then again a Wednesday eight weeks later
 and so it continues. Non-stop.
 
+For every release we tag the source code in the repository with "curl-release
+version" and we update the [changelog](http://daniel.haxx.se/changes.html).
+
 ## Daily snapshots
 
 Every single change to the source code is committed and pushed to the source
@@ -264,20 +267,79 @@ repository, there are a few things you need to generate and setup that
 sometimes cause people some problems or just friction. To help with that, we
 provide daily snapshots.
 
-The daily snapshots are generated daily (clever naming right?) as if a release
-had been made at that point in time. It produces a package of all sources code
-and all files that are normally part of a release and puts it in a package and
-uploads it to a special place
+The daily snapshots are generated daily (clever naming, right?) as if a
+release had been made at that point in time. It produces a package of all
+sources code and all files that are normally part of a release and puts it in
+a package and uploads it to a special place
 ([http://curl.haxx.se/snapshots/](http://curl.haxx.se/snapshots/)) to allow
 interested people to get the very latest code. To test, to experiment and
 whatever.
 
-Each snapshot aare only kept for 20 days before they are deleted.
+The snapshots are only kept for around 20 days until deleted.
 
 ## Security
 
+Security is a primary concern for us in the curl project. We take it seriously
+and we work hard on providing secure and safe implementations of all protocols
+and related code. As soon as we get knowledge about a security related problem
+or just a suspected problem, we deal with it and we will attempt to provide a
+fix and security notice no later than in the next pending release.
+
+We use a responsible disclosure policy, meaning that we prefer to discuss and
+work on security fixes out of the public eye and we alert the vendors on the
+openwall.org list a few days before we announce the problem and fix to the
+world. This, in an attempt to shorten the time span the bad guys can take
+advantage of a problem until a fixed version has been deployed.
+
+### Past security problems
+
+During the years we have had our fair share of security related problems. We
+work hard on documenting every problem thoroughly with all details listed and
+clearly stated to aid users. Users of curl should be able to figure out what
+problems their particular curl versions and use cases are vulnerable to.
+
+To help with this, we present this waterfall chart showing how all
+vulnerabilities affect which curl versions and we have this complete list of
+all known security problems since the birth of this project.
+
 ## The development team
+
+Daniel Stenberg is the founder and self-proclaimed leader of the
+project. Everybody else that participates or contributes in the project has
+thus arrived at a later point in time. Some contributors worked for a while
+and then left again. Most contributors hang around only for a short while to
+get their bug fixed or feature merged or similiar. Counting all contributors
+we know the names of, we have received help from more than 1300 individuals.
+
+The list of people that have repeatedly shown up in discussions and commits
+during the last several years include these stellar individuals:
+
+- Daniel Stenberg
+- Steve Holme
+- Jay Satiro
+- Dan Fandrich
+. Marc Hörsken
+- Kamil Dudka
+- Alessandro Ghedini
+- Yang Tse
+- Günter Knauf
+- Tatsuhiro Tsujikawa
+- Patrick Monnerat
+- Nick Zitzmann
 
 ## Future
 
+There's no slow down in sight in the curl's future, bugs reported, development
+pace or how Internet protocols are being developed or updated.
+
+We're looking forward to support for more protocols, support for more features
+within the already supported protocols, more and better APIs for libcurl to
+allow users to do transfers even better and faster,
+
+The project casually maintains a TODO file holding a bunch of ideas that we
+could work on in the future. It also keeps a KNOWN_BUGS document with, yes, a
+list of known problems we would like to get fixed.
+
 ## Users of curl
+
+TODO

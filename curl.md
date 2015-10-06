@@ -10,10 +10,11 @@ with internet protocols. And giving away the code for free for anyone to use.
 
 Back in 1996, [Daniel Stenberg](http://daniel.haxx.se/) was writing an IRC bot
 on his spare time. An automated program that would offer services for the
-participants in a chatroom deducted to Amiga on the IRC network EFnet, when he
-came to think that it would be fun to get some updated currency rates and have
-his bot offer a service online for the chat room users to get current exchange
-rates. To ask the bot "please exchange 200 USD into SEK" or similar.
+participants in a chatroom dedicated to the Amiga computer (#amiga on the IRC
+network EFnet), when he came to think that it would be fun to get some updated
+currency rates and have his bot offer a service online for the chat room users
+to get current exchange rates. To ask the bot "please exchange 200 USD into
+SEK" or similar.
 
 In order to have the provided exchange rates as accurate as possible, the bot
 would download the rates daily from a web site that was hosting them. A small

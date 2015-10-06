@@ -1,6 +1,4 @@
 * [Intro](intro.md)
 * [The cURL project](curl.md)
-    * [How it started](curl.md#how-it-started)
-    * [The name](curl.md#the-name)
-    * [What does curl do?](curl.md#what-does-curl-do)
 * [curl and open source](opensource.md)
+* [The curl source code](sourcecode.md)

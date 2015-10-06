@@ -2,58 +2,9 @@ Everything curl
 ===============
 
  1. Intro
-
  2. the cURL project
-
-   how it started
-
-   the name
-
-   what does curl do?
-
-   what does the project produce?
-
-   communication
-
-     curl-users
-     curl-library
-     curl-announce
-
-   reporting bugs
-
-   testing
-
-   releases
-
-   security
-
-   the development team
-
-   future
-
-   users of curl
-
  3. curl and open source
-
-   The license
-
-   Code of conduct
-
-   Development
-
-   Source code on github
-
  4. The curl source code
-
-   Code layout
-
-   Handling different build options
-
-   Style and code requirements
-
-   Contributing
-
-   About adhering to standards and who's right
 
  5. Network prototocols
 

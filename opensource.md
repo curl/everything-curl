@@ -14,7 +14,7 @@ document for simplicity.
 ## The license
 
 curl and libcurl are distributed under an open source license known as a MIT
-license derivate. It is very short, simple and easy to grasp. It follows here
+license derivative. It is very short, simple and easy to grasp. It follows here
 in its completeness:
 
     COPYRIGHT AND PERMISSION NOTICE

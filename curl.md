@@ -9,10 +9,11 @@ with internet protocols. And giving away the code for free for anyone to use.
 ## How it started
 
 Back in 1996, [Daniel Stenberg](http://daniel.haxx.se/) was writing an IRC bot
-for an Amiga related channel on the IRC network EFnet, when he came to think
-that it would be fun to get some updated currency rates and offer a service
-online for users to get current exchange rates. To ask the bot "please
-exchange 200 USD into SEK" or similar.
+on his spare time. An automated program that would offer services for the
+participants in a chatroom deducted to Amiga on the IRC network EFnet, when he
+came to think that it would be fun to get some updated currency rates and have
+his bot offer a service online for the chat room users to get current exchange
+rates. To ask the bot "please exchange 200 USD into SEK" or similar.
 
 In order to have the provided exchange rates as accurate as possible, the bot
 would download the rates daily from a web site that was hosting them. A small
@@ -52,6 +53,9 @@ URL Request Library"
 
 While that is awesome, it was actually not the original thought. We sort of
 wish we were that clever though...
+
+There are and were other projects using the name curl in various ways, but we
+were not aware of them by the name our curl came to be.
 
 ## What does curl do?
 

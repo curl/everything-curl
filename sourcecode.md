@@ -35,23 +35,16 @@ Some of the more notable ones include:
 
 - `buildconf` is the setup script used to build configure and more when
   building curl from source off the git repository.
-
 - `buildconf.bat` is the windows version of buildconf. Run this after having
   checked out the full source code from git.
-
 - `CHANGES` is generated at release and put into the release archive. It
   contains the 1000 latest changes to the source repository.
-
 - `configure` is a generated script that is used on unix-like systems to
   generate a setup when building curl.
-
 - `COPYING` is the license detailing the rules for your using this code.
-
 - `GIT-INFO` is only present in git and contains information about how to
   build curl after having checked out the code from git.
-
 - `README` is a short summary of what curl and libcurl are.
-
 - `RELEASE-NOTES` contains the changes done for the latest release - and when
   found in git it contains the changes done since the previous release that
   are destined to end up in the coming release.
@@ -81,30 +74,20 @@ table](http://curl.haxx.se/docs/ssl-compared.html) on the web site to aid
 users.
 
 - OpenSSL: the by far most popular TLS library.
-
 - BoringSSL: an OpenSSL fork maintained by Google. Will make libcurl disable a
   few features due to lacking functionality in the library.
-
 - LibreSSL: an OpenSSL fork maintained by the OpenBSD team.
-
 - NSS: a full-blown TLS library perhaps most known for being used by the
   Firefox web browser. This is the default TLS backend for curl on Fedora and
   Redhat systems.
-
 - GnuTLS: a full-blown TLS library used by default by the debian packaged curl.
-
 - mbedTLS: (formerly known as PolarSSL) is a TLS library perhaps more targeted
   towards an embedded market.
-
 - WolfSSL: (formerly known as cyaSSL) is a TLS library perhaps more targeted
   towards an embedded market.
-
 - axTLS: is a minuscule TLS library focused on a small footprint.
-
 - scannel: the native TLS library on Windows.
-
 - securetransport: the native TLS library on Mac OS X.
-
 - gskit: the native TLS librarr on OS/400.
 
 ### src
@@ -138,42 +121,42 @@ that.
 Ost of these documents are provided shown on the curl web site in a format
 that is automatically converted to a web friendly format.
 
-- BINDINGS: lists all known libcurl language bindings and where to find them
-- BUGS: how to report bugs and where
-- CODE_OF_CONDUCT.md: how we expect people to behave in this project
-- CONTRIBUTE: what to think about when contributing to the project
-- curl.1: the curl command line tool man page, in nroff format
-- curl-config.1: the curl-config man page, in nroff format
-- FAQ: frequently asked questions about various curl related subjects
-- FEATURES: an incomplete list of curl features
-- HISTORY: describes how the project started and has evolved over the years
-- HTTP2.md: how to use HTTP/2 with curl and libcurl
-- HTTP-COOKIES: how curl supports and works with HTTP cookies
-- index.html: a basic html page as a documentation index page
-- INSTALL: how to build and install curl and libcurl from source
-- INSTALL.cmake: how to build curl and libcurl with cmake
-- INSTALL.devcpp: how to build curl and libcurl with devcpp
-- INTERNALS: details curl and libcurl internal structures
-- KNOWN_BUGS: list of known bugs and problems
-- LICENSE-MIXING: describes how to combine different third party modules and
+- `BINDINGS`: lists all known libcurl language bindings and where to find them
+- `BUGS`: how to report bugs and where
+- `CODE_OF_CONDUCT.md`: how we expect people to behave in this project
+- `CONTRIBUTE`: what to think about when contributing to the project
+- `curl.1`: the curl command line tool man page, in nroff format
+- `curl-config.1`: the curl-config man page, in nroff format
+- `FAQ`: frequently asked questions about various curl related subjects
+- `FEATURES`: an incomplete list of curl features
+- `HISTORY`: describes how the project started and has evolved over the years
+- `HTTP2.md`: how to use HTTP/2 with curl and libcurl
+- `HTTP-COOKIES`: how curl supports and works with HTTP cookies
+- `index.html`: a basic html page as a documentation index page
+- `INSTALL`: how to build and install curl and libcurl from source
+- `INSTALL.cmake`: how to build curl and libcurl with cmake
+- `INSTALL.devcpp`: how to build curl and libcurl with devcpp
+- `INTERNALS`: details curl and libcurl internal structures
+- `KNOWN`_BUGS: list of known bugs and problems
+- `LICENSE-MIXING`: describes how to combine different third party modules and
   their individual licenses
-- MAIL-ETIQUETTE: this is how to communicate on our mailing lists
-- MANUAL: a tutorial-like guide on how to use curl
-- mk-ca-bundle.1: the mk-ca-bundle tool man page, in nroff format
-- README.cmake: cmake-specific details
-- README.netware: netware-specific details
-- README.win32: win32-specific details
-- RELEASE-PROCEDURE: how to do a curl and libcurl release
-- RESOURCES: further resources for further reading on what, why and how curl
+- `MAIL-ETIQUETTE`: this is how to communicate on our mailing lists
+- `MANUAL`: a tutorial-like guide on how to use curl
+- `mk-ca-bundle.1`: the mk-ca-bundle tool man page, in nroff format
+- `README.cmake`: cmake-specific details
+- `README.netware`: netware-specific details
+- `README.win32`: win32-specific details
+- `RELEASE-PROCEDURE`: how to do a curl and libcurl release
+- `RESOURCES`: further resources for further reading on what, why and how curl
   does things
-- ROADMAP.md: what we want to work on in the future
-- SECURITY: how we work on security
-- SSLCERTS: TLS certificate handling documentated
-- SSL-PROBLEMS: common SSL problems and their causes
-- THANKS: thanks to this extensive list of friendly people, curl exists today!
-- TheArtOfHttpScripting: a tutorial into HTTP scripting with curl
-- TODO: things we or you can work on implenting
-- VERSIONS: how the version numbering of libcurl works
+- `ROADMAP.md`: what we want to work on in the future
+- `SECURITY`: how we work on security
+- `SSLCERTS`: TLS certificate handling documentated
+- `SSL-PROBLEMS`: common SSL problems and their causes
+- `THANKS`: thanks to this extensive list of friendly people, curl exists today!
+- `TheArtOfHttpScripting`: a tutorial into HTTP scripting with curl
+- `TODO`: things we or you can work on implenting
+- `VERSIONS`: how the version numbering of libcurl works
 
 ### docs/libcurl
 

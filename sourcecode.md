@@ -137,7 +137,7 @@ that is automatically converted to a web friendly format.
 - `INSTALL.cmake`: how to build curl and libcurl with cmake
 - `INSTALL.devcpp`: how to build curl and libcurl with devcpp
 - `INTERNALS`: details curl and libcurl internal structures
-- `KNOWN`_BUGS: list of known bugs and problems
+- `KNOWN_BUGS`: list of known bugs and problems
 - `LICENSE-MIXING`: describes how to combine different third party modules and
   their individual licenses
 - `MAIL-ETIQUETTE`: this is how to communicate on our mailing lists

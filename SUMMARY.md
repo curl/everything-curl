@@ -1,4 +1,4 @@
-* [About the book](intro.md)
+* [About this book](intro.md)
 * [The cURL project](curl.md)
 * [Open Source](opensource.md)
 * [The source code](sourcecode.md)

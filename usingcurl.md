@@ -1,4 +1,4 @@
-# 7. Using the curl tool
+# 7. Using curl
 
 ## .netrc
 

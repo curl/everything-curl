@@ -1,4 +1,4 @@
-# 3. curl and open source
+# 3. Open Source
 
 ## What is open source
 

@@ -1,4 +1,4 @@
-# 8. Building and installing libcurl
+# 8. Building and installing
 
 ## Linux
 

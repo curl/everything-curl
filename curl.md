@@ -393,11 +393,11 @@ doubt it is used by millions every day.
 libcurl is what makes our project reach the really large volume of users. The
 ability to quickly and easily get client side file transfer abilities into
 your application is desirable for a lot of users, and then libcurl's great
-portability also helps: you can write more or less the same application on
+portability also helps: you can write more or less the same application on a
 wide variety of platforms and you can still keep using libcurl for transfers.
 
-It being written in C with no or just a few required dependencies also help to
-get it used in embedded systems.
+libcurl being written in C with no or just a few required dependencies also
+help to get it used in embedded systems.
 
 libcurl is popularly used in Smartphone operating systems, in car infotainment
 setups, in television sets, in settop boxes, in audio and video equipment such
@@ -407,7 +407,7 @@ and printers.
 A fair number of best-selling games are also using libcurl, on Windows and
 game consoles.
 
-### In site backends
+### In web site backends
 
 The libcurl binding for PHP was one of, if not the, first bindings for libcurl
 to really catch on and get used widely. It quickly got adopted as a default

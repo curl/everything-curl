@@ -33,19 +33,20 @@ release scripts.
 
 Some of the more notable ones include:
 
-- `buildconf` is the setup script used to build configure and more when
+- `buildconf`: used to build configure and more when
   building curl from source off the git repository.
-- `buildconf.bat` is the windows version of buildconf. Run this after having
+- `buildconf.bat`: the windows version of buildconf. Run this after having
   checked out the full source code from git.
-- `CHANGES` is generated at release and put into the release archive. It
+- `CHANGES`: generated at release and put into the release archive. It
   contains the 1000 latest changes to the source repository.
-- `configure` is a generated script that is used on unix-like systems to
+- `configure`: a generated script that is used on unix-like systems to
   generate a setup when building curl.
-- `COPYING` is the license detailing the rules for your using this code.
-- `GIT-INFO` is only present in git and contains information about how to
+- `COPYING`: the license detailing the rules for your using this code.
+- `GIT-INFO`: only present in git and contains information about how to
   build curl after having checked out the code from git.
-- `README` is a short summary of what curl and libcurl are.
-- `RELEASE-NOTES` contains the changes done for the latest release - and when
+- `maketgz`: the script used to produce release archives, and daily snapshots
+- `README`: a short summary of what curl and libcurl are.
+- `RELEASE-NOTES`: contains the changes done for the latest release - and when
   found in git it contains the changes done since the previous release that
   are destined to end up in the coming release.
 
@@ -160,11 +161,147 @@ that is automatically converted to a web friendly format.
 
 ### docs/libcurl
 
+All libcurl functions have their own man pages in individual files with .3
+extensions - using nroff format, in this directory. The are also a few other
+files that are described below.
+
+- `ABI`
+- `index.html`
+- `libcurl.3`
+- `libcurl-easy.3`
+- `libcurl-errors.3`
+- `libcurl.m4`
+- `libcurl-multi.3`
+- `libcurl-share.3`
+- `libcurl-thread.3`
+- `libcurl-tutorial.3`
+- `symbols-in-versions`
+
 ### docs/libcurl/opts
+
+This directory contains the man pages for the individual options for three
+different libcurl functions.
+
+`curl_easy_setopt()` options start with `CURLOPT_`,
+`curl_mulit_setopt()` options start with `CURLMOPT_` and
+`curl_easy_getinfo()` options start with `CURLINFO_`.
 
 ### docs/examples
 
+- `10-at-a-time.c`
+- `anyauthput.c`
+- `asiohiper.cpp`
+- `cacertinmem.c`
+- `certinfo.c`
+- `chkspeed.c`
+- `cookie_interface.c`
+- `curlgtk.c`
+- `curlx.c`
+- `debug.c`
+- `evhiperfifo.c`
+- `externalsocket.c`
+- `fileupload.c`
+- `fopen.c`
+- `ftpget.c`
+- `ftpgetinfo.c`
+- `ftpgetresp.c`
+- `ftpsget.c`
+- `ftpupload.c`
+- `ftpuploadresume.c`
+- `ftp-wildcard.c`
+- `getinfo.c`
+- `getinmemory.c`
+- `ghiper.c`
+- `hiperfifo.c`
+- `href_extractor.c`
+- `htmltidy.c`
+- `htmltitle.cpp`
+- `http2-download.c`
+- `http2-serverpush.c`
+- `http2-upload.c`
+- `httpcustomheader.c`
+- `http-post.c`
+- `httpput.c`
+- `https.c`
+- `imap-append.c`
+- `imap-copy.c`
+- `imap-create.c`
+- `imap-delete.c`
+- `imap-examine.c`
+- `imap-fetch.c`
+- `imap-list.c`
+- `imap-lsub.c`
+- `imap-multi.c`
+- `imap-noop.c`
+- `imap-search.c`
+- `imap-ssl.c`
+- `imap-store.c`
+- `imap-tls.c`
+- `multi-app.c`
+- `multi-debugcallback.c`
+- `multi-double.c`
+- `multi-post.c`
+- `multi-single.c`
+- `multithread.c`
+- `multi-uv.c`
+- `opensslthreadlock.c`
+- `persistant.c`
+- `pop3-dele.c`
+- `pop3-list.c`
+- `pop3-multi.c`
+- `pop3-noop.c`
+- `pop3-retr.c`
+- `pop3-ssl.c`
+- `pop3-stat.c`
+- `pop3-tls.c`
+- `pop3-top.c`
+- `pop3-uidl.c`
+- `post-callback.c`
+- `postinmemory.c`
+- `postit2.c`
+- `progressfunc.c`
+- `resolve.c`
+- `rtsp.c`
+- `sampleconv.c`
+- `sendrecv.c`
+- `sepheaders.c`
+- `sessioninfo.c`
+- `sftpget.c`
+- `simple.c`
+- `simplepost.c`
+- `simplessl.c`
+- `smooth-gtk-thread.c`
+- `smtp-expn.c`
+- `smtp-mail.c`
+- `smtp-multi.c`
+- `smtp-ssl.c`
+- `smtp-tls.c`
+- `smtp-vrfy.c`
+- `synctime.c`
+- `threaded-ssl.c`
+- `url2file.c`
+- `usercertinmem.c`
+- `xmlstream.c`
+
 ### scripts
+
+Handy scripts.
+
+- `contributors.sh`: extracts contributors from the git repository since a
+  given hash/tag. If `--releasenotes` is also used, it will add the existing
+  names already mentioned in `RELEASE-NOTES`. The purpose is of course to get
+  and maintain the list for the RELEASE-NOTES file and to allow manually added
+  names to remain in there even on updates. The script uses the
+  'THANKS-filter` file to rewrite some names.
+- `contrithanks.sh`: extracts contributors from the git repository since a
+  given hash/tag, filters out all the names that are already mentioned in
+  `THANKS`, and then outputs `THANKS` to stdout with the list of new
+  contributors appended at the end. Made to allow easier updates of the THANKS
+  document.The script uses the 'THANKS-filter` file to rewrite some names.
+- `log2changes.pl`: generates the `CHANGES` file for releases, as used by the
+  release script. It simply converts git log output.
+- `zsh.pl`: helper script to provide curl command line completions to users of
+  the zsh shell.
 
 ## Handling different build options
 

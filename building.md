@@ -11,6 +11,29 @@ most likely build curl and libcurl for your target system.
 For the most popular platforms, the curl project comes with build systems
 already done and prepared to allow you to easily build it yourself.
 
+There are also friendly people and organizations who put together binary
+packages of curl and libcurl and make them available for download. The
+different options will be explored below.
+
+## The latest version?
+
+Looking at the curl web site at http://curl.haxx.se you can see the latest
+curl and libcurl version relased from the project. That's the latest source
+code package you can get.
+
+When you opt for a prebuilt and prepackaged version for your operating system
+or distribution of choice, you may not always find the latest version but you
+might have to either be satisfied with the latest version somone has packaged
+for your environment, or you need to build it yourself from source.
+
+## Installing from your package repository
+
+### apt-get
+
+### yum
+
+### homebrew
+
 ## Linux and unixlike systems
 
 ### autotools

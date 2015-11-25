@@ -131,6 +131,14 @@ data without the space separator:
 
     $ curl -darbitrary http://example.com
 
+### Negate options
+
+For options that switch on something, there is also a way to switch it
+off. You then use the long form of the option with an initial "no-" prefix
+before the name. As an example, to switch off verbose mode:
+
+    $ curl --no-verbose http://example.com
+
 ## URLs
 
 curl is called curl exactly because a substring in its name is URL (Uniform
@@ -187,6 +195,8 @@ curl will return an exit code for its operation on the last URL used.
 ## Separate options per URL
 
 ## URL Globbing
+
+## List all options
 
 ## Config file
 

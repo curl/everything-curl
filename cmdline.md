@@ -159,6 +159,11 @@ the format in order to extract the information it deems necessary to perform
 its operation. You can for example most probably pass in illegal letters in
 the URL without curl noticing or caring and it will just pass them on.
 
+URLs start with the "scheme", which is the official name for the "http://"
+part. That tells which protocol the URL uses. As a convenience, curl also
+allows users to leave out the scheme part from URLs. Then it guesses which
+protocol to use based on the first part of the host name.
+
 ### Browsers' "address bar"
 
 It is important to realize that when you use a modern web browser, the

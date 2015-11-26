@@ -70,7 +70,7 @@ called **the protocol**. The protocol describes exactly how to ask the server
 for data. Or to tell the server that there is data coming.
 
 The protocols are typically defined by the IETF (Internet Engineering Task
-Force, http://www.ietf.org), which hosts RFC documents that describe exacly
+Force, http://www.ietf.org), which hosts RFC documents that describe exactly
 how each protocol works. How clients and servers are supposed to act and what
 to send and so on.
 
@@ -98,7 +98,7 @@ stability but the situation changes day to day and year to year. You can rest
 assured that there will be new protocols added in the list above in the future
 and there will be new versions of the protocols already listed.
 
-There are of course already other protocols in existance that curl doesn't yet
+There are of course already other protocols in existence that curl doesn't yet
 support. We are open to accepting more protocols that suit the general curl
 paradigms, we just need developers to write the necessary code adjustments for
 them.
@@ -122,7 +122,7 @@ the world based on their interpretations of the words in those documents. It
 sometimes turn out that some of the specifications are subject for vastly
 different interpretations or sometimes the engineers are just lazy and ignore
 sound advice in the specs and still deploy something that isn't adhering.
-Writing software that interoperates with other implemenations of the
+Writing software that interoperates with other implementations of the
 specifications can therefore end up to be hard work.
 
 ## How much do protocols change?
@@ -137,7 +137,7 @@ The interpretation of a protocol sometimes change even if the spec remains the
 same.
 
 The protocols mentioned in this chapter are all "Application Protocols", which
-means they are transfered over more lower level protocols, like TCP, UDP and
+means they are transferred over more lower level protocols, like TCP, UDP and
 TLS. They are also themselves protocols that change over time, get new
 features and get attacked so that new ways of handling security etc forces
 curl to adapt and change.

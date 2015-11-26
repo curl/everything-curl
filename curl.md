@@ -215,11 +215,11 @@ github](https://github.com/bagder/curl/issues)!
 
 Testing software thoroughly and properly is a lot of work. Testing software
 that runs on dozens on operating systems and dozens of CPU architectures with
-server implementations with their owns sets of bugs and intrepretations of the
+server implementations with their owns sets of bugs and interpretations of the
 specs even more so.
 
 The curl project has a test suite that when run iterates over all existing
-test cases, runs the teset and verifies that the outcome is the correct one
+test cases, runs the test and verifies that the outcome is the correct one
 and that no other problem happened - like a memory leak or something fishy in
 the protocol layer.
 
@@ -256,7 +256,7 @@ packaged binaries that are provided with operating systems or on other
 download sites are done by gracious volunteers outside of the project.
 
 As of a few years back, we make an effort to do our releases on an eight week
-cycle and unless somereally serious and urgent problem shows up we stick to
+cycle and unless some really serious and urgent problem shows up we stick to
 this schedule. On a Wednesday, and then again a Wednesday eight weeks later
 and so it continues. Non-stop.
 
@@ -313,7 +313,7 @@ Daniel Stenberg is the founder and self-proclaimed leader of the
 project. Everybody else that participates or contributes in the project has
 thus arrived at a later point in time. Some contributors worked for a while
 and then left again. Most contributors hang around only for a short while to
-get their bug fixed or feature merged or similiar. Counting all contributors
+get their bug fixed or feature merged or similar. Counting all contributors
 we know the names of, we have received help from more than 1300 individuals.
 
 The list of people that have repeatedly shown up in discussions and commits
@@ -363,7 +363,7 @@ form.
 The curl command line tool and the libcurl library are available for download
 for most operating systems via the curl web site, they are provided via third
 party installers to a bunch and and they come installed by default with yet
-some operating systems. This makes counting downlods from the curl web site
+some operating systems. This makes counting downloads from the curl web site
 completely inappropriate as a means of measurement.
 
 ### Finding users
@@ -399,7 +399,7 @@ wide variety of platforms and you can still keep using libcurl for transfers.
 libcurl being written in C with no or just a few required dependencies also
 help to get it used in embedded systems.
 
-libcurl is popularly used in Smartphone operating systems, in car infotainment
+libcurl is popularly used in smartphone operating systems, in car infotainment
 setups, in television sets, in settop boxes, in audio and video equipment such
 as bluray players and higher end receivers. It is often used in home routers
 and printers.

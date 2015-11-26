@@ -44,7 +44,7 @@ In some environments, like PowerShell on Windows, the authors of the command
 line system decided they know better and "help" the user to use another tool
 instead of curl when curl is typed, by providing an alias that takes precedent
 when a command line is executed. In order to use curl properly with
-powershell, you need to type in its full name including the extension:
+PowerShell, you need to type in its full name including the extension:
 "curl.exe".
 
 Different command line environments will also have different maximum command
@@ -63,7 +63,7 @@ have curl pass on that crazy data in its transfer operation.
 
 This is a design choice, as it allows you to really tweak how curl does its
 the protocol communications and you can have curl massage your server
-implemenations in the most creative ways.
+implementations in the most creative ways.
 
 ## Command line options
 
@@ -94,7 +94,7 @@ the options anywhere you like, they can also appear after the URL:
 
 ### Long options
 
-Single letter options are convient since they are quick to write and use, but
+Single letter options are convenient since they are quick to write and use, but
 as there are only a limited number of letters in the alphabet and there are
 many things to control, not all options are available like that. Long option
 names are therefore provided for those. Also, as a convenience and to allow
@@ -175,7 +175,7 @@ directory of an FTP server using a given name and password:
 
     $ curl ftp://user:password@example.com/
 
-The presense of user name and password in the URL is completely optional. curl
+The presence of user name and password in the URL is completely optional. curl
 also allows that information to be provide with normal command line options,
 outside of the URL.
 
@@ -194,7 +194,7 @@ brackets:
 
 When a host name is used, the converting of the name to an IP address is
 typically done using the system's resolver functions. That normally lets a
-sysadmin provide local name looksups in the `/etc/hosts` file (or equivalent).
+sysadmin provide local name lookups in the `/etc/hosts` file (or equivalent).
 
 ### Port number
 
@@ -236,7 +236,7 @@ URLs offer a "fragment part". That's usually seen as a hash symbol (#) and a
 name for a specific name within a web page in browsers. curl supports
 fragments fine when a URL is passed to it, but the fragment part is never
 actually sent over the wire so it doesn't make a difference to curl's
-operations wether it is present or not.
+operations whether it is present or not.
 
 ### Browsers' "address bar"
 

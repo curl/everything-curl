@@ -59,7 +59,7 @@ libcurl are not stored in this directory, see include/curl for those.
 
 Depending on what features that are enabled in your own build and what
 functions your platform provide, some of the source files or portions of the
-souce files may contain code that is not used in your particular build.
+source files may contain code that is not used in your particular build.
 
 ### lib/vtls
 
@@ -67,7 +67,7 @@ The VTLS sub section within libcurl is the home of all the TLS backends
 libcurl can be built to support. The "virtual" TLS internal API is a common
 API that is used within libcurl to access TLS and crypto functions without the
 main code knowing exactly which TLS library that is used. This allows the
-person who builds libcurl to select from a wide variaty TLS libraries to build
+person who builds libcurl to select from a wide variety TLS libraries to build
 with.
 
 We also maintain a [SSL comparision
@@ -89,7 +89,7 @@ users.
 - axTLS: is a minuscule TLS library focused on a small footprint.
 - scannel: the native TLS library on Windows.
 - securetransport: the native TLS library on Mac OS X.
-- gskit: the native TLS librarr on OS/400.
+- gskit: the native TLS library on OS/400.
 
 ### src
 
@@ -119,8 +119,8 @@ plain text files. We have slowly started to move towards Markdown format so a
 few (but hopefully growing number of) files use the .md extension to signify
 that.
 
-Ost of these documents are provided shown on the curl web site in a format
-that is automatically converted to a web friendly format.
+Most of these documents are also shown on the curl web site automatically
+converted from text to a web friendly format/look.
 
 - `BINDINGS`: lists all known libcurl language bindings and where to find them
 - `BUGS`: how to report bugs and where
@@ -152,11 +152,11 @@ that is automatically converted to a web friendly format.
   does things
 - `ROADMAP.md`: what we want to work on in the future
 - `SECURITY`: how we work on security
-- `SSLCERTS`: TLS certificate handling documentated
+- `SSLCERTS`: TLS certificate handling documented
 - `SSL-PROBLEMS`: common SSL problems and their causes
 - `THANKS`: thanks to this extensive list of friendly people, curl exists today!
 - `TheArtOfHttpScripting`: a tutorial into HTTP scripting with curl
-- `TODO`: things we or you can work on implenting
+- `TODO`: things we or you can work on implementing
 - `VERSIONS`: how the version numbering of libcurl works
 
 ### docs/libcurl

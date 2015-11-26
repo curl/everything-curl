@@ -5,6 +5,7 @@
 * [Network and protocols](protocols.md)
 * [Command line](cmdline.md)
 * [Using curl](usingcurl.md)
+* [curl examples](curlexamples.md)
 * [Building and installing](building.md)
 * [Using libcurl](libcurl.md)
 * [Bindings](bindings.md)

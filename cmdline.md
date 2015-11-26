@@ -159,10 +159,84 @@ the format in order to extract the information it deems necessary to perform
 its operation. You can for example most probably pass in illegal letters in
 the URL without curl noticing or caring and it will just pass them on.
 
+### Scheme
+
 URLs start with the "scheme", which is the official name for the "http://"
 part. That tells which protocol the URL uses. As a convenience, curl also
 allows users to leave out the scheme part from URLs. Then it guesses which
 protocol to use based on the first part of the host name.
+
+### Name and password
+
+After the scheme, there can be a possible user name and password embedded.
+The use of this syntax is usually frowned upon these days since you easily
+leak this information in scripts or otherwise. For example, listing the
+directory of an FTP server using a given name and password:
+
+    $ curl ftp://user:password@example.com/
+
+The presense of user name and password in the URL is completely optional. curl
+also allows that information to be provide with normal command line options,
+outside of the URL.
+
+### Host name or address
+
+The host name part of the URL is of course simply a name that can be resolved
+to an numerical IP address, or the numerical address itself. When specifying a
+numerical address, use the dotted version for IPv4 addresses:
+
+    $ curl http://127.0.0.1/
+
+... and for IPv6 addresses the numerical version needs to be within square
+brackets:
+
+    $ curl http://[::1]/
+
+When a host name is used, the converting of the name to an IP address is
+typically done using the system's resolver functions. That normally lets a
+sysadmin provide local name looksups in the `/etc/hosts` file (or equivalent).
+
+### Port number
+
+Each protocol has a "default port" that curl will use for it, unless a
+specified port number is given. The optional port number can be provided
+within the URL after the host name part, as a colon and the port number
+written in decimal. For example, asking for a HTTP document on port 8080:
+
+    $ curl http://example.com:8080/
+
+With the name specified as an IPv4 address:
+
+    $ curl http://127.0.0.1:8080/
+
+With the name given as an IPv6 address:
+
+    $ curl http://[fdea::1]:8080/
+
+### Path
+
+Every URL contains a path. If there's none given, "/" is implied. The path is
+sent to the specified server to identify exactly which resource that is
+requested or that will be provided.
+
+The exact use of the path is protocol dependent. For example, getting a file
+README from the default anonymous user from an FTP server:
+
+    $ curl ftp://ftp.example.com/README
+
+For the protocols that have a directory concept, ending the URL with a
+trailing slash means that it is a directory and not a file. Thus asking for a
+directory list from an FTP server is implied with such a slash:
+
+    $ curl ftp://ftp.example.com/tmp/
+
+### Fragment
+
+URLs offer a "fragment part". That's usually seen as a hash symbol (#) and a
+name for a specific name within a web page in browsers. curl supports
+fragments fine when a URL is passed to it, but the fragment part is never
+actually sent over the wire so it doesn't make a difference to curl's
+operations wether it is present or not.
 
 ### Browsers' "address bar"
 

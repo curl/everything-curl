@@ -199,6 +199,44 @@ curl will return an exit code for its operation on the last URL used.
 
 ## Separate options per URL
 
+In previous sections we described how curl always parses all options in the
+whole command line and applies those to all the URLs that it transfers.
+
+That was a simplification: curl also offers an option (-;, --next) that
+inserts a boundary between a set of options and URLs that it will apply the
+options for. Then it moves across the boundary option and starts applying the
+following options to the next set of URLs to operate with.
+
+As an example, we do a HTTP GET to a URL and follow redirects, we then make a
+second HTTP POST to a different URL and we round it up with a HEAD request to
+a third URL. All in a single command line:
+
+    $ curl --location http://example.com/1 --next
+      --data sendthis http://example.com/2 --next
+      --head http://example.com/3
+
+Trying something like that _without_ the --next options on the command line
+would generate an illegal command line since curl would attempt to combine
+both a POST and a HEAD:
+
+    Warning: You can only select one HTTP request method! You asked for both POST
+    Warning: (-d, --data) and HEAD (-I, --head).
+
+## Connection reuse
+
+Setting up a TCP connection and especially a TLS connection can be a slow
+process, even on high bandwidth networks.
+
+It can be useful to remember that curl has a connection pool internally which
+keeps previously used connections alive and around for a while after they were
+used so that subsequent requests to the same hosts can reuse an already
+established connection.
+
+Of course they can only be kept alive for as long as the curl tool is running,
+but it is a very good reason for trying to get several transfers done within
+the same command line instead of running several independent curl command line
+invokes.
+
 ## URL Globbing
 
 ## List all options

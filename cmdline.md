@@ -315,11 +315,20 @@ invokes.
 
 ## URL Globbing
 
+TBD
+
 ## List all options
+
+TBD
 
 ## Config file
 
+TBD
+
 ## Passwords and snooping
+
+TBD
 
 ## The progress meter
 
+TBD

@@ -28,26 +28,52 @@ for your environment, or you need to build it yourself from source.
 
 ## Installing from your package repository
 
+TBD
+
 ### apt-get
+
+TBD
 
 ### yum
 
+TBD
+
 ### homebrew
+
+TBD
 
 ## Linux and unixlike systems
 
+TBD
+
 ### autotools
 
+TBD
+
 ### cmake
+
+TBD
 
 ## Windows
 
+TBD
+
 ### make
+
+TBD
 
 ### cmake
 
+TBD
+
 ### other compilers
+
+TBD
 
 ## Other systems
 
+TBD
+
 ## Porting curl to non-supported systems
+
+TBD

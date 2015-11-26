@@ -305,20 +305,40 @@ Handy scripts.
 
 ## Handling different build options
 
+TBD
+
 ## Style and code requirements
+
+TBD
 
 ## Contributing
 
+TBD
+
 ### What to add
+
+TBD
 
 ### What not to add
 
+TBD
+
 ## git
+
+TBD
 
 ### git commit style
 
+TBD
+
 ## About adhering to standards and who's right
+
+TBD
 
 ## Web site source code
 
+TBD
+
 ### Building the web
+
+TBD

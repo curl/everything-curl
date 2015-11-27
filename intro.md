@@ -40,3 +40,18 @@ profit. I live and work in Stockholm, Sweden.
 
 All there is to know about me can be found on my web site
 [http://daniel.haxx.se](http://daniel.haxx.se/).
+
+## Help!
+
+If you find mistakes, omissions, errors or blatant lies in this document,
+please send me a refreshed version of the affected paragraph and I'll make
+amended versions. I will give proper credits to everyone who helps out! I hope
+to make this document better over time.
+
+Submit [errors](https://github.com/bagder/everything-curl/issues) or [pull
+requests](https://github.com/bagder/everything-curl/pulls) on the book's
+github home page.
+
+## License
+
+This document is licensed under the Creative Commons Attribution 4.0 license: http://creativecommons.org/licenses/by/4.0/

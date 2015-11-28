@@ -327,7 +327,8 @@ it with -g, --globoff.
 
 ### Numerical ranges
 
-You can ask for a numerical range with [N-M] syntax, like a 100 images:
+You can ask for a numerical range with [N-M] syntax. For example, you can ask
+for 100 images one by one that are named numerically:
 
     $ curl -O http://example.com/[1-100].png
 

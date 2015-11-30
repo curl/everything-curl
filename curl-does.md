@@ -40,6 +40,10 @@ have the ability to select doing it to stdout or from stdin.
 Following that style of what unix command line tools worked, it was also never
 any question about that it should support multiple URLs on the command line.
 
+The command line tool is designed to work perfectly from scripts or other
+automatic means. It doesn't feature any other GUI or UI than mere text in and
+out.
+
 ### The library
 
 TBD

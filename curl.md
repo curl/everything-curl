@@ -420,11 +420,14 @@ advantage of a problem until a fixed version has been deployed.
 ### Past security problems
 
 During the years we have had our fair share of security related problems. We
-work hard on documenting every problem thoroughly with all details listed and
-clearly stated to aid users. Users of curl should be able to figure out what
-problems their particular curl versions and use cases are vulnerable to.
+work hard on [documenting every
+problem](http://curl.haxx.se/docs/security.html) thoroughly with all details
+listed and clearly stated to aid users. Users of curl should be able to figure
+out what problems their particular curl versions and use cases are vulnerable
+to.
 
-To help with this, we present this waterfall chart showing how all
+To help with this, we present [this waterfall
+chart](http://curl.haxx.se/docs/vulnerabilities.html) showing how all
 vulnerabilities affect which curl versions and we have this complete list of
 all known security problems since the birth of this project.
 

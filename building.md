@@ -42,6 +42,46 @@ TBD
 
 TBD
 
+## Dependencies
+
+TBD
+
+### TLS library
+
+TBD
+
+### zlib
+
+TBD
+
+### c-ares
+
+TBD
+
+### libssh2
+
+TBD
+
+### nghttp2
+
+TBD
+
+### openldap
+
+TBD
+
+### librtmp
+
+TBD
+
+### libmetalink
+
+TBD
+
+### libpsl
+
+TBD
+
 ## Linux and unixlike systems
 
 TBD

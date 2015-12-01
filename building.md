@@ -82,6 +82,10 @@ TBD
 
 TBD
 
+### libidn
+
+TBD
+
 ## Linux and unixlike systems
 
 TBD

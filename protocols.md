@@ -69,8 +69,8 @@ The language used to ask for data to get sent - in either direction - is
 called **the protocol**. The protocol describes exactly how to ask the server
 for data. Or to tell the server that there is data coming.
 
-The protocols are typically defined by the IETF (Internet Engineering Task
-Force, http://www.ietf.org), which hosts RFC documents that describe exactly
+The protocols are typically defined by the IETF ([Internet Engineering Task
+Force](http://www.ietf.org)), which hosts RFC documents that describe exactly
 how each protocol works. How clients and servers are supposed to act and what
 to send and so on.
 

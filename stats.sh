@@ -1,10 +1,12 @@
 #!/bin/sh
 
-tbd=`cat *.md | grep -c ^TBD`
-titles=`cat *.md | grep -c ^#`
+book=`grep -o '[a-z-]*\.md' SUMMARY.md`
 
-words=`cat *.md | wc -w`
-lines=`cat *.md | wc -l`
+tbd=`cat $book | grep -c ^TBD`
+titles=`cat $book | grep -c ^#`
+
+words=`cat $book | wc -w`
+lines=`cat $book | wc -l`
 
 echo "Titles added: $titles"
 echo "Sections to go: $tbd"

@@ -52,7 +52,7 @@ today were introduced with libcurl 7.1 in August 2000. Since then, the command
 line tool has been like a thin layer of logic to make a tool around the
 library that does all the heavy lifting.
 
-libcurl is designed and meant to be avaiable for anyone who wants to add
+libcurl is designed and meant to be available for anyone who wants to add
 client-side file transfer capabilities to their software. On any platform, any
 architecture and for any purpose. libcurl is also extremely liberally licensed
 to not have that become an obstacle either.

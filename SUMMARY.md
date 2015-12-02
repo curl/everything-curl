@@ -10,7 +10,7 @@
 * [Open Source](opensource.md)
 * [The source code](sourcecode.md)
     * [Code layout](sourcecode-layout.md)
-    * [Handling build options](sourcecode-build.md)
+    * [Handling build options](sourcecode-options.md)
     * [Code style](sourcecode-style.md)
     * [Contributing](sourcecode-contributing.md)
     * [Web site](sourcecode-web.md)

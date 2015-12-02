@@ -7,6 +7,7 @@
     * [Security](curl-security.md)
     * [The development team](curl-devteam.md)
     * [Users of curl](curl-users.md)
+    * [Future](curl-future.md)
 * [Open Source](opensource.md)
 * [The source code](sourcecode.md)
     * [Code layout](sourcecode-layout.md)

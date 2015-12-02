@@ -15,6 +15,8 @@
     * [Contributing](sourcecode-contributing.md)
     * [Web site](sourcecode-web.md)
 * [Network and protocols](protocols.md)
+    * [Networking simplified](protocols-network.md)
+    * [Protocols](protocols-protocols.md)
 * [Command line](cmdline.md)
     * [Command line options](cmdline-options.md)
     * [URLs](cmdline-urls.md)

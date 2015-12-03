@@ -1,5 +1,7 @@
 * [About this book](intro.md)
 * [The cURL project](curl.md)
+    * [How it started](curl-started.md)
+    * [The name](curl-name.md)
     * [What does curl do?](curl-does.md)
     * [Project communication](curl-comm.md)
     * [Reporting bugs](curl-bugs.md)

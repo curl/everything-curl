@@ -21,6 +21,10 @@ sorts of contributions are suitable received.
 Send your contributions on a [mailing list](curl-comm.md), file an issue or
 submit a pull-request.
 
+### Suggestions
+
+TBD
+
 ### What to add
 
 TBD
@@ -34,5 +38,9 @@ TBD
 TBD
 
 ### git commit style
+
+TBD
+
+### Who decides what goes in?
 
 TBD

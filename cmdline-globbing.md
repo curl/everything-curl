@@ -10,6 +10,9 @@ normally cannot be part of a legal URL (except for numerical IPv6 addresses
 but curl handles them fine anyway). If the globbing gets in your way, disable
 it with -g, --globoff.
 
+While most transfer related functionality in curl is provided by the libcurl
+library, the URL globbing feature is not!
+
 ### Numerical ranges
 
 You can ask for a numerical range with [N-M] syntax. For example, you can ask

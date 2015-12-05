@@ -9,6 +9,20 @@ concepts of what curl can do and how to tell curl to use these features. You
 should consider all these features as different tools that are here to help
 you do your file transfer tasks as convenient as possible.
 
+## Storing downloads
+
+-o
+
+-O
+
+-J
+
+--compressed
+
+'>' shell redirects
+
+TBD
+
 ## .netrc
 
 Unix systems have for a very long time offered a way for users to store their

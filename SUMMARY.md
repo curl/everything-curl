@@ -17,6 +17,7 @@
     * [Handling build options](sourcecode-options.md)
     * [Code style](sourcecode-style.md)
     * [Contributing](sourcecode-contributing.md)
+    * [Reporting vulnerabilities](sourcecode-reportvuln.md)
     * [Web site](sourcecode-web.md)
 * [Network and protocols](protocols.md)
     * [Networking simplified](protocols-network.md)

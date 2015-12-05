@@ -27,3 +27,5 @@ The project slowly grew bigger. When upload capabilities were added and the
 name once again was misleading, a second name change was made and on March 20,
 1998 curl 4 was released. (The version numbering from the previous names was
 kept.)
+
+We count March 20 1998 to be curl's birth day.

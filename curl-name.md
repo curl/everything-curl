@@ -23,12 +23,12 @@ were not aware of them by the time our curl came to be.
 ### Confusions and mixups
 
 Soon after curl was first created another "curl" appeared that makes a
-programming language. That curl still exists.
+programming language. That curl still [exists](http://www.curl.com).
 
-Several bindings for various programming languages use the term "curl" in part
-or completely to describe their bindings, so sometimes you'll find users talk
-about curl but not target neither the command line tool nor the library that
-is made by this project.
+Several libcurl bindings for various programming languages use the term "curl"
+or "CURL" in part or completely to describe their bindings, so sometimes
+you'll find users talk about curl but not target neither the command line tool
+nor the library that is made by this project.
 
 ### As a verb
 

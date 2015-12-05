@@ -1,23 +1,3 @@
-## List all command line options
-
-curl has more than one hundred command line options and the number of options
-keep increasing over time. Chances are the number of options will surpass 200
-within a year or two.
-
-In order to find out which options you need to perform as certain action, you
-can of course list all options, scan through the list and pick the one you're
-looking for. `curl --help` or simply `curl -h` will get you a list of all
-existing options with a brief explanation. If you don't really know what
-you're looking for, you probably won't be entirely satisfied.
-
-Then you can instead opt to use `curl --manual` which then will output the
-entire man page for curl plus an appended tutorial for the most common use
-cases. That is a very thorough and complete document on how each option
-works. Several thousand lines of documentation. To wade through that is also a
-tedious work and we encourage use of a search function through those text
-masses. Some people will appreciate the man page in its [web
-version](http://curl.haxx.se/docs/manpage.html).
-
 ## Config file
 
 You can easily end up with curl command lines that use a very lage amount of
@@ -85,12 +65,19 @@ provide a URL for curl like this:
 
 ### Default config file
 
-TBD
+When curl is invoked, it always (unless `-q` is used) checks for a default
+config file and uses it if found. The file name it checks for is `.curlrc` on
+unix like systems and `_curlrc` on Windows.
 
-## Passwords and snooping
+The default config file is checked for in the following places in this order:
 
-TBD
+1. curl tries to find the "home dir": It first checks for the CURL_HOME and
+then the HOME environment variables.  Failing that, it uses `getpwuid()` on
+Unix-like systems (which returns the home dir given the current user in your
+system). On Windows, it then checks for the APPDATA variable, or as a last
+resort the '%USERPROFILE%\Application Data'.
 
-## The progress meter
+2. On windows, if there is no _curlrc file in the home dir, it checks for one
+in the same dir the curl executable is placed. On Unix-like systems, it will
+simply try to load .curlrc from the determined home dir.
 
-TBD

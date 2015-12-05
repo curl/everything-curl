@@ -60,6 +60,29 @@ can be done with
 
     user-agent "Everything-is-an-agent"
 
+To allow the config files to look even more like a true config file, it also
+allows you to use '=' or ':' between the option and its argument. As you see
+above it isn't necessary, but some like the clarity it offers. Setting the
+user-agent option again:
+
+    user-agent = "Everything-is-an-agent"
+
+The argument to an option can be specified without double quotes and then curl
+will treat the next space or newline as the end of the argument. So if you
+want to provide an argument with embedded spaces you must use double quotes.
+
+The user agent string example we've used above has no white spaces and
+therefore it can also be provided without the quotes like:
+
+    user-agent = Everything-is-an-agent
+
+Finally, if you want to provide a URL in a config file, you must do that the
+`--url` way, or just with `url`, and not like on the command line where
+basicaly everything that isn't an option is assumed to be a URL. So you
+provide a URL for curl like this:
+
+    url = "http://example.com"
+
 ### Default config file
 
 TBD

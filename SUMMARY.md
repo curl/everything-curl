@@ -7,6 +7,7 @@
     * [Reporting bugs](curl-bugs.md)
     * [Releases](curl-releases.md)
     * [Security](curl-security.md)
+    * [Trust](curl-trust.md)
     * [The development team](curl-devteam.md)
     * [Users of curl](curl-users.md)
     * [Future](curl-future.md)

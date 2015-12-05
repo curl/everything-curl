@@ -26,6 +26,9 @@ or distribution of choice, you may not always find the latest version but you
 might have to either be satisfied with the latest version somone has packaged
 for your environment, or you need to build it yourself from source.
 
+The curl project also provides info about the latest version in a somewhat
+more machine-readable format on this URL: `http://curl.haxx.se/info`.
+
 ## Installing from your package repository
 
 TBD

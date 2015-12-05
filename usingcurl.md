@@ -23,7 +23,7 @@ ask it to. curl is however not limiting this feature to FTP, but can get
 credentials for machines for any protocol with this. See further below for
 how.
 
-### .netrc format
+### The .netrc file format
 
 The .netrc file format is simple: you specify a machine name and following
 that which login and password that are associated with that machine.
@@ -45,6 +45,13 @@ Supply a password.  If this token is present, curl will supply the specified
 string if the remote server requires a password as part of the login process.
 Note that if this token is present in the .netrc file you really **should**
 make sure the file is not readable by anyone besides the user.
+
+An example .netrc for the host example.com with a user named daniel, using the
+password 'qwerty' would look like:
+
+    machine example.com
+    login daniel
+    password qwerty
 
 ### Enable netrc
 

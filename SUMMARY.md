@@ -22,7 +22,7 @@
 * [Network and protocols](protocols.md)
     * [Networking simplified](protocols-network.md)
     * [Protocols](protocols-protocols.md)
-* [Command line](cmdline.md)
+* [Command line basics](cmdline.md)
     * [Command line options](cmdline-options.md)
     * [URLs](cmdline-urls.md)
     * [URL globbing](cmdline-globbing.md)

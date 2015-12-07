@@ -9,6 +9,10 @@ concepts of what curl can do and how to tell curl to use these features. You
 should consider all these features as different tools that are here to help
 you do your file transfer tasks as convenient as possible.
 
+## Verbose mode
+
+TBD
+
 ## Storing downloads
 
 -o

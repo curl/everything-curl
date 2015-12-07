@@ -155,6 +155,15 @@ the same size, you may not get any problems but not all work like
 that. Similarly, for options that accept a 'curl_off_t' type, it is
 **crucial** that you pass in an argument using that type and no other.
 
+Enforce a long:
+
+    curl_easy_setopt(handle, CURLOPT_TIMEOUT, 5L); /* 5 seconds timeout */
+
+Enforce a curl_off_t:
+
+    curl_off_t no_larger_than = 0x50000;
+    curl_easy_setopt(handle, CURLOPT_MAXFILE_LARGE, no_larger_than);
+
 ## Get handle options
 
 No, there's no general method to extract the same information you previously
@@ -174,7 +183,10 @@ libcurl-errors man page.
 You can convert a CURLcode into a human readable string with the
 `curl_easy_strerror()` function - but be aware that these errors are rarely
 phrased in a way that is suitable for anyone to expose in a UI or to an end
-user.
+user:
+
+    const char *str = curl_easy_strerror( error );
+    printf("libcurl said %s\n", str);
 
 Another way to get a slightly better error text in case of errors, is to set
 the `CURLOPT_ERRORBUFFER` option to point out a buffer in your program and
@@ -193,7 +205,8 @@ moment.
 
 The next life safer when writing libcurl applications that everyone needs to
 know about and needs to use extensively, at least while developing libcurl
-applications or debugging libcurl itself, is to enable "verbose mode":
+applications or debugging libcurl itself, is to enable "verbose mode" with
+`CURLOPT_URL`:
 
     CURLcode ret = curl_easy_setopt(handle, CURLOPT_VERBOSE, 1L);
 

@@ -106,7 +106,7 @@ In case of problem (like perhaps out of memory), curl_easy_init() returns NULL
 and that is of course a serious error for any application. You need to write
 your program to take this risk into account.
 
-### Set handle options
+## Set handle options
 
 You set options in the easy handle to control how that transfer is going to be
 done or in some cases you can actually set options and modify the transfer's
@@ -137,15 +137,15 @@ and if that works it returns OK.
 It is of course good form to check the return code to see that nothing went
 wrong.
 
-### CURLcode return code
+## Get handle options
 
+No, there's no general method to extract the same information you previously
+set with `curl_easy_setopt()`! If you need to be able to extract the
+information again that you set earlier, then we encourage you to keep track of
+that data yourself in your application.
 
-### Get handle options
+## CURLcode return code
 
-No, there's no general method to extract the information you previously set
-with `curl_easy_setopt()`! If you need to be able to extract the information
-again that you set earlier, then we encourage you to keep track of that data
-yourself in your application.
 
 ## HTTP Cookies
 

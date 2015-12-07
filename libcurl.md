@@ -28,6 +28,10 @@ The actual "perform the transfer phase" can be done using sifferent different
 means and function calls, depending on what kind of behavior you want in your
 application and how libcurl is best integrated into your architecture.
 
+## API compatibility
+
+TBD
+
 ## curl --libcurl
 
 We actively encourage users to first try out the transfer they want to do with
@@ -78,9 +82,16 @@ and clean up all related resources. You do this with `curl_easy_cleanup()`. We
 encourage applications to reuse handles as much as possible for performance
 and efficiency perposes.
 
-### curl_easy_setopt
+### Set handle options
 
 TBD
+
+### Get handle options
+
+No, there's no general method to extract the information you previously set
+with `curl_easy_setopt()`! If you need to be able to extract the information
+again that you set earlier, then we encourage you to keep track of that data
+yourself in your application.
 
 ## HTTP Cookies
 

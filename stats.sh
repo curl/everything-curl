@@ -15,4 +15,7 @@ echo "Lines: $lines"
 
 complete=`echo "scale=1; ($titles-$tbd)*100/$titles" | bc`
 
+secsize=`echo "$words/$complete" | bc`
+
+echo "Words per section: $secsize"
 echo "Completeness: $complete %"

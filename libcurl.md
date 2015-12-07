@@ -17,16 +17,24 @@ lines of code, but applications will of course need more code than so.
 
 ## Basic design
 
-The fundamentals you need to lear with libcurl: first you create an "easy
-handle", which is your handle to a transfer really. Then you set options for
-that handle, that controls how the upcoming transfer will pan out and finally
-you fire off the transfer. After the transfer has completed, you can figure
-out if it succeeded or not and you can extract stats and various informations
-that libcurl gathered during the transfer.
+The fundamentals you need to learn with libcurl:
+
+- First you create an "easy handle", which is your handle to a transfer
+  really.
+
+- Then you set several options for that handle, that controls how the upcoming
+  transfer will pan out.
+
+- Finally you fire off the transfer.
+
+After the transfer has completed, you can figure out if it succeeded or not
+and you can extract stats and various informations that libcurl gathered
+during the transfer.
 
 The actual "perform the transfer phase" can be done using sifferent different
 means and function calls, depending on what kind of behavior you want in your
-application and how libcurl is best integrated into your architecture.
+application and how libcurl is best integrated into your architecture. Those
+are further described later in this chapter.
 
 ## API compatibility
 

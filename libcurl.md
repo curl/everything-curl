@@ -82,6 +82,10 @@ and clean up all related resources. You do this with `curl_easy_cleanup()`. We
 encourage applications to reuse handles as much as possible for performance
 and efficiency perposes.
 
+In case of problem (like perhaps out of memory), curl_easy_init() returns NULL
+and that is of course a serious error for any application. You need to write
+your program to take this risk into account.
+
 ### Set handle options
 
 You set options in the easy handle to control how that transfer is going to be
@@ -91,11 +95,11 @@ and you provide the handle, the option you want to set and the argument to the
 option. All options take exactly one argument and you must always pass exactly
 three parameters to the curl_easy_setopt() calls.
 
-Since the curl_easy_setopt() call accepts several hundred options and the
-various options accept a variety of different types of arguments, it is very
-important to read up on the specifics and provide exactly the argument type
-the specific option supports and expects. Passing in the wrong type can lead
-to unexpected side-effects or hard to understand hiccups.
+Since the curl_easy_setopt() call accepts several hundred different options
+and the various options accept a variety of different types of arguments, it
+is very important to read up on the specifics and provide exactly the argument
+type the specific option supports and expects. Passing in the wrong type can
+lead to unexpected side-effects or hard to understand hiccups.
 
 The perhaps most important option that every transfer needs, is the URL.
 libcurl cannot perform a transfer without knowing which URL it concerns so you
@@ -109,6 +113,9 @@ contents could looke like:
 Again: this only sets the option in the handle. It will not do the actual
 transfer or anything. It will basically just tell libcurl to copy the string
 and if that works it returns OK.
+
+It is of course good form to check the return code to see that nothing went
+wrong.
 
 ### CURLcode return code
 

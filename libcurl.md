@@ -12,6 +12,9 @@ the more you'll be able to understand about libcurl's options and ways of
 workings. Not to mention when you're debugging and need yto understand what to
 do next when things don't go as you intended them.
 
+The most basic libcurl using application can be as small as just a couple of
+lines of code, but applications will of course need more code than so.
+
 ## Basic design
 
 The fundamentals you need to lear with libcurl: first you create an "easy

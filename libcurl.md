@@ -27,7 +27,20 @@ application and how libcurl is best integrated into your architecture.
 
 ## curl --libcurl
 
-TBD
+We actively encourage users to first try out the transfer they want to do with
+the curl command line tool, and once it works roughly the way you want it to
+you append the `--libcurl [filename]` option to the command line and run it
+again.
+
+The `--libcurl` command line option will create a C program in the provided
+file name. That C program is an application that uses libcurl to run the
+transfer you just had the curl command line tool do. Sure there are some
+exceptions and it isn't always a 100% match, but you will find that it can
+serve as an excellent inspiration source for what libcurl options you want or
+can use and what additional arguments to provide to them.
+
+If you specify the filename as a single dash, as in `--libcurl -` you will get
+the program written to stdout instead of a file.
 
 ## CURL *handle
 

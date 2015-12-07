@@ -36,3 +36,4 @@
 * [Using libcurl](libcurl.md)
     * [libcurl examples](libcurlexamples.md)
 * [Bindings](bindings.md)
+* [libcurl internals](internals.md)

@@ -84,7 +84,34 @@ and efficiency perposes.
 
 ### Set handle options
 
-TBD
+You set options in the easy handle to control how that transfer is going to be
+done or in some cases you can actually set options and modify the transfer's
+behavior while it is in progress. You set options with `curl_easy_setopt()`
+and you provide the handle, the option you want to set and the argument to the
+option. All options take exactly one argument and you must always pass exactly
+three parameters to the curl_easy_setopt() calls.
+
+Since the curl_easy_setopt() call accepts several hundred options and the
+various options accept a variety of different types of arguments, it is very
+important to read up on the specifics and provide exactly the argument type
+the specific option supports and expects. Passing in the wrong type can lead
+to unexpected side-effects or hard to understand hiccups.
+
+The perhaps most important option that every transfer needs, is the URL.
+libcurl cannot perform a transfer without knowing which URL it concerns so you
+must tell it. The URL option name is `CURLOPT_URL` as all options are prefixed
+with `CURLOPT_` and then the descriptive name - all using uppercase
+letters. An example line setting the URL to get the "http://example.com" HTTP
+contents could looke like:
+
+    CURLcode ret = curl_easy_setopt(easy, CURLOPT_URL, "http://example.com");
+
+Again: this only sets the option in the handle. It will not do the actual
+transfer or anything. It will basically just tell libcurl to copy the string
+and if that works it returns OK.
+
+### CURLcode return code
+
 
 ### Get handle options
 

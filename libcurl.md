@@ -9,7 +9,7 @@ users to be protocol experts or in fact know much at all about the networking
 or the protocols involved. That said, networking and protocols are areas with
 lots of pitfalls and special cases so the more you know about these things,
 the more you'll be able to understand about libcurl's options and ways of
-workings. Not to mention when you're debugging and need yto understand what to
+workings. Not to mention when you're debugging and need to understand what to
 do next when things don't go as you intended them.
 
 The most basic libcurl using application can be as small as just a couple of
@@ -28,10 +28,10 @@ The fundamentals you need to learn with libcurl:
 - Finally you fire off the transfer.
 
 After the transfer has completed, you can figure out if it succeeded or not
-and you can extract stats and various informations that libcurl gathered
+and you can extract stats and various information that libcurl gathered
 during the transfer.
 
-The actual "perform the transfer phase" can be done using sifferent different
+The actual "perform the transfer phase" can be done using different different
 means and function calls, depending on what kind of behavior you want in your
 application and how libcurl is best integrated into your architecture. Those
 are further described later in this chapter.
@@ -108,7 +108,7 @@ When you're done with the handle, like if you've done your transfers and you
 don't plan to do any more with this same handle, you need to free it to remove
 and clean up all related resources. You do this with `curl_easy_cleanup()`. We
 encourage applications to reuse handles as much as possible for performance
-and efficiency perposes.
+and efficiency purposes.
 
 In case of problem (like perhaps out of memory), curl_easy_init() returns NULL
 and that is of course a serious error for any application. You need to write
@@ -134,7 +134,7 @@ libcurl cannot perform a transfer without knowing which URL it concerns so you
 must tell it. The URL option name is `CURLOPT_URL` as all options are prefixed
 with `CURLOPT_` and then the descriptive name - all using uppercase
 letters. An example line setting the URL to get the "http://example.com" HTTP
-contents could looke like:
+contents could look like:
 
     CURLcode ret = curl_easy_setopt(easy, CURLOPT_URL, "http://example.com");
 
@@ -173,7 +173,7 @@ that data yourself in your application.
 
 ## CURLcode return code
 
-Many libcurl funcitons return a CURLcode. That's a special libcurl typedefed
+Many libcurl functions return a CURLcode. That's a special libcurl typedefed
 variable for error codes. It returns CURLE_OK (which has the value zero) if
 everything is fine and dandy and it returns a non-zero number if a problem was
 detected. There are almost one hundred `CURLcode` errors in use, and you can
@@ -213,7 +213,7 @@ applications or debugging libcurl itself, is to enable "verbose mode" with
 When libcurl is told to be verbose it will mention transfer related details
 and information to stderr while the transfer is ongoing. This is awesome to
 figure out why things fail and to learn exactly what libcurl does when you ask
-it different things. You can redirec the output elsewhere by changing stderr
+it different things. You can redirect the output elsewhere by changing stderr
 with `CURLOPT_STDERR` or you can get even more info in a fancier way with the
 debug callback (explained further in a later section).
 

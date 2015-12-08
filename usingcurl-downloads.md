@@ -1,5 +1,13 @@
 ## Downloads
 
+TBD
+
+### What exactly is downloaded?
+
+"my browser shows something else"
+
+TBD
+
 ### Storing downloads
 
 -o

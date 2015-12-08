@@ -1,8 +1,8 @@
 # 9. Using libcurl
 
 The engine in the curl command line tool is libcurl. libcurl is also the
-engine for hundreds ands thousands of tools, services and applications out
-there today that want to do internet data transfers.
+engine in thousands of tools, services and applications out there today,
+performing their internet data transfers.
 
 We have designed libcurl to be "transfer-oriented" usually without forcing
 users to be protocol experts or in fact know much at all about the networking

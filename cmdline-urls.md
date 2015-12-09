@@ -6,8 +6,8 @@ the web address strings, like the ones we usually see prefixed with http:// or
 starting with www.
 
 URL is strictly speaking the former name for this. URI (Uniform Resource
-Identifier) is the more modern and correct name for it. It is defined in
-RFC3986.
+Identifier) is the more modern and correct name for it. Its syntax is defined
+in [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
 
 Where curl accepts a "URL" as input, it is then really a "URI". Most of the
 protocols curl understands also have a corresponding URI syntax document that
@@ -22,20 +22,20 @@ the URL without curl noticing or caring and it will just pass them on.
 
 URLs start with the "scheme", which is the official name for the "http://"
 part. That tells which protocol the URL uses. The scheme must be a known one
-that this version of curl supports or it will show and error message and
-stop. Also note that the scheme must not start with nor contain any white
+that this version of curl supports or it will show an error message and
+stop. Additionally, the scheme must not start with nor contain any white
 space.
 
 ### Without scheme
 
 As a convenience, curl also allows users to leave out the scheme part from
 URLs. Then it guesses which protocol to use based on the first part of the
-host name. That guessing is very basic and just checks if the first part of
-the given host name matches one of a set of protocols, then you probably meant
-that protocol. This heuristics is based on the fact that some servers
-traditionally were named like that. The protocols that are detected this way
-are FTP, DICT, LDAP, IMAP, SMTP and POP3. Any other host name will default to
-HTTP.
+host name. That guessing is very basic as it just checks if the first part of
+the host name matches one of a set of protocols, and assumes you meant to use
+that protocol. This heuristics is based on the fact that servers traditionally
+used to be named like that. The protocols that are detected this way are FTP,
+DICT, LDAP, IMAP, SMTP and POP3. Any other host name in a scheme-less URL will
+make curl default to HTTP.
 
 You can modify the default protocol to something else than HTTP with the
 `--proto-default` option.

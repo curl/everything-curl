@@ -36,6 +36,11 @@ means and function calls, depending on what kind of behavior you want in your
 application and how libcurl is best integrated into your architecture. Those
 are further described later in this chapter.
 
+While the transfer is ongoing, using any of the functions you can use to drive
+the transfer (or in fact transfers - in plural), libcurl calls your specified
+functions - known as *callbacks* - to deliver data, to read data or to do a
+wide variety of things. See further below for callback details.
+
 ## HTTP Cookies
 
 TBD

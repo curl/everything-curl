@@ -21,9 +21,24 @@ the URL without curl noticing or caring and it will just pass them on.
 ### Scheme
 
 URLs start with the "scheme", which is the official name for the "http://"
-part. That tells which protocol the URL uses. As a convenience, curl also
-allows users to leave out the scheme part from URLs. Then it guesses which
-protocol to use based on the first part of the host name.
+part. That tells which protocol the URL uses. The scheme must be a known one
+that this version of curl supports or it will show and error message and
+stop. Also note that the scheme must not start with nor contain any white
+space.
+
+### Without scheme
+
+As a convenience, curl also allows users to leave out the scheme part from
+URLs. Then it guesses which protocol to use based on the first part of the
+host name. That guessing is very basic and just checks if the first part of
+the given host name matches one of a set of protocols, then you probably meant
+that protocol. This heuristics is based on the fact that some servers
+traditionally were named like that. The protocols that are detected this way
+are FTP, DICT, LDAP, IMAP, SMTP and POP3. Any other host name will default to
+HTTP.
+
+You can modify the default protocol to something else than HTTP with the
+`--proto-default` option.
 
 ### Name and password
 

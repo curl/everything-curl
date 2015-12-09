@@ -41,6 +41,16 @@ the transfer (or in fact transfers - in plural), libcurl calls your specified
 functions - known as *callbacks* - to deliver data, to read data or to do a
 wide variety of things. See further below for callback details.
 
+### "Drive" transfers
+
+Easy
+
+multi
+
+multi_socket
+
+TBD
+
 ## HTTP Cookies
 
 TBD

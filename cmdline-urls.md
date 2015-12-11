@@ -104,6 +104,10 @@ directory list from an FTP server is implied with such a slash:
 
     $ curl ftp://ftp.example.com/tmp/
 
+### FTP type
+
+TBD
+
 ### Fragment
 
 URLs offer a "fragment part". That's usually seen as a hash symbol (#) and a

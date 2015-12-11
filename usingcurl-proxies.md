@@ -6,6 +6,10 @@ TBD
 
 TBD
 
+### Non-HTTP protocols over HTTP proxy
+
+TBD
+
 ### SOCKS
 
 socks types

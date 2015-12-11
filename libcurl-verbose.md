@@ -19,3 +19,6 @@ it different things. You can redirect the output elsewhere by changing stderr
 with `CURLOPT_STDERR` or you can get even more info in a fancier way with the
 debug callback (explained further in a later section).
 
+### Trace Everything
+
+TBD

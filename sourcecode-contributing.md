@@ -118,9 +118,22 @@ branch and not in master, just to make it easier for you to update a pull
 request like after review for example, or if you realize it was a dead end and
 you decide to just throw it away.
 
+### Make a patch for the mailing list
+
+Even if you opt to not make a pull request but prefer the old fashioned and
+trusted method of sending a patch to the curl-library mailing list, it is
+still a good to work in a local git branch and commit your changes there.
+
+A branch makes it easy to edit and rebase when you need to change things and
+it makes it easy to keep syncing the master when things are updated upstream.
+
+Once your commits are fine enough to get sent to the mailing list, you just
+create patches with `git format-patch` and send them away. Even more fancy
+users go directly to `git send-email` and have git even send the email itself!
+
 ### git commit style
 
-TBD
+
 
 ### Who decides what goes in?
 

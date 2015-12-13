@@ -56,6 +56,38 @@ TBD
 
 ### HTTP
 
+A HTTP proxy is a proxy that the client speaks HTTP with to get the things
+done. curl will by default assume that a host you point out with `-x` is a
+HTTP proxy, and unless you also specify a port number it will default to port
+3128 (and the reason for that particular port number is purely historical).
+
+If you want to request the example.com web page using a proxy on 192.168.0.1
+port 8080, a command line could look like:
+
+    curl -x 192.168.0.1:8080 http:/example.com/
+
+Recall that the proxy is receiving your request, forwards it to the real
+server, then reads the response from the server and then hand that back to the
+client.
+
+If you enable verbose mode with `-v` when talking to a proxy, you will see
+that curl connects to the proxy instead of the remote server, and you will see
+that it uses a slightly different request line.
+
+### HTTPS and proxy
+
+HTTPS was designed to allow and provide secure and safe end to end privacy
+from the client to the server (and back). In order to provide that when
+speaking to a HTTP proxy, the HTTP protocol has a special request that curl
+uses to setup tunnel through the proxy that it then can encrypt and
+verify. This HTTP method is known as `CONNECT`.
+
+When the proxy tunnels through encrypted data to the remote server after a
+CONNECT method set it up, the proxy cannot see nor modify the traffic without
+breaking it.
+
+### mitm-proxies
+
 TBD
 
 ### Non-HTTP protocols over HTTP proxy
@@ -68,11 +100,11 @@ socks types
 
 TBD
 
-### Proxy authentication
+### Transparent proxies
 
 TBD
 
-### HTTPS and proxy
+### Proxy authentication
 
 TBD
 

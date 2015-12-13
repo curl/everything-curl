@@ -133,7 +133,30 @@ users go directly to `git send-email` and have git even send the email itself!
 
 ### git commit style
 
+When you commit a patch to git, you give it a commit message that describes
+the change you're committing. We have a certain style in the project that we
+ask you to use:
 
+    [area]: [short line describing the main effect]
+
+    [separate the above single line from the rest with an empty line]
+
+    [full description, no wider than 72 columns that describe as much as
+    possible as to why this change is made, and possibly what things
+    it fixes and everything else that is related]
+
+    [Bug: link to source of the report or more related discussion]
+    [Reported-by: John Doe - credit the reporter]
+    [whatever-else-by: credit all helpers, finders, doers]
+
+Don't forget to use `git commit --author="Jane Doe <jane@example.com>"` if you
+commit someone else's work, and make sure that you have your own user and
+email setup correctly in git before you commit!
+
+The author and the *-by: lines are of course there to make sure we give the
+proper credit in the project. We do not want to appear as if we take someone
+else's work without clearly attributing where it comes from. Giving credit is
+of utmost importance!
 
 ### Who decides what goes in?
 

@@ -83,7 +83,40 @@ to get less friction and to reach success faster:
 
 ## git
 
-TBD
+Our preferred source control tool is [git](https://git-scm.com/).
+
+While git is sometimes not the easiest tool to learn and master, all the basic
+steps a casual developer and contributor needs to know are very
+straight-forward and does not take much time or effort to learn.
+
+This book will not help you learn git. All software developers in this day and
+age should learn git anyway.
+
+The curl git tree can be browsed with a web browser on our github page at
+[https://github.com/bagder/curl](https://github.com/bagder/curl).
+
+To check out the curl source code from git, you can clone it like:
+
+    git clone https://github.com/bagder/curl.git
+
+### Pull request
+
+A very popular and convenient way to make your own changes and contribute them
+back to the project is by doing a so called pull request on github.
+
+Then you first create your own version of the source tree, called forking, on
+the github web site. Then you get your own version of the curl git tree that
+you can clone to a local copy.
+
+You edit your own local copy, commit the changes, push them to the git
+repository on github and then on the github web site you can select to create
+a pull request based on your changes done to your local repository clone of
+the original curl repository.
+
+We recommend doing your work meant for a pull request in a dedicated separate
+branch and not in master, just to make it easier for you to update a pull
+request like after review for example, or if you realize it was a dead end and
+you decide to just throw it away.
 
 ### git commit style
 

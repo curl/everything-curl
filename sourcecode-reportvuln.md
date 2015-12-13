@@ -1,3 +1,3 @@
-## Reported vulnerabilities
+## Reporting vulnerabilities
 
 TBD

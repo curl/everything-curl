@@ -53,7 +53,33 @@ will be thrilled to receive it and merge it as soon as possible!
 
 ### What not to add
 
-TBD
+There isn't any good rules to say what features you can't add or that we will
+never accept, but let me instead try to mention a few things you should avoid
+to get less friction and to reach success faster:
+
+- Do not write up a huge page first and then send it to the list for
+  discussion. Always start out by discussing on the list, and send your
+  initial reviews early to get feedback on your design and approach. It saves
+  you from wasting a lot of time going down a route that might need rewriting
+  in the end anyway!
+
+- When introducing things in the code you need to follow the style and
+  architecture that already exists. When you add code to the ordinary transfer
+  code path, it must for example work asynchronously in a non-blocking
+  manner. We will not accept new code that introduces new blocking
+  behaviors. We already have too many of those that we haven't managed to
+  remove yet.
+
+- Quick hacks or dirty solutions that have a high risk of not working on
+  platforms you don't run or achitectures you don't know. We don't care if
+  you're in a hurry or that it works for you. We do not accept high risk code
+  or code that is hard to read or understand.
+
+- Code that breaks the build. Sure, we accept that we sometimes have to add
+  code to certain areas that makes the new functionality perhaps depend on a
+  specific 3rd party library or a specific operating system and similar, but
+  we can **never** do that at the expence of all other systems. We don't break
+  the build, and we make sure all tests keep running succesfully.
 
 ## git
 

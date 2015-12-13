@@ -35,7 +35,18 @@ TBD: screenshots of how to find proxy in Firefox and Chrome?
 
 ### PAC
 
+Some network environment provides several different proxies that should be
+used in different situations, and a very customizable way to handle that is
+supported by the browsers. This is called "proxy auto-config", or PAC.
 
+A PAC file contains a javascript functions that deems which proxy a given
+network connection should use, or even if it should not use a proxy. Browsers
+most typically read the PAC file off a URL on the local network.
+
+Since curl has no javascript capabilities, curl doesn't support PAC files. If
+your browser and network use PAC files, the easiest route forward is usually
+to read the PAC file manually and figure out the proxy you need to specify to
+run your curl command line successfully.
 
 ### Captive portals
 

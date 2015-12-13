@@ -160,4 +160,27 @@ of utmost importance!
 
 ### Who decides what goes in?
 
-TBD
+First, it might not be obvious to everyone but there is of course only a
+limited set of people that can actually merge commits into the actual official
+git repository. Let's call them the core team.
+
+Everyone else can fork off their own curl repository to which they can commit
+and push changes and host them online and build their own curl versions from
+and so on, but in order to get changes into the *official* repo they need to
+be pushed by a trusted person.
+
+The core team is a small set of curl developers who have been around for a
+several years and that have shown that they are skilled developers and that
+they fully comprehent the values and the style of development we do in this
+project. They are some of the people listed in the [The development
+team](curl-devteam.md) section.
+
+You can always bring a discussion to the mailing list and motivate why you
+think your changes should get accepted, or perhaps even object to other
+changes that are getting in and similar. You can even suggest yourself or
+someone else to be given "push rights" and become one of the selected few in
+that team.
+
+Daniel remains the project leader and while it is very rarely needed, he has
+the final say in debates that don't seem to sway in either direction or fail
+to reach some sort of consensus.

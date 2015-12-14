@@ -18,11 +18,12 @@ a set of source files. The sources files are preprocessed with what is
 basically a souped-up a C preprocessor called
 [fcpp](http://daniel.haxx.se/projects/fcpp/) and a set of perl scripts. The
 man pages get converted to HTML with
-[roffit](http://daniel.haxx.se/projects/roffit/). Make sure fcpp, perl and
-roffit are in your $PATH.
+[roffit](http://daniel.haxx.se/projects/roffit/). Make sure fcpp, perl, roffit
+and curl are all in your $PATH.
 
-Once you've cloned the git repo, you can build the web site locally with
-`make` in the source root tree.
+Once you've cloned the git repo the first time, invoke `sh bootstrap.sh` once
+to get a symlink and some some initial local files setup, and then you can
+build the web site locally by invoking `make` in the source root tree.
 
 Note that this doesn't make you a complete web site mirror, as some scripts
 and files are only available on the real actual site, but should give you

@@ -21,5 +21,5 @@ secsize=`echo "$words/$content" | bc`
 echo "Words per section: $secsize"
 echo "Completeness: $complete %"
 
-left=`echo "(100-$complete) * $words / 100" | bc`
+left=`echo "$tbd * $secsize" | bc`
 echo "Estimated number of words left: $left"

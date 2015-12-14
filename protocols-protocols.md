@@ -79,4 +79,38 @@ curl to adapt and change.
 
 ## About adhering to standards and who's right
 
-TBD
+Generally, there are protocol specs that tell us how to send and receive data
+for specific protocols. The protocol specs we follow are RFCs put together and
+pubished by IETF.
+
+Some protocols are not properly documented in a final RFC, like for example
+SFTP for which our implemenation is based on an internet-draft that isn't even
+the last available one.
+
+Protocols are however spoken by two parties and like in any given
+conversation, there are then two sides of understanding something or
+interpreting the given instructions in a spec. Also, lots of network software
+is written without the authors paying very close attention to the spec so they
+end up taking some shortcuts every where and there or perhaps they just
+interpreted the text differently. Sometimes even plain mistakes and bugs make
+software behave in ways that are not mandated by the spec and sometimes even
+downright forbidden in the specs.
+
+In the curl project we use the published specs as rules on how to act until we
+learn anything else. If popular alternative implementations act differently
+than what we think the spec says and that alternative behavior is what works
+widely on the big Internet, then chances are we will change foot and instead
+decide to act like those others. If a server refuses to talk with us when we
+think we follow the spec but works fine when we bend the rules every so
+slightly, then we probably end up bending them exactly that way - if we can
+still work successfully with other implementations.
+
+Ultimately, it is a personal decision and up for discussion in every case
+where we think a spec and the real world don't align.
+
+In the worst cases we introduce options to let application developers and curl
+users have the final say on what curl should do. I say worst because it is
+often really tough to ask users to make these decisions as it is usually very
+tricky details and weirdness going on and it is a lot to ask of users. We
+should always do our very best to avoid pushing such protocol decisions to
+users.

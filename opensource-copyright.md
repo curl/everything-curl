@@ -9,6 +9,16 @@ foundation which the licensing works on.
 
 Daniel Stenberg is the owner of most copyrights in the curl project.
 
+## Independent
+
+A lot of open source projects are run within umbrella organisations. Such
+organisations include the GNU project, the Apache Software Foundation, a
+larger company that funds the project or similar. The curl project is not part
+of any such larger organization but is completely independent and free.
+
+No company is controlling its destiny and the curl project does not need to
+follow any umbrella organization's guidelines.
+
 ## Legal
 
 The curl project obeys to national laws in which it works. It being a highly

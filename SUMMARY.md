@@ -28,7 +28,7 @@
     * [Protocols](protocols-protocols.md)
 * [Command line basics](cmdline.md)
     * [Command line options](cmdline-options.md)
-    * [Options depends on version](cmdline-versions.md)
+    * [Options depend on version](cmdline-versions.md)
     * [URLs](cmdline-urls.md)
     * [URL globbing](cmdline-globbing.md)
     * [List options](cmdline-listopts.md)

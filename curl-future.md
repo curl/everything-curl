@@ -1,5 +1,7 @@
 ## Future
 
+![curl future](devgraph-800.png)
+
 There's no slow down in sight in the curl's future, bugs reported, development
 pace or how Internet protocols are being developed or updated.
 

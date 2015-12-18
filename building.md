@@ -101,6 +101,10 @@ TBD
 
 TBD
 
+### static linking
+
+TBD
+
 ## Windows
 
 TBD

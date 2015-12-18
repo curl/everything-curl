@@ -65,4 +65,23 @@ both the web server and the mail server:
 
 ### Output variables for globbing
 
-TBD
+In all the globbing examples previously in this chapter we've selected to use
+the `-O / --remote-name` option, which makes curl save the target file using
+the file name part of the used URL.
+
+Sometimes that is not enough. You're downloading multiple files and maybe you
+want to save them in a different subdirectory or create the saved file names
+differently. curl of course has a solution for these situations as well:
+output file name variables.
+
+Each "glob" used in a URL gets a separate variable. They're referenced as
+'#[num]' - that means the single letter '#' followed by the glob number which
+starts with 1 for the first glob and ends with the last glob.
+
+Save the main pages of two different sites:
+
+   $ curl http://{one,two}.example.com -o "file_#1.txt"
+
+Save the outputs from a command line with two globs in a subdirectory;
+
+   $ curl http://{site,host}.host[1-5].example.com -o "subdir/#1_#2"

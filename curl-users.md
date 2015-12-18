@@ -1,5 +1,7 @@
 ## Users of curl
 
+![one billion users](one-billion-users.jpg)
+
 We use to say that there are a billion users of curl. It makes a good line to
 say but in reality we of course don't have any numbers that exact. We just
 estimate and guess based on observations and trends. It also depends on

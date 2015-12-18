@@ -22,10 +22,6 @@ TBD
 
 TBD
 
-### Progress meter
-
-TBD
-
 ### Several downloads
 
 TBD

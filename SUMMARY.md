@@ -38,6 +38,7 @@
 * [Using curl](usingcurl.md)
     * [Verbose](usingcurl-verbose.md)
     * [Downloads](usingcurl-downloads.md)
+    * [Uploads](usingcurl-uploads.md)
     * [.netrc](usingcurl-netrc.md)
     * [Proxies](usingcurl-proxies.md)
     * [HTTP](usingcurl-http.md)

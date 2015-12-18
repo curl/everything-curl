@@ -18,11 +18,11 @@ handling the actual data that is transferred. It has for example no knowledge
 about HTML or anything else of the content that is popular to transfer over
 HTTP, but it knows all about how to transfer such data over HTTP.
 
-Both products are frequently used not only to drive thousands or millions
-scripts and applications for an internet connection world, but also for a lot
-of server testing, protocol fiddling and trying out new things.
+Both products are frequently used not only to drive thousands or millions of
+scripts and applications for an Internet connected world, but they're also
+widely used for server testing, protocol fiddling and trying out new things.
 
-The library is used in every imaginable sort of embedded device where internet
+The library is used in every imaginable sort of embedded device where Internet
 transfers are needed: car infotainment, televisions, blurayplayers, settop
 boxes, printers, routers, game systems etc.
 

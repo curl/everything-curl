@@ -27,10 +27,15 @@ This book project started at the end of September 2015. I have a basic layout
 plan for a first "edition". While I have no fixed time schedule for this, my
 hope is to have something decent by the summer 2016.
 
-## The book site
+## The book sites
 
-There will be a web site dedicated for this book. It is not made nor available
-yet, as there really is not enough content to show off to anyone yet anyway.
+**bookcurl.haxx.se** is the home of book. It features easy accessible links to
+read the book online in a web version or download a copy for offline reading using
+one of the many different versions offered.
+
+**ec.haxx.se** is a shortcut to the HTML version of the book.
+
+**https://github.com/bagder/everything-curl** hosts all the book content.
 
 ## The Author
 

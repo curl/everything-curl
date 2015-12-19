@@ -15,8 +15,9 @@ library, the URL globbing feature is not!
 
 ### Numerical ranges
 
-You can ask for a numerical range with [N-M] syntax. For example, you can ask
-for 100 images one by one that are named numerically:
+You can ask for a numerical range with [N-M] syntax, where N is the start
+index and it goes up to and including M. For example, you can ask for 100
+images one by one that are named numerically:
 
     $ curl -O http://example.com/[1-100].png
 

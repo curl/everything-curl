@@ -150,7 +150,29 @@ first lines of tracing look like:
 
 ### --trace-time
 
-TBD
+This options prefixes all verbose/trace outputs with a high resolution timer
+for when the line is printed. It works with the regular `-v / --verbose`
+option as well as with `--trace` and `--trace-ascii`.
+
+An example could look like this:
+
+    $ curl -v --trace-time http://example.com
+    23:38:56.837164 * Rebuilt URL to: http://example.com/
+    23:38:56.841456 *   Trying 93.184.216.34...
+    23:38:56.935155 * Connected to example.com (93.184.216.34) port 80 (#0)
+    23:38:56.935296 > GET / HTTP/1.1
+    23:38:56.935296 > Host: example.com
+    23:38:56.935296 > User-Agent: curl/7.45.0
+    23:38:56.935296 > Accept: */*
+    23:38:56.935296 > 
+    23:38:57.029570 < HTTP/1.1 200 OK
+    23:38:57.029699 < Accept-Ranges: bytes
+    23:38:57.029803 < Cache-Control: max-age=604800
+    23:38:57.029903 < Content-Type: text/html
+    ---- snip ----
+
+The lines are all the local time as hours:minutes:seconds and then number of
+milliseconds in that second.
 
 ### --write-out
 

@@ -30,6 +30,11 @@ in the same command line you can see it use more connections, or reuse
 connections and then the connection counter may increase or not increase
 depending on what curl decides it needs to do.
 
+If we use a HTTPS:// URL instead of a HTTP one, there will also be a whole
+bunch of lines explaining how curl uses CA certs to verify the server's
+certificate and some details from the server's certificate etc. Including
+which ciphers were selected and more TLS details.
+
 In addition to the added information given from curl internals, the -v verbose
 mode will also make curl show all headers it sends and receives. For protocols
 without headers (like FTP, SMTP, POP3 and so on), we can consider commands and

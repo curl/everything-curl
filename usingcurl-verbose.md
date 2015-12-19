@@ -151,3 +151,7 @@ first lines of tracing look like:
 ### --trace-time
 
 TBD
+
+### --write-out
+
+TBD

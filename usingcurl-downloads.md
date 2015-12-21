@@ -208,4 +208,22 @@ But a browser getting a URL does so much more and in so many different ways
 than curl, so what curl shows in your terminal output is probably not at all
 what you see in your browser window.
 
+#### Client differences
+
+Curl only gets exactly what you ask it to get and it never parses the actual
+content, the data, that the server delivers. A browser gets data and it
+activates different parsers depending on what kind of content it thinks it
+gets. For example, if the data is HTML it will parse it to display a web page
+and possibly download other sub resources such as images, javascript and CSS
+files. When curl downloads a HTML it will just get that single HTML resources,
+even if it when parsed by a browser would cause a whole busload of more
+downloads. If you want curl to download any subresources as well, you need to
+pass those URLs to curl and ask it to get those, just like any other URLs.
+
+#### Server differences
+
+TBD
+
+#### Intermediate fiddlings
+
 TBD

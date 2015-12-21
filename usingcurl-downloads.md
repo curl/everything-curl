@@ -220,6 +220,12 @@ even if it when parsed by a browser would cause a whole busload of more
 downloads. If you want curl to download any subresources as well, you need to
 pass those URLs to curl and ask it to get those, just like any other URLs.
 
+Clients also differ in how they send their requests, and some aspects of a
+requests for a resource includes for example format perferences, asking for
+compressed data or just telling the server from which previous page we're
+"coming from". curl's requests will differ a little or a lot from how your
+browser sends its requests.
+
 #### Server differences
 
 TBD

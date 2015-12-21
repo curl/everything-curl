@@ -228,7 +228,23 @@ browser sends its requests.
 
 #### Server differences
 
-TBD
+The server that receives the request and deliver data is often setup to act in
+certain ways depending on what kind of client it thinks communicates with it.
+Sometimes it is as innocent as trying to deliver the best content for the
+client, sometimes it is to hide some content for some content or even to try
+to work-around known problems in specific browsers. Then there's also of
+course various kind of login systems that might rely on HTTP authentication or
+cookies or the client being from the pre-validated IP address range.
+
+Sometimes getting the same response from a server using curl as the response
+you get with a browser ends up really hard work. Users then typically record
+their browser sessions with the browser's networking tools and then compare
+that recording with recorded data with curl's `--trace-ascii` option and the
+proceed to modify curl's requests (often with `-H / --header`) until the
+server starts to respond the same to both.
+
+This type of work can be both time consuming and tedious. You should always do
+this with permission from the server owners or admins.
 
 #### Intermediate fiddlings
 

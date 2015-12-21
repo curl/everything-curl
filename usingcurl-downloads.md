@@ -103,9 +103,38 @@ way, so you may end up with a URL encoded file name where a brower would
 otherwise decode it to something more readable using a for you a sensible
 character set.
 
-### --compressed
+### Compression
 
-TBD
+curl allows you to ask HTTP and HTTPS servers to provide compressed versions
+of the URL and then perform automatic decompression of it on arrival. In
+situations where bandwidth is more limited than CPU this will help you receive
+more data in a shorter amount of time.
+
+HTTP compression can be done using two different mechanisms. One which might
+be considered "The Right Way" and the other that is the way that everyone is
+using and is the widespread and popular way to do it! The common way to
+compress HTTP content is using the Content-Encoding header. You ask curl to
+use this with the `--compressed` option.
+
+    $ curl --compressed http://example.com/
+
+With this option enabled and if the server support it, it delivers the data in
+a compressed way and curl will decompress it before saving it or sending it to
+stdout. This usually means that as a user you don't really see or experience
+the compression other than possibly a faster transfer.
+
+The `--compressed` option asks Content-Encoding compression using one of the
+supported compression algorithms. There's also the rarer Tranfer-Encoding
+method, which is the method that was created for this automated method but was
+never really widely adopted. You can tell curl to ask for tranfer-encoded
+compression with `--tr-encoding`:
+
+    $ curl --tr-encoding http://example.com/
+
+In theory there's nothing that prevents you from using both in the same
+command line, although in practise you may then experience that some servers
+get a little confused when ask to compress in two different ways. It's
+generally safer to just pick one.
 
 ### shell redirects
 

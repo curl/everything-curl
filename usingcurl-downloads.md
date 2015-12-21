@@ -192,7 +192,12 @@ download multiple URLs, use more of them:
 
 ### --remote-name-all
 
-TBD
+As a reaction to use two think adding a hundred `-O` options when using a
+hundred URLs, we introduced an option called `--remote-name-all`. This makes
+`-O` the default operation for all given URLs. You can still provide
+individual "storage instructions" for URLs but if you leave one out for a URL
+that gets downloaded, the default action is then switched from stdout to -O
+style.
 
 ### "my browser shows something else"
 

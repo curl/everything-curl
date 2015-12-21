@@ -172,7 +172,7 @@ An example could look like this:
     ---- snip ----
 
 The lines are all the local time as hours:minutes:seconds and then number of
-milliseconds in that second.
+miroseconds in that second.
 
 ### --write-out
 

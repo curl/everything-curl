@@ -9,8 +9,9 @@ data onto your machine, pointed out by a URL.
 
 ### What exactly is downloaded?
 
-You specify the resource to download by giving curl a URL. The URL identifies
-what to download.
+You specify the resource to download by giving curl a URL. curl defaults to
+downloading a URL unless told otherwise. The URL identifies what to
+download. In this example the URL to download is "https://example.com":
 
     $ curl http://example.com
 
@@ -23,8 +24,8 @@ data and then that data is delivered.
 A request for a resource is protocol specific so a FTP:// URL works
 differently than a HTTP:// URL or an SFTP:// URL.
 
-A URL without a path part, that is that has a host name part only like the
-"http://example.com" example above, will get a slash ('/') appended to it
+A URL without a path part, that is a URL that has a host name part only like
+the "http://example.com" example above, will get a slash ('/') appended to it
 internally and then that is the resource curl will ask for from the server.
 
 If you specify multiple URLs on the command line, curl will download each URL

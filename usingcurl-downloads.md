@@ -12,7 +12,7 @@ data onto your machine, pointed out by a URL.
 You specify the resource to download by giving curl a URL. The URL identifies
 what to download.
 
-   $ curl http://example.com
+    $ curl http://example.com
 
 The URL is broken down into its individual components ([as explained
 elsewhere](cmdline-urls.md)), the correct server is contacted and is then

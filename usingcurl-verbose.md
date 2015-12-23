@@ -178,6 +178,13 @@ An example could look like this:
 The lines are all the local time as hours:minutes:seconds and then number of
 miroseconds in that second.
 
+### HTTP/2
+
+When doing file transfers using version two of the HTTP protocol, HTTP/2, curl
+sends and receives **compressed** headers. So to display outgoing and incoming
+HTTP/2 headers in a readable and understandable way, curl will actually show
+the uncompressed versions in a style similar to how they appear with HTTP/1.1.
+
 ### --write-out
 
 TBD

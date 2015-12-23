@@ -9,19 +9,19 @@ show a lot more of its doings. It will add informational tests and prefix them
 with '*'. For example, let's see what curl might say when trying a simple HTTP
 example (saving the downloaded data in the file called 'saved'):
 
-   $ curl -v http://example.com -o saved
-   * Rebuilt URL to: http://example.com/
+    $ curl -v http://example.com -o saved
+    * Rebuilt URL to: http://example.com/
 
 Ok so we invoked curl with a URL that it considers a incomplete so it helps us
 and it adds a trailing slash before it moves on.
 
-   *   Trying 93.184.216.34...
+    *   Trying 93.184.216.34...
 
 This tells us curl now tries to connect to this IP address. It means the name
 'example.com' has been resolved to one or more addresses and this is the first
 (and possibly only) address curl will try to connect to.
 
-   * Connected to example.com (93.184.216.34) port 80 (#0)
+    * Connected to example.com (93.184.216.34) port 80 (#0)
 
 It worked. curl connected to the site and here it explains how the name maps
 to the IP address and on which port it has connected to. The '(#0)' part is

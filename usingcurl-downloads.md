@@ -41,10 +41,10 @@ another program or similar, but it is not always the optimial way to deal with
 your downloads.
 
 Tell curl a specific file name to save the download in with `-o [filename]`
-(with "--output" as the long version of the option), where filename is either
+(with `--output` as the long version of the option), where filename is either
 just a file name, a relative path to a file name or a full path to the file.
 
-Also note that you can put the -o before or after the URL, it makes no
+Also note that you can put the `-o` before or after the URL, it makes no
 difference.
 
     $ curl -o output.html http://example.com/
@@ -63,7 +63,7 @@ follow!
 
 Many URLs however already contain the file name part in the rightmost
 end. curl lets you use that as a shortcut so you don't have to repeat it with
--o. So instead of:
+`-o`. So instead of:
 
     $ curl -o file.html http://example.com/file.html
 
@@ -71,7 +71,7 @@ You can save the remove URL resource into the local file 'file.html' with this:
 
     $ curl -O http://example.com/file.html
 
-This is the `-O` (upperase letter o) option, or --remote-name for the long
+This is the `-O` (upperase letter o) option, or `--remote-name` for the long
 name version. The -O option selects the local file name to use by picking the
 file name part of the URL that you provide. This is important. You specify the
 URL and curl picks the name from this data. If the site redirects curl further
@@ -83,8 +83,8 @@ curl will use for storing this.
 HTTP servers have the option to provide a header named `Content-Disposition:`
 in responses. That header may contain a suggested file name for the contents
 delivered, and curl can be told to use that hint to name its local file. The
-`-J / --remote-header-name` enables this, if you also use the -O option - and
-it then makes curl use the file name from the URL by default and only *if*
+`-J / --remote-header-name` enables this, if you also use the `-O` option -
+and it then makes curl use the file name from the URL by default and only *if*
 there's actually a valid Content-Disposition header arriving, it switches to
 saving using that name.
 

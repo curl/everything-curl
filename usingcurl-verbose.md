@@ -98,6 +98,10 @@ exact file length. (It won't always be present in responses.)
 There are times when `-v` is not enough. In particular when you want to store
 the complete stream, including the actual transfered data.
 
+For situations when curl does encrypted file transfers with protocols such as
+HTTPS, FTPS or SFTP, other network monitoring tools (like Wireshark or
+tcpdump) won't be able to do this job as easily for you.
+
 For this, curl offers two other options that you use instead of `-v`.
 
 `--trace [filename]` will save a full trace in the given file name. You can

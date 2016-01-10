@@ -19,17 +19,21 @@ lines of code, but applications will of course need more code than so.
 
 The fundamentals you need to learn with libcurl:
 
-- First you create an "easy handle", which is your handle to a transfer
-  really.
+First you create an "easy handle", which is your handle to a transfer really.
 
-- Then you set several options for that handle, that controls how the upcoming
-  transfer will pan out.
+    CURL *curl_handle = curl_easy_init();
 
-- Finally you fire off the transfer.
+Then you set several options for that handle, that controls how the upcoming
+transfer will pan out.
+
+    /* set URL to operate on */
+    res = curl_easy_setopt( curl_handle, CURLOPT_URL, "http://example.com/");
+
+Finally you fire off the transfer.
 
 After the transfer has completed, you can figure out if it succeeded or not
-and you can extract stats and various information that libcurl gathered
-during the transfer.
+and you can extract stats and various information that libcurl gathered during
+the transfer. (See curl_easy_getinfo description.)
 
 The actual "perform the transfer phase" can be done using different different
 means and function calls, depending on what kind of behavior you want in your

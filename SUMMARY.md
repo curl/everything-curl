@@ -51,7 +51,7 @@
     * [curl examples](curlexamples.md)
 * [How to HTTP with curl](http.md)
 * [Building and installing](building.md)
-* [Using libcurl](libcurl.md)
+* [libcurl basics](libcurl.md)
     * [API compatibility](libcurl-api.md)
     * [--libcurl](libcurl--libcurl.md)
     * [Header files](libcurl-headers.md)

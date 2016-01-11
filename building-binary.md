@@ -1,6 +1,12 @@
 ## Installing prebuilt binaries
 
-TBD
+There are many friendly people and organizations who put together binary
+packages of curl and libcurl and make them available for download.
+
+Many operating systems offer a "package repository" that is populated with
+software packages for you to install. From the [curl download
+page](http://curl.haxx.se/download.html) you can also follow links to plain
+binary packages for popular operating systems.
 
 ## Installing from your package repository
 
@@ -53,5 +59,13 @@ etc) with this:
 backend.)
 
 ### homebrew
+
+TBD
+
+### cygwin
+
+TBD
+
+## Binary packages for Windows
 
 TBD

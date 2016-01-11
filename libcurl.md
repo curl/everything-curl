@@ -23,8 +23,8 @@ First you create an "easy handle", which is your handle to a transfer really.
 
     CURL *curl_handle = curl_easy_init();
 
-Then you set various options in that handle, to control how the upcoming
-transfer. Like this example sets the URL:
+Then you set various options in that handle, to control the upcoming transfer.
+Like this example sets the URL:
 
     /* set URL to operate on */
     res = curl_easy_setopt( curl_handle, CURLOPT_URL, "http://example.com/");

@@ -167,8 +167,8 @@ codes*) :
         timeout = 1000;
 
       /* convert to struct usable by select */
-      timeout.tv_sec = curl_timeo / 1000;
-      timeout.tv_usec = (curl_timeo % 1000) * 1000;
+      timeout.tv_sec = timeout / 1000;
+      timeout.tv_usec = (timeout % 1000) * 1000;
 
       FD_ZERO(&fdread);
       FD_ZERO(&fdwrite);

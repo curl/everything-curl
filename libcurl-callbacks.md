@@ -44,6 +44,11 @@ The data passed to this function will not be zero terminated! You cannot for
 example use printf's "%s" operator to display the contents nor strcpy to copy
 it.
 
+This callback should return the number of bytes actually taken care of. If
+that amount differs from the amount passed to your callback function, it'll
+signal an error condition to the library. This will cause the transfer to get
+aborted and the libcurl function used will return `CURLE_WRITE_ERROR`.
+
 The user pointer passed in to the callback in the *userdata* argument is set
 with CURLOPT_WRITEDATA:
 

@@ -92,14 +92,6 @@ TBD
 
 TBD
 
-## HTTP Cookies
-
-TBD
-
-## HTTP multipart formposts
-
-TBD
-
 ## Connection reuse
 
 TBD

@@ -61,5 +61,6 @@
     * [CURLcode return codes](libcurl-curlcode.md)
     * [Verbose operations](libcurl-verbose.md)
     * [libcurl examples](libcurlexamples.md)
+* [HTTP with libcurl](libcurl-http.md)
 * [Bindings](bindings.md)
 * [libcurl internals](internals.md)

@@ -1,4 +1,4 @@
-# 1. About this book
+# Introduction
 
 _Everything curl_ is meant to become the complete guide to everything there is
 to know about curl, the project, the command line tool, the library, how

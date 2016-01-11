@@ -54,6 +54,7 @@
 * [libcurl basics](libcurl.md)
     * [Callbacks](libcurl-callbacks.md)
     * [API usage](libcurl-usingapi.md)
+    * [Post transfer info](libcurl-getinfo.md)
     * [API compatibility](libcurl-api.md)
     * [--libcurl](libcurl--libcurl.md)
     * [Header files](libcurl-headers.md)

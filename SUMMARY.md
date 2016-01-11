@@ -53,6 +53,7 @@
 * [Building and installing](building.md)
 * [libcurl basics](libcurl.md)
     * [Callbacks](libcurl-callbacks.md)
+    * [API usage](libcurl-usingapi.md)
     * [API compatibility](libcurl-api.md)
     * [--libcurl](libcurl--libcurl.md)
     * [Header files](libcurl-headers.md)

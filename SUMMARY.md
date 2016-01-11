@@ -51,6 +51,7 @@
     * [curl examples](curlexamples.md)
 * [How to HTTP with curl](http.md)
 * [Building and installing](building.md)
+    * [Dependencies](building-deps.md)
 * [libcurl basics](libcurl.md)
     * [Easy handle](libcurl-easyhandle.md)
     * [Drive transfers](libcurl-drive.md)

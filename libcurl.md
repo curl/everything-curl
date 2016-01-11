@@ -32,7 +32,7 @@ This makes libcurl behaviors easier to guess and depend on, and also it makes
 it easier to maintain old behavior and add new features. Only applications
 that actually ask for and use the new features will get that behavior.
 
-## Basic design
+## Easy handle
 
 The fundamentals you need to learn with libcurl:
 

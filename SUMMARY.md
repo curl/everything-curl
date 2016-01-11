@@ -52,6 +52,7 @@
 * [How to HTTP with curl](http.md)
 * [Building and installing](building.md)
 * [libcurl basics](libcurl.md)
+    * [Easy handle](libcurl-easyhandle.md)
     * [Drive transfers](libcurl-drive.md)
     * [Connection reuse](libcurl-connectionreuse.md)
     * [Callbacks](libcurl-callbacks.md)

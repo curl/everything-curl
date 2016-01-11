@@ -31,33 +31,3 @@ by default but you need to tell it.
 This makes libcurl behaviors easier to guess and depend on, and also it makes
 it easier to maintain old behavior and add new features. Only applications
 that actually ask for and use the new features will get that behavior.
-
-## Easy handle
-
-The fundamentals you need to learn with libcurl:
-
-First you create an "easy handle", which is your handle to a transfer really.
-
-    CURL *easy_handle = curl_easy_init();
-
-Then you set various options in that handle, to control the upcoming transfer.
-Like this example sets the URL:
-
-    /* set URL to operate on */
-    res = curl_easy_setopt( easy_handle, CURLOPT_URL, "http://example.com/");
-
-Finally you fire off the actual transfer.
-
-The actual "perform the transfer phase" can be done using different different
-means and function calls, depending on what kind of behavior you want in your
-application and how libcurl is best integrated into your architecture. Those
-are further described later in this chapter.
-
-After the transfer has completed, you can figure out if it succeeded or not
-and you can extract stats and various information that libcurl gathered during
-the transfer. (See curl_easy_getinfo description.)
-
-While the transfer is ongoing, libcurl calls your specified functions - known
-as *[callbacks](libcurl-callbacks.md])* - to deliver data, to read data or to
-do a wide variety of things.
-

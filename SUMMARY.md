@@ -52,6 +52,7 @@
 * [How to HTTP with curl](http.md)
 * [Building and installing](building.md)
 * [libcurl basics](libcurl.md)
+    * [Callbacks](libcurl-callbacks.md)
     * [API compatibility](libcurl-api.md)
     * [--libcurl](libcurl--libcurl.md)
     * [Header files](libcurl-headers.md)

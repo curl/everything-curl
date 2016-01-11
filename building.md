@@ -28,3 +28,10 @@ for your environment, or you need to build it yourself from source.
 
 The curl project also provides info about the latest version in a somewhat
 more machine-readable format on this URL: `http://curl.haxx.se/info`.
+
+## off git!
+
+Of course, when building from source you can also always opt to build the very
+latest version that exist in the [git
+repository](https://github.com/bagder/curl). It could however be a bit more
+fragile and probably requires slightly more attention to detail.

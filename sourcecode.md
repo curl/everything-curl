@@ -17,3 +17,10 @@ originally uploaded there by the curl team.
 If you instead rather work directly with the curl source code off our source
 code repository, you find all details in [the curl github
 repo](https://github.com/bagder/curl/).
+
+## Clone the code
+
+    git clone https://github.com/bagder/curl.git
+
+This will get the latest curl code downloaded and unpacked in a directory on
+your local system.

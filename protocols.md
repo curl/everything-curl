@@ -1,4 +1,4 @@
-# 5. Network and protocols
+# Network and protocols
 
 Before diving in and talking about how to use curl to get things done, let's
 take a look at what all this networking is and how it works. Using

@@ -1,4 +1,4 @@
-# 7. Using curl
+# Using curl
 
 Previous chapters have described some basic details on what curl is and
 something about the basic command lines. You use command line options and you

@@ -1,4 +1,4 @@
-# 3. Open Source
+# Open Source
 
 ## What is open source
 

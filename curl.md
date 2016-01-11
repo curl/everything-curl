@@ -1,4 +1,4 @@
-# 2. The cURL project
+# The cURL project
 
 ![curl logo](curl-logo.jpg)
 

@@ -1,4 +1,4 @@
-# 6. Command line
+# Command line basics
 
 curl started out as a command line tool and it has been invoked from shell
 prompts and from within scripts by thousands of users over the years. curl has

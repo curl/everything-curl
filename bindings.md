@@ -1,4 +1,4 @@
-# 10. Bindings
+# Bindings
 
 TBD
 

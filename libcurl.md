@@ -59,8 +59,9 @@ the transfer. (See curl_easy_getinfo description.)
 
 While the transfer is ongoing, using any of the functions you can use to drive
 the transfer (or in fact transfers - in plural), libcurl calls your specified
-functions - known as *callbacks* - to deliver data, to read data or to do a
-wide variety of things. See further below for callback details.
+functions - known as *[callbacks](libcurl-callbacks.md])* - to deliver data,
+to read data or to do a wide variety of things. See further below for callback
+details.
 
 ### "Drive" transfers
 
@@ -113,38 +114,3 @@ TBD
 
 TBD
 
-## Easy API
-
-TBD
-
-### Easy examples
-
-TBD
-
-## Multi API
-
-TBD
-
-### Multi examples
-
-TBD
-
-## multi_socket API
-
-TBD
-
-### multi_socket examples
-
-TBD
-
-## Multi-threading
-
-TBD
-
-## Common mistakes
-
-TBD
-
-## When things don't run the way you thought they would
-
-TBD

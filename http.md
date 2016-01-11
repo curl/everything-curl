@@ -1,10 +1,59 @@
 # How to HTTP with curl
 
-TBD
+In all user surveys and during all curl's lifetime, HTTP has been the most
+important and most frequently used protocol that curl supports. This chapter
+will explain how to do effective HTTP transfers and general fiddling with
+curl.
+
+This will mostly work the same way for HTTPS, as they're really the same thing
+under the hood, as HTTPS is HTTP with an extra security TLS layer. See also
+the specific [HTTPS](https) section below.
 
 ### Protocol basics
  
-TBD
+(This assumes you've read the [Network and protocols](protocols.md) section or
+are otherwise already familiar with protocols.)
+
+HTTP is a protocol that is easy to learn the basics of. A client connects to a
+server - and it is always the client that takes the initiative, sends a
+request and receives a response. Both the request and the response consist of
+headers and a body. There can be little or a lot of information going in both
+directions.
+
+A HTTP request sent by a client starts with a request-line, followed by
+headers and then optionally a body. The most common HTTP request is probably
+the GET request which asks the server to return a specific resource and it
+does not contain a body.
+
+When a client connects to 'example.com' and asks for the '/' resource, it
+sends a GET without a request body:
+
+    GET / HTTP/1.1
+    User-agent: curl/2000
+    Host: example.com
+
+... the server could respond with something like below, with response headers
+and a response body ('hello'). The first line in the response also contains
+the response code and the specific version the server supports:
+
+    HTTP/1.1 200 OK
+    Server: example-server/1.1
+    Content-Length: 5
+    Content-Type: plain/text
+
+    hello
+
+If the client would instead send a request with a small request body
+('hello'), it could look like this:
+
+    POST / HTTP/1.1
+    Host: example.com
+    User-agent: curl/2000
+    Content-Length: 5
+
+    hello
+
+A server always responds to a HTTP request unless something is wrong.
 
 #### Size of a HTTP response
 

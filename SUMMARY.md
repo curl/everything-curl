@@ -1,4 +1,3 @@
-* [About this book](intro.md)
 * [The cURL project](curl.md)
     * [How it started](curl-started.md)
     * [The name](curl-name.md)

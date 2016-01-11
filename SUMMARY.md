@@ -52,6 +52,7 @@
 * [How to HTTP with curl](http.md)
 * [Building and installing](building.md)
 * [libcurl basics](libcurl.md)
+    * [Connection reuse](libcurl-connectionreuse.md)
     * [Callbacks](libcurl-callbacks.md)
     * [API usage](libcurl-usingapi.md)
     * [Post transfer info](libcurl-getinfo.md)

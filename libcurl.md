@@ -198,7 +198,3 @@ that transfer.
 
 TBD
 
-## Connection reuse
-
-TBD
-

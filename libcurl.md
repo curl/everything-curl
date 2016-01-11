@@ -23,10 +23,10 @@ lines of code, but applications will of course need more code than so.
 
 ## Simple by default, more on demand
 
-libcurl generally does the simple and basic request by default, and if you
-want to add more advanced features to the request or transfer, you add that by
-setting the correct options. For example, libcurl doesn't support HTTP cookies
-by default but you need to tell it.
+libcurl generally does the simple and basic transfer by default, and if you
+want to add more advanced features, you add that by setting the correct
+options. For example, libcurl doesn't support HTTP cookies by default but you
+need to tell it.
 
 This makes libcurl behaviors easier to guess and depend on, and also it makes
 it easier to maintain old behavior and add new features. Only applications

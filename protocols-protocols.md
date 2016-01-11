@@ -81,11 +81,11 @@ curl to adapt and change.
 
 Generally, there are protocol specs that tell us how to send and receive data
 for specific protocols. The protocol specs we follow are RFCs put together and
-pubished by IETF.
+published by IETF.
 
 Some protocols are not properly documented in a final RFC, like for example
-SFTP for which our implemenation is based on an internet-draft that isn't even
-the last available one.
+SFTP for which our implementation is based on an internet-draft that isn't
+even the last available one.
 
 Protocols are however spoken by two parties and like in any given
 conversation, there are then two sides of understanding something or

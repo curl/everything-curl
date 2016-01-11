@@ -51,7 +51,7 @@
 * [How to HTTP with curl](http.md)
 * [Building and installing](building.md)
     * [Installing prebuilt binaries](building-binary.md)
-    * [Building the source](building-source.md)
+    * [Build from source](building-source.md)
     * [Dependencies](building-deps.md)
 * [libcurl basics](libcurl.md)
     * [Easy handle](libcurl-easyhandle.md)

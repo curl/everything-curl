@@ -23,17 +23,17 @@ aspects of the project (even if only that currently seems like an
 insurmountable goal), the curl project will continue to move so there will be
 things to update here as well.
 
-This book project started at the end of September 2015. I have a basic layout plan
-for a first "edition", or perhaps I should say I had, because I'm thinking of new
-sections to add all the time... While I have no fixed time schedule for this, my
-hope is to have something decent by the summer 2016.
+This book project started at the end of September 2015. I have a basic layout
+plan for a first "edition", or perhaps I should say I had, because I'm
+thinking of new sections to add all the time... While I have no fixed time
+schedule for this, my hope is to have something decent by the summer 2016.
 
 ## The book sites
 
-**http://bookcurl.haxx.se** is the home of this book. It features easy accessible
-links to read the book online in a web version or download a copy for offline
-reading using one of the many different versions offered, including PDF, ePUB and
-MOBI.
+**http://bookcurl.haxx.se** is the home of this book. It features easy
+accessible links to read the book online in a web version or download a copy
+for offline reading using one of the many different versions offered,
+including PDF, ePUB and MOBI.
 
 **http://ec.haxx.se** is a shortcut to the HTML version of the book.
 
@@ -55,10 +55,12 @@ please send me a refreshed version of the affected paragraph and I'll make
 amended versions. I will give proper credits to everyone who helps out! I hope
 to make this document better over time.
 
-Preferably, you submit [errors](https://github.com/bagder/everything-curl/issues)
-or [pull requests](https://github.com/bagder/everything-curl/pulls) on the book's
+Preferably, you submit
+[errors](https://github.com/bagder/everything-curl/issues) or [pull
+requests](https://github.com/bagder/everything-curl/pulls) on the book's
 github page.
 
 ## License
 
-This document is licensed under the Creative Commons Attribution 4.0 license: http://creativecommons.org/licenses/by/4.0/
+This document is licensed under the Creative Commons Attribution 4.0 license:
+http://creativecommons.org/licenses/by/4.0/

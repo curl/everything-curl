@@ -49,6 +49,7 @@
     * [Debug](usingcurl-debug.md)
     * [curl examples](curlexamples.md)
 * [How to HTTP with curl](http.md)
+    * [HTTP protocol basics](http-basics.md)
 * [Building and installing](building.md)
     * [Installing prebuilt binaries](building-binary.md)
     * [Build from source](building-source.md)

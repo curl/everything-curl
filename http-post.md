@@ -31,4 +31,10 @@ in binary exactly as given:
 
     curl --data-binary @filename http://example.com/
 
+### URL encoding
 
+TBD
+
+### Converting an HTML form
+
+TBD

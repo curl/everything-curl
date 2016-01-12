@@ -23,4 +23,5 @@ echo "Words per section: $secsize"
 echo "Completeness: $complete %"
 
 left=`echo "$tbd * $secsize" | bc`
-echo "Estimated number of words left: $left"
+total=`echo "$secsize * $titles" | bc`
+echo "Estimated $left words left until $total"

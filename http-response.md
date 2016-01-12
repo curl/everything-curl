@@ -6,9 +6,9 @@ the error message "Empty reply from server".
 
 #### Size of an HTTP response
 
-A HTTP response has a certain size and a client needs to figure it out. There
-are several different ways to signal the end of a HTTP response but the most
-basic way is to use the `Content-Length:` header in the response and with that
+An HTTP response has a certain size and curl needs to figure it out. There are
+several different ways to signal the end of a HTTP response but the most basic
+way is to use the `Content-Length:` header in the response and with that
 specify the exact number of bytes in the response body.
 
 Some early HTTP server implementations had problems with file sizes greater

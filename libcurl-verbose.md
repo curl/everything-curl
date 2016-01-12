@@ -21,4 +21,39 @@ debug callback (explained further in a later section).
 
 ### Trace Everything
 
-TBD
+Verbose is certainly fine, but sometimes you need more. libcurl also offers a
+trace callback that in addition to showing you all the stuff the verbose mode
+does, it also passes on *all* data send and received so that your application
+gets a full trace of everything.
+
+The sent and received data passed to the trace callback is given to the
+callback in its unencrypted form, which can be very handy when working with
+TLS or SSH based protocols when capturing the data off the network for
+debugging isn't very practical.
+
+When you set the `CURLOPT_DEBUGFUNCTION` option, you still need to have
+`CURLOPT_VERBOSE` enabled but with the trace callback set libcurl will use
+that callback instead of its internal handling.
+
+The trace callback should match a prototype like this:
+
+    int my_trace(CURL *handle, curl_infotype type, char *ptr, size_t size,
+                 void *userp);
+
+**handle** is the easy handle it concerns, **type** describes the particular
+data passed to the callback (data in/out, header in/out, TLS data in/out and
+"text"), **ptr** points to the data being **size** number of bytes. **userp**
+is the custom pointer you set with `CURLOPT_DEBUGDATA`.
+
+The data pointed to by **ptr** *will not* be zero terminated, but will be
+exactly of the size as told by the **size** argument.
+
+The callback must return 0 or libcurl will consider it an error and abort the
+transfer.
+
+On the curl web site, we host an example called
+[debug.c](http://curl.haxx.se/libcurl/c/debug.html) that includes a simple
+trace function to get inspiration from.
+
+There's also additional details in the [CURLOPT_DEBUGFUNCTION man
+page](http://curl.haxx.se/libcurl/c/CURLOPT_DEBUGFUNCTION.html).

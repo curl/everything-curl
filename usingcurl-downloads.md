@@ -246,6 +246,24 @@ server starts to respond the same to both.
 This type of work can be both time consuming and tedious. You should always do
 this with permission from the server owners or admins.
 
-#### Intermediate fiddlings
+#### Intermediaries fiddlings
 
-TBD
+Intermediaries are proxies, explicit or implicit ones. Some environments will
+force you to use one or you may choose to use one for various reasons, but
+there are also the transparent ones that will intercept your network traffic
+silently and proxy it for you no matter what you want.
+
+Proxies are "middle men" that terminates the traffic and then acts on your
+behalf to the remote server. This can introduce all sorts of explicit
+filtering and "saving" you from certain content or even "protecting" the
+remote server from what data you try to send to it, but even more so it
+introduces another software's view on how the protocol works and what the
+right things to do are.
+
+Interfering intermediaries are often the cause of lots of head aches and
+mysteries down to downright malicious modifications of content.
+
+We strongly encourage you to use HTTPS or other means to verify that the
+contents you're downloading or uploading is really the data that the remote
+server has sent to you or that your precious bytes end up verbatim at the
+intended destination.

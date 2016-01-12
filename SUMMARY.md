@@ -51,6 +51,7 @@
 * [How to HTTP with curl](http.md)
     * [Protocol basics](http-basics.md)
     * [Responses](http-response.md)
+    * [HTTP POST](http-post.md)
 * [Building and installing](building.md)
     * [Installing prebuilt binaries](building-binary.md)
     * [Build from source](building-source.md)

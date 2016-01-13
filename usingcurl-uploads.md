@@ -79,8 +79,24 @@ section.
 
 ### SMTP uploads
 
-TBD
+You may not consider sending an email to be "uploading", but to curl it is.
+You upload the mail body to the SMTP server. With SMTP, you also need to
+include all the email headers you need (To:, From:, Date: etc) in the mail
+body as curl will not add any at all.
+
+   curl -T mail smtp://mail.example.com/ --mail-from user@example.com
+
+Learn more about using SMTP with curl in the [Using
+curl/SMTP](usingcurl-smtp.md) section.
 
 ### Progress meter for uploads
 
-TBD
+The general progress meter curl provides (see the [Progress
+meter](cmdline-progressmeter.md) section) works fine for uploads as well, but
+what needs to be remembered is that the progress meter is automatically
+disabled when you're sending output to stdout, and most protocols curl support
+can output something even for an upload.
+
+Therefore, you may need to explictly redirect the downloaded data to a file
+(using shell redirect '>', `-o` or similar) to get the progress meter
+displayed for upload.

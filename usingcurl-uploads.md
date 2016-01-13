@@ -61,9 +61,9 @@ upload:
 
 ### FTP uploads
 
-Working with FTP, you get to see the remote file system you will be
-accessing. You tell the server exactly in which directory you want the upload
-to be placed and which file name to use. If you specify the upload URL with a
+Working with FTP, you get to see the remote file system you will be accessing.
+You tell the server exactly in which directory you want the upload to be
+placed and which file name to use. If you specify the upload URL with a
 trailing slash, curl will append the locally used file name to the URL and
 then that will be the file name used when stored remotely:
 
@@ -73,6 +73,9 @@ So if you prefer to select a different file name on the remote side than what
 you've used locally, you specify it in the URL:
 
     curl -T uploadthis ftp://example.com/this/directory/remotename
+
+Learn more about FTPing with curl in the [Using curl/FTP](usingcurl-ftp.md)
+section.
 
 ### SMTP uploads
 

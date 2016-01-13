@@ -42,6 +42,12 @@ TBD
 
 TBD
 
+## Referer
+
+and autoreferer
+
+TBD
+
 ## HTTP/2
 
 TBD

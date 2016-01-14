@@ -51,7 +51,7 @@ Not all options are just simple boolean flags that enable or disable
 features. For some of them you need to pass on data. Like perhaps a user name
 or a path to a file. You do this by writing first the option and then the
 argument, separated with a space. Like for example if you want to send send an
-arbitrary string of data in a HTTP POST to a server:
+arbitrary string of data in an HTTP POST to a server:
 
     $ curl -d arbitrary http://example.com
 

@@ -29,10 +29,11 @@ when it runs.
 
 ### Network leakage
 
-Secondly, this command line sends the user credentials to a HTTP server, which
-is a clear-text protocol that is open for men in the middle or other snoopers
-to spy on the connection and see what is sent. In this command line example,
-it makes curl use HTTP Basic authentication and that is completely insecure.
+Secondly, this command line sends the user credentials to an HTTP server,
+which is a clear-text protocol that is open for men in the middle or other
+snoopers to spy on the connection and see what is sent. In this command line
+example, it makes curl use HTTP Basic authentication and that is completely
+insecure.
 
 There are several ways to avoid this, and the key is of course then to avoid
 protocols or authentication schemes that sends credentials in the plain over

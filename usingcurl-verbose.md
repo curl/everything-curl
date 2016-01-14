@@ -30,7 +30,7 @@ in the same command line you can see it use more connections, or reuse
 connections and then the connection counter may increase or not increase
 depending on what curl decides it needs to do.
 
-If we use a HTTPS:// URL instead of a HTTP one, there will also be a whole
+If we use an HTTPS:// URL instead of an HTTP one, there will also be a whole
 bunch of lines explaining how curl uses CA certs to verify the server's
 certificate and some details from the server's certificate etc. Including
 which ciphers were selected and more TLS details.
@@ -214,7 +214,7 @@ by using '\n', a carriage return with '\r' and a tab space with '\t'.
 (The %-symbol is a special on Windows, where all occurrences of % must be
 doubled when using this option.)
 
-As an example, we can output the Content-Type and the response code from a
+As an example, we can output the Content-Type and the response code from an
 HTTP transfer, separated with newlines and some extra text like this:
 
     curl -w "Type: %{content-type}\nCode: %{response_code}\n" http://example.com

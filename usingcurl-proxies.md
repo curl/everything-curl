@@ -67,9 +67,9 @@ use the scheme prefix. See the [SOCKS](#socks) section below.
 
 ### HTTP
 
-A HTTP proxy is a proxy that the client speaks HTTP with to get the things
+An HTTP proxy is a proxy that the client speaks HTTP with to get the things
 done. curl will by default assume that a host you point out with `-x` or
-`--proxy` is a HTTP proxy, and unless you also specify a port number it will
+`--proxy` is an HTTP proxy, and unless you also specify a port number it will
 default to port 3128 (and the reason for that particular port number is purely
 historical).
 
@@ -90,7 +90,7 @@ that it uses a slightly different request line.
 
 HTTPS was designed to allow and provide secure and safe end to end privacy
 from the client to the server (and back). In order to provide that when
-speaking to a HTTP proxy, the HTTP protocol has a special request that curl
+speaking to an HTTP proxy, the HTTP protocol has a special request that curl
 uses to setup tunnel through the proxy that it then can encrypt and
 verify. This HTTP method is known as `CONNECT`.
 

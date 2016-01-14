@@ -16,7 +16,7 @@ data to a server and curl offers easy command line options to do it the three
 most common ways, described below.
 
 An interesting detail with HTTP is also that an upload can also be a download,
-in the same operation and in fact many downloads are initiated with a HTTP
+in the same operation and in fact many downloads are initiated with an HTTP
 POST.
 
 #### POST
@@ -35,7 +35,7 @@ with curl](http-post.md) chapter.
 #### multipart formpost
 
 Multipart formposts are also used in HTML forms on web sites; typically when
-there's a file upload involved. This type of upload is also a HTTP POST but it
+there's a file upload involved. This type of upload is also an HTTP POST but it
 sends the data formatted according to some special rules, which is what the
 "multipart" name means.
 
@@ -54,7 +54,7 @@ resource there. That said, this is also the least used upload method for HTTP
 on the web today and lots, if not most, web servers don't even have PUT
 enabled.
 
-You send off a HTTP upload with the -T option and you specify which file to
+You send off an HTTP upload with the -T option and you specify which file to
 upload:
 
     curl -T uploadthis http://example.com/

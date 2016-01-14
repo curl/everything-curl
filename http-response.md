@@ -1,14 +1,14 @@
 ### HTTP responses
 
-When a HTTP client talks HTTP to a server, the server *will* respond with a
+When an HTTP client talks HTTP to a server, the server *will* respond with an
 HTTP response message or curl will consider it an error and returns 52 with
 the error message "Empty reply from server".
 
 #### Size of an HTTP response
 
 An HTTP response has a certain size and curl needs to figure it out. There are
-several different ways to signal the end of a HTTP response but the most basic
-way is to use the `Content-Length:` header in the response and with that
+several different ways to signal the end of an HTTP response but the most
+basic way is to use the `Content-Length:` header in the response and with that
 specify the exact number of bytes in the response body.
 
 Some early HTTP server implementations had problems with file sizes greater

@@ -75,7 +75,7 @@ sysadmin provide local name lookups in the `/etc/hosts` file (or equivalent).
 Each protocol has a "default port" that curl will use for it, unless a
 specified port number is given. The optional port number can be provided
 within the URL after the host name part, as a colon and the port number
-written in decimal. For example, asking for a HTTP document on port 8080:
+written in decimal. For example, asking for an HTTP document on port 8080:
 
     $ curl http://example.com:8080/
 
@@ -185,7 +185,7 @@ applies the following options to the next set of URLs to operate with. The
 --next option thus works as a *divider* between a set of options and URLs. You
 can use as many --next options as you please.
 
-As an example, we do a HTTP GET to a URL and follow redirects, we then make a
+As an example, we do an HTTP GET to a URL and follow redirects, we then make a
 second HTTP POST to a different URL and we round it up with a HEAD request to
 a third URL. All in a single command line:
 

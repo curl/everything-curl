@@ -22,7 +22,7 @@ delivers the data, or it refuses or perhaps the client asked for the wrong
 data and then that data is delivered.
 
 A request for a resource is protocol specific so a FTP:// URL works
-differently than a HTTP:// URL or an SFTP:// URL.
+differently than an HTTP:// URL or an SFTP:// URL.
 
 A URL without a path part, that is a URL that has a host name part only like
 the "http://example.com" example above, will get a slash ('/') appended to it

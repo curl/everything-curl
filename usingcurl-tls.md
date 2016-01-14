@@ -10,6 +10,14 @@ TBD
 
 TBD
 
+### Certificate pinning
+
+TBD
+
+### OCSP stapling
+
+TBD
+
 ### Client certificates
 
 TBD

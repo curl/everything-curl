@@ -54,12 +54,24 @@ run your curl command line successfully.
 
 TBD
 
+### Proxy type
+
+curl supports several different types of proxies.
+
+The default proxy type is HTTP so if you specify a proxy host name (or IP
+address) without a scheme part (the part that is often written as "http://")
+curl goes with assuming it is an HTTP proxy.
+
+curl also allows a number of different options to set proxy type instead of
+use the scheme prefix. See the [SOCKS](#socks) section below.
+
 ### HTTP
 
 A HTTP proxy is a proxy that the client speaks HTTP with to get the things
-done. curl will by default assume that a host you point out with `-x` is a
-HTTP proxy, and unless you also specify a port number it will default to port
-3128 (and the reason for that particular port number is purely historical).
+done. curl will by default assume that a host you point out with `-x` or
+`--proxy` is a HTTP proxy, and unless you also specify a port number it will
+default to port 3128 (and the reason for that particular port number is purely
+historical).
 
 If you want to request the example.com web page using a proxy on 192.168.0.1
 port 8080, a command line could look like:
@@ -86,6 +98,8 @@ When the proxy tunnels through encrypted data to the remote server after a
 CONNECT method set it up, the proxy cannot see nor modify the traffic without
 breaking it.
 
+    curl -x proxy.example.com:80 https://example.com/
+
 ### MITM-proxies
 
 MITM means Man-In-The-Middle. MITM-proxies are usually deployed by companies
@@ -100,12 +114,48 @@ are usually transparently capturing all traffic from clients to TCP port 443
 on a remote machine. Running curl in such a network would also get its HTTPS
 traffic captured.
 
-This pracise of course allows the middle man to decrypt and actually snoop on
+This practice of course allows the middle man to decrypt and actually snoop on
 all TLS traffic.
 
 ### Non-HTTP protocols over HTTP proxy
 
-TBD
+An "HTTP proxy" means the proxy itself speaks HTTP. HTTP proxies are primarily
+made to proxy HTTP but it is also fairly common that they support other some
+other protocols as well. In particular FTP is fairly commonly supported.
+
+When talking FTP "over" an HTTP proxy, it is usually done by more or less
+pretending the other protocol works like HTTP and asking the proxy to "get
+this URL" even if the URL isn't using HTTP. This distinction is important
+because it means that when sent over an HTTP proxy like this, curl doesn't
+really speak FTP even though given an FTP URL; thus FTP-specific features will
+not work.
+
+    curl -x http://proxy.example.com:80 ftp://ftp.example.com/file.txt
+
+What you can do then, is to "tunnel through" the HTTP proxy!
+
+### HTTP proxy tunneling
+
+HTTP proxies allow clients to "tunnel through" it to a server on the other
+side. That's exactly what's done every time you use HTTPS through the HTTP
+proxy.
+
+You tunnel through an HTTP proxy with curl using `-p` or `--proxytunnel`.
+
+When you do HTTPS through a proxy you normally go through to the default HTTPS
+remote TCP port number 443, so therefore you will find that most HTTP proxies
+white list and allow connections only to hosts on that port number and perhaps
+a few others. Most proxies will deny clients from connecting to just any
+random port (for reasons only the proxy administrators know).
+
+Still, assuming that the HTTP proxy allows it, you can ask it to tunnel
+through to a remote server on any port number so you can do other protocols
+"normally" even when tunneling through. Do tunneled FTP like this:
+
+    curl -p -x http://proxy.example.com:80 ftp://ftp.example.com/file.txt
+
+You can tell curl to use HTTP/1.0 in its CONNECT request issued to the HTTP
+proxy by using `--proxy1.0 [proxy]` instead of `-x`.
 
 ### SOCKS
 
@@ -113,7 +163,7 @@ socks types
 
 TBD
 
-### Transparent proxies
+### Proxy type
 
 TBD
 
@@ -122,5 +172,17 @@ TBD
 TBD
 
 ### HTTPS to proxy
+
+TBD
+
+### Proxy environment variables
+
+and --noproxy
+
+TBD
+
+### Proxy headers
+
+--proxy-header
 
 TBD

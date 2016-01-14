@@ -20,9 +20,34 @@ data.
 
 ### HTTP response codes
 
-... and how they're not errors to curl
+An HTTP transfer gets a 3 digit response code back in the first response line.
+The response code is the server's way of giving the client a hint about how
+the request was handled.
 
-TBD
+It is important to note that curl does not consider it an error even if the
+response code would indicate that the requested documented couldn't be
+delivered or similar. curl considers a successful sending and receiving of
+HTTP to be good.
+
+The first digit of the HTTP response code is a kind of "error class":
+
+ - 1xx: transient response, more is coming
+ - 2xx: success
+ - 3xx: a redirect
+ - 4xx: the client asked for something the server couldn't/wouldn't deliver
+ - 5xx: there's problem in the server
+
+Remember that you can use curl's `--write-out` option to extract the response
+code. See the [--write-out](usingcurl-verbose.md#--writeout) section.
+
+### CONNECT response codes
+
+Since there can be a HTTP request and a separate CONNECT request in the same
+curl transfer, we often separate the CONNECT response (from the proxy) from
+the remote server's HTTP response.
+
+The CONNECT is also an HTTP request so it gets response codes in the same
+numeric range and you can use `--write-out` to extract that code as well.
 
 ### Chunked transfer encoding
 

@@ -54,7 +54,7 @@ request headers to the host example.com:
 **Content-Length** of course tells the server how much data to expect. This
 example's 313 bytes is really small.
 
-The **Expect** header is explained in the [HPTTP POST](http-post.md) chapter.
+The **Expect** header is explained in the [HTTP POST](http-post.md) chapter.
 
 The **Content-Type** header is a bit special. It tells that this is a
 multipart formpost and then it sets the "boundary" string. The boundary string

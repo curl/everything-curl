@@ -14,7 +14,7 @@ An example piece of HTML would look like this
        <input type="submit" value="Submit">
     </form> 
 
-Which could looks something like this in a web browser
+Which could look something like this in a web browser
 
 ![a multipart form](multipart-form.png)
 

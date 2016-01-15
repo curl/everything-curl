@@ -33,7 +33,56 @@ in binary exactly as given:
 
 ### URL encoding
 
-TBD
+Ok, so the command line options above all require that you provide properly
+encoded data. Data you need to make sure is in the right format. While that
+gives you a lot of freedom, it is also a bit inconvenient at times.
+
+To help you send data you haven't already encoded, curl offers the
+`--data-urlencode` option. This option offers several different ways to URL
+encode the data you give it.
+
+You use it like `--data-urlencode data` in the same style as the other --data
+options. To be CGI-compliant, the **data** part should begin with a name
+followed by a separator and a content specification. The **data** part can be
+passed to curl using one of the following syntaxes:
+
+ - "content": This will make curl URL encode the content and pass that
+   on. Just be careful so that the content doesn't contain any = or @ symbols,
+   as that will then make the syntax match one of the other cases below!
+
+ - "=content": This will make curl URL encode the content and pass that
+   on. The initial '=' symbol is not included in the data.
+
+ - "name=content": This will make curl URL encode the content part and pass
+   that on. Note that the name part is expected to be URL encoded already.
+
+ - "@filename": This will make curl load data from the given file (including
+   any newlines), URL encode that data and pass it on in the POST.
+
+ - "name@filename": This will make curl load data from the given file
+   (including any newlines), URL encode that data and pass it on in the POST.
+   The name part gets an equal sign appended, resulting in
+   name=urlencoded-file-content. Note that the name is expected to be URL
+   encoded already.
+
+As an example, you could POST a name to have it encoded by curl:
+
+    curl --data-urlencode "name=John Doe (Junior)" http://example.com
+
+... which would send the following data in the actual request body:
+
+    name=John%20Doe%20%28Junior%29
+
+### Convert that to a GET
+
+A little convenience feature that could be suitable to mention in this context
+(even though it isn't for POSTing), is the `-G` or `--get` option, which takes
+all data you've specified with the different `-d` variants and appends that
+data on the right end of the URL separated with a '?' and then makes curl send
+a GET instead.
+
+This option makes it easy to switch between POSTing and GETing a form for
+example.
 
 ### Expect 100-continue
 

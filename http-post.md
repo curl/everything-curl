@@ -35,6 +35,18 @@ in binary exactly as given:
 
 TBD
 
+### Expect 100-continue
+
+TBD
+
 ### Converting an HTML form
+
+TBD
+
+### Hidden fields
+
+TBD
+
+### Javascript and forms
 
 TBD

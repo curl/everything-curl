@@ -13,18 +13,6 @@ the specific [HTTPS](#https) section below.
 
 TBD
 
-### Request method
-
-TBD
-
-### Customize headers
-
-TBD
-
-### Referer
-
-TBD
-
 ### Cookies
 
 TBD

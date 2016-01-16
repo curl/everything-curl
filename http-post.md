@@ -165,4 +165,13 @@ browser. See the Wireshark documentation for details on that.
 
 ### Javascript and forms
 
-TBD
+A very common mitigation against automated "agents" or scripts using curl, is
+to have the page with the HTML form use javascript to set values of some input
+fields, usually then one of the hidden ones. Like perhaps there's some
+javascript code that executes on page load or when the submit button is
+pressed and it sets a magic value that the server then can verify is set
+before it considers the submission to be valid.
+
+You can usually work around that by just reading the javascript code and redo
+that logic in your script. Using the above mentioned tricks to check exactly
+what a browser sends is then also a good helper.

@@ -1,6 +1,6 @@
 ## HTTP POST
 
-POST is the HTTP method that was invented to send data to a receving web
+POST is the HTTP method that was invented to send data to a receiving web
 application, and it is for example how most common HTML forms on the web
 works. It usually sends a chunk of relatively small amounts of data to the
 receiver.
@@ -33,7 +33,7 @@ in binary exactly as given:
 
 ### URL encoding
 
-Ok, so the command line options above all require that you provide properly
+OK, so the command line options above all require that you provide properly
 encoded data. Data you need to make sure is in the right format. While that
 gives you a lot of freedom, it is also a bit inconvenient at times.
 
@@ -86,9 +86,9 @@ example.
 
 ### Expect 100-continue
 
-HTTP has no proper way to stop on ongoing transfer (in any direction) and stil
-maintain the connection. So if we figure out that the transfer better top once
-the transfer has started, there are only two ways to proceed: cut the
+HTTP has no proper way to stop on ongoing transfer (in any direction) and
+still maintain the connection. So if we figure out that the transfer better
+top once the transfer has started, there are only two ways to proceed: cut the
 connection pay the price of reestablishing the connection again for next
 request, or keep the transfer going and waste bandwidth but be able to reuse
 the connection.

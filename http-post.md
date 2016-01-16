@@ -86,7 +86,36 @@ example.
 
 ### Expect 100-continue
 
-TBD
+HTTP has no proper way to stop on ongoing transfer (in any direction) and stil
+maintain the connection. So if we figure out that the transfer better top once
+the transfer has started, there are only two ways to proceed: cut the
+connection pay the price of reestablishing the connection again for next
+request, or keep the transfer going and waste bandwidth but be able to reuse
+the connection.
+
+One example of when this can happen is when you send a large file over HTTP,
+only to discover that the server requires authentication and immediately sends
+back a 401 response code.
+
+The mitigation that exists to make this scenario less frequent, is to have
+curl pass on an extra header, `Expect: 100-continue`, which gives the server a
+chance to deny the request before a lot of data is sent of. curl sends this
+Expect: header by default if the POST it will do is known or suspect to be
+larger than just minuscule. curl also does this for PUT requests.
+
+When a server gets a request with an 100-continue and deems the request fine,
+it will respond with a 100 response that makes the client continue. If the
+server doesn't like the request, it sends back response code for the error it
+thinks it is.
+
+Unfortunately, lots of servers in the world don't properly support the Expect:
+header or don't handle it correctly, so curl will only wait 1000 milliseconds
+for that first response before it will continue anyway.
+
+Those are 1000 wasted milliseconds. You can then remove the use of Expect:
+from the request and avoid the waiting with `-H`:
+
+    curl -H Expect: -d "payload to send" http://example.com
 
 ### Chunked encoded POSTs
 

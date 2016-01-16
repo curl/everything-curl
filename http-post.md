@@ -129,13 +129,39 @@ You send a chunked POST with curl like this:
 
     curl -H "Transfer-Encoding: chunked" -d "payload to send" http://example.com
 
-### Converting an HTML form
+### Hidden form fields
 
-TBD
+This chapter has explained how sending a post with `-d` is the equivalent of
+what a browser does when an HTML form is filled in and submitted.
 
-### Hidden fields
+Submitting such forms is a very common operation with curl. To have curl fill
+in the form in an automated fashion.
 
-TBD
+If you want to submit a form with curl and make it look as if it has been done
+with a browser, it is important that to provide all the input fields from the
+form. A very common method for web pages is to set a few hidden input fields
+to the form and have them assigned values directly in the HTML. A successful
+form submission of course also include those fields and in order to do that
+automatically you may be forced to first download the HTML page that holds the
+form, parse it and extract the hidden field values so that you can send them
+off with curl.
+
+### Figure out what a browser sends
+
+A very common shortcut is to simply fill in the form with your browser and
+submit it and check in the browser's network development tools exactly what it
+sent.
+
+A slightly different way is to save the HTML page containing the form, and
+then edit that HTML page to redirect the 'action=' part of the form to your
+own server or a test server that just outputs exactly what it gets. Completing
+that form submission will then show you exactly how a browser sends it.
+
+A third option is of course to use a network capture tool such as Wireshark to
+check exactly what is sent over the wire. If you're working with HTTPS, you
+can't see form submissions in clear text on the wire but instead you need to
+make sure you can have wireshark extract your TLS private key from your
+browser. See the Wireshark documentation for details on that.
 
 ### Javascript and forms
 

@@ -65,7 +65,7 @@ the protocol layer.
 
 The test suite is meant to be possible to run after you've built curl yourself
 and there are a fair amount of volunteers who also help out by running the
-test suite automatically a few days per day to make sure the latest commits
+test suite automatically a few times per day to make sure the latest commits
 get a run. This way, we hopefully discover the worst flaws pretty soon after
 they were introduced.
 

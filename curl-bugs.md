@@ -75,7 +75,7 @@ fact, figure out was wrong.
 
 Due to the nature of different systems and funny use cases on the Internet,
 eventually some of the best testing is done by users when they run the code to
-perform their uses cases.
+perform their use cases.
 
 Another limiting factor with the test suite is that the test setup itself is
 less portable than curl and libcurl so there are in fact platforms where curl

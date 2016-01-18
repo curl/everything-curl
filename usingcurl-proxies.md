@@ -240,9 +240,33 @@ progress for this that we hope to land in a future curl version.
 
 ### Proxy environment variables
 
-and --noproxy
+curl checks for the existence of specificly named environment variables before
+it runs, to see if a proxy is requested to get used.
 
-TBD
+You specify the proxy by setting a variable named `[scheme]_proxy` to hold the
+proxy host name (the same way you'd specify the host with `-x`). So if you
+want to tell curl to use a proxy when access a HTTP server, you set the
+'http_proxy' environment variable. Like this:
+
+    http_proxy=http://proxy.example.com:80
+    curl -v www.example.com
+
+While the above example shows HTTP, you can of course also set ftp_proxy,
+https_proxy, and so on. All these proxy environment variable names except
+http_proxy can also be specified in uppercase, like HTTPS_PROXY.
+
+To set a single variable that controls *all* protocols, the ALL_PROXY exists.
+If a specific protocol version one exists, such a once will take precedence.
+
+When using environment variables to set proxy, you easily end up in a
+situation where one or a few host names should be excluded from going through
+the proxy. This is then done with the NO_PROXY variable. Set that to a comma
+separated list of host names that should not use a proxy when being
+accessed. You can set NO_PROXY to be a single asterisk ('*') to match all
+hosts.
+
+As an alternative to the NO_PROXY variable, there's also a `--noproxy` command
+line option that serves the same purpose and works the same way.
 
 ### Proxy headers
 

@@ -227,7 +227,16 @@ wants is then like this:
 
 ### HTTPS to proxy
 
-TBD
+All the previously mentioned protocols to speak with the proxy are clear text
+protocols, HTTP and the SOCKS versions. Using these methods could allow
+someone to evesdrop on your traffic the local network where you or the proxy
+reside.
+
+One solution for that is to use HTTPS to the proxy, which then establishes a
+secure and encrypted connection that is safe from easy surveillance.
+
+curl does not currently support HTTPS to the proxy, but there is work in
+progress for this that we hope to land in a future curl version.
 
 ### Proxy environment variables
 

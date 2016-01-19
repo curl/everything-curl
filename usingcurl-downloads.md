@@ -267,3 +267,23 @@ We strongly encourage you to use HTTPS or other means to verify that the
 contents you're downloading or uploading is really the data that the remote
 server has sent to you or that your precious bytes end up verbatim at the
 intended destination.
+
+### Rate limiting
+
+TBD
+
+### Maximum filesize
+
+--max-filesize
+
+TBD
+
+### Metalink
+
+--metalink
+
+TBD
+
+### --xattr
+
+TBD

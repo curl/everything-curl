@@ -88,3 +88,7 @@ in fact any other compression algorithm that curl understands) by using
 ### Transfer encoding
 
 TBD
+
+### --raw
+
+TBD

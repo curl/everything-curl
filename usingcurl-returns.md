@@ -1,0 +1,3 @@
+# curl return codes
+
+TBD

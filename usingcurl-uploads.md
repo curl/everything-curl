@@ -100,3 +100,7 @@ can output something even for an upload.
 Therefore, you may need to explictly redirect the downloaded data to a file
 (using shell redirect '>', `-o` or similar) to get the progress meter
 displayed for upload.
+
+### Rate limiting
+
+TBD

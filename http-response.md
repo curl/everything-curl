@@ -71,7 +71,19 @@ sizes to users.
 
 ### Gzipped transfers
 
-TBD
+Responses over HTTP can be sent in compressed format. This is most commonly
+done by the server when it includes a `Content-Encoding: gzip` in the response
+as a hint to the client. Compressed responses make a lot of sense when either
+static resources are sent (that were compressed at a previous moment in time)
+or even in run-time when there's more CPU power available than bandwidth.
+Sending a much smaller amount of data is often to prefer.
+
+You can ask curl to both ask for compressed content *and* automatically and
+transparently uncompress gzipped data when receiving content encoded gzip (or
+in fact any other compression algorithm that curl understands) by using
+`--compressed`:
+
+    curl --compressed http://example.com/
 
 ### Transfer encoding
 

@@ -38,6 +38,7 @@
     * [Verbose](usingcurl-verbose.md)
     * [Downloads](usingcurl-downloads.md)
     * [Uploads](usingcurl-uploads.md)
+    * [Timeouts](usingcurl-timeouts.md)
     * [.netrc](usingcurl-netrc.md)
     * [Proxies](usingcurl-proxies.md)
     * [FTP](usingcurl-ftp.md)

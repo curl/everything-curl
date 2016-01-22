@@ -311,3 +311,13 @@ Some of these variables are not available in really old curl versions.
 
 - %{url_effective} shows The URL that was fetched last. This is particularly
   meaningful if you've told curl to follow Location: headers (with `-L`).
+
+### Silence
+
+The opposite to verbose is of course to make curl more silent. With the `-s`
+(or `--silent`) option you make curl switch off the progress meter and not
+output any error messages for when errors occur. It gets mute. It will still
+output the downloaded data as you ask it to.
+
+With silent activated, you can ask for it to still output the error message on
+failures by adding `-S` or `--show-error`.

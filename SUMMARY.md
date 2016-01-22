@@ -66,6 +66,8 @@
 * [libcurl basics](libcurl.md)
     * [Easy handle](libcurl-easyhandle.md)
     * [Drive transfers](libcurl-drive.md)
+        * [Drive with multi](libcurl-drive-multi.md)
+        * [Drive with multi_socket](libcurl-drive-multi-socket.md)
     * [Connection reuse](libcurl-connectionreuse.md)
     * [Callbacks](libcurl-callbacks.md)
     * [API usage](libcurl-usingapi.md)

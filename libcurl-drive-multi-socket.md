@@ -25,7 +25,7 @@ There are numerous event based systems to select from out there, and libcurl
 is completely agnostic to which one you use. libevent, libev are libuv three
 popular ones but you can also go directly to your operating system's native
 solutions such as epoll, kqueue, /dev/poll, pollset, Event Completion or I/O
-Comletion Ports.
+Completion Ports.
 
 ## Many easy handles
 
@@ -72,7 +72,7 @@ monitor. Your application tells the underlying event-based system to wait for
 the sockets. This callback will be called multiple times if there are multiple
 sockets to wait for, and it will be called again when the status changes and
 perhaps you should switch from waiting for a writable socket to instead wait
-for it to become redable.
+for it to become readable.
 
 When one of the sockets that the application is monitoring on libcurl's behalf
 registers that it becomes readable or writable, as requested, you tell libcurl

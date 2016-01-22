@@ -287,3 +287,11 @@ TBD
 ### --xattr
 
 TBD
+
+### ---raw
+
+TBD
+
+### --retry
+
+TBD

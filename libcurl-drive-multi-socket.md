@@ -143,3 +143,12 @@ system drive:
     event_base_dispatch(event_base); /* libevent2 has this API */
 
     /* at this point we have exited the event loop */
+
+### When is it done?
+
+The 'running_handles' counter return by `curl_multi_socket_action` holds the
+number of current transfers not completed. When that number reaches zero, we
+know there's no transfers going on.
+
+Each time the 'running_handles' counter changes, `curl_multi_info_read()` will
+return info about the specific transfers that completed.

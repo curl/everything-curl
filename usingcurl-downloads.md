@@ -32,6 +32,10 @@ If you specify multiple URLs on the command line, curl will download each URL
 one by one. It won't start the second transfer until the first one is complete
 etc.
 
+### HTML and charsets
+
+TBD
+
 ### Storing downloads
 
 If you try the example download as in the previous section, you'll notice that

@@ -292,7 +292,42 @@ intended destination.
 
 ### Rate limiting
 
-TBD
+When curl transfers data, it will attempt to do that as fast as possible. It
+goes for both uploads and downloads. Exactly how fast that will be depends on
+several factors, including your computer's ability, your own network
+connection's bandwidth, the load on the remote server you're transferring
+to/from and the latency to that server. And your curl transfers also likely
+compete with other users' transfers on the networks the data travels over.
+
+In many setups however, you will find that you can pretty much saturate your
+network connection with data from a single curl command line. If you have 10
+megabit connection to the Internet, chances are curl can use all those 10
+megabits to transfer data.
+
+For most use cases, using as much bandwidth as possible is a good thing. It
+makes the transfer faster, it makes the curl command complete sooner and it
+will make the transfer use resources from the server during a shorter period
+of time.
+
+Sometimes you will however find that having curl possible starve out other
+network functions on your local network connection is inconvenient. In these
+situations you may want to tell curl to slow down so that other network users
+get a bigger chance to get their data through as well. With `--limit-rate
+<speed>` you can tell curl to not go faster than the given bytes per second
+limit. The limit value can be given with a letter suffix using one of K, M and
+G for kilobytes, megabytes and gigabytes.
+
+Make curl not download the data any faster than 200 kilobytes/per second:
+
+    $ curl https://example.com/ --limit-rate 200K
+
+The given limit is the maximum average speed alowed, counted during the entire
+transfer. It means that curl might use higher transfer speeds in short bursts,
+but over time it uses no more than the given rate.
+
+Also note that curl never knows what the maximum possible speed is - it will
+simply go as fast as it can and is allowed. You may know your connection's
+maximum speed, but curl does not.
 
 ### Maximum filesize
 

@@ -32,10 +32,6 @@ If you specify multiple URLs on the command line, curl will download each URL
 one by one. It won't start the second transfer until the first one is complete
 etc.
 
-### HTML and charsets
-
-TBD
-
 ### Storing downloads
 
 If you try the example download as in the previous section, you'll notice that
@@ -106,6 +102,28 @@ and the server happens to use such a file name.
 way, so you may end up with a URL encoded file name where a brower would
 otherwise decode it to something more readable using a for you a sensible
 character set.
+
+### HTML and charsets
+
+curl will download the exact binary data that the server sends. This might be
+of importance to you in case for example when you download a HTML page or
+other text data that uses a certain character encoding that your browser then
+displays in a certain manner. curl will then not translate the arriving data.
+
+A common example where this causes some surprising results is when a user
+downloads a web page with something like:
+
+    $ curl https://example.com/ -o storage.html
+
+... and when inspecting the `storage.html` file after the fact, the user
+realizes that one or more characters look funny or downright wrong. This can
+then very well be because the server sent the characters using charset X,
+while your editor and environment use charset Y. In an ideal world, we'd all
+use UTF-8 everywhere but unfortunately that is still not the case.
+
+A common work-around for this issue that works decently fine, is to use the
+common `iconv` utillity to translate a text file to and from different
+charsets.
 
 ### Compression
 

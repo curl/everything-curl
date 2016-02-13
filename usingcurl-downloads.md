@@ -318,7 +318,7 @@ get a bigger chance to get their data through as well. With `--limit-rate
 second. The rate limit value can be given with a letter suffix using one of K,
 M and G for kilobytes, megabytes and gigabytes.
 
-To make curl not download data any faster than 200 kilobytes/per second:
+To make curl not download data any faster than 200 kilobytes per second:
 
     $ curl https://example.com/ --limit-rate 200K
 

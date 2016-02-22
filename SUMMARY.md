@@ -77,7 +77,7 @@
     * [--libcurl](libcurl--libcurl.md)
     * [Header files](libcurl-headers.md)
     * [Global initialization](libcurl-globalinit.md)
-    * [CURL *handle](libcurl-handle.md)
+    * [multi-threading](libcurl-threading.md)
     * [curl easy options](libcurl-options.md)
     * [CURLcode return codes](libcurl-curlcode.md)
     * [Verbose operations](libcurl-verbose.md)

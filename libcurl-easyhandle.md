@@ -19,6 +19,8 @@ syntax checking and validation of the input may also be postponed so just
 because `curl_easy_setopt` didn't complain, it doesn't mean that the input was
 correct and valid. You may get an error returned later.
 
+Read more on [easy options](libcurl-options) in its separate section.
+
 All options are "sticky". They remain set in the handle until you change them
 again, or call `curl_easy_reset()` on the handle.
 

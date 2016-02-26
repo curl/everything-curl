@@ -93,11 +93,11 @@ This book will not help you learn git. All software developers in this day and
 age should learn git anyway.
 
 The curl git tree can be browsed with a web browser on our github page at
-[https://github.com/bagder/curl](https://github.com/bagder/curl).
+[https://github.com/curl/curl](https://github.com/curl/curl).
 
 To check out the curl source code from git, you can clone it like:
 
-    git clone https://github.com/bagder/curl.git
+    git clone https://github.com/curl/curl.git
 
 ### Pull request
 

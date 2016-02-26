@@ -74,7 +74,7 @@
         * [Write callback](callback-write.md)
         * [Read callback](callback-read.md)
         * [Progress callback](callback-progress.md)
-    * [API usage](libcurl-usingapi.md)
+    * [Cleanup](libcurl-posttransfer.md)
     * [Post transfer info](libcurl-getinfo.md)
     * [API compatibility](libcurl-api.md)
     * [--libcurl](libcurl--libcurl.md)

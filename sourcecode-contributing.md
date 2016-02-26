@@ -53,22 +53,21 @@ will be thrilled to receive it and merge it as soon as possible!
 
 ### What not to add
 
-There isn't any good rules to say what features you can't add or that we will
+There aren't any good rules to say what features you can't add or that we will
 never accept, but let me instead try to mention a few things you should avoid
 to get less friction and to reach success faster:
 
 - Do not write up a huge page first and then send it to the list for
   discussion. Always start out by discussing on the list, and send your
-  initial reviews early to get feedback on your design and approach. It saves
-  you from wasting a lot of time going down a route that might need rewriting
-  in the end anyway!
+  initial review requests early to get feedback on your design and
+  approach. It saves you from wasting time going down a route that might need
+  rewriting in the end anyway!
 
 - When introducing things in the code you need to follow the style and
   architecture that already exists. When you add code to the ordinary transfer
   code path, it must for example work asynchronously in a non-blocking
-  manner. We will not accept new code that introduces new blocking
-  behaviors. We already have too many of those that we haven't managed to
-  remove yet.
+  manner. We will not accept new code that introduces blocking behaviors. We
+  already have too many of those that we haven't managed to remove yet.
 
 - Quick hacks or dirty solutions that have a high risk of not working on
   platforms you don't run or achitectures you don't know. We don't care if
@@ -86,8 +85,8 @@ to get less friction and to reach success faster:
 Our preferred source control tool is [git](https://git-scm.com/).
 
 While git is sometimes not the easiest tool to learn and master, all the basic
-steps a casual developer and contributor needs to know are very
-straight-forward and does not take much time or effort to learn.
+steps a casual developer and contributor need to know are very
+straight-forward and do not take much time or effort to learn.
 
 This book will not help you learn git. All software developers in this day and
 age should learn git anyway.
@@ -104,8 +103,8 @@ To check out the curl source code from git, you can clone it like:
 A very popular and convenient way to make your own changes and contribute them
 back to the project is by doing a so called pull request on github.
 
-Then you first create your own version of the source tree, called forking, on
-the github web site. Then you get your own version of the curl git tree that
+First you create your own version of the source tree, called forking, on the
+github web site. That way you get your own version of the curl git tree that
 you can clone to a local copy.
 
 You edit your own local copy, commit the changes, push them to the git
@@ -154,9 +153,9 @@ commit someone else's work, and make sure that you have your own user and
 email setup correctly in git before you commit!
 
 The author and the *-by: lines are of course there to make sure we give the
-proper credit in the project. We do not want to appear as if we take someone
-else's work without clearly attributing where it comes from. Giving credit is
-of utmost importance!
+proper credit in the project. We do not want to take someone else's work
+without clearly attributing where it comes from. Giving correct credit is of
+utmost importance!
 
 ### Who decides what goes in?
 

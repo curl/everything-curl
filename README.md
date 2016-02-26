@@ -1,7 +1,7 @@
 # Introduction
 
-_Everything curl_ is meant to become the complete guide to everything there is
-to know about curl, the project, the command line tool, the library, how
+_Everything curl_ is aiming to become *the guide* to everything there is to
+know about curl, the project, the command line tool, the library, how
 everything started and how it came to be what it is today. How we work on
 developing it further, what it takes to use it, how you can contribute with
 code and bug reports and why all those millions of existing users use it.

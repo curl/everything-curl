@@ -42,7 +42,7 @@
     * [Timeouts](usingcurl-timeouts.md)
     * [.netrc](usingcurl-netrc.md)
     * [Proxies](usingcurl-proxies.md)
-    * [Return coes](usingcurl-returns.md)
+    * [Return codes](usingcurl-returns.md)
     * [FTP](usingcurl-ftp.md)
     * [SCP and SFTP](usingcurl-scpsftp.md)
     * [IMAP and POP3](usingcurl-imap.md)

@@ -103,4 +103,9 @@ displayed for upload.
 
 ### Rate limiting
 
-TBD
+Rate limiting works exactly the same for uploads as for downloads and curl in
+fact only has a single limit that will limit the speed in both directions to
+the given speed.
+
+See further details in the [Download Rate limiting
+section](usingcurl-downloads.md#rate-limiting).

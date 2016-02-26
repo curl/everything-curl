@@ -13,7 +13,9 @@ the server. This is a transfer that you've set up to upload data or otherwise
 send it off to the server. This callback will be called over and over until
 all data has been delivered or the transfer failed.
 
-The **stream** pointer points to the private data set with `CURLOPT_READDATA`.
+The **stream** pointer points to the private data set with `CURLOPT_READDATA`:
+
+    curl_easy_setopt(handle, CURLOPT_READDATA, custom_pointer);
 
 If this callback isn't set, libcurl instead uses 'fread' by default.
 

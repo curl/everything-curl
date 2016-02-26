@@ -1,4 +1,4 @@
-### Progress callbacks
+### Progress callback
 
 The progress callback is what gets called regularly and repeatedly for each
 transfer during the entire lifetime of the transfer. The old callback was set
@@ -9,8 +9,8 @@ with CURLOPT_XFERINFOFUNCTION:
 
 The `xfer_callback` function must match this prototype:
 
-   int xfer_callback(void *clientp, curl_off_t dltotal, curl_off_t dlnow,
-                     curl_off_t ultotal, curl_off_t ulnow);
+    int xfer_callback(void *clientp, curl_off_t dltotal, curl_off_t dlnow,
+                      curl_off_t ultotal, curl_off_t ulnow);
 
 If this option is set and `CURLOPT_NOPROGRESS` is set to 0 (zero), this
 callback function gets called by libcurl with a frequent interval. While data
@@ -19,7 +19,9 @@ periods like when nothing is being transferred it can slow down to about one
 call per second.
 
 The **clientp** pointer points to the private data set with
-`CURLOPT_XFERINFODATA`.
+`CURLOPT_XFERINFODATA`:
+
+    curl_easy_setopt(handle, CURLOPT_XFERINFODATA, custom_pointer);
 
 The callback gets told how much data libcurl will transfer and has
 transferred, in number of bytes. **dltotal** is the total number of bytes
@@ -41,4 +43,3 @@ function that performs transfers.
 
 (The deprecated callback CURLOPT_PROGRESSFUNCTION worked identically but
 instead of taking arguments of type `curl_off_t`, it used `double`.)
-

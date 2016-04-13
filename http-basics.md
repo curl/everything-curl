@@ -44,6 +44,10 @@ If the client would instead send a request with a small request body
 
 A server always responds to an HTTP request unless something is wrong.
 
+### The URL converted to a request
+
+TBD
+
 ### --path-as-is
 
 TBD

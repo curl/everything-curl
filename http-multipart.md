@@ -85,6 +85,21 @@ headers comes the actual data of the part, without any sort of encoding.
 The last boundary string has two extra dashes `--` appended on the end of it
 to signal the end.
 
+### Content-Type
+
+POSTing with curl's -F option will make it include a default Content-Type
+header in its request as shown in the above example. This says
+`multipart/form-data` and then specifies the MIME boundary string. That
+content-type is the default for multipart formposts but you can of course
+still modify that for your own commands and if you do, curl is clever enough
+to still append the boundary magic to the replaced header. You can't really
+alter the boundary string, since curl needs that for producing the POST
+stream.
+
+To replace the header, use `-H` like this:
+
+    $ curl -F 'name=Dan' -H 'Content-Type: multipart/magic' https://example.com
+
 ### Converting an HTML form
 
 TBD

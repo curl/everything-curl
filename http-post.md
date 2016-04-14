@@ -23,6 +23,20 @@ command line, you can also read it off a file name in standard curl style:
 
     curl -d @filename http://example.com
 
+### Content-Type
+
+POSTing with curl's -d option will make it include a default header that looks
+like `Content-Type: application/x-www-form-urlencoded`. That's what your
+typical browser will use for a plain POST.
+
+Many receivers of POST data don't care about or check the Content-Type header.
+
+If that header is not good enough for you, you should of course replace that
+and instead provide the correct one. Like if you POST JSON to a server and
+want to more accurate tell the server about what the content is:
+
+    $ curl -d '{json}' -H 'Content-Type: application/json' https://example.com
+
 ### POSTing binary
 
 When reading from a file, `-d` will strip out carriage return and

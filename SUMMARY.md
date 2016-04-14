@@ -57,7 +57,7 @@
     * [Responses](http-response.md)
     * [HTTP POST](http-post.md)
     * [Multipart formposts](http-multipart.md)
-    * [POST vs POST](http-postvspost.md)
+    * [-d vs -F](http-postvspost.md)
     * [Redirects](http-redirects.md)
     * [Modify the HTTP request](http-requests.md)
 * [Building and installing](building.md)

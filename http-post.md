@@ -131,6 +131,10 @@ from the request and avoid the waiting with `-H`:
 
     curl -H Expect: -d "payload to send" http://example.com
 
+In some situations, curl will inhibit the use of the Expect header if the
+content it is about to send is very small (like below one kilobyte), as having
+to "waste" such a small chunk of data is not considered much of a problem.
+
 ### Chunked encoded POSTs
 
 When talking to a HTTP 1.1 server, you can tell curl to send the request body

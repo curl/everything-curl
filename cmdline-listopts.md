@@ -16,5 +16,5 @@ cases. That is a very thorough and complete document on how each option
 works. Several thousand lines of documentation. To wade through that is also a
 tedious work and we encourage use of a search function through those text
 masses. Some people will appreciate the man page in its [web
-version](http://curl.haxx.se/docs/manpage.html).
+version](https://curl.haxx.se/docs/manpage.html).
 

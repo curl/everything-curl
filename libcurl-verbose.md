@@ -52,8 +52,8 @@ The callback must return 0 or libcurl will consider it an error and abort the
 transfer.
 
 On the curl web site, we host an example called
-[debug.c](http://curl.haxx.se/libcurl/c/debug.html) that includes a simple
+[debug.c](https://curl.haxx.se/libcurl/c/debug.html) that includes a simple
 trace function to get inspiration from.
 
 There's also additional details in the [CURLOPT_DEBUGFUNCTION man
-page](http://curl.haxx.se/libcurl/c/CURLOPT_DEBUGFUNCTION.html).
+page](https://curl.haxx.se/libcurl/c/CURLOPT_DEBUGFUNCTION.html).

@@ -16,9 +16,9 @@ you can clone a copy of the web code like this:
 The web site is a on old custom made setup that mostly builds static HTML
 files from a set of source files. The sources files are preprocessed with what
 is basically a souped-up C preprocessor called
-[fcpp](http://daniel.haxx.se/projects/fcpp/) and a set of perl scripts. The
+[fcpp](https://daniel.haxx.se/projects/fcpp/) and a set of perl scripts. The
 man pages get converted to HTML with
-[roffit](http://daniel.haxx.se/projects/roffit/). Make sure fcpp, perl,
+[roffit](https://daniel.haxx.se/projects/roffit/). Make sure fcpp, perl,
 roffit, make and curl are all in your $PATH.
 
 Once you've cloned the git repo the first time, invoke `sh bootstrap.sh` once

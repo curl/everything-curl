@@ -36,7 +36,7 @@ A few users also hang out on IRC in the #curl channel on freenode.
 As many communities and sub cultures, we have developed guidelines and rules
 of what we think is the right way to behave and how to communicate on the
 mailing lists. The [curl mailing list
-etiquette](http://curl.haxx.se/mail/etiquette.html) follows the style of
+etiquette](https://curl.haxx.se/mail/etiquette.html) follows the style of
 traditional open source projects.
 
 #### Do Not Mail a Single Individual
@@ -159,7 +159,7 @@ protocols curl can speak or even related tools. We tend to move development
 issues or more advanced bug fixes discussions over to curl-library instead,
 since libcurl is the engine that drives most of curl.
 
-See http://cool.haxx.se/mailman/listinfo/curl-users
+See https://cool.haxx.se/mailman/listinfo/curl-users
 
 ### curl-library
 
@@ -167,10 +167,10 @@ The main development list, and also for users of libcurl. We discuss how to
 use libcurl in applications as well as development of libcurl itself. Lots of
 questions on libcurl behavior, debugging and documentation issues.
 
-See http://cool.haxx.se/mailman/listinfo/curl-library
+See https://cool.haxx.se/mailman/listinfo/curl-library
 
 ### curl-announce
 
 This mailing list that only gets announcements about new releases and security
 problems. Nothing else. For those who wants a more casual feed of information
-from the project. http://cool.haxx.se/mailman/listinfo/curl-announce
+from the project. https://cool.haxx.se/mailman/listinfo/curl-announce

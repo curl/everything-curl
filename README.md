@@ -45,8 +45,8 @@ With the hope of becoming just a co-author of this material, I am Daniel
 Stenberg. I founded the curl project. I'm a developer at heart, for fun and
 profit. I live and work in Stockholm, Sweden.
 
-All there is to know about me can be found on my web site
-[http://daniel.haxx.se](http://daniel.haxx.se/).
+All there is to know about me can be found on [my web
+site](https://daniel.haxx.se/).
 
 ## Help!
 

@@ -18,11 +18,11 @@ this schedule. On a Wednesday, and then again a Wednesday eight weeks later
 and so it continues. Non-stop.
 
 For every release we tag the source code in the repository with "curl-release
-version" and we update the [changelog](http://daniel.haxx.se/changes.html).
+version" and we update the [changelog](https://curl.haxx.se/changes.html).
 
 We have done more than 150 curl release so far, and for the ones made since
 the late 1999 there are lots of release stats available in our [curl release
-log](http://curl.haxx.se/docs/releases.html).
+log](https://curl.haxx.se/docs/releases.html).
 
 ## Daily snapshots
 
@@ -37,7 +37,7 @@ The daily snapshots are generated daily (clever naming, right?) as if a
 release had been made at that point in time. It produces a package of all
 sources code and all files that are normally part of a release and puts it in
 a package and uploads it to a special place
-([http://curl.haxx.se/snapshots/](http://curl.haxx.se/snapshots/)) to allow
+([https://curl.haxx.se/snapshots/](https://curl.haxx.se/snapshots/)) to allow
 interested people to get the very latest code. To test, to experiment and
 whatever.
 

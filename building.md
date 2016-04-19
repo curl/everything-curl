@@ -17,7 +17,7 @@ different options will be explored below.
 
 ## The latest version?
 
-Looking at the curl web site at http://curl.haxx.se you can see the latest
+Looking at the curl web site at https://curl.haxx.se you can see the latest
 curl and libcurl version relased from the project. That's the latest source
 code package you can get.
 
@@ -27,7 +27,7 @@ might have to either be satisfied with the latest version somone has packaged
 for your environment, or you need to build it yourself from source.
 
 The curl project also provides info about the latest version in a somewhat
-more machine-readable format on this URL: `http://curl.haxx.se/info`.
+more machine-readable format on this URL: `https://curl.haxx.se/info`.
 
 ## off git!
 

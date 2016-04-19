@@ -5,7 +5,7 @@ packages of curl and libcurl and make them available for download.
 
 Many operating systems offer a "package repository" that is populated with
 software packages for you to install. From the [curl download
-page](http://curl.haxx.se/download.html) you can also follow links to plain
+page](https://curl.haxx.se/download.html) you can also follow links to plain
 binary packages for popular operating systems.
 
 ## Installing from your package repository

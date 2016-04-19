@@ -1,7 +1,7 @@
 ## How it started
 
-Back in 1996, [Daniel Stenberg](http://daniel.haxx.se/) was writing an IRC bot
-on his spare time. An automated program that would offer services for the
+Back in 1996, [Daniel Stenberg](https://daniel.haxx.se/) was writing an IRC
+bot on his spare time. An automated program that would offer services for the
 participants in a chatroom dedicated to the Amiga computer (#amiga on the IRC
 network EFnet), when he came to think that it would be fun to get some updated
 currency rates and have his bot offer a service online for the chat room users

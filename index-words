@@ -4,6 +4,7 @@
 --data
 --header
 --keepalive-time
+--libcurl
 --limit-rate
 --location
 --location
@@ -35,20 +36,43 @@
 -K
 -O
 -T
+-X
 -u
 .netrc
 /etc/hosts
+<curl/curl.h>
 ALPN
 C89
 CA
+CURLE_ABORTED_BY_CALLBACK
+CURLMOPT_SOCKETFUNCTION
+CURLMOPT_TIMERFUNCTION
+CURLOPT_DEBUGFUNCTION
+CURLOPT_ERRORBUFFER
+CURLOPT_HEADER
+CURLOPT_MAXFILE_LARGE
+CURLOPT_READFUNCTION
+CURLOPT_STDERR
+CURLOPT_TIMEOUT
+CURLOPT_URL
 CURLOPT_VERBOSE
+CURLOPT_WRITEDATA
+CURLOPT_WRITEFUNCTION
+CURLOPT_XFERINFODATA
+CURLOPT_XFERINFOFUNCTION
+CURL_MAX_WRITE_SIZE
+CURL_SOCKET_TIMEOUT
 Chrome
+Connection reuse
 Contributing
+Cookies
+Debug callback
 Firefox
 Fragment
 Globbing
 HTTP/1.1
 HTTP/2
+Header callback
 Host:
 HttpGet
 IPv4
@@ -60,12 +84,16 @@ MITM-proxies
 Metalink
 NPN
 PAC
+Progress callback
 RELEASE-NOTES
+Read callback
 SMTP
 SNI
+SSL context callback
 Scheme
 TODO
 Vulnerability
+Write callback
 bugreports
 clone
 conduct
@@ -75,14 +103,37 @@ copyright
 curl-announce
 curl-library
 curl-users
+curl_easy_cleanup
+curl_easy_init
+curl_easy_perform
+curl_easy_reset
+curl_easy_setopt
+curl_global_cleanup
+curl_global_init
+curl_multi_add_handle
+curl_multi_cleanup
+curl_multi_fdset
+curl_multi_info_read
+curl_multi_init
+curl_multi_remove_handle
+curl_multi_remove_handle
+curl_multi_setopt
+curl_multi_socket_action
+curl_multi_timeout
+curl_multi_wait
+curl_off_t
+curl_version_info
 development
 environment variables
 etiquette
+event-driven
 future
 git
 javascript
 keep-alive
+libcurl version
 license
+multi-threading
 ranges
 redirects
 releases

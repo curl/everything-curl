@@ -67,7 +67,7 @@ users.
 - WolfSSL: (formerly known as cyaSSL) is a TLS library perhaps more targeted
   towards an embedded market.
 - axTLS: is a minuscule TLS library focused on a small footprint.
-- scannel: the native TLS library on Windows.
+- schannel: the native TLS library on Windows.
 - securetransport: the native TLS library on Mac OS X.
 - gskit: the native TLS library on OS/400.
 
@@ -178,11 +178,9 @@ See also the [libcurl examples](libcurl-examples.md) section of this book.
 Handy scripts.
 
 - `contributors.sh`: extracts contributors from the git repository since a
-  given hash/tag. If `--releasenotes` is also used, it will add the existing
-  names already mentioned in `RELEASE-NOTES`. The purpose is of course to get
-  and maintain the list for the RELEASE-NOTES file and to allow manually added
-  names to remain in there even on updates. The script uses the
-  'THANKS-filter` file to rewrite some names.
+  given hash/tag. The purpose is to generate a list for the RELEASE-NOTES file
+  and to allow manually added names to remain in there even on updates. The
+  script uses the 'THANKS-filter` file to rewrite some names.  
 - `contrithanks.sh`: extracts contributors from the git repository since a
   given hash/tag, filters out all the names that are already mentioned in
   `THANKS`, and then outputs `THANKS` to stdout with the list of new

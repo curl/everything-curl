@@ -1,18 +1,7 @@
 # HTTP with libcurl
 
-## HTTP Cookies
-
-"cookie engine"
-
-Reading
-
-Writing
-
-Exported
-
-Setting custom cookies
-
-TBD
+HTTP is by far the most commonly used protocol by libcurl users and libcurl
+offers countless ways of modifying such transfers.
 
 ## HTTP POST
 

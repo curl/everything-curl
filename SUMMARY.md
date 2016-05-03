@@ -89,6 +89,7 @@
     * [Verbose operations](libcurl-verbose.md)
     * [libcurl examples](libcurlexamples.md)
 * [HTTP with libcurl](libcurl-http.md)
+    * [Cookies with libcurl](libcurl-http-cookies.md)
 * [Bindings](bindings.md)
 * [libcurl internals](internals.md)
 * [Index](bookindex.md)

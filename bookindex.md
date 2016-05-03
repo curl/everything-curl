@@ -44,7 +44,7 @@
  - curl_easy_init: [Easy handle](libcurl-easyhandle.md#easy-handle), [curl --libcurl](libcurl--libcurl.md#curl---libcurl)
  - curl_easy_perform: [Driving with the "easy" interface](libcurl-drive-easy.md#driving-with-the-"easy"-interface), [Easy API pool](libcurl-connectionreuse.md#easy-api-pool), [curl --libcurl](libcurl--libcurl.md#curl---libcurl)
  - curl_easy_reset: [Easy handle](libcurl-easyhandle.md#easy-handle)
- - curl_easy_setopt: [docs/libcurl/opts](sourcecode-layout.md#docs/libcurl/opts), [Easy handle](libcurl-easyhandle.md#easy-handle), [Write callback](callback-write.md#write-callback), [Read callback](callback-read.md#read-callback), [Progress callback](callback-progress.md#progress-callback), [curl --libcurl](libcurl--libcurl.md#curl---libcurl), [Set handle options](libcurl-options.md#set-handle-options), [Setting numerical options](libcurl-options.md#setting-numerical-options), [Get handle options](libcurl-options.md#get-handle-options), [CURLcode return code](libcurl-curlcode.md#curlcode-return-code), [Verbose operations](libcurl-verbose.md#verbose-operations)
+ - curl_easy_setopt: [docs/libcurl/opts](sourcecode-layout.md#docs/libcurl/opts), [Easy handle](libcurl-easyhandle.md#easy-handle), [Write callback](callback-write.md#write-callback), [Read callback](callback-read.md#read-callback), [Progress callback](callback-progress.md#progress-callback), [Header callback](callback-header.md#header-callback), [curl --libcurl](libcurl--libcurl.md#curl---libcurl), [Set handle options](libcurl-options.md#set-handle-options), [Setting numerical options](libcurl-options.md#setting-numerical-options), [Get handle options](libcurl-options.md#get-handle-options), [CURLcode return code](libcurl-curlcode.md#curlcode-return-code), [Verbose operations](libcurl-verbose.md#verbose-operations)
  - curl_global_cleanup: [Global initialization](libcurl-globalinit.md#global-initialization)
  - curl_global_init: [Global initialization](libcurl-globalinit.md#global-initialization)
  - CURL_MAX_WRITE_SIZE: [Write callback](callback-write.md#write-callback)
@@ -79,7 +79,7 @@
  - Globbing: [URL Globbing](cmdline-globbing.md#url-globbing)
 ## H
  - --header: [Server differences](usingcurl-downloads.md#server-differences)
- - Header callback: [Header callback](libcurl-callbacks.md#header-callback)
+ - Header callback: [Header callback](libcurl-callbacks.md#header-callback), [Header callback](callback-header.md#header-callback)
  - Host:: [Verbose mode](usingcurl-verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl-verbose.md#trace-and---trace-ascii), [--trace-time](usingcurl-verbose.md#trace-time), [Change the Host: header](usingcurl-connections.md#change-the-host:-header), [HTTP Protocol basics](http-basics.md#http-protocol-basics), [The HTTP this generates](http-multipart.md#the-http-this-generates)
  - HTTP/1.1: [Verbose mode](usingcurl-verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl-verbose.md#trace-and---trace-ascii), [--trace-time](usingcurl-verbose.md#trace-time), [HTTP/2](usingcurl-verbose.md#http/2), [HTTP Protocol basics](http-basics.md#http-protocol-basics), [The HTTP this generates](http-multipart.md#the-http-this-generates), [Request method](http-requests.md#request-method)
  - HTTP/2: [docs](sourcecode-layout.md#docs), [HTTP/2](usingcurl-verbose.md#http/2), [HTTP/2](http.md#http/2), [HTTP/2](libcurl-http.md#http/2)

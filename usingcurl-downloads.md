@@ -332,15 +332,37 @@ maximum speed, but curl does not.
 
 ### Maximum filesize
 
---max-filesize
+When you want to make sure your curl command line won't try to download a too
+large file you can instruct curl to stop before doing that - if it knows the
+size before the transfer starts! Maybe that would spend too much bandwidth,
+take too long time or you won't have space on your harddrive.
 
-TBD
+    curl --max-filesize 100000 https://example.com/
+
+Give curl the largest download you will accept in number of bytes and if curl
+can figure out the size before the transfer starts it will abort trying to
+download something larger.
+
+Here are many situations in which curl cannot figure out the size at the time
+the transfer starts and this option will not affect those transfers, even if
+they may end up larger than the specified amount.
 
 ### Metalink
 
---metalink
+Metalink is a file descripion standard that tells a client multiple locations
+where the same content resides. A client can then opt to transfer that content
+from one or many of those sources.
 
-TBD
+curl supports the metalink format when asked to with the `--metalink`
+option. Then given URL should then point to a metalink file. Like:
+
+    curl --metalink https://example.com/example.metalink
+
+curl will make use of the mirrors listed within the file for failover if there
+are errors (such as the file or server not being available). It will also
+verify the hash of the file after the download completes. The Metalink file
+itself is downloaded and processed in memory and not stored in the local file
+system.
 
 ### --xattr
 
@@ -351,5 +373,9 @@ TBD
 TBD
 
 ### --retry
+
+TBD
+
+### Resuming and ranges
 
 TBD

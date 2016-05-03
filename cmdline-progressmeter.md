@@ -23,6 +23,23 @@ size of the requested operation and that then subsequently makes the progress
 meter contain less details and it cannot for example make forecasts for
 transfer times etc.
 
+### Units
+
+The progress meter displays bytes and bytes per second.
+
+It will also use suffixes for larger amounts of bytes, using the 1024 base
+system so 1024 is one kilobyte (1K), 2048 is 2K etc. curl supports these:
+
+| Suffix  |  Amount | Name      |
+|---------|---------|-----------|
+| K       | 2^10    | kilobyte  |
+| M       | 2^20    | megabyte  |
+| G       | 2^30    | gigabyte  |
+| T       | 2^40    | terrabyte |
+| P       | 2^50    | petabyte  |
+
+The times are displayed using H:MM:SS for hours, minutes and seconds.
+
 ### Progress meter legend
 
 The progress meter exists to show a user that something actually is

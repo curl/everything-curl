@@ -364,17 +364,46 @@ verify the hash of the file after the download completes. The Metalink file
 itself is downloaded and processed in memory and not stored in the local file
 system.
 
-### --xattr
+### Store metadata in file system
 
-TBD
+When saving a download to a file with curl, the `--xattr` option tells curl to
+also store certain file metadata in "extended file attributes". These extended
+attributes are basically standardized name/value pairs stored in the file
+system, assuming one of the supported file systems and operating systems are
+used.
 
-### ---raw
+Currently, the URL is stored in the `xdg.origin.url` attribute and, for HTTP,
+the content type is stored in the `mime_type` attribute. If the file system
+does not support extended attributes when this option is set, a warning is
+issued.
 
-TBD
+### Raw
 
-### --retry
+When `--raw` is used, it disables all internal HTTP decoding of content or
+transfer encodings and instead makes them passed on unaltered, raw.
 
-TBD
+This is typically used if you're writing some sort of middle software and you
+want to pass on the content to perhaps another HTTP client and allow that to
+do the decoding instead.
+
+### Retry failed attemps
+
+Normally curl will only make a single attempt to perform a transfer and return
+an error if not successful. Using the `--retry` option you can tell curl to
+retry certain failed transfers.
+
+If a transient error is returned when curl tries to perform a transfer, it
+will retry this number of times before giving up. Setting the number to 0
+makes curl do no retries (which is the default).  Transient error means
+either: a timeout, an FTP 4xx response code or an HTTP 5xx response code.
+
+When curl is about to retry a transfer, it will first wait one second and then
+for all forthcoming retries it will double the waiting time until it reaches
+10 minutes which then will be the delay between the rest of the retries. Use
+`--retry-delay` you can disable this exponential backoff algorithm and set
+your own delay between the attempts. With `--retry-max-time` you cap the total
+time allowed for retries. The `--max-time` is still the option that specifies
+the longest time a single of these transfers is allowed to spend.
 
 ### Resuming and ranges
 

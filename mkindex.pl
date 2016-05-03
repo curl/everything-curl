@@ -38,36 +38,35 @@ sub single {
 
     open(F, "<$fname");
     while(<F>) {
+        chomp;
+        my $l=$_;
         if($_ =~ /^(#[\#]*) (.*)/) {
             $depth = $1;
             $section = $2;
             $url=urlify($fname, $section);
             # print "$fname / \"$2\"\n";
+
+            $l = $section; # use this too
         }
-        else {
-            chomp;
-            my $l=$_;
-            my @words = split(/[ \(\)]+/, $_);
-            for my $w (@words) {
-                $w =~ s/[,\.\`\']//g;
-                if($index{$w}) {
-                    if(!$word{$w}{$url}) {
-                        #print " $w ($url)\n";
-                        $word{$w}{$url}++;
-                        $all{$w} .= ($all{$w}?", ":"")."[$section]($url)";
-                    }
+
+        my @words = split(/[ \(\)]+/, $_);
+        for my $w (@words) {
+            $w =~ s/[,\.\`\']//g;
+            if($index{$w}) {
+                if(!$word{$w}{$url}) {
+                    #print " $w ($url)\n";
+                    $word{$w}{$url}++;
+                    $all{$w} .= ($all{$w}?", ":"")."[$section]($url)";
                 }
             }
-            # check longer words
-            foreach my $w (@lwords) {
-                if($l =~ /$w/) {
-                    print STDERR "match long word: $w\n";
-                    if(!$word{$w}{$url}) {
-                        #print " $w ($url)\n";
-                        $word{$w}{$url}++;
-                        $all{$w} .= ($all{$w}?", ":"")."[$section]($url)";
-                    }
-                    
+        }
+        # check longer words
+        foreach my $w (@lwords) {
+            if($l =~ /$w/) {
+                if(!$word{$w}{$url}) {
+                    #print " $w ($url)\n";
+                    $word{$w}{$url}++;
+                    $all{$w} .= ($all{$w}?", ":"")."[$section]($url)";
                 }
             }
         }

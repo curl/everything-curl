@@ -17,6 +17,10 @@ TBD
 
 TBD
 
+### Ranges
+
+TBD
+
 ### HTTP/2
 
 TBD

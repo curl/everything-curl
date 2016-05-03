@@ -8,7 +8,10 @@ open(F, "<index-words") ||
 while(<F>) {
     chomp;
     my $w = $_;
-    $w =~ s/ //g; #no spaces
+    if($w =~ /[ .]/) {
+        # word with spaces or periods
+        push @lwords, $w;
+    }
     $index{$w}=1;
 }
 close(F);
@@ -18,8 +21,8 @@ sub urlify {
 
     $section =~ tr/[A-Z]/[a-z]/;
 
-    # remove dashes from like option names
-    $section =~ s/[-]//g;
+    # remove dashes amd slashes from like option names
+    $section =~ s/^[-\.]+//g;
 
     # but replace spaces with dashes
     $section =~ s/ +/-/g;
@@ -42,7 +45,8 @@ sub single {
             # print "$fname / \"$2\"\n";
         }
         else {
-            chop;
+            chomp;
+            my $l=$_;
             my @words = split(/[ \(\)]+/, $_);
             for my $w (@words) {
                 $w =~ s/[,\.\`\']//g;
@@ -53,8 +57,17 @@ sub single {
                         $all{$w} .= ($all{$w}?", ":"")."[$section]($url)";
                     }
                 }
-                else  {
-                    #print " $w\n";
+            }
+            # check longer words
+            foreach my $w (@lwords) {
+                if($l =~ /$w/) {
+                    print STDERR "match long word: $w\n";
+                    if(!$word{$w}{$url}) {
+                        #print " $w ($url)\n";
+                        $word{$w}{$url}++;
+                        $all{$w} .= ($all{$w}?", ":"")."[$section]($url)";
+                    }
+                    
                 }
             }
         }

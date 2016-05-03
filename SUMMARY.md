@@ -89,4 +89,4 @@
 * [HTTP with libcurl](libcurl-http.md)
 * [Bindings](bindings.md)
 * [libcurl internals](internals.md)
-* [Index](index.md)
+* [Index](bookindex.md)

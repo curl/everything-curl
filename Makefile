@@ -1,4 +1,4 @@
-OUT = index.md
+OUT = bookindex.md
 
 MDS := $(wildcard *.md)
 

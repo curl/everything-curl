@@ -42,18 +42,19 @@
 /etc/hosts
 <curl/curl.h>
 ALPN
+BoringSSL
 C89
 CA
 CURLE_ABORTED_BY_CALLBACK
 CURLMOPT_SOCKETFUNCTION
 CURLMOPT_TIMERFUNCTION
+CURLOPT_COOKIE
+CURLOPT_COOKIEFILE
+CURLOPT_COOKIEJAR
 CURLOPT_DEBUGFUNCTION
 CURLOPT_ERRORBUFFER
 CURLOPT_HEADER
 CURLOPT_HEADERFUNCTION
-CURLOPT_COOKIE
-CURLOPT_COOKIEFILE
-CURLOPT_COOKIEJAR
 CURLOPT_MAXFILE_LARGE
 CURLOPT_READFUNCTION
 CURLOPT_STDERR
@@ -75,6 +76,7 @@ Debug callback
 Firefox
 Fragment
 Globbing
+GnuTLS
 HTTP/1.1
 HTTP/2
 Header callback
@@ -89,6 +91,8 @@ MIT
 MITM-proxies
 Metalink
 NPN
+NSS
+OpenSSL
 PAC
 Progress callback
 RELEASE-NOTES
@@ -98,11 +102,12 @@ SNI
 SSL context callback
 Scheme
 TODO
+URL Globbing
 Vulnerability
 Write callback
 bugreports
 clone
-conduct
+code of conduct
 configure
 contribute
 copyright
@@ -138,6 +143,7 @@ git
 javascript
 keep-alive
 libcurl version
+libressl
 license
 multi-threading
 ranges
@@ -145,6 +151,7 @@ redirects
 releases
 repository
 roadmap
+schannel
 security
 snapshots
 testing

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-abook=`grep -o '[a-z-]*\.md' SUMMARY.md`
+abook=`grep -o '[a-z-]*\.md' SUMMARY.md | grep -v index.md`
 book="README.md $abook"
 
 tbd=`cat $book | grep -c ^TBD`

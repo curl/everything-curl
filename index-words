@@ -1,0 +1,14 @@
+--location
+--silent
+-K
+-O
+-u
+CURLOPT_VERBOSE
+HttpGet
+bugreports
+contribute
+etiquette
+releases
+security
+snapshots
+testing

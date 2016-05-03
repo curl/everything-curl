@@ -1,26 +1,17 @@
 #!/usr/bin/perl
 
-# Words:
-# cat *md | sed -e 's/[\.\[\]\(\)]/ /g' -e 's/ /\n/g' | sort | uniq -c | sort -rn | less
-
-my %index=(
-    '--location' => 1,
-    'HttpGet' => 1,
-    'etiquette' => 1,
-    'bugreports' => 1,
-    'testing' => 1,
-    'snapshots' => 1,
-    'releases' => 1,
-    'contribute' => 1,
-    'security' => 1,
-    '-u' => 1,
-    '-O' => 1,
-    '-K' => 1,
-    '--silent' => 1,
-    'CURLOPT_VERBOSE' => 1);
-
 # get all markdown files as arguments
 my @files=@ARGV;
+
+open(F, "<index-words") ||
+    die "no words";
+while(<F>) {
+    chomp;
+    my $w = $_;
+    $w =~ s/ //g; #no spaces
+    $index{$w}=1;
+}
+close(F);
 
 sub urlify {
     my ($fname, $section)=@_;

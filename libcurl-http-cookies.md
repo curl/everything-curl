@@ -86,7 +86,7 @@ header but we recommend the cookie file style:
 If that given cookie would match an already existing cookie (with the same
 domain and path etc), it would overwrite the old one with the new contents.
 
-### Get all cokies from the cookie store
+### Get all cookies from the cookie store
 
 Sometimes writing the cookie file when you close the handle isn't enough and
 then your application can opt to extract all the currently known cookies from

@@ -59,16 +59,9 @@ From left-to-right:
 | Received |Currently downloaded amount of bytes                    |
 | %        |Percentage completed of the upload                      | 
 |Xferd     |Currently uploaded amount of bytes                      |
-|Average Speed Dload| Average transfer speed of the entire download
-                      so far, in number of bytes per second         |
-|Average Speed Upload| Average transfer speed of the entire upload
-                       so far, in number of bytes per second        |
-|Time Total|Expected time to complete the operation,
-            in HH:MM:SS notation for hours, minutes and seconds     |
-|Time Current|Time passed since the start of the transfer, in
-              HH:MM:SS notation for hours, minutes and seconds      |
-|Time Left |Expected time left to completion, in HH:MM:SS notation
-            for hours, minutes and seconds                          |
-|Curr.Speed|Average transfer speed the last 5 seconds (the first 5
-            seconds of a transfer is based on less time of course)
-            in number of bytes per second                           |
+|Average Speed Dload| Average transfer speed of the entire download so far, in number of bytes per second |
+|Average Speed Upload| Average transfer speed of the entire upload so far, in number of bytes per second |
+|Time Total|Expected time to complete the operation, in HH:MM:SS notation for hours, minutes and seconds |
+|Time Current|Time passed since the start of the transfer, in HH:MM:SS notation for hours, minutes and seconds |
+|Time Left |Expected time left to completion, in HH:MM:SS notation for hours, minutes and seconds |
+|Curr.Speed|Average transfer speed the last 5 seconds (the first 5 seconds of a transfer is based on less time of course) in number of bytes per second |

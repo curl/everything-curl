@@ -3,6 +3,8 @@
     * [The name](curl-name.md)
     * [What does curl do?](curl-does.md)
     * [Project communication](curl-comm.md)
+    * [Mailing list etiquette](curl-etiquette.md)
+    * [Mailing lists](curl-maillists.md)
     * [Reporting bugs](curl-bugs.md)
     * [Releases](curl-releases.md)
     * [Security](curl-security.md)

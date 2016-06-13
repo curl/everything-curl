@@ -1,36 +1,3 @@
-## Project communication
-
-cURL is a an open source project consisting of voluntary members from all over
-the world, living and working in a large amount of the world's time zones. To
-make such a setup actually work, communication and openness is key. We keep
-all communication public and we use open communication channels. Most
-discussions are held on mailing lists, we use bug trackers where all issues
-are discussed and handled with full insight for everyone who cares to look.
-
-It is important to realize that we're all jointly taking care of the project,
-we fix problems and we add features. Sometimes a regular contributor grows
-bored and fades away, sometimes a new eager contributor steps out from the
-shadows and starts helping out more. To keep this ship going forward as good
-as possible it is important that we maintain open discussions and that's one
-of the reasons why we frown upon users who take discussions privately or try
-to email individual team members about development issues, questions,
-debugging or whatever.
-
-In this day and age, mailing lists may be considered sort of the old style of
-communication - no fancy web forum or similar. Using a mailing list is
-therefore becoming an art that isn't practiced everywhere and may be a bit
-strange and unusual to you. But fear not. It is just about sending emails to
-an address that then sends that email out to all the subscribers. Our mailing
-lists have at most a few thousand subscribers. If you're mailing for the first
-time, it might be good to read a few old mails first to get to learn the
-culture and what's considered good practice.
-
-The mailing lists and the bug tracker have changed hosting providers a few
-times and there are reasons to suspect it might happen again in a future. It
-is just things that happen to a project that lives for a long time.
-
-A few users also hang out on IRC in the #curl channel on freenode.
-
 ### Mailing list etiquette
 
 As many communities and sub cultures, we have developed guidelines and rules
@@ -147,30 +114,3 @@ Getting the solution posted also helps other users that experience the same
 problem(s). They get to see (possibly in the web archives) that the suggested
 fixes actually has helped at least one person.
 
-## Mailing lists
-
-Some of the most important mailing lists are...
-
-### curl-users
-
-The main mailing list for users and developers of the curl command line
-tool. Questions and help around curl concepts, command line options, the
-protocols curl can speak or even related tools. We tend to move development
-issues or more advanced bug fixes discussions over to curl-library instead,
-since libcurl is the engine that drives most of curl.
-
-See https://cool.haxx.se/mailman/listinfo/curl-users
-
-### curl-library
-
-The main development list, and also for users of libcurl. We discuss how to
-use libcurl in applications as well as development of libcurl itself. Lots of
-questions on libcurl behavior, debugging and documentation issues.
-
-See https://cool.haxx.se/mailman/listinfo/curl-library
-
-### curl-announce
-
-This mailing list that only gets announcements about new releases and security
-problems. Nothing else. For those who wants a more casual feed of information
-from the project. https://cool.haxx.se/mailman/listinfo/curl-announce

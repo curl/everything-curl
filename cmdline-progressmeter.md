@@ -51,16 +51,24 @@ happening. The different fields in the output have the following meaning:
 
 From left-to-right:
 
- - %: percentage completed of the whole transfer
- - Total: total size of the whole expected transfer
- - %: percentage completed of the download
- - Received: currently downloaded amount of bytes
- - %: percentage completed of the upload
- - Xferd: currently uploaded amount of bytes
- - Average Speed Dload: the average transfer speed of the download
- - Average Speed Upload: the average transfer speed of the upload
- - Time Total: expected time to complete the operation
- - Time Current: time passed since the invoke
- - Time Left: expected time left to completion
- - Curr.Speed: the average transfer speed the last 5 seconds (the first 5
-   seconds of a transfer is based on less time of course.)
+|Title|Meaning|
+|-----|-------|
+| %        |Percentage completed of the whole transfer              |
+|Total     |Total size of the whole expected transfer (if known)    |
+| %        |Percentage completed of the download                    |
+| Received |Currently downloaded amount of bytes                    |
+| %        |Percentage completed of the upload                      | 
+|Xferd     |Currently uploaded amount of bytes                      |
+|Average Speed Dload| Average transfer speed of the entire download
+                      so far, in number of bytes per second         |
+|Average Speed Upload| Average transfer speed of the entire upload
+                       so far, in number of bytes per second        |
+|Time Total|Expected time to complete the operation,
+            in HH:MM:SS notation for hours, minutes and seconds     |
+|Time Current|Time passed since the start of the transfer, in
+              HH:MM:SS notation for hours, minutes and seconds      |
+|Time Left |Expected time left to completion, in HH:MM:SS notation
+            for hours, minutes and seconds                          |
+|Curr.Speed|Average transfer speed the last 5 seconds (the first 5
+            seconds of a transfer is based on less time of course)
+            in number of bytes per second                           |

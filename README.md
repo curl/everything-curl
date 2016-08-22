@@ -62,5 +62,5 @@ github page.
 
 ## License
 
-This document is licensed under the Creative Commons Attribution 4.0 license:
-http://creativecommons.org/licenses/by/4.0/
+This document is licensed under the [Creative Commons Attribution 4.0
+license](http://creativecommons.org/licenses/by/4.0/).

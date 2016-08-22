@@ -23,10 +23,10 @@ aspects of the project (even if only that currently seems like an
 insurmountable goal), the curl project will continue to move so there will be
 things to update here as well.
 
-This book project started at the end of September 2015. I have a basic layout
-plan for a first "edition", or perhaps I should say I had, because I'm
-thinking of new sections to add all the time... While I have no fixed time
-schedule for this, my hope is to have something decent by the summer 2016.
+This book project started at the end of September 2015 with a basic layout
+plan for a first "edition", which since has expanded significantly. There's no
+fixed time schedule for this book. Hopefully it will be complete at some
+point.
 
 ## The book sites
 

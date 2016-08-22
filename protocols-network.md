@@ -51,8 +51,31 @@ As curl gets a list of addresses for the host, it will actually traverse that
 list of addresses when connecting and in case one fails it'll try to connect
 to the next one until either one works or they all failed.
 
+### Connects to "port numbers"
+
+When connecting with TCP to a remote server, a client selects which port
+number to do that on. A port number is just a dedicated places for a
+particular service to allow that same server to listen to other services on
+other port numbers at the same time.
+
+Most common protocols have default port numbers that clients and servers
+use. For example when using the "http://example.com/index.html" URL, that URL
+specifies a scheme called "http" which tells the client that it should try TCP
+port number 80 on the server by default. The URL can optionally provide
+another, custom, port number but if nothing special is said it'll use the
+default port for the scheme used in the URL.
+
+### TLS
+
+After the TCP connection has been established, many transfers will require
+that both sides negotiate a better security level before continuing, and that
+is often TLS; Transport Layer Security. If that is used, the client and server
+will do a TLS handshake first and only continue further if that succeeds.
+
 ### Transfer data
 
-When the "string" we call TCP is attached to the remote computer, there's an
-established connection between the two machines and that connection can then
-be used to exchange data.
+When the "string" we call TCP is attached to the remote computer (and we've
+done the possible additional TLS handshake), there's an established connection
+between the two machines and that connection can then be used to exchange
+data. That communication is done using a "protocol", as discussed in the
+following chapter.

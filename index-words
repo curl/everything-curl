@@ -101,6 +101,7 @@ SMTP
 SNI
 SSL context callback
 Scheme
+TLS
 TODO
 URL Globbing
 Vulnerability
@@ -146,6 +147,7 @@ libcurl version
 libressl
 license
 multi-threading
+port number
 ranges
 redirects
 releases

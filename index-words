@@ -77,9 +77,9 @@ Firefox
 Fragment
 Globbing
 GnuTLS
+Gopher
 HTTP/1.1
 HTTP/2
-Header callback
 Header callback
 Host:
 HttpGet
@@ -96,11 +96,18 @@ OpenSSL
 PAC
 Progress callback
 RELEASE-NOTES
+RTMP
+RTSP
 Read callback
+SCP
+SFTP
 SMTP
+SMTPS
 SNI
+SSH
 SSL context callback
 Scheme
+TELNET
 TLS
 TODO
 URL Globbing

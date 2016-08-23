@@ -2,6 +2,7 @@
 --connect-timeout
 --connect-to
 --data
+--ftp-method
 --header
 --keepalive-time
 --libcurl

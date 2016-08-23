@@ -41,7 +41,7 @@ URLs work and is a common cause for confusion among users.
 For user `daniel` to transfer `todo.txt` from his home directory, it would
 look similar to this:
 
-    curl sftp://example.com/~/todo.txt
+    curl sftp://example.com/~/todo.txt -u daniel
 
 ### Auth
 

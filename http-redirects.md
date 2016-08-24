@@ -79,12 +79,10 @@ in HTTP/1.1.
 
 Oh, and redirects work the exact same way in HTTP/2 as they do in HTTP/1.1.
 
-|----------------------------------------------|
 |                     |Permanent | Temporary   |
 |---------------------|----------|-------------|
 |Switch to GET        | 301      | 302 and 303 |
 |Keep original method | 308      | 307         |
-|----------------------------------------------|
 
 ### --post30X
 

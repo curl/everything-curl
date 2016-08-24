@@ -42,7 +42,7 @@ These three codes were the only redirect codes in the HTTP/1.0 spec.
 curl however, doesn't remember or cache any redirects at all so there's really
 no difference between permanent and temporary redirects to it.
 
-## -L / --location
+## Tell curl to follow redirects
 
 In curl's tradition of only doing the basics unless you tell it differently,
 it doesn't follow HTTP redirects by default. Use the `-L, --location` to tell
@@ -84,7 +84,7 @@ Oh, and redirects work the exact same way in HTTP/2 as they do in HTTP/1.1.
 |Switch to GET        | 301      | 302 and 303 |
 |Keep original method | 308      | 307         |
 
-### --post30X
+### Decide what method to use in redirects
 
 It turns out that there are web services out there in the world that want a
 POST sent to the original URL, but are responding with HTTP redirects that use

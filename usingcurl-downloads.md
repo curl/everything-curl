@@ -407,4 +407,29 @@ the longest time a single of these transfers is allowed to spend.
 
 ### Resuming and ranges
 
-TBD
+Resuming a download means first checking the size of what is already present
+locallly and then asking the server to send the rest of it to append. curl
+also allows resuming the transfer at a custom point without actually having
+anything locally present.
+
+curl supports resumed downloads on several protocols. Tell it where to start
+the transfer with the `-C, --continue-at` option that takes either a plain
+numerical byte counter offset where to start or the string `-` that asks curl
+to figure it out itself based on what it knows. When using `-`, curl will use
+the destination file name to figure out how much data that is already present
+locally and ask use that as an offset when asking for more data from the
+server.
+
+To start downloading an FTP file from byte offset 100:
+
+    curl --continue-at 100 ftp://example.com/bigfile
+
+Continue downloading a previously interrupted download:
+
+    curl --continue-at - http://example.com/bigfile -O
+
+If you instead just want a specific byte range from the remote resource
+transfered, you can ask for only getting that. Like when you only want a 1000
+bytes from offset 100 to avoid having to download the entire remote huge file:
+
+    curl --range 100-1999 http://example.com/bigfile

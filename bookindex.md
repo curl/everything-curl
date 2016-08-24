@@ -36,6 +36,7 @@
  - CURLOPT_HEADER: [Write callback](callback-write.md#write-callback)
  - CURLOPT_HEADERFUNCTION: [Header callback](callback-header.md#header-callback), [curl --libcurl](libcurl--libcurl.md#curl---libcurl)
  - CURLOPT_MAXFILE_LARGE: [Setting numerical options](libcurl-options.md#setting-numerical-options)
+ - CURLOPT_POSTREDIR: [--post30X](http-redirects.md#post30x)
  - CURLOPT_READFUNCTION: [Read callback](callback-read.md#read-callback), [curl --libcurl](libcurl--libcurl.md#curl---libcurl)
  - CURLOPT_STDERR: [curl --libcurl](libcurl--libcurl.md#curl---libcurl), [Verbose operations](libcurl-verbose.md#verbose-operations)
  - CURLOPT_TIMEOUT: [Setting numerical options](libcurl-options.md#setting-numerical-options)
@@ -87,15 +88,16 @@
  - --header: [Server differences](usingcurl-downloads.md#server-differences)
  - Header callback: [Header callback](callback-header.md#header-callback)
  - Host:: [Verbose mode](usingcurl-verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl-verbose.md#trace-and---trace-ascii), [--trace-time](usingcurl-verbose.md#trace-time), [Change the Host: header](usingcurl-connections.md#change-the-host:-header), [HTTP Protocol basics](http-basics.md#http-protocol-basics), [The HTTP this generates](http-multipart.md#the-http-this-generates)
- - HTTP/1.1: [Verbose mode](usingcurl-verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl-verbose.md#trace-and---trace-ascii), [--trace-time](usingcurl-verbose.md#trace-time), [HTTP/2](usingcurl-verbose.md#http/2), [HTTP Protocol basics](http-basics.md#http-protocol-basics), [The HTTP this generates](http-multipart.md#the-http-this-generates), [Request method](http-requests.md#request-method)
- - HTTP/2: [docs](sourcecode-layout.md#docs), [HTTP/2](usingcurl-verbose.md#http/2), [HTTP/2](http.md#http/2), [HTTP/2](libcurl-http.md#http/2)
+ - HTTP redirects: [Short options](cmdline-options.md#short-options), [Long options](cmdline-options.md#long-options), [HTTP redirects](http-redirects.md#http-redirects), [-L / --location](http-redirects.md#l-/---location), [--post30X](http-redirects.md#post30x)
+ - HTTP/1.1: [Verbose mode](usingcurl-verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl-verbose.md#trace-and---trace-ascii), [--trace-time](usingcurl-verbose.md#trace-time), [HTTP/2](usingcurl-verbose.md#http/2), [HTTP Protocol basics](http-basics.md#http-protocol-basics), [The HTTP this generates](http-multipart.md#the-http-this-generates), [GET or POST?](http-redirects.md#get-or-post?), [Request method](http-requests.md#request-method)
+ - HTTP/2: [docs](sourcecode-layout.md#docs), [HTTP/2](usingcurl-verbose.md#http/2), [HTTP/2](http.md#http/2), [GET or POST?](http-redirects.md#get-or-post?), [HTTP/2](libcurl-http.md#http/2)
  - HttpGet: [How it started](curl-started.md#how-it-started)
 ## I
  - Indentation: [Indentation](sourcecode-style.md#indentation)
  - IPv4: [Host name or address](cmdline-urls.md#host-name-or-address), [Port number](cmdline-urls.md#port-number), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables)
  - IPv6: [Host name or address](cmdline-urls.md#host-name-or-address), [Port number](cmdline-urls.md#port-number), [URL Globbing](cmdline-globbing.md#url-globbing), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables)
 ## J
- - javascript: [Client differences](usingcurl-downloads.md#client-differences), [PAC](usingcurl-proxies.md#pac), [Javascript and forms](http-post.md#javascript-and-forms)
+ - javascript: [Client differences](usingcurl-downloads.md#client-differences), [PAC](usingcurl-proxies.md#pac), [Javascript and forms](http-post.md#javascript-and-forms), [Javascript redirects](http-redirects.md#javascript-redirects)
 ## K
  - -K: [Command lines, quotes and aliases](cmdline.md#command-lines,-quotes-and-aliases), [Config file](cmdline-configfile.md#config-file)
  - keep-alive: [Keep connections alive](usingcurl-timeouts.md#keep-connections-alive)
@@ -123,6 +125,9 @@
 ## P
  - PAC: [PAC](usingcurl-proxies.md#pac)
  - port number: [Connects to "port numbers"](protocols-network.md#connects-to-"port-numbers"), [Port number](cmdline-urls.md#port-number), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [Provide a replacement name](usingcurl-connections.md#provide-a-replacement-name), [Local port number](usingcurl-connections.md#local-port-number), [HTTP](usingcurl-proxies.md#http), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling)
+ - --post301: [--post30X](http-redirects.md#post30x)
+ - --post302: [--post30X](http-redirects.md#post30x)
+ - --post303: [--post30X](http-redirects.md#post30x)
  - Progress callback: [Progress callback](callback-progress.md#progress-callback)
  - --proxy: [HTTP](usingcurl-proxies.md#http)
  - --proxy-user: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
@@ -131,7 +136,7 @@
 ## R
  - ranges: [Numerical ranges](cmdline-globbing.md#numerical-ranges), [Alphabetical ranges](cmdline-globbing.md#alphabetical-ranges), [Combinations](cmdline-globbing.md#combinations), [Resuming and ranges](usingcurl-downloads.md#resuming-and-ranges)
  - Read callback: [Read callback](callback-read.md#read-callback)
- - redirects: [Long options](cmdline-options.md#long-options), [Separate options per URL](cmdline-urls.md#separate-options-per-url), [Config file](cmdline-configfile.md#config-file), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [-O](usingcurl-downloads.md#o), [shell redirects](usingcurl-downloads.md#shell-redirects), [Provide a custom IP for a name](usingcurl-connections.md#provide-a-custom-ip-for-a-name), [Provide a replacement name](usingcurl-connections.md#provide-a-replacement-name), [List of all exit codes](usingcurl-returns.md#list-of-all-exit-codes), [Follow redirects automatically](curlexamples.md#follow-redirects-automatically), [HTTP redirects](http-redirects.md#http-redirects)
+ - redirects: [Long options](cmdline-options.md#long-options), [Separate options per URL](cmdline-urls.md#separate-options-per-url), [Config file](cmdline-configfile.md#config-file), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [-O](usingcurl-downloads.md#o), [shell redirects](usingcurl-downloads.md#shell-redirects), [Provide a custom IP for a name](usingcurl-connections.md#provide-a-custom-ip-for-a-name), [Provide a replacement name](usingcurl-connections.md#provide-a-replacement-name), [List of all exit codes](usingcurl-returns.md#list-of-all-exit-codes), [Follow redirects automatically](curlexamples.md#follow-redirects-automatically), [HTTP redirects](http-redirects.md#http-redirects), [Permanent and temporary](http-redirects.md#permanent-and-temporary), [-L / --location](http-redirects.md#l-/---location), [GET or POST?](http-redirects.md#get-or-post?), [--post30X](http-redirects.md#post30x), [Non-HTTP Redirects](http-redirects.md#non-http-redirects), [HTML redirects](http-redirects.md#html-redirects), [Javascript redirects](http-redirects.md#javascript-redirects)
  - RELEASE-NOTES: [scripts](sourcecode-layout.md#scripts)
  - releases: [curl-announce](curl-maillists.md#curl-announce), [Releases](curl-releases.md#releases), [scripts](sourcecode-layout.md#scripts), [Vulnerability Handling](sourcecode-reportvuln.md#vulnerability-handling), [Verbose mode](usingcurl-verbose.md#verbose-mode), [Which libcurl version](libcurl-api.md#which-libcurl-version)
  - --remote-name-all: [--remote-name-all](usingcurl-downloads.md#remote-name-all)

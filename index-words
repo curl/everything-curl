@@ -165,3 +165,8 @@ schannel
 security
 snapshots
 testing
+--post301
+--post302
+--post303
+CURLOPT_POSTREDIR
+HTTP redirects

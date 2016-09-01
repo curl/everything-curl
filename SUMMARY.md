@@ -64,6 +64,7 @@
     * [Modify the HTTP request](http-requests.md)
     * [HTTP PUT](http-put.md)
     * [Cookies](http-cookies.md)
+    * [HTTP/2](http-http2.md)
 * [Building and installing](building.md)
     * [Installing prebuilt binaries](building-binary.md)
     * [Build from source](building-source.md)

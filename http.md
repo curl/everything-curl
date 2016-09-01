@@ -13,10 +13,6 @@ the specific [HTTPS](#https) section below.
 
 TBD
 
-## HTTP/2
-
-TBD
-
 ## HTTP versions
 
 TBD

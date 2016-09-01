@@ -31,10 +31,6 @@ TBD
 
 TBD
 
-### Sockopt callback
-
-TBD
-
 ### Opensocket and closesocket callbacks
 
 TBD

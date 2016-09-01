@@ -82,6 +82,7 @@
         * [Progress callback](callback-progress.md)
         * [Header callback](callback-header.md)
         * [Debug callback](callback-debug.md)
+        * [sockopt callback](callback-sockopt.md)
     * [Cleanup](libcurl-cleanup.md)
     * [Post transfer info](libcurl-getinfo.md)
     * [API compatibility](libcurl-api.md)

@@ -63,6 +63,7 @@
     * [Redirects](http-redirects.md)
     * [Modify the HTTP request](http-requests.md)
     * [HTTP PUT](http-put.md)
+    * [Cookies](http-cookies.md)
 * [Building and installing](building.md)
     * [Installing prebuilt binaries](building-binary.md)
     * [Build from source](building-source.md)

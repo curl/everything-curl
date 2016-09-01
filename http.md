@@ -9,10 +9,6 @@ This will mostly work the same way for HTTPS, as they're really the same thing
 under the hood, as HTTPS is HTTP with an extra security TLS layer. See also
 the specific [HTTPS](#https) section below.
 
-## Cookies
-
-TBD
-
 ## Ranges
 
 TBD

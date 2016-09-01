@@ -15,39 +15,3 @@ care about, but just passes on as an argument to the callback. This allows you
 to for example pass in pointers to local data all the way through to your
 callback function.
 
-### SSL context callback
-
-TBD
-
-### ioctl and seek callbacks
-
-TBD
-
-### Convert to and from network callbacks
-
-TBD
-
-### Convert from UTF8 callback
-
-TBD
-
-### Opensocket and closesocket callbacks
-
-TBD
-
-### SSH key callback
-
-TBD
-
-### RTSP interleave callback
-
-TBD
-
-### FTP chunk callbacks
-
-TBD
-
-### FTP matching callback
-
-TBD
-

@@ -9,39 +9,35 @@ This will mostly work the same way for HTTPS, as they're really the same thing
 under the hood, as HTTPS is HTTP with an extra security TLS layer. See also
 the specific [HTTPS](#https) section below.
 
-### PUT
+## Cookies
 
 TBD
 
-### Cookies
+## Ranges
 
 TBD
 
-### Ranges
+## HTTP/2
 
 TBD
 
-### HTTP/2
+## HTTP versions
 
 TBD
 
-### HTTP versions
+## HTTP authentication
 
 TBD
 
-### HTTP authentication
+## HTTPS
 
 TBD
 
-### HTTPS
+## Scripting browser-like tasks
 
 TBD
 
-### Scripting browser-like tasks
-
-TBD
-
-### Cheat sheet
+## Cheat sheet
 
 TBD
 

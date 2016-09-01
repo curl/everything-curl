@@ -62,6 +62,7 @@
     * [-d vs -F](http-postvspost.md)
     * [Redirects](http-redirects.md)
     * [Modify the HTTP request](http-requests.md)
+    * [HTTP PUT](http-put.md)
 * [Building and installing](building.md)
     * [Installing prebuilt binaries](building-binary.md)
     * [Build from source](building-source.md)

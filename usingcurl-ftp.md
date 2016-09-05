@@ -37,5 +37,15 @@ instead with `-B, --use-ascii` or making sure the URL ends with `;type=A`.
 
 ## Authentication
 
-TBD
+FTP is one of the protocols you normally don't access without a user name and
+password. It just happens that for systems that allow "anonymous" FTP access
+you can login with pretty much any name and password you like. When curl is
+used on an FTP URL to do transfer without any given user name or password, it
+uses the name `anonymous` with the password `ftp@example.com`.
 
+If you want to provide another user namd and password, you can pass them on to
+curl eiter with the `-u, --user` option or embedded the info in the URL:
+
+   curl --user daniel:secret ftp://example.com/download
+
+   curl ftp://daniel:secret@example.com/download

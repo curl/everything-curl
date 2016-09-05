@@ -15,6 +15,16 @@ spec (RFC 1738) and is how curl acts by default.
 
     curl --ftp-method multicwd ftp://example.com/one/two/three/file.txt
 
+This then equals this FTP command/response sequence (simplified)
+
+    > CWD one
+    < 250 OK. Current directory is /one
+    > CWD two
+    < 250 OK. Current directory is /one/two
+    > CWD three
+    < 250 OK. Current directory is /one/two/three
+    > RETR file.txt
+
 ### nocwd
 
 The opposite to doing one CWD for each directory part is to not change
@@ -24,6 +34,10 @@ isn't purely standards compliant.
 
     curl --ftp-method nocwd ftp://example.com/one/two/three/file.txt
 
+This then equals this FTP command/response sequence (simplified)
+
+    > RETR one/two/three/file.txt
+
 ### singlecwd
 
 This is the inbetween the other two FTP methods. This makes a single `CWD`
@@ -31,3 +45,8 @@ command to the target directory and then it asks for the given file.
 
     curl --ftp-method singlecwd ftp://example.com/one/two/three/file.txt
 
+This then equals this FTP command/response sequence (simplified)
+
+    > CWD one/two/three
+    < 250 OK. Current directory is /one/two/three
+    > RETR file.txt

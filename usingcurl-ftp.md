@@ -1,4 +1,4 @@
-## FTP
+# FTP
 
 FTP, the File Transfer Protocol, is probably the oldest network protocol that
 curl supports - it was created in the early 1970s and the official spec that
@@ -10,7 +10,7 @@ works a little bit differently than most other protocols. These differences
 can often be ignored and things will just work, but similarly they are also
 important to know at times when things don't run as planned.
 
-### Two connections
+## Two connections
 
 FTP uses two TCP connections! The first connection is setup by the client when
 it connects to an FTP server, and is called the *control connection*. As the
@@ -22,7 +22,7 @@ transfered over that.
 This setting up of a second connection causes nuisances and headaches for
 several reasons.
 
-#### Active connections
+### Active connections
 
 The client can opt to ask the server to connect to the client to set it up. A
 so called "active" connection. This is done with the PORT or EPRT
@@ -39,7 +39,7 @@ always the correct choice and you do that with `-P -`. Like asking for a file:
 You can also explicitly ask curl to not use EPRT (which is a slightly newer
 command than PORT) with the `--no-epsv` command line option.
 
-#### Passive connections
+### Passive connections
 
 Curl defaults to asking for a "passive" connection, which means it sends a
 PASV or EPSV command to the server and then the server opens up a new port for
@@ -61,14 +61,14 @@ the IP address mentioned in the PASV response (`--ftp-skip-pasv-ip`) and
 instead use the same IP address it has for the control connection even for the
 second connection.
 
-#### Firewall issues
+### Firewall issues
 
 Using either active or passive transfers, any existing firewalls in the
 network path pretty much have to have stateful inspection of the FTP traffic
 to figure out the new port to open that up and accept it for the second
 connection.
 
-### Ping-pong
+## Ping-pong
 
 The FTP protocol is a command and response protocol. The client sends a
 command and the server responds. If you use curl's `-v` option you'll get to
@@ -81,13 +81,13 @@ for the ping pong to go through before the actual file transfer can be set up
 and get started. For small files, the initial commands can very well take
 longer time than the actual data transfer.
 
-### --ftp-method
+## --ftp-method
 
 When doing FTP commands to traverse the remote file system, there are a few
 different ways curl can proceed to reach the target file. The file the user
 wants to transfers.
 
-#### multicwd
+### multicwd
 
 curl can do one change-directory (CWD) command for every individual directory
 down the file tree hierarchy. If the full path is `one/two/three/file.txt`,
@@ -98,7 +98,7 @@ spec (RFC 1738) and is how curl acts by default.
 
     curl --ftp-method multicwd ftp://example.com/one/two/three/file.txt
 
-#### nocwd
+### nocwd
 
 The opposite to doing one CWD for each directory part is to not change
 directory at all. This method asks the server using the entire path at once
@@ -107,37 +107,45 @@ isn't purely standards compliant.
 
     curl --ftp-method nocwd ftp://example.com/one/two/three/file.txt
 
-#### singlecwd
+### singlecwd
 
 This is the inbetween the other two FTP methods. This makes a single `CWD`
 command to the target directory and then it asks for the given file.
 
     curl --ftp-method singlecwd ftp://example.com/one/two/three/file.txt
 
-### Transfer mode
+## Transfer mode
+
+When an FTP client is about to transfer data, it specifies to the server which
+"transfer mode" it likes the upcoming transfer to use. The two transfer modes
+curl supports are 'ASCII' and 'BINARY'. Ascii is basically for text and
+usually means that the server will send the files with converted newlines
+while binary means sending the data unaltered and assuming the file is not
+text.
+
+curl will default to binary transfer mode for FTP, and you ask for ascii mode
+instead with `-B, --use-ascii` or making sure the URL ends with `;type=A`.
+
+## Authentication
 
 TBD
 
-### Authentication
+## Directory listing
 
 TBD
 
-### Directory listing
+## Uploading
 
 TBD
 
-### Uploading
+## Custom commands
 
 TBD
 
-### Custom commands
+## FTPS
 
 TBD
 
-### FTPS
-
-TBD
-
-### Common FTP problems
+## Common FTP problems
 
 TBD

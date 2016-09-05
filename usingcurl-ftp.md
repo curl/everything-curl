@@ -10,6 +10,19 @@ works a little bit differently than most other protocols. These differences
 can often be ignored and things will just work, but similarly they are also
 important to know at times when things don't run as planned.
 
+## Ping-pong
+
+The FTP protocol is a command and response protocol. The client sends a
+command and the server responds. If you use curl's `-v` option you'll get to
+see all the commands and responses during a transfer.
+
+For an ordinary transfer, there are something like 5 to 8 commands necessary
+to send and as many responses to wait for and read. Perhaps needlessly to say,
+but if the server is in a remote location there will be a lot of time waiting
+for the ping pong to go through before the actual file transfer can be set up
+and get started. For small files, the initial commands can very well take
+longer time than the actual data transfer.
+
 ## Two connections
 
 FTP uses two TCP connections! The first connection is setup by the client when
@@ -68,20 +81,7 @@ network path pretty much have to have stateful inspection of the FTP traffic
 to figure out the new port to open that up and accept it for the second
 connection.
 
-## Ping-pong
-
-The FTP protocol is a command and response protocol. The client sends a
-command and the server responds. If you use curl's `-v` option you'll get to
-see all the commands and responses during a transfer.
-
-For an ordinary transfer, there are something like 5 to 8 commands necessary
-to send and as many responses to wait for and read. Perhaps needlessly to say,
-but if the server is in a remote location there will be a lot of time waiting
-for the ping pong to go through before the actual file transfer can be set up
-and get started. For small files, the initial commands can very well take
-longer time than the actual data transfer.
-
-## --ftp-method
+## How to traverse directories
 
 When doing FTP commands to traverse the remote file system, there are a few
 different ways curl can proceed to reach the target file. The file the user

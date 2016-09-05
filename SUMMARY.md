@@ -48,6 +48,7 @@
     * [FTP](usingcurl-ftp.md)
         * [Two connections](ftp-twoconnections.md)
         * [Directory traversing](ftp-traversedir.md)
+        * [Advanced FTP use](ftp-advanced.md)
     * [SCP and SFTP](usingcurl-scpsftp.md)
     * [IMAP and POP3](usingcurl-imap.md)
     * [SMTP](usingcurl-smtp.md)

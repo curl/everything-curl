@@ -39,22 +39,3 @@ instead with `-B, --use-ascii` or making sure the URL ends with `;type=A`.
 
 TBD
 
-## Directory listing
-
-TBD
-
-## Uploading
-
-TBD
-
-## Custom commands
-
-TBD
-
-## FTPS
-
-TBD
-
-## Common FTP problems
-
-TBD

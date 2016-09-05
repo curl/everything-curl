@@ -47,6 +47,7 @@
     * [Return codes](usingcurl-returns.md)
     * [FTP](usingcurl-ftp.md)
         * [Two connections](ftp-twoconnections.md)
+        * [Directory traversing](ftp-traversedir.md)
     * [SCP and SFTP](usingcurl-scpsftp.md)
     * [IMAP and POP3](usingcurl-imap.md)
     * [SMTP](usingcurl-smtp.md)

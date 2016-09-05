@@ -46,8 +46,34 @@ A server always responds to an HTTP request unless something is wrong.
 
 ### The URL converted to a request
 
-TBD
+So when a HTTP client is given a URL to operate on, that URL is then used,
+picked apart and those parts are used in various places in the outgoing
+request to the server. Let's take the an example URL:
+
+    https://www.example.com/path/to/file
+
+ - **https** means that curl will use TLS to the remote port 443 (which is the
+   default port number when no specified is used in the URL).
+
+ - **www.example.com** is the host name that curl will resolve to one or more IP
+   address to connect to. This host name will also be used in the HTTP request in
+   the `Host:` header.
+
+ - **/path/to/file** is used in the HTTP request to tell the server which exact
+   doucment/resources curl wants to fetch
 
 ### --path-as-is
 
-TBD
+The path part of the URL is the part that starts with the first slash after
+the host name and ends either at the end of the URL or at a '?' or '#'
+(roughly speaking).
+
+If you include substrings including `/../` or `/./` in the path, curl will
+automatically squash them before the path is sent to the server - as is
+dictated by standards and how such strings tend to work in local file
+systems. The `/../` sequence will remove the previous section so that
+`/hello/sir/../` ends up just `/hello/` and `/./` is simply removed so that
+`/hello/./sir/` becomes `/hello/sir/`.
+
+To *prevent* curl from squashing those magic sequences before they are sent to
+the server and thus allow them through, the `--path-as-is` option exists.

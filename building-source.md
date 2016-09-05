@@ -65,6 +65,11 @@ detected/enabled and what featurs that are still disabled, some of them
 possibly because it failed to detect the prensence of necesary third party
 dependencies that are needed for those functions to work.
 
+Then you invoke `make` to build the entire thing and then you can invoke `make
+install` to install curl, libcurl and associated things. `make install`
+requires that you have the correct rights in your system to create and write
+files in the installation directory or you will get some errors.
+
 ### cross-compiling
 
 Cross-compiling means that you build the source on one architecture but the

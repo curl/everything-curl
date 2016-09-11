@@ -1,9 +1,9 @@
 ## Cookies
 
 HTTP cookies are key/value pairs that a client stores on the behalf of a
-server. They are sent back in subsequent requets according to heuristics to
+server. They are sent back in subsequent requests according to heuristics to
 allow clients to keep state between requests. Remember how the HTTP protocol
-itself has no real state but instead has to resend all data in sensequent
+itself has no real state but instead has to resend all data in subsequent
 requests that it wants the server to be aware of.
 
 Cookies are set by the server with the `Set-Cookie:` headers and with each
@@ -43,7 +43,7 @@ then do a redirect we would do:
 ### Reading cookies from file
 
 Starting off with a blank cookie store may not be desirable. Why not start off
-with cookies you stored in a preivous fetch or that you otherwise acquired?
+with cookies you stored in a previous fetch or that you otherwise acquired?
 The file format curl uses for cookies is called the Netscape cookie format
 because it was once the file format used by browsers and then you could easily
 tell curl to use the browser's cookies!

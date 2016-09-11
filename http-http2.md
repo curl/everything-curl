@@ -3,11 +3,11 @@
 curl supports HTTP/2 for both HTTP:// and HTTPS:// URLs assuming that curl was
 built with the proper prerequisites. It will even default to using HTTP/2 when
 given a HTTPS URL since doing so implies no penalty and when curl is used with
-sites that don't support HTTP/2 the request will instead negoatiate HTTP/1.1.
+sites that don't support HTTP/2 the request will instead negotiate HTTP/1.1.
 
 With HTTP:// URLs however, the upgrade to HTTP/2 is done with an `Upgrade:`
-header that may cause an extra roundtrip and perhaps even more troublesome, a
-sizeable share of old servers out in the wild will return a 400 response when
+header that may cause an extra round-trip and perhaps even more troublesome, a
+sizable share of old servers out in the wild will return a 400 response when
 seeing such a header.
 
 It should also be noted that some (most?) servers that support HTTP/2 for
@@ -21,7 +21,7 @@ To ask a server to use HTTP/2, just:
 If your curl doesn't support HTTP/2, that command line will return an error
 saying so. Running `curl -V` will show if your version of curl supports it.
 
-If you by some chance already know that your server speaks HTTP/2 (like in
+If you by some chance already know that your server speaks HTTP/2 (for example
 within your own controlled environment where you know exactly what runs in
 your machines) you can shortcut the HTTP/2 "negotiation" with
 `--http2-prior-knowledge`.

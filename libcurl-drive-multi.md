@@ -1,4 +1,4 @@
-### Driving with the "multi" interface
+### Driving with the multi interface
 
 The name 'multi' is for multiple, as in multiple parallel transfers - all done
 in the same single thread. The multi API is non-blocking so it can also make

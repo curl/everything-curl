@@ -1,4 +1,4 @@
-### Driving with the "easy" interface
+### Driving with the easy interface
 
 The name 'easy' was picked simply because this is really the easy way to use
 libcurl, and with easy of course comes a few limitations. Like for example

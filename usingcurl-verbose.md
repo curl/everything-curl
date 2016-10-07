@@ -96,7 +96,7 @@ exact file length. (It won't always be present in responses.)
 ### --trace and --trace-ascii
 
 There are times when `-v` is not enough. In particular when you want to store
-the complete stream, including the actual transfered data.
+the complete stream, including the actual transferred data.
 
 For situations when curl does encrypted file transfers with protocols such as
 HTTPS, FTPS or SFTP, other network monitoring tools (like Wireshark or
@@ -176,7 +176,7 @@ An example could look like this:
     ---- snip ----
 
 The lines are all the local time as hours:minutes:seconds and then number of
-miroseconds in that second.
+microseconds in that second.
 
 ### HTTP/2
 

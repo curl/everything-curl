@@ -139,7 +139,7 @@ to "waste" such a small chunk of data is not considered much of a problem.
 
 When talking to a HTTP 1.1 server, you can tell curl to send the request body
 without a `Content-Length:` header upfront that specifies exactly how big the
-POST is. By insisting on curl using chunked Tranfer-Encoding, curl will send
+POST is. By insisting on curl using chunked Transfer-Encoding, curl will send
 the POST "chunked" piece by piece in a special style that also sends the size
 for each such chunk as it goes along.
 

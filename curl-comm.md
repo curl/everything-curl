@@ -18,7 +18,7 @@ debugging or whatever.
 
 In this day and age, mailing lists may be considered sort of the old style of
 communication - no fancy web forum or similar. Using a mailing list is
-therefore becoming an art that isn't practiced everywhere and may be a bit
+therefore becoming an art that isn't practised everywhere and may be a bit
 strange and unusual to you. But fear not. It is just about sending emails to
 an address that then sends that email out to all the subscribers. Our mailing
 lists have at most a few thousand subscribers. If you're mailing for the first

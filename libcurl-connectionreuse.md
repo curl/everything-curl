@@ -4,7 +4,7 @@ libcurl keeps a pool of old connections alive. When one transfer has completed
 it will keep N connections alive in a "connection pool" so that a subsequent
 transfer that happens to be able to reuse one of the existing connections can
 use that one instead of creating a new. Reusing a connection instead of
-creating a new offers significant benefits in speed and requiredresources.
+creating a new offers significant benefits in speed and required resources.
 
 ### Easy API pool
 

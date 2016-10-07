@@ -31,8 +31,8 @@ and you do with curl's `-d` and friends.
 
 ## POST outside of HTML
 
-POST is a regular HTTP method and there's really no requirent it was
-triggrered or originated by HTML or ever involving a browser. Lots of
+POST is a regular HTTP method and there's really no requirement it was
+triggered or originated by HTML or ever involving a browser. Lots of
 services, APIs and similar these days allow you to pass in data to get things
 done.
 

@@ -134,7 +134,7 @@ not work.
 
 What you can do then, is to "tunnel through" the HTTP proxy!
 
-### HTTP proxy tunneling
+### HTTP proxy tunnelling
 
 HTTP proxies allow clients to "tunnel through" it to a server on the other
 side. That's exactly what's done every time you use HTTPS through the HTTP
@@ -150,7 +150,7 @@ random port (for reasons only the proxy administrators know).
 
 Still, assuming that the HTTP proxy allows it, you can ask it to tunnel
 through to a remote server on any port number so you can do other protocols
-"normally" even when tunneling through. Do tunneled FTP like this:
+"normally" even when tunnelling through. Do tunnelled FTP like this:
 
     curl -p -x http://proxy.example.com:80 ftp://ftp.example.com/file.txt
 
@@ -229,7 +229,7 @@ wants is then like this:
 
 All the previously mentioned protocols to speak with the proxy are clear text
 protocols, HTTP and the SOCKS versions. Using these methods could allow
-someone to evesdrop on your traffic the local network where you or the proxy
+someone to eavesdrop on your traffic the local network where you or the proxy
 reside.
 
 One solution for that is to use HTTPS to the proxy, which then establishes a
@@ -240,7 +240,7 @@ progress for this that we hope to land in a future curl version.
 
 ### Proxy environment variables
 
-curl checks for the existence of specificly named environment variables before
+curl checks for the existence of specially-named environment variables before
 it runs, to see if a proxy is requested to get used.
 
 You specify the proxy by setting a variable named `[scheme]_proxy` to hold the

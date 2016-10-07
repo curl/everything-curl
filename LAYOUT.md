@@ -5,7 +5,7 @@ Everything curl
  2. the cURL project
  3. curl and open source
  4. The curl source code
- 5. Network prototocols
+ 5. Network protocols
  6. The curl command line tool
  7. Using the curl tool
  8. Building and installing libcurl

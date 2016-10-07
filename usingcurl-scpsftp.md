@@ -4,7 +4,7 @@ curl supports the SCP and SFTP protocols if built with the correct
 prerequisite 3rd party library, [libssh2](https://www.libssh2.org/).
 
 SCP and SFTP are both protocols that are built on top of SSH, a secure and
-encrypted data protcol that is similar to TLS but differs in a few important
+encrypted data protocol that is similar to TLS but differs in a few important
 ways. For example, SSH doesn't use certificates of any sort but instead it
 uses public and private keys. Both SSH and TLS provide strong crypto and
 secure transfers when used correctly.
@@ -24,7 +24,7 @@ and
     curl scp://example.com/file.zip -u user
 
 SFTP (but not SCP) supports getting a file listing back when the URL ends with
-a traling slash:
+a trailing slash:
 
     curl sftp://example.com/ -u user
 

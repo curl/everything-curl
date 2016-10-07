@@ -10,7 +10,7 @@ an extended period of time without it necessarily getting noticed by the
 participants in the transfer.
 
 The result of this is that sometimes internet transfers take a very long
-time. Futher, most operations in curl has no time-out by default!
+time. Further, most operations in curl has no time-out by default!
 
 ## Maximum time allowed to spend
 
@@ -31,7 +31,7 @@ Example:
 
 `--connect-timeout` limits the time curl will spend trying to connect to the
 host. All the necessary steps done before the connection is considered
-complete has to be completed within the given time fram. Failing to connect
+complete has to be completed within the given time frame. Failing to connect
 within the given time will cause curl to exit with a timeout exit code (28).
 
 The given maximum connect time can be specified with a decimal precision;
@@ -43,7 +43,7 @@ The given maximum connect time can be specified with a decimal precision;
 
 Having a fixed maximum time for a curl operation can be cumbersome, especially
 if you for example do scripted transfers and the file sizes and transfer times
-vary a lot. A fixed timeout value then needs to be set unnecesary high to
+vary a lot. A fixed timeout value then needs to be set unnecessary high to
 cover for worst cases.
 
 As an alternative to a fixed time-out, you can tell curl to abandon the
@@ -66,5 +66,5 @@ Use `--keepalive-time` to specify how often in full seconds you'd like the
 probe to get sent to the peer. The default value is usually set to 7200, which
 as you know is two full hours.
 
-Sometimes this probing disturbes what you're doing and then you can easily
+Sometimes this probing disturbs what you're doing and then you can easily
 disable it with `--no-keepalive`.

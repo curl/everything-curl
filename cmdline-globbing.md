@@ -5,7 +5,7 @@ small portion of it changing between the requests. Maybe it is a numeric range
 or maybe a set of names. curl offers "globbing" as a way to specify many URLs
 like that easily.
 
-The globbing uses the resevered symbols [] and {} for this, symbols that
+The globbing uses the reserved symbols [] and {} for this, symbols that
 normally cannot be part of a legal URL (except for numerical IPv6 addresses
 but curl handles them fine anyway). If the globbing gets in your way, disable
 it with `-g, --globoff`.

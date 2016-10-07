@@ -3,7 +3,7 @@
 The native API for libcurl is in C so this chapter is focus on examples
 written in C. But since many language bindings for libcurl are thin they
 usually expose more or less the same functions and thus they can still be
-intersting and educational for users of other languages too.
+interesting and educational for users of other languages too.
 
 ## Get a simple HTML page
 

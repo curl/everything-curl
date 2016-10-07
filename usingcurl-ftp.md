@@ -2,7 +2,7 @@
 
 FTP, the File Transfer Protocol, is probably the oldest network protocol that
 curl supports - it was created in the early 1970s and the official spec that
-still is the goto documention is [RFC 959](http://www.ietf.org/rfc/rfc959.txt)
+still is the goto documentation is [RFC 959](http://www.ietf.org/rfc/rfc959.txt)
 from 1985. Published well over a decade before the first curl release.
 
 FTP was created in a different era of Internet and computers and as such it
@@ -43,8 +43,8 @@ you can login with pretty much any name and password you like. When curl is
 used on an FTP URL to do transfer without any given user name or password, it
 uses the name `anonymous` with the password `ftp@example.com`.
 
-If you want to provide another user namd and password, you can pass them on to
-curl eiter with the `-u, --user` option or embedded the info in the URL:
+If you want to provide another user name and password, you can pass them on to
+curl either with the `-u, --user` option or embed the info in the URL:
 
    curl --user daniel:secret ftp://example.com/download
 

@@ -53,7 +53,7 @@ A very basic unix shell script could look like something like this:
  13. Unknown response to FTP PASV command, Curl couldn't parse the reply
     sent to the PASV request.
 
- 14. Unkmown FTP 227 format. Curl couldn't parse the 227-line the server
+ 14. Unknown FTP 227 format. Curl couldn't parse the 227-line the server
     sent.
  
  15.  FTP can't get host. Couldn't resolve the host IP we got in the

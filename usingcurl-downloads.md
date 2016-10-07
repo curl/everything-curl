@@ -37,7 +37,7 @@ etc.
 If you try the example download as in the previous section, you'll notice that
 curl will output the downloaded data to stdout unless told to do something
 else. Outputting data to stdout is really useful when you want to pipe it into
-another program or similar, but it is not always the optimial way to deal with
+another program or similar, but it is not always the optimal way to deal with
 your downloads.
 
 Tell curl a specific file name to save the download in with `-o [filename]`
@@ -71,7 +71,7 @@ You can save the remove URL resource into the local file 'file.html' with this:
 
     $ curl -O http://example.com/file.html
 
-This is the `-O` (upperase letter o) option, or `--remote-name` for the long
+This is the `-O` (uppercase letter o) option, or `--remote-name` for the long
 name version. The -O option selects the local file name to use by picking the
 file name part of the URL that you provide. This is important. You specify the
 URL and curl picks the name from this data. If the site redirects curl further
@@ -99,7 +99,7 @@ overwrite any preexisting local file in your current directory if you use -J
 and the server happens to use such a file name.
 
 3. file name encoding and character sets. curl does not decode the name in any
-way, so you may end up with a URL encoded file name where a brower would
+way, so you may end up with a URL encoded file name where a browser would
 otherwise decode it to something more readable using a for you a sensible
 character set.
 
@@ -122,7 +122,7 @@ while your editor and environment use charset Y. In an ideal world, we'd all
 use UTF-8 everywhere but unfortunately that is still not the case.
 
 A common work-around for this issue that works decently fine, is to use the
-common `iconv` utillity to translate a text file to and from different
+common `iconv` utility to translate a text file to and from different
 charsets.
 
 ### Compression
@@ -146,9 +146,9 @@ stdout. This usually means that as a user you don't really see or experience
 the compression other than possibly a faster transfer.
 
 The `--compressed` option asks Content-Encoding compression using one of the
-supported compression algorithms. There's also the rarer Tranfer-Encoding
+supported compression algorithms. There's also the rarer Transfer-Encoding
 method, which is the method that was created for this automated method but was
-never really widely adopted. You can tell curl to ask for tranfer-encoded
+never really widely adopted. You can tell curl to ask for transfer-encoded
 compression with `--tr-encoding`:
 
     $ curl --tr-encoding http://example.com/
@@ -243,7 +243,7 @@ downloads. If you want curl to download any subresources as well, you need to
 pass those URLs to curl and ask it to get those, just like any other URLs.
 
 Clients also differ in how they send their requests, and some aspects of a
-requests for a resource includes for example format perferences, asking for
+requests for a resource includes for example format preferences, asking for
 compressed data or just telling the server from which previous page we're
 "coming from". curl's requests will differ a little or a lot from how your
 browser sends its requests.
@@ -335,7 +335,7 @@ maximum speed, but curl does not.
 When you want to make sure your curl command line won't try to download a too
 large file you can instruct curl to stop before doing that - if it knows the
 size before the transfer starts! Maybe that would spend too much bandwidth,
-take too long time or you won't have space on your harddrive.
+take too long time or you won't have space on your hard drive.
 
     curl --max-filesize 100000 https://example.com/
 
@@ -349,7 +349,7 @@ they may end up larger than the specified amount.
 
 ### Metalink
 
-Metalink is a file descripion standard that tells a client multiple locations
+Metalink is a file description standard that tells a client multiple locations
 where the same content resides. A client can then opt to transfer that content
 from one or many of those sources.
 
@@ -386,7 +386,7 @@ This is typically used if you're writing some sort of middle software and you
 want to pass on the content to perhaps another HTTP client and allow that to
 do the decoding instead.
 
-### Retry failed attemps
+### Retry failed attempts
 
 Normally curl will only make a single attempt to perform a transfer and return
 an error if not successful. Using the `--retry` option you can tell curl to
@@ -408,7 +408,7 @@ the longest time a single of these transfers is allowed to spend.
 ### Resuming and ranges
 
 Resuming a download means first checking the size of what is already present
-locallly and then asking the server to send the rest of it to append. curl
+locally and then asking the server to send the rest of it to append. curl
 also allows resuming the transfer at a custom point without actually having
 anything locally present.
 
@@ -429,7 +429,7 @@ Continue downloading a previously interrupted download:
     curl --continue-at - http://example.com/bigfile -O
 
 If you instead just want a specific byte range from the remote resource
-transfered, you can ask for only getting that. Like when you only want a 1000
+transferred, you can ask for only getting that. Like when you only want a 1000
 bytes from offset 100 to avoid having to download the entire remote huge file:
 
     curl --range 100-1999 http://example.com/bigfile

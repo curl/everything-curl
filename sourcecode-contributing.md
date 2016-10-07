@@ -36,8 +36,8 @@ need to remind us about those.
 
 The best approach to add anything to curl or libcurl is of course to first
 bring the idea and suggestion to the curl project team members, and then
-discuss with them on if the idea is feasable for inclusion and then how an
-implementoin is best done - and done in the best possible way to get merged
+discuss with them on if the idea is feasible for inclusion and then how an
+implementation is best done - and done in the best possible way to get merged
 into the source code repository. Assuming that is what you want.
 
 The project generally approves of functions that improves the support for the
@@ -70,15 +70,15 @@ to get less friction and to reach success faster:
   already have too many of those that we haven't managed to remove yet.
 
 - Quick hacks or dirty solutions that have a high risk of not working on
-  platforms you don't run or achitectures you don't know. We don't care if
+  platforms you don't run or architectures you don't know. We don't care if
   you're in a hurry or that it works for you. We do not accept high risk code
   or code that is hard to read or understand.
 
 - Code that breaks the build. Sure, we accept that we sometimes have to add
   code to certain areas that makes the new functionality perhaps depend on a
   specific 3rd party library or a specific operating system and similar, but
-  we can **never** do that at the expence of all other systems. We don't break
-  the build, and we make sure all tests keep running succesfully.
+  we can **never** do that at the expense of all other systems. We don't break
+  the build, and we make sure all tests keep running successfully.
 
 ## git
 
@@ -170,7 +170,7 @@ be pushed by a trusted person.
 
 The core team is a small set of curl developers who have been around for a
 several years and that have shown that they are skilled developers and that
-they fully comprehent the values and the style of development we do in this
+they fully comprehend the values and the style of development we do in this
 project. They are some of the people listed in the [The development
 team](curl-devteam.md) section.
 

@@ -19,7 +19,7 @@ transfers going on, you can close the multi handle like this:
 ### easy handle
 
 When the easy handle is done serving its purpose, you can close it. If you
-intend to do another transfer you are however adviced to rather reuse the
+intend to do another transfer you are however advised to rather reuse the
 handle for the next transfer rather than to close it and create a new one.
 
 If you don't intend to do another transfer with the easy handle, you simply

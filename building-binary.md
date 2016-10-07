@@ -18,7 +18,7 @@ The most common ones are described below.
 
 ### apt-get
 
-`apt-get` is a tool to install pre-built packages on Debian Linux and Ubuntu
+`apt-get` is a tool to install prebuilt packages on Debian Linux and Ubuntu
 Linux distributions and derivates.
 
 To install the curl command line tool, you usually just

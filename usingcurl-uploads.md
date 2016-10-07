@@ -21,7 +21,7 @@ POST.
 
 #### POST
 
-POST is the HTTP method that was invented to send data to a receving web
+POST is the HTTP method that was invented to send data to a receiving web
 application, and it is for example how most common HTML forms on the web
 works. It usually sends a chunk of relatively small amounts of data to the
 receiver.
@@ -97,7 +97,7 @@ what needs to be remembered is that the progress meter is automatically
 disabled when you're sending output to stdout, and most protocols curl support
 can output something even for an upload.
 
-Therefore, you may need to explictly redirect the downloaded data to a file
+Therefore, you may need to explicitly redirect the downloaded data to a file
 (using shell redirect '>', `-o` or similar) to get the progress meter
 displayed for upload.
 

@@ -24,7 +24,7 @@ The version numbering is always built up using the same system:
 
 ### Bumping numbers
 
-One of thes X.Y.Z numbers will get bumped in every new release. The numbers to
+One of these X.Y.Z numbers will get bumped in every new release. The numbers to
 the right of a bumped number will be reset to zero.
 
 The main version number X is bumped when *really* big, world colliding changes

@@ -50,7 +50,7 @@ main code knowing exactly which TLS library that is used. This allows the
 person who builds libcurl to select from a wide variety TLS libraries to build
 with.
 
-We also maintain a [SSL comparision
+We also maintain a [SSL comparison
 table](https://curl.haxx.se/docs/ssl-compared.html) on the web site to aid
 users.
 
@@ -163,7 +163,7 @@ This directory contains the man pages for the individual options for three
 different libcurl functions.
 
 `curl_easy_setopt()` options start with `CURLOPT_`,
-`curl_mulit_setopt()` options start with `CURLMOPT_` and
+`curl_multi_setopt()` options start with `CURLMOPT_` and
 `curl_easy_getinfo()` options start with `CURLINFO_`.
 
 ### docs/examples

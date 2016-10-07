@@ -23,7 +23,7 @@ scripts and applications for an Internet connected world, but they're also
 widely used for server testing, protocol fiddling and trying out new things.
 
 The library is used in every imaginable sort of embedded device where Internet
-transfers are needed: car infotainment, televisions, blurayplayers, settop
+transfers are needed: car infotainment, televisions, blurayplayers, set-top
 boxes, printers, routers, game systems etc.
 
 ### Command line tool

@@ -9,7 +9,7 @@ wants to transfers.
 curl can do one change-directory (CWD) command for every individual directory
 down the file tree hierarchy. If the full path is `one/two/three/file.txt`,
 that method means doing three `CWD` commands before asking for the `file.txt`
-file to get transfered. This method thus creates quite a large number of
+file to get transferred. This method thus creates quite a large number of
 commands if the path is many levels deep. This method is mandated by an early
 spec (RFC 1738) and is how curl acts by default.
 
@@ -40,7 +40,7 @@ This then equals this FTP command/response sequence (simplified)
 
 ### singlecwd
 
-This is the inbetween the other two FTP methods. This makes a single `CWD`
+This is the in-between the other two FTP methods. This makes a single `CWD`
 command to the target directory and then it asks for the given file.
 
     curl --ftp-method singlecwd ftp://example.com/one/two/three/file.txt

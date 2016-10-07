@@ -60,7 +60,7 @@ request to the server. Let's take the an example URL:
    the `Host:` header.
 
  - **/path/to/file** is used in the HTTP request to tell the server which exact
-   doucment/resources curl wants to fetch
+   document/resources curl wants to fetch
 
 ### --path-as-is
 

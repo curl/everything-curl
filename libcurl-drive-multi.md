@@ -16,7 +16,7 @@ A multi handle can also get certain options set in it, which you do with
 set there.
 
 To drive a multi interface transfer, you first need to add all the individual
-easy handles to the multi handle that should be transfered. You can add them
+easy handles to the multi handle that should be transferred. You can add them
 to the multi handle at any point and you can remove them again whenever you
 like.  Removing an easy handle from a multi handle will of course remove the
 association and that particular transfer would stop immediately.

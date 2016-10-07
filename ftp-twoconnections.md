@@ -2,10 +2,10 @@
 
 FTP uses two TCP connections! The first connection is setup by the client when
 it connects to an FTP server, and is called the *control connection*. As the
-intial connection, it gets to handle authentication and changing to the
+initial connection, it gets to handle authentication and changing to the
 correct directory on the remote server etc. When the client then is ready to
 transfer a file, a second TCP connection is established and the data is
-transfered over that.
+transferred over that.
 
 This setting up of a second connection causes nuisances and headaches for
 several reasons.

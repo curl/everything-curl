@@ -55,7 +55,7 @@ libcurl being written in C with no or just a few required dependencies also
 help to get it used in embedded systems.
 
 libcurl is popularly used in smartphone operating systems, in car infotainment
-setups, in television sets, in settop boxes, in audio and video equipment such
+setups, in television sets, in set-top boxes, in audio and video equipment such
 as bluray players and higher end receivers. It is often used in home routers
 and printers.
 
@@ -95,4 +95,4 @@ Chevrolet, Cisco, Comcast, Facebook, Google, Hitachi, Honeywell, HP, Huawei,
 HTC, IBM, Intel, LG, Mazda, Mercedes-Benz, Motorola, Netflix, Nintendo,
 Oracle, Panasonic, Philips, Pioneer, RBS, Samsung, SanDisk, SAP, SAS
 Institute, SEB, Sharp, Siemens, Sony, Spotify, Sun, Swisscom, Tomtom, Toshiba,
-Vmware, Xilinx, Yahoo, Yamaha
+VMware, Xilinx, Yahoo, Yamaha

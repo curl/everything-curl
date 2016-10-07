@@ -7,7 +7,7 @@ how long it has been going on and how long it thinks it might be left until
 completion.
 
 The progress meter is inhibited if curl deems that there is output going to
-the terminal, as then would the progress meter interfer with that output and
+the terminal, as then would the progress meter interfere with that output and
 just mess out what gets displayed. A user can also forcibly switch off the
 progress meter with the `-s / --silent` option, which tells curl to hush.
 
@@ -35,7 +35,7 @@ system so 1024 is one kilobyte (1K), 2048 is 2K etc. curl supports these:
 | K       | 2^10    | kilobyte  |
 | M       | 2^20    | megabyte  |
 | G       | 2^30    | gigabyte  |
-| T       | 2^40    | terrabyte |
+| T       | 2^40    | terabyte  |
 | P       | 2^50    | petabyte  |
 
 The times are displayed using H:MM:SS for hours, minutes and seconds.

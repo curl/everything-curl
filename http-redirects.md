@@ -4,7 +4,7 @@ The “redirect” is a fundamental part of the HTTP protocol. The concept was
 present and is documented already in the first spec (RFC 1945), published in
 1996, and it has remained well used ever since.
 
-A redirect is exactly what it sounds like. It is the snerver sending back an
+A redirect is exactly what it sounds like. It is the server sending back an
 instruction to the client - instead of giving back the contents the client
 wanted. The server basically says “go look over *here* instead for that thing
 you asked for“.
@@ -23,7 +23,7 @@ back a 301. It also means that the user-agent (browser) is meant to cache this
 and keep going to the new URI from now on when the original URI is requested.
 
 The temporary alternative is 302. Right now the server wants the client to
-send a GET request to B, but it shouldn’t cache this but keep trying the
+send a GET request to B, but it shouldn't cache this but keep trying the
 original URI when directed to it.
 
 Note that both 301 and 302 will make browsers do a GET in the next request,
@@ -56,9 +56,9 @@ amount of redirects to follow with the `--max-redirs` option.
 ## GET or POST?
 
 All three of these response codes, 301 and 302/303, will assume that the
-client sends a GET to get the new URI, even if the client might’ve sent a POST
+client sends a GET to get the new URI, even if the client might've sent a POST
 in the first request. This is very important, at least if you do something
-that doesn’t use GET.
+that doesn't use GET.
 
 If the server instead wants to redirect the client to a new URI and wants it
 to send the same method in the second request as it did in the first, like if
@@ -102,7 +102,7 @@ control that behavior with the `CURLOPT_POSTREDIR` option.
 
 ## Redirecting to other host names
 
-When you use curl you may provide credentials like user namd and password for
+When you use curl you may provide credentials like user name and password for
 a particular site, but since a HTTP redirect might very well move away to a
 different host curl limits what it sends away to other hosts than the original
 within the same "transfer".
@@ -130,7 +130,7 @@ of these kinds of redirects.
 ## Javascript redirects
 
 The modern web is full of javascript and as you know, javascript is a
-languauge and a full run time that allows code to execute in the browser when
+language and a full run time that allows code to execute in the browser when
 visiting web sites.
 
 Javascript also provides means for it to instruct the browser to move on to

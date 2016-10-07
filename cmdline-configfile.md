@@ -1,12 +1,12 @@
 ## Config file
 
-You can easily end up with curl command lines that use a very lage amount of
+You can easily end up with curl command lines that use a very large amount of
 command line options, make it rather hard to work with. Sometimes the length
 of the command line you want to enter even hits the maximum length your
 command line system allows. The Microsoft windows command prompt being an
 example of something that has a fairly small maximum line length.
 
-To aid such sitations, curl offers a feature we call "config file". It
+To aid such situations, curl offers a feature we call "config file". It
 basically allows you to write command line options in a text file instead and
 then tell curl to read options from that file in addition to the command line.
 
@@ -58,7 +58,7 @@ therefore it can also be provided without the quotes like:
 
 Finally, if you want to provide a URL in a config file, you must do that the
 `--url` way, or just with `url`, and not like on the command line where
-basicaly everything that isn't an option is assumed to be a URL. So you
+basically everything that isn't an option is assumed to be a URL. So you
 provide a URL for curl like this:
 
     url = "http://example.com"

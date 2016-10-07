@@ -18,7 +18,7 @@ there's the CURLOPT_HTTPGET option:
 ### Download headers too
 
 A HTTP transfer also includes a set of response headers. Reponse headers are
-meta data associated with the actual pyload, called the response body. All
+meta data associated with the actual payload, called the response body. All
 downloads will get a set of headers too, but when using libcurl you can select
 whether you want to have them downloaded (seen) or not.
 
@@ -42,7 +42,7 @@ callbacks](callback-header.md).
     fclose(file);
 
 If you only want to casually browse the headers, you may even be happy enough
-with just setting verbose mode while developing as that will show both ougoing
+with just setting verbose mode while developing as that will show both outgoing
 and incoming headers sent to stderr:
 
     curl_easy_setopt(easy, CURLOPT_VERBOSE, 1L);

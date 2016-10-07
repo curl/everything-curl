@@ -22,7 +22,7 @@ follow any umbrella organization's guidelines.
 ## Legal
 
 The curl project obeys to national laws in which it works. It being a highly
-international project visible, downloadble and usable in effectively every
+international project visible, downloadable and usable in effectively every
 single country on earth may of course imply that some local laws can be
 circumvented when using curl. That's just the nature of it and if uncertain,
 you should check your own local situation.

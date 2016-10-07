@@ -30,14 +30,14 @@ So, if you want to build curl from git you need to generate some of those
 files yourself before you can build. On Linux and unix systems, do this by
 running `./buildconf` and on Windows you run `buildconf.bat`.
 
-## On Linux and unixlike systems
+## On Linux and Unix-like systems
 
-There are two distinctly different ways to build curl on Linux and other unix
-like systems. There's the one using the configure script and there's the cmake
-approach.
+There are two distinctly different ways to build curl on Linux and other
+Unix-like systems. There's the one using the configure script and there's the
+cmake approach.
 
 There are two different build environments to cater for people's different
-opinons and tastes. The configure based build is arguably the more mature and
+opinions and tastes. The configure based build is arguably the more mature and
 more complete build system and should probably be considered the default one.
 
 ### Autotools
@@ -61,8 +61,8 @@ who wants to build curl and it does a whole bunch of things:
 
 In the most basic usage, just running `./configure` in the source directory is
 enough. When the script completes, it outputs a summary of what options it has
-detected/enabled and what featurs that are still disabled, some of them
-possibly because it failed to detect the prensence of necesary third party
+detected/enabled and what features that are still disabled, some of them
+possibly because it failed to detect the presence of necessary third party
 dependencies that are needed for those functions to work.
 
 Then you invoke `make` to build the entire thing and then you can invoke `make

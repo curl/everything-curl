@@ -22,7 +22,7 @@ images one by one that are named numerically:
     $ curl -O http://example.com/[1-100].png
 
 and it can even do the ranges with zero prefixes, like if the number is
-three-digit all the time:
+three digits all the time:
 
     $ curl -O http://example.com/[001-100].png
 
@@ -36,7 +36,7 @@ too. This example range goes from 0 to 100 with an increment of 2:
 curl can also do alphabetical ranges, like when a site has a section named a
 to z:
 
-    $ curl -O http://example.com/secion[a-z].html
+    $ curl -O http://example.com/section[a-z].html
 
 ### A list
 
@@ -49,7 +49,7 @@ of the brackets used for the ranges:
 ### Combinations
 
 You can use several globs in the same URL which then will make curl iterate
-over those too. To download the images of Ben, Alice and Frank, in both the
+over those, too. To download the images of Ben, Alice and Frank, in both the
 resolutions 100x100 and 1000x1000, a command line could look like:
 
     $ curl -O http://example.com/{Ben,Alice,Frank}-{100x100,1000x1000}.jpg
@@ -59,7 +59,7 @@ Or download all the images of a chess board, indexed by two coordinates ranged
 
     $ curl -O http://example.com/chess-[0-7]x[0-7].jpg
 
-And you can of course mix ranges and series. Get a weeks worth of logs for
+And you can of course mix ranges and series. Get a week's worth of logs for
 both the web server and the mail server:
 
     $ curl -O http://example.com/{web,mail}-log[0-6].txt

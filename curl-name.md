@@ -27,7 +27,7 @@ programming language. That curl still [exists](http://www.curl.com).
 
 Several libcurl bindings for various programming languages use the term "curl"
 or "CURL" in part or completely to describe their bindings, so sometimes
-you'll find users talk about curl but target neither the command line tool
+you'll find users talking about curl but targeting neither the command-line tool
 nor the library that is made by this project.
 
 ### As a verb

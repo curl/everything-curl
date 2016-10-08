@@ -36,7 +36,7 @@ transferred, in number of bytes:
 Unknown/unused argument values passed to the callback will be set to zero
 (like if you only download data, the upload size will remain 0). Many times
 the callback will be called one or more times first, before it knows the data
-sizes so a program must be made to handle that.
+sizes, so a program must be made to handle that.
 
 Returning a non-zero value from this callback will cause libcurl to abort the
 transfer and return `CURLE_ABORTED_BY_CALLBACK`.

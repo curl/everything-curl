@@ -10,8 +10,8 @@ The `sockopt_callback` function must match this prototype:
                          curl_socket_t curlfd,
                          curlsocktype purpose);
 
-This callback function gets called by libcurl when it when a new socket has
-been created, but before the connect call to allow applications to change
+This callback function gets called by libcurl when a new socket has
+been created but before the connect call, to allow applications to change
 specific socket options.
 
 The **clientp** pointer points to the private data set with

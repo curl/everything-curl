@@ -1,11 +1,11 @@
 ## How it started
 
 Back in 1996, [Daniel Stenberg](https://daniel.haxx.se/) was writing an IRC
-bot on his spare time. An automated program that would offer services for the
+bot in his spare time, an automated program that would offer services for the
 participants in a chatroom dedicated to the Amiga computer (#amiga on the IRC
-network EFnet), when he came to think that it would be fun to get some updated
+network EFnet). He came to think that it would be fun to get some updated
 currency rates and have his bot offer a service online for the chat room users
-to get current exchange rates. To ask the bot "please exchange 200 USD into
+to get current exchange rates, to ask the bot "please exchange 200 USD into
 SEK" or similar.
 
 In order to have the provided exchange rates as accurate as possible, the bot

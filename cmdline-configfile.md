@@ -1,9 +1,9 @@
 ## Config file
 
-You can easily end up with curl command lines that use a very large amount of
-command line options, make it rather hard to work with. Sometimes the length
+You can easily end up with curl command lines that use a very large number of
+command line options, making them rather hard to work with. Sometimes the length
 of the command line you want to enter even hits the maximum length your
-command line system allows. The Microsoft windows command prompt being an
+command line system allows. The Microsoft Windows command prompt being an
 example of something that has a fairly small maximum line length.
 
 To aid such situations, curl offers a feature we call "config file". It
@@ -35,7 +35,7 @@ alternatively be written as:
     head
 
 Command line options that take an argument must have its argument provided on
-the same line as the option. For example changing the user-agent HTTP header
+the same line as the option. For example changing the User-Agent HTTP header
 can be done with
 
     user-agent "Everything-is-an-agent"
@@ -67,7 +67,7 @@ provide a URL for curl like this:
 
 When curl is invoked, it always (unless `-q` is used) checks for a default
 config file and uses it if found. The file name it checks for is `.curlrc` on
-unix like systems and `_curlrc` on Windows.
+Unix-like systems and `_curlrc` on Windows.
 
 The default config file is checked for in the following places in this order:
 
@@ -77,7 +77,7 @@ Unix-like systems (which returns the home dir given the current user in your
 system). On Windows, it then checks for the APPDATA variable, or as a last
 resort the '%USERPROFILE%\Application Data'.
 
-2. On windows, if there is no _curlrc file in the home dir, it checks for one
+2. On Windows, if there is no _curlrc file in the home dir, it checks for one
 in the same dir the curl executable is placed. On Unix-like systems, it will
 simply try to load .curlrc from the determined home dir.
 

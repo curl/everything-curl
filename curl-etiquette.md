@@ -1,17 +1,17 @@
 ### Mailing list etiquette
 
-As many communities and sub cultures, we have developed guidelines and rules
+Like many communities and subcultures, we have developed guidelines and rules
 of what we think is the right way to behave and how to communicate on the
 mailing lists. The [curl mailing list
 etiquette](https://curl.haxx.se/mail/etiquette.html) follows the style of
-traditional open source projects.
+traditional Open Source projects.
 
 #### Do Not Mail a Single Individual
 
-Many people send one question to one person. One person gets many mails, and
+Many people send one question directly to one person. One person gets many mails, and
 there is only one person who can give you a reply. The question may be
-something that other people are also wanting to ask. These other people have
-no way to read the reply, but to ask the one person the question. The one
+something that other people also want to ask. These other people have
+no way to read the reply but to ask the one person the question. The one
 person consequently gets overloaded with mail.
 
 If you really want to contact an individual and perhaps pay for his or her
@@ -26,7 +26,7 @@ the lists.
 Many mail programs and web archivers use information within mails to keep them
 together as "threads", as collections of posts that discuss a certain
 subject. If you don't intend to reply on the same or similar subject, don't
-just hit reply on an existing mail and change subject, create a new mail.
+just hit reply on an existing mail and change subject; create a new mail.
 
 #### Reply to the List
 
@@ -58,11 +58,11 @@ This is why top posting is so bad:
     A: Top-posting.
     Q: What is the most annoying thing in e-mail?
 
-Apart from the screwed up read order (especially when mixed together in a
+Apart from the screwed-up read order (especially when mixed together in a
 thread when someone responds using the mandated bottom-posting style), it also
 makes it impossible to quote only parts of the original mail.
 
-When you reply to a mail. You let the mail client insert the previous mail
+When you reply to a mail you let the mail client insert the previous mail
 quoted. Then you put the cursor on the first line of the mail and you move
 down through the mail, deleting all parts of the quotes that don't add context
 for your comments. When you want to add a comment you do so, inline, right
@@ -96,7 +96,7 @@ Cut off all mails and chatter that is not related to the mail you want to
 reply to.
 
 Change the subject name to something sensible and related to the subject,
-preferably even the actual subject of the single mail you wanted to reply to
+preferably even the actual subject of the single mail you wanted to reply to.
 
 #### Please Tell Us How You Solved The Problem!
 
@@ -113,4 +113,3 @@ solved or perhaps because the problem was unsolvable!
 Getting the solution posted also helps other users that experience the same
 problem(s). They get to see (possibly in the web archives) that the suggested
 fixes actually has helped at least one person.
-

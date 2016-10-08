@@ -3,7 +3,7 @@ Everything curl
 
  1. Intro
  2. the cURL project
- 3. curl and open source
+ 3. curl and Open Source
  4. The curl source code
  5. Network protocols
  6. The curl command line tool

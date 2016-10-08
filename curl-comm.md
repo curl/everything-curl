@@ -1,6 +1,6 @@
 ## Project communication
 
-cURL is an open source project consisting of voluntary members from all over
+cURL is an Open Source project consisting of voluntary members from all over
 the world, living and working in a large amount of the world's time zones. To
 make such a setup actually work, communication and openness is key. We keep
 all communication public and we use open communication channels. Most
@@ -10,8 +10,8 @@ are discussed and handled with full insight for everyone who cares to look.
 It is important to realize that we're all jointly taking care of the project,
 we fix problems and we add features. Sometimes a regular contributor grows
 bored and fades away, sometimes a new eager contributor steps out from the
-shadows and starts helping out more. To keep this ship going forward as good
-as possible it is important that we maintain open discussions and that's one
+shadows and starts helping out more. To keep this ship going forward as well
+as possible, it is important that we maintain open discussions and that's one
 of the reasons why we frown upon users who take discussions privately or try
 to email individual team members about development issues, questions,
 debugging or whatever.
@@ -26,7 +26,7 @@ time, it might be good to read a few old mails first to get to learn the
 culture and what's considered good practice.
 
 The mailing lists and the bug tracker have changed hosting providers a few
-times and there are reasons to suspect it might happen again in a future. It
-is just things that happen to a project that lives for a long time.
+times and there are reasons to suspect it might happen again in the future. It
+is just the kind of thing that happens to a project that lives for a long time.
 
 A few users also hang out on IRC in the #curl channel on freenode.

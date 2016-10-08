@@ -14,14 +14,14 @@ download sites are done by gracious volunteers outside of the project.
 
 As of a few years back, we make an effort to do our releases on an eight week
 cycle and unless some really serious and urgent problem shows up we stick to
-this schedule. On a Wednesday, and then again a Wednesday eight weeks later
-and so it continues. Non-stop.
+this schedule. We release on a Wednesday, and then again a Wednesday eight
+weeks later and so it continues. Non-stop.
 
 For every release we tag the source code in the repository with "curl-release
 version" and we update the [changelog](https://curl.haxx.se/changes.html).
 
 We have done more than 150 curl release so far, and for the ones made since
-the late 1999 there are lots of release stats available in our [curl release
+late 1999 there are lots of release stats available in our [curl release
 log](https://curl.haxx.se/docs/releases.html).
 
 ## Daily snapshots
@@ -38,7 +38,7 @@ release had been made at that point in time. It produces a package of all
 sources code and all files that are normally part of a release and puts it in
 a package and uploads it to a special place
 ([https://curl.haxx.se/snapshots/](https://curl.haxx.se/snapshots/)) to allow
-interested people to get the very latest code. To test, to experiment and
+interested people to get the very latest code to test, to experiment or
 whatever.
 
 The snapshots are only kept for around 20 days until deleted.

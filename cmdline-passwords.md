@@ -17,7 +17,7 @@ wants to request a page requiring HTTP authentication and her password is
 
 Several potentially bad things are going on here. First, we're entering a
 password on the command line and the command line might be readable for other
-users on the same system (assuming you have a multi-user system), and curl
+users on the same system (assuming you have a multi-user system). curl
 will help minimize that risk by trying to blank out passwords from process
 listings.
 
@@ -30,17 +30,17 @@ when it runs.
 ### Network leakage
 
 Secondly, this command line sends the user credentials to an HTTP server,
-which is a clear-text protocol that is open for men in the middle or other
+which is a clear-text protocol that is open for man-in-the-middle or other
 snoopers to spy on the connection and see what is sent. In this command line
 example, it makes curl use HTTP Basic authentication and that is completely
 insecure.
 
 There are several ways to avoid this, and the key is of course then to avoid
 protocols or authentication schemes that sends credentials in the plain over
-the network. Easiest is perhaps to make sure you avoid plain text protocols.
-Use HTTPS instead of HTTP, use FTPS instead of FTP and so on.
+the network. Easiest is perhaps to make sure you use encrypted versions of
+protocols.  Use HTTPS instead of HTTP, use FTPS instead of FTP and so on.
 
 If you need to stick to a plain text and insecure protocol, then see if you
 can switch to using an authentication method that avoids sending the
 credentials in the clear. If you want HTTP, such methods would include Digest
-(`--digest`) and Negotiate (`--negotiate.`).
+(`--digest`), Negotiate (`--negotiate.`) and NTLM (`--ntlm`).

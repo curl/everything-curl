@@ -2,14 +2,14 @@
 
 ![one billion users](one-billion-users.jpg)
 
-We use to say that there are a billion users of curl. It makes a good line to
-say but in reality we of course don't have any numbers that exact. We just
+We used to say that there are a billion users of curl. It makes a good line to
+say but in reality we, of course, don't have any numbers that exact. We just
 estimate and guess based on observations and trends. It also depends on
 exactly what you would consider "a user" to be. Let's elaborate.
 
 ### Open Source
 
-The project being open source and even very liberally licensed so, means that
+The project being Open Source and very liberally licensed means that
 just about anyone can re-distribute curl in source format or built into binary
 form.
 
@@ -18,7 +18,7 @@ form.
 The curl command line tool and the libcurl library are available for download
 for most operating systems via the curl web site, they are provided via third
 party installers to a bunch and and they come installed by default with yet
-some operating systems. This makes counting downloads from the curl web site
+more operating systems. This makes counting downloads from the curl web site
 completely inappropriate as a means of measurement.
 
 ### Finding users
@@ -37,9 +37,9 @@ documentation, but that's not easy for us to find in many cases and its also
 not easy for us to do anything about should they decide not to follow the very
 small license requirement.
 
-### Command line tool users
+### Command-line tool users
 
-The command line tool curl is widely used by programmers around the world in
+The command-line tool curl is widely used by programmers around the world in
 shell and batch scripts, to debug servers and to test out things. There's no
 doubt it is used by millions every day.
 
@@ -56,7 +56,7 @@ help to get it used in embedded systems.
 
 libcurl is popularly used in smartphone operating systems, in car infotainment
 setups, in television sets, in set-top boxes, in audio and video equipment such
-as bluray players and higher end receivers. It is often used in home routers
+as Blu-Ray players and higher-end receivers. It is often used in home routers
 and printers.
 
 A fair number of best-selling games are also using libcurl, on Windows and
@@ -68,10 +68,10 @@ The libcurl binding for PHP was one of, if not the, first bindings for libcurl
 to really catch on and get used widely. It quickly got adopted as a default
 way for PHP users to transfer data and as it has now been in that position for
 over a decade and PHP has turned out to be a fairly popular technology on the
-Internet (recent numbers indicated that something like a forth of all sites on
+Internet (recent numbers indicated that something like a quarter of all sites on
 the Internet uses PHP).
 
-A few really high demand sites are using PHP and are using libcurl in the
+A few really high-demand sites are using PHP and are using libcurl in the
 backend. Facebook and Yahoo are two such sites.
 
 ## Famous users
@@ -87,7 +87,7 @@ show-off to other big brands that if these other guys can build products that
 depend on us, maybe you can too?
 
 The list of companies are well over 200 names, but extracting some of the
-larger or more well-known brands, here's a pretty good list that of course is
+larger or more well-known brands, here's a pretty good list that, of course, is
 only a small selection:
 
 Adobe, Altera, AOL, Apple, AT&T, BBC, Blackberry, BMW, Bosch, Broadcom,

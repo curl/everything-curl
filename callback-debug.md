@@ -20,7 +20,7 @@ it flows.
 
 A common use for this callback is to get a full trace of all data that libcurl
 sends and receives. The data sent to this callback is always the unencrypted
-version, even when for example HTTPS or other encrypted protocols are used.
+version, even when, for example, HTTPS or other encrypted protocols are used.
 
 This callback must return zero or cause the transfer to stop with an error
 code.

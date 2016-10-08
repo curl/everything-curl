@@ -2,25 +2,25 @@
 
 curl has a built-in progress meter. When curl is invoked to transfer data
 (either uploading or downloading) it can show that meter in the terminal
-screen to show how the transfer is progressing. The current transfer speed,
+screen to show how the transfer is progressing, namely the current transfer speed,
 how long it has been going on and how long it thinks it might be left until
 completion.
 
 The progress meter is inhibited if curl deems that there is output going to
 the terminal, as then would the progress meter interfere with that output and
-just mess out what gets displayed. A user can also forcibly switch off the
+just mess up what gets displayed. A user can also forcibly switch off the
 progress meter with the `-s / --silent` option, which tells curl to hush.
 
 If you invoke curl and don't get the progress meter, make sure your output is
-directed somewhere else than the terminal.
+directed somewhere other than the terminal.
 
-curl also features an alternative, and simpler, progress meter that you enable
+curl also features an alternative and simpler progress meter that you enable
 with `-# / --progress-bar`. As the long name implies, it instead shows the
 transfer as progress bar.
 
 At times when curl is asked to transfer data, it can't figure out the total
 size of the requested operation and that then subsequently makes the progress
-meter contain less details and it cannot for example make forecasts for
+meter contain fewer details and it cannot, for example, make forecasts for
 transfer times etc.
 
 ### Units
@@ -64,4 +64,4 @@ From left-to-right:
 |Time Total|Expected time to complete the operation, in HH:MM:SS notation for hours, minutes and seconds |
 |Time Current|Time passed since the start of the transfer, in HH:MM:SS notation for hours, minutes and seconds |
 |Time Left |Expected time left to completion, in HH:MM:SS notation for hours, minutes and seconds |
-|Curr.Speed|Average transfer speed the last 5 seconds (the first 5 seconds of a transfer is based on less time of course) in number of bytes per second |
+|Curr.Speed|Average transfer speed over the last 5 seconds (the first 5 seconds of a transfer is based on less time of course) in number of bytes per second |

@@ -21,9 +21,9 @@ No matter how you do it, make sure you're getting your version from a trusted
 source and that you verify digital signatures or the authenticity of the
 packages in other ways.
 
-Also, remember that curl is often built to use third party libraries to
+Also, remember that curl is often built to use third-party libraries to
 perform and unless curl is built to use them statically you must also have
-those third party libraries installed - and they exact set of libraries will
+those third-party libraries installed - and the exact set of libraries will
 vary depending on the particular build you get.
 
 ## Command lines, quotes and aliases
@@ -42,8 +42,8 @@ string, but on Windows there's no support for the single quote version.
 
 In some environments, like PowerShell on Windows, the authors of the command
 line system decided they know better and "help" the user to use another tool
-instead of curl when curl is typed, by providing an alias that takes precedent
-when a command line is executed. In order to use curl properly with
+instead of curl when `curl` is typed, by providing an alias that takes
+precedence when a command line is executed. In order to use curl properly with
 PowerShell, you need to type in its full name including the extension:
 "curl.exe".
 

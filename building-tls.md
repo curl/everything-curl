@@ -1,10 +1,10 @@
 # Build to use a TLS library
 
 To make curl support TLS based protocols, such as HTTPS, FTPS, SMTPS, POP3S,
-IMAPS and more, you need to build with a third party TLS library since curl
+IMAPS and more, you need to build with a third-party TLS library since curl
 doesn't implement the TLS protocol itself.
 
-curl is written to work with a large amount of TLS libraries:
+curl is written to work with a large number of TLS libraries:
 
  - BoringSSL
  - GSkit (OS/400 specific)
@@ -16,7 +16,7 @@ curl is written to work with a large amount of TLS libraries:
  - axTLS
  - libressl
  - mbedTLS
- - schannel (native Windows)
+ - Schannel (native Windows)
 
 When you build curl and libcurl to use one of these libraries, it is important
 that you have the library and its include headers installed on your build
@@ -67,7 +67,7 @@ point configure to a custom install path prefix where it can find nss:
 
 (cyassl was the former name of the library) configure will detect WolfSSL in
 its default path by default. You can optionally point configure to a custom
-install path prefix where it can find wolfssl:
+install path prefix where it can find WolfSSL:
 
     ./configure --with-cyassl=/home/user/installed/nss --without-ssl
 
@@ -76,7 +76,7 @@ install path prefix where it can find wolfssl:
     ./configure --with-axtls --without-ssl
 
 configure will detect axTLS in its default path by default. You can optionally
-point configure to a custom install path prefix where it can find axtls:
+point configure to a custom install path prefix where it can find axTLS:
 
     ./configure --with-axtls=/home/user/installed/axtls --without-ssl
 
@@ -86,7 +86,7 @@ point configure to a custom install path prefix where it can find axtls:
 
 configure will detect mbedTLS in its default path by default. You can
 optionally point configure to a custom install path prefix where it can find
-mbedtls:
+mbedTLS:
 
     ./configure --with-mbedtls=/home/user/installed/mbedtls --without-ssl
 
@@ -94,20 +94,20 @@ mbedtls:
 
     ./configure --with-darwinssl --without-ssl
 
-(darwinssl is an alternative name for Secure Transport)
+(DarwinSSL is an alternative name for Secure Transport)
 configure will detect Secure Transport in its default path by default. You can
 optionally point configure to a custom install path prefix where it can find
-darwinssl:
+DarwinSSL:
 
     ./configure --with-darwinssl=/home/user/installed/darwinssl --without-ssl
 
-### schannel
+### Schannel
 
     ./configure --with-winssl --without-ssl
 
-(winssl is an alternative name for schannel)
-configure will detect schannel in its default path by default. You can
+(WinSSL is an alternative name for Schannel)
+configure will detect Schannel in its default path by default. You can
 optionally point configure to a custom install path prefix where it can find
-winssl:
+WinSSL:
 
     ./configure --with-winssl=/home/user/installed/winssl --without-ssl

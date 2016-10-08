@@ -5,7 +5,7 @@ Resource Locator). It operates on URLs. URL is the name we casually use for
 the web address strings, like the ones we usually see prefixed with http:// or
 starting with www.
 
-URL is strictly speaking the former name for this. URI (Uniform Resource
+URL is, strictly speaking, the former name for this. URI (Uniform Resource
 Identifier) is the more modern and correct name for it. Its syntax is defined
 in [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
 
@@ -15,7 +15,7 @@ describes how that particular URI format works.
 
 curl assumes that you give it a valid URL and it only does limited checks of
 the format in order to extract the information it deems necessary to perform
-its operation. You can for example most probably pass in illegal letters in
+its operation. You can, for example, most probably pass in illegal letters in
 the URL without curl noticing or caring and it will just pass them on.
 
 ### Scheme
@@ -37,7 +37,7 @@ used to be named like that. The protocols that are detected this way are FTP,
 DICT, LDAP, IMAP, SMTP and POP3. Any other host name in a scheme-less URL will
 make curl default to HTTP.
 
-You can modify the default protocol to something else than HTTP with the
+You can modify the default protocol to something other than HTTP with the
 `--proto-default` option.
 
 ### Name and password
@@ -117,17 +117,17 @@ You tell curl that the FTP resource is an ASCII type by appending ";type=A"
 to the URL. Getting the 'foo' file from example.com's root dir using ASCII
 could then be made with:
 
-    curl 'ftp://example.com/foo;type=A'
+    curl "ftp://example.com/foo;type=A"
 
 And while curl defaults to binary transfers for FTP, the URL format allows you
 to also specify the binary type with type=I:
 
-    curl 'ftp://example.com/foo;type=I'
+    curl "ftp://example.com/foo;type=I"
 
 Finally, you can tell curl that the identified resource is a directory if the
 type you pass is D:
 
-    curl 'ftp://example.com/foo;type=D'
+    curl "ftp://example.com/foo;type=D"
 
 ... this can then work as an alternative format, instead of ending the path
 with a trailing slash as mentioned above.
@@ -146,8 +146,8 @@ It is important to realize that when you use a modern web browser, the
 "address bar" they tend to feature at the top of their main windows are not
 using "URLs" or even "URIs". They are in fact mostly using IRIs, which is a
 superset of URIs to allow internationalization like non-latin symbols and
-more, but it usually goes beyond that too as they tend to for example handle
-spaces and do magic things on percent encoding in ways none of these mention
+more, but it usually goes beyond that too, as they tend to, for example, handle
+spaces and do magic things on percent encoding in ways none of these mentioned
 specifications say a client should do.
 
 The address bar is quite simply an interface for humans to enter and see
@@ -179,9 +179,9 @@ In previous sections we described how curl always parses all options in the
 whole command line and applies those to all the URLs that it transfers.
 
 That was a simplification: curl also offers an option (-;, --next) that
-inserts a sort of boundary between a set of options and URLs that it will
-apply the options for. When the command line parses finds a --next option, it
-applies the following options to the next set of URLs to operate with. The
+inserts a sort of boundary between a set of options and URLs for which it will
+apply the options. When the command line parses finds a --next option, it
+applies the following options to the next set of URLs. The
 --next option thus works as a *divider* between a set of options and URLs. You
 can use as many --next options as you please.
 

@@ -20,7 +20,7 @@ Spell them out as "it will and must have".
 
 And ... vs … (typographical ellipses)
 
-Let's try to use the corect UTF-8 characters!
+Let's try to use the correct UTF-8 characters!
 
 ## Avoid the short forms of dir and repo
 

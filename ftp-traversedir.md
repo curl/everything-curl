@@ -1,8 +1,8 @@
 ## How to traverse directories
 
 When doing FTP commands to traverse the remote file system, there are a few
-different ways curl can proceed to reach the target file. The file the user
-wants to transfers.
+different ways curl can proceed to reach the target file, the file the user
+wants to transfer.
 
 ### multicwd
 
@@ -27,10 +27,10 @@ This then equals this FTP command/response sequence (simplified)
 
 ### nocwd
 
-The opposite to doing one CWD for each directory part is to not change
+The opposite to doing one CWD for each directory part is to not change the
 directory at all. This method asks the server using the entire path at once
 and is thus very fast. Occasionally servers have a problem with this and it
-isn't purely standards compliant.
+isn't purely standards-compliant.
 
     curl --ftp-method nocwd ftp://example.com/one/two/three/file.txt
 

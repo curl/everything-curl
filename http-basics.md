@@ -4,15 +4,15 @@
 are otherwise already familiar with protocols.)
 
 HTTP is a protocol that is easy to learn the basics of. A client connects to a
-server - and it is always the client that takes the initiative, sends a
+server - and it is always the client that takes the initiative - sends a
 request and receives a response. Both the request and the response consist of
 headers and a body. There can be little or a lot of information going in both
 directions.
 
-An HTTP request sent by a client starts with a request-line, followed by
+An HTTP request sent by a client starts with a request line, followed by
 headers and then optionally a body. The most common HTTP request is probably
-the GET request which asks the server to return a specific resource and it
-does not contain a body.
+the GET request which asks the server to return a specific resource, and this
+request does not contain a body.
 
 When a client connects to 'example.com' and asks for the '/' resource, it
 sends a GET without a request body:

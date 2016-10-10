@@ -1,7 +1,7 @@
 ## HTTP POST
 
 POST is the HTTP method that was invented to send data to a receiving web
-application, and it is for example how most common HTML forms on the web
+application, and it is how most common HTML forms on the web
 works. It usually sends a chunk of relatively small amounts of data to the
 receiver.
 
@@ -31,9 +31,9 @@ typical browser will use for a plain POST.
 
 Many receivers of POST data don't care about or check the Content-Type header.
 
-If that header is not good enough for you, you should of course replace that
-and instead provide the correct one. Like if you POST JSON to a server and
-want to more accurate tell the server about what the content is:
+If that header is not good enough for you, you should, of course, replace that
+and instead provide the correct one. Such as if you POST JSON to a server and
+want to more accurately tell the server about what the content is:
 
     $ curl -d '{json}' -H 'Content-Type: application/json' https://example.com
 
@@ -47,8 +47,8 @@ in binary exactly as given:
 
 ### URL encoding
 
-OK, so the command line options above all require that you provide properly
-encoded data. Data you need to make sure is in the right format. While that
+The command line options above all require that you provide properly
+encoded data, data you need to make sure is in the right format. While that
 gives you a lot of freedom, it is also a bit inconvenient at times.
 
 To help you send data you haven't already encoded, curl offers the
@@ -95,26 +95,26 @@ all data you've specified with the different `-d` variants and appends that
 data on the right end of the URL separated with a '?' and then makes curl send
 a GET instead.
 
-This option makes it easy to switch between POSTing and GETing a form for
+This option makes it easy to switch between POSTing and GETing a form, for
 example.
 
 ### Expect 100-continue
 
-HTTP has no proper way to stop on ongoing transfer (in any direction) and
-still maintain the connection. So if we figure out that the transfer better
-top once the transfer has started, there are only two ways to proceed: cut the
-connection pay the price of reestablishing the connection again for next
+HTTP has no proper way to stop an ongoing transfer (in any direction) and
+still maintain the connection. So, if we figure out that the transfer had better
+stop after the transfer has started, there are only two ways to proceed: cut the
+connection and pay the price of reestablishing the connection again for the next
 request, or keep the transfer going and waste bandwidth but be able to reuse
-the connection.
+the connection next time.
 
 One example of when this can happen is when you send a large file over HTTP,
 only to discover that the server requires authentication and immediately sends
 back a 401 response code.
 
-The mitigation that exists to make this scenario less frequent, is to have
+The mitigation that exists to make this scenario less frequent is to have
 curl pass on an extra header, `Expect: 100-continue`, which gives the server a
-chance to deny the request before a lot of data is sent of. curl sends this
-Expect: header by default if the POST it will do is known or suspect to be
+chance to deny the request before a lot of data is sent off. curl sends this
+Expect: header by default if the POST it will do is known or suspected to be
 larger than just minuscule. curl also does this for PUT requests.
 
 When a server gets a request with an 100-continue and deems the request fine,
@@ -152,8 +152,8 @@ You send a chunked POST with curl like this:
 This chapter has explained how sending a post with `-d` is the equivalent of
 what a browser does when an HTML form is filled in and submitted.
 
-Submitting such forms is a very common operation with curl. To have curl fill
-in the form in an automated fashion.
+Submitting such forms is a very common operation with curl; effectively, to have
+curl fill in a web form in an automated fashion.
 
 If you want to submit a form with curl and make it look as if it has been done
 with a browser, it is important that to provide all the input fields from the
@@ -175,21 +175,21 @@ then edit that HTML page to redirect the 'action=' part of the form to your
 own server or a test server that just outputs exactly what it gets. Completing
 that form submission will then show you exactly how a browser sends it.
 
-A third option is of course to use a network capture tool such as Wireshark to
+A third option is, of course, to use a network capture tool such as Wireshark to
 check exactly what is sent over the wire. If you're working with HTTPS, you
 can't see form submissions in clear text on the wire but instead you need to
 make sure you can have wireshark extract your TLS private key from your
-browser. See the Wireshark documentation for details on that.
+browser. See the Wireshark documentation for details on doing that.
 
 ### Javascript and forms
 
-A very common mitigation against automated "agents" or scripts using curl, is
+A very common mitigation against automated "agents" or scripts using curl is
 to have the page with the HTML form use javascript to set values of some input
-fields, usually then one of the hidden ones. Like perhaps there's some
-javascript code that executes on page load or when the submit button is
-pressed and it sets a magic value that the server then can verify is set
+fields, usually one of the hidden ones. Often, there's some
+Javascript code that executes on page load or when the submit button is
+pressed which sets a magic value that the server then can verify
 before it considers the submission to be valid.
 
-You can usually work around that by just reading the javascript code and redo
+You can usually work around that by just reading the Javascript code and redoing
 that logic in your script. Using the above mentioned tricks to check exactly
-what a browser sends is then also a good helper.
+what a browser sends is then also a good help.

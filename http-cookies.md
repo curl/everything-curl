@@ -6,7 +6,7 @@ allow clients to keep state between requests. Remember how the HTTP protocol
 itself has no real state but instead has to resend all data in subsequent
 requests that it wants the server to be aware of.
 
-Cookies are set by the server with the `Set-Cookie:` headers and with each
+Cookies are set by the server with the `Set-Cookie:` header and with each
 cookie the server sends a bunch of extra properties that need to match for the
 client to send the cookie back. Like domain name and path and perhaps most
 important for how long the cookie should live on.
@@ -16,7 +16,7 @@ a number of seconds) or it gets no expiry at all. A cookie without an expire
 time is called a "session cookie" and is meant to live for the duration of the
 "session" but not longer. A session in this aspect is typically thought to be
 the life time of the browser used to manoeuvre a site. When you close the
-browser you end your session. Doing HTTP operations with a command line client
+browser, you end your session. Doing HTTP operations with a command line client
 that supports cookies of course then begs the question when a session really
 ends...
 
@@ -34,7 +34,7 @@ the engine but start off with an empty internal cookie store:
     curl -b non-existing http://example.com
 
 But just switching on the cookie engine, getting a single resource and then
-quit would be pointless as curl would have no chance to actually send any
+quitting would be pointless as curl would have no chance to actually send any
 cookies it received. Assuming the site in this example would set cookies and
 then do a redirect we would do:
 
@@ -48,8 +48,8 @@ The file format curl uses for cookies is called the Netscape cookie format
 because it was once the file format used by browsers and then you could easily
 tell curl to use the browser's cookies!
 
-As a convenience, curl also supports the cookie file being a set of HTTP
-headers that sets cookies. It's lesser good format but may be the only thing
+As a convenience, curl also supports a cookie file being a set of HTTP
+headers that set cookies. It's an inferior format but may be the only thing
 you have.
 
 Tell curl which file to read the initial cookies from:
@@ -58,7 +58,7 @@ Tell curl which file to read the initial cookies from:
 
 Remember that this only *reads* from the file. If the server would update the
 cookies in its response, curl would update that cookie in its in-memory store
-but then eventually throw them all away when it exits and a subsequent invoke
+but then eventually throw them all away when it exits and a subsequent invocation
 of the same input file would use the original cookie contents again.
 
 ### Writing cookies to file
@@ -78,7 +78,7 @@ You point out the cookie jar output with `-c`:
 to *read* cookies from a file. Oftentimes you want both.
 
 When curl writes cookies to this file, it will save all known cookies
-including those that are session cookies. Without a given lifetime. curl
+including those that are session cookies (without a given lifetime). curl
 itself has no notion of a session and it doesn't know when a session ends so
 it will not flush session cookies unless you tell it to.
 
@@ -86,7 +86,7 @@ it will not flush session cookies unless you tell it to.
 
 Instead of telling curl when a session ends, in order to flush session cookies
 and with this basically signal to the server that we're starting a new
-session, curl features and option that lets the user tell when a new session
+session, curl features an option that lets the user tell when a new session
 begins.
 
 A new cookie session means that all the session cookies will be thrown

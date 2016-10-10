@@ -22,8 +22,8 @@ can for example send a DELETE instead like this:
     curl http://example.com/file -X DELETE
 
 This command line option only changes the text in the outgoing request, it
-does not change any behavior. This is particularly important if you for
-example ask curl to send a HEAD with -X, as HEAD is specified to send all the
+does not change any behavior. This is particularly important if you, for
+example, ask curl to send a HEAD with -X, as HEAD is specified to send all the
 headers a GET response would get but *never* send a response body - even if
 the headers otherwise imply that one would come. So, adding `-X HEAD` to a
 command line that would otherwise do a GET will cause curl to hang, waiting

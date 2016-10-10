@@ -12,15 +12,16 @@ several reasons.
 
 ### Active connections
 
-The client can opt to ask the server to connect to the client to set it up. A
-so called "active" connection. This is done with the PORT or EPRT
+The client can opt to ask the server to connect to the client to set it up, a
+so-called "active" connection. This is done with the PORT or EPRT
 commands. Allowing a remote host to connect back to a client on a port that
 the client opens up requires that there's no firewall or other network
-appliance in between that refuses that to go through - and that is far from
+appliance in between that refuses that to go through and that is far from
 always the case. You ask for an active transfer using `curl -P [arg]` (also
 known as `--ftp-port` in long form) and while the option allows you to specify
 exactly which address to use, just setting the same as you come from is almost
-always the correct choice and you do that with `-P -`. Like asking for a file:
+always the correct choice and you do that with `-P -`, like this way to ask
+for a file:
 
     $ curl -P - ftp://example.com/foobar.txt
 

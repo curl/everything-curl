@@ -31,8 +31,8 @@ your machines) you can shortcut the HTTP/2 "negotiation" with
 One of the primary features in the HTTP/2 protocol is the ability to multiplex
 several logical stream over the same physical connection. When using the curl
 command line tool, you cannot take advantage of that cool feature since curl
-is doing all its network requests in a strictly serial manner. One after the
+is doing all its network requests in a strictly serial manner, one after the
 next, with the second only ever starting once the previous one has ended.
 
-Hopefully a future curl version with be enhanced to allow the use of this
+Hopefully, a future curl version will be enhanced to allow the use of this
 feature.

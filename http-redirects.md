@@ -2,10 +2,10 @@
 
 The “redirect” is a fundamental part of the HTTP protocol. The concept was
 present and is documented already in the first spec (RFC 1945), published in
-1996, and it has remained well used ever since.
+1996, and it has remained well-used ever since.
 
 A redirect is exactly what it sounds like. It is the server sending back an
-instruction to the client - instead of giving back the contents the client
+instruction to the client instead of giving back the contents the client
 wanted. The server basically says “go look over *here* instead for that thing
 you asked for“.
 
@@ -17,17 +17,17 @@ ask for, which can be absolute or relative.
 
 ## Permanent and temporary
 
-Is the redirect meant to last or just remain for now? If you want a GET to
-resource A permanently redirect users to resource B with another GET, send
+Is the redirect meant to last or just remain valid for now? If you want a GET to
+permanently redirect users to resource B with another GET, send
 back a 301. It also means that the user-agent (browser) is meant to cache this
 and keep going to the new URI from now on when the original URI is requested.
 
 The temporary alternative is 302. Right now the server wants the client to
 send a GET request to B, but it shouldn't cache this but keep trying the
-original URI when directed to it.
+original URI when directed to it next time.
 
 Note that both 301 and 302 will make browsers do a GET in the next request,
-which possibly means changing method if it started with a POST (and only if
+which possibly means changing the method if it started with a POST (and only if
 POST). This changing of the HTTP method to GET for 301 and 302 responses is
 said to be “for historical reasons”, but that’s still what browsers do so most
 of the public web will behave this way.
@@ -39,8 +39,8 @@ response” to the original request rather than just a redirect.
 
 These three codes were the only redirect codes in the HTTP/1.0 spec.
 
-curl however, doesn't remember or cache any redirects at all so there's really
-no difference between permanent and temporary redirects to it.
+curl however, doesn't remember or cache any redirects at all so to it, there's
+really no difference between permanent and temporary redirects.
 
 ## Tell curl to follow redirects
 
@@ -49,9 +49,9 @@ it doesn't follow HTTP redirects by default. Use the `-L, --location` to tell
 it to do that.
 
 When following redirects is enabled, curl will follow up to 50 redirects by
-default. There's a maximum limit set mostly to avoid the risk of getting
-caught in endless loops. If 50 isn't food for you, you change the maximum
-amount of redirects to follow with the `--max-redirs` option.
+default. There's a maximum limit mostly to avoid the risk of getting
+caught in endless loops. If 50 isn't sufficient for you, you can change the
+maximum number of redirects to follow with the `--max-redirs` option.
 
 ## GET or POST?
 
@@ -74,8 +74,8 @@ then the only response code left for you is...
 
 The (older) response code to tell a client to send a POST also in the next
 request but temporarily is 307. This redirect will not be cached by the client
-though so it’ll again post to A if requested to. The 307 code was introduced
-in HTTP/1.1.
+though, so it’ll again post to A if requested to again. The 307 code was
+introduced in HTTP/1.1.
 
 Oh, and redirects work the exact same way in HTTP/2 as they do in HTTP/1.1.
 
@@ -109,7 +109,7 @@ within the same "transfer".
 
 So if you want the credentials to also get sent to the following host names
 even though they're not the same as the original - presumably because you
-trust them and know that there's no harm in doing that, you can tell curl that
+trust them and know that there's no harm in doing that - you can tell curl that
 it is fine to do so by using the `--location-trusted` option.
 
 # Non-HTTP Redirects
@@ -129,9 +129,9 @@ of these kinds of redirects.
 
 ## Javascript redirects
 
-The modern web is full of javascript and as you know, javascript is a
+The modern web is full of Javascript and as you know, Javascript is a
 language and a full run time that allows code to execute in the browser when
 visiting web sites.
 
 Javascript also provides means for it to instruct the browser to move on to
-another site. A redirect if you will.
+another site - a redirect, if you will.

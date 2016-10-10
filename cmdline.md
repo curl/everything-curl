@@ -62,5 +62,5 @@ proceed. It means that you can pass in crazy data in some options and you can
 have curl pass on that crazy data in its transfer operation.
 
 This is a design choice, as it allows you to really tweak how curl does its
-the protocol communications and you can have curl massage your server
+protocol communications and you can have curl massage your server
 implementations in the most creative ways.

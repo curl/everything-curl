@@ -12,7 +12,7 @@ basic way is to use the `Content-Length:` header in the response and with that
 specify the exact number of bytes in the response body.
 
 Some early HTTP server implementations had problems with file sizes greater
-than 2GB, and wrongly managed to send Content-Length: headers with negative
+than 2GB and wrongly managed to send Content-Length: headers with negative
 sizes or otherwise just plain wrong data. curl can be told to ignore the
 Content-Length: header completely with `--ignore-content-length`. Doing so may
 have some other negative side-effects but should at least let you get the
@@ -25,8 +25,8 @@ The response code is the server's way of giving the client a hint about how
 the request was handled.
 
 It is important to note that curl does not consider it an error even if the
-response code would indicate that the requested documented couldn't be
-delivered or similar. curl considers a successful sending and receiving of
+response code would indicate that the requested document couldn't be
+delivered (or similar). curl considers a successful sending and receiving of
 HTTP to be good.
 
 The first digit of the HTTP response code is a kind of "error class":
@@ -55,18 +55,18 @@ An HTTP 1.1 server can decide to respond with a "chunked" encoded response, a
 feature that wasn't present in HTTP 1.0.
 
 When sending a chunked response, there's no Content-Length: for the response
-to indicate the size of it, instead there's a `Transfer-Encoding: chunked`
+to indicate its size. Instead, there's a `Transfer-Encoding: chunked`
 header that tells curl there's chunked data coming and then in the response
 body, the data comes in a series of "chunks". Every individual chunk starts
 with the size of that particular chunk (in hexadecimal), then a newline and
-then the contents of the chunk. Repeated over and over until the end of the
-response, which is signalled with a zero sized chunk. The point with this sort
+then the contents of the chunk. This is repeated over and over until the end of the
+response, which is signalled with a zero sized chunk. The point of this sort
 of response is for the client to be able to figure out when the responses has
 ended even though the server didn't know the full size before it started to
 send it. This is usually the case when the response is dynamic and generated
 at the point when the request comes.
 
-Clients like curl will of course decode the chunks and not show the chunk
+Clients like curl will, of course, decode the chunks and not show the chunk
 sizes to users.
 
 ### Gzipped transfers
@@ -76,7 +76,7 @@ done by the server when it includes a `Content-Encoding: gzip` in the response
 as a hint to the client. Compressed responses make a lot of sense when either
 static resources are sent (that were compressed at a previous moment in time)
 or even in run-time when there's more CPU power available than bandwidth.
-Sending a much smaller amount of data is often to prefer.
+Sending a much smaller amount of data is often preferred.
 
 You can ask curl to both ask for compressed content *and* automatically and
 transparently uncompress gzipped data when receiving content encoded gzip (or

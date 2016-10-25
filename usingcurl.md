@@ -7,7 +7,7 @@ pass on URLs to work with.
 In this chapter we are going to dive deeper into a variety of different
 concepts of what curl can do and how to tell curl to use these features. You
 should consider all these features as different tools that are here to help
-you do your file transfer tasks as convenient as possible.
+you do your file transfer tasks as conveniently as possible.
 
 ## Supported protocols
 

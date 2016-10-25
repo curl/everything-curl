@@ -1,7 +1,7 @@
 ## Set handle options
 
 You set options in the easy handle to control how that transfer is going to be
-done or in some cases you can actually set options and modify the transfer's
+done, or in some cases you can actually set options and modify the transfer's
 behavior while it is in progress. You set options with `curl_easy_setopt()`
 and you provide the handle, the option you want to set and the argument to the
 option. All options take exactly one argument and you must always pass exactly

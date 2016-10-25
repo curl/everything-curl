@@ -12,6 +12,6 @@ perform the way you want it to.
 Each callback option also has a companion option that sets the associated
 "user pointer". This user pointer is a pointer that libcurl doesn't touch or
 care about, but just passes on as an argument to the callback. This allows you
-to for example pass in pointers to local data all the way through to your
+to, for example, pass in pointers to local data all the way through to your
 callback function.
 

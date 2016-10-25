@@ -1,6 +1,6 @@
 ## License
 
-curl and libcurl are distributed under an open source license known as a MIT
+curl and libcurl are distributed under an Open Source license known as a MIT
 license derivative. It is very short, simple and easy to grasp. It follows here
 in its completeness:
 
@@ -33,4 +33,4 @@ back to the project - but you may not claim that you wrote it.
 
 Early on in the project we iterated over a few different other licenses before
 we settled on this. We started out GPL, then tried MPL and landed on this MIT
-derivative. We will never change license again.
+derivative. We will never change the license again.

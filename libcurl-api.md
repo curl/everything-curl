@@ -66,9 +66,9 @@ release. It makes comparisons with greater than and less than work.
 This number is also available as three separate defines:
 `LIBCURL_VERSION_MAJOR`, `LIBCURL_VERSION_MINOR` and `LIBCURL_VERSION_PATCH`.
 
-These defines are of course only suitable to figure out the version number
+These defines are, of course, only suitable to figure out the version number
 built *just now* and they won't help you figuring out which libcurl version
-that is used in run-time three years from now.
+that is used at run-time three years from now.
 
 ### Which libcurl version runs
 

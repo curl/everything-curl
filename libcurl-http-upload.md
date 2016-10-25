@@ -1,6 +1,6 @@
 ## HTTP Upload
 
-Upload over HTTP can be done in many different ways and it is important to
+Uploads over HTTP can be done in many different ways and it is important to
 notice the differences. They can use different methods, like POST or PUT, and
 when using POST the body formatting can differ.
 
@@ -9,8 +9,8 @@ provide the data to upload.
 
 ### HTTP POST
 
-POST is typically the HTTP method to pass data to a remove web application. A
-very common way to do that in browsers is filling in a HTML form and pressing
+POST is typically the HTTP method to pass data to a remote web application. A
+very common way to do that in browsers is by filling in a HTML form and pressing
 submit. It is the standard way for a HTTP request to pass on data to the
 server. With libcurl you normally provide that data as a pointer and a length:
 
@@ -28,7 +28,7 @@ application/x-www-form-urlencoded`.
 
 ### HTTP multipart formposts
 
-A multipart formpost is still using the same HTTP method POST, the difference
+A multipart formpost is still using the same HTTP method POST; the difference
 is only in the formatting of the request body. A multipart formpost is
 basically a series of separate "parts", separated by MIME-style boundary
 strings. There's no limit to how many parts you can send.
@@ -37,7 +37,7 @@ Each such part has a name, a set of headers and a few other properties.
 
 libcurl offers a convenience function for constructing such a series of parts
 and to send that off to the server. `curl_formadd` is the function to build a
-formpost with. Invoke it once for each part, and pass in arguments to it
+formpost. Invoke it once for each part, and pass in arguments to it
 detailing the specifics and characteristics of that part. When all parts you
 want to send have been added, you pass in the handle `curl_formadd` returned
 like this:

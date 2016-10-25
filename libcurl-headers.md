@@ -1,6 +1,6 @@
 ## Header files
 
-There is ever only one header your libcurl using application needs to include:
+There is only ever one header your libcurl using application needs to include:
 
     #include <curl/curl.h>
 

@@ -4,11 +4,11 @@ By default and by design, libcurl makes transfers as basic as possible and
 features need to be enabled to get used. One such feature is HTTP cookies,
 more known as just plain and simply "cookies".
 
-Cookies are name/value pair sent by the server (using a `Set-Cookie:` header)
+Cookies are name/value pairs sent by the server (using a `Set-Cookie:` header)
 to be stored in the client, and are then supposed to get sent back again in
-requests that matches the host and path requirements that were set together
+requests that matches the host and path requirements that were specified along
 with the cookie when it came from the server (using the `Cookie:` header). On
-the modern web of today, sites are known to sometimes use very large amounts
+the modern web of today, sites are known to sometimes use very large numbers
 of cookies.
 
 ## Cookie engine
@@ -42,17 +42,17 @@ option:
 
 when the easy handle is closed later with `curl_easy_cleanup()`, all known
 cookies will be written to the given file. The file format is the well-known
-"netscape cookie file" format that browsers also once used.
+"Netscape cookie file" format that browsers also once used.
 
 ## Setting custom cookies
 
 A simpler and more direct way to just pass on a set of specific cookies in a
-request, that doesn't add any cookies to the cookie store and doesn't even
+request that doesn't add any cookies to the cookie store and doesn't even
 activate the cookie engine, is to set the set with `CURLOPT_COOKIE:':
 
     curl_easy_setopt(easy, CURLOPT_COOKIE, "name=daniel; present=yes;");
 
-The string you set there is the raw string that is sent in the HTTP request
+The string you set there is the raw string that would be sent in the HTTP request
 and should be in the format of repeated sequences of `NAME=VALUE;` - including
 the semicolon separator.
 
@@ -67,8 +67,8 @@ cookies.
 
 Add a new cookie to the cookie store by simply passing it into curl with
 `CURLOPT_COOKIELIST` with a new cookie. The format of the input is a single
-line from the cookie file format - or formatted as a `Set-Cookie:` response
-header but we recommend the cookie file style:
+line in the cookie file format, or formatted as a `Set-Cookie:` response
+header, but we recommend the cookie file style:
 
     #define SEP  "\\t"  /* Tab separates the fields */
 
@@ -105,7 +105,7 @@ is done with the information.
 If setting and extracting cookies isn't enough, you can also interfere with
 the cookie store in more ways:
 
-Wipe the entire in-memory storage clean with
+Wipe the entire in-memory storage clean with:
 
     curl_easy_setopt(curl, CURLOPT_COOKIELIST, "ALL");
 

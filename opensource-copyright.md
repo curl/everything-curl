@@ -5,13 +5,13 @@ creator of an original work exclusive rights for its use and distribution.
 
 The copyright owner(s) can agree to allowing others to use its work by
 licensing it. That's what we do in the curl project. The copyright is the
-foundation which the licensing works on.
+foundation on which the licensing works.
 
 Daniel Stenberg is the owner of most copyrights in the curl project.
 
 ## Independent
 
-A lot of open source projects are run within umbrella organizations. Such
+A lot of Open Source projects are run within umbrella organizations. Such
 organizations include the GNU project, the Apache Software Foundation, a
 larger company that funds the project or similar. The curl project is not part
 of any such larger organization but is completely independent and free.

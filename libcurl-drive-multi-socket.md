@@ -5,8 +5,8 @@ designed for event-driven applications. Make sure you read the [Drive with
 multi interface](libcurl-drive-multi.md) section first.
 
 multi_socket supports multiple parallel transfers - all done in the same
-single thread, and have been used to run several tens of thousands of
-transfers in a single application. It is usually an API that makes the most
+single thread - and have been used to run several tens of thousands of
+transfers in a single application. It is usually the API that makes the most
 sense if you do a large number (>100 or so) of parallel transfers.
 
 Event-driven in this case means that your application uses a system level
@@ -14,7 +14,7 @@ library or setup that "subscribes" to a number of sockets and it lets your
 application know when one of those sockets are readable or writable and it
 tells you exactly which one.
 
-This setup allows clients to scale up the number of simultaneous transfers way
+This setup allows clients to scale up the number of simultaneous transfers
 much higher than with other systems, and still maintain good performance. The
 "regular" APIs otherwise waste far too much time scanning through lists of all
 the sockets.
@@ -35,18 +35,18 @@ want to perform.
 
 You can add them at any time while the transfers are running and you can also
 similarly remove easy handles at any time using the `curl_multi_remove_handle`
-call. Typically though, you remove handles after its transfer is completed.
+call. Typically though, you remove a handle only after its transfer is completed.
 
 ## multi_socket callbacks
 
 As explained above, this event-based mechanism relies on the application to
-know which sockets that are used by libcurl and what libcurl waits for on
-those sockets: if its waits for the socket to become readable, writable or
+know which sockets are used by libcurl and what libcurl waits for on
+those sockets: if it waits for the socket to become readable, writable or
 both!
 
 It also needs to tell libcurl when its timeout time has expired, as it is
 control of driving everything libcurl can't do it itself. So libcurl must tell
-the application an updated timeout value too.
+the application an updated timeout value, too.
 
 ### socket_callback
 
@@ -90,8 +90,8 @@ registered:
 
 The application is in control and will wait for socket activity. But even
 without socket activity there will be things libcurl needs to do. Timeout
-things, call the progress callback, start over a retry or fail a transfer that
-takes too long etc. To make that work, the application must also make sure to
+things, calling the progress callback, starting over a retry or failing a transfer that
+takes too long, etc. To make that work, the application must also make sure to
 handle a single-shot timeout that libcurl sets.
 
 libcurl sets the timeout with the timer_callback
@@ -107,7 +107,7 @@ libcurl sets the timeout with the timer_callback
     /* set the callback in the multi handle */
     curl_multi_setopt(multi_handle, CURLMOPT_TIMERFUNCTION, timer_callback);
 
-The is only one timeout for the application to handle for the entire multi
+There is only one timeout for the application to handle for the entire multi
 handle, no matter how many individual easy handles that have been added or
 transfers that are in progress. The timer callback will be updated with the
 current nearest-in-time period to wait. If libcurl gets called before the
@@ -124,12 +124,12 @@ set a new timeout for the next expiry period.
 
 ### How to start everything
 
-When you've added one or more easy handles to the multi handle, you've set the
-socket and timer callbacks in the multi handle you're ready to start the
+When you've added one or more easy handles to the multi handle and set the
+socket and timer callbacks in the multi handle, you're ready to start the
 transfer.
 
 To kick it all off, you tell libcurl it timed out (because all easy handles
-start out with a very very short timeout), and that will make libcurl call the
+start out with a very, very short timeout) which will make libcurl call the
 callbacks to set things up and from then on you can can just let your event
 system drive:
 
@@ -146,9 +146,9 @@ system drive:
 
 ### When is it done?
 
-The 'running_handles' counter return by `curl_multi_socket_action` holds the
+The 'running_handles' counter returned by `curl_multi_socket_action` holds the
 number of current transfers not completed. When that number reaches zero, we
-know there's no transfers going on.
+know there are no transfers going on.
 
 Each time the 'running_handles' counter changes, `curl_multi_info_read()` will
 return info about the specific transfers that completed.

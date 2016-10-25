@@ -1,7 +1,7 @@
 ## curl --libcurl
 
 We actively encourage users to first try out the transfer they want to do with
-the curl command line tool, and once it works roughly the way you want it to
+the curl command line tool, and once it works roughly the way you want it to,
 you append the `--libcurl [filename]` option to the command line and run it
 again.
 

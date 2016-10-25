@@ -5,14 +5,14 @@ an excellent help to figure out what went wrong in a particular transfer and
 often explains why it can be done like that or what the problem is for the
 moment.
 
-The next life safer when writing libcurl applications that everyone needs to
+The next lifesaver when writing libcurl applications that everyone needs to
 know about and needs to use extensively, at least while developing libcurl
 applications or debugging libcurl itself, is to enable "verbose mode" with
-`CURLOPT_URL`:
+`CURLOPT_VERBOSE`:
 
     CURLcode ret = curl_easy_setopt(handle, CURLOPT_VERBOSE, 1L);
 
-When libcurl is told to be verbose it will mention transfer related details
+When libcurl is told to be verbose it will mention transfer-related details
 and information to stderr while the transfer is ongoing. This is awesome to
 figure out why things fail and to learn exactly what libcurl does when you ask
 it different things. You can redirect the output elsewhere by changing stderr
@@ -23,7 +23,7 @@ debug callback (explained further in a later section).
 
 Verbose is certainly fine, but sometimes you need more. libcurl also offers a
 trace callback that in addition to showing you all the stuff the verbose mode
-does, it also passes on *all* data send and received so that your application
+does, it also passes on *all* data sent and received so that your application
 gets a full trace of everything.
 
 The sent and received data passed to the trace callback is given to the
@@ -55,5 +55,5 @@ On the curl web site, we host an example called
 [debug.c](https://curl.haxx.se/libcurl/c/debug.html) that includes a simple
 trace function to get inspiration from.
 
-There's also additional details in the [CURLOPT_DEBUGFUNCTION man
+There are also additional details in the [CURLOPT_DEBUGFUNCTION man
 page](https://curl.haxx.se/libcurl/c/CURLOPT_DEBUGFUNCTION.html).

@@ -12,7 +12,7 @@ example (saving the downloaded data in the file called 'saved'):
     $ curl -v http://example.com -o saved
     * Rebuilt URL to: http://example.com/
 
-Ok so we invoked curl with a URL that it considers a incomplete so it helps us
+Ok so we invoked curl with a URL that it considers incomplete so it helps us
 and it adds a trailing slash before it moves on.
 
     *   Trying 93.184.216.34...

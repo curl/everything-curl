@@ -16,10 +16,10 @@ use a curl version that is a few years old.
 All command line options described in this book were, of course, added to curl
 at some point in time, and only a very small portion of them were available
 that fine spring day in 1998 when curl first shipped. You may have reason to
-check your the version of the curl you're using and crosscheck with the curl
-man page for when certain options were added. This is especially important if
-you want to take a curl command line using a modern curl version back to an
-older system that might be running an older installation.
+check your version of curl and crosscheck with the curl man page for when
+certain options were added. This is especially important if you want to take a
+curl command line using a modern curl version back to an older system that
+might be running an older installation.
 
 The developers of curl are working hard to not change existing behavior
 though. Command lines written to use curl in 1998, 2003 or 2010 should all be

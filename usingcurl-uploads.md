@@ -22,11 +22,11 @@ POST.
 #### POST
 
 POST is the HTTP method that was invented to send data to a receiving web
-application, and it is for example how most common HTML forms on the web
-works. It usually sends a chunk of relatively small amounts of data to the
+application, and it is, for example, how most common HTML forms on the web
+work. It usually sends a chunk of relatively small amounts of data to the
 receiver.
 
-This upload kind is usually done with the `-d` or `--data` options, but there
+The upload kind is usually done with the `-d` or `--data` options, but there
 are a few additional alterations.
 
 Read the detailed description on how to do this with curl in the [HTTP POST
@@ -54,8 +54,7 @@ resource there. That said, this is also the least used upload method for HTTP
 on the web today and lots, if not most, web servers don't even have PUT
 enabled.
 
-You send off an HTTP upload with the -T option and you specify which file to
-upload:
+You send off an HTTP upload using the -T option with the file to upload:
 
     curl -T uploadthis http://example.com/
 
@@ -92,8 +91,8 @@ curl/SMTP](usingcurl-smtp.md) section.
 ### Progress meter for uploads
 
 The general progress meter curl provides (see the [Progress
-meter](cmdline-progressmeter.md) section) works fine for uploads as well, but
-what needs to be remembered is that the progress meter is automatically
+meter](cmdline-progressmeter.md) section) works fine for uploads as well.
+What needs to be remembered is that the progress meter is automatically
 disabled when you're sending output to stdout, and most protocols curl support
 can output something even for an upload.
 
@@ -103,9 +102,8 @@ displayed for upload.
 
 ### Rate limiting
 
-Rate limiting works exactly the same for uploads as for downloads and curl in
-fact only has a single limit that will limit the speed in both directions to
-the given speed.
+Rate limiting works exactly the same for uploads as for downloads and curl, in
+fact, only has a single limit that will limit the speed in both directions.
 
 See further details in the [Download Rate limiting
 section](usingcurl-downloads.md#rate-limiting).

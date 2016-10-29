@@ -48,8 +48,8 @@ announcement.
   then a separate earlier release for security reasons should be considered.
 
 - Write a security advisory draft about the problem that explains what the
-  problem is, its impact, which versions it affects, solutions or
-  workarounds, when the release is out and make sure to credit all
+  problem is, its impact, which versions it affects, any solutions or
+  workarounds and when the fix was released, making sure to credit all
   contributors properly.
 
 - Request a CVE number from
@@ -72,7 +72,7 @@ announcement.
 - The project team creates a release that includes the fix.
 
 - The project team announces the release and the vulnerability to the world in
-  the same manner we always announce releases. It gets sent to the
+  the same manner we always announce releases - it gets sent to the
   curl-announce, curl-library and curl-users mailing lists.
 
 - The security web page on the web site should get the new vulnerability
@@ -85,7 +85,7 @@ might ask you to join the list or you can ask to join it. It really isn't very
 formal. We basically only require that you have a long-term presence in the
 curl project and you have shown an understanding for the project and its way
 of working. You must have been around for a good while and you should have no
-plans in vanishing in the near future.
+plans on vanishing in the near future.
 
 We do not make the list of participants public mostly because it tends to vary
 somewhat over time and a list somewhere will only risk getting outdated.

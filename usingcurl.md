@@ -4,7 +4,7 @@ Previous chapters have described some basic details on what curl is and
 something about the basic command lines. You use command line options and you
 pass on URLs to work with.
 
-In this chapter we are going to dive deeper into a variety of different
+In this chapter, we are going to dive deeper into a variety of different
 concepts of what curl can do and how to tell curl to use these features. You
 should consider all these features as different tools that are here to help
 you do your file transfer tasks as conveniently as possible.
@@ -24,11 +24,11 @@ reuse the same connection again and thus save a lot of time. We call this
 persistent connections. curl will always try to keep connections alive and
 reuse existing connections as far as it can.
 
-The curl command line tool can however only keep connections alive for as long
-as it runs so as soon as it exits back to your command line, it has to close
+The curl command line tool can, however, only keep connections alive for as long
+as it runs, so as soon as it exits back to your command line it has to close
 down all currently open connections (and also free and clean up all the other
-caches it uses to increase subsequent operations). We call the pool of alive
-connections the "connection cache" at times.
+caches it uses to decrease time of subsequent operations). We call the pool of
+alive connections the "connection cache".
 
 If you want to perform N transfers or operations against the same host or same
 base URL, you could gain a lot of speed by trying to do them in as few curl

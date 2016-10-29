@@ -1,12 +1,12 @@
 # Connections
 
-Most of the protocols you use with curl speaks TCP. With TCP, a client such as
+Most of the protocols you use with curl speak TCP. With TCP, a client such as
 curl must first figure out the IP address(es) of the host you want to
 communicate with, then connect to it. "Connecting to it" means performing a
 TCP protocol handshake.
 
-For your typical command line that operates on a URL those are details that
-are taken care of under the hood and you can mostly ignore them. But at times
+For the typical command line that operates on a URL those are details that
+are taken care of under the hood which you can mostly ignore. But at times
 you might find yourself wanting to tweak the specifics...
 
 ## Name resolve tricks
@@ -17,9 +17,9 @@ Maybe you have your command line `curl http://example.com` and just want that
 to instead connect to your local server instead of the actual live server.
 
 You can normally and easily do that by editing your `hosts` file (`/etc/hosts`
-on linux and unix systems) and adding for example `127.0.0.1 example.com` to
-redirect the host to your localhost. But this edit requires admin access, it
-has the downside that it affects all other applications at the same time and
+on Linux and Unix systems) and adding, for example, `127.0.0.1 example.com` to
+redirect the host to your localhost. But this edit requires admin access and it
+has the downside that it affects all other applications at the same time, and
 more.
 
 ### Change the Host: header
@@ -43,15 +43,15 @@ custom name and use that as host when matching cookies to send off.
 The `Host:` header is not enough when communicating with an HTTPS server. With
 HTTPS there's a separate extension field in the TLS protocol called SNI
 (Server Name Indication) that lets the client tell the server the name of the
-server it wants to talk to. curl will only extract the SNI name to send, from
+server it wants to talk to. curl will only extract the SNI name to send from
 the given URL.
 
 ### Provide a custom IP for a name
 
-Doing virtually the hosts edit operation but directly with the curl command
+Doing the hosts edit operation virtually, but directly with the curl command
 line without having to edit any system files, you can force feed curl what IP
-address it should use for a given name. You know better than the name resolver
-where curl should go? Then you can! If you want to redirect the plain port 80
+address it should use for a given name. Do you know better than the name resolver
+where curl should go? Then you can! If you want to redirect port 80
 access for `example.com` to instead reach your localhost:
 
     curl --resolve example.com:80:127.0.0.1 http://example.com/
@@ -65,18 +65,18 @@ URLs.
 make curl believe that's the address it got when it resolved the name.
 
 When talking HTTPS, this will send SNI for the name in the URL and curl will
-verify the server to make sure it serves for the name in the URL...
+verify the server to make sure it serves for the name in the URL.
 
 ### Provide a replacement name
 
 As a close relative to the `--resolve` option, the `--connect-to` option
 provides a minor variation. It allows you to specify a replacement name and
 port number for curl to use under the hood when a specific name and port
-number is used to connect to.
+number is used to connect.
 
-For example, if you have a single site called `www.example.com` that in turn
+For example, suppose you have a single site called `www.example.com` that in turn
 is actually served by three different individual HTTP servers: load1, load2
-and load3 for load balancing purposes. In a typical normal procedure curl
+and load3, for load balancing purposes. In a typical normal procedure, curl
 resolves the main site and gets to speak to one of the load balanced servers
 (as it gets a list back and just picks one of them) and all is well. If you
 want to send a test request to one specific server out of the load balanced

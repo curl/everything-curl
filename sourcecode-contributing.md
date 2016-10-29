@@ -2,8 +2,8 @@
 
 Contributing means helping out.
 
-When you contribute anything to the project. Code, documentation, bug fixes,
-suggestions or just good advice, we assume you do this with permission and you
+When you contribute anything to the project - code, documentation, bug fixes,
+suggestions or just good advice - we assume you do this with permission and you
 are not breaking any contracts or laws by providing that to us. If you don't
 have permission, don't contribute it to us.
 
@@ -14,7 +14,7 @@ infrastructure), web content, user support and more.
 
 Send your changes or suggestions to the team and by working together we can
 fix problems, improve functionality, clarify documentation, add features or
-make anything else you help out with land in the proper place. To make sure
+make anything else you help out with land in the proper place. We will make sure
 improved code and docs get merged into the source tree properly and other
 sorts of contributions are suitable received.
 
@@ -23,7 +23,7 @@ submit a pull-request.
 
 ### Suggestions
 
-Ideas are easy, implementations are hard. Yes we do appreciate good ideas and
+Ideas are easy, implementations are hard. Yes, we do appreciate good ideas and
 suggestions of what to do and how to do it, but the chances that the ideas
 actually turn into real features grow substantially if you also volunteer to
 participate in converting the idea into reality.
@@ -34,43 +34,43 @@ need to remind us about those.
 
 ### What to add
 
-The best approach to add anything to curl or libcurl is of course to first
-bring the idea and suggestion to the curl project team members, and then
-discuss with them on if the idea is feasible for inclusion and then how an
+The best approach to add anything to curl or libcurl is, of course, to first
+bring the idea and suggestion to the curl project team members and then
+discuss with them if the idea is feasible for inclusion and then how an
 implementation is best done - and done in the best possible way to get merged
-into the source code repository. Assuming that is what you want.
+into the source code repository, assuming that is what you want.
 
 The project generally approves of functions that improves the support for the
-current protocols. Especially features that popular clients or browsers have
+current protocols, especially features that popular clients or browsers have
 but that curl still lacks.
 
-Of course you can also add contents to the project that isn't code. Like
-documentation, graphics or web site contents, but the general rule applies
+Of course, you can also add contents to the project that isn't code, like
+documentation, graphics or web site contents, but the general rules apply
 equally to that.
 
 If you're fixing a problem you have or a problem that others are reporting, we
-will be thrilled to receive it and merge it as soon as possible!
+will be thrilled to receive your fix and merge it as soon as possible!
 
 ### What not to add
 
 There aren't any good rules to say what features you can't add or that we will
 never accept, but let me instead try to mention a few things you should avoid
-to get less friction and to reach success faster:
+to get less friction and to be successful, faster:
 
-- Do not write up a huge page first and then send it to the list for
+- Do not write up a huge patch first and then send it to the list for
   discussion. Always start out by discussing on the list, and send your
   initial review requests early to get feedback on your design and
   approach. It saves you from wasting time going down a route that might need
   rewriting in the end anyway!
 
-- When introducing things in the code you need to follow the style and
+- When introducing things in the code, you need to follow the style and
   architecture that already exists. When you add code to the ordinary transfer
-  code path, it must for example work asynchronously in a non-blocking
-  manner. We will not accept new code that introduces blocking behaviors. We
+  code path, it must, for example, work asynchronously in a non-blocking
+  manner. We will not accept new code that introduces blocking behaviors - we
   already have too many of those that we haven't managed to remove yet.
 
 - Quick hacks or dirty solutions that have a high risk of not working on
-  platforms you don't run or architectures you don't know. We don't care if
+  platforms you don't run or on architectures you don't know. We don't care if
   you're in a hurry or that it works for you. We do not accept high risk code
   or code that is hard to read or understand.
 
@@ -85,7 +85,7 @@ to get less friction and to reach success faster:
 Our preferred source control tool is [git](https://git-scm.com/).
 
 While git is sometimes not the easiest tool to learn and master, all the basic
-steps a casual developer and contributor need to know are very
+steps a casual developer and contributor needs to know are very
 straight-forward and do not take much time or effort to learn.
 
 This book will not help you learn git. All software developers in this day and
@@ -94,16 +94,16 @@ age should learn git anyway.
 The curl git tree can be browsed with a web browser on our github page at
 [https://github.com/curl/curl](https://github.com/curl/curl).
 
-To check out the curl source code from git, you can clone it like:
+To check out the curl source code from git, you can clone it like this:
 
     git clone https://github.com/curl/curl.git
 
 ### Pull request
 
 A very popular and convenient way to make your own changes and contribute them
-back to the project is by doing a so called pull request on github.
+back to the project is by doing a so-called pull request on github.
 
-First you create your own version of the source tree, called forking, on the
+First, you create your own version of the source tree, called a fork, on the
 github web site. That way you get your own version of the curl git tree that
 you can clone to a local copy.
 
@@ -114,7 +114,7 @@ the original curl repository.
 
 We recommend doing your work meant for a pull request in a dedicated separate
 branch and not in master, just to make it easier for you to update a pull
-request like after review for example, or if you realize it was a dead end and
+request, like after review, for example, or if you realize it was a dead end and
 you decide to just throw it away.
 
 ### Make a patch for the mailing list
@@ -124,11 +124,12 @@ trusted method of sending a patch to the curl-library mailing list, it is
 still a good to work in a local git branch and commit your changes there.
 
 A branch makes it easy to edit and rebase when you need to change things and
-it makes it easy to keep syncing the master when things are updated upstream.
+it makes it easy to keep syncing to the master branch when things are updated
+upstream.
 
 Once your commits are fine enough to get sent to the mailing list, you just
 create patches with `git format-patch` and send them away. Even more fancy
-users go directly to `git send-email` and have git even send the email itself!
+users go directly to `git send-email` and have git send the email itself!
 
 ### git commit style
 
@@ -140,7 +141,7 @@ ask you to use:
 
     [separate the above single line from the rest with an empty line]
 
-    [full description, no wider than 72 columns that describe as much as
+    [full description, no wider than 72 columns that describes as much as
     possible as to why this change is made, and possibly what things
     it fixes and everything else that is related]
 
@@ -152,14 +153,14 @@ Don't forget to use `git commit --author="Jane Doe <jane@example.com>"` if you
 commit someone else's work, and make sure that you have your own user and
 email setup correctly in git before you commit!
 
-The author and the *-by: lines are of course there to make sure we give the
+The author and the *-by: lines are, of course, there to make sure we give the
 proper credit in the project. We do not want to take someone else's work
 without clearly attributing where it comes from. Giving correct credit is of
 utmost importance!
 
 ### Who decides what goes in?
 
-First, it might not be obvious to everyone but there is of course only a
+First, it might not be obvious to everyone but there is, of course, only a
 limited set of people that can actually merge commits into the actual official
 git repository. Let's call them the core team.
 
@@ -174,9 +175,9 @@ they fully comprehend the values and the style of development we do in this
 project. They are some of the people listed in the [The development
 team](curl-devteam.md) section.
 
-You can always bring a discussion to the mailing list and motivate why you
+You can always bring a discussion to the mailing list and motivation why you
 think your changes should get accepted, or perhaps even object to other
-changes that are getting in and similar. You can even suggest yourself or
+changes that are getting in and so forth. You can even suggest yourself or
 someone else to be given "push rights" and become one of the selected few in
 that team.
 

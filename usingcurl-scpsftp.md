@@ -15,7 +15,7 @@ since it isn't very portable and usually only works between unix systems.
 ### URLs
 
 SFTP and SCP URLs are similar to other URLs and you download files using these
-protocols the same was as with others.
+protocols the same as with others.
 
     curl sftp://example.com/file.zip -u user
 
@@ -54,9 +54,9 @@ host that it thinks it is communicating with. With TLS based protocols, it is
 done by the client verifying the server's certificate.
 
 With SSH protocols there are no server certificates, but instead each server
-can provide its unique key. And unlike TLS, SSH as no Certificate Authorities
-or anything but the client simply has to make sure that the host's key matches
-what it already knows (via other means) the server's key should look like.
+can provide its unique key. And unlike TLS, SSH as no certificate authorities
+or anything so the client simply has to make sure that the host's key matches
+what it already knows (via other means) it should look like.
 
 The matching of keys is typically done using hashes of the key and the file
 that the client store the hashes for known servers is often called
@@ -65,10 +65,10 @@ is usually called `~/.ssh`.
 
 When curl connects to a SFTP and SCP host, it will make sure that the host's
 key hash is already present in the known hosts file or it will deny continued
-operation because it cannot trust that the server is the right now. Once the
+operation because it cannot trust that the server is the right one. Once the
 correct hash exists in `known_hosts` curl can perform transfers.
 
 To force curl to skip checking and obeying to the the `known_hosts` file, you
 can use the `-k / --insecure` command line option. You must use this option
-with extreme care since it makes possible man-in-the-middle attacks not
-getting detected.
+with extreme care since it makes it possible man-in-the-middle attacks not
+detected.

@@ -23,11 +23,11 @@ This tells us curl now tries to connect to this IP address. It means the name
 
     * Connected to example.com (93.184.216.34) port 80 (#0)
 
-It worked. curl connected to the site and here it explains how the name maps
+It worked! curl connected to the site and here it explains how the name maps
 to the IP address and on which port it has connected to. The '(#0)' part is
 which internal number curl has given this connection. If you try multiple URLs
-in the same command line you can see it use more connections, or reuse
-connections and then the connection counter may increase or not increase
+in the same command line you can see it use more connections or reuse
+connections, so the connection counter may increase or not increase
 depending on what curl decides it needs to do.
 
 If we use an HTTPS:// URL instead of an HTTP one, there will also be a whole
@@ -49,12 +49,12 @@ actual HTML response), curl will show:
     > Accept: */*
     >
 
-This is the full HTTP request to the site. This request is how it looks like
-in a default curl 7.45.0 installation and it may of course differ slightly
+This is the full HTTP request to the site. This request is how it looks
+in a default curl 7.45.0 installation and it may, of course, differ slightly
 between different releases and in particular it will change if you add command
 line options.
 
-The last line of the HTTP request headers looks empty, and it is. It usually
+The last line of the HTTP request headers looks empty, and it is. It
 signals the separation between the headers and the body, and in this request
 there is no "body" to send.
 
@@ -78,10 +78,10 @@ start with a set of headers before the response body:
     <
 
 This may look mostly like mumbo jumbo to you, but this is normal set of HTTP
-headers, meta-data, about the response. The first line's "200" might be the
+headers - meta-data - about the response. The first line's "200" might be the
 most important piece of information in there and means "everything is fine".
 
-The last line of the received headers is as you can see empty, and that is the
+The last line of the received headers is, as you can see, empty, and that is the
 marker used for the HTTP protocol to signal the end of the headers.
 
 After the headers comes the actual response body, the data payload. The
@@ -91,12 +91,12 @@ regular -v verbose mode does not show that data but only displays
 
 That 1270 bytes should then be in the 'saved' file. You can also see that
 there was a header named Content-Length: in the response that contained the
-exact file length. (It won't always be present in responses.)
+exact file length (it won't always be present in responses).
 
 ### --trace and --trace-ascii
 
-There are times when `-v` is not enough. In particular when you want to store
-the complete stream, including the actual transferred data.
+There are times when `-v` is not enough. In particular, when you want to store
+the complete stream including the actual transferred data.
 
 For situations when curl does encrypted file transfers with protocols such as
 HTTPS, FTPS or SFTP, other network monitoring tools (like Wireshark or
@@ -193,12 +193,12 @@ after a transfer has completed and it has a large range of variables that you
 can include in the output, variables that have been set with values and
 information from the transfer.
 
-You tell curl to write a string just by passing that string to this option
+You tell curl to write a string just by passing that string to this option:
 
     curl -w "formatted string" http://example.com/
 
 ... and you can also have curl read that string from a given file instead if
-you prefix the string with '@'
+you prefix the string with '@':
 
     curl -w @filename http://example.com/
 
@@ -208,11 +208,11 @@ you prefix the string with '@'
 
 The variables that are available are accessed by writing `%{variable_name}` in
 the string and that variable will then be substituted by the correct value. To
-output a normal '%' you just write them as '%%'. You can also output a newline
+output a normal '%' you just write it as '%%'. You can also output a newline
 by using '\n', a carriage return with '\r' and a tab space with '\t'.
 
-(The %-symbol is a special on Windows, where all occurrences of % must be
-doubled when using this option.)
+(The %-symbol is special on the Windows command line, where all occurrences of
+% must be doubled when using this option.)
 
 As an example, we can output the Content-Type and the response code from an
 HTTP transfer, separated with newlines and some extra text like this:
@@ -221,7 +221,7 @@ HTTP transfer, separated with newlines and some extra text like this:
 
 This feature writes the output to stdout so you probably want to make sure
 that you don't also send the downloaded content to stdout as then you might
-have a hard time to separate the data.
+have a hard time to separate out the data.
 
 #### Available --write-out variables
 
@@ -241,27 +241,27 @@ Some of these variables are not available in really old curl versions.
 - %{response_code} shows the numerical response code that was found in the
   last transfer.
 
-- %{http_connect} shows The numerical code that was found in the last response
+- %{http_connect} shows the numerical code that was found in the last response
   (from a proxy) to a curl CONNECT request.
 
 - %{local_ip} shows the IP address of the local end of the most recently done
   connection - can be either IPv4 or IPv6
 
-- %{local_port} shows the local port number of the most recently done
+- %{local_port} shows the local port number of the most recently made
    connection
 
-- %{num_connects} shows number of new connects made in the recent transfer.
+- %{num_connects} shows the number of new connects made in the recent transfer.
 
-- %{num_redirects} shows number of redirects that were followed in the
+- %{num_redirects} shows the number of redirects that were followed in the
    request.
 
 - %{redirect_url} shows the actual URL a redirect *would* take you to when an
    HTTP request was made without `-L` to follow redirects.
 
-- %{remote_ip} shows the remote IP address of the most recently done
+- %{remote_ip} shows the remote IP address of the most recently made
   connection - can be either IPv4 or IPv6.
 
-- %{remote_port} shows the remote port number of the most recently done
+- %{remote_port} shows the remote port number of the most recently made
    connection.
 
 - %{size_download} shows the total amount of bytes that were downloaded.
@@ -274,12 +274,12 @@ Some of these variables are not available in really old curl versions.
 - %{size_upload} shows the total amount of bytes that were uploaded.
 
 - %{speed_download} shows the average download speed that curl measured for
-  the complete download. Bytes per second.
+  the complete download in bytes per second.
 
 - %{speed_upload} shows the average upload speed that curl measured for the
-  complete upload. Bytes per second.
+  complete upload in bytes per second.
 
-- %{ssl_verify_result} shows The result of the SSL peer certificate
+- %{ssl_verify_result} shows the result of the SSL peer certificate
   verification that was requested. 0 means the verification was successful.
 
 - %{time_appconnect} shows the time, in seconds, it took from the start until
@@ -297,7 +297,7 @@ Some of these variables are not available in really old curl versions.
   involved.
 
 - %{time_redirect} shows the time, in seconds, it took for all redirection
-  steps include name lookup, connect, pretransfer and transfer before the
+  steps including name lookup, connect, pretransfer and transfer before the
   final transaction was started. time_redirect shows the complete execution
   time for multiple redirections.
 
@@ -309,15 +309,15 @@ Some of these variables are not available in really old curl versions.
 - %{time_total} shows the total time, in seconds, that the full operation
   lasted. The time will be displayed with millisecond resolution.
 
-- %{url_effective} shows The URL that was fetched last. This is particularly
+- %{url_effective} shows the URL that was fetched last. This is particularly
   meaningful if you've told curl to follow Location: headers (with `-L`).
 
 ### Silence
 
-The opposite to verbose is of course to make curl more silent. With the `-s`
+The opposite of verbose is, of course, to make curl more silent. With the `-s`
 (or `--silent`) option you make curl switch off the progress meter and not
 output any error messages for when errors occur. It gets mute. It will still
-output the downloaded data as you ask it to.
+output the downloaded data you ask it to.
 
-With silent activated, you can ask for it to still output the error message on
+With silence activated, you can ask for it to still output the error message on
 failures by adding `-S` or `--show-error`.

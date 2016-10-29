@@ -1,7 +1,7 @@
 ## Code layout
 
 The curl source code tree is neither large nor complicated. A key thing to
-remember is perhaps that libcurl is the library and that library is the
+remember is, perhaps, that libcurl is the library and that library is the
 biggest component of the curl command line tool.
 
 ### root
@@ -14,31 +14,31 @@ release scripts.
 Some of the more notable ones include:
 
 - `buildconf`: used to build configure and more when
-  building curl from source off the git repository.
-- `buildconf.bat`: the windows version of buildconf. Run this after having
+  building curl from source out of the git repository.
+- `buildconf.bat`: the Windows version of buildconf. Run this after having
   checked out the full source code from git.
 - `CHANGES`: generated at release and put into the release archive. It
   contains the 1000 latest changes to the source repository.
-- `configure`: a generated script that is used on unix-like systems to
+- `configure`: a generated script that is used on Unix-like systems to
   generate a setup when building curl.
-- `COPYING`: the license detailing the rules for your using this code.
+- `COPYING`: the license detailing the rules for your using the code.
 - `GIT-INFO`: only present in git and contains information about how to
   build curl after having checked out the code from git.
-- `maketgz`: the script used to produce release archives, and daily snapshots
+- `maketgz`: the script used to produce release archives and daily snapshots
 - `README`: a short summary of what curl and libcurl are.
-- `RELEASE-NOTES`: contains the changes done for the latest release - and when
+- `RELEASE-NOTES`: contains the changes done for the latest release; when
   found in git it contains the changes done since the previous release that
   are destined to end up in the coming release.
 
 ### lib
 
 This directory contains the full source code for libcurl. It is the same
-source code for all platforms. Over one hundred C source files and a few more
+source code for all platforms - over one hundred C source files and a few more
 private header files. The header files used when building applications against
-libcurl are not stored in this directory, see include/curl for those.
+libcurl are not stored in this directory; see include/curl for those.
 
-Depending on what features that are enabled in your own build and what
-functions your platform provide, some of the source files or portions of the
+Depending on what features are enabled in your own build and what
+functions your platform provides, some of the source files or portions of the
 source files may contain code that is not used in your particular build.
 
 ### lib/vtls
@@ -54,22 +54,22 @@ We also maintain a [SSL comparison
 table](https://curl.haxx.se/docs/ssl-compared.html) on the web site to aid
 users.
 
-- OpenSSL: the by far most popular TLS library.
-- BoringSSL: an OpenSSL fork maintained by Google. Will make libcurl disable a
-  few features due to lacking functionality in the library.
+- OpenSSL: the (by far) most popular TLS library.
+- BoringSSL: an OpenSSL fork maintained by Google. It will make libcurl disable a
+  few features due to lacking some functionality in the library.
 - LibreSSL: an OpenSSL fork maintained by the OpenBSD team.
 - NSS: a full-blown TLS library perhaps most known for being used by the
   Firefox web browser. This is the default TLS backend for curl on Fedora and
   Redhat systems.
-- GnuTLS: a full-blown TLS library used by default by the debian packaged curl.
-- mbedTLS: (formerly known as PolarSSL) is a TLS library perhaps more targeted
-  towards an embedded market.
-- WolfSSL: (formerly known as cyaSSL) is a TLS library perhaps more targeted
-  towards an embedded market.
-- axTLS: is a minuscule TLS library focused on a small footprint.
-- schannel: the native TLS library on Windows.
-- securetransport: the native TLS library on Mac OS X.
-- gskit: the native TLS library on OS/400.
+- GnuTLS: a full-blown TLS library used by default by the Debian packaged curl.
+- mbedTLS: (formerly known as PolarSSL) is a TLS library more targeted
+  towards the embedded market.
+- WolfSSL: (formerly known as cyaSSL) is a TLS library more targeted
+  towards the embedded market.
+- axTLS: a minuscule TLS library focused on a requiring a small footprint.
+- SChannel: the native TLS library on Windows.
+- SecureTransport: the native TLS library on Mac OS X.
+- GSKit: the native TLS library on OS/400.
 
 ### src
 
@@ -77,7 +77,7 @@ This directory holds the source code for the curl command line tool. It is the
 same source code for all platforms that run the tool.
 
 Most of what the command line tool does is to convert given command line
-options into the corresponding libcurl options or set of options and then make
+options into the corresponding libcurl options or set of options and then makes
 sure to issue them correctly to drive the network transfer according to the
 user's wishes.
 
@@ -89,7 +89,7 @@ Here are the public header files that are provided for libcurl-using
 applications. Some of them are generated at configure or release time so they
 do not look identical in the git repository as they do in a release archive.
 
-With modern libcurl, all an application is expected to do in its C source code
+With modern libcurl, all an application is expected to include in its C source code
 is `#include <curl/curl.h>`
 
 ### docs
@@ -108,14 +108,14 @@ converted from text to a web friendly format/look.
 - `CONTRIBUTE`: what to think about when contributing to the project
 - `curl.1`: the curl command line tool man page, in nroff format
 - `curl-config.1`: the curl-config man page, in nroff format
-- `FAQ`: frequently asked questions about various curl related subjects
+- `FAQ`: frequently asked questions about various curl-related subjects
 - `FEATURES`: an incomplete list of curl features
 - `HISTORY`: describes how the project started and has evolved over the years
 - `HTTP2.md`: how to use HTTP/2 with curl and libcurl
 - `HTTP-COOKIES`: how curl supports and works with HTTP cookies
-- `index.html`: a basic html page as a documentation index page
+- `index.html`: a basic HTML page as a documentation index page
 - `INSTALL`: how to build and install curl and libcurl from source
-- `INSTALL.cmake`: how to build curl and libcurl with cmake
+- `INSTALL.cmake`: how to build curl and libcurl with CMake
 - `INSTALL.devcpp`: how to build curl and libcurl with devcpp
 - `INTERNALS`: details curl and libcurl internal structures
 - `KNOWN_BUGS`: list of known bugs and problems
@@ -124,14 +124,14 @@ converted from text to a web friendly format/look.
 - `MAIL-ETIQUETTE`: this is how to communicate on our mailing lists
 - `MANUAL`: a tutorial-like guide on how to use curl
 - `mk-ca-bundle.1`: the mk-ca-bundle tool man page, in nroff format
-- `README.cmake`: cmake-specific details
+- `README.cmake`: CMake-specific details
 - `README.netware`: netware-specific details
 - `README.win32`: win32-specific details
 - `RELEASE-PROCEDURE`: how to do a curl and libcurl release
 - `RESOURCES`: further resources for further reading on what, why and how curl
   does things
 - `ROADMAP.md`: what we want to work on in the future
-- `SECURITY`: how we work on security
+- `SECURITY`: how we work on security vulnerabilities
 - `SSLCERTS`: TLS certificate handling documented
 - `SSL-PROBLEMS`: common SSL problems and their causes
 - `THANKS`: thanks to this extensive list of friendly people, curl exists today!
@@ -142,7 +142,7 @@ converted from text to a web friendly format/look.
 ### docs/libcurl
 
 All libcurl functions have their own man pages in individual files with .3
-extensions - using nroff format, in this directory. The are also a few other
+extensions, using nroff format, in this directory. The are also a few other
 files that are described below.
 
 - `ABI`
@@ -177,15 +177,15 @@ See also the [libcurl examples](libcurl-examples.md) section of this book.
 
 Handy scripts.
 
-- `contributors.sh`: extracts contributors from the git repository since a
+- `contributors.sh`: extracts all contributors from the git repository since a
   given hash/tag. The purpose is to generate a list for the RELEASE-NOTES file
   and to allow manually added names to remain in there even on updates. The
   script uses the 'THANKS-filter` file to rewrite some names.  
 - `contrithanks.sh`: extracts contributors from the git repository since a
   given hash/tag, filters out all the names that are already mentioned in
   `THANKS`, and then outputs `THANKS` to stdout with the list of new
-  contributors appended at the end. Made to allow easier updates of the THANKS
-  document.The script uses the 'THANKS-filter` file to rewrite some names.
+  contributors appended at the end; it's meant to allow easier updates of the THANKS
+  document. The script uses the 'THANKS-filter` file to rewrite some names.
 - `log2changes.pl`: generates the `CHANGES` file for releases, as used by the
   release script. It simply converts git log output.
 - `zsh.pl`: helper script to provide curl command line completions to users of

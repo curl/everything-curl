@@ -5,12 +5,12 @@ or exit code when something goes wrong and it will always return 0 (zero) when
 the operation went as planned.
 
 If you write a shell script or batch file that invokes curl, you can always
-check the return code to detect problems in the invoked command. Below here,
+check the return code to detect problems in the invoked command. Below,
 you'll find a list of return codes as of the time of this writing. Over time
 we tend to slowly add new ones so if you get a code back not listed here,
 please refer to more updated curl documentation for aid.
 
-A very basic unix shell script could look like something like this:
+A very basic Unix shell script could look like something like this:
 
     #!/bin/sh
     curl http://example.com
@@ -31,9 +31,9 @@ A very basic unix shell script could look like something like this:
     not enabled or was explicitly disabled at build-time. To make curl able
     to do this, you probably need another build of libcurl!
 
- 5. Couldn't resolve proxy. The given proxy host could not be resolved.
+ 5. Couldn't resolve proxy. The address of the given proxy host could not be resolved.
 
- 6. Couldn't resolve host. The given remote host was not resolved.
+ 6. Couldn't resolve host. The given remote host's address was not resolved.
 
  7. Failed to connect to host.
 
@@ -56,7 +56,7 @@ A very basic unix shell script could look like something like this:
  14. Unknown FTP 227 format. Curl couldn't parse the 227-line the server
     sent.
  
- 15.  FTP can't get host. Couldn't resolve the host IP we got in the
+ 15. FTP can't get host. Couldn't resolve the host IP address we got in the
     227-line.
 
  16. **Not used**
@@ -65,12 +65,12 @@ A very basic unix shell script could look like something like this:
 
  18. Partial file. Only a part of the file was transferred.
 
- 19. FTP couldn't download/access the given file, the RETR (or similar)
+ 19. FTP couldn't download/access the given file. The RETR (or similar)
     command failed.
 
  20. **Not used**
 
- 21. FTP quote error. A quote command returned error from the server.
+ 21. FTP quote error. A quote command returned an error from the server.
 
  22. HTTP page not retrieved. The requested url was not found or returned
      another error with the HTTP error code being 400 or above. This return
@@ -81,7 +81,7 @@ A very basic unix shell script could look like something like this:
  24. **Not used**
 
  25. The FTP server refused to store the file. The server denied the STOR
-     operation, used for FTP uploading.
+     operation used for FTP uploading.
 
  26. Read error. Various reading problems.
 
@@ -93,7 +93,7 @@ A very basic unix shell script could look like something like this:
  29. **Not used**
 
  30. FTP PORT failed. The PORT command failed. Not all FTP servers support
-     the PORT command, try doing a transfer using PASV instead!
+     the PORT command; try doing a transfer using PASV instead!
 
  31. FTP couldn't use REST. The REST command failed. This command is used
      for resumed FTP transfers.
@@ -108,7 +108,7 @@ A very basic unix shell script could look like something like this:
 
  36. FTP bad download resume. Couldn't continue an earlier aborted download.
  
- 37. FILE couldn't read file. Failed to open the file. Permissions?
+ 37. FILE couldn't read file. Failed to open the file. Permission problem?
 
  38. LDAP cannot bind. LDAP bind operation failed.
 
@@ -121,7 +121,7 @@ A very basic unix shell script could look like something like this:
  42. Aborted by callback. An application told curl to abort the operation.
 
  43. Internal error. A function was called with a bad parameter. Please file
-     a bug report to the curl project if this happens to you!w
+     a bug report to the curl project if this happens to you!
 
  44. **Not used**
 
@@ -130,7 +130,7 @@ A very basic unix shell script could look like something like this:
  46. **Not used**
 
  47. Too many redirects. When following redirects, curl hit the maximum
-     amount.
+     number.
  
  48. Unknown option specified to libcurl.  Please file a bug report to the
      curl project if this happens to you!
@@ -141,7 +141,7 @@ A very basic unix shell script could look like something like this:
 
  51. The peer's SSL certificate or SSH MD5 fingerprint was not OK.
 
- 52. The server didn't reply anything, which here is considered an error.
+ 52. The server didn't reply anything, which in this context is considered an error.
 
  53. SSL crypto engine not found.
 
@@ -169,7 +169,7 @@ A very basic unix shell script could look like something like this:
 
  65. Sending the data requires a rewind that failed.
 
- 66. Failed to initialise SSL Engine.
+ 66. Failed to initialize SSL Engine.
 
  67. The user name, password, or similar was not accepted and curl failed to log in.
 

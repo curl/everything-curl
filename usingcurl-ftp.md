@@ -1,24 +1,24 @@
 # FTP
 
 FTP, the File Transfer Protocol, is probably the oldest network protocol that
-curl supports - it was created in the early 1970s and the official spec that
-still is the goto documentation is [RFC 959](http://www.ietf.org/rfc/rfc959.txt)
-from 1985. Published well over a decade before the first curl release.
+curl supports - it was created in the early 1970s. The official spec that
+still is the go-to documentation is [RFC 959](http://www.ietf.org/rfc/rfc959.txt),
+from 1985, published well over a decade before the first curl release.
 
-FTP was created in a different era of Internet and computers and as such it
+FTP was created in a different era of the Internet and computers and as such it
 works a little bit differently than most other protocols. These differences
-can often be ignored and things will just work, but similarly they are also
+can often be ignored and things will just work, but they are also
 important to know at times when things don't run as planned.
 
 ## Ping-pong
 
-The FTP protocol is a command and response protocol. The client sends a
+The FTP protocol is a command and response protocol; the client sends a
 command and the server responds. If you use curl's `-v` option you'll get to
 see all the commands and responses during a transfer.
 
 For an ordinary transfer, there are something like 5 to 8 commands necessary
 to send and as many responses to wait for and read. Perhaps needlessly to say,
-but if the server is in a remote location there will be a lot of time waiting
+if the server is in a remote location there will be a lot of time waiting
 for the ping pong to go through before the actual file transfer can be set up
 and get started. For small files, the initial commands can very well take
 longer time than the actual data transfer.
@@ -26,14 +26,14 @@ longer time than the actual data transfer.
 ## Transfer mode
 
 When an FTP client is about to transfer data, it specifies to the server which
-"transfer mode" it likes the upcoming transfer to use. The two transfer modes
+"transfer mode" it would like the upcoming transfer to use. The two transfer modes
 curl supports are 'ASCII' and 'BINARY'. Ascii is basically for text and
 usually means that the server will send the files with converted newlines
 while binary means sending the data unaltered and assuming the file is not
 text.
 
 curl will default to binary transfer mode for FTP, and you ask for ascii mode
-instead with `-B, --use-ascii` or making sure the URL ends with `;type=A`.
+instead with `-B, --use-ascii` or by making sure the URL ends with `;type=A`.
 
 ## Authentication
 

@@ -1,4 +1,19 @@
 #!/usr/bin/perl
+# Build an index of words in the file index-words that are found in the text.
+# Words are compared case insensitively except for those starting with a dash
+# (i.e. program option names). "Words" may actually be phrases consisting of
+# more than one word separated by a space. The word as written in the index is
+# as found in the file (i.e. using that case).
+
+use feature "fc";
+
+# Return the case-folded keyword UNLESS it appears to be an option string
+# in which case return it as-is. This makes word lookups case-insensitive
+# but option name lookups case-sensitive.
+sub folded {
+    return $_[0] if $_[0] =~ /^-/;
+    return fc($_[0]);
+}
 
 # get all markdown files as arguments
 my @files=@ARGV;
@@ -10,9 +25,9 @@ while(<F>) {
     my $w = $_;
     if($w =~ /[ .]/) {
         # word with spaces or periods
-        push @lwords, $w;
+        push @lwords, folded($w);
     }
-    $index{$w}=1;
+    $index{folded($w)}=$w;
 }
 close(F);
 
@@ -52,6 +67,7 @@ sub single {
         my @words = split(/[ \(\)]+/, $_);
         for my $w (@words) {
             $w =~ s/[,\.\`\']//g;
+            $w = folded($w);
             if($index{$w}) {
                 if(!$word{$w}{$url}) {
                     #print " $w ($url)\n";
@@ -62,7 +78,7 @@ sub single {
         }
         # check longer words
         foreach my $w (@lwords) {
-            if($l =~ /$w/) {
+            if(folded($l) =~ /$w/) {
                 if(!$word{$w}{$url}) {
                     #print " $w ($url)\n";
                     $word{$w}{$url}++;
@@ -100,6 +116,6 @@ foreach my $w (sort byname keys %all) {
         print "## $l\n";
     }
     
-    printf " - $w: ";
+    printf " - ".$index{$w}.": ";
     print $all{$w}."\n";
 }

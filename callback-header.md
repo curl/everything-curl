@@ -1,6 +1,6 @@
 ### Header callback
 
-The header callback is set with CURLOPT_HEADERFUNCTION:
+The header callback is set with `CURLOPT_HEADERFUNCTION`:
 
     curl_easy_setopt(handle, CURLOPT_HEADERFUNCTION, header_callback);
 
@@ -18,11 +18,11 @@ example, use printf's "%s" operator to display the contents nor strcpy to copy
 it.
 
 This callback should return the number of bytes actually taken care of. If
-that amount differs from the amount passed to your callback function, it
+that number differs from the number passed to your callback function, it
 signals an error condition to the library. This will cause the transfer to
 abort and the libcurl function used will return `CURLE_WRITE_ERROR`.
 
 The user pointer passed in to the callback in the *userdata* argument is set
-with CURLOPT_HEADERDATA:
+with `CURLOPT_HEADERDATA`:
 
     curl_easy_setopt(handle, CURLOPT_HEADERDATA, custom_pointer);

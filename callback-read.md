@@ -1,6 +1,6 @@
 ### Read callback
 
-The read callback is set with CURLOPT_READFUNCTION:
+The read callback is set with `CURLOPT_READFUNCTION`:
 
     curl_easy_setopt(handle, CURLOPT_READFUNCTION, read_callback);
 

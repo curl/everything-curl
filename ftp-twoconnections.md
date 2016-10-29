@@ -3,7 +3,7 @@
 FTP uses two TCP connections! The first connection is setup by the client when
 it connects to an FTP server, and is called the *control connection*. As the
 initial connection, it gets to handle authentication and changing to the
-correct directory on the remote server etc. When the client then is ready to
+correct directory on the remote server, etc. When the client then is ready to
 transfer a file, a second TCP connection is established and the data is
 transferred over that.
 
@@ -26,7 +26,7 @@ for a file:
     $ curl -P - ftp://example.com/foobar.txt
 
 You can also explicitly ask curl to not use EPRT (which is a slightly newer
-command than PORT) with the `--no-epsv` command line option.
+command than PORT) with the `--no-epsv` command-line option.
 
 ### Passive connections
 
@@ -40,7 +40,7 @@ Passive connections are enabled by default, but if you've switched on active
 before, you can switch back to passive with `--ftp-pasv`.
 
 You can also explicitly ask curl not to use EPSV (which is a slightly newer
-command than PASV) with the `--no-epsv` command line option.
+command than PASV) with the `--no-epsv` command-line option.
 
 Sometimes the server is running a funky setup so that when curl issues the
 PASV command and the server responds with an IP address for curl to connect

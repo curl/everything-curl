@@ -1,6 +1,6 @@
 ### Write callback
 
-The write callback is set with CURLOPT_WRITEFUNCTION:
+The write callback is set with `CURLOPT_WRITEFUNCTION`:
 
     curl_easy_setopt(handle, CURLOPT_WRITEFUNCTION, write_callback);
 
@@ -30,11 +30,11 @@ example, use printf's "%s" operator to display the contents nor strcpy to copy
 it.
 
 This callback should return the number of bytes actually taken care of. If
-that amount differs from the amount passed to your callback function, it'll
+that number differs from the number passed to your callback function, it will
 signal an error condition to the library. This will cause the transfer to get
 aborted and the libcurl function used will return `CURLE_WRITE_ERROR`.
 
 The user pointer passed in to the callback in the *userdata* argument is set
-with CURLOPT_WRITEDATA:
+with `CURLOPT_WRITEDATA`:
 
     curl_easy_setopt(handle, CURLOPT_WRITEDATA, custom_pointer);

@@ -50,18 +50,18 @@ directory of an FTP server using a given name and password:
     $ curl ftp://user:password@example.com/
 
 The presence of user name and password in the URL is completely optional. curl
-also allows that information to be provide with normal command line options,
+also allows that information to be provide with normal command-line options,
 outside of the URL.
 
 ### Host name or address
 
-The host name part of the URL is of course simply a name that can be resolved
+The host name part of the URL is, of course, simply a name that can be resolved
 to an numerical IP address, or the numerical address itself. When specifying a
 numerical address, use the dotted version for IPv4 addresses:
 
     $ curl http://127.0.0.1/
 
-... and for IPv6 addresses the numerical version needs to be within square
+…and for IPv6 addresses the numerical version needs to be within square
 brackets:
 
     $ curl http://[::1]/
@@ -114,7 +114,7 @@ is. This is because FTP is a little special and can change mode for a transfer
 and thus handle the file differently than if it would use another mode.
 
 You tell curl that the FTP resource is an ASCII type by appending ";type=A"
-to the URL. Getting the 'foo' file from example.com's root dir using ASCII
+to the URL. Getting the 'foo' file from example.com's root directory using ASCII
 could then be made with:
 
     curl "ftp://example.com/foo;type=A"
@@ -129,7 +129,7 @@ type you pass is D:
 
     curl "ftp://example.com/foo;type=D"
 
-... this can then work as an alternative format, instead of ending the path
+…this can then work as an alternative format, instead of ending the path
 with a trailing slash as mentioned above.
 
 ### Fragment
@@ -145,8 +145,8 @@ operations whether it is present or not.
 It is important to realize that when you use a modern web browser, the
 "address bar" they tend to feature at the top of their main windows are not
 using "URLs" or even "URIs". They are in fact mostly using IRIs, which is a
-superset of URIs to allow internationalization like non-latin symbols and
-more, but it usually goes beyond that too, as they tend to, for example, handle
+superset of URIs to allow internationalization like non-Latin symbols and
+more, but it usually goes beyond that, too, as they tend to, for example, handle
 spaces and do magic things on percent encoding in ways none of these mentioned
 specifications say a client should do.
 
@@ -158,13 +158,13 @@ what you can pass in to curl is significant.
 
 ## Many options and URLs
 
-As mentioned above, curl supports hundreds of command line options and it also
-supports an unlimited number of URLs. If your shell or command line system
+As mentioned above, curl supports hundreds of command-line options and it also
+supports an unlimited number of URLs. If your shell or command-line system
 supports it, there's really no limit to how long a command line you can pass
 to curl.
 
 curl will parse the entire command line first, apply the wishes from the
-command line options used, and then go over the URLs one by one (in a left to
+command-line options used, and then go over the URLs one by one (in a left to
 right order) to perform the operations.
 
 For some options (for example -o or -O that tell curl where to store the
@@ -180,7 +180,7 @@ whole command line and applies those to all the URLs that it transfers.
 
 That was a simplification: curl also offers an option (-;, --next) that
 inserts a sort of boundary between a set of options and URLs for which it will
-apply the options. When the command line parser finds a --next option, it
+apply the options. When the command-line parser finds a --next option, it
 applies the following options to the next set of URLs. The --next option thus
 works as a *divider* between a set of options and URLs. You can use as many
 --next options as you please.
@@ -210,7 +210,7 @@ keeps previously used connections alive and around for a while after they were
 used so that subsequent requests to the same hosts can reuse an already
 established connection.
 
-Of course they can only be kept alive for as long as the curl tool is running,
+Of course, they can only be kept alive for as long as the curl tool is running,
 but it is a very good reason for trying to get several transfers done within
 the same command line instead of running several independent curl command line
 invokes.

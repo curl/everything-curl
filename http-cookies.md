@@ -16,11 +16,11 @@ a number of seconds) or it gets no expiry at all. A cookie without an expire
 time is called a "session cookie" and is meant to live for the duration of the
 "session" but not longer. A session in this aspect is typically thought to be
 the life time of the browser used to manoeuvre a site. When you close the
-browser, you end your session. Doing HTTP operations with a command line client
-that supports cookies of course then begs the question when a session really
-ends...
+browser, you end your session. Doing HTTP operations with a command-line client
+that supports cookies, of course, then begs the question when a session really
+ends…
 
-### Cookie Engine
+### Cookie engine
 
 The general concept of curl only doing the bare minimum unless you tell it
 differently makes it not acknowledge cookies by default. You need to switch on

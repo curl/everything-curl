@@ -2,7 +2,7 @@
 
 The curl source code tree is neither large nor complicated. A key thing to
 remember is, perhaps, that libcurl is the library and that library is the
-biggest component of the curl command line tool.
+biggest component of the curl command-line tool.
 
 ### root
 
@@ -33,7 +33,7 @@ Some of the more notable ones include:
 ### lib
 
 This directory contains the full source code for libcurl. It is the same
-source code for all platforms - over one hundred C source files and a few more
+source code for all platforms—over one hundred C source files and a few more
 private header files. The header files used when building applications against
 libcurl are not stored in this directory; see include/curl for those.
 
@@ -73,10 +73,10 @@ users.
 
 ### src
 
-This directory holds the source code for the curl command line tool. It is the
+This directory holds the source code for the curl command-line tool. It is the
 same source code for all platforms that run the tool.
 
-Most of what the command line tool does is to convert given command line
+Most of what the command-line tool does is to convert given command line
 options into the corresponding libcurl options or set of options and then makes
 sure to issue them correctly to drive the network transfer according to the
 user's wishes.
@@ -106,7 +106,7 @@ converted from text to a web friendly format/look.
 - `BUGS`: how to report bugs and where
 - `CODE_OF_CONDUCT.md`: how we expect people to behave in this project
 - `CONTRIBUTE`: what to think about when contributing to the project
-- `curl.1`: the curl command line tool man page, in nroff format
+- `curl.1`: the curl command-line tool man page, in nroff format
 - `curl-config.1`: the curl-config man page, in nroff format
 - `FAQ`: frequently asked questions about various curl-related subjects
 - `FEATURES`: an incomplete list of curl features
@@ -125,7 +125,7 @@ converted from text to a web friendly format/look.
 - `MANUAL`: a tutorial-like guide on how to use curl
 - `mk-ca-bundle.1`: the mk-ca-bundle tool man page, in nroff format
 - `README.cmake`: CMake-specific details
-- `README.netware`: netware-specific details
+- `README.netware`: Netware-specific details
 - `README.win32`: win32-specific details
 - `RELEASE-PROCEDURE`: how to do a curl and libcurl release
 - `RESOURCES`: further resources for further reading on what, why and how curl
@@ -188,5 +188,5 @@ Handy scripts.
   document. The script uses the 'THANKS-filter` file to rewrite some names.
 - `log2changes.pl`: generates the `CHANGES` file for releases, as used by the
   release script. It simply converts git log output.
-- `zsh.pl`: helper script to provide curl command line completions to users of
+- `zsh.pl`: helper script to provide curl command-line completions to users of
   the zsh shell.

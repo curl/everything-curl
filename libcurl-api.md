@@ -87,7 +87,7 @@ the "age" of the libcurl that calls it. The age is a define called
 throughout the curl development. The age number tells libcurl what struct set
 it can return.
 
-You call the function like this
+You call the function like this:
 
    curl_version_info_data *ver = curl_version_info( CURLVERSION_NOW );
 

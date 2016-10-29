@@ -4,8 +4,8 @@ multi_socket is the extra spicy version of the regular multi interface and is
 designed for event-driven applications. Make sure you read the [Drive with
 multi interface](libcurl-drive-multi.md) section first.
 
-multi_socket supports multiple parallel transfers - all done in the same
-single thread - and have been used to run several tens of thousands of
+multi_socket supports multiple parallel transfers—all done in the same
+single thread—and have been used to run several tens of thousands of
 transfers in a single application. It is usually the API that makes the most
 sense if you do a large number (>100 or so) of parallel transfers.
 
@@ -119,7 +119,7 @@ expired, you need to tell libcurl about it:
 
     curl_multi_socket_action(multi, CURL_SOCKET_TIMEOUT, 0, &running);
 
-... in many cases, this will make libcurl call the timer_callback again and
+…in many cases, this will make libcurl call the timer_callback again and
 set a new timeout for the next expiry period.
 
 ### How to start everything
@@ -137,8 +137,8 @@ system drive:
 
     curl_multi_socket_action(multi, CURL_SOCKET_TIMEOUT, 0, &running);
 
-    /* now the callbacks should've been called and we have sockets to wait for
-       and possibly a timeout too. Make the event system do its magic */
+    /* now the callbacks should have been called and we have sockets to wait for
+       and possibly a timeout, too. Make the event system do its magic */
 
     event_base_dispatch(event_base); /* libevent2 has this API */
 

@@ -2,7 +2,7 @@
 
 The fundamentals you need to learn with libcurl:
 
-First you create an "easy handle", which is your handle to a transfer, really.
+First you create an "easy handle", which is your handle to a transfer, really:
 
     CURL *easy_handle = curl_easy_init();
 
@@ -37,8 +37,8 @@ and you can extract stats and various information that libcurl gathered during
 the transfer from the easy handle. See [Post transfer
 information](libcurl-getinfo.md).
 
-While the transfer is ongoing, libcurl calls your specified functions - known
-as *[callbacks](libcurl-callbacks.md])* - to deliver data, to read data or to
+While the transfer is ongoing, libcurl calls your specified functions—known
+as *[callbacks](libcurl-callbacks.md])*—to deliver data, to read data or to
 do a wide variety of things.
 
 ### Reuse!

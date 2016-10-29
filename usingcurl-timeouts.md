@@ -17,7 +17,7 @@ time. Further, most operations in curl have no time-out by default!
 Tell curl with `-m / --max-time` the maximum time, in seconds, that you allow
 the command line to spend before curl exits with a timeout error code
 (28). When the set time has elapsed, curl will exit no matter what is going
-on at that moment - including if it is transferring data. It really is the
+on at that moment—including if it is transferring data. It really is the
 maximum time allowed.
 
 The given maximum time can be specified with a decimal precision; `0.5` means
@@ -35,9 +35,9 @@ complete have to be completed within the given time frame. Failing to connect
 within the given time will cause curl to exit with a timeout exit code (28).
 
 The given maximum connect time can be specified with a decimal precision;
-`0.5` means 500 milliseconds and `2.37` equals 2370 milliseconds.
+`0.5` means 500 milliseconds and `2.37` equals 2370 milliseconds:
 
-    curl --connect-timeout 5.5 https://example.com/
+    curl --connect-timeout 2.37 https://example.com/
 
 ## Transfer speeds slower than this means exit
 

@@ -29,8 +29,8 @@ has so that we can contact it.
 
 Converting the name to an IP address is often called 'name resolving'. The name
 is "resolved" to a set of addresses. This is usually done by a "DNS
-server", DNS being like a big lookup-table that can convert names to
-addresses - all the names on the Internet, really. Your computer normally
+server", DNS being like a big lookup table that can convert names to
+addresses—all the names on the Internet, really. Your computer normally
 already knows the address of a computer that runs the DNS server as that is
 part of setting up the network.
 
@@ -48,7 +48,7 @@ computers. Once established, it can be used to send a stream of data in both
 directions.
 
 As curl gets a list of addresses for the host, it will actually traverse that
-list of addresses when connecting and in case one fails it'll try to connect
+list of addresses when connecting and in case one fails it will try to connect
 to the next one until either one works or they all fail.
 
 ### Connects to "port numbers"
@@ -59,10 +59,10 @@ particular service, which allows that same server to listen to other services on
 other port numbers at the same time.
 
 Most common protocols have default port numbers that clients and servers
-use. For example when using the "http://example.com/index.html" URL, that URL
+use. For example, when using the "http://example.com/index.html" URL, that URL
 specifies a scheme called "http" which tells the client that it should try TCP
 port number 80 on the server by default. The URL can optionally provide
-another, custom, port number but if nothing special is specified, it'll use the
+another, custom, port number but if nothing special is specified, it will use the
 default port for the scheme used in the URL.
 
 ### TLS

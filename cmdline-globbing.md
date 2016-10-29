@@ -1,4 +1,4 @@
-## URL Globbing
+## URL globbing
 
 At times you want to get a range of URLs that are mostly the same, with only a
 small portion of it changing between the requests. Maybe it is a numeric range
@@ -33,7 +33,7 @@ too. This example range goes from 0 to 100 with an increment of 2:
 
 ### Alphabetical ranges
 
-curl can also do alphabetical ranges, like when a site has a section named a
+curl can also do alphabetical ranges, like when a site has sections named a
 to z:
 
     $ curl -O http://example.com/section[a-z].html
@@ -59,7 +59,7 @@ Or download all the images of a chess board, indexed by two coordinates ranged
 
     $ curl -O http://example.com/chess-[0-7]x[0-7].jpg
 
-And you can of course mix ranges and series. Get a week's worth of logs for
+And you can, of course, mix ranges and series. Get a week's worth of logs for
 both the web server and the mail server:
 
     $ curl -O http://example.com/{web,mail}-log[0-6].txt
@@ -72,7 +72,7 @@ the file name part of the used URL.
 
 Sometimes that is not enough. You're downloading multiple files and maybe you
 want to save them in a different subdirectory or create the saved file names
-differently. curl of course has a solution for these situations as well:
+differently. curl, of course, has a solution for these situations as well:
 output file name variables.
 
 Each "glob" used in a URL gets a separate variable. They're referenced as

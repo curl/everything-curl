@@ -1,7 +1,7 @@
 ## Options depend on version
 
 `curl` was first typed on a command line back in the glorious year of 1998. It
-already then worked on the specified URL and none, one or more command line
+already then worked on the specified URL and none, one or more command-line
 options given to it.
 
 Since then we've added more options. We add options as we go along and almost
@@ -13,7 +13,7 @@ shipping every eight weeks, it is almost inevitable that you are at least not
 always using the very latest released version of curl. Sometimes you may even
 use a curl version that is a few years old.
 
-All command line options described in this book were, of course, added to curl
+All command-line options described in this book were, of course, added to curl
 at some point in time, and only a very small portion of them were available
 that fine spring day in 1998 when curl first shipped. You may have reason to
 check your version of curl and crosscheck with the curl man page for when

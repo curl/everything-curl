@@ -7,12 +7,12 @@ Security vulnerabilities should not be entered in the project's public bug
 tracker unless the necessary configuration is in place to limit access to the
 issue to only the reporter and the project's security team.
 
-### Vulnerability Handling
+### Vulnerability handling
 
 The typical process for handling a new security vulnerability is as follows.
 
 No information should be made public about a vulnerability until it is
-formally announced at the end of this process. That means, for example that a
+formally announced at the end of this process. That means, for example, that a
 bug tracker entry must NOT be created to track the issue since that will make
 the issue public and it should not be discussed on any of the project's public
 mailing lists. Also messages associated with any commits should not make
@@ -20,7 +20,7 @@ any reference to the security nature of the commit if done prior to the public
 announcement.
 
 - The person discovering the issue, the reporter, reports the vulnerability
-  privately to `curl-security@haxx.se`. That's an email alias that reaches a
+  privately to `curl-security@haxx.se`. That's an e-mail alias that reaches a
   handful of selected and trusted people.
 
 - Messages that do not relate to the reporting or managing of an undisclosed
@@ -55,7 +55,7 @@ announcement.
 - Request a CVE number from
   [distros@openwall](http://oss-security.openwall.org/wiki/mailing-lists/distros)
   when also informing and preparing them for the upcoming public security
-  vulnerability announcement - attach the advisory draft for information. Note
+  vulnerability announcement—attach the advisory draft for information. Note
   that 'distros' won't accept an embargo longer than 19 days.
 
 - Update the "security advisory" with the CVE number.
@@ -72,7 +72,7 @@ announcement.
 - The project team creates a release that includes the fix.
 
 - The project team announces the release and the vulnerability to the world in
-  the same manner we always announce releases - it gets sent to the
+  the same manner we always announce releases—it gets sent to the
   curl-announce, curl-library and curl-users mailing lists.
 
 - The security web page on the web site should get the new vulnerability

@@ -1,21 +1,21 @@
 ## Config file
 
 You can easily end up with curl command lines that use a very large number of
-command line options, making them rather hard to work with. Sometimes the length
+command-line options, making them rather hard to work with. Sometimes the length
 of the command line you want to enter even hits the maximum length your
-command line system allows. The Microsoft Windows command prompt being an
+command-line system allows. The Microsoft Windows command prompt being an
 example of something that has a fairly small maximum line length.
 
 To aid such situations, curl offers a feature we call "config file". It
-basically allows you to write command line options in a text file instead and
+basically allows you to write command-line options in a text file instead and
 then tell curl to read options from that file in addition to the command line.
 
-You tell curl to read more command line options from a specific file with the
+You tell curl to read more command-line options from a specific file with the
 -K/--config option, like this:
 
     curl -K cmdline.txt http://example.com
 
-... and in the `cmdline.txt` file (which of course can use any file name you
+…and in the `cmdline.txt` file (which, of course, can use any file name you
 please) you enter each command line per line:
 
     # this is a comment, we ask to follow redirects
@@ -71,13 +71,13 @@ Unix-like systems and `_curlrc` on Windows.
 
 The default config file is checked for in the following places in this order:
 
-1. curl tries to find the "home dir": It first checks for the CURL_HOME and
+1. curl tries to find the "home directory": It first checks for the CURL_HOME and
 then the HOME environment variables.  Failing that, it uses `getpwuid()` on
-Unix-like systems (which returns the home dir given the current user in your
+Unix-like systems (which returns the home directory given the current user in your
 system). On Windows, it then checks for the APPDATA variable, or as a last
 resort the '%USERPROFILE%\Application Data'.
 
-2. On Windows, if there is no _curlrc file in the home dir, it checks for one
-in the same dir the curl executable is placed. On Unix-like systems, it will
-simply try to load .curlrc from the determined home dir.
+2. On Windows, if there is no _curlrc file in the home directory, it checks for one
+in the same directory the curl executable is placed. On Unix-like systems, it will
+simply try to load .curlrc from the determined home directory.
 

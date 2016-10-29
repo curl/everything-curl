@@ -1,7 +1,7 @@
 # Introduction
 
 _Everything curl_ is aiming to become *the guide* to everything there is to
-know about curl, the project, the command line tool, the library, how
+know about curl, the project, the command-line tool, the library, how
 everything started and how it came to be what it is today. How we work on
 developing it further, what it takes to use it, how you can contribute with
 code and bug reports and why all those millions of existing users use it.
@@ -14,7 +14,7 @@ curious about and go back and forth as you see fit.
 I hope to run this book project as I do all other projects I work on: in the
 open, completely free to download and read, free for anyone to comment on,
 available for everyone to contribute to and help out with. Send your bug
-reports, pull-requests or critiques to me and I'll improve this book
+reports, pull requests or critiques to me and I'll improve this book
 accordingly.
 
 This book will never be finished. I intend to keep working on it and while I
@@ -39,7 +39,7 @@ including PDF, ePUB and MOBI.
 
 **https://github.com/bagder/everything-curl** hosts all the book content.
 
-## The Author
+## The author
 
 With the hope of becoming just a co-author of this material, I am Daniel
 Stenberg. I founded the curl project. I'm a developer at heart, for fun and

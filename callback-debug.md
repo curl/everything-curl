@@ -1,6 +1,6 @@
 ### Debug callback
 
-The debug callback is set with CURLOPT_DEBUGFUNCTION:
+The debug callback is set with `CURLOPT_DEBUGFUNCTION`:
 
     curl_easy_setopt(handle, CURLOPT_DEBUGFUNCTION, debug_callback);
 
@@ -26,6 +26,6 @@ This callback must return zero or cause the transfer to stop with an error
 code.
 
 The user pointer passed in to the callback in the *userdata* argument is set
-with CURLOPT_DEBUGDATA:
+with `CURLOPT_DEBUGDATA`:
 
     curl_easy_setopt(handle, CURLOPT_DEBUGDATA, custom_pointer);

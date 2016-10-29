@@ -1,6 +1,6 @@
 ### sockopt callback
 
-The sockopt callback is set with CURLOPT_SOCKOPTFUNCTION:
+The sockopt callback is set with `CURLOPT_SOCKOPTFUNCTION`:
 
     curl_easy_setopt(handle, CURLOPT_SOCKOPTFUNCTION, sockopt_callback);
 

@@ -6,7 +6,7 @@ mailing lists. The [curl mailing list
 etiquette](https://curl.haxx.se/mail/etiquette.html) follows the style of
 traditional Open Source projects.
 
-#### Do Not Mail a Single Individual
+#### Do not mail a single individual
 
 Many people send one question directly to one person. One person gets many mails, and
 there is only one person who can give you a reply. The question may be
@@ -18,9 +18,9 @@ If you really want to contact an individual and perhaps pay for his or her
 services, by all means go ahead, but if it's just another curl question, take
 it to a suitable list instead.
 
-#### Reply or New Mail
+#### Reply or new mail
 
-Please do not reply to an existing message as a short-cut to post a message to
+Please do not reply to an existing message as a shortcut to post a message to
 the lists.
 
 Many mail programs and web archivers use information within mails to keep them
@@ -28,7 +28,7 @@ together as "threads", as collections of posts that discuss a certain
 subject. If you don't intend to reply on the same or similar subject, don't
 just hit reply on an existing mail and change subject; create a new mail.
 
-#### Reply to the List
+#### Reply to the list
 
 When replying to a message from the list, make sure that you do "group reply"
 or "reply to all", and not just reply to the author of the single mail you
@@ -38,13 +38,13 @@ We're actively discouraging replying back to the single person by setting the
 Reply-To: field in outgoing mails back to the mailing list address, making it
 harder for people to mail the author only by mistake.
 
-#### Use a Sensible Subject
+#### Use a sensible subject
 
 Please use a subject of the mail that makes sense and that is related to the
 contents of your mail. It makes it a lot easier to find your mail afterwards
 and it makes it easier to track mail threads and topics.
 
-#### Do Not Top-Post
+#### Do not top-post
 
 If you reply to a message, don't use top-posting. Top-posting is when you
 write the new text at the top of a mail and you insert the previous quoted
@@ -98,7 +98,7 @@ reply to.
 Change the subject name to something sensible and related to the subject,
 preferably even the actual subject of the single mail you wanted to reply to.
 
-#### Please Tell Us How You Solved The Problem!
+#### Please tell us how you solved the problem!
 
 Many people mail questions to the list, people spend some of their time and
 make an effort in providing good answers to these questions.

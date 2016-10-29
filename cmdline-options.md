@@ -1,7 +1,7 @@
 ## Command line options
 
 When telling curl to do something, you invoke curl with zero, one or several
-command line options to accompany the URL or set of URLs you want the transfer
+command-line options to accompany the URL or set of URLs you want the transfer
 to be about. curl supports almost two hundred different options.
 
 ### Short options
@@ -20,7 +20,7 @@ curl follows HTTP redirects:
 
     $ curl -vL http://example.com
 
-The command line parser in curl always parses the entire line and you can put
+The command-line parser in curl always parses the entire line and you can put
 the options anywhere you like; they can also appear after the URL:
 
     $ curl http://example.com -Lv

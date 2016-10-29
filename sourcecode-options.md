@@ -2,7 +2,7 @@
 
 The curl and libcurl source code have been carefully written to build and run
 on virtually every computer platform in existence. This can only be done
-through hard work and by adhering to a few guidelines (and of course a fair
+through hard work and by adhering to a few guidelines (and, of course, a fair
 amount of testing).
 
 A golden rule is to always add #ifdefs that checks for specific features, and
@@ -17,7 +17,7 @@ support for certain protocols disabled, etc.
 The project sometimes uses #ifdef protection around entire source files when,
 for example, a single file is provided for a specific operating system or
 perhaps for a specific feature that isn't always present. This is to make it
-possible for all platforms to always build all files - it simplifies the build
+possible for all platforms to always build all files—it simplifies the build
 scripts and makefiles a lot. A file entirely #ifdefed out hardly adds anything
 to the build time, anyway.
 

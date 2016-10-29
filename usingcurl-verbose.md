@@ -32,7 +32,7 @@ depending on what curl decides it needs to do.
 
 If we use an HTTPS:// URL instead of an HTTP one, there will also be a whole
 bunch of lines explaining how curl uses CA certs to verify the server's
-certificate and some details from the server's certificate etc. Including
+certificate and some details from the server's certificate, etc. Including
 which ciphers were selected and more TLS details.
 
 In addition to the added information given from curl internals, the -v verbose
@@ -78,7 +78,7 @@ start with a set of headers before the response body:
     <
 
 This may look mostly like mumbo jumbo to you, but this is normal set of HTTP
-headers - meta-data - about the response. The first line's "200" might be the
+headers—metadata—about the response. The first line's "200" might be the
 most important piece of information in there and means "everything is fine".
 
 The last line of the received headers is, as you can see, empty, and that is the
@@ -197,12 +197,12 @@ You tell curl to write a string just by passing that string to this option:
 
     curl -w "formatted string" http://example.com/
 
-... and you can also have curl read that string from a given file instead if
+…and you can also have curl read that string from a given file instead if
 you prefix the string with '@':
 
     curl -w @filename http://example.com/
 
-... or even have curl read the string from stdin if you use '-' as filename:
+…or even have curl read the string from stdin if you use '-' as filename:
 
     curl -w @- http://example.com/
 
@@ -245,7 +245,7 @@ Some of these variables are not available in really old curl versions.
   (from a proxy) to a curl CONNECT request.
 
 - %{local_ip} shows the IP address of the local end of the most recently done
-  connection - can be either IPv4 or IPv6
+  connection—can be either IPv4 or IPv6
 
 - %{local_port} shows the local port number of the most recently made
    connection
@@ -259,19 +259,19 @@ Some of these variables are not available in really old curl versions.
    HTTP request was made without `-L` to follow redirects.
 
 - %{remote_ip} shows the remote IP address of the most recently made
-  connection - can be either IPv4 or IPv6.
+  connection—can be either IPv4 or IPv6.
 
 - %{remote_port} shows the remote port number of the most recently made
    connection.
 
-- %{size_download} shows the total amount of bytes that were downloaded.
+- %{size_download} shows the total number of bytes that were downloaded.
 
-- %{size_header} shows the total amount of bytes of the downloaded headers.
+- %{size_header} shows the total number of bytes of the downloaded headers.
 
-- %{size_request} shows the total amount of bytes that were sent in the HTTP
+- %{size_request} shows the total number of bytes that were sent in the HTTP
   request.
 
-- %{size_upload} shows the total amount of bytes that were uploaded.
+- %{size_upload} shows the total number of bytes that were uploaded.
 
 - %{speed_download} shows the average download speed that curl measured for
   the complete download in bytes per second.

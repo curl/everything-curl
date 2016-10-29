@@ -47,7 +47,7 @@ in binary exactly as given:
 
 ### URL encoding
 
-The command line options above all require that you provide properly
+The command-line options above all require that you provide properly
 encoded data, data you need to make sure is in the right format. While that
 gives you a lot of freedom, it is also a bit inconvenient at times.
 
@@ -83,7 +83,7 @@ As an example, you could POST a name to have it encoded by curl:
 
     curl --data-urlencode "name=John Doe (Junior)" http://example.com
 
-... which would send the following data in the actual request body:
+…which would send the following data in the actual request body:
 
     name=John%20Doe%20%28Junior%29
 
@@ -159,7 +159,7 @@ If you want to submit a form with curl and make it look as if it has been done
 with a browser, it is important that to provide all the input fields from the
 form. A very common method for web pages is to set a few hidden input fields
 to the form and have them assigned values directly in the HTML. A successful
-form submission of course also include those fields and in order to do that
+form submission, of course, also include those fields and in order to do that
 automatically you may be forced to first download the HTML page that holds the
 form, parse it and extract the hidden field values so that you can send them
 off with curl.
@@ -184,7 +184,7 @@ browser. See the Wireshark documentation for details on doing that.
 ### Javascript and forms
 
 A very common mitigation against automated "agents" or scripts using curl is
-to have the page with the HTML form use javascript to set values of some input
+to have the page with the HTML form use Javascript to set values of some input
 fields, usually one of the hidden ones. Often, there's some
 Javascript code that executes on page load or when the submit button is
 pressed which sets a magic value that the server then can verify

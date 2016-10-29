@@ -7,7 +7,7 @@ TCP protocol handshake.
 
 For the typical command line that operates on a URL those are details that
 are taken care of under the hood which you can mostly ignore. But at times
-you might find yourself wanting to tweak the specifics...
+you might find yourself wanting to tweak the specifics…
 
 ## Name resolve tricks
 
@@ -46,7 +46,7 @@ HTTPS there's a separate extension field in the TLS protocol called SNI
 server it wants to talk to. curl will only extract the SNI name to send from
 the given URL.
 
-### Provide a custom IP for a name
+### Provide a custom IP address for a name
 
 Doing the hosts edit operation virtually, but directly with the curl command
 line without having to edit any system files, you can force feed curl what IP

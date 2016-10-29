@@ -1,7 +1,7 @@
 ## Project communication
 
 cURL is an Open Source project consisting of voluntary members from all over
-the world, living and working in a large amount of the world's time zones. To
+the world, living and working in a large number of the world's time zones. To
 make such a setup actually work, communication and openness is key. We keep
 all communication public and we use open communication channels. Most
 discussions are held on mailing lists, we use bug trackers where all issues
@@ -13,14 +13,14 @@ bored and fades away, sometimes a new eager contributor steps out from the
 shadows and starts helping out more. To keep this ship going forward as well
 as possible, it is important that we maintain open discussions and that's one
 of the reasons why we frown upon users who take discussions privately or try
-to email individual team members about development issues, questions,
+to e-mail individual team members about development issues, questions,
 debugging or whatever.
 
 In this day and age, mailing lists may be considered sort of the old style of
-communication - no fancy web forum or similar. Using a mailing list is
+communication—no fancy web forums or similar. Using a mailing list is
 therefore becoming an art that isn't practised everywhere and may be a bit
 strange and unusual to you. But fear not. It is just about sending emails to
-an address that then sends that email out to all the subscribers. Our mailing
+an address that then sends that e-mail out to all the subscribers. Our mailing
 lists have at most a few thousand subscribers. If you're mailing for the first
 time, it might be good to read a few old mails first to get to learn the
 culture and what's considered good practice.

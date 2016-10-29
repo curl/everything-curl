@@ -1,13 +1,13 @@
 # Command line basics
 
-curl started out as a command line tool and it has been invoked from shell
+curl started out as a command-line tool and it has been invoked from shell
 prompts and from within scripts by thousands of users over the years. curl has
 established itself as one of those trusty tools that is there for you to help
 you get your work done.
 
 ## Binaries and different platforms
 
-The command line tool "curl" is a binary executable file. The curl project
+The command-line tool "curl" is a binary executable file. The curl project
 does not by itself distribute or provide binaries. Binary files are highly
 system specific and oftentimes also bound to specific system versions.
 
@@ -23,7 +23,7 @@ packages in other ways.
 
 Also, remember that curl is often built to use third-party libraries to
 perform and unless curl is built to use them statically you must also have
-those third-party libraries installed - and the exact set of libraries will
+those third-party libraries installed; the exact set of libraries will
 vary depending on the particular build you get.
 
 ## Command lines, quotes and aliases
@@ -34,9 +34,9 @@ guidelines to follow. The curl tool is designed to work with any of them
 without causing troubles but there may be times when your specific command
 line system doesn't match what others use or what is otherwise documented.
 
-One way that command line systems differ, for example, is how you can put
-quotes around arguments to for example embed spaces or special symbols. In
-most unix-like shells you use double quotes (") and single quotes (')
+One way that command-line systems differ, for example, is how you can put
+quotes around arguments such as to embed spaces or special symbols. In
+most Unix-like shells you use double quotes (") and single quotes (')
 depending if you want to allow variable expansions or not within the quoted
 string, but on Windows there's no support for the single quote version.
 
@@ -47,10 +47,10 @@ precedence when a command line is executed. In order to use curl properly with
 PowerShell, you need to type in its full name including the extension:
 "curl.exe".
 
-Different command line environments will also have different maximum command
+Different command-line environments will also have different maximum command
 line lengths and force the users to limit how large amount of data that can be
 put into a single line. curl adapts to this by offering a way to provide
-command line options through a file or on stdin - using the -K option.
+command-line options through a file—or from stdin—using the -K option.
 
 ## Garbage in, garbage out
 

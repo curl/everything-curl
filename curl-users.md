@@ -10,12 +10,12 @@ exactly what you would consider "a user" to be. Let's elaborate.
 ### Open Source
 
 The project being Open Source and very liberally licensed means that
-just about anyone can re-distribute curl in source format or built into binary
+just about anyone can redistribute curl in source format or built into binary
 form.
 
 ### Counting downloads
 
-The curl command line tool and the libcurl library are available for download
+The curl command-line tool and the libcurl library are available for download
 for most operating systems via the curl web site, they are provided via third
 party installers to a bunch and and they come installed by default with yet
 more operating systems. This makes counting downloads from the curl web site
@@ -84,7 +84,7 @@ companies also just flat out tell us.
 We collect names of companies and products on our web site of users that use
 the project's products "in commercial environments". We do this mostly just to
 show-off to other big brands that if these other guys can build products that
-depend on us, maybe you can too?
+depend on us, maybe you can, too?
 
 The list of companies are well over 200 names, but extracting some of the
 larger or more well-known brands, here's a pretty good list that, of course, is

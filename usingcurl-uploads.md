@@ -12,7 +12,7 @@ HTTPS, IMAP, IMAPS, SCP, SFTP, SMB, SMBS, SMTP, SMTPS and TFTP.
 ### HTTP offers several "uploads"
 
 HTTP (and its bigger brother HTTPS) provides several different ways to upload
-data to a server and curl offers easy command line options to do it the three
+data to a server and curl offers easy command-line options to do it the three
 most common ways, described below.
 
 An interesting detail with HTTP is also that an upload can also be a download,
@@ -78,9 +78,9 @@ section.
 
 ### SMTP uploads
 
-You may not consider sending an email to be "uploading", but to curl it is.
+You may not consider sending an e-mail to be "uploading", but to curl it is.
 You upload the mail body to the SMTP server. With SMTP, you also need to
-include all the email headers you need (To:, From:, Date: etc) in the mail
+include all the e-mail headers you need (To:, From:, Date:, etc.) in the mail
 body as curl will not add any at all.
 
    curl -T mail smtp://mail.example.com/ --mail-from user@example.com

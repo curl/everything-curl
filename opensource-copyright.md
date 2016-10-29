@@ -23,7 +23,7 @@ follow any umbrella organization's guidelines.
 
 The curl project obeys to national laws in which it works. It being a highly
 international project visible, downloadable and usable in effectively every
-single country on earth may of course imply that some local laws can be
+single country on earth may, of course, imply that some local laws can be
 circumvented when using curl. That's just the nature of it and if uncertain,
 you should check your own local situation.
 
@@ -32,6 +32,6 @@ case known to the author of this was a patent case in the US that insisted
 they had the rights to resumed file transfers.
 
 As a generic software component that is usable everywhere to everyone, there
-are times when libcurl - in particular - are used in nefarious or downright
+are times when libcurl—in particular—are used in nefarious or downright
 malicious ways or circumstances. Examples include being used in virus and
 malware software. That is unfortunate but nothing we can prevent.

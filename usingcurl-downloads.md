@@ -4,7 +4,7 @@
 then clearly considered to be above you. This is loading data down from the
 server to your machine where you're running curl.
 
-Downloading is probably the most common use case for curl - getting the specific
+Downloading is probably the most common use case for curl—getting the specific
 data onto your machine, pointed to by a URL.
 
 ### What exactly is downloading?
@@ -17,7 +17,7 @@ download. In this example the URL to download is "https://example.com":
 
 The URL is broken down into its individual components ([as explained
 elsewhere](cmdline-urls.md)), the correct server is contacted and is then
-asked to deliver the specific resource - often a file. The server then
+asked to deliver the specific resource—often a file. The server then
 delivers the data, or it refuses or perhaps the client asked for the wrong
 data and then that data is delivered.
 
@@ -51,7 +51,7 @@ difference:
     $ curl -o /tmp/index.html http://example.com/
     $ curl http://example.com -o ../../folder/savethis.html
 
-This is, of course not limited to http:// URLs but works the same way no matter
+This is, of course, not limited to http:// URLs but works the same way no matter
 which type of URL you download:
 
     $ curl -o file.txt ftp://example.com/path/to/file-name.ext
@@ -115,7 +115,7 @@ downloads a web page with something like:
 
     $ curl https://example.com/ -o storage.html
 
-... and when inspecting the `storage.html` file after the fact, the user
+…and when inspecting the `storage.html` file after the fact, the user
 realizes that one or more characters look funny or downright wrong. This can
 then very well be because the server sent the characters using charset X,
 while your editor and environment use charset Y. In an ideal world, we'd all
@@ -160,7 +160,7 @@ generally safer to just pick one.
 
 ### Shell redirects
 
-When you invoke curl from a shell or some other command line prompt system,
+When you invoke curl from a shell or some other command-line prompt system,
 that environment generally provide you with a set of output redirection
 abilities. In most Linux and Unix shells and with Windows' command prompts,
 you direct stdout to a file with `> filename`. Using this, of course, makes the
@@ -233,7 +233,7 @@ what you see in your browser window.
 #### Client differences
 
 Curl only gets exactly what you ask it to get and it never parses the actual
-content - the data - that the server delivers. A browser gets data and it
+content—the data—that the server delivers. A browser gets data and it
 activates different parsers depending on what kind of content it thinks it
 gets. For example, if the data is HTML it will parse it to display a web page
 and possibly download other sub resources such as images, Javascript and CSS
@@ -326,7 +326,7 @@ The given limit is the maximum *average speed* allowed, counted during the
 entire transfer. It means that curl might use higher transfer speeds in short
 bursts, but over time it uses no more than the given rate.
 
-Also note that curl never knows what the maximum possible speed is - it will
+Also note that curl never knows what the maximum possible speed is—it will
 simply go as fast as it can and is allowed. You may know your connection's
 maximum speed, but curl does not.
 
@@ -335,7 +335,7 @@ maximum speed, but curl does not.
 When you want to make sure your curl command line won't try to download a
 too-large file, you can instruct curl to stop before doing that, if it knows the
 size before the transfer starts! Maybe that would use too much bandwidth,
-take too long time or you don't have enough space on your hard drive.
+take too long time or you don't have enough space on your hard drive:
 
     curl --max-filesize 100000 https://example.com/
 

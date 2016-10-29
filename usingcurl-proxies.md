@@ -6,7 +6,7 @@ client.
 You can also see it as a middle man that sits between you and the server you
 want to work with, a middle man that you connect to instead of the actual
 remote server. You ask the proxy to perform your desired operation for you and
-then it'll run off and do that and then return back the data to you.
+then it will run off and do that and then return back the data to you.
 
 There are several different types of proxies and we shall list and discuss
 them further down in this section.
@@ -96,7 +96,7 @@ verify. This HTTP method is known as `CONNECT`.
 
 When the proxy tunnels encrypted data through to the remote server after a
 CONNECT method sets it up, the proxy cannot see nor modify the traffic without
-breaking the encryption.
+breaking the encryption:
 
     curl -x proxy.example.com:80 https://example.com/
 
@@ -117,7 +117,7 @@ traffic captured.
 This practice, of course, allows the middle man to decrypt and actually snoop on
 all TLS traffic.
 
-### Non-HTTP protocols over HTTP proxy
+### Non-HTTP protocols over an HTTP proxy
 
 An "HTTP proxy" means the proxy itself speaks HTTP. HTTP proxies are primarily
 used to proxy HTTP but it is also fairly common that they support
@@ -128,7 +128,7 @@ pretending the other protocol works like HTTP and asking the proxy to "get
 this URL" even if the URL isn't using HTTP. This distinction is important
 because it means that when sent over an HTTP proxy like this, curl doesn't
 really speak FTP even though given an FTP URL; thus FTP-specific features will
-not work.
+not work:
 
     curl -x http://proxy.example.com:80 ftp://ftp.example.com/file.txt
 
@@ -167,7 +167,7 @@ part for the given proxy host with `-x`, or you can specify it with a separate
 option instead of `-x`.
 
 SOCKS4 is for the version 4 and SOCKS4a is for the version 4 without resolving
-the host name locally.
+the host name locally:
 
     curl -x socks4://proxy.example.com http://www.example.com/
 
@@ -180,14 +180,14 @@ The SOCKS4a versions:
     curl --socks4a proxy.example.com http://www.example.com/
 
 SOCKS5 is for the version 5 and SOCKS5-hostname is for the version 5 without
-resolving the host name locally.
+resolving the host name locally:
 
     curl -x socks5://proxy.example.com http://www.example.com/
 
     curl --socks5 proxy.example.com http://www.example.com/
 
 The SOCKS5-hostname versions. This sends the host name to the server so
-there's no name resolving done locally.
+there's no name resolving done locally:
 
     curl -x socks5h://proxy.example.com http://www.example.com/
 

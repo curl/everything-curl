@@ -56,7 +56,7 @@ maximum number of redirects to follow with the `--max-redirs` option.
 ## GET or POST?
 
 All three of these response codes, 301 and 302/303, will assume that the
-client sends a GET to get the new URI, even if the client might've sent a POST
+client sends a GET to get the new URI, even if the client might have sent a POST
 in the first request. This is very important, at least if you do something
 that doesn't use GET.
 
@@ -70,7 +70,7 @@ where you should instead send your POST now and in the future”, the server
 responds with a 308. And to complicate matters, the 308 code is only recently
 defined (the [spec](https://tools.ietf.org/html/rfc7238#section-3) was
 published in June 2014) so older clients may not treat it correctly! If so,
-then the only response code left for you is...
+then the only response code left for you is…
 
 The (older) response code to tell a client to send a POST also in the next
 request but temporarily is 307. This redirect will not be cached by the client
@@ -90,7 +90,7 @@ It turns out that there are web services out there in the world that want a
 POST sent to the original URL, but are responding with HTTP redirects that use
 a 301, 302 or 303 response codes and *still* want the HTTP client to send the
 next request as a POST. As explained above, browsers won’t do that and neither
-will curl - by default.
+will curl—by default.
 
 Since these setups exist, and they’re actually not terribly rare, curl offers
 options to alter its behavior.
@@ -108,11 +108,11 @@ different host curl limits what it sends away to other hosts than the original
 within the same "transfer".
 
 So if you want the credentials to also get sent to the following host names
-even though they're not the same as the original - presumably because you
-trust them and know that there's no harm in doing that - you can tell curl that
+even though they're not the same as the original—presumably because you
+trust them and know that there's no harm in doing that—you can tell curl that
 it is fine to do so by using the `--location-trusted` option.
 
-# Non-HTTP Redirects
+# Non-HTTP redirects
 
 Browsers support more ways to do redirects that sometimes make life
 complicated to a curl user as these methods are not supported or recognized by
@@ -134,4 +134,4 @@ language and a full run time that allows code to execute in the browser when
 visiting web sites.
 
 Javascript also provides means for it to instruct the browser to move on to
-another site - a redirect, if you will.
+another site—a redirect, if you will.

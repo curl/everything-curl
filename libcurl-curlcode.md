@@ -1,14 +1,14 @@
 ## CURLcode return code
 
 Many libcurl functions return a CURLcode. That's a special libcurl typedefed
-variable for error codes. It returns CURLE_OK (which has the value zero) if
+variable for error codes. It returns `CURLE_OK` (which has the value zero) if
 everything is fine and dandy and it returns a non-zero number if a problem was
 detected. There are almost one hundred `CURLcode` errors in use, and you can
 find them all in the `curl/curl.h` header file and documented in the
 libcurl-errors man page.
 
 You can convert a CURLcode into a human readable string with the
-`curl_easy_strerror()` function - but be aware that these errors are rarely
+`curl_easy_strerror()` function—but be aware that these errors are rarely
 phrased in a way that is suitable for anyone to expose in a UI or to an end
 user:
 

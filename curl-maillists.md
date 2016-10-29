@@ -1,11 +1,11 @@
 ## Mailing lists
 
-Some of the most important mailing lists are...
+Some of the most important mailing lists are…
 
 ### curl-users
 
 The main mailing list for users and developers of the curl command-line
-tool, for questions and help around curl concepts, command line options, the
+tool, for questions and help around curl concepts, command-line options, the
 protocols curl can speak or even related tools. We tend to move development
 issues or more advanced bug fixes discussions over to curl-library instead,
 since libcurl is the engine that drives most of curl.
@@ -23,6 +23,6 @@ See https://cool.haxx.se/mailman/listinfo/curl-library
 ### curl-announce
 
 This mailing list only gets announcements about new releases and security
-problems - nothing else. This one is for those who want a more casual feed of
+problems—nothing else. This one is for those who want a more casual feed of
 information from the project.
 https://cool.haxx.se/mailman/listinfo/curl-announce

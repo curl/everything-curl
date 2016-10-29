@@ -2,8 +2,8 @@
 
 The progress callback is what gets called regularly and repeatedly for each
 transfer during the entire lifetime of the transfer. The old callback was set
-with CURLOPT_PROGRESSFUNCTION but the modern and preferred callback is set
-with CURLOPT_XFERINFOFUNCTION:
+with `CURLOPT_PROGRESSFUNCTION` but the modern and preferred callback is set
+with `CURLOPT_XFERINFOFUNCTION`:
 
     curl_easy_setopt(handle, CURLOPT_XFERINFOFUNCTION, xfer_callback);
 
@@ -45,5 +45,5 @@ If you transfer data with the multi interface, this function will not be
 called during periods of idleness unless you call the appropriate libcurl
 function that performs transfers.
 
-(The deprecated callback CURLOPT_PROGRESSFUNCTION worked identically but
+(The deprecated callback `CURLOPT_PROGRESSFUNCTION` worked identically but
 instead of taking arguments of type `curl_off_t`, it used `double`.)

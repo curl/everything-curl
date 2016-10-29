@@ -1,7 +1,7 @@
 # FTP
 
 FTP, the File Transfer Protocol, is probably the oldest network protocol that
-curl supports - it was created in the early 1970s. The official spec that
+curl supports—it was created in the early 1970s. The official spec that
 still is the go-to documentation is [RFC 959](http://www.ietf.org/rfc/rfc959.txt),
 from 1985, published well over a decade before the first curl release.
 

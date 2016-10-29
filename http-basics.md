@@ -1,10 +1,10 @@
-### HTTP Protocol basics
+### HTTP protocol basics
  
 (This assumes you've read the [Network and protocols](protocols.md) section or
 are otherwise already familiar with protocols.)
 
 HTTP is a protocol that is easy to learn the basics of. A client connects to a
-server - and it is always the client that takes the initiative - sends a
+server—and it is always the client that takes the initiative—sends a
 request and receives a response. Both the request and the response consist of
 headers and a body. There can be little or a lot of information going in both
 directions.
@@ -21,7 +21,7 @@ sends a GET without a request body:
     User-agent: curl/2000
     Host: example.com
 
-... the server could respond with something like below, with response headers
+…the server could respond with something like below, with response headers
 and a response body ('hello'). The first line in the response also contains
 the response code and the specific version the server supports:
 
@@ -69,7 +69,7 @@ the host name and ends either at the end of the URL or at a '?' or '#'
 (roughly speaking).
 
 If you include substrings including `/../` or `/./` in the path, curl will
-automatically squash them before the path is sent to the server - as is
+automatically squash them before the path is sent to the server, as is
 dictated by standards and how such strings tend to work in local file
 systems. The `/../` sequence will remove the previous section so that
 `/hello/sir/../` ends up just `/hello/` and `/./` is simply removed so that

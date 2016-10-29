@@ -12,7 +12,7 @@ to the world by other friendly people and organizations.
 The source code consists of a large number of files containing C
 code. Generally speaking, the same set of files are used to build binaries for
 all platforms and computer architectures that curl supports. curl can be built
-and run on a vast amount of different platforms. If you use a rare operating
+and run on a vast number of different platforms. If you use a rare operating
 system yourself, chances are that building curl yourself from source is the
 easiest or perhaps only way to get curl.
 
@@ -27,7 +27,7 @@ not present in the git repository, exactly for the reason that they are
 generated so there's no need to store them in git.
 
 So, if you want to build curl from git you need to generate some of those
-files yourself before you can build. On Linux and unix systems, do this by
+files yourself before you can build. On Linux and Unix systems, do this by
 running `./buildconf` and on Windows you run `buildconf.bat`.
 
 ## On Linux and Unix-like systems
@@ -48,11 +48,11 @@ who wants to build curl and it does a whole bunch of things:
 
  - it checks for features and functions present in your system
 
- - it offers command line options so that you as a builder can decide what to
-   enable and disable in the build. Features and protocols etc can be toggled
+ - it offers command-line options so that you as a builder can decide what to
+   enable and disable in the build. Features and protocols, etc., can be toggled
    on/off. Or even compiler warning levels and more.
 
- - it offers command line options to let the builder point to specific
+ - it offers command-line options to let the builder point to specific
    installation paths for various third-party dependencies that curl can be
    built to use.
 

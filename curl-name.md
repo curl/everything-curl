@@ -15,7 +15,7 @@ Later on, someone suggested that curl could actually be a clever "backronym"
 URL Request Library"
 
 While that is awesome, it was actually not the original thought. We sort of
-wish we were that clever though...
+wish we were that clever though…
 
 There are and were other projects using the name curl in various ways, but we
 were not aware of them by the time our curl came to be.

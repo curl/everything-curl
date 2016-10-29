@@ -1,6 +1,6 @@
 # libcurl basics
 
-The engine in the curl command line tool is libcurl. libcurl is also the
+The engine in the curl command-line tool is libcurl. libcurl is also the
 engine in thousands of tools, services and applications out there today,
 performing their Internet data transfers.
 

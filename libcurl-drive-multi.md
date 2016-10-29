@@ -50,7 +50,7 @@ callbacks and more that may loose precision if you do so.
 
 To instead do select() on our own, we extract the file descriptors and timeout
 value from libcurl like this (*note that a real application would check return
-codes*) :
+codes*):
 
     int transfers_running;
     do {

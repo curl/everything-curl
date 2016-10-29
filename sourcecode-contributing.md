@@ -2,8 +2,8 @@
 
 Contributing means helping out.
 
-When you contribute anything to the project - code, documentation, bug fixes,
-suggestions or just good advice - we assume you do this with permission and you
+When you contribute anything to the project—code, documentation, bug fixes,
+suggestions or just good advice—we assume you do this with permission and you
 are not breaking any contracts or laws by providing that to us. If you don't
 have permission, don't contribute it to us.
 
@@ -19,7 +19,7 @@ improved code and docs get merged into the source tree properly and other
 sorts of contributions are suitable received.
 
 Send your contributions on a [mailing list](curl-comm.md), file an issue or
-submit a pull-request.
+submit a pull request.
 
 ### Suggestions
 
@@ -37,7 +37,7 @@ need to remind us about those.
 The best approach to add anything to curl or libcurl is, of course, to first
 bring the idea and suggestion to the curl project team members and then
 discuss with them if the idea is feasible for inclusion and then how an
-implementation is best done - and done in the best possible way to get merged
+implementation is best done—and done in the best possible way to get merged
 into the source code repository, assuming that is what you want.
 
 The project generally approves of functions that improves the support for the
@@ -66,7 +66,7 @@ to get less friction and to be successful, faster:
 - When introducing things in the code, you need to follow the style and
   architecture that already exists. When you add code to the ordinary transfer
   code path, it must, for example, work asynchronously in a non-blocking
-  manner. We will not accept new code that introduces blocking behaviors - we
+  manner. We will not accept new code that introduces blocking behaviors—we
   already have too many of those that we haven't managed to remove yet.
 
 - Quick hacks or dirty solutions that have a high risk of not working on
@@ -129,7 +129,7 @@ upstream.
 
 Once your commits are fine enough to get sent to the mailing list, you just
 create patches with `git format-patch` and send them away. Even more fancy
-users go directly to `git send-email` and have git send the email itself!
+users go directly to `git send-email` and have git send the e-mail itself!
 
 ### git commit style
 
@@ -146,12 +146,12 @@ ask you to use:
     it fixes and everything else that is related]
 
     [Bug: link to source of the report or more related discussion]
-    [Reported-by: John Doe - credit the reporter]
+    [Reported-by: John Doe—credit the reporter]
     [whatever-else-by: credit all helpers, finders, doers]
 
 Don't forget to use `git commit --author="Jane Doe <jane@example.com>"` if you
 commit someone else's work, and make sure that you have your own user and
-email setup correctly in git before you commit!
+e-mail setup correctly in git before you commit!
 
 The author and the *-by: lines are, of course, there to make sure we give the
 proper credit in the project. We do not want to take someone else's work
@@ -166,7 +166,7 @@ git repository. Let's call them the core team.
 
 Everyone else can fork off their own curl repository to which they can commit
 and push changes and host them online and build their own curl versions from
-and so on, but in order to get changes into the *official* repo they need to
+and so on, but in order to get changes into the *official* repository they need to
 be pushed by a trusted person.
 
 The core team is a small set of curl developers who have been around for a

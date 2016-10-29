@@ -1,6 +1,6 @@
 ## Protocol
 
-The language used to ask for data to get sent - in either direction - is
+The language used to ask for data to get sent—in either direction—is
 called **the protocol**. The protocol describes exactly how to ask the server
 for data, or to tell the server that there is data coming.
 
@@ -74,7 +74,7 @@ same.
 The protocols mentioned in this chapter are all "Application Protocols", which
 means they are transferred over more lower level protocols, like TCP, UDP and
 TLS. They are also themselves protocols that change over time, get new
-features and get attacked so that new ways of handling security etc. forces
+features and get attacked so that new ways of handling security, etc., forces
 curl to adapt and change.
 
 ## About adhering to standards and who's right
@@ -83,8 +83,8 @@ Generally, there are protocol specs that tell us how to send and receive data
 for specific protocols. The protocol specs we follow are RFCs put together and
 published by IETF.
 
-Some protocols are not properly documented in a final RFC, like for example
-SFTP for which our implementation is based on an internet-draft that isn't
+Some protocols are not properly documented in a final RFC, like, for example,
+SFTP for which our implementation is based on an Internet-draft that isn't
 even the last available one.
 
 Protocols are, however, spoken by two parties and like in any given
@@ -102,7 +102,7 @@ than what we think the spec says and that alternative behavior is what works
 widely on the big Internet, then chances are we will change foot and instead
 decide to act like those others. If a server refuses to talk with us when we
 think we follow the spec but works fine when we bend the rules every so
-slightly, then we probably end up bending them exactly that way - if we can
+slightly, then we probably end up bending them exactly that way—if we can
 still work successfully with other implementations.
 
 Ultimately, it is a personal decision and up for discussion in every case

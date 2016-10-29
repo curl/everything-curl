@@ -11,7 +11,7 @@ appreciate getting those problems reported.
 
 Any problem can be considered a bug. A weirdly phrased wording in the manual
 that prevents you from understanding something is a bug. A surprising side
-effect of combining multiple options can be a bug - or perhaps it should be
+effect of combining multiple options can be a bug—or perhaps it should be
 better documented? Perhaps the option doesn't do at all what you expected it
 to? That's a problem and we should fix it!
 

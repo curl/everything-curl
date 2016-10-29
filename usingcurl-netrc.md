@@ -7,7 +7,7 @@ without manually having to reenter the credentials each time. The `.netrc` file
 is typically stored in a user's home directory. (On Windows, curl will look for
 it with the name `_netrc`).
 
-This being a widespread and well used concept, curl also supports it - if you
+This being a widespread and well used concept, curl also supports it—if you
 ask it to. curl does not, however, limit this feature to FTP, but can get
 credentials for machines for any protocol with this. See further below for
 how.

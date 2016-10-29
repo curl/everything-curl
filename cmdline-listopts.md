@@ -1,11 +1,11 @@
-## List all command line options
+## List all command-line options
 
-curl has more than one hundred command line options and the number of options
+curl has more than one hundred command-line options and the number of options
 keep increasing over time. Chances are the number of options will surpass 200
 within a year or two.
 
 In order to find out which options you need to perform as certain action, you
-can of course list all options, scan through the list and pick the one you're
+can, of course, list all options, scan through the list and pick the one you're
 looking for. `curl --help` or simply `curl -h` will get you a list of all
 existing options with a brief explanation. If you don't really know what
 you're looking for, you probably won't be entirely satisfied.

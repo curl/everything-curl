@@ -10,16 +10,16 @@ uses public and private keys. Both SSH and TLS provide strong crypto and
 secure transfers when used correctly.
 
 The SCP protocol is generally considered to be the black sheep of the two
-since it isn't very portable and usually only works between unix systems.
+since it isn't very portable and usually only works between Unix systems.
 
 ### URLs
 
 SFTP and SCP URLs are similar to other URLs and you download files using these
-protocols the same as with others.
+protocols the same as with others:
 
     curl sftp://example.com/file.zip -u user
 
-and
+and:
 
     curl scp://example.com/file.zip -u user
 
@@ -34,7 +34,7 @@ users authenticate, as outlined below.
 
 When requesting a file from an SFTP or SCP URL, the file path given is
 considered to be the absolute path on the remote server unless you
-specifically ask for the path relative to the user's home dir. You do that by
+specifically ask for the path relative to the user's home directory. You do that by
 making sure the path starts with `/~/`. This is quite the opposite to how FTP
 URLs work and is a common cause for confusion among users.
 
@@ -69,6 +69,6 @@ operation because it cannot trust that the server is the right one. Once the
 correct hash exists in `known_hosts` curl can perform transfers.
 
 To force curl to skip checking and obeying to the the `known_hosts` file, you
-can use the `-k / --insecure` command line option. You must use this option
+can use the `-k / --insecure` command-line option. You must use this option
 with extreme care since it makes it possible man-in-the-middle attacks not
 detected.

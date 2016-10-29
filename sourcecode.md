@@ -16,7 +16,7 @@ originally uploaded there by the curl team.
 
 If you instead would rather work directly with the curl source code off our source
 code repository, you find all details in [the curl github
-repo](https://github.com/curl/curl/).
+repository](https://github.com/curl/curl/).
 
 ## Clone the code
 

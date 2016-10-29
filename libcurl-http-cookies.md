@@ -56,7 +56,7 @@ The string you set there is the raw string that would be sent in the HTTP reques
 and should be in the format of repeated sequences of `NAME=VALUE;` - including
 the semicolon separator.
 
-## Import Export
+## Import export
 
 The cookie in-memory store can hold a bunch of cookies, and libcurl offers
 very powerful ways for an application to play with them. You can set new
@@ -84,7 +84,7 @@ header, but we recommend the cookie file style:
     curl_easy_setopt(curl, CURLOPT_COOKIELIST, my_cookie);
 
 If that given cookie would match an already existing cookie (with the same
-domain and path etc), it would overwrite the old one with the new contents.
+domain and path, etc.), it would overwrite the old one with the new contents.
 
 ### Get all cookies from the cookie store
 
@@ -137,7 +137,7 @@ separated with TAB characters.
 | 1     | FALSE       | Include subdomains boolean                    |
 | 2     | /foobar/    | Path                                          |
 | 3     | FALSE       | Set over a secure transport                   |
-| 4     | 1462299217  | Expires at - seconds since Jan 1st 1970, or 0 |
+| 4     | 1462299217  | Expires at – seconds since Jan 1st 1970, or 0 |
 | 5     | person      | Name of the cookie                            |
 | 6     | daniel      | Value of the cookie                           |
 

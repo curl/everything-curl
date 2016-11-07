@@ -1,14 +1,14 @@
 # Introduction
 
-_Everything curl_ is aiming to become *the guide* to everything there is to
-know about curl, the project, the command-line tool, the library, how
-everything started and how it came to be what it is today. How we work on
-developing it further, what it takes to use it, how you can contribute with
-code and bug reports and why all those millions of existing users use it.
+*Everything curl* is an extensive guide to everything there is to know about
+curl, the project, the command-line tool, the library, how everything started
+and how it came to be what it is today. How we work on developing it further,
+what it takes to use it, how you can contribute with code and bug reports and
+why all those millions of existing users use it.
 
-This book is meant to be readable by both casual readers and the somewhat more
-experienced developers, and I hope to offer something for you to pick and
-choose from. Don't read it from front to back. Read the chapters you're
+This book is meant to be interesting and useful to both casual readers and the
+somewhat more experienced developers, and offers something for you all to pick
+and choose from. Don't read it from front to back. Read the chapters you're
 curious about and go back and forth as you see fit.
 
 I hope to run this book project as I do all other projects I work on: in the
@@ -19,14 +19,11 @@ accordingly.
 
 This book will never be finished. I intend to keep working on it and while I
 may at some point in time consider it fairly complete and covering most
-aspects of the project (even if only that currently seems like an
-insurmountable goal), the curl project will continue to move so there will be
-things to update here as well.
+aspects of the project (even if only that seems like an insurmountable goal),
+the curl project will continue to move so there will always be things to
+update in the book as well.
 
-This book project started at the end of September 2015 with a basic layout
-plan for a first "edition", which since has expanded significantly. There's no
-fixed time schedule for this book. Hopefully it will be complete at some
-point.
+This book project started at the end of September 2015.
 
 ## The book sites
 

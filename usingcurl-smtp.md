@@ -38,3 +38,51 @@ A basic command line to send an email:
     
     Dear Joe,
     Welcome to this example email. What a lovely day.
+
+## Secure mail transfer
+
+Like with most other protocols curl speaks, you can also ask curl to speak
+SMTP securely over TLS. Ask curl to _try_ using secure transfers by adding
+`--ssl` to the command line, so to redo the previous command but try to do it
+to avoid evesdroppers:
+
+   curl --ssl smtp://mail.example.com --mail-from myself@example.com --mail-rcpt
+    receiver@example.com --upload-file email.txt
+
+To make really sure the email transfer is done securely, you can insist on a
+secure transfer with `--ssl-reqd`:
+
+   curl --ssl-reqd smtp://mail.example.com --mail-from myself@example.com
+    --mail-rcpt receiver@example.com --upload-file email.txt
+
+## The SMTP URL
+
+The path part of a SMTP request specifies the host name to present during
+communication with the mail server. If the path is omitted then curl will
+attempt to figure out the local computer's host name and use that. However,
+this may not return the fully qualified domain name that is required by some
+mail servers and specifying this path allows you to set an alternative name,
+such as your machine's fully qualified domain name, which you might have
+obtained from an external function such as gethostname or getaddrinfo.
+
+To connect to the mail server at `mail.example.com` and send your local
+computer's host name in the HELO / EHLO command:
+
+    curl smtp://mail.example.com
+
+Instead, send `client.example.com` in the `HELO` / `EHLO` command to the mail
+server at `mail.example.com`.
+
+    curl smtp://mail.example.com/client.example.com
+
+## No MX lookup!
+
+When you send email with an ordinary mail client, it will first check for an
+MX record for the particular domain you want to send email to. If you send an
+email to joe@example.com, the client will get the MX records for `example.com`
+to learn which mail server(s) to use when sending email to example.com users.
+
+curl does no MX lookups by itself. If you want to figure out which server to
+send an email to for a particular domain, we recommend you figure that out
+first and then call curl to use those servers. Useful command line tools to
+get MX records with include 'dig' and 'nslookup'.

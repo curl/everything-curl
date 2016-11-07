@@ -59,7 +59,7 @@ which type of URL you download:
 curl has several other ways to store and name the downloaded data. Details
 follow!
 
-### -O
+### Download to a file named by the URL
 
 Many URLs, however, already contain the file name part in the rightmost
 end. curl lets you use that as a shortcut so you don't have to repeat it with
@@ -78,7 +78,7 @@ URL and curl picks the name from this data. If the site redirects curl further
 (and if you tell curl to follow redirects), it doesn't change the file name
 curl will use for storing this.
 
-### -J
+### Get the target file name from the server
 
 HTTP servers have the option to provide a header named `Content-Disposition:`
 in responses. That header may contain a suggested file name for the contents
@@ -212,14 +212,13 @@ download multiple URLs, use more of them:
 
     $ curl -O -O http://example.com/1 http://example.com/2
 
-### --remote-name-all
+### Use the URL's file name part for all URLs
 
-As a reaction to adding a hundred `-O` options when using a
-hundred URLs, we introduced an option called `--remote-name-all`. This makes
-`-O` the default operation for all given URLs. You can still provide
-individual "storage instructions" for URLs but if you leave one out for a URL
-that gets downloaded, the default action is then switched from stdout to -O
-style.
+As a reaction to adding a hundred `-O` options when using a hundred URLs, we
+introduced an option called `--remote-name-all`. This makes `-O` the default
+operation for all given URLs. You can still provide individual "storage
+instructions" for URLs but if you leave one out for a URL that gets
+downloaded, the default action is then switched from stdout to -O style.
 
 ### "My browser shows something else"
 

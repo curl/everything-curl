@@ -46,13 +46,13 @@ SMTP securely over TLS. Ask curl to _try_ using secure transfers by adding
 `--ssl` to the command line, so to redo the previous command but try to do it
 to avoid evesdroppers:
 
-   curl --ssl smtp://mail.example.com --mail-from myself@example.com --mail-rcpt
+    curl --ssl smtp://mail.example.com --mail-from myself@example.com --mail-rcpt
     receiver@example.com --upload-file email.txt
 
 To make really sure the email transfer is done securely, you can insist on a
 secure transfer with `--ssl-reqd`:
 
-   curl --ssl-reqd smtp://mail.example.com --mail-from myself@example.com
+    curl --ssl-reqd smtp://mail.example.com --mail-from myself@example.com
     --mail-rcpt receiver@example.com --upload-file email.txt
 
 ## The SMTP URL
@@ -70,8 +70,11 @@ computer's host name in the HELO / EHLO command:
 
     curl smtp://mail.example.com
 
-Instead, send `client.example.com` in the `HELO` / `EHLO` command to the mail
-server at `mail.example.com`.
+You can of course as always use the `-v` option to get to see the
+client-server communication.
+
+To instead have curl send `client.example.com` in the `HELO` / `EHLO` command
+to the mail server at `mail.example.com`, use:
 
     curl smtp://mail.example.com/client.example.com
 

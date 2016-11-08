@@ -1,8 +1,8 @@
 # TLS
 
-TLS stands for Transport Layer Security and is the name for the techology that
+TLS stands for Transport Layer Security and is the name for the technology that
 was formerly called SSL. The term SSL hasn't really died though so these days
-both the terms TLS and SSL are often used interchangably to describe the same
+both the terms TLS and SSL are often used interchangeably to describe the same
 thing.
 
 TLS is a cryptographic security layer "on top" of TCP that makes the data
@@ -20,7 +20,7 @@ phased out over time.
 
 Using the verbose option, `-v`, you can get information about which cipher and
 TLS version are negotiated. By using the `--ciphers` option, you can change
-what cipher to prefer in the negotation, but mind you, this is a power feature
+what cipher to prefer in the negotiation, but mind you, this is a power feature
 that takes knowledge to know how to use in ways that don't just make things
 worse.
 
@@ -30,8 +30,8 @@ curl supports the TLS version for a large amount of protocols. HTTP has HTTPS,
 FTP has FTPS, LDAP has LDAPS, POP3 has POP3S, IMAP has IMAPS and SMTP has
 SMTPS.
 
-If the server side supports it, you cana use the TLS version of these
-protocols with curl.
+If the server side supports it, you can use the TLS version of these protocols
+with curl.
 
 There are two general approaches to do TLS with protocols. One of them is to
 speak TLS already from the first connection handshake while the other is to
@@ -56,7 +56,7 @@ The support table looks like this:
 
 Those protocols that _can_ do `--ssl` all usually favors that method. `--ssl`
 only means that curl will attempt to upgrade the connection to TLS but if that
-fails, it will still continue with the tranfer using the plain-text version of
+fails, it will still continue with the transfer using the plain-text version of
 the protocol. To make the `--ssl` option **require** TLS to continue, there's
 instead the `--ssl-reqd` option which will make the transfer fail if curl
 cannot successfully negotiate TLS.
@@ -67,7 +67,7 @@ TLS is mandatory and curl will return an error if TLS isn't negotiated.
 ## SSL and TLS versions
 
 SSL was invented in the mid 90s and has developed ever since. SSL version 2
-was the first widespread version used on the Internet but that was deeemd
+was the first widespread version used on the Internet but that was deemed
 insecure already a very long time ago. SSL version 3 took over from there, and
 it too has been deemed not safe enough for use.
 
@@ -96,26 +96,45 @@ serious effort.
 development versions of certain TLS libraries and requires curl 7.52.0 or
 later.
 
-### Verifying server certificates
+## Verifying server certificates
+
+Having a secure connection to a server is not worth a lot if you cannot also
+be certain that you are communicating with the **correct** host. If we don't
+know that, we could just as well be talking with an impostor that just
+*appears* to be who we think it is.
+
+To check that it communicates with the right TLS server, curl uses a set of
+locally stored CA certificates to verify the signature of the server's
+certificate. All servers provide a certificate to the client as part of the
+TLS handshake and all public TLS-using servers have acquired that certificate
+from an established Certificate Authority.
+
+After some applied crypto magic, curl knows that the server is in fact the
+correct one that acquired that certificate for the host name that curl used to
+connect to it. Failing to verify the server's certificate is a TLS handshake
+failure and curl exists with an error.
+
+In rare circumstances, you may decide that you still want to communicate with
+a TLS server even if the certificate verification fails. You then accept the
+fact that your communication may be subject to Man-In-The-Middle attacks. You
+lower your guards with the `-k` or `--insecure` option.
+
+## Certificate pinning
 
 TBD
 
-### Certificate pinning
+## OCSP stapling
 
 TBD
 
-### OCSP stapling
+## Client certificates
 
 TBD
 
-### Client certificates
+## TLS auth
 
 TBD
 
-### TLS auth
-
-TBD
-
-### Different TLS backends
+## Different TLS backends
 
 TBD

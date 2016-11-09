@@ -54,15 +54,27 @@ The support table looks like this:
 | IMAP   | IMAPS     | **yes** |
 | SMTP   | SMTPS     | **yes** |
 
-Those protocols that _can_ do `--ssl` all usually favors that method. `--ssl`
-only means that curl will attempt to upgrade the connection to TLS but if that
-fails, it will still continue with the transfer using the plain-text version of
-the protocol. To make the `--ssl` option **require** TLS to continue, there's
+The protocols that _can_ do `--ssl` all favor that method. Using `--ssl` means
+that curl will *attempt* to upgrade the connection to TLS but if that fails,
+it will still continue with the transfer using the plain-text version of the
+protocol. To make the `--ssl` option **require** TLS to continue, there's
 instead the `--ssl-reqd` option which will make the transfer fail if curl
 cannot successfully negotiate TLS.
 
+Require TLS security for your FTP transfer:
+
+    curl --ssl-reqd ftp://ftp.example.com/file.txt
+
+Suggest TLS to be used for your FTP transfer:
+
+    curl --ssl ftp://ftp.example.com/file.txt
+
 Connecting directly with TLS (to HTTPS://, LDAPS://, FTPS:// etc) means that
 TLS is mandatory and curl will return an error if TLS isn't negotiated.
+
+Get a file over HTTPS:
+
+    curl https://www.example.com/
 
 ## SSL and TLS versions
 

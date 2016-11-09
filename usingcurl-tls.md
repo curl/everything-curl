@@ -131,6 +131,34 @@ a TLS server even if the certificate verification fails. You then accept the
 fact that your communication may be subject to Man-In-The-Middle attacks. You
 lower your guards with the `-k` or `--insecure` option.
 
+## CA store
+
+curl needs a "CA store", a collection of CA certificates, to verify the TLS
+server it talks to.
+
+If curl is built to use a TLS library that is "native" to your platform,
+chances are that library will use the native CA store as well. If not, curl
+has to either have been built to know where the local CA store is, or users
+need to provide a path to the CA store when curl is invoked.
+
+You can point out a specific CA bundle to use in the TLS handshake with the
+`--cacert` command line option. That bundle needs to be in PEM format. You can
+also set the environment variable `CURL_CA_BUNDLE` to the full path.
+
+### CA store on windows
+
+curl built on windows that isn't using the native TLS library (Schannel), have
+an extra sequence for how the CA store can be found and used.
+
+curl will search for a CA cert file named "curl-ca-bundle.crt" in these
+directories and in this order:
+
+ 1. application's directory
+ 2. current working directory
+ 3. Windows System directory (e.g. `C:\windows\system32`)
+ 4. Windows Directory (e.g. `C:\windows`)
+ 5. all directories along `%PATH%`
+
 ## Certificate pinning
 
 TBD

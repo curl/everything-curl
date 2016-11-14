@@ -30,7 +30,7 @@ open brace.
 ### Comments
 
 Since we write C89 code, // aren't allowed. They weren't introduced in the C
-standard until C99. We use only /* and */ comments:
+standard until C99. We use only /\* and \*/ comments:
 
     /* this is a comment */
 

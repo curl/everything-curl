@@ -10,8 +10,8 @@ When sending SMTP with curl, there are a two necessary command line options
 that **must** be used.
 
  - You need to tell the server at least one recepient with `--mail-rcpt`. You
-   can use this option several times and then curl will tell the server that all
-   those email addresses should receive the email.
+   can use this option several times and then curl will tell the server that
+   all those email addresses should receive the email.
 
  - You need to tell the server which email address that is the sender of the
    email with `--mail-from`. It is important to realize that this email
@@ -41,19 +41,31 @@ A basic command line to send an email:
 
 ## Secure mail transfer
 
-Like with most other protocols curl speaks, you can also ask curl to speak
-SMTP securely over TLS. Ask curl to _try_ using secure transfers by adding
-`--ssl` to the command line, so to redo the previous command but try to do it
-to avoid evesdroppers:
+Some mail providers allow or require using SSL for SMTP. They may use a
+dedicated port for SSL or allow SSL upgrading over a plaintext connection.
 
-    curl --ssl smtp://mail.example.com --mail-from myself@example.com --mail-rcpt
-    receiver@example.com --upload-file email.txt
+If your mail provider has a dedicated SSL port you can use smtps:// instead of
+smtp://, which uses the SMTP SSL port of 465 by default and requires the entire
+connection to be SSL. For example smtps://smtp.gmail.com/.
 
-To make really sure the email transfer is done securely, you can insist on a
-secure transfer with `--ssl-reqd`:
+However, if your provider allows upgrading from plaintext to secure transfers
+you can use one of these options:
+
+    --ssl           Try SSL/TLS (FTP, IMAP, POP3, SMTP)
+    --ssl-reqd      Require SSL/TLS (FTP, IMAP, POP3, SMTP)
+
+
+You can tell curl to _try_ but not require upgrading to secure transfers by
+adding `--ssl` to the command line:
+
+    curl --ssl smtp://mail.example.com --mail-from myself@example.com
+         --mail-rcpt receiver@example.com --upload-file email.txt
+
+You can tell curl to _require_ upgrading to using secure transfers by adding
+`--ssl-reqd` to the command line:
 
     curl --ssl-reqd smtp://mail.example.com --mail-from myself@example.com
-    --mail-rcpt receiver@example.com --upload-file email.txt
+         --mail-rcpt receiver@example.com --upload-file email.txt
 
 ## The SMTP URL
 

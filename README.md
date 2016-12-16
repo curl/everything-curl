@@ -32,7 +32,7 @@ accessible links to read the book online in a web version or download a copy
 for offline reading using one of the many different versions offered,
 including PDF, ePUB and MOBI.
 
-**http://ec.haxx.se** is a shortcut to the HTML version of the book.
+**https://ec.haxx.se** is a shortcut to the HTML version of the book.
 
 **https://github.com/bagder/everything-curl** hosts all the book content.
 

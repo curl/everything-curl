@@ -1,8 +1,8 @@
 ## List all command-line options
 
-curl has more than one hundred command-line options and the number of options
-keep increasing over time. Chances are the number of options will surpass 200
-within a year or two.
+curl has more than two hundred command-line options and the number of options
+keep increasing over time. Chances are the number of options will reach 250
+within a few years.
 
 In order to find out which options you need to perform as certain action, you
 can, of course, list all options, scan through the list and pick the one you're

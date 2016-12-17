@@ -133,15 +133,52 @@ until the moment it connects, so once the TCP connection has been established
 it can then again take longer time. See the [Timeouts](usingcurl-timeouts.md)
 section for more on generic curl timeouts.
 
-## Specify network interface
+## Network interface
 
-TBD
+On machines with multiple network interfaces that are connected to multiple
+networks, there are siutuations where you can decide which network interface
+you'd prefer the outgoing network traffic to use. Or which originating IP
+address (out of the multiple ones you have) to use in the communication.
+
+Tell curl which network interface, which IP address or even host name that
+you'd like to "bind" your local end of the communication to, with the
+`--interface` option:
+
+    curl --interface eth1 https://www.example.com/
+
+    curl --interface 192.168.0.2 https://www.example.com/
+
+    curl --interface machine2 https://www.example.com/
 
 ## Local port number
 
---local-port
+A TCP connection is created betweeen an IP address and a port number in the
+local end and an IP address and a port number in the remote end. The remote
+port number can be specified in the URL and usually helps identify which
+service you're targetting.
 
-TBD
+The local port number is usually just randomly assigne to your TCP connection
+by the network stack and you normally don't have to bother yourself with
+thinking about that much further. However, in some circumstances you find
+yourself behind network equipment, firewalls or similar setups that put
+restrictions on what source port numbers that can be allowed to set up the
+outgoing connections.
+
+For such situations and others, you can specify which local ports curl should
+bind the the connection to. You can specify a single port number to use, or a
+range of ports, and we always recommend using a range because ports are scarce
+resources and the exact one you want may already be in use. If you ask for a
+local port number (range) that curl can't fulfill for you, it will exit with a
+failure.
+
+Also, on most operating systems you cannot bind to port numbers below 1024
+without having a higher priviledge level (root) and we generally advice
+against running curl as root if you can avoid it.
+
+Ask curl to use a local port number between 4000 and 4200 when getting this
+HTTPS page:
+
+    curl --local-port 4000-4200 https://example.com/
 
 ## Keep alive
 

@@ -116,9 +116,22 @@ These `--dns-*` options are of course very specific and are only meant for
 those of you very aware of what you want and what these options do. But then
 they offer very customizable DNS name resolve operations.
 
-## Connection timeouts
+## Connection timeout
 
-TBD
+curl typically makes a TCP connection to the specific host as an initial part
+of its network transfer. This TCP connection can of course fail or sometimes
+be very slow depending on all sorts of shaky network conditions or perhaps
+even faulty remote servers.
+
+To reduce the impact on your scripts or other use, you can set a maximum time
+to curl for which it will allow the connect attempt to go on. With
+`--connnect-timeout` you simply tell curl the maximum time to allow for this,
+and if curl hasn't made it connect in that time it returns a failure.
+
+The connection timeout is only limiting the time curl is allowed to spend up
+until the moment it connects, so once the TCP connection has been established
+it can then again take longer time. See the [Timeouts](usingcurl-timeouts.md)
+section for more on generic curl timeouts.
 
 ## Specify network interface
 

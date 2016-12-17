@@ -95,9 +95,26 @@ connect, but in all other ways still assume it is talking to
 
 ### Name resolve tricks with c-ares
 
---dns-*
+As should be detailed elsewhere in this book, curl can get built with several
+different name resolving backends. One of those backends is powered by the
+c-ares library and when curl is built to use c-ares, it gets a few extra super
+powers that curl built to use other name resolve backends don't get. Namely
+the ability to more specificly instruct what DNS servers to use and how that
+DNS traffic is using the network.
 
-TBD
+With `--dns-servers`, you can specify exactly which DNS server curl should use
+instead of the default one. This lets you run your own experiental server that
+answers differently, or just use a backup one if your regular one seems
+unreliable or dead.
+
+With `--dns-ipv4-addr` and `--dns-ipv6-addr` you ask curl to "bind" its local
+end of the DNS communication to a specific IP address and with
+`--dns-interface` you can instruct curl to use a specific network interface to
+send its DNS requests over.
+
+These `--dns-*` options are of course very specific and are only meant for
+those of you very aware of what you want and what these options do. But then
+they offer very customizable DNS name resolve operations.
 
 ## Connection timeouts
 

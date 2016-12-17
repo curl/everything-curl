@@ -133,6 +133,15 @@ until the moment it connects, so once the TCP connection has been established
 it can then again take longer time. See the [Timeouts](usingcurl-timeouts.md)
 section for more on generic curl timeouts.
 
+If you specify a low timeout, you effectively disable curl's ability to
+connect to remote servers, slow servers or servers you access over unreliable
+networks.
+
+The connection timeout can be specified as a decimal value for subsecond
+precision. Allow 2781 milliseconds to be spent on trying to connect:
+
+    curl --connnect-timeout 2.781 https://example.com/
+
 ## Network interface
 
 On machines with multiple network interfaces that are connected to multiple
@@ -182,8 +191,31 @@ HTTPS page:
 
 ## Keep alive
 
-TBD
+TCP connections can be totally without traffic in any diection when they're
+not used. A totally idle connection can therefore not be clearly separated
+from a connection that has gone completely stale because of network or server
+issues.
 
-## SSH and TLS connections
+At the same time, lots of network equipments such as firewalls or NATs are
+these days keeping track of TCP connections so that they can translate
+adddresses, block "wrong" incoming packets and more. These devices often count
+completely idle connections as dead after N minutes, where N of course varies
+between device to device but at times is as short as 10 minutes or even less.
 
-TBD
+One way to help avoid getting a really slow connection (or an idle one) to get
+treated as dead and wrongly killed, is to make sure TCP keep alive is
+used. TCP keepalive is a feature in the TCP protocol that makes it send what
+is basically "ping frames" back and forth when it would otherwise be totally
+idle. It helps idle connections to detect breakage even when no traffic is
+flying over it and it helps middle boxes not consider the connection dead.
+
+curl uses TCP keepalive by default for the reasons mention here. But there
+might be times when you want to *disable* keepalives or you may want to change
+the interval between the TCP "pings" (curl defaults to 60 seconds). You can
+switch off keepalives with:
+
+    curl --no-keepalive https://example.com/
+
+or change the interval to 5 minutes (300 seconds) with:
+
+    curl --keepalive-time 300 https://example.com/

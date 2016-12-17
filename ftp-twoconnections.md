@@ -36,7 +36,7 @@ the second connection that then curl connects to. Outgoing connections to a
 new port are generally easier and less restricted for end users and clients,
 but it then requires that the network in the server's end allows it.
 
-Passive connections are enabled by default, but if you've switched on active
+Passive connections are enabled by default, but if you have switched on active
 before, you can switch back to passive with `--ftp-pasv`.
 
 You can also explicitly ask curl not to use EPSV (which is a slightly newer

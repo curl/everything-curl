@@ -91,7 +91,7 @@ As an example, you could POST a name to have it encoded by curl:
 
 A little convenience feature that could be suitable to mention in this context
 (even though it isn't for POSTing), is the `-G` or `--get` option, which takes
-all data you've specified with the different `-d` variants and appends that
+all data you have specified with the different `-d` variants and appends that
 data on the right end of the URL separated with a '?' and then makes curl send
 a GET instead.
 
@@ -176,7 +176,7 @@ own server or a test server that just outputs exactly what it gets. Completing
 that form submission will then show you exactly how a browser sends it.
 
 A third option is, of course, to use a network capture tool such as Wireshark to
-check exactly what is sent over the wire. If you're working with HTTPS, you
+check exactly what is sent over the wire. If you are working with HTTPS, you
 can't see form submissions in clear text on the wire but instead you need to
 make sure you can have wireshark extract your TLS private key from your
 browser. See the Wireshark documentation for details on doing that.

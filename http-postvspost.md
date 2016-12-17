@@ -14,7 +14,7 @@ data correctly. A client cannot just pick a format of its own choice.
 
 ## HTML web forms
 
-When we're talking browsers and HTML, the standard way is to offer a form to
+When we are talking browsers and HTML, the standard way is to offer a form to
 the user that sends off data when the form has been filled in. The `<form>`
 tag is what makes one of those appear on the web page. The tag instructs the
 browser how to format its POST. If the form tag includes

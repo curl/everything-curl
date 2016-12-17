@@ -62,9 +62,9 @@ the TCP stack send a probe to the other side when there's no traffic, to make
 sure that it is still there and "alive". By using keep-alive, curl is much
 more likely to discover that the TCP connection is dead.
 
-Use `--keepalive-time` to specify how often in full seconds you'd like the
+Use `--keepalive-time` to specify how often in full seconds you would like the
 probe to get sent to the peer. The default value is usually set to 7200, which
 is two full hours.
 
-Sometimes this probing disturbs what you're doing and then you can easily
+Sometimes this probing disturbs what you are doing and then you can easily
 disable it with `--no-keepalive`.

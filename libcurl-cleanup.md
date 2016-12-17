@@ -1,14 +1,14 @@
 ## Cleanup
 
-In previous sections we've discussed how to setup handles and how to drive the
-transfers. All transfers will, of course, end up at some point, either successfully
-or with a failure.
+In previous sections we have discussed how to setup handles and how to drive
+the transfers. All transfers will, of course, end up at some point, either
+successfully or with a failure.
 
 ### Multi API
 
-When you've finished a single transfer with the multi API, you use
-`curl_multi_info_read()` to identify exactly which easy handle was
-completed and you remove that easy handle from the multi handle with
+When you have finished a single transfer with the multi API, you use
+`curl_multi_info_read()` to identify exactly which easy handle was completed
+and you remove that easy handle from the multi handle with
 `curl_multi_remove_handle()`.
 
 If you remove the last easy handle from the multi handle so there are no more

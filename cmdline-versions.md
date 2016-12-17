@@ -4,9 +4,9 @@
 already then worked on the specified URL and none, one or more command-line
 options given to it.
 
-Since then we've added more options. We add options as we go along and almost
-every new release of curl has one or a few new options that allow users to
-modify certain aspects of its operation.
+Since then we have added more options. We add options as we go along and
+almost every new release of curl has one or a few new options that allow users
+to modify certain aspects of its operation.
 
 With the curl project's rather speedy release chain with a new release
 shipping every eight weeks, it is almost inevitable that you are at least not

@@ -124,8 +124,8 @@ set a new timeout for the next expiry period.
 
 ### How to start everything
 
-When you've added one or more easy handles to the multi handle and set the
-socket and timer callbacks in the multi handle, you're ready to start the
+When you have added one or more easy handles to the multi handle and set the
+socket and timer callbacks in the multi handle, you are ready to start the
 transfer.
 
 To kick it all off, you tell libcurl it timed out (because all easy handles

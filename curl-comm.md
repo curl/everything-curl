@@ -7,7 +7,7 @@ all communication public and we use open communication channels. Most
 discussions are held on mailing lists, we use bug trackers where all issues
 are discussed and handled with full insight for everyone who cares to look.
 
-It is important to realize that we're all jointly taking care of the project,
+It is important to realize that we are all jointly taking care of the project,
 we fix problems and we add features. Sometimes a regular contributor grows
 bored and fades away, sometimes a new eager contributor steps out from the
 shadows and starts helping out more. To keep this ship going forward as well
@@ -21,7 +21,7 @@ communication—no fancy web forums or similar. Using a mailing list is
 therefore becoming an art that isn't practised everywhere and may be a bit
 strange and unusual to you. But fear not. It is just about sending emails to
 an address that then sends that e-mail out to all the subscribers. Our mailing
-lists have at most a few thousand subscribers. If you're mailing for the first
+lists have at most a few thousand subscribers. If you are mailing for the first
 time, it might be good to read a few old mails first to get to learn the
 culture and what's considered good practice.
 

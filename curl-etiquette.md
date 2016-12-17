@@ -34,7 +34,7 @@ When replying to a message from the list, make sure that you do "group reply"
 or "reply to all", and not just reply to the author of the single mail you
 reply to.
 
-We're actively discouraging replying back to the single person by setting the
+We are actively discouraging replying back to the single person by setting the
 Reply-To: field in outgoing mails back to the mailing list address, making it
 harder for people to mail the author only by mistake.
 
@@ -69,8 +69,8 @@ for your comments. When you want to add a comment you do so, inline, right
 after the quotes that relate to your comment. Then you continue downwards
 again.
 
-When most of the quotes have been removed and you've added your own words,
-you're done!
+When most of the quotes have been removed and you have added your own words,
+you are done!
 
 #### HTML is not for mails
 

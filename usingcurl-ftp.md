@@ -13,7 +13,7 @@ important to know at times when things don't run as planned.
 ## Ping-pong
 
 The FTP protocol is a command and response protocol; the client sends a
-command and the server responds. If you use curl's `-v` option you'll get to
+command and the server responds. If you use curl's `-v` option you will get to
 see all the commands and responses during a transfer.
 
 For an ordinary transfer, there are something like 5 to 8 commands necessary

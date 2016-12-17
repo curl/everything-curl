@@ -5,10 +5,10 @@ or exit code when something goes wrong and it will always return 0 (zero) when
 the operation went as planned.
 
 If you write a shell script or batch file that invokes curl, you can always
-check the return code to detect problems in the invoked command. Below,
-you'll find a list of return codes as of the time of this writing. Over time
-we tend to slowly add new ones so if you get a code back not listed here,
-please refer to more updated curl documentation for aid.
+check the return code to detect problems in the invoked command. Below, you
+will find a list of return codes as of the time of this writing. Over time we
+tend to slowly add new ones so if you get a code back not listed here, please
+refer to more updated curl documentation for aid.
 
 A very basic Unix shell script could look like something like this:
 

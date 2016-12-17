@@ -24,17 +24,17 @@ installations.
 
 When you pop up the More tools->Developer mode in Chrome, and you select the
 Network tab you see the HTTP traffic used to get the resources of the site. On
-the line of the specific resource you're interested in, you right-click with
-the mouse and you select "Copy as cURL" and it'll generate a command line for
-you in your clipboard. Paste that in a shell to get a curl command line that
-makes the transfer. This feature is available by default in all Chome and
+the line of the specific resource you are interested in, you right-click with
+the mouse and you select "Copy as cURL" and it will generate a command line
+for you in your clipboard. Paste that in a shell to get a curl command line
+that makes the transfer. This feature is available by default in all Chome and
 Chromium installations.
 
 ![copy as curl with Chrome](chrome-copy-as-curl.png)
 
 ## On Firefox, without using the devtools
 
-If this is something you'd like to get done more often, you probably find
+If this is something you would like to get done more often, you probably find
 using the developer tools a bit inconvenient and cumbersome to pop up just to
 get the command line copied. Then
 [cliget](https://addons.mozilla.org/en-US/firefox/addon/cliget/) is the

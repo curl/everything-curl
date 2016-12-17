@@ -63,11 +63,11 @@ test cases, runs the test and verifies that the outcome is the correct one
 and that no other problem happened, like a memory leak or something fishy in
 the protocol layer.
 
-The test suite is meant to be possible to run after you've built curl yourself
-and there are a fair number of volunteers who also help out by running the
-test suite automatically a few times per day to make sure the latest commits
-get a run. This way, we hopefully discover the worst flaws pretty soon after
-they were introduced.
+The test suite is meant to be possible to run after you have built curl
+yourself and there are a fair number of volunteers who also help out by
+running the test suite automatically a few times per day to make sure the
+latest commits get a run. This way, we hopefully discover the worst flaws
+pretty soon after they were introduced.
 
 We don't test everything and even when we try to test things there will always
 be subtle details that get through and that we, sometimes years after the

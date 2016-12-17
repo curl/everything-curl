@@ -146,11 +146,11 @@ precision. Allow 2781 milliseconds to be spent on trying to connect:
 
 On machines with multiple network interfaces that are connected to multiple
 networks, there are siutuations where you can decide which network interface
-you'd prefer the outgoing network traffic to use. Or which originating IP
+you would prefer the outgoing network traffic to use. Or which originating IP
 address (out of the multiple ones you have) to use in the communication.
 
-Tell curl which network interface, which IP address or even host name that
-you'd like to "bind" your local end of the communication to, with the
+Tell curl which network interface, which IP address or even host name that you
+wouldd like to "bind" your local end of the communication to, with the
 `--interface` option:
 
     curl --interface eth1 https://www.example.com/
@@ -164,7 +164,7 @@ you'd like to "bind" your local end of the communication to, with the
 A TCP connection is created betweeen an IP address and a port number in the
 local end and an IP address and a port number in the remote end. The remote
 port number can be specified in the URL and usually helps identify which
-service you're targetting.
+service you are targetting.
 
 The local port number is usually just randomly assigne to your TCP connection
 by the network stack and you normally don't have to bother yourself with
@@ -191,7 +191,7 @@ HTTPS page:
 
 ## Keep alive
 
-TCP connections can be totally without traffic in any diection when they're
+TCP connections can be totally without traffic in any diection when they are
 not used. A totally idle connection can therefore not be clearly separated
 from a connection that has gone completely stale because of network or server
 issues.

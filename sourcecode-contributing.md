@@ -8,7 +8,7 @@ are not breaking any contracts or laws by providing that to us. If you don't
 have permission, don't contribute it to us.
 
 Contributing to a project like curl could be many different things. While
-source code is the stuff that is needed to build the products, we're also
+source code is the stuff that is needed to build the products, we are also
 depending on good documentation, testing (both test code and test
 infrastructure), web content, user support and more.
 
@@ -48,7 +48,7 @@ Of course, you can also add contents to the project that isn't code, like
 documentation, graphics or web site contents, but the general rules apply
 equally to that.
 
-If you're fixing a problem you have or a problem that others are reporting, we
+If you are fixing a problem you have or a problem that others are reporting, we
 will be thrilled to receive your fix and merge it as soon as possible!
 
 ### What not to add
@@ -71,7 +71,7 @@ to get less friction and to be successful, faster:
 
 - Quick hacks or dirty solutions that have a high risk of not working on
   platforms you don't run or on architectures you don't know. We don't care if
-  you're in a hurry or that it works for you. We do not accept high risk code
+  you are in a hurry or that it works for you. We do not accept high risk code
   or code that is hard to read or understand.
 
 - Code that breaks the build. Sure, we accept that we sometimes have to add
@@ -134,7 +134,7 @@ users go directly to `git send-email` and have git send the e-mail itself!
 ### git commit style
 
 When you commit a patch to git, you give it a commit message that describes
-the change you're committing. We have a certain style in the project that we
+the change you are committing. We have a certain style in the project that we
 ask you to use:
 
     [area]: [short line describing the main effect]

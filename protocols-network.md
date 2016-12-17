@@ -74,8 +74,8 @@ will do a TLS handshake first and only continue further if that succeeds.
 
 ### Transfer data
 
-When the connecting "string" we call TCP is attached to the remote computer (and we've
-done the possible additional TLS handshake), there's an established connection
-between the two machines and that connection can then be used to exchange
-data. That communication is done using a "protocol", as discussed in the
-following chapter.
+When the connecting "string" we call TCP is attached to the remote computer
+(and we have done the possible additional TLS handshake), there's an
+established connection between the two machines and that connection can then
+be used to exchange data. That communication is done using a "protocol", as
+discussed in the following chapter.

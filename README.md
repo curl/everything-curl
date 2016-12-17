@@ -8,13 +8,13 @@ why all those millions of existing users use it.
 
 This book is meant to be interesting and useful to both casual readers and the
 somewhat more experienced developers, and offers something for you all to pick
-and choose from. Don't read it from front to back. Read the chapters you're
+and choose from. Don't read it from front to back. Read the chapters you are
 curious about and go back and forth as you see fit.
 
 I hope to run this book project as I do all other projects I work on: in the
 open, completely free to download and read, free for anyone to comment on,
 available for everyone to contribute to and help out with. Send your bug
-reports, pull requests or critiques to me and I'll improve this book
+reports, pull requests or critiques to me and I will improve this book
 accordingly.
 
 This book will never be finished. I intend to keep working on it and while I
@@ -48,7 +48,7 @@ site](https://daniel.haxx.se/).
 ## Help!
 
 If you find mistakes, omissions, errors or blatant lies in this document,
-please send me a refreshed version of the affected paragraph and I'll make
+please send me a refreshed version of the affected paragraph and I will make
 amended versions. I will give proper credits to everyone who helps out! I hope
 to make this document better over time.
 

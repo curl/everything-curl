@@ -14,7 +14,7 @@ them further down in this section.
 ### Discover your proxy
 
 Some networks are setup to require a proxy in order for you to reach the
-Internet or perhaps that special network you're interested in. The use of
+Internet or perhaps that special network you are interested in. The use of
 proxies are introduced on your network by the people and management that run
 your network for policy or technical reasons.
 
@@ -244,7 +244,7 @@ curl checks for the existence of specially-named environment variables before
 it runs to see if a proxy is requested to get used.
 
 You specify the proxy by setting a variable named `[scheme]_proxy` to hold the
-proxy host name (the same way you'd specify the host with `-x`). So if you
+proxy host name (the same way you would specify the host with `-x`). So if you
 want to tell curl to use a proxy when access a HTTP server, you set the
 'http_proxy' environment variable. Like this:
 

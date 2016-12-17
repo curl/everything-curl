@@ -19,7 +19,7 @@ about HTML or anything else of the content that is popular to transfer over
 HTTP, but it knows all about how to transfer such data over HTTP.
 
 Both products are frequently used not only to drive thousands or millions of
-scripts and applications for an Internet connected world, but they're also
+scripts and applications for an Internet connected world, but they are also
 widely used for server testing, protocol fiddling and trying out new things.
 
 The library is used in every imaginable sort of embedded device where Internet

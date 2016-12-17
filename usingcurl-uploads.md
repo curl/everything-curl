@@ -69,7 +69,7 @@ then that will be the file name used when stored remotely:
     curl -T uploadthis ftp://example.com/this/directory/
 
 So if you prefer to select a different file name on the remote side than what
-you've used locally, you specify it in the URL:
+you have used locally, you specify it in the URL:
 
     curl -T uploadthis ftp://example.com/this/directory/remotename
 
@@ -93,7 +93,7 @@ curl/SMTP](usingcurl-smtp.md) section.
 The general progress meter curl provides (see the [Progress
 meter](cmdline-progressmeter.md) section) works fine for uploads as well.
 What needs to be remembered is that the progress meter is automatically
-disabled when you're sending output to stdout, and most protocols curl support
+disabled when you are sending output to stdout, and most protocols curl support
 can output something even for an upload.
 
 Therefore, you may need to explicitly redirect the downloaded data to a file

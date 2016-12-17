@@ -106,7 +106,7 @@ For this, curl offers two other options that you use instead of `-v`.
 
 `--trace [filename]` will save a full trace in the given file name. You can
 also use '-' (a single minus) instead of a file name to get it passed to
-stdout. You'd use it like this:
+stdout. You would use it like this:
 
     $ curl --trace dump http://example.com
 
@@ -310,7 +310,7 @@ Some of these variables are not available in really old curl versions.
   lasted. The time will be displayed with millisecond resolution.
 
 - %{url_effective} shows the URL that was fetched last. This is particularly
-  meaningful if you've told curl to follow Location: headers (with `-L`).
+  meaningful if you have told curl to follow Location: headers (with `-L`).
 
 ### Silence
 

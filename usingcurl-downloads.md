@@ -2,7 +2,7 @@
 
 "Download" means getting data from a server on a network, and the server is
 then clearly considered to be above you. This is loading data down from the
-server to your machine where you're running curl.
+server to your machine where you are running curl.
 
 Downloading is probably the most common use case for curl—getting the specific
 data onto your machine, pointed to by a URL.
@@ -34,11 +34,11 @@ etc.
 
 ### Storing downloads
 
-If you try the example download as in the previous section, you'll notice that
-curl will output the downloaded data to stdout unless told to do something
-else. Outputting data to stdout is really useful when you want to pipe it into
-another program or similar, but it is not always the optimal way to deal with
-your downloads.
+If you try the example download as in the previous section, you will notice
+that curl will output the downloaded data to stdout unless told to do
+something else. Outputting data to stdout is really useful when you want to
+pipe it into another program or similar, but it is not always the optimal way
+to deal with your downloads.
 
 Give curl a specific file name to save the download in with `-o [filename]`
 (with `--output` as the long version of the option), where filename is either
@@ -115,11 +115,11 @@ downloads a web page with something like:
 
     $ curl https://example.com/ -o storage.html
 
-…and when inspecting the `storage.html` file after the fact, the user
-realizes that one or more characters look funny or downright wrong. This can
-then very well be because the server sent the characters using charset X,
-while your editor and environment use charset Y. In an ideal world, we'd all
-use UTF-8 everywhere but unfortunately, that is still not the case.
+…and when inspecting the `storage.html` file after the fact, the user realizes
+that one or more characters look funny or downright wrong. This can then very
+well be because the server sent the characters using charset X, while your
+editor and environment use charset Y. In an ideal world, we would all use
+UTF-8 everywhere but unfortunately, that is still not the case.
 
 A common work-around for this issue that works decently is to use the
 common `iconv` utility to translate a text file to and from different
@@ -243,7 +243,7 @@ pass those URLs to curl and ask it to get those, just like any other URLs.
 
 Clients also differ in how they send their requests, and some aspects of a
 request for a resource include, for example, format preferences, asking for
-compressed data, or just telling the server from which previous page we're
+compressed data, or just telling the server from which previous page we are
 "coming from". curl's requests will differ a little or a lot from how your
 browser sends its requests.
 
@@ -285,7 +285,7 @@ Interfering intermediaries are often the cause of lots of head aches and
 mysteries down to downright malicious modifications of content.
 
 We strongly encourage you to use HTTPS or other means to verify that the
-contents you're downloading or uploading are really the data that the remote
+contents you are downloading or uploading are really the data that the remote
 server has sent to you and that your precious bytes end up verbatim at the
 intended destination.
 
@@ -294,7 +294,7 @@ intended destination.
 When curl transfers data, it will attempt to do that as fast as possible. It
 goes for both uploads and downloads. Exactly how fast that will be depends on
 several factors, including your computer's ability, your own network
-connection's bandwidth, the load on the remote server you're transferring
+connection's bandwidth, the load on the remote server you are transferring
 to/from and the latency to that server. And your curl transfers are also
 likely to compete with other transfers on the networks the data travels
 over, from other users or just other apps by the same user.
@@ -381,7 +381,7 @@ issued.
 When `--raw` is used, it disables all internal HTTP decoding of content or
 transfer encodings and instead makes curl passed on unaltered, raw, data.
 
-This is typically used if you're writing some sort of middle software and you
+This is typically used if you are writing some sort of middle software and you
 want to pass on the content to perhaps another HTTP client and allow that to
 do the decoding instead.
 

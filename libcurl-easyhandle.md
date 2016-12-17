@@ -24,7 +24,7 @@ Read more on [easy options](libcurl-options.md) in its separate section.
 All options are "sticky". They remain set in the handle until you change them
 again, or call `curl_easy_reset()` on the handle.
 
-When you're done setting options to your easy handle, you can fire off the
+When you are done setting options to your easy handle, you can fire off the
 actual transfer.
 
 The actual "perform the transfer phase" can be done using different
@@ -43,6 +43,6 @@ do a wide variety of things.
 
 ### Reuse!
 
-Easy handles are meant and designed to be reused. When you've done a single
+Easy handles are meant and designed to be reused. When you have done a single
 transfer with the easy handle, you can immediately use it again for your next
 transfer. There are lots of gains to be had by this.

@@ -15,7 +15,7 @@ wants to request a page requiring HTTP authentication and her password is
 
 ### Command line leakage
 
-Several potentially bad things are going on here. First, we're entering a
+Several potentially bad things are going on here. First, we are entering a
 password on the command line and the command line might be readable for other
 users on the same system (assuming you have a multi-user system). curl
 will help minimize that risk by trying to blank out passwords from process

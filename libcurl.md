@@ -13,10 +13,10 @@ information as you can and want, and then you tell libcurl to perform that
 transfer.
 
 That said, networking and protocols are areas with lots of pitfalls and
-special cases so the more you know about these things, the more you'll be able
-to understand about libcurl's options and ways of working. Not to mention,
-such knowledge is invaluable when you're debugging and need to understand what
-to do next when things don't go as you intended.
+special cases so the more you know about these things, the more you will be
+able to understand about libcurl's options and ways of working. Not to
+mention, such knowledge is invaluable when you are debugging and need to
+understand what to do next when things don't go as you intended.
 
 The most basic libcurl using application can be as small as just a couple of
 lines of code, but most applications will, of course, need more code than that.

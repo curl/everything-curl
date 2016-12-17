@@ -24,9 +24,9 @@ machine.
 
 ## configure
 
-Below, you'll learn how to tell configure to use the different libraries. Note
-that for all libraries except OpenSSL and its siblings, you must *disable* the
-check for OpenSSL by using `--without-ssl`.
+Below, you will learn how to tell configure to use the different
+libraries. Note that for all libraries except OpenSSL and its siblings, you
+must *disable* the check for OpenSSL by using `--without-ssl`.
 
 ### OpenSSL, BoringSSL, libressl
 

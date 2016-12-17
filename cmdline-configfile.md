@@ -51,7 +51,7 @@ The argument to an option can be specified without double quotes and then curl
 will treat the next space or newline as the end of the argument. So if you
 want to provide an argument with embedded spaces you must use double quotes.
 
-The user agent string example we've used above has no white spaces and
+The user agent string example we have used above has no white spaces and
 therefore it can also be provided without the quotes like:
 
     user-agent = Everything-is-an-agent

@@ -24,7 +24,7 @@ Let's try to use the correct UTF-8 characters!
 
 ## Avoid the short forms of dir and repo
 
-They're rather called "directory" and "respository"
+They are rather called "directory" and "respository"
 
 ## Internet with a capital I
 

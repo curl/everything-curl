@@ -85,7 +85,7 @@ it will not flush session cookies unless you tell it to.
 ### New cookie session
 
 Instead of telling curl when a session ends, in order to flush session cookies
-and with this basically signal to the server that we're starting a new
+and with this basically signal to the server that we are starting a new
 session, curl features an option that lets the user tell when a new session
 begins.
 

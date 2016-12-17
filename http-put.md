@@ -1,6 +1,6 @@
 ## PUT
 
-The difference between a PUT and a POST is subtle. They're virtually identical
+The difference between a PUT and a POST is subtle. They are virtually identical
 over the wire except for the different method strings. Where POST is meant to
 pass on data to a remote resource, PUT is supposed to be the new version of
 that resource.

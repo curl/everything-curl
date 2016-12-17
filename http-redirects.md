@@ -108,7 +108,7 @@ different host curl limits what it sends away to other hosts than the original
 within the same "transfer".
 
 So if you want the credentials to also get sent to the following host names
-even though they're not the same as the original—presumably because you
+even though they are not the same as the original—presumably because you
 trust them and know that there's no harm in doing that—you can tell curl that
 it is fine to do so by using the `--location-trusted` option.
 

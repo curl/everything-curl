@@ -17,7 +17,7 @@ provided by the curl project, lots of people install it using a package tool
 for their operating system and yet another portion of users download binary
 install packages from sources they trust.
 
-No matter how you do it, make sure you're getting your version from a trusted
+No matter how you do it, make sure you are getting your version from a trusted
 source and that you verify digital signatures or the authenticity of the
 packages in other ways.
 

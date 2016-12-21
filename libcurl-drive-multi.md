@@ -92,3 +92,17 @@ to wait, like if you read from your own sockets or a pipe or similar.
 And again, you can add and remove easy handles to the multi handle at any
 point during the looping. Removing a handle mid-transfer will, of course, abort
 that transfer.
+
+## When is a single transfer done?
+
+As the examples above show, a program can detect when an individual transfer
+completes by seeing that the `transfers_running` variable decreases.
+
+It can also call `curl_multi_info_read()`, which will return a pointer to a
+struct (a "message") if a transfer has ended and you can then find out the
+result of that transfer using that struct.
+
+When you do multiple parallel transfers, more than one transfer can of course
+complete in the same `curl_multi_perform` invoke and then you might need more
+than one call to `curl_multi_info_read` to get info about each completed
+transfer.

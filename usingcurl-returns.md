@@ -21,32 +21,66 @@ A very basic Unix shell script could look like something like this:
 
 ## List of all exit codes
 
- 1. Unsupported protocol. This build of curl has no support for this protocol.
+ 1. Unsupported protocol. This build of curl has no support for this
+    protocol. Usually this happens because the URL was misspelled to use a
+    sheme part that either as a space in front of it or spells "http" like
+    "htpt" or similar. Another common mistake is that you use a libcurl
+    installation that was built with one or more protocols disabled and you
+    now ask libcurl to use one of those protocols that were disabled in the
+    build.
 
- 2. Failed to initialize.
+ 2. Failed to initialize. This is mostly an internal error or a problem with
+    the libcurl installation or system libcurl runs in.
 
- 3. URL malformed. The syntax was not correct.
+ 3. URL malformed. The syntax was not correct. This happens when you mistype a
+    URL so that it ends up wrong, or in rare situations you're using a URL
+    that is accepted by another tool that curl doesn't support only because
+    there's no proper univeral URL standard that everyone adheres to.
 
  4. A feature or option that was needed to perform the desired request was
     not enabled or was explicitly disabled at build-time. To make curl able
     to do this, you probably need another build of libcurl!
 
- 5. Couldn't resolve proxy. The address of the given proxy host could not be resolved.
+ 5. Couldn't resolve proxy. The address of the given proxy host could not be
+    resolved. Either the given proxy name is just wrong, or the DNS server is
+    misbehaving and doesn't know about this name when it should or perhaps
+    even the system you run curl on is misconfigured so that it doesn't
+    find/use the correct DNS server.
 
- 6. Couldn't resolve host. The given remote host's address was not resolved.
+ 6. Couldn't resolve host. The given remote host's address was not
+    resolved. The address of the given server could not be resolved. Either
+    the given host name is just wrong, or the DNS server is misbehaving and
+    doesn't know about this name when it should or perhaps even the system you
+    run curl on is misconfigured so that it doesn't find/use the correct DNS
+    server.
 
- 7. Failed to connect to host.
+ 7. Failed to connect to host. curl managed to get an IP address to the
+    machine and it tried to setup a TCP connection to the host but
+    failed. This can be because you've specified the wrong port number,
+    entered the wrong host name, the wrong protocol or perhaps because there's
+    a firewal or another network equipment in between that blocks the traffic
+    from getting through.
 
- 8. Unknown FTP server response. The server sent data curl couldn't parse.
+ 8. Unknown FTP server response. The server sent data curl couldn't
+    parse. This is either because of a bug in curl, a bug in the server or
+    because the server is using an FTP protocol extension that curl doesn't
+    support. The only real work-around for this is to tweak curl options to
+    try it to use other FTP commands that perhaps won't get this unknown
+    server response back.
 
  9. FTP access denied. The server denied login or denied access to the
-    particular resource or directory you wanted to reach. Most often you
-    tried to change to a directory that doesn't exist on the server.
+    particular resource or directory you wanted to reach. Most often you tried
+    to change to a directory that doesn't exist on the server. The directory
+    of course is what you specify in the URL.
 
  10. **Not used**
 
  11. FTP weird PASS reply. Curl couldn't parse the reply sent to the PASS
-    request.
+    request. PASS in the command curl sends the password to the server with,
+    and even anonymous connections to FTP server actually sends a password - a
+    fixed anonymous string. Getting a response back from this command that
+    curl doesn't understand is a strong indication that this isn't an FTP
+    server at all or that the server is badly broken.
 
  12. **Not used**
 
@@ -218,3 +252,10 @@ A very basic Unix shell script could look like something like this:
  89. No connection available, the session will be queued
 
  90. SSL public key does not matched pinned public key
+
+## Error message
+
+When curl exists with a non-zero return code, it will also output an error
+message (unless `--silent` is used). That error message may add some
+additional info or circumstance to the error code itself so the same error
+code can get different error messages.

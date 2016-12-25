@@ -1,8 +1,8 @@
-# curl return codes
+# curl exit status
 
-A lot of effort has gone into the project to make curl return a usable return
-or exit code when something goes wrong and it will always return 0 (zero) when
-the operation went as planned.
+A lot of effort has gone into the project to make curl return a usable exit
+code when something goes wrong and it will always return 0 (zero) when the
+operation went as planned.
 
 If you write a shell script or batch file that invokes curl, you can always
 check the return code to detect problems in the invoked command. Below, you
@@ -19,7 +19,7 @@ A very basic Unix shell script could look like something like this:
        echo "the curl command failed with: $res"
     fi
 
-## List of all exit codes
+## Exit status list
 
  1. Unsupported protocol. This build of curl has no support for this
     protocol. Usually this happens because the URL was misspelled to use a
@@ -255,7 +255,7 @@ A very basic Unix shell script could look like something like this:
 
 ## Error message
 
-When curl exists with a non-zero return code, it will also output an error
-message (unless `--silent` is used). That error message may add some
-additional info or circumstance to the error code itself so the same error
-code can get different error messages.
+When curl exits with a non-zero code, it will also output an error message
+(unless `--silent` is used). That error message may add some additional info
+or circumstance to the exit status number itself so the same error number can
+get different error messages.

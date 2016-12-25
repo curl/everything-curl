@@ -44,7 +44,7 @@
     * [Timeouts](usingcurl-timeouts.md)
     * [.netrc](usingcurl-netrc.md)
     * [Proxies](usingcurl-proxies.md)
-    * [Return codes](usingcurl-returns.md)
+    * [Exit status](usingcurl-returns.md)
     * [FTP](usingcurl-ftp.md)
         * [Two connections](ftp-twoconnections.md)
         * [Directory traversing](ftp-traversedir.md)

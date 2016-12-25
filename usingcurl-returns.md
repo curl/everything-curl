@@ -1,4 +1,4 @@
-# curl exit status
+# Exit status
 
 A lot of effort has gone into the project to make curl return a usable exit
 code when something goes wrong and it will always return 0 (zero) when the
@@ -19,7 +19,7 @@ A very basic Unix shell script could look like something like this:
        echo "the curl command failed with: $res"
     fi
 
-## Exit status list
+## Available exit codes
 
  1. Unsupported protocol. This build of curl has no support for this
     protocol. Usually this happens because the URL was misspelled to use a
@@ -33,9 +33,9 @@ A very basic Unix shell script could look like something like this:
     the libcurl installation or system libcurl runs in.
 
  3. URL malformed. The syntax was not correct. This happens when you mistype a
-    URL so that it ends up wrong, or in rare situations you're using a URL
+    URL so that it ends up wrong, or in rare situations you are using a URL
     that is accepted by another tool that curl doesn't support only because
-    there's no proper univeral URL standard that everyone adheres to.
+    there is no proper univeral URL standard that everyone adheres to.
 
  4. A feature or option that was needed to perform the desired request was
     not enabled or was explicitly disabled at build-time. To make curl able
@@ -56,10 +56,10 @@ A very basic Unix shell script could look like something like this:
 
  7. Failed to connect to host. curl managed to get an IP address to the
     machine and it tried to setup a TCP connection to the host but
-    failed. This can be because you've specified the wrong port number,
-    entered the wrong host name, the wrong protocol or perhaps because there's
-    a firewal or another network equipment in between that blocks the traffic
-    from getting through.
+    failed. This can be because you have specified the wrong port number,
+    entered the wrong host name, the wrong protocol or perhaps because there
+    is a firewal or another network equipment in between that blocks the
+    traffic from getting through.
 
  8. Unknown FTP server response. The server sent data curl couldn't
     parse. This is either because of a bug in curl, a bug in the server or
@@ -302,3 +302,14 @@ When curl exits with a non-zero code, it will also output an error message
 (unless `--silent` is used). That error message may add some additional info
 or circumstance to the exit status number itself so the same error number can
 get different error messages.
+
+## "Not used"
+
+The list of exit codes above contains a number of values marked as 'not
+used'. Those are exit status codes that aren't used in modern versions of curl
+but that have been used or were intended to be used in the past. They may very
+well be used in a future version of curl.
+
+Additionally, the highest used error status in this list is 90, but there is
+no guarantee that a future curl version won't decide to add more exit codes
+after that number.

@@ -73,7 +73,9 @@ A very basic Unix shell script could look like something like this:
     to change to a directory that doesn't exist on the server. The directory
     of course is what you specify in the URL.
 
- 10. **Not used**
+ 10. FTP accept failed. While waiting for the server to connect back when an
+    active FTP session is used, an error code was sent over the control
+    connection or similar.
 
  11. FTP weird PASS reply. Curl couldn't parse the reply sent to the PASS
     request. PASS in the command curl sends the password to the server with,
@@ -82,8 +84,12 @@ A very basic Unix shell script could look like something like this:
     curl doesn't understand is a strong indication that this isn't an FTP
     server at all or that the server is badly broken.
 
- 12. **Not used**
-
+ 12. During an active FTP session (PORT is used) while waiting for the server
+    to connect, the timeout expired. It took too long for the server to get
+    back. This is usually a sign that something is preventing the server from
+    reaching curl succecssfully. Like a firewall or other network
+    arrangements.
+.
  13. Unknown response to FTP PASV command, Curl couldn't parse the reply sent
     to the PASV request. This is a strange server. PASV is used to setup the
     second data tranfer connection in passive mode, see the [FTP uses two
@@ -100,7 +106,9 @@ A very basic Unix shell script could look like something like this:
  15. FTP can't get host. Couldn't use the host IP address we got in the
     227-line. This is most likely an internal error!
 
- 16. **Not used**
+ 16. HTTP/2 error. A problem was detected in the HTTP2 framing layer. This is
+    somewhat generic and can be one out of several problems, see the error
+    message for details.
 
  17. FTP couldn't set binary. Couldn't change transfer method to binary. This
     server is broken. curl needs to set the transfer to the correct mode

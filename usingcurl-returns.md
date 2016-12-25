@@ -97,8 +97,8 @@ A very basic Unix shell script could look like something like this:
     able to work-around this problem by using PORT instead, with the
     `--ftp-port` option.
 
- 14. Unknown FTP 227 format. Curl couldn't parse the 227-line the server sent
-    - this is basically a broken server. A 227 is the FTP server's response
+ 14. Unknown FTP 227 format. Curl couldn't parse the 227-line the server sent.
+    This is most certainly a broken server. A 227 is the FTP server's response
     when sending back information on how curl should connect back to it in
     passive mode. You might be able to work-around this problem by using PORT
     instead, with the `--ftp-port` option.
@@ -136,7 +136,7 @@ A very basic Unix shell script could look like something like this:
 
  22. HTTP page not retrieved. The requested url was not found or returned
     another error with the HTTP error code being 400 or above. This return
-    code only appears if -f, --fail is used.
+    code only appears if `-f, --fail` is used.
 
  23. Write error. Curl couldn't write data to a local filesystem or
     similar. curl receives data chunk by chunk from the network and it stores

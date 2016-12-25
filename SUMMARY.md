@@ -27,6 +27,7 @@
 * [Network and protocols](protocols.md)
     * [Networking simplified](protocols-network.md)
     * [Protocols](protocols-protocols.md)
+    * [curl protocols](protocols-curl.md)
 * [Command line basics](cmdline.md)
     * [Command line options](cmdline-options.md)
     * [Options depend on version](cmdline-versions.md)

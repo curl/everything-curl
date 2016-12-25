@@ -38,6 +38,7 @@
     * [Progress meter](cmdline-progressmeter.md)
 * [Using curl](usingcurl.md)
     * [Verbose](usingcurl-verbose.md)
+    * [Persistent connections](usingcurl-persist.md)
     * [Downloads](usingcurl-downloads.md)
     * [Uploads](usingcurl-uploads.md)
     * [Connections](usingcurl-connections.md)

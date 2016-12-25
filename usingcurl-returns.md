@@ -84,57 +84,100 @@ A very basic Unix shell script could look like something like this:
 
  12. **Not used**
 
- 13. Unknown response to FTP PASV command, Curl couldn't parse the reply
-    sent to the PASV request.
+ 13. Unknown response to FTP PASV command, Curl couldn't parse the reply sent
+    to the PASV request. This is a strange server. PASV is used to setup the
+    second data tranfer connection in passive mode, see the [FTP uses two
+    connections](ftp-twoconnections.md) section for more on that. You might be
+    able to work-around this problem by using PORT instead, with the
+    `--ftp-port` option.
 
- 14. Unknown FTP 227 format. Curl couldn't parse the 227-line the server
-    sent.
+ 14. Unknown FTP 227 format. Curl couldn't parse the 227-line the server sent
+    - this is basically a broken server. A 227 is the FTP server's response
+    when sending back information on how curl should connect back to it in
+    passive mode. You might be able to work-around this problem by using PORT
+    instead, with the `--ftp-port` option.
  
- 15. FTP can't get host. Couldn't resolve the host IP address we got in the
-    227-line.
+ 15. FTP can't get host. Couldn't use the host IP address we got in the
+    227-line. This is most likely an internal error!
 
  16. **Not used**
 
- 17. FTP couldn't set binary. Couldn't change transfer method to binary.
+ 17. FTP couldn't set binary. Couldn't change transfer method to binary. This
+    server is broken. curl needs to set the transfer to the correct mode
+    before it is started as otherwise the transfer can't work.
 
- 18. Partial file. Only a part of the file was transferred.
+ 18. Partial file. Only a part of the file was transferred. When the transfer
+    is considered complete, curl will verify that it actually received the
+    same amount of data that it was told before-hand that it was going to
+    get. If the two numbers don't match, this is the error code. It may mean
+    that curl to less than advertised or that it got more. curl itself cannot
+    know which number that is wrong or which is correct. If any.
 
  19. FTP couldn't download/access the given file. The RETR (or similar)
-    command failed.
+    command failed. curl got an error from the server when trying to download
+    the file.
 
  20. **Not used**
 
- 21. FTP quote error. A quote command returned an error from the server.
+ 21. Quote error. A quote command returned an error from the server. curl
+    allows serveral different ways to send custom commands to a IMAP, POP3,
+    SMTP or FTP server and features a generic check that the commands
+    work. When any of the individually issued commands fails, this is exit
+    status is returned. The advice is generally to watch the headers in the
+    FTP communication to better understand exactly what failed and how.
 
  22. HTTP page not retrieved. The requested url was not found or returned
-     another error with the HTTP error code being 400 or above. This return
-     code only appears if -f, --fail is used.
+    another error with the HTTP error code being 400 or above. This return
+    code only appears if -f, --fail is used.
 
- 23. Write error. Curl couldn't write data to a local filesystem or similar.
+ 23. Write error. Curl couldn't write data to a local filesystem or
+    similar. curl receives data chunk by chunk from the network and it stores
+    it like at (or writes it to stdout), one piece at a time. If that write
+    action gets an error, this is the exit status.
 
  24. **Not used**
 
- 25. The FTP server refused to store the file. The server denied the STOR
-     operation used for FTP uploading.
+ 25. Upload failed. The server refused to accept or store the file that curl
+    tried to send to it. This is usually due to wrong access rights on the
+    server but can also happen due to out of disk space or other resource
+    constraints. This error can happen for many protocols.
 
- 26. Read error. Various reading problems.
+ 26. Read error. Various reading problems. The inverse to exit status 23. When
+    curl sends data to a server, it reads data chunk by chunk from a local
+    file or stdin or similar, and if that reading fails in some way this is
+    the exit status curl will return.
 
- 27. Out of memory. A memory allocation request failed.
+ 27. Out of memory. A memory allocation request failed. curl needed to
+    allocate more memory than what the system was willing to give it and curl
+    had to exit. Try using smaller files or make sure that curl gets more
+    memory to work with.
 
- 28. Operation timeout. The specified time-out period was reached according to the
-     conditions.
+ 28. Operation timeout. The specified time-out period was reached according to
+    the conditions. curl offers several [timeouts](usingcurl-timeouts.md), and
+    this exit code tells one of those timeout limits were reached. Extend the
+    timeout or try changing something else that allows curl to finish its
+    operation faster. Often, this happens due to network and remote server
+    situations that you cannot affect locally.
 
  29. **Not used**
 
- 30. FTP PORT failed. The PORT command failed. Not all FTP servers support
-     the PORT command; try doing a transfer using PASV instead!
+ 30. FTP PORT failed. The PORT command failed. Not all FTP servers support the
+    PORT command; try doing a transfer using PASV instead! The PORT command is
+    used to ask the server to create the data connection by *connecting back*
+    to curl. See also the [FTP uses two connections](ftp-twoconnections.md)
+    section.
 
- 31. FTP couldn't use REST. The REST command failed. This command is used
-     for resumed FTP transfers.
+ 31. FTP couldn't use REST. The REST command failed. This command is used for
+    resumed FTP transfers. curl needs to issue the REST command to do range or
+    resumed transfers. The server is broken, try the same operation without
+    range/resume as a crude work-around!
 
  32. **Not used**
 
- 33. HTTP range error. The range request didn't work.
+ 33. HTTP range error. The range request didn't work. Resumed HTTP requests
+    aren't necessary acknowledged or supported, so this exit code signals that
+    for this resource on this server, there can be no range or resumed
+    transfers.
  
  34. HTTP post error. Internal post-request generation error.
 

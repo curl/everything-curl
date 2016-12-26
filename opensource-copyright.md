@@ -19,6 +19,10 @@ of any such larger organization but is completely independent and free.
 No company is controlling its destiny and the curl project does not need to
 follow any umbrella organization's guidelines.
 
+curl is not a formal company, organization or a legal entity of any kind. curl
+is just an informal collection of humans, distributed across the globe who
+work togeter on a software project.
+
 ## Legal
 
 The curl project obeys to national laws in which it works. It being a highly

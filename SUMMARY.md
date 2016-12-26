@@ -97,6 +97,7 @@
         * [RTSP interleaved data](callback-rtsp.md)
         * [FTP matching](callback-ftpmatch.md)
     * [Cleanup](libcurl-cleanup.md)
+    * [Proxies](libcurl-proxies.md)
     * [Post transfer info](libcurl-getinfo.md)
     * [API compatibility](libcurl-api.md)
     * [--libcurl](libcurl--libcurl.md)

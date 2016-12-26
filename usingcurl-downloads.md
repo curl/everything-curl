@@ -11,7 +11,7 @@ data onto your machine, pointed to by a URL.
 
 You specify the resource to download by giving curl a URL. curl defaults to
 downloading a URL unless told otherwise, and the URL identifies what to
-download. In this example the URL to download is "https://example.com":
+download. In this example the URL to download is "http://example.com":
 
     $ curl http://example.com
 
@@ -161,7 +161,7 @@ generally safer to just pick one.
 ### Shell redirects
 
 When you invoke curl from a shell or some other command-line prompt system,
-that environment generally provide you with a set of output redirection
+that environment generally provides you with a set of output redirection
 abilities. In most Linux and Unix shells and with Windows' command prompts,
 you direct stdout to a file with `> filename`. Using this, of course, makes the
 use of -o or -O superfluous.
@@ -186,7 +186,7 @@ redirect stderr with `2>file` like this:
 
 As curl can be told to download many URLs in a single command line, there are,
 of course, times when you want to store these downloads in nicely-named local
-file.
+files.
 
 The key to understanding this is that each download URL needs its own "storage
 instruction". Without said "storage instruction", curl will default to sending

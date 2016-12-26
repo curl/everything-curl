@@ -4,14 +4,6 @@ HTTP is by far the most commonly used protocol by libcurl users and libcurl
 offers countless ways of modifying such transfers. See the [HTTP protocol
 basics](http-basics.md) for some basics on how the HTTP protocol works.
 
-## HTTP/2
-
-TBD
-
-## HTTP versions
-
-TBD
-
 ## HTTPS
 
 TBD

@@ -109,6 +109,8 @@
     * [Verbose operations](libcurl-verbose.md)
     * [libcurl examples](libcurlexamples.md)
 * [HTTP with libcurl](libcurl-http.md)
+    * [HTTP responses](libcurl-http-responses.md)
+    * [HTTP requests](libcurl-http-requests.md)
     * [Cookies with libcurl](libcurl-http-cookies.md)
     * [Download](libcurl-http-download.md)
     * [Upload](libcurl-http-upload.md)

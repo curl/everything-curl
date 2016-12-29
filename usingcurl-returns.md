@@ -254,7 +254,7 @@ A very basic Unix shell script could look like something like this:
 
  51. The server's SSL/TLS certificate or SSH fingerprint failed verification.
     curl can then not be sure of the server being who it claims to be. See the
-    [using TLS with curl] (usingcurl-tls.md) section for more TLS details and
+    [using TLS with curl](usingcurl-tls.md) section for more TLS details and
     [using SCP and SFTP with curl](usingcurl-scpsftp.md) for more SSH specific
     details.
 

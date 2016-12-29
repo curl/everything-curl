@@ -187,58 +187,107 @@ A very basic Unix shell script could look like something like this:
     for this resource on this server, there can be no range or resumed
     transfers.
  
- 34. HTTP post error. Internal post-request generation error.
+ 34. HTTP post error. Internal post-request generation error. If you get this
+    error, please report the exact circumstances to the curl project!
 
- 35. A TLS/SSL connect error. The SSL handshake failed.
+ 35. A TLS/SSL connect error. The SSL handshake failed. The SSL handshake can
+    fail due to numerous different reasons so the error message may offer some
+    additional clues to this. Maybe the parties couldn't agree to a SSL/TLS
+    version, an agreeable cipher suite or similar.
 
- 36. FTP bad download resume. Couldn't continue an earlier aborted download.
+ 36. Bad download resume. Couldn't continue an earlier aborted download. When
+    asking to resume a transfer that then ends up not possible to do, this
+    error can get returned. For FILE, FTP or SFTP.
  
- 37. FILE couldn't read file. Failed to open the file. Permission problem?
+ 37. Couldn't read the given file when using the FILE:// scheme. Failed to
+    open the file. The file could be non-existing or is it a permission
+    problem perhaps?
 
- 38. LDAP cannot bind. LDAP bind operation failed.
+ 38. LDAP cannot bind. LDAP "bind" operation failed, which is a necessary step
+    in the LDAP operation and thus this means the LDAP query could not be
+    performed. Might happen because of wrong username or password and more.
 
- 39. LDAP search failed.
+ 39. LDAP search failed. The given search terms caused the LDAP search to
+    return error.
 
  40. **Not used**
 
- 41. A required LDAP function was not found.
+ 41. **Not used**
 
- 42. Aborted by callback. An application told curl to abort the operation.
+ 42. Aborted by callback. An application told libcurl to abort the
+    operation. This error code is not generally made visible to users and not
+    to users of the curl tool.
 
- 43. Internal error. A function was called with a bad parameter. Please file
-     a bug report to the curl project if this happens to you!
+ 43. Bad function argument. A function was called with a bad parameter - this
+    return code is present to help application authors to understand why
+    libcurl can't perform certain actions and should never be return by the
+    curl tool. Please file a bug report to the curl project if this happens to
+    you!
 
  44. **Not used**
 
- 45. Interface error. A specified outgoing interface could not be used.
+ 45. Interface error. A specified outgoing network interface could not be
+    used. curl will typically decide outgoing network and IP address by itself
+    but when explicitly asked to use a specific one that curl can't do, this
+    error can occur.
 
  46. **Not used**
 
- 47. Too many redirects. When following redirects, curl hit the maximum
-     number.
+ 47. Too many redirects. When following HTTP redirects, libcurl hit the
+    maximum number set by the applicatoin. The maximum number of redirects is
+    unlimited by libcurl but is set to 50 by default by the curl tool. The
+    limit is present to stop endless redirect loops. Change the limit with
+    `--max-redirs`.
  
- 48. Unknown option specified to libcurl.  Please file a bug report to the
-     curl project if this happens to you!
+ 48. Unknown option specified to libcurl. This could happen if you use a curl
+    version that is out of sync with the underlying libcurl version. Perhaps
+    your newer curl tries to use an option in the older libcurl that wasn't
+    introduced until after the libcurl version you're using but is known to
+    your curl tool code as that is newer. To decrease the risk of this and
+    make sure it doesn't happen: use curl and libcurl of the same version
+    number.
 
- 49. Malformed telnet option.
+ 49. Malformed telnet option. The telnet options you provide to curl was not
+    using the correct syntax.
 
  50. **Not used**
 
- 51. The peer's SSL certificate or SSH MD5 fingerprint was not OK.
+ 51. The server's SSL/TLS certificate or SSH fingerprint failed verification.
+    curl can then not be sure of the server being who it claims to be. See the
+    [using TLS with curl] (usingcurl-tls.md) section for more TLS details and
+    [using SCP and SFTP with curl](usingcurl-scpsftp.md) for more SSH specific
+    details.
 
- 52. The server didn't reply anything, which in this context is considered an error.
+ 52. The server didn't reply anything, which in this context is considered an
+    error. When a HTTP(S) server responds to a HTTP(S) request, it will always
+    return *something* as long as it is alive and sound. All valid HTTP
+    responses have a status line and responses headert. Not getting anything
+    at all back is an indication the server is faulty or perhaps that
+    something prevented curl from reaching the right server or that you're
+    trying to connect to the wrong port number etc.
 
  53. SSL crypto engine not found.
 
  54. Cannot set SSL crypto engine as default.
 
- 55. Failed sending network data.
+ 55. Failed sending network data. Sending data over the network is a crucial
+    part of most curl operations and when curl gets an error from the lowest
+    networking layers that the sending failed, this exit status gets
+    returned. To pintpoint why this happens, some serious digging is usually
+    required. Start with enabling verbose mode, do tracing and if possible
+    check the network traffic with a tool like wireshark or similar.
 
- 56. Failure in receiving network data.
+ 56. Failure in receiving network data. Receiving data over the network is a
+    crucial part of most curl operations and when curl gets an error from the
+    lowest networking layers that the receiving of data failed, this exit
+    status gets returned. To pintpoint why this happens, some serious digging
+    is usually required. Start with enabling verbose mode, do tracing and if
+    possible check the network traffic with a tool like wireshark or similar.
 
  57. **Not used**
 
- 58. Problem with the local certificate.
+ 58. Problem with the local certificate. The client certificate had a problem
+    so it couldn't be used. Permissions? The wrong pass phrase?
 
  59. Couldn't use specified SSL cipher.
 

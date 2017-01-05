@@ -178,7 +178,7 @@ that form submission will then show you exactly how a browser sends it.
 A third option is, of course, to use a network capture tool such as Wireshark to
 check exactly what is sent over the wire. If you are working with HTTPS, you
 can't see form submissions in clear text on the wire but instead you need to
-make sure you can have wireshark extract your TLS private key from your
+make sure you can have Wireshark extract your TLS private key from your
 browser. See the Wireshark documentation for details on doing that.
 
 ### Javascript and forms

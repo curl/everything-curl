@@ -275,14 +275,14 @@ A very basic Unix shell script could look like something like this:
     networking layers that the sending failed, this exit status gets
     returned. To pintpoint why this happens, some serious digging is usually
     required. Start with enabling verbose mode, do tracing and if possible
-    check the network traffic with a tool like wireshark or similar.
+    check the network traffic with a tool like Wireshark or similar.
 
  56. Failure in receiving network data. Receiving data over the network is a
     crucial part of most curl operations and when curl gets an error from the
     lowest networking layers that the receiving of data failed, this exit
     status gets returned. To pintpoint why this happens, some serious digging
     is usually required. Start with enabling verbose mode, do tracing and if
-    possible check the network traffic with a tool like wireshark or similar.
+    possible check the network traffic with a tool like Wireshark or similar.
 
  57. **Not used**
 

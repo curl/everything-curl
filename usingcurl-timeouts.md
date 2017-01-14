@@ -43,7 +43,7 @@ The given maximum connect time can be specified with a decimal precision;
 
 Having a fixed maximum time for a curl operation can be cumbersome, especially
 if you, for example, do scripted transfers and the file sizes and transfer times
-vary a lot. A fixed timeout value then needs to be set unnecessary high to
+vary a lot. A fixed timeout value then needs to be set unnecessarily high to
 cover for worst cases.
 
 As an alternative to a fixed time-out, you can tell curl to abandon the

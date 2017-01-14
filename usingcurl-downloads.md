@@ -136,7 +136,7 @@ HTTP compression can be done using two different mechanisms, one which might
 be considered "The Right Way" and the other that is the way that everyone actually
 uses and is the widespread and popular way to do it! The common way to
 compress HTTP content is using the **Content-Encoding** header. You ask curl to
-use this with the `--compressed` optionj
+use this with the `--compressed` option:
 
     $ curl --compressed http://example.com/
 

@@ -26,6 +26,40 @@ that this version of curl supports or it will show an error message and
 stop. Additionally, the scheme must not start with nor contain any white
 space.
 
+### The scheme separator
+
+The scheme identifier is separated from the rest of the URL by the "://"
+sequence. That is a colon and two forward slashes. There exists URL formats
+with only one slash, but curl doesn't support any of them. There are two
+additional notes to be aware of, about the number of slashes:
+
+curl allow some illegal syntaxes and try to correct them internally so it will
+also understand and accept URLs with one or three slashes, even though they
+are in fact not properly formed URLs. curl does this because the browsers
+started this practice so it has lead to such URLs being used in the wild every
+now and then.
+
+`file://` URLs are written as `file://<hostname>/<path>` but the only
+hostnames that are okay to use are `localhost`, `127.0.0.1` or a blank
+(nothing at all):
+
+    file://localhost/path/to/file
+    file://127.0.0.1/path/to/file
+    file:///path/to/file
+
+Inserting any other host name in there will make recent versions of curl to
+return an error.
+
+Pay special attention to the third example above
+(`file:///path/to/file`). That is *three* slashes before the path. That is
+again an area with common mistakes and where browsers allow users to use the
+wrong syntax so as a special exception, curl on Windows also allows this
+bastard format:
+
+    file://X:/path/to/file
+
+... where X is a windows-style drive letter.
+
 ### Without scheme
 
 As a convenience, curl also allows users to leave out the scheme part from

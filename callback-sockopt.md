@@ -19,3 +19,9 @@ The **clientp** pointer points to the private data set with
 
     curl_easy_setopt(handle, CURLOPT_SOCKOPTDATA, custom_pointer);
 
+This callback should return:
+
+ - CURL_SOCKOPT_OK on success
+ - CURL_SOCKOPT_ERROR to signal an unrecoverable error to libcurl
+ - CURL_SOCKOPT_ALREADY_CONNECTED to signal success but also that the socket is
+   in fact already connected to the destination

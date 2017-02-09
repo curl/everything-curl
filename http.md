@@ -9,6 +9,18 @@ This will mostly work the same way for HTTPS, as they are really the same thing
 under the hood, as HTTPS is HTTP with an extra security TLS layer. See also
 the specific [HTTPS](#https) section below.
 
+## HTTP methods
+
+In every HTTP request, there's a method. Sometimes called a verb. The most
+commonly used ones are GET, POST, HEAD and PUT.
+
+Normally however you don't specify the method in the command line, but instead
+the exact method used depends on the specific options you use. GET is default,
+using `-d` or `-F` makes it a POST, `-I` generates a HEAD and `-T` sends a
+PUT...
+
+More about this in the [Modify the HTTP request](http-requests.md) section.
+
 ## HTTP ranges
 
 The HTTP protocol allows a client to ask for only a specific data range to get

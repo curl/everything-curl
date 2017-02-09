@@ -63,6 +63,7 @@
     * [Protocol basics](http-basics.md)
     * [Responses](http-response.md)
     * [Ranges](http-ranges.md)
+    * [HTTP versions](http-versions.md)
     * [HTTP POST](http-post.md)
     * [Multipart formposts](http-multipart.md)
     * [-d vs -F](http-postvspost.md)

@@ -31,7 +31,7 @@ combine things and ask for several ranges in the same request by just listing
 up a bunch of pieces next to each other. When a server sends back multiple
 independent pieces to such a reuest, you will get them separated with mime
 boundary strings and it will be up to the user application to handle that
-accordingly. libcurl will not split up such a response in any way.
+accordingly. curl will not split up such a response in any way.
 
 A byte range is however only an ask to the server. It does not have to respect
 the ask and in many cases, like when the server automatically genarates the
@@ -39,18 +39,18 @@ contents on the fly when it is being asked, it will simply refuse to do it and
 it then insteads responds with the full contents anyway. In spite of the
 request possibly asking for only a little piece out of it.
 
-You can make libcurl ask for a range with `CURLOPT_RANGE`. Like if you want
-the first 200 bytes out of something:
+You can make curl ask for a range with `-r` or `--range`. Like if you want the
+first 200 bytes out of something:
 
-    curl_easy_setopt(curl, CURLOPT_RANGE, "0-199");
+    curl -r 0-199 http://example.com
 
 Or everything in the file starting from index 200:
 
-    curl_easy_setopt(curl, CURLOPT_RANGE, "200-");
+    curl -r 200- http://example.com
 
 Get 200 bytes from index 0 *and* 200 bytes from index 1000:
 
-    curl_easy_setopt(curl, CURLOPT_RANGE, "0-199,1000-199");
+    curl -r 0-199,1000-199 http://example.com/
 
 ## HTTP versions
 
@@ -63,23 +63,22 @@ use. libcurl is designed in a way so that it tries to use the most common, the
 most sensible if you want, default values first but sometimes that isn't
 enough and then you may need to instruct libcurl what to do.
 
-Since perhaps mid 2016, libcurl will default to use HTTP/1.1 for HTTP
-servers. If you connect to HTTPS and you have a libcurl that has HTTP/2
-abilities built-in, libcurl will attempt to use HTTP/2 automatically or fall
-down to 1.1 in case the negotiation failed. Non-HTTP/2 capable libcurls get
-1.1 over HTTPS by default.
+Since perhaps mid 2016, curl will default to use HTTP/1.1 for HTTP servers. If
+you connect to HTTPS and you have a libcurl that has HTTP/2 abilities
+built-in, curl will attempt to use HTTP/2 automatically or fall down to 1.1 in
+case the negotiation failed. Non-HTTP/2 capable curls get 1.1 over HTTPS by
+default.
 
 If the default isn't good enough for your transfer, the `CURLOPT_HTTP_VERSION`
 option is there for you.
 
 | Option                              | Description |
 |-------------------------------------|-------------|
-| CURL_HTTP_VERSION_NONE              | fill in
-| CURL_HTTP_VERSION_1_0               | fill in
-| CURL_HTTP_VERSION_1_1               | fill in
-| CURL_HTTP_VERSION_2_0               | fill in
-| CURL_HTTP_VERSION_2TLS              | fill in
-| CURL_HTTP_VERSION_2_PRIOR_KNOWLEDGE | fill in
+| [default]                           | fill in
+| --http1.0                           | fill in
+| --http1.1                           | fill in
+| --http2                             | fill in
+| --http2-prior-knowledge             | fill in
 
 ## HTTP authentication
 

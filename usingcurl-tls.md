@@ -162,11 +162,38 @@ directories and in this order:
 
 ## Certificate pinning
 
-TBD
+TLS certificate pinning is a way to verify that the public key used to sign
+the servers certificate has not changed. It is "pinned".
+
+When negotiating a TLS or SSL connection, the server sends a certificate
+indicating its identity. A public key is extracted from this certificate and
+if it does not exactly match the public key provided to this option, curl will
+abort the connection before sending or receiving any data.
+
+You tell curl a file name to read the sha256 value from, our you specify the
+base64 encoded hash directly in the command line with a "sha256//" prefix. You
+can specify one or more hashes like that, separated with semicolons (;).
+
+    curl --pinnedpubkey "sha256//83d34tasd3rt..." https://example.com/
+
+This feature is not supported by all TLS backends.
 
 ## OCSP stapling
 
-TBD
+This uses the TLS extension called Certificate Status Request to ask the
+server to provide a fresh "proof" from the CA in the handshake, that the
+certificate that it returns is still valid. This is a way to make really sure
+the server's certificate hasn't been revoked.
+
+If the server doesn't support this extension, the test will fail and curl
+returns an error. And it is still far too common that servers don't support
+this.
+
+Ask for the handshake to use the status request like this:
+
+    curl --cert-status https://example.com/
+
+This feature is only supported by the OpenSSL, GnuTLS and NSS backends.
 
 ## Client certificates
 

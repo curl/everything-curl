@@ -87,7 +87,22 @@ in fact any other compression algorithm that curl understands) by using
 
 ### Transfer encoding
 
-TBD
+A less common feature used with transfer encoding is compression.
+
+Compression it self is common and over time the dominant and web compatible
+way to do compression for HTTP has become to use `Content-Encoding` as
+described in the section above. But HTTP was originally intended and specified
+to allow transparent compression as a transfer encoding, and curl supports
+this feature.
+
+The client then simply asks the server to do compression transfer encoding and
+if acceptable, it will reponse with a header indiciating that it will and curl
+will then transparently uncompress that data on arrival. A user enables asking
+for compressed transfer encoding with `--tr-encoding`:
+
+    curl --tr-encoding http://example.com/
+
+It should be noted that not many HTTP servers in the wild support this.
 
 ### --raw
 

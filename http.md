@@ -21,10 +21,6 @@ PUT...
 
 More about this in the [Modify the HTTP request](http-requests.md) section.
 
-## HTTP authentication
-
-TBD
-
 ## HTTPS
 
 TBD

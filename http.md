@@ -28,8 +28,3 @@ TBD
 ## Scripting browser-like tasks
 
 TBD
-
-## Cheat sheet
-
-TBD
-

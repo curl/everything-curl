@@ -74,6 +74,7 @@
     * [HTTP PUT](http-put.md)
     * [Cookies](http-cookies.md)
     * [HTTP/2](http-http2.md)
+    * [HTTP cheat sheet](http-cheatsheet.md)
 * [Building and installing](building.md)
     * [Installing prebuilt binaries](building-binary.md)
     * [Build from source](building-source.md)

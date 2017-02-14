@@ -1,3 +1,5 @@
+--anyauth
+--basic
 --compressed
 --connect-timeout
 --connect-to
@@ -11,8 +13,10 @@
 --location
 --max-filesize
 --max-time
+--negotiate
 --netrc-file
 --netrc-optional
+--ntlm
 --post301
 --post302
 --post303

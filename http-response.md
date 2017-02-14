@@ -104,6 +104,16 @@ for compressed transfer encoding with `--tr-encoding`:
 
 It should be noted that not many HTTP servers in the wild support this.
 
-### --raw
+### Pass on transfer encoding
 
-TBD
+In some situations you may want to use curl as some sort of proxy or other in
+between software. In those cases, curl's way to deal with transfer-encoding
+headers and then decoding the actual data transparently may not be desired, if
+the end receiver *also* expects to do the same.
+
+You can then ask curl to pass on the received data, without decoding it. That
+means passing on the sizes in the chunked encoding format or the compressed
+format when compressed tranfer encoding is used etc.
+
+    curl --raw http://example.com/
+

@@ -91,7 +91,7 @@ Protocols are, however, spoken by two parties and like in any given
 conversation, there are then two sides of understanding something or
 interpreting the given instructions in a spec. Also, lots of network software
 is written without the authors paying very close attention to the spec so they
-end up taking some shortcuts everywhere, or perhaps they just
+end up taking some shortcuts every here and there, or perhaps they just
 interpreted the text differently. Sometimes even plain mistakes and bugs make
 software behave in ways that are not mandated by the spec and sometimes even
 downright forbidden in the specs.

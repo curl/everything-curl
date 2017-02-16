@@ -64,6 +64,39 @@ data without the space separator:
 
     $ curl -darbitrary http://example.com
 
+### Arguments with spaces
+
+At times you want to pass on an argument to an option, and that argument
+contains one or more spaces. For example you want to set the user-agent field
+curl uses to be exactly `I am your father`, including those three spaces. Then
+you need to put quotes around the string when you pass it to curl on the
+command line. The exact quotes to use, depends on your shell/command prompt
+but generally it works with double quotes in most places:
+
+    $ curl -A "I am your father" http://example.com
+
+Failing to use quotes, like if you wouldd write the command line like this:
+
+    $ curl -A I am your father http://example.com
+
+... will make curl only use 'I' as a user-agent string, and the following
+strings, 'am', your, etc will instead all be treated as separate URLs since
+they don't start with `-` to indicate that they're options and curl only ever
+handles options and URLs.
+
+To make the string itself contain double quotes, which is common when you for
+example want to send a string of JSON to the server, you may need to use
+single quotes (except on Windows, where single quotes doesn't work the same
+way). Send the JSON string `{ "name": "Darth" }`:
+
+    $ curl -d '{ "name": "Darth" }' http://example.com
+
+Or if you want to avoid the single quote thing, you may prefer to send the
+data to curl via a file, which then doesn't need the extra quoting. Assuming
+we call the file 'json' that contains the above mentioned data:
+
+   $ curl -d @json http://example.com
+
 ### Negative options
 
 For options that switch on something, there is also a way to switch it

@@ -23,4 +23,4 @@ might be running an older installation.
 
 The developers of curl are working hard to not change existing behavior
 though. Command lines written to use curl in 1998, 2003 or 2010 should all be
-possible to run unmodified even in 2015.
+possible to run unmodified even today.

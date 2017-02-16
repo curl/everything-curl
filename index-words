@@ -166,6 +166,7 @@ bugreports
 clone
 code of conduct
 configure
+content-encoding
 contribute
 copyright
 curl-announce
@@ -197,6 +198,7 @@ etiquette
 event-driven
 future
 git
+json
 keep-alive
 libcurl version
 libressl
@@ -212,3 +214,4 @@ roadmap
 security
 snapshots
 testing
+transfer-encoding

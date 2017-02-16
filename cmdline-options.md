@@ -2,7 +2,7 @@
 
 When telling curl to do something, you invoke curl with zero, one or several
 command-line options to accompany the URL or set of URLs you want the transfer
-to be about. curl supports almost two hundred different options.
+to be about. curl supports over two hundred different options.
 
 ### Short options
 

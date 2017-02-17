@@ -35,7 +35,7 @@ If that header is not good enough for you, you should, of course, replace that
 and instead provide the correct one. Such as if you POST JSON to a server and
 want to more accurately tell the server about what the content is:
 
-    $ curl -d '{json}' -H 'Content-Type: application/json' https://example.com
+    curl -d '{json}' -H 'Content-Type: application/json' https://example.com
 
 ### POSTing binary
 

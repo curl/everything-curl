@@ -23,7 +23,7 @@ exactly which address to use, just setting the same as you come from is almost
 always the correct choice and you do that with `-P -`, like this way to ask
 for a file:
 
-    $ curl -P - ftp://example.com/foobar.txt
+    curl -P - ftp://example.com/foobar.txt
 
 You can also explicitly ask curl to not use EPRT (which is a slightly newer
 command than PORT) with the `--no-epsv` command-line option.

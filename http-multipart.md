@@ -97,7 +97,7 @@ stream.
 
 To replace the header, use `-H` like this:
 
-    $ curl -F 'name=Dan' -H 'Content-Type: multipart/magic' https://example.com
+    curl -F 'name=Dan' -H 'Content-Type: multipart/magic' https://example.com
 
 ### Converting an HTML form
 

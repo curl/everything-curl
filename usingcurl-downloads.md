@@ -13,7 +13,7 @@ You specify the resource to download by giving curl a URL. curl defaults to
 downloading a URL unless told otherwise, and the URL identifies what to
 download. In this example the URL to download is "http://example.com":
 
-    $ curl http://example.com
+    curl http://example.com
 
 The URL is broken down into its individual components ([as explained
 elsewhere](cmdline-urls.md)), the correct server is contacted and is then
@@ -47,14 +47,14 @@ just a file name, a relative path to a file name or a full path to the file.
 Also note that you can put the `-o` before or after the URL; it makes no
 difference:
 
-    $ curl -o output.html http://example.com/
-    $ curl -o /tmp/index.html http://example.com/
-    $ curl http://example.com -o ../../folder/savethis.html
+    curl -o output.html http://example.com/
+    curl -o /tmp/index.html http://example.com/
+    curl http://example.com -o ../../folder/savethis.html
 
 This is, of course, not limited to http:// URLs but works the same way no matter
 which type of URL you download:
 
-    $ curl -o file.txt ftp://example.com/path/to/file-name.ext
+    curl -o file.txt ftp://example.com/path/to/file-name.ext
 
 curl has several other ways to store and name the downloaded data. Details
 follow!
@@ -65,11 +65,11 @@ Many URLs, however, already contain the file name part in the rightmost
 end. curl lets you use that as a shortcut so you don't have to repeat it with
 `-o`. So instead of:
 
-    $ curl -o file.html http://example.com/file.html
+    curl -o file.html http://example.com/file.html
 
 You can save the remove URL resource into the local file 'file.html' with this:
 
-    $ curl -O http://example.com/file.html
+    curl -O http://example.com/file.html
 
 This is the `-O` (uppercase letter o) option, or `--remote-name` for the long
 name version. The -O option selects the local file name to use by picking the
@@ -113,7 +113,7 @@ displays as expected. curl will then not translate the arriving data.
 A common example where this causes some surprising results is when a user
 downloads a web page with something like:
 
-    $ curl https://example.com/ -o storage.html
+    curl https://example.com/ -o storage.html
 
 …and when inspecting the `storage.html` file after the fact, the user realizes
 that one or more characters look funny or downright wrong. This can then very
@@ -138,7 +138,7 @@ uses and is the widespread and popular way to do it! The common way to
 compress HTTP content is using the **Content-Encoding** header. You ask curl to
 use this with the `--compressed` option:
 
-    $ curl --compressed http://example.com/
+    curl --compressed http://example.com/
 
 With this option enabled (and if the server support it) it delivers the data in
 a compressed way and curl will decompress it before saving it or sending it to
@@ -151,7 +151,7 @@ method, which is the header that was created for this automated method but was
 never really widely adopted. You can tell curl to ask for Transfer-Encoded
 compression with `--tr-encoding`:
 
-    $ curl --tr-encoding http://example.com/
+    curl --tr-encoding http://example.com/
 
 In theory, there's nothing that prevents you from using both in the same
 command line, although in practise, you may then experience that some servers
@@ -166,13 +166,13 @@ abilities. In most Linux and Unix shells and with Windows' command prompts,
 you direct stdout to a file with `> filename`. Using this, of course, makes the
 use of -o or -O superfluous.
 
-    $ curl http://example.com/ > example.html
+    curl http://example.com/ > example.html
 
 Redirecting output to a file redirects all output from curl to that file, so
 even if you ask to transfer more than one URL to stdout, redirecting the output
 will get all the URLs' output stored in that single file.
 
-    $ curl http://example.com/1 http://example.com/2 > files
+    curl http://example.com/1 http://example.com/2 > files
 
 Unix shells usually allow you to redirect the *stderr* stream separately. The
 stderr stream is usually a stream that also gets shown in the terminal, but you
@@ -180,7 +180,7 @@ can redirect it separately from the stdout stream. The stdout stream is for
 the data while stderr is metadata and errors, etc., that aren't data. You can
 redirect stderr with `2>file` like this:
 
-    $ curl http://example.com > files.html 2>errors
+    curl http://example.com > files.html 2>errors
 
 ### Multiple downloads
 
@@ -193,7 +193,7 @@ instruction". Without said "storage instruction", curl will default to sending
 the data to stdout. If you ask for two URLs and only tell curl where to save
 the first URL, the second one is sent to stdout. Like this:
 
-    $ curl -o one.html http://example.com/1 http://example.com/2
+    curl -o one.html http://example.com/1 http://example.com/2
 
 The "storage instructions" are read and handled in the same order as the
 download URLs so they don't have to be next to the URL in any way. You can
@@ -202,15 +202,15 @@ choose!
 
 These examples all work the same way:
 
-    $ curl -o 1.txt -o 2.txt http://example.com/1 http://example.com/2
-    $ curl http://example.com/1 http://example.com/2 -o 1.txt -o 2.txt
-    $ curl -o 1.txt http://example.com/1 http://example.com/2 -o 2.txt
-    $ curl -o 1.txt http://example.com/1 -o 2.txt http://example.com/2
+    curl -o 1.txt -o 2.txt http://example.com/1 http://example.com/2
+    curl http://example.com/1 http://example.com/2 -o 1.txt -o 2.txt
+    curl -o 1.txt http://example.com/1 http://example.com/2 -o 2.txt
+    curl -o 1.txt http://example.com/1 -o 2.txt http://example.com/2
 
 The `-O` is similarly just an instruction for a single download so if you
 download multiple URLs, use more of them:
 
-    $ curl -O -O http://example.com/1 http://example.com/2
+    curl -O -O http://example.com/1 http://example.com/2
 
 ### Use the URL's file name part for all URLs
 
@@ -319,7 +319,7 @@ M and G for kilobytes, megabytes and gigabytes.
 
 To make curl not download data any faster than 200 kilobytes per second:
 
-    $ curl https://example.com/ --limit-rate 200K
+    curl https://example.com/ --limit-rate 200K
 
 The given limit is the maximum *average speed* allowed, counted during the
 entire transfer. It means that curl might use higher transfer speeds in short

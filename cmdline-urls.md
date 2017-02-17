@@ -81,7 +81,7 @@ The use of this syntax is usually frowned upon these days since you easily
 leak this information in scripts or otherwise. For example, listing the
 directory of an FTP server using a given name and password:
 
-    $ curl ftp://user:password@example.com/
+    curl ftp://user:password@example.com/
 
 The presence of user name and password in the URL is completely optional. curl
 also allows that information to be provide with normal command-line options,
@@ -93,12 +93,12 @@ The host name part of the URL is, of course, simply a name that can be resolved
 to an numerical IP address, or the numerical address itself. When specifying a
 numerical address, use the dotted version for IPv4 addresses:
 
-    $ curl http://127.0.0.1/
+    curl http://127.0.0.1/
 
 …and for IPv6 addresses the numerical version needs to be within square
 brackets:
 
-    $ curl http://[::1]/
+    curl http://[::1]/
 
 When a host name is used, the converting of the name to an IP address is
 typically done using the system's resolver functions. That normally lets a
@@ -111,15 +111,15 @@ specified port number is given. The optional port number can be provided
 within the URL after the host name part, as a colon and the port number
 written in decimal. For example, asking for an HTTP document on port 8080:
 
-    $ curl http://example.com:8080/
+    curl http://example.com:8080/
 
 With the name specified as an IPv4 address:
 
-    $ curl http://127.0.0.1:8080/
+    curl http://127.0.0.1:8080/
 
 With the name given as an IPv6 address:
 
-    $ curl http://[fdea::1]:8080/
+    curl http://[fdea::1]:8080/
 
 ### Path
 
@@ -130,13 +130,13 @@ requested or that will be provided.
 The exact use of the path is protocol dependent. For example, getting a file
 README from the default anonymous user from an FTP server:
 
-    $ curl ftp://ftp.example.com/README
+    curl ftp://ftp.example.com/README
 
 For the protocols that have a directory concept, ending the URL with a
 trailing slash means that it is a directory and not a file. Thus asking for a
 directory list from an FTP server is implied with such a slash:
 
-    $ curl ftp://ftp.example.com/tmp/
+    curl ftp://ftp.example.com/tmp/
 
 ### FTP type
 
@@ -225,7 +225,7 @@ As an example, we do an HTTP GET to a URL and follow redirects, we then make a
 second HTTP POST to a different URL and we round it up with a HEAD request to
 a third URL. All in a single command line:
 
-    $ curl --location http://example.com/1 --next
+    curl --location http://example.com/1 --next
       --data sendthis http://example.com/2 --next
       --head http://example.com/3
 

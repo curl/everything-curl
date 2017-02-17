@@ -70,12 +70,12 @@ At times you want to pass on an argument to an option, and that argument
 contains one or more spaces. For example you want to set the user-agent field
 curl uses to be exactly `I am your father`, including those three spaces. Then
 you need to put quotes around the string when you pass it to curl on the
-command line. The exact quotes to use, depends on your shell/command prompt
-but generally it works with double quotes in most places:
+command line. The exact quotes to use varies depending on your shell/command
+prompt, but generally it will work with double quotes in most places:
 
     curl -A "I am your father" http://example.com
 
-Failing to use quotes, like if you wouldd write the command line like this:
+Failing to use quotes, like if you would write the command line like this:
 
     curl -A I am your father http://example.com
 

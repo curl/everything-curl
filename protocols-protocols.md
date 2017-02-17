@@ -27,11 +27,11 @@ or flavors as well.
 
 ## What other protocols are there?
 
-The world is full of protocols, both old ones and new ones. Old protocols get
-abandoned and dropped and new ones get introduced. There's never a state of
-stability but the situation changes day to day and year to year. You can rest
-assured that there will be new protocols added in the list above in the future
-and there will be new versions of the protocols already listed.
+The world is full of protocols, both old and new. Old protocols get abandoned
+and dropped and new ones get introduced. There's never a state of stability but
+the situation changes from day to day and year to year. You can rest assured
+that there will be new protocols added in the list above in the future and that
+there will be new versions of the protocols already listed.
 
 There are, of course, already other protocols in existence that curl doesn't yet
 support. We are open to supporting more protocols that suit the general curl
@@ -91,10 +91,9 @@ Protocols are, however, spoken by two parties and like in any given
 conversation, there are then two sides of understanding something or
 interpreting the given instructions in a spec. Also, lots of network software
 is written without the authors paying very close attention to the spec so they
-end up taking some shortcuts every here and there, or perhaps they just
-interpreted the text differently. Sometimes even plain mistakes and bugs make
-software behave in ways that are not mandated by the spec and sometimes even
-downright forbidden in the specs.
+end up taking some shortcuts, or perhaps they just interpreted the text
+differently. Sometimes even mistakes and bugs make software behave in ways that
+are not mandated by the spec and sometimes even downright forbidden in the specs.
 
 In the curl project we use the published specs as rules on how to act until we
 learn anything else. If popular alternative implementations act differently

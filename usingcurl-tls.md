@@ -26,7 +26,7 @@ worse.
 
 ## Enable TLS
 
-curl supports the TLS version for a large amount of protocols. HTTP has HTTPS,
+curl supports the TLS version of many protocols. HTTP has HTTPS,
 FTP has FTPS, LDAP has LDAPS, POP3 has POP3S, IMAP has IMAPS and SMTP has
 SMTPS.
 
@@ -197,12 +197,12 @@ This feature is only supported by the OpenSSL, GnuTLS and NSS backends.
 
 ## Client certificates
 
-TLS client certificates is a way for clients to cryptographially prove to
+TLS client certificates are a way for clients to cryptographically prove to
 servers that they are truly the right peer. A command line that uses a client
 certificate specifies the certificate and the corresponding key, and they are
 then passed on the TLS handshake with the server.
 
-You need to have your client certificate already stored on file when doing
+You need to have your client certificate already stored in a file when doing
 this and you should supposedly have gotten it from the right instance via a
 different channel previously.
 
@@ -210,7 +210,7 @@ The key is typically protected by a password that you need to provide or get
 prompted for interactively.
 
 curl offers options to let you specify a single file that is both the client
-certificate and the private key concatendated using `--cert`, or you can
+certificate and the private key concatenated using `--cert`, or you can
 specify the key file independently with `--key`:
 
     curl --cert mycert:mypassword https://example.com

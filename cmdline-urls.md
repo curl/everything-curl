@@ -1,12 +1,12 @@
 ## URLs
 
-curl is called curl exactly because a substring in its name is URL (Uniform
+curl is called curl because a substring in its name is URL (Uniform
 Resource Locator). It operates on URLs. URL is the name we casually use for
 the web address strings, like the ones we usually see prefixed with http:// or
 starting with www.
 
-URL is, strictly speaking, the former name for this. URI (Uniform Resource
-Identifier) is the more modern and correct name for it. Its syntax is defined
+URL is, strictly speaking, the former name for these. URI (Uniform Resource
+Identifier) is the more modern and correct name for them. Their syntax is defined
 in [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
 
 Where curl accepts a "URL" as input, it is then really a "URI". Most of the
@@ -15,7 +15,7 @@ describes how that particular URI format works.
 
 curl assumes that you give it a valid URL and it only does limited checks of
 the format in order to extract the information it deems necessary to perform
-its operation. You can, for example, most probably pass in illegal letters in
+its operation. You can, for example, most probably pass in illegal characters in
 the URL without curl noticing or caring and it will just pass them on.
 
 ### Scheme
@@ -23,8 +23,8 @@ the URL without curl noticing or caring and it will just pass them on.
 URLs start with the "scheme", which is the official name for the "http://"
 part. That tells which protocol the URL uses. The scheme must be a known one
 that this version of curl supports or it will show an error message and
-stop. Additionally, the scheme must not start with nor contain any white
-space.
+stop. Additionally, the scheme must neither start with nor contain any
+whitespace.
 
 ### The scheme separator
 
@@ -33,7 +33,7 @@ sequence. That is a colon and two forward slashes. There exists URL formats
 with only one slash, but curl doesn't support any of them. There are two
 additional notes to be aware of, about the number of slashes:
 
-curl allow some illegal syntaxes and try to correct them internally so it will
+curl allow some illegal syntax and try to correct it internally; so it will
 also understand and accept URLs with one or three slashes, even though they
 are in fact not properly formed URLs. curl does this because the browsers
 started this practice so it has lead to such URLs being used in the wild every
@@ -54,7 +54,7 @@ Pay special attention to the third example above
 (`file:///path/to/file`). That is *three* slashes before the path. That is
 again an area with common mistakes and where browsers allow users to use the
 wrong syntax so as a special exception, curl on Windows also allows this
-bastard format:
+incorrect format:
 
     file://X:/path/to/file
 
@@ -66,7 +66,7 @@ As a convenience, curl also allows users to leave out the scheme part from
 URLs. Then it guesses which protocol to use based on the first part of the
 host name. That guessing is very basic as it just checks if the first part of
 the host name matches one of a set of protocols, and assumes you meant to use
-that protocol. This heuristics is based on the fact that servers traditionally
+that protocol. This heuristic is based on the fact that servers traditionally
 used to be named like that. The protocols that are detected this way are FTP,
 DICT, LDAP, IMAP, SMTP and POP3. Any other host name in a scheme-less URL will
 make curl default to HTTP.
@@ -249,4 +249,4 @@ established connection.
 Of course, they can only be kept alive for as long as the curl tool is running,
 but it is a very good reason for trying to get several transfers done within
 the same command line instead of running several independent curl command line
-invokes.
+invocations.

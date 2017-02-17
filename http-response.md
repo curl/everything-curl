@@ -60,7 +60,7 @@ header that tells curl there's chunked data coming and then in the response
 body, the data comes in a series of "chunks". Every individual chunk starts
 with the size of that particular chunk (in hexadecimal), then a newline and
 then the contents of the chunk. This is repeated over and over until the end of the
-response, which is signalled with a zero sized chunk. The point of this sort
+response, which is signaled with a zero sized chunk. The point of this sort
 of response is for the client to be able to figure out when the responses has
 ended even though the server didn't know the full size before it started to
 send it. This is usually the case when the response is dynamic and generated
@@ -89,14 +89,14 @@ in fact any other compression algorithm that curl understands) by using
 
 A less common feature used with transfer encoding is compression.
 
-Compression it self is common and over time the dominant and web compatible
+Compression in itself is common. Over time the dominant and web compatible
 way to do compression for HTTP has become to use `Content-Encoding` as
 described in the section above. But HTTP was originally intended and specified
 to allow transparent compression as a transfer encoding, and curl supports
 this feature.
 
 The client then simply asks the server to do compression transfer encoding and
-if acceptable, it will reponse with a header indiciating that it will and curl
+if acceptable, it will response with a header indicating that it will and curl
 will then transparently uncompress that data on arrival. A user enables asking
 for compressed transfer encoding with `--tr-encoding`:
 
@@ -113,7 +113,6 @@ the end receiver *also* expects to do the same.
 
 You can then ask curl to pass on the received data, without decoding it. That
 means passing on the sizes in the chunked encoding format or the compressed
-format when compressed tranfer encoding is used etc.
+format when compressed transfer encoding is used etc.
 
     curl --raw http://example.com/
-

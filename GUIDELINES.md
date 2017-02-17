@@ -5,7 +5,7 @@ and editing "Everything curl".
 
 ## Capitalization of words in section names
 
-We do not use that practise. Partially because our sections are not really
+We do not use that practice. Partially because our sections are not really
 "chapters" but also to make it a more informal feel.
 
 ## Avoid prepositions at the end of sentences
@@ -24,7 +24,7 @@ Let's try to use the correct UTF-8 characters!
 
 ## Avoid the short forms of dir and repo
 
-They are rather called "directory" and "respository"
+They are rather called "directory" and "repository"
 
 ## Internet with a capital I
 

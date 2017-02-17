@@ -1,6 +1,6 @@
 # How to read this book
 
-Here's an overview of the main sections of this book and what they cover.
+Here is an overview of the main sections of this book and what they cover.
 
 ## 1. [The cURL project](curl.md)
 
@@ -17,7 +17,7 @@ works.
 
 ## 4. [Network and protocols](protocols.md)
 
-What exactly is network and protocols?
+What exactly are networks and protocols?
 
 ## 5. [Command line basics](cmdline.md)
 
@@ -50,7 +50,7 @@ they are to the libcurl C API.
 
 ## 12. [libcurl internals](internals.md)
 
-Under the hood it works like this...
+Under the hood it works like this…
 
 ## 13. [Index](bookindex.md)
 

@@ -1,22 +1,21 @@
 ## HTTP ranges
 
-The HTTP protocol allows a client to ask for only a specific data range to get
-returned. If the client only wants the first 200 bytes out of a remote
-resource or why not 300 bytes somewhere in the middle? It then asks the server
-for the specific range with a start offset and an end offset. It can even
-combine things and ask for several ranges in the same request by just listing
-up a bunch of pieces next to each other. When a server sends back multiple
-independent pieces to such a reuest, you will get them separated with mime
-boundary strings and it will be up to the user application to handle that
-accordingly. curl will not split up such a response in any way.
+What if the client only wants the first 200 bytes out of a remote
+resource or perhaps 300 bytes somewhere in the middle? The HTTP protocol
+allows a client to ask for only a specific data range.  The client asks the
+server for the specific range with a start offset and an end offset. It can even
+combine things and ask for several ranges in the same request by just listing a
+bunch of pieces next to each other. When a server sends back multiple
+independent pieces to answer such a request, you will get them separated with
+mime boundary strings and it will be up to the user application to handle that
+accordingly. curl will not further separate such a response.
 
-A byte range is however only an ask to the server. It does not have to respect
-the ask and in many cases, like when the server automatically genarates the
-contents on the fly when it is being asked, it will simply refuse to do it and
-it then insteads responds with the full contents anyway. In spite of the
-request possibly asking for only a little piece out of it.
+However, a byte range is only a request to the server. It does not have to
+respect the request and in many cases, like when the server automatically
+generates the contents on the fly when it is being asked, it will simply refuse
+to do it and it then instead respond with the full contents anyway. 
 
-You can make curl ask for a range with `-r` or `--range`. Like if you want the
+You can make curl ask for a range with `-r` or `--range`. If you want the
 first 200 bytes out of something:
 
     curl -r 0-199 http://example.com

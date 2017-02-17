@@ -201,11 +201,13 @@ curl will parse the entire command line first, apply the wishes from the
 command-line options used, and then go over the URLs one by one (in a left to
 right order) to perform the operations.
 
-For some options (for example -o or -O that tell curl where to store the
+For some options (for example `-o` or `-O` that tell curl where to store the
 transfer), you may want to specify one option for each URL on the command
 line.
 
-curl will return an exit code for its operation on the last URL used.
+curl will return an exit code for its operation on the last URL used. If you
+instead rather want curl to exit with an error on the first URL in the set
+that fails, use the `--fail-early` option.
 
 ## Separate options per URL
 

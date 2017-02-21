@@ -36,7 +36,7 @@ string if the remote server requires a password as part of the login process.
 Note that if this token is present in the .netrc file you really **should**
 make sure the file is not readable by anyone besides the user.
 
-An example .netrc for the host example.com with a user named daniel, using the
+An example .netrc for the host example.com with a user named 'daniel', using the
 password 'qwerty' would look like:
 
     machine example.com
@@ -53,4 +53,3 @@ the information in another directory or with another file name.
 
 `--netrc-optional` is similar to `--netrc`, but this option makes the .netrc
 usage optional and not mandatory as the `--netrc` option.
-

@@ -6,7 +6,7 @@ first gut reaction should always be to run the command with the `-v /
 
 When verbose mode is enabled, curl gets more talkative and will explain and
 show a lot more of its doings. It will add informational tests and prefix them
-with '*'. For example, let's see what curl might say when trying a simple HTTP
+with '\*'. For example, let's see what curl might say when trying a simple HTTP
 example (saving the downloaded data in the file called 'saved'):
 
     $ curl -v http://example.com -o saved
@@ -144,7 +144,7 @@ first lines of tracing look like:
     0010: Host: example.com
     0023: User-Agent: curl/7.45.0
     003c: Accept: */*
-    0049: 
+    0049:
     <= Recv header, 17 bytes (0x11)
     0000: HTTP/1.1 200 OK
     <= Recv header, 22 bytes (0x16)
@@ -168,7 +168,7 @@ An example could look like this:
     23:38:56.935296 > Host: example.com
     23:38:56.935296 > User-Agent: curl/7.45.0
     23:38:56.935296 > Accept: */*
-    23:38:56.935296 > 
+    23:38:56.935296 >
     23:38:57.029570 < HTTP/1.1 200 OK
     23:38:57.029699 < Accept-Ranges: bytes
     23:38:57.029803 < Cache-Control: max-age=604800
@@ -297,7 +297,7 @@ Some of these variables are not available in really old curl versions.
   involved.
 
 - %{time_redirect} shows the time, in seconds, it took for all redirection
-  steps including name lookup, connect, pretransfer and transfer before the
+  steps including name lookup, connect, pre-transfer and transfer before the
   final transaction was started. time_redirect shows the complete execution
   time for multiple redirections.
 

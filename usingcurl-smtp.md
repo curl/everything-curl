@@ -9,7 +9,7 @@ your choice.
 When sending SMTP with curl, there are a two necessary command line options
 that **must** be used.
 
- - You need to tell the server at least one recepient with `--mail-rcpt`. You
+ - You need to tell the server at least one recipient with `--mail-rcpt`. You
    can use this option several times and then curl will tell the server that
    all those email addresses should receive the email.
 
@@ -24,7 +24,7 @@ formatted according to [RFC
 body. Both the headers and the body need to be correctly encoded. The headers
 typically include `To:`, `From:`, `Subject:`, `Date:` etc.
 
-A basic command line to send an email:
+A basic command to send an email:
 
     curl smtp://mail.example.com --mail-from myself@example.com --mail-rcpt
     receiver@example.com --upload-file email.txt
@@ -35,7 +35,7 @@ A basic command line to send an email:
     To: Joe Smith <smith@example.com>
     Subject: an example.com example email
     Date: Mon, 7 Nov 2016 08:45:16
-    
+
     Dear Joe,
     Welcome to this example email. What a lovely day.
 
@@ -56,13 +56,13 @@ you can use one of these options:
 
 
 You can tell curl to _try_ but not require upgrading to secure transfers by
-adding `--ssl` to the command line:
+adding `--ssl` to the command:
 
     curl --ssl smtp://mail.example.com --mail-from myself@example.com
          --mail-rcpt receiver@example.com --upload-file email.txt
 
 You can tell curl to _require_ upgrading to using secure transfers by adding
-`--ssl-reqd` to the command line:
+`--ssl-reqd` to the command:
 
     curl --ssl-reqd smtp://mail.example.com --mail-from myself@example.com
          --mail-rcpt receiver@example.com --upload-file email.txt

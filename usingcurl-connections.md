@@ -5,22 +5,21 @@ curl must first figure out the IP address(es) of the host you want to
 communicate with, then connect to it. "Connecting to it" means performing a
 TCP protocol handshake.
 
-For the typical command line that operates on a URL those are details that
-are taken care of under the hood which you can mostly ignore. But at times
+For ordinary command line usage, operating on a URL, these are details which
+are taken care of under the hood, and which you can mostly ignore. But at times
 you might find yourself wanting to tweak the specifics…
 
 ## Name resolve tricks
 
 ### Edit the hosts file
 
-Maybe you have your command line `curl http://example.com` and just want that
-to instead connect to your local server instead of the actual live server.
+Maybe you want the command `curl http://example.com` to connect to your local
+server instead of the actual server.
 
 You can normally and easily do that by editing your `hosts` file (`/etc/hosts`
 on Linux and Unix systems) and adding, for example, `127.0.0.1 example.com` to
-redirect the host to your localhost. But this edit requires admin access and it
-has the downside that it affects all other applications at the same time, and
-more.
+redirect the host to your localhost. However this edit requires admin access and
+it has the downside that it affects all other applications at the same time.
 
 ### Change the Host: header
 
@@ -28,7 +27,7 @@ The `Host:` header is the normal way an HTTP client tells the HTTP server which
 server it speaks to, as typically an HTTP server serves many different names
 using the same software instance.
 
-So, by passing in a custom modified `Host:` header you can usually have the
+So, by passing in a custom modified `Host:` header you can have the
 server respond with the contents of the site even when you didn't actually
 connect to that host name.
 
@@ -48,11 +47,9 @@ the given URL.
 
 ### Provide a custom IP address for a name
 
-Doing the hosts edit operation virtually, but directly with the curl command
-line without having to edit any system files, you can force feed curl what IP
-address it should use for a given name. Do you know better than the name resolver
-where curl should go? Then you can! If you want to redirect port 80
-access for `example.com` to instead reach your localhost:
+Do you know better than the name resolver where curl should go? Then you can
+give an IP address to curl yourself! If you want to redirect port 80 access for
+`example.com` to instead reach your localhost:
 
     curl --resolve example.com:80:127.0.0.1 http://example.com/
 
@@ -65,7 +62,7 @@ URLs.
 make curl believe that's the address it got when it resolved the name.
 
 When talking HTTPS, this will send SNI for the name in the URL and curl will
-verify the server to make sure it serves for the name in the URL.
+verify the server's response to make sure it serves for the name in the URL.
 
 ### Provide a replacement name
 
@@ -95,57 +92,55 @@ connect, but in all other ways still assume it is talking to
 
 ### Name resolve tricks with c-ares
 
-As should be detailed elsewhere in this book, curl can get built with several
+As should be detailed elsewhere in this book, curl may be built with several
 different name resolving backends. One of those backends is powered by the
-c-ares library and when curl is built to use c-ares, it gets a few extra super
-powers that curl built to use other name resolve backends don't get. Namely
-the ability to more specificly instruct what DNS servers to use and how that
-DNS traffic is using the network.
+c-ares library and when curl is built to use c-ares, it gets a few extra
+superpowers that curl built to use other name resolve backends don't get.
+Namely, it gains the ability to more specifically instruct what DNS servers to
+use and how that DNS traffic is using the network.
 
 With `--dns-servers`, you can specify exactly which DNS server curl should use
-instead of the default one. This lets you run your own experiental server that
-answers differently, or just use a backup one if your regular one seems
-unreliable or dead.
+instead of the default one. This lets you run your own experimental server that
+answers differently, or use a backup one if your regular one is unreliable or dead.
 
 With `--dns-ipv4-addr` and `--dns-ipv6-addr` you ask curl to "bind" its local
 end of the DNS communication to a specific IP address and with
 `--dns-interface` you can instruct curl to use a specific network interface to
-send its DNS requests over.
+use for its DNS requests.
 
-These `--dns-*` options are of course very specific and are only meant for
-those of you very aware of what you want and what these options do. But then
-they offer very customizable DNS name resolve operations.
+These `--dns-*` options are very advanced and are only meant for people who know
+what you're doing and understand what these options do. But they offer very
+customizable DNS name resolution operations.
 
 ## Connection timeout
 
-curl typically makes a TCP connection to the specific host as an initial part
-of its network transfer. This TCP connection can of course fail or sometimes
-be very slow depending on all sorts of shaky network conditions or perhaps
-even faulty remote servers.
+curl will typically make a TCP connection to the host as an initial part of its
+network transfer. This TCP connection can fail or be very slow, if there are
+shaky network conditions or faulty remote servers.
 
-To reduce the impact on your scripts or other use, you can set a maximum time
-to curl for which it will allow the connect attempt to go on. With
-`--connnect-timeout` you simply tell curl the maximum time to allow for this,
-and if curl hasn't made it connect in that time it returns a failure.
+To reduce the impact on your scripts or other use, you can set the maximum time
+in seconds which curl will allow for the connection attempt. With
+`--connnect-timeout` you tell curl the maximum time to allow for connecting,
+and if curl has not connected in that time it returns a failure.
 
-The connection timeout is only limiting the time curl is allowed to spend up
+The connection timeout only limits the time curl is allowed to spend up
 until the moment it connects, so once the TCP connection has been established
-it can then again take longer time. See the [Timeouts](usingcurl-timeouts.md)
+it can take longer time. See the [Timeouts](usingcurl-timeouts.md)
 section for more on generic curl timeouts.
 
 If you specify a low timeout, you effectively disable curl's ability to
 connect to remote servers, slow servers or servers you access over unreliable
 networks.
 
-The connection timeout can be specified as a decimal value for subsecond
-precision. Allow 2781 milliseconds to be spent on trying to connect:
+The connection timeout can be specified as a decimal value for sub-second
+precision. For example, to allow 2781 milliseconds to connect:
 
     curl --connnect-timeout 2.781 https://example.com/
 
 ## Network interface
 
 On machines with multiple network interfaces that are connected to multiple
-networks, there are siutuations where you can decide which network interface
+networks, there are situations where you can decide which network interface
 you would prefer the outgoing network traffic to use. Or which originating IP
 address (out of the multiple ones you have) to use in the communication.
 
@@ -161,27 +156,26 @@ would like to "bind" your local end of the communication to, with the
 
 ## Local port number
 
-A TCP connection is created betweeen an IP address and a port number in the
+A TCP connection is created between an IP address and a port number in the
 local end and an IP address and a port number in the remote end. The remote
 port number can be specified in the URL and usually helps identify which
-service you are targetting.
+service you are targeting.
 
-The local port number is usually just randomly assigne to your TCP connection
-by the network stack and you normally don't have to bother yourself with
-thinking about that much further. However, in some circumstances you find
-yourself behind network equipment, firewalls or similar setups that put
-restrictions on what source port numbers that can be allowed to set up the
-outgoing connections.
+The local port number is usually randomly assigned to your TCP connection
+by the network stack and you normally don't have to think about it much further.
+However, in some circumstances you find yourself behind network equipment,
+firewalls or similar setups that put restrictions on what source port numbers
+that can be allowed to set up the outgoing connections.
 
-For such situations and others, you can specify which local ports curl should
+For situations like this, you can specify which local ports curl should
 bind the the connection to. You can specify a single port number to use, or a
-range of ports, and we always recommend using a range because ports are scarce
+range of ports. We recommend using a range because ports are scarce
 resources and the exact one you want may already be in use. If you ask for a
-local port number (range) that curl can't fulfill for you, it will exit with a
+local port number (or range) that curl can't obtain for you, it will exit with a
 failure.
 
 Also, on most operating systems you cannot bind to port numbers below 1024
-without having a higher priviledge level (root) and we generally advice
+without having a higher privilege level (root) and we generally advise
 against running curl as root if you can avoid it.
 
 Ask curl to use a local port number between 4000 and 4200 when getting this
@@ -191,28 +185,28 @@ HTTPS page:
 
 ## Keep alive
 
-TCP connections can be totally without traffic in any diection when they are
+TCP connections can be totally without traffic in either direction when they are
 not used. A totally idle connection can therefore not be clearly separated
 from a connection that has gone completely stale because of network or server
 issues.
 
 At the same time, lots of network equipments such as firewalls or NATs are
-these days keeping track of TCP connections so that they can translate
-adddresses, block "wrong" incoming packets and more. These devices often count
-completely idle connections as dead after N minutes, where N of course varies
+keeping track of TCP connections these days, so that they can translate
+addresses, block "wrong" incoming packets, etc. These devices often count
+completely idle connections as dead after N minutes, where N varies
 between device to device but at times is as short as 10 minutes or even less.
 
-One way to help avoid getting a really slow connection (or an idle one) to get
+One way to help avoid a really slow connection (or an idle one) getting
 treated as dead and wrongly killed, is to make sure TCP keep alive is
-used. TCP keepalive is a feature in the TCP protocol that makes it send what
-is basically "ping frames" back and forth when it would otherwise be totally
+used. TCP keepalive is a feature in the TCP protocol that makes it send "ping
+frames" back and forth when it would otherwise be totally
 idle. It helps idle connections to detect breakage even when no traffic is
-flying over it and it helps middle boxes not consider the connection dead.
+moving over it, and helps intermediate systems not consider the connection dead.
 
-curl uses TCP keepalive by default for the reasons mention here. But there
-might be times when you want to *disable* keepalives or you may want to change
+curl uses TCP keepalive by default for the reasons mentioned here. But there
+might be times when you want to *disable* keepalive or you may want to change
 the interval between the TCP "pings" (curl defaults to 60 seconds). You can
-switch off keepalives with:
+switch off keepalive with:
 
     curl --no-keepalive https://example.com/
 

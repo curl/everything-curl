@@ -1,8 +1,8 @@
 # HTTP responses
 
 Every HTTP request includes a HTTP response. A HTTP response is a set of
-meta-data and a response body, where the body can occastionally be zero bytes
-and thus non-existant. A HTTP response will however always have response
+metadata and a response body, where the body can occasionally be zero bytes
+and thus nonexistent. A HTTP response will however always have response
 headers.
 
 The response body will be passed to the [write callback](callback-write.md)
@@ -26,7 +26,7 @@ the amount of downloaded data in the most recent transfer.
 ## HTTP response code
 
 Every HTTP response starts off with a single line that contains the HTTP
-response code. It is a threee digit number that contains the server's idea of
+response code. It is a three digit number that contains the server's idea of
 the status for the request. The numbers are detailed in the HTTP standard
 specifications but they are divided into ranges that basically work like this:
 
@@ -45,18 +45,17 @@ You can extract the response code after a transfer like this
 
 ## About HTTP response code "errors"
 
-While the response code numbers can include numbers using which the server
-signals that there was some sort of error (in the 4xx and 5xx ranges) while
-proceessing the request, it is important to understand that libcurl will not
-return an error because of that.
+While the response code numbers can include numbers (in the 4xx and 5xx ranges)
+which the server uses to signal that there was an error processing the request,
+it is important to realize that this will not cause libcurl to return an
+error.
 
-when libcurl is asked to perform a HTTP transfer it will return error if that
-HTTP transfer fails in any way, and getting for example a 404 back is not a
-problem for libcurl. It is not a HTTP transfer error. A user can very well be
-writing a client for trying out a servers way to return HTTP responses or
-similar.
+When libcurl is asked to perform a HTTP transfer it will return an error if that
+HTTP transfer fails. However, getting a HTTP 404 or the like back is not a
+problem for libcurl. It is not a HTTP transfer error. A user might very well be
+writing a client for testing a server's HTTP responses.
 
-If you insist on wanting to treating HTTP response codes from 400 and up to be
-errors, libcurl offers the `CURLOPT_FAILONERROR` option that if set instructs
-curl to return `CURLE_HTTP_RETURNED_ERROR` then. It will then return error as
+If you insist on curl treating HTTP response codes from 400 and up as errors,
+libcurl offers the `CURLOPT_FAILONERROR` option that if set instructs curl to
+return `CURLE_HTTP_RETURNED_ERROR` in this case. It will then return error as
 soon as possible and not deliver the response body.

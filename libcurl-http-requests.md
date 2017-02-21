@@ -113,8 +113,8 @@ nothing to the right sight of the colon:
     curl_easy_perform(curl);
     curl_slist_free_all(list); /* free the list again */
 
-## Referer
+## Referrer
 
-and autoreferer
+and autoreferrer
 
 TBD

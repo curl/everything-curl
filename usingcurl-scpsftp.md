@@ -70,5 +70,5 @@ correct hash exists in `known_hosts` curl can perform transfers.
 
 To force curl to skip checking and obeying to the the `known_hosts` file, you
 can use the `-k / --insecure` command-line option. You must use this option
-with extreme care since it makes it possible man-in-the-middle attacks not
-detected.
+with extreme care since it makes it possible for man-in-the-middle attacks not
+to be detected.

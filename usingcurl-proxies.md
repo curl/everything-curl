@@ -18,10 +18,10 @@ Internet or perhaps that special network you are interested in. The use of
 proxies are introduced on your network by the people and management that run
 your network for policy or technical reasons.
 
-In the networking space there are a few ways for automatic detection of
+In the networking space there are a few methods for the automatic detection of
 proxies and how to connect to them, but none of those methods are truly
-universal and curl supports none of them. Furthermore, when you communicate to the
-outside world through a proxy that often means that you have to put a lot of
+universal and curl supports none of them. Furthermore, when you communicate to
+the outside world through a proxy that often means that you have to put a lot of
 trust on the proxy as it will be able to see and modify all the non-secure
 network traffic you send or get through it. That trust is not easy to assume
 automatically.
@@ -29,9 +29,9 @@ automatically.
 If you check your browser's network settings, sometimes under an advanced
 settings tab, you can learn what proxy or proxies your browser is configured
 to use. Chances are very big that you should use the same one or ones when you
-fire off your curl command lines.
+use curl.
 
-TBD: screenshots of how to find proxy in Firefox and Chrome?
+TBD: screenshots of how to find proxy settings in Firefox and Chrome?
 
 ### PAC
 
@@ -39,14 +39,14 @@ Some network environments provides several different proxies that should be
 used in different situations, and a very customizable way to handle that is
 supported by the browsers. This is called "proxy auto-config", or PAC.
 
-A PAC file contains a Javascript function that decides which proxy a given
+A PAC file contains a JavaScript function that decides which proxy a given
 network connection (URL) should use, and even if it should not use a proxy at
 all. Browsers most typically read the PAC file off a URL on the local network.
 
-Since curl has no Javascript capabilities, curl doesn't support PAC files. If
+Since curl has no JavaScript capabilities, curl doesn't support PAC files. If
 your browser and network use PAC files, the easiest route forward is usually
 to read the PAC file manually and figure out the proxy you need to specify to
-run your curl command line successfully.
+run curl successfully.
 
 ### Captive portals
 
@@ -114,7 +114,7 @@ usually transparently capture all traffic from clients to TCP port 443
 on a remote machine. Running curl in such a network would also get its HTTPS
 traffic captured.
 
-This practice, of course, allows the middle man to decrypt and actually snoop on
+This practice, of course, allows the middle man to decrypt and snoop on
 all TLS traffic.
 
 ### Non-HTTP protocols over an HTTP proxy
@@ -134,7 +134,7 @@ not work:
 
 What you can do instead then, is to "tunnel through" the HTTP proxy!
 
-### HTTP proxy tunnelling
+### HTTP proxy tunneling
 
 Most HTTP proxies allow clients to "tunnel through" it to a server on the other
 side. That's exactly what's done every time you use HTTPS through the HTTP
@@ -150,7 +150,7 @@ random port (for reasons only the proxy administrators know).
 
 Still, assuming that the HTTP proxy allows it, you can ask it to tunnel
 through to a remote server on any port number so you can do other protocols
-"normally" even when tunnelling. Do tunnelled FTP like this:
+"normally" even when tunneling. You can do FTP tunneling like this:
 
     curl -p -x http://proxy.example.com:80 ftp://ftp.example.com/file.txt
 
@@ -160,7 +160,7 @@ proxy by using `--proxy1.0 [proxy]` instead of `-x`.
 ### SOCKS types
 
 SOCKS is a protocol used for proxies and curl supports it. curl supports both
-SOCKS version 4 as well as version 5, and both versions come in two flavours.
+SOCKS version 4 as well as version 5, and both versions come in two flavors.
 
 You can select the specific SOCKS version to use by using the correct scheme
 part for the given proxy host with `-x`, or you can specify it with a separate
@@ -262,7 +262,7 @@ When using environment variables to set a proxy, you could easily end up in a
 situation where one or a few host names should be excluded from going through
 the proxy. This is then done with the NO_PROXY variable. Set that to a comma-
 separated list of host names that should not use a proxy when being
-accessed. You can set NO_PROXY to be a single asterisk ('*') to match all
+accessed. You can set NO_PROXY to be a single asterisk ('\*') to match all
 hosts.
 
 As an alternative to the NO_PROXY variable, there's also a `--noproxy` command

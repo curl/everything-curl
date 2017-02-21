@@ -1,11 +1,11 @@
 ## Downloads
 
 "Download" means getting data from a server on a network, and the server is
-then clearly considered to be above you. This is loading data down from the
-server to your machine where you are running curl.
+then clearly considered to be "above" you. This is loading data down from the
+server onto your machine where you are running curl.
 
-Downloading is probably the most common use case for curl—getting the specific
-data onto your machine, pointed to by a URL.
+Downloading is probably the most common use case for curl—retrieving the
+specific data pointed to by a URL onto your machine.
 
 ### What exactly is downloading?
 
@@ -154,7 +154,7 @@ compression with `--tr-encoding`:
     curl --tr-encoding http://example.com/
 
 In theory, there's nothing that prevents you from using both in the same
-command line, although in practise, you may then experience that some servers
+command line, although in practice, you may then experience that some servers
 get a little confused when ask to compress in two different ways. It's
 generally safer to just pick one.
 
@@ -238,7 +238,7 @@ gets. For example, if the data is HTML it will parse it to display a web page
 and possibly download other sub resources such as images, Javascript and CSS
 files. When curl downloads a HTML it will just get that single HTML resource,
 even if it, when parsed by a browser, would trigger a whole busload of more
-downloads. If you want curl to download any subresources as well, you need to
+downloads. If you want curl to download any sub-resources as well, you need to
 pass those URLs to curl and ask it to get those, just like any other URLs.
 
 Clients also differ in how they send their requests, and some aspects of a

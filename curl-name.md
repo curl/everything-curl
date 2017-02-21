@@ -10,9 +10,9 @@ program, a URL client. So 'c' for Client and URL: **cURL**.
 Nothing more was needed so the name was selected and we never looked back
 again.
 
-Later on, someone suggested that curl could actually be a clever "backronym"
-(where the first letter in the acronym refers back to the same word): "Curl
-URL Request Library"
+Later on, someone suggested that curl could actually be a clever "recursive
+acronym" (where the first letter in the acronym refers back to the same word):
+"Curl URL Request Library"
 
 While that is awesome, it was actually not the original thought. We sort of
 wish we were that clever though…

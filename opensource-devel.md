@@ -1,9 +1,9 @@
 ## Development
 
 We encourage everyone to participate in the development of curl and
-libcurl. We appreciate all the help we can get and while the significant
-portion of this project is source code, there is a lot more than just coding
-and debugging help that is needed and useful.
+libcurl. We appreciate all the help we can get and while the main portion of
+this project is source code, there is a lot more than just coding and debugging
+help that is needed and useful.
 
 We develop and discuss everything in the open, preferably on the mailing
 lists.

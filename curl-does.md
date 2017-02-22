@@ -28,14 +28,14 @@ boxes, printers, routers, game systems, etc.
 
 ### Command line tool
 
-Running curl from the command line was natural and Daniel never even
-during a short moment considered anything else than that it would output data
-on stdout, to the terminal, by default. The "everything is a pipe" mantra of
-standard Unix philosophy was something Daniel believed in. curl is like 'cat'
-or one of the other Unix tools; it sends data to stdout to make it easy to
-chain together with other tools to do what you want. That's also why virtually
-all curl options that allow reading from a file or writing to a file, also
-have the ability to select doing it to stdout or from stdin.
+Running curl from the command line was natural and Daniel never considered
+anything else than that it would output data on stdout, to the terminal, by
+default. The "everything is a pipe" mantra of standard Unix philosophy was
+something Daniel believed in. curl is like 'cat' or one of the other Unix tools;
+it sends data to stdout to make it easy to chain together with other tools to do
+what you want. That's also why virtually all curl options that allow reading from
+a file or writing to a file, also have the ability to select doing it to stdout
+or from stdin.
 
 Following that style of what Unix command-line tools worked, it was also never
 any question about that it should support multiple URLs on the command line.
@@ -55,7 +55,7 @@ library that does all the heavy lifting.
 libcurl is designed and meant to be available for anyone who wants to add
 client-side file transfer capabilities to their software, on any platform, any
 architecture and for any purpose. libcurl is also extremely liberally licensed
-to avoid that becoming an obstacle, either.
+to avoid that becoming an obstacle.
 
 libcurl is written in traditional and conservative C. Where other languages
 are preferred, people have created libcurl [bindings](bindings.md) for them.

@@ -7,8 +7,8 @@ sites that don't support HTTP/2 the request will instead negotiate HTTP/1.1.
 
 With HTTP:// URLs however, the upgrade to HTTP/2 is done with an `Upgrade:`
 header that may cause an extra round-trip and perhaps even more troublesome, a
-sizable share of old servers out in the wild will return a 400 response when
-seeing such a header.
+sizable share of old servers will return a 400 response when seeing such a
+header.
 
 It should also be noted that some (most?) servers that support HTTP/2 for
 HTTP:// (which in itself isn't all servers) will not acknowledge the

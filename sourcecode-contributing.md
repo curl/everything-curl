@@ -153,7 +153,7 @@ Don't forget to use `git commit --author="Jane Doe <jane@example.com>"` if you
 commit someone else's work, and make sure that you have your own user and
 e-mail setup correctly in git before you commit!
 
-The author and the *-by: lines are, of course, there to make sure we give the
+The author and the \*-by: lines are, of course, there to make sure we give the
 proper credit in the project. We do not want to take someone else's work
 without clearly attributing where it comes from. Giving correct credit is of
 utmost importance!
@@ -166,8 +166,8 @@ git repository. Let's call them the core team.
 
 Everyone else can fork off their own curl repository to which they can commit
 and push changes and host them online and build their own curl versions from
-and so on, but in order to get changes into the *official* repository they need to
-be pushed by a trusted person.
+and so on, but in order to get changes into the *official* repository they need
+to be pushed by a trusted person.
 
 The core team is a small set of curl developers who have been around for a
 several years and that have shown that they are skilled developers and that

@@ -7,8 +7,8 @@ with `-d` or `-F`.
 But when do you use which of them?
 
 As described in the chapters mentioned above, both these options send the
-specified data to the server. The difference is really in how the data is
-formatted over the wire. Most of the times, the receiving end is written to
+specified data to the server. The difference is in how the data is
+formatted over the wire. Most of the time, the receiving end is written to
 expect a specific format and it expects that the sender formats and sends the
 data correctly. A client cannot just pick a format of its own choice.
 
@@ -31,10 +31,9 @@ and you perform one with curl's `-d` and friends.
 
 ## POST outside of HTML
 
-POST is a regular HTTP method and there's really no requirement that it was
-triggered or originated by HTML or ever involves a browser. Lots of
-services, APIs and similar these days allow you to pass in data to get things
-done.
+POST is a regular HTTP method and there is no requirement that it be
+triggered by HTML or involve a browser. Lots of services, APIs and other systems  
+allow you to pass in data these days in order to get things done.
 
 If these services expect plain "raw" data or perhaps data formatted as JSON or
 similar, you want the [regular POST](http-post.md) approach. curl's `-d`

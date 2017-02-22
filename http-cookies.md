@@ -1,9 +1,9 @@
 ## Cookies
 
 HTTP cookies are key/value pairs that a client stores on the behalf of a
-server. They are sent back in subsequent requests according to heuristics to
-allow clients to keep state between requests. Remember how the HTTP protocol
-itself has no real state but instead has to resend all data in subsequent
+server. They are sent back in subsequent requests to
+allow clients to keep state between requests. Remember that the HTTP protocol
+itself has no state but instead the client has to resend all data in subsequent
 requests that it wants the server to be aware of.
 
 Cookies are set by the server with the `Set-Cookie:` header and with each
@@ -15,10 +15,9 @@ The expiry of a cookie is either set to a fixed time in the future (or to live
 a number of seconds) or it gets no expiry at all. A cookie without an expire
 time is called a "session cookie" and is meant to live for the duration of the
 "session" but not longer. A session in this aspect is typically thought to be
-the life time of the browser used to manoeuvre a site. When you close the
+the life time of the browser used to view a site. When you close the
 browser, you end your session. Doing HTTP operations with a command-line client
-that supports cookies, of course, then begs the question when a session really
-ends…
+that supports cookies begs the question of when a session really ends…
 
 ### Cookie engine
 
@@ -68,7 +67,7 @@ jar". When you enable the cookie engine in curl and it has received cookies,
 you can instruct curl to write down all its known cookies to a file, the
 cookie jar, before it exists. It is important to remember that curl only
 updates the output cookie jar on exit and not during its lifetime, no matter
-how long the handling of the given inputs take.
+how long the handling of the given input takes.
 
 You point out the cookie jar output with `-c`:
 
@@ -86,11 +85,11 @@ it will not flush session cookies unless you tell it to.
 
 Instead of telling curl when a session ends, in order to flush session cookies
 and with this basically signal to the server that we are starting a new
-session, curl features an option that lets the user tell when a new session
+session, curl features an option that lets the user decide when a new session
 begins.
 
 A new cookie session means that all the session cookies will be thrown
-away. It is the equivalence of closing a browser and starting it again.
+away. It is the equivalent of closing a browser and starting it up again.
 
 Tell curl a new cookie session starts by using `-j, --junk-session-cookies`:
 

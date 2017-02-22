@@ -1,7 +1,7 @@
 # HTTP authentication
 
-Each HTTP request can be made authenticated. If a server or a proxy want the
-user to provide proof that it has the correct credentials to access a URL or
+Each HTTP request can be made authenticated. If a server or a proxy wants the
+user to provide proof that they have the correct credentials to access a URL or
 perform an action, it can send back a HTTP response code that informs the
 client that it needs to provide a correct HTTP authentication header in the
 request to be allowed.
@@ -38,7 +38,7 @@ the first request on the wire.
 If you'd rather have curl first *test* if the authentication is really
 required, you can ask curl to figure that out and then automatically use the
 most safe method it knows about with `--anyauth`. This makes curl try the
-requeste unautenticated, and then switch over to authentication if necessary:
+request unauthenticated, and then switch over to authentication if necessary:
 
     curl --anyauth --user daniel:secret http://example.com/
 

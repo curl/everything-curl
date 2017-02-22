@@ -181,15 +181,15 @@ can't see form submissions in clear text on the wire but instead you need to
 make sure you can have Wireshark extract your TLS private key from your
 browser. See the Wireshark documentation for details on doing that.
 
-### Javascript and forms
+### JavaScript and forms
 
 A very common mitigation against automated "agents" or scripts using curl is
-to have the page with the HTML form use Javascript to set values of some input
+to have the page with the HTML form use JavaScript to set values of some input
 fields, usually one of the hidden ones. Often, there's some
-Javascript code that executes on page load or when the submit button is
+JavaScript code that executes on page load or when the submit button is
 pressed which sets a magic value that the server then can verify
 before it considers the submission to be valid.
 
-You can usually work around that by just reading the Javascript code and redoing
+You can usually work around that by just reading the JavaScript code and redoing
 that logic in your script. Using the above mentioned tricks to check exactly
 what a browser sends is then also a good help.

@@ -7,7 +7,7 @@ again.
 
 The `--libcurl` command-line option will create a C program in the provided
 file name. That C program is an application that uses libcurl to run the
-transfer you just had the curl command-line tool do. Sure there are some
+transfer you just had the curl command-line tool do. There are some
 exceptions and it isn't always a 100% match, but you will find that it can
 serve as an excellent inspiration source for what libcurl options you want or
 can use and what additional arguments to provide to them.
@@ -26,12 +26,12 @@ This creates `example.c` in the current directory, looking similar to this:
      * https://curl.haxx.se/libcurl/c/curl_easy_setopt.html
      ************************************************************************/
     #include <curl/curl.h>
-    
+
     int main(int argc, char *argv[])
     {
       CURLcode ret;
       CURL *hnd;
-    
+
       hnd = curl_easy_init();
       curl_easy_setopt(hnd, CURLOPT_URL, "http://example.com");
       curl_easy_setopt(hnd, CURLOPT_NOPROGRESS, 1L);
@@ -39,11 +39,11 @@ This creates `example.c` in the current directory, looking similar to this:
       curl_easy_setopt(hnd, CURLOPT_MAXREDIRS, 50L);
       curl_easy_setopt(hnd, CURLOPT_SSH_KNOWNHOSTS, "/home/daniel/.ssh/known_hosts");
       curl_easy_setopt(hnd, CURLOPT_TCP_KEEPALIVE, 1L);
-    
+
       /* Here is a list of options the curl code used that cannot get generated
          as source easily. You may select to either not use them or implement
          them yourself.
-    
+
       CURLOPT_WRITEDATA set to a objectpointer
       CURLOPT_WRITEFUNCTION set to a functionpointer
       CURLOPT_READDATA set to a objectpointer
@@ -54,15 +54,14 @@ This creates `example.c` in the current directory, looking similar to this:
       CURLOPT_STDERR set to a objectpointer
       CURLOPT_HEADERFUNCTION set to a functionpointer
       CURLOPT_HEADERDATA set to a objectpointer
-    
+
       */
 
       ret = curl_easy_perform(hnd);
-    
+
       curl_easy_cleanup(hnd);
       hnd = NULL;
-    
+
       return (int)ret;
     }
     /**** End of sample code ****/
-

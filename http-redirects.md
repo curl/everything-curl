@@ -127,11 +127,11 @@ of these kinds of redirects.
 
     <meta http-equiv="refresh" content="0; url=http://example.com/">
 
-## Javascript redirects
+## JavaScript redirects
 
 The modern web is full of Javascript and as you know, Javascript is a
 language and a full run time that allows code to execute in the browser when
 visiting web sites.
 
-Javascript also provides means for it to instruct the browser to move on to
+JavaScript also provides means for it to instruct the browser to move on to
 another site—a redirect, if you will.

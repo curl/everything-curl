@@ -1,6 +1,6 @@
 ## Networking simplified
 
-Internetworking means communicating between two endpoints on the Internet. The
+Networking means communicating between two endpoints on the Internet. The
 Internet is just a bunch of interconnected machines (computers really), each
 using their own private addresses (called IP addresses). The addresses each
 machine have can be of different types and machines can even have temporary

@@ -6,7 +6,7 @@ and editing "Everything curl".
 ## Capitalization of words in section names
 
 We do not use that practice, partially because our sections are not really
-"chapters" but also to create a more informal feel.
+"chapters", but also to create a more informal feel.
 
 ## Avoid prepositions at the end of sentences
 

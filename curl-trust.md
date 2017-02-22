@@ -11,7 +11,7 @@ In the curl project we build trust for our users in a few different ways:
    open.
 
 2. We try hard to write reliable code. We write test cases, we review code, we
-   document best practises and we have a style guide that helps us keep code
+   document best practices and we have a style guide that helps us keep code
    consistent.
 
 3. We stick to promises and guarantees as much as possible. We don't break

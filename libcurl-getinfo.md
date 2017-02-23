@@ -1,3 +1,87 @@
-## Post transfer info
+# Post transfer info
 
-TBD
+Remember how libcurl transfers are associated with an "easy handle"! Each
+transfer has such a handle and when a transfer is completed, before the handle
+is cleaned or reused for another transfer, it can be used to extract
+information from the previous operation.
+
+Your friend for doing this is called `curl_easy_getinfo()` and you tell it
+which specific information you're interested in and it will return that to you
+- if it can.
+
+When you use this function, you pass in the easy handle, which information you
+want and a pointer to a variable to hold the answer. You must pass in a
+pointer to a variable of the correct type or you risk that things will go
+side-ways. These information values are designed to be provided *after* the
+transfer is completed.
+
+The data you receive can be a long, a 'char *', a 'struct curl_slist *', a
+double or a socket.
+
+This is how you extract the `Content-Type:` value from the previous HTTP
+transfer:
+
+    CURLcode res;
+    char *content_type;
+    res = curl_easy_getinfo(curl, CURLINFO_CONTENT_TYPE, &content_type);
+
+but if you want to extract the local port number that was used in that
+connection:
+
+    CURLcode res;
+    long port_number;
+    res = curl_easy_getinfo(curl, CURLINFO_LOCAL_PORT, &port_number);
+
+## Available information
+
+| Getinfo option          | Type   | Description |
+|-------------------------|--------|-------------|
+| CURLINFO_EFFECTIVE_URL  | char * | Last used URL
+| CURLINFO_RESPONSE_CODE  | long   | Last received response code
+| CURLINFO_HTTP_CONNECTCODE | long | Last proxy CONNECT response code
+| CURLINFO_HTTP_VERSION   | long   | The http version used in the connection
+| CURLINFO_FILETIME       | long   | Remote time of the retrieved document
+| CURLINFO_TOTAL_TIME     | double | Total time of previous transfer
+| CURLINFO_NAMELOOKUP_TIME | double | Time from start until name resolving completed
+| CURLINFO_CONNECT_TIME   | double | Time from start until remote host or proxy completed
+| CURLINFO_APPCONNECT_TIME | double | Time from start until SSL/SSH handshake completed.
+| CURLINFO_PRETRANSFER_TIME | double | Time from start until just before the transfer begins
+| CURLINFO_STARTTRANSFER_TIME | double | Time from start until just when the first byte is received
+| CURLINFO_REDIRECT_TIME  | double | Time taken for all redirect steps before the final transfer
+| CURLINFO_REDIRECT_COUNT | long   | Total number of redirects that were followed
+| CURLINFO_REDIRECT_URL   | char * | URL a redirect would take you to, had you enabled redirects
+| CURLINFO_SIZE_UPLOAD    | double | Number of bytes uploaded
+| CURLINFO_SIZE_DOWNLOAD  | double | Number of bytes downloaded
+| CURLINFO_SPEED_DOWNLOAD | double | Average download speed
+| CURLINFO_SPEED_UPLOAD   | double | Average upload speed
+| CURLINFO_HEADER_SIZE    | long   | Number of bytes of all headers received
+| CURLINFO_REQUEST_SIZE   | long   | Number of bytes sent in the issued HTTP requests
+| CURLINFO_SSL_VERIFYRESULT | long | Certificate verification result
+| CURLINFO_PROXY_SSL_VERIFYRESULT | long | Proxy certificate verification result
+| CURLINFO_SSL_ENGINES    | struct curl_slist * | A list of OpenSSL crypto engines
+| CURLINFO_CONTENT_LENGTH_DOWNLOAD | double | Content length from the Content-Length header
+| CURLINFO_CONTENT_LENGTH_UPLOAD | double | Upload size
+| CURLINFO_CONTENT_TYPE   | char * | Content type from the Content-Type header
+| CURLINFO_PRIVATE        | char * | User's private data pointer
+| CURLINFO_HTTPAUTH_AVAIL | long   | Available HTTP authentication methods (bitmask)
+| CURLINFO_PROXYAUTH_AVAIL | long  | Available HTTP proxy authentication methods
+| CURLINFO_OS_ERRNO       | long   | The errno from the last failure to connect
+| CURLINFO_NUM_CONNECTS   | long   | Number of new successful connections used for previous transfer
+| CURLINFO_PRIMARY_IP     | char * | IP address of the last connection
+| CURLINFO_PRIMARY_PORT   | long   | Port of the last connection
+| CURLINFO_LOCAL_IP       | char * | Local-end IP address of last connection
+| CURLINFO_LOCAL_PORT     | long   | Local-end port of last connection
+| CURLINFO_COOKIELIST     | struct curl_slist * | List of all known cookies
+| CURLINFO_LASTSOCKET     | long   | Last socket used
+| CURLINFO_ACTIVESOCKET   | curl_socket_t | The session's active socket
+| CURLINFO_FTP_ENTRY_PATH | char * | The entry path after logging in to an FTP server
+| CURLINFO_CERTINFO       | struct curl_slist * | Certificate chain
+| CURLINFO_TLS_SSL_PTR    | struct curl_slist * | TLS session info that can be used for further processing
+| CURLINFO_TLS_SESSION    | struct curl_slist * | TLS session info that can be used for further processing.  (**Deprecated option, use CURLINFO_TLS_SSL_PTR instead!**)
+| CURLINFO_CONDITION_UNMET | long  | Whether or not a time conditional was met
+| CURLINFO_RTSP_SESSION_ID | char * | RTSP session ID
+| CURLINFO_RTSP_CLIENT_CSEQ | long | RTSP CSeq that will next be used
+| CURLINFO_RTSP_SERVER_CSEQ | long | RTSP CSeq that will next be expected
+| CURLINFO_RTSP_CSEQ_RECV  | long  | RTSP CSeq last received
+| CURLINFO_PROTOCOL       | long   | The protocol used for the connection
+| CURLINFO_SCHEME         | char * | The scheme used for the connection

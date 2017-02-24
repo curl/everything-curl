@@ -1,4 +1,4 @@
-## Dependencies
+# Dependencies
 
 A key to making good software is to build on top of other great software.  By
 using other libraries that many others use, we reinvent the same things fewer
@@ -9,39 +9,74 @@ A whole slew of features that curl provides require that it is built to use
 one or more external libraries. They are then dependencies of curl. None of
 them are *required* to be used, but most users will want to use at least some.
 
-### zlib
+## zlib
 
-TBD
+http://zlib.net/
 
-### c-ares
+curl can do automatic decompression of data transfered over HTTP if built with
+zlib. Getting compressed data over the wire will use less bandwidth.
 
-TBD
+## c-ares
 
-### libssh2
+https://c-ares.haxx.se/
 
-TBD
+curl can be built with c-ares to be able to do asynchronous name resolves.
+Another option to enable asynchronous name resolves is to build curl with the
+threaded name resolver backend, which then instead will create a separate
+helper thread for each name resolve, which c-ares is doing it all within the
+same thread.
 
-### nghttp2
+## libssh2
 
-TBD
+https://libssh2.org/
 
-### openldap
+When curl is built with libssh2, it enables support for the SCP and SFTP
+protocols.
 
-TBD
+## nghttp2
 
-### librtmp
+https://nghttp2.org/
 
-TBD
+This is a library for handling HTTP/2 framing and is a prerequisite for curl
+to support HTTP version 2.
 
-### libmetalink
+## openldap
 
-TBD
+https://www.openldap.org/
 
-### libpsl
+This library is one option to allow curl to get support for the LDAP and LDAPS
+URL schemes. On Windows, you can also opt to build curl to use the winssl library.
 
-TBD
+## librtmp
 
-### libidn
+https://rtmpdump.mplayerhq.hu/
 
-TBD
+To enable curl's support for the RTMP URL scheme, you must build curl with the
+librtmp library that comes from the RTMPDump project.
 
+## libmetalink
+
+https://launchpad.net/libmetalink
+
+Build curl with libmetalink to have it support the
+[metalink](http://www.metalinker.org/) format, which allows curl to download
+the same file from multiple places, includes checksums and more. See curl's
+[--metalink](https://curl.haxx.se/docs/manpage.html#--metalink) option.
+
+## libpsl
+
+https://rockdaboot.github.io/libpsl/
+
+When you build curl with support for libpsl, the cookie parser will know about
+the Public Suffix List and thus handle such cookies appropriately.
+
+## libidn2
+
+https://www.gnu.org/software/libidn/libidn2/manual/libidn2.html
+
+curl handles International Domain Names (IDN) with the help of the libidn2 library.
+
+## TLS libraries
+
+There are so many different TLS libraries to choose from so they're covered in
+a [separate section](building-tls.md).

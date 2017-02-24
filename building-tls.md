@@ -38,9 +38,10 @@ openssl:
 
     ./configure --with-ssl=/home/user/installed/openssl
 
-The alternatives BoringSSL and libressl look similar enough that configure
-will detect them the same way as OpenSSL but it will use some additional
-measures to find out which of the particular flavors it it using.
+The alternatives [BoringSSL](building-boringssl.md) and libressl look similar
+enough that configure will detect them the same way as OpenSSL but it will use
+some additional measures to find out which of the particular flavors it it
+using.
 
 ### GnuTLS
 

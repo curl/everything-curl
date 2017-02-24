@@ -80,6 +80,7 @@
     * [Build from source](building-source.md)
     * [Dependencies](building-deps.md)
     * [TLS libraries](building-tls.md)
+        * [BoringSSL](building-boringssl.md)
 * [libcurl basics](libcurl.md)
     * [Easy handle](libcurl-easyhandle.md)
     * [Drive transfers](libcurl-drive.md)

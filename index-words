@@ -13,6 +13,7 @@
 --location
 --max-filesize
 --max-time
+--metalink
 --negotiate
 --netrc-file
 --netrc-optional
@@ -130,6 +131,7 @@ HTTP/2
 Header callback
 Host:
 HttpGet
+IDN
 IPv4
 IPv6
 Indentation
@@ -163,6 +165,7 @@ URL Globbing
 Vulnerability
 Write callback
 bugreports
+c-ares
 clone
 code of conduct
 configure
@@ -201,9 +204,16 @@ git
 json
 keep-alive
 libcurl version
+libidn2
+libmetalink
+libpsl
 libressl
+librtmp
+libssh2
 license
 multi-threading
+nghttp2
+openldap
 port number
 proxy
 ranges
@@ -215,3 +225,4 @@ security
 snapshots
 testing
 transfer-encoding
+zlib

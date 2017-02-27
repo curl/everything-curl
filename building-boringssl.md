@@ -16,7 +16,7 @@ like.
 ## set up the build tree to get detected by curl's configure
 
 In the boringssl source tree root, make sure there's a `lib` and an `include`
-dir. The `lib` dir should contain the two libs (I make them symlinks into the
+dir. The `lib` dir should contain the two libs (I made them symlinks into the
 build dir). The `include` dir is already present by default. Make and populate
 `lib` like this (commands issued in the source tree root, not in the `build/`
 subdirectory).
@@ -33,11 +33,11 @@ subdirectory).
 `LIBS=-lpthread ./configure --with-ssl=$HOME/src/boringssl` (where I point out
 the root of the boringssl tree)
 
-verify that at the end of the configure run, it should say it detected
-BoringSSL to be used
+Verify that at the end of the configuration, it says it detected
+BoringSSL to be used.
 
 ## build curl
 
-run `make` in the curl source tree
+Run `make` in the curl source tree.
 
 Now you can install curl normally with `make install` etc.

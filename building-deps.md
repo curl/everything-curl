@@ -1,29 +1,29 @@
 # Dependencies
 
 A key to making good software is to build on top of other great software.  By
-using other libraries that many others use, we reinvent the same things fewer
+using libraries that many others use, we reinvent the same things fewer
 times and we get more reliable software as there are more people using the
 same code.
 
 A whole slew of features that curl provides require that it is built to use
 one or more external libraries. They are then dependencies of curl. None of
-them are *required* to be used, but most users will want to use at least some.
+them are *required*, but most users will want to use at least some of them.
 
 ## zlib
 
 http://zlib.net/
 
-curl can do automatic decompression of data transfered over HTTP if built with
+curl can do automatic decompression of data transferred over HTTP if built with
 zlib. Getting compressed data over the wire will use less bandwidth.
 
 ## c-ares
 
 https://c-ares.haxx.se/
 
-curl can be built with c-ares to be able to do asynchronous name resolves.
-Another option to enable asynchronous name resolves is to build curl with the
-threaded name resolver backend, which then instead will create a separate
-helper thread for each name resolve, which c-ares is doing it all within the
+curl can be built with c-ares to be able to do asynchronous name resolution.
+Another option to enable asynchronous name resolution is to build curl with the
+threaded name resolver backend, which will then instead create a separate
+helper thread for each name resolve. c-ares does it all within the
 same thread.
 
 ## libssh2
@@ -60,7 +60,7 @@ https://launchpad.net/libmetalink
 
 Build curl with libmetalink to have it support the
 [metalink](http://www.metalinker.org/) format, which allows curl to download
-the same file from multiple places, includes checksums and more. See curl's
+the same file from multiple places. It includes checksums and more. See curl's
 [--metalink](https://curl.haxx.se/docs/manpage.html#--metalink) option.
 
 ## libpsl
@@ -78,5 +78,5 @@ curl handles International Domain Names (IDN) with the help of the libidn2 libra
 
 ## TLS libraries
 
-There are so many different TLS libraries to choose from so they're covered in
+There are many different TLS libraries to choose from, so they're covered in
 a [separate section](building-tls.md).

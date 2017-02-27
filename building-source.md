@@ -1,7 +1,7 @@
 # Build from source
 
 The curl project creates source code that can be built to produce the two
-products curl and libcurl. The actual conversion from source code to binaries
+products curl and libcurl. The conversion from source code to binaries
 is often referred to as "building". You build curl and libcurl from source.
 
 The curl project doesn't provide any built binaries at all, it only ships the
@@ -13,8 +13,8 @@ The source code consists of a large number of files containing C
 code. Generally speaking, the same set of files are used to build binaries for
 all platforms and computer architectures that curl supports. curl can be built
 and run on a vast number of different platforms. If you use a rare operating
-system yourself, chances are that building curl yourself from source is the
-easiest or perhaps only way to get curl.
+system yourself, chances are that building curl from source is the
+easiest or perhaps the only way to get curl.
 
 Making it easy to build curl is a priority to the curl project, although we
 don't always necessarily succeed!
@@ -22,9 +22,9 @@ don't always necessarily succeed!
 ## git vs tarballs
 
 When release tarballs are created, a few files are generated and included in
-the final file that is the one used for the release. Those generated files are
-not present in the git repository, exactly for the reason that they are
-generated so there's no need to store them in git.
+the final release file. Those generated files are not present in the git
+repository, because they are generated and there's no need to
+store them in git.
 
 So, if you want to build curl from git you need to generate some of those
 files yourself before you can build. On Linux and Unix systems, do this by
@@ -79,7 +79,7 @@ machine.
 
 For cross-compiling to work, you need a dedicated compiler and build system
 setup for the particular target system for which you want to build. How to get
-and install that is, however, not covered in this book.
+and install that system is not covered in this book.
 
 Once you have a cross compiler, you can instruct configure to use that
 compiler instead of the "native" compiler when it builds curl so that the end

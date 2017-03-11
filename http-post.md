@@ -10,7 +10,7 @@ will send it "URL encoded", as a serialized name=value pairs separated with
 ampersand symbols ('&'). You send such data with curl's `-d` or `--data`
 option like this:
 
-    curl -d name=admin&shoesize=12 http://example.com/
+    curl -d 'name=admin&shoesize=12' http://example.com/
 
 When specifying multiple `-d` options on the command line, curl will
 concatenate them and insert ampersands in between, so the above example could

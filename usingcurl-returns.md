@@ -117,9 +117,9 @@ A very basic Unix shell script could look like something like this:
  18. Partial file. Only a part of the file was transferred. When the transfer
     is considered complete, curl will verify that it actually received the
     same amount of data that it was told before-hand that it was going to
-    get. If the two numbers don't match, this is the error code. It may mean
-    that curl to less than advertised or that it got more. curl itself cannot
-    know which number that is wrong or which is correct. If any.
+    get. If the two numbers don't match, this is the error code. It could mean
+    that curl got fewer bytes than advertised or that it got more. curl itself
+    cannot know which number that is wrong or which is correct. If any.
 
  19. FTP couldn't download/access the given file. The RETR (or similar)
     command failed. curl got an error from the server when trying to download

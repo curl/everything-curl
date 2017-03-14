@@ -1,4 +1,4 @@
-## Copy as curl
+# Copy as curl
 
 Using curl to perform an operation a user just managed to do with his or her
 browser is one of the more common requests and areas people ask for help
@@ -43,3 +43,21 @@ so you can get a quick command line generated really quickly, like this
 example when I right-click an image in Firefox:
 
 ![cliget with Firefox](firefox-cliget.png)
+
+## Not perfect
+
+These methods all give you a command line to reproduce their HTTP transfers,
+but you will also learn they they are still often not the perfect solution to
+your problems. Why? Well mostly because these tools are written to rerun the
+*exact* same request that you copied, while you often what to rerun the same
+logic but not sending an exact copy of the same cookies and file contents etc.
+
+These tools will give you command lines with static and fixed cookie contents
+to send in the request, because that is the contents of the cookies that were
+sent in the browser's requests. You will most likely want to rewrite the
+command line to dynamically adapt to whatever the content is in the cookie
+that the server told you in a previous response. And so on.
+
+The copy as curl functionality is also often notoriously bad at using `-F` and
+instead they provide handcrafted `--data-binary` solutions including the mime
+separator strings etc.

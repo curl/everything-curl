@@ -235,7 +235,7 @@ Curl only gets exactly what you ask it to get and it never parses the actual
 content—the data—that the server delivers. A browser gets data and it
 activates different parsers depending on what kind of content it thinks it
 gets. For example, if the data is HTML it will parse it to display a web page
-and possibly download other sub resources such as images, Javascript and CSS
+and possibly download other sub resources such as images, JavaScript and CSS
 files. When curl downloads a HTML it will just get that single HTML resource,
 even if it, when parsed by a browser, would trigger a whole busload of more
 downloads. If you want curl to download any sub-resources as well, you need to

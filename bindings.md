@@ -2,7 +2,7 @@
 
 Creative people have written bindings or interfaces for various environments
 and programming languages. Using one of these allows you to take advantage of
-curl powers from within your favourite language or system. This is a list of
+curl powers from within your favorite language or system. This is a list of
 all known interfaces as of this writing.
 
 The bindings listed below are not part of the curl/libcurl distribution

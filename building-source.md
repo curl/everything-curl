@@ -23,7 +23,7 @@ don't always necessarily succeed!
 
 When release tarballs are created, a few files are generated and included in
 the final release file. Those generated files are not present in the git
-repository, because they are generated and there's no need to
+repository, because they are generated and there is no need to
 store them in git.
 
 So, if you want to build curl from git you need to generate some of those

@@ -109,7 +109,7 @@ end of the DNS communication to a specific IP address and with
 use for its DNS requests.
 
 These `--dns-*` options are very advanced and are only meant for people who know
-what you're doing and understand what these options do. But they offer very
+what they are doing and understand what these options do. But they offer very
 customizable DNS name resolution operations.
 
 ## Connection timeout

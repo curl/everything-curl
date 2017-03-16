@@ -78,5 +78,5 @@ curl handles International Domain Names (IDN) with the help of the libidn2 libra
 
 ## TLS libraries
 
-There are many different TLS libraries to choose from, so they're covered in
+There are many different TLS libraries to choose from, so they are covered in
 a [separate section](building-tls.md).

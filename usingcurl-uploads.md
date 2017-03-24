@@ -83,7 +83,7 @@ You upload the mail body to the SMTP server. With SMTP, you also need to
 include all the e-mail headers you need (To:, From:, Date:, etc.) in the mail
 body as curl will not add any at all.
 
-   curl -T mail smtp://mail.example.com/ --mail-from user@example.com
+    curl -T mail smtp://mail.example.com/ --mail-from user@example.com
 
 Learn more about using SMTP with curl in the [Using
 curl/SMTP](usingcurl-smtp.md) section.

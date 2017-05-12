@@ -25,8 +25,8 @@ not the ones you want your transfer to use. Then you can instruct libcurl to
 use the specific method you like with `CURLOPT_CUSTOMREQUEST`. For example,
 you want to send a `DELETE` method to the URL of your choice:
 
-    curl_easy_setupt(curl, CURLOPT_CUSTOMREQUEST, "DELETE");
-    curl_easy_setupt(curl, CURLOPT_URL, "https://example.com/file.txt");
+    curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DELETE");
+    curl_easy_setopt(curl, CURLOPT_URL, "https://example.com/file.txt");
 
 The CURLOPT_CUSTOMREQUEST setting should only be the single keyword to use as
 method in the HTTP request line. If you want to change or add additional HTTP

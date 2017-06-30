@@ -8,7 +8,7 @@ fashion. libcurl will do the entire transfer and return control back to
 your application when it is completed—successful or failed.
 
 2. The 'multi' interface is for when you want to do more than one transfer at
-the same time, or you just want an non-blocking transfer mechanism.
+the same time, or you just want a non-blocking transfer.
 
 3. The 'multi_socket' interface is a slight variation of the regular multi
 one, but is event-based and is really the suggested API to use if you intend

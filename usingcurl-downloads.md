@@ -140,10 +140,10 @@ use this with the `--compressed` option:
 
     curl --compressed http://example.com/
 
-With this option enabled (and if the server support it) it delivers the data in
-a compressed way and curl will decompress it before saving it or sending it to
-stdout. This usually means that as a user you don't really see or experience
-the compression other than possibly noticing a faster transfer.
+With this option enabled (and if the server supports it) it delivers the data
+in a compressed way and curl will decompress it before saving it or sending it
+to stdout. This usually means that as a user you don't really see or
+experience the compression other than possibly noticing a faster transfer.
 
 The `--compressed` option asks for Content-Encoding compression using one of the
 supported compression algorithms. There's also the rarer **Transfer-Encoding**

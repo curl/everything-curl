@@ -190,7 +190,7 @@ not used. A totally idle connection can therefore not be clearly separated
 from a connection that has gone completely stale because of network or server
 issues.
 
-At the same time, lots of network equipments such as firewalls or NATs are
+At the same time, lots of network equipment such as firewalls or NATs are
 keeping track of TCP connections these days, so that they can translate
 addresses, block "wrong" incoming packets, etc. These devices often count
 completely idle connections as dead after N minutes, where N varies

@@ -103,6 +103,6 @@ struct (a "message") if a transfer has ended and you can then find out the
 result of that transfer using that struct.
 
 When you do multiple parallel transfers, more than one transfer can of course
-complete in the same `curl_multi_perform` invoke and then you might need more
-than one call to `curl_multi_info_read` to get info about each completed
+complete in the same `curl_multi_perform` invocation and then you might need
+more than one call to `curl_multi_info_read` to get info about each completed
 transfer.

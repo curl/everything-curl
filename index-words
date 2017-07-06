@@ -5,6 +5,9 @@
 --connect-to
 --data
 --ftp-method
+--ftp-pasv
+--ftp-port
+--ftp-skip-pasv-ip
 --header
 --keepalive-time
 --libcurl
@@ -18,6 +21,8 @@
 --netrc-file
 --netrc-optional
 --ntlm
+--no-eprt
+--no-epsv
 --post301
 --post302
 --post303

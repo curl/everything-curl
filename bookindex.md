@@ -120,6 +120,9 @@
  - Firefox: [lib/vtls](sourcecode-layout.md#lib/vtls), [Discover your proxy](usingcurl-proxies.md#discover-your-proxy), [Copy as curl](usingcurl-copyas.md#copy-as-curl), [From Firefox](usingcurl-copyas.md#from-firefox), [On Firefox, without using the devtools](usingcurl-copyas.md#on-firefox,-without-using-the-devtools)
  - Fragment: [Fragment](cmdline-urls.md#fragment)
  - --ftp-method: [multicwd](ftp-traversedir.md#multicwd), [nocwd](ftp-traversedir.md#nocwd), [singlecwd](ftp-traversedir.md#singlecwd)
+ - --ftp-pasv: [Passive connections](ftp-twoconnections.md#passive-connections)
+ - --ftp-port: [Available exit codes](usingcurl-returns.md#available-exit-codes), [Active connections](ftp-twoconnections.md#active-connections)
+ - --ftp-skip-pasv-ip: [Passive connections](ftp-twoconnections.md#passive-connections)
  - future: [Project communication](curl-comm.md#project-communication), [Future](curl-future.md#future), [docs](sourcecode-layout.md#docs), [curl-security@haxx.se](sourcecode-reportvuln.md#curl-security@haxx.se), [What other protocols are there?](protocols-protocols.md#what-other-protocols-are-there?), [HTTPS to proxy](usingcurl-proxies.md#https-to-proxy), ["Not used"](usingcurl-returns.md#"not-used"), [Cookies](http-cookies.md#cookies), [API compatibility](libcurl-api.md#api-compatibility)
 ## G
  - git: [Daily snapshots](curl-releases.md#daily-snapshots), [Clone the code](sourcecode.md#clone-the-code), [root](sourcecode-layout.md#root), [include/curl](sourcecode-layout.md#include/curl), [scripts](sourcecode-layout.md#scripts), [git](sourcecode-contributing.md#git), [Pull request](sourcecode-contributing.md#pull-request), [Make a patch for the mailing list](sourcecode-contributing.md#make-a-patch-for-the-mailing-list), [git commit style](sourcecode-contributing.md#git-commit-style), [Who decides what goes in?](sourcecode-contributing.md#who-decides-what-goes-in?), [Web site source code](sourcecode-web.md#web-site-source-code), [Building the web](sourcecode-web.md#building-the-web), [git vs tarballs](building-source.md#git-vs-tarballs), [build boringssl](building-boringssl.md#build-boringssl)
@@ -163,8 +166,8 @@
 ## M
  - --max-filesize: [Maximum filesize](usingcurl-downloads.md#maximum-filesize)
  - --max-time: [Retrying failed attempts](usingcurl-downloads.md#retrying-failed-attempts), [Maximum time allowed to spend](usingcurl-timeouts.md#maximum-time-allowed-to-spend)
- - --metalink: [Metalink](usingcurl-downloads.md#metalink)
  - Metalink: [Metalink](usingcurl-downloads.md#metalink)
+ - --metalink: [Metalink](usingcurl-downloads.md#metalink)
  - MIT: [License](opensource-license.md#license)
  - MITM-proxies: [MITM-proxies](usingcurl-proxies.md#mitm-proxies)
  - multi-threading: [libcurl multi-threading](libcurl-threading.md#libcurl-multi-threading)
@@ -173,6 +176,8 @@
  - --netrc-file: [Enable netrc](usingcurl-netrc.md#enable-netrc)
  - --netrc-optional: [Enable netrc](usingcurl-netrc.md#enable-netrc)
  - nghttp2: [nghttp2](building-deps.md#nghttp2)
+ - --no-eprt: [Active connections](ftp-twoconnections.md#active-connections)
+ - --no-epsv: [Passive connections](ftp-twoconnections.md#passive-connections)
  - NSS: [OCSP stapling](usingcurl-tls.md#ocsp-stapling), [yum](building-binary.md#yum), [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library), [NSS](building-tls.md#nss), [Proxy types](libcurl-proxies.md#proxy-types)
  - --ntlm: [Network leakage](cmdline-passwords.md#network-leakage), [HTTP authentication](http-auth.md#http-authentication)
 ## O
@@ -234,8 +239,8 @@
  - --trace-time: [--trace-time](usingcurl-verbose.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http-response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http-post.md#chunked-encoded-posts)
 ## U
- - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Command line leakage](cmdline-passwords.md#command-line-leakage), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [HTTP authentication](http-auth.md#http-authentication), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
  - -U: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
+ - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Command line leakage](cmdline-passwords.md#command-line-leakage), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [HTTP authentication](http-auth.md#http-authentication), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
  - URL Globbing: [URL globbing](cmdline-globbing.md#url-globbing)
 ## V
  - --verbose: [Long options](cmdline-options.md#long-options), [Verbose mode](usingcurl-verbose.md#verbose-mode), [--trace-time](usingcurl-verbose.md#trace-time)

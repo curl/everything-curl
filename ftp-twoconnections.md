@@ -26,7 +26,7 @@ for a file:
     curl -P - ftp://example.com/foobar.txt
 
 You can also explicitly ask curl to not use EPRT (which is a slightly newer
-command than PORT) with the `--no-epsv` command-line option.
+command than PORT) with the `--no-eprt` command-line option.
 
 ### Passive connections
 

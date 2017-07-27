@@ -39,7 +39,11 @@ TBD
 
 ### User-agent
 
-TBD
+Default value is 'curl/7.54.1', as in 'User-Agent: curl/7.54.1'. Change that for your program's version.
+
+You can use any value you like, using the option -A or --user-agent
+plus the string to use or, as it's just a header,
+-H 'User-Agent=string_to_use'.
 
 ### --time-cond
 

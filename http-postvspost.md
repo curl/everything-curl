@@ -32,7 +32,7 @@ and you perform one with curl's `-d` and friends.
 ## POST outside of HTML
 
 POST is a regular HTTP method and there is no requirement that it be
-triggered by HTML or involve a browser. Lots of services, APIs and other systems  
+triggered by HTML or involve a browser. Lots of services, APIs and other systems
 allow you to pass in data these days in order to get things done.
 
 If these services expect plain "raw" data or perhaps data formatted as JSON or

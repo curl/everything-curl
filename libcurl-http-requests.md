@@ -115,8 +115,23 @@ following the colon, you could write it like:
 
 ## Referrer
 
-TBD
+The `Referer:` header (yes, it is misspelled) is a standard HTTP header that
+tells the server from which URL the user-agent was directed from when it
+arrived at the URL it now requests. It is a normal header so you can set it
+yourself with the `CURLOPT_HEADER` approach as shown above, or you can use the
+shortcut known as `CURLOPT_REFERER`. Like this:
 
-## autoreferrer
+    curl_easy_setopt(curl, CURLOPT_REFERER, "https://example.com/fromhere/");
+    curl_easy_perform(curl);
 
-TBD
+### Automatic referrer
+
+When libcurl is asked to follow redirects itself with the
+`CURLOPT_FOLLOWLOCATION` option, and you still want to have the `Referer:`
+header set to the correct previous URL from where it did the redirect, you can
+ask libcurl to set that by itself:
+
+    curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+    curl_easy_setopt(curl, CURLOPT_AUTOREFERER, 1L);
+    curl_easy_setopt(curl, CURLOPT_URL, "https://example.com/redirected.cgi");
+    curl_easy_perform(curl);

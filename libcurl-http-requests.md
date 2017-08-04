@@ -85,6 +85,19 @@ derived from the URL you give libcurl), you can tell libcurl your own:
 
 ### Remove a header
 
+When you think libcurl uses a header in a request that you really think it
+shouldn't, you can easily tell it to just remove it from the request. Like if
+you want to take away the `Accept:` header. Just provide the header name with
+nothing to the right sight of the colon:
+
+    struct curl_slist *list = NULL;
+    list = curl_slist_append(list, "Accept:");
+    curl_easy_setopt(curl, CURLOPT_HTTPHEADER, list);
+    curl_easy_perform(curl);
+    curl_slist_free_all(list); /* free the list again */
+
+### Provide a header without contents
+
 As you may then have noticed in the above sections, if you try to add a header
 with no contents on the right side of the colon, it will be treated as a
 removal instruction and it will instead completely inhibit that header from
@@ -100,21 +113,10 @@ following the colon, you could write it like:
     curl_easy_perform(curl);
     curl_slist_free_all(list); /* free the list again */
 
-### Provide a header without contents
-
-When you think libcurl has added and uses a header you really think it
-shouldn't, you can easily tell it to just remove it from requests. Like if you
-want to take away the `Accept:` header. Just provide the header name with
-nothing to the right sight of the colon:
-
-    struct curl_slist *list = NULL;
-    list = curl_slist_append(list, "Accept:");
-    curl_easy_setopt(curl, CURLOPT_HTTPHEADER, list);
-    curl_easy_perform(curl);
-    curl_slist_free_all(list); /* free the list again */
-
 ## Referrer
 
-and autoreferrer
+TBD
+
+## autoreferrer
 
 TBD

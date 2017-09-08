@@ -109,6 +109,8 @@
 ## D
  - -d: [Arguments to options](cmdline-options.md#arguments-to-options), [Arguments with spaces](cmdline-options.md#arguments-with-spaces), [Separate options per URL](cmdline-urls.md#separate-options-per-url), [POST](usingcurl-uploads.md#post), [HTTP methods](http.md#http-methods), [HTTP POST](http-post.md#http-post), [Content-Type](http-post.md#content-type), [POSTing binary](http-post.md#posting-binary), [Convert that to a GET](http-post.md#convert-that-to-a-get), [Expect 100-continue](http-post.md#expect-100-continue), [Chunked encoded POSTs](http-post.md#chunked-encoded-posts), [Hidden form fields](http-post.md#hidden-form-fields), [-d vs -F](http-postvspost.md#d-vs--f), [HTML web forms](http-postvspost.md#html-web-forms), [POST outside of HTML](http-postvspost.md#post-outside-of-html), [PUT](http-put.md#put), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
  - --data: [Arguments to options](cmdline-options.md#arguments-to-options), [Separate options per URL](cmdline-urls.md#separate-options-per-url), [POST](usingcurl-uploads.md#post), [HTTP POST](http-post.md#http-post), [URL encoding](http-post.md#url-encoding)
+ - --data-binary: [Not perfect](usingcurl-copyas.md#not-perfect), [POSTing binary](http-post.md#posting-binary)
+ - --data-urlencode: [URL encoding](http-post.md#url-encoding)
  - Debug callback: [Debug callback](callback-debug.md#debug-callback), [Verbose operations](libcurl-verbose.md#verbose-operations)
  - development: [Project communication](curl-comm.md#project-communication), [curl-users](curl-maillists.md#curl-users), [curl-library](curl-maillists.md#curl-library), [Reporting bugs](curl-bugs.md#reporting-bugs), [Problems must be known to get fixed](curl-bugs.md#problems-must-be-known-to-get-fixed), [The development team](curl-devteam.md#the-development-team), [Future](curl-future.md#future), [Development](opensource-devel.md#development), [Source code on github](opensource-devel.md#source-code-on-github), [Who decides what goes in?](sourcecode-contributing.md#who-decides-what-goes-in?), [SSL and TLS versions](usingcurl-tls.md#ssl-and-tls-versions), [Figure out what a browser sends](http-post.md#figure-out-what-a-browser-sends), [apt-get](building-binary.md#apt-get), [yum](building-binary.md#yum), [Which libcurl version runs](libcurl-api.md#which-libcurl-version-runs)
 ## E
@@ -125,6 +127,7 @@
  - --ftp-skip-pasv-ip: [Passive connections](ftp-twoconnections.md#passive-connections)
  - future: [Project communication](curl-comm.md#project-communication), [Future](curl-future.md#future), [docs](sourcecode-layout.md#docs), [curl-security@haxx.se](sourcecode-reportvuln.md#curl-security@haxx.se), [What other protocols are there?](protocols-protocols.md#what-other-protocols-are-there?), [HTTPS to proxy](usingcurl-proxies.md#https-to-proxy), ["Not used"](usingcurl-returns.md#"not-used"), [Cookies](http-cookies.md#cookies), [API compatibility](libcurl-api.md#api-compatibility)
 ## G
+ - --get: [Convert that to a GET](http-post.md#convert-that-to-a-get)
  - git: [Daily snapshots](curl-releases.md#daily-snapshots), [Clone the code](sourcecode.md#clone-the-code), [root](sourcecode-layout.md#root), [include/curl](sourcecode-layout.md#include/curl), [scripts](sourcecode-layout.md#scripts), [git](sourcecode-contributing.md#git), [Pull request](sourcecode-contributing.md#pull-request), [Make a patch for the mailing list](sourcecode-contributing.md#make-a-patch-for-the-mailing-list), [git commit style](sourcecode-contributing.md#git-commit-style), [Who decides what goes in?](sourcecode-contributing.md#who-decides-what-goes-in?), [Web site source code](sourcecode-web.md#web-site-source-code), [Building the web](sourcecode-web.md#building-the-web), [git vs tarballs](building-source.md#git-vs-tarballs), [build boringssl](building-boringssl.md#build-boringssl)
  - Globbing: [URL globbing](cmdline-globbing.md#url-globbing), [Output variables for globbing](cmdline-globbing.md#output-variables-for-globbing)
  - GnuTLS: [OCSP stapling](usingcurl-tls.md#ocsp-stapling), [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library), [GnuTLS](building-tls.md#gnutls), [Proxy types](libcurl-proxies.md#proxy-types)
@@ -166,8 +169,8 @@
 ## M
  - --max-filesize: [Maximum filesize](usingcurl-downloads.md#maximum-filesize)
  - --max-time: [Retrying failed attempts](usingcurl-downloads.md#retrying-failed-attempts), [Maximum time allowed to spend](usingcurl-timeouts.md#maximum-time-allowed-to-spend)
- - --metalink: [Metalink](usingcurl-downloads.md#metalink)
  - Metalink: [Metalink](usingcurl-downloads.md#metalink)
+ - --metalink: [Metalink](usingcurl-downloads.md#metalink)
  - MIT: [License](opensource-license.md#license)
  - MITM-proxies: [MITM-proxies](usingcurl-proxies.md#mitm-proxies)
  - multi-threading: [libcurl multi-threading](libcurl-threading.md#libcurl-multi-threading)
@@ -239,8 +242,8 @@
  - --trace-time: [--trace-time](usingcurl-verbose.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http-response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http-post.md#chunked-encoded-posts)
 ## U
- - -U: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
  - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Command line leakage](cmdline-passwords.md#command-line-leakage), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [HTTP authentication](http-auth.md#http-authentication), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
+ - -U: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
  - URL Globbing: [URL globbing](cmdline-globbing.md#url-globbing)
 ## V
  - --verbose: [Long options](cmdline-options.md#long-options), [Verbose mode](usingcurl-verbose.md#verbose-mode), [--trace-time](usingcurl-verbose.md#trace-time)
@@ -249,7 +252,7 @@
  - Write callback: [Write callback](callback-write.md#write-callback), [HTTP responses](libcurl-http-responses.md#http-responses)
  - --write-out: [--write-out](usingcurl-verbose.md#write-out), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [HTTP response codes](http-response.md#http-response-codes), [CONNECT response codes](http-response.md#connect-response-codes)
 ## X
- - -x: [HTTP](usingcurl-proxies.md#http), [HTTPS and proxy](usingcurl-proxies.md#https-and-proxy), [Non-HTTP protocols over an HTTP proxy](usingcurl-proxies.md#non-http-protocols-over-an-http-proxy), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling), [SOCKS types](usingcurl-proxies.md#socks-types), [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [Proxy environment variables](usingcurl-proxies.md#proxy-environment-variables), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
  - -X: [Request method](http-requests.md#request-method), [PUT](http-put.md#put), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
+ - -x: [HTTP](usingcurl-proxies.md#http), [HTTPS and proxy](usingcurl-proxies.md#https-and-proxy), [Non-HTTP protocols over an HTTP proxy](usingcurl-proxies.md#non-http-protocols-over-an-http-proxy), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling), [SOCKS types](usingcurl-proxies.md#socks-types), [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [Proxy environment variables](usingcurl-proxies.md#proxy-environment-variables), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
 ## Z
  - zlib: [zlib](building-deps.md#zlib)

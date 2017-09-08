@@ -4,10 +4,13 @@
 --connect-timeout
 --connect-to
 --data
+--data-binary
+--data-urlencode
 --ftp-method
 --ftp-pasv
 --ftp-port
 --ftp-skip-pasv-ip
+--get
 --header
 --keepalive-time
 --libcurl

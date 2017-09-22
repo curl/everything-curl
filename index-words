@@ -23,9 +23,9 @@
 --negotiate
 --netrc-file
 --netrc-optional
---ntlm
 --no-eprt
 --no-epsv
+--ntlm
 --post301
 --post302
 --post303
@@ -152,6 +152,7 @@ NPN
 NSS
 OpenSSL
 PAC
+Percent-encoding
 Progress callback
 RELEASE-NOTES
 RTMP

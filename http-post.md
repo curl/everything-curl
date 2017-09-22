@@ -87,6 +87,19 @@ As an example, you could POST a name to have it encoded by curl:
 
     name=John%20Doe%20%28Junior%29
 
+If you store the string `John Doe (Junior)` in a file named `contents.txt`,
+you can tell curl to send that contents URL encoded using the field name
+'user' like this:
+
+    curl --data-urlencode user@contents.txt http://example.com
+
+In both these examples above, the field name is not URL encoded but is passed
+on as-is. If you want to URL encode the field name as well, like if you want
+to pass on a field name called "user name", you can ask curl to encode the
+entire string by prefixing it with an equals sign (that will not get sent):
+
+    curl --data-urlencode "=user name=John Doe (Junior)" http://example.com
+
 ### Convert that to a GET
 
 A little convenience feature that could be suitable to mention in this context

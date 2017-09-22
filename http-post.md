@@ -47,9 +47,14 @@ in binary exactly as given:
 
 ### URL encoding
 
-The command-line options above all require that you provide properly
-encoded data, data you need to make sure is in the right format. While that
-gives you a lot of freedom, it is also a bit inconvenient at times.
+Percent-encoding, also known as URL encoding, is technically a mechanism for
+encoding data so that it can appear in URLs. This encoding is typically used
+when sending POSTs with the `application/x-www-form-urlencoded` content type,
+such as the ones curl sends with `--data` and `--data-binary` etc.
+
+The command-line options mentioned above all require that you provide properly
+encoded data, data you need to make sure already exists in the right format.
+While that gives you a lot of freedom, it is also a bit inconvenient at times.
 
 To help you send data you haven't already encoded, curl offers the
 `--data-urlencode` option. This option offers several different ways to URL

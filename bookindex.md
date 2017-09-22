@@ -109,7 +109,7 @@
 ## D
  - -d: [Arguments to options](cmdline-options.md#arguments-to-options), [Arguments with spaces](cmdline-options.md#arguments-with-spaces), [Separate options per URL](cmdline-urls.md#separate-options-per-url), [POST](usingcurl-uploads.md#post), [HTTP methods](http.md#http-methods), [HTTP POST](http-post.md#http-post), [Content-Type](http-post.md#content-type), [POSTing binary](http-post.md#posting-binary), [Convert that to a GET](http-post.md#convert-that-to-a-get), [Expect 100-continue](http-post.md#expect-100-continue), [Chunked encoded POSTs](http-post.md#chunked-encoded-posts), [Hidden form fields](http-post.md#hidden-form-fields), [-d vs -F](http-postvspost.md#d-vs--f), [HTML web forms](http-postvspost.md#html-web-forms), [POST outside of HTML](http-postvspost.md#post-outside-of-html), [PUT](http-put.md#put), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
  - --data: [Arguments to options](cmdline-options.md#arguments-to-options), [Separate options per URL](cmdline-urls.md#separate-options-per-url), [POST](usingcurl-uploads.md#post), [HTTP POST](http-post.md#http-post), [URL encoding](http-post.md#url-encoding)
- - --data-binary: [Not perfect](usingcurl-copyas.md#not-perfect), [POSTing binary](http-post.md#posting-binary)
+ - --data-binary: [Not perfect](usingcurl-copyas.md#not-perfect), [POSTing binary](http-post.md#posting-binary), [URL encoding](http-post.md#url-encoding)
  - --data-urlencode: [URL encoding](http-post.md#url-encoding)
  - Debug callback: [Debug callback](callback-debug.md#debug-callback), [Verbose operations](libcurl-verbose.md#verbose-operations)
  - development: [Project communication](curl-comm.md#project-communication), [curl-users](curl-maillists.md#curl-users), [curl-library](curl-maillists.md#curl-library), [Reporting bugs](curl-bugs.md#reporting-bugs), [Problems must be known to get fixed](curl-bugs.md#problems-must-be-known-to-get-fixed), [The development team](curl-devteam.md#the-development-team), [Future](curl-future.md#future), [Development](opensource-devel.md#development), [Source code on github](opensource-devel.md#source-code-on-github), [Who decides what goes in?](sourcecode-contributing.md#who-decides-what-goes-in?), [SSL and TLS versions](usingcurl-tls.md#ssl-and-tls-versions), [Figure out what a browser sends](http-post.md#figure-out-what-a-browser-sends), [apt-get](building-binary.md#apt-get), [yum](building-binary.md#yum), [Which libcurl version runs](libcurl-api.md#which-libcurl-version-runs)
@@ -169,8 +169,8 @@
 ## M
  - --max-filesize: [Maximum filesize](usingcurl-downloads.md#maximum-filesize)
  - --max-time: [Retrying failed attempts](usingcurl-downloads.md#retrying-failed-attempts), [Maximum time allowed to spend](usingcurl-timeouts.md#maximum-time-allowed-to-spend)
- - Metalink: [Metalink](usingcurl-downloads.md#metalink)
  - --metalink: [Metalink](usingcurl-downloads.md#metalink)
+ - Metalink: [Metalink](usingcurl-downloads.md#metalink)
  - MIT: [License](opensource-license.md#license)
  - MITM-proxies: [MITM-proxies](usingcurl-proxies.md#mitm-proxies)
  - multi-threading: [libcurl multi-threading](libcurl-threading.md#libcurl-multi-threading)
@@ -189,13 +189,14 @@
  - OpenSSL: [lib/vtls](sourcecode-layout.md#lib/vtls), [OCSP stapling](usingcurl-tls.md#ocsp-stapling), [Select TLS backend](building-source.md#select-tls-backend), [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library), [configure](building-tls.md#configure), [OpenSSL, BoringSSL, libressl](building-tls.md#openssl,-boringssl,-libressl), [Proxy types](libcurl-proxies.md#proxy-types), [Available information](libcurl-getinfo.md#available-information)
 ## P
  - PAC: [PAC](usingcurl-proxies.md#pac)
+ - Percent-encoding: [URL encoding](http-post.md#url-encoding)
  - port number: [Connects to "port numbers"](protocols-network.md#connects-to-"port-numbers"), [Port number](cmdline-urls.md#port-number), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [Provide a replacement name](usingcurl-connections.md#provide-a-replacement-name), [Local port number](usingcurl-connections.md#local-port-number), [HTTP](usingcurl-proxies.md#http), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling), [Available exit codes](usingcurl-returns.md#available-exit-codes), [The URL converted to a request](http-basics.md#the-url-converted-to-a-request), [Proxies](libcurl-proxies.md#proxies), [Proxy types](libcurl-proxies.md#proxy-types), [Post transfer info](libcurl-getinfo.md#post-transfer-info)
  - --post301: [Decide what method to use in redirects](http-redirects.md#decide-what-method-to-use-in-redirects)
  - --post302: [Decide what method to use in redirects](http-redirects.md#decide-what-method-to-use-in-redirects)
  - --post303: [Decide what method to use in redirects](http-redirects.md#decide-what-method-to-use-in-redirects)
  - Progress callback: [timer_callback](libcurl-drive-multi-socket.md#timer_callback), [Progress callback](callback-progress.md#progress-callback)
- - --proxy: [HTTP](usingcurl-proxies.md#http), [HTTP authentication](http-auth.md#http-authentication)
  - proxy: [How it started](curl-started.md#how-it-started), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [Intermediaries' fiddlings](usingcurl-downloads.md#intermediaries'-fiddlings), [Proxies](usingcurl-proxies.md#proxies), [Discover your proxy](usingcurl-proxies.md#discover-your-proxy), [PAC](usingcurl-proxies.md#pac), [Proxy type](usingcurl-proxies.md#proxy-type), [HTTP](usingcurl-proxies.md#http), [HTTPS and proxy](usingcurl-proxies.md#https-and-proxy), [MITM-proxies](usingcurl-proxies.md#mitm-proxies), [Non-HTTP protocols over an HTTP proxy](usingcurl-proxies.md#non-http-protocols-over-an-http-proxy), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling), [SOCKS types](usingcurl-proxies.md#socks-types), [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [HTTPS to proxy](usingcurl-proxies.md#https-to-proxy), [Proxy environment variables](usingcurl-proxies.md#proxy-environment-variables), [Proxy headers](usingcurl-proxies.md#proxy-headers), [Available exit codes](usingcurl-returns.md#available-exit-codes), [CONNECT response codes](http-response.md#connect-response-codes), [Pass on transfer encoding](http-response.md#pass-on-transfer-encoding), [HTTP authentication](http-auth.md#http-authentication), [Proxies](libcurl-proxies.md#proxies), [Proxy types](libcurl-proxies.md#proxy-types), [Local or proxy name lookup](libcurl-proxies.md#local-or-proxy-name-lookup), [HTTP proxy](libcurl-proxies.md#http-proxy), [HTTPS proxy](libcurl-proxies.md#https-proxy), [Proxy authentication](libcurl-proxies.md#proxy-authentication), [Available information](libcurl-getinfo.md#available-information), [HTTP proxy](libcurl-http.md#http-proxy)
+ - --proxy: [HTTP](usingcurl-proxies.md#http), [HTTP authentication](http-auth.md#http-authentication)
  - --proxy-user: [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [HTTP authentication](http-auth.md#http-authentication)
  - --proxy1.0: [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling)
  - --proxytunnel: [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling)
@@ -252,7 +253,7 @@
  - Write callback: [Write callback](callback-write.md#write-callback), [HTTP responses](libcurl-http-responses.md#http-responses)
  - --write-out: [--write-out](usingcurl-verbose.md#write-out), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [HTTP response codes](http-response.md#http-response-codes), [CONNECT response codes](http-response.md#connect-response-codes)
 ## X
- - -X: [Request method](http-requests.md#request-method), [PUT](http-put.md#put), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
  - -x: [HTTP](usingcurl-proxies.md#http), [HTTPS and proxy](usingcurl-proxies.md#https-and-proxy), [Non-HTTP protocols over an HTTP proxy](usingcurl-proxies.md#non-http-protocols-over-an-http-proxy), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling), [SOCKS types](usingcurl-proxies.md#socks-types), [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [Proxy environment variables](usingcurl-proxies.md#proxy-environment-variables), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
+ - -X: [Request method](http-requests.md#request-method), [PUT](http-put.md#put), [curl cheat sheet](http-cheatsheet.md#curl-cheat-sheet)
 ## Z
  - zlib: [zlib](building-deps.md#zlib)

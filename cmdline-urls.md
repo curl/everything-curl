@@ -58,7 +58,7 @@ incorrect format:
 
     file://X:/path/to/file
 
-... where X is a windows-style drive letter.
+… where X is a windows-style drive letter.
 
 ### Without scheme
 

@@ -101,7 +101,7 @@ libcurl sets the timeout with the timer_callback
                        timeout_ms,     /* milliseconds to wait */
                        userp)          /* private callback pointer */
     {
-      /* new value to wait for is... */
+      /* the new time-out value to wait for is in 'timeout_ms' */
     }
 
     /* set the callback in the multi handle */

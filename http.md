@@ -17,7 +17,7 @@ commonly used ones are GET, POST, HEAD and PUT.
 Normally however you don't specify the method in the command line, but instead
 the exact method used depends on the specific options you use. GET is default,
 using `-d` or `-F` makes it a POST, `-I` generates a HEAD and `-T` sends a
-PUT...
+PUT.
 
 More about this in the [Modify the HTTP request](http-requests.md) section.
 

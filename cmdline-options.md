@@ -79,7 +79,7 @@ Failing to use quotes, like if you would write the command line like this:
 
     curl -A I am your father http://example.com
 
-... will make curl only use 'I' as a user-agent string, and the following
+… will make curl only use 'I' as a user-agent string, and the following
 strings, 'am', your, etc will instead all be treated as separate URLs since
 they don't start with `-` to indicate that they're options and curl only ever
 handles options and URLs.

@@ -53,7 +53,7 @@
         * [Directory traversing](ftp-traversedir.md)
         * [Advanced FTP use](ftp-advanced.md)
     * [SCP and SFTP](usingcurl-scpsftp.md)
-    * [IMAP and POP3](usingcurl-imap.md)
+    * [IMAP and POP3](usingcurl-reademail.md)
     * [SMTP](usingcurl-smtp.md)
     * [TELNET](usingcurl-telnet.md)
     * [TLS](usingcurl-tls.md)

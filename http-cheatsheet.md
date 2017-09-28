@@ -1,4 +1,4 @@
-# curl cheat sheet
+# curl HTTP cheat sheet
 
 [online here](https://bagder.github.io/curl-cheat-sheet/http-sheet.html)
 

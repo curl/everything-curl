@@ -125,7 +125,7 @@ from an established Certificate Authority.
 After some applied crypto magic, curl knows that the server is in fact the
 correct one that acquired that certificate for the host name that curl used to
 connect to it. Failing to verify the server's certificate is a TLS handshake
-failure and curl exists with an error.
+failure and curl exits with an error.
 
 In rare circumstances, you may decide that you still want to communicate with
 a TLS server even if the certificate verification fails. You then accept the

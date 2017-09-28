@@ -107,11 +107,20 @@ TBD
 
 ## User-agent
 
-Default value is 'curl/7.54.1', as in 'User-Agent: curl/7.54.1'. Change that for your program's version.
+The User-Agent is a header that each client can set in the request to inform
+the server which user-agent it is. Sometimes servers will look at this header
+and determine how to act based on its contents.
 
-You can use any value you like, using the option -A or --user-agent
-plus the string to use or, as it's just a header,
--H 'User-Agent=string_to_use'.
+The default header value is 'curl/[version]', as in `User-Agent: curl/7.54.1`
+for curl version 7.54.1.
+
+You can set any value you like, using the option `-A` or `--user-agent` plus
+the string to use or, as it's just a header, `-H "User-Agent: foobar/2000"`.
+
+As comparison, a recent test version of Firefox on a Linux machine sent this
+User-Agent header:
+
+`User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0`
 
 ## --time-cond
 

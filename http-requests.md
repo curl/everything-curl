@@ -103,7 +103,14 @@ instead end the header field name with a *semicolon*. Like this:
 
 ## Referer
 
-TBD
+When a user clicks on a link on a web page and the browser takes the user away
+to the next URL, it will send the new URL a "referer" header in the new
+request telling it where it came from. That is the referer header. And yes,
+referer is misspelled but that's how it is supposed to be!
+
+With curl you set the referer header with `-e` or `--referer`, like this:
+
+    curl --referer http://comes-from.example.com https://www.example.com/
 
 ## User-agent
 

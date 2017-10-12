@@ -21,10 +21,6 @@ PUT.
 
 More about this in the [Modify the HTTP request](http-requests.md) section.
 
-## HTTPS
-
-TBD
-
 ## Scripting browser-like tasks
 
 TBD

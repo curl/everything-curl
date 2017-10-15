@@ -69,7 +69,11 @@ In order to install command-line tool:
 
 ### homebrew
 
-TBD
+[Homebrew](https://brew.sh/) is an OSX package manager. It does not come by default, but one can install it easily.
+
+To install the command-line tool:
+
+    brew install curl
 
 ### cygwin
 

@@ -173,6 +173,7 @@ TODO
 URL Globbing
 Vulnerability
 Write callback
+apt
 bugreports
 c-ares
 clone
@@ -204,12 +205,14 @@ curl_multi_timeout
 curl_multi_wait
 curl_off_t
 curl_version_info
+debian
 development
 environment variables
 etiquette
 event-driven
 future
 git
+homebrew
 json
 keep-alive
 libcurl version
@@ -222,11 +225,13 @@ libssh2
 license
 multi-threading
 nghttp2
+nix
 openldap
 pop3
 port number
 proxy
 ranges
+redhat
 redirects
 releases
 repository
@@ -235,4 +240,5 @@ security
 snapshots
 testing
 transfer-encoding
+yum
 zlib

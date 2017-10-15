@@ -16,14 +16,14 @@ that allow you to install curl packages.
 
 The most common ones are described below.
 
-### apt-get
+### apt
 
-`apt-get` is a tool to install prebuilt packages on Debian Linux and Ubuntu
-Linux distributions and derivates.
+`apt` is a tool to install prebuilt packages on Debian Linux and Ubuntu Linux
+distributions and derivates.
 
 To install the curl command-line tool, you usually just
 
-    apt-get install curl
+    apt install curl
 
 …and that then makes sure the dependencies are installed and usually
 libcurl is then also installed as an individual package.
@@ -33,15 +33,15 @@ package installed to get the include headers and some additional
 documentation, etc. You can then select a libcurl with the TLS backend you
 prefer:
 
-    apt-get install libcurl4-openssl-dev
+    apt install libcurl4-openssl-dev
 
 or
 
-    apt-get install libcurl4-nss-dev
+    apt install libcurl4-nss-dev
 
 or
 
-    apt-get install libcurl4-gnutls-dev
+    apt install libcurl4-gnutls-dev
 
 ### yum
 

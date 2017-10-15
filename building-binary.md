@@ -58,6 +58,15 @@ etc.) with this:
 (The Redhat family of Linux systems usually ship curl built to use NSS as TLS
 backend.)
 
+
+### nix
+
+[Nix](https://nixos.org/nix/) is a package manager default to the NixOS distribution, but it can also be used on any Linux distribution. 
+
+In order to install command-line tool:
+
+    nix-env -i curl
+
 ### homebrew
 
 TBD

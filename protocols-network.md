@@ -20,7 +20,7 @@ know its name. The name of the machine you will talk to is embedded in the URL
 that you work with when you use curl.
 
 You might use a URL like "http://example.com/index.html", which means you will
-connect to and communicate the host named example.com.
+connect to and communicate with the host named example.com.
 
 ### Host name resolving
 

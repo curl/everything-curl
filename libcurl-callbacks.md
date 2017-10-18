@@ -15,3 +15,6 @@ care about, but just passes on as an argument to the callback. This allows you
 to, for example, pass in pointers to local data all the way through to your
 callback function.
 
+Unless explicitely stated in a libcurl function documentation, it is not
+legal to invoke libcurl functions from within a libcurl callback.
+

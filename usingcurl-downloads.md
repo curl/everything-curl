@@ -56,7 +56,7 @@ which type of URL you download:
 
     curl -o file.txt ftp://example.com/path/to/file-name.ext
 
-If you ask curl to send the output to the terminal, it attempts to detect and
+If you ask curl to send the output to the terminal, it attempts to detect and prevent
 binary data from being sent there since that can seriously mess up your
 terminal (sometimes to the point where it basically stops working).  You can
 override curl's binary-output-prevention and force the output to get sent to

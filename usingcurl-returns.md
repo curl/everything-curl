@@ -23,7 +23,7 @@ A very basic Unix shell script could look like something like this:
 
  1. Unsupported protocol. This build of curl has no support for this
     protocol. Usually this happens because the URL was misspelled to use a
-    scheme part that either as a space in front of it or spells "http" like
+    scheme part that either has a space in front of it or spells "http" like
     "htpt" or similar. Another common mistake is that you use a libcurl
     installation that was built with one or more protocols disabled and you
     now ask libcurl to use one of those protocols that were disabled in the

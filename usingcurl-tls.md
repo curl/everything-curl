@@ -105,7 +105,7 @@ serious effort.
 | --tlsv1.2 | TLS version 1.2    |
 | --tlsv1.3 | TLS version 1.3    |
 
-**NOTE:** TLS version 1.3 support is only supported in selected very recent
+**NOTE:** TLS version 1.3 is only supported in selected very recent
 development versions of certain TLS libraries and requires curl 7.52.0 or
 later.
 
@@ -170,7 +170,7 @@ indicating its identity. A public key is extracted from this certificate and
 if it does not exactly match the public key provided to this option, curl will
 abort the connection before sending or receiving any data.
 
-You tell curl a file name to read the sha256 value from, our you specify the
+You tell curl a file name to read the sha256 value from, or you specify the
 base64 encoded hash directly in the command line with a "sha256//" prefix. You
 can specify one or more hashes like that, separated with semicolons (;).
 

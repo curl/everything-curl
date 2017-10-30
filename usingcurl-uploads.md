@@ -90,7 +90,7 @@ curl/SMTP](usingcurl-smtp.md) section.
 
 ### Progress meter for uploads
 
-The general progress meter curl provides (see the [Progress
+The general progress meter curl provided (see the [Progress
 meter](cmdline-progressmeter.md) section) works fine for uploads as well.
 What needs to be remembered is that the progress meter is automatically
 disabled when you are sending output to stdout, and most protocols curl support

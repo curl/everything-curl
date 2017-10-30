@@ -174,12 +174,12 @@ Submitting such forms is a very common operation with curl; effectively, to have
 curl fill in a web form in an automated fashion.
 
 If you want to submit a form with curl and make it look as if it has been done
-with a browser, it is important that to provide all the input fields from the
+with a browser, it is important to provide all the input fields from the
 form. A very common method for web pages is to set a few hidden input fields
 to the form and have them assigned values directly in the HTML. A successful
-form submission, of course, also include those fields and in order to do that
+form submission, of course, also includes those fields and in order to do that
 automatically you may be forced to first download the HTML page that holds the
-form, parse it and extract the hidden field values so that you can send them
+form, parse it, and extract the hidden field values so that you can send them
 off with curl.
 
 ### Figure out what a browser sends

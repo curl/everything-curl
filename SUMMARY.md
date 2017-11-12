@@ -115,6 +115,7 @@
     * [CURLcode return codes](libcurl-curlcode.md)
     * [Verbose operations](libcurl-verbose.md)
     * [libcurl examples](libcurlexamples.md)
+    * [for C++ programmers](libcurl-cplusplus.md)
 * [HTTP with libcurl](libcurl-http.md)
     * [HTTP responses](libcurl-http-responses.md)
     * [HTTP requests](libcurl-http-requests.md)

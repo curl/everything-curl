@@ -49,7 +49,7 @@ example when I right-click an image in Firefox:
 These methods all give you a command line to reproduce their HTTP transfers,
 but you will also learn they they are still often not the perfect solution to
 your problems. Why? Well mostly because these tools are written to rerun the
-*exact* same request that you copied, while you often what to rerun the same
+*exact* same request that you copied, while you often want to rerun the same
 logic but not sending an exact copy of the same cookies and file contents etc.
 
 These tools will give you command lines with static and fixed cookie contents

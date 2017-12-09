@@ -179,6 +179,8 @@ c-ares
 clone
 code of conduct
 configure
+connection cache
+connection pool
 content-encoding
 contribute
 copyright

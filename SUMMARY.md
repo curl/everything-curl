@@ -104,6 +104,7 @@
         * [RTSP interleaved data](callback-rtsp.md)
         * [FTP matching](callback-ftpmatch.md)
     * [Cleanup](libcurl-cleanup.md)
+    * [Name resolving](libcurl-names.md)
     * [Proxies](libcurl-proxies.md)
     * [Post transfer info](libcurl-getinfo.md)
     * [Share data between handles](libcurl-sharing.md)

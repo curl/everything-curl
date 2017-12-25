@@ -96,7 +96,7 @@ to allow transparent compression as a transfer encoding, and curl supports
 this feature.
 
 The client then simply asks the server to do compression transfer encoding and
-if acceptable, it will response with a header indicating that it will and curl
+if acceptable, it will respond with a header indicating that it will and curl
 will then transparently uncompress that data on arrival. A user enables asking
 for compressed transfer encoding with `--tr-encoding`:
 

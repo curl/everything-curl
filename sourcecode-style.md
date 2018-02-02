@@ -20,7 +20,7 @@ We also work hard on writing code that is warning-free on all the major
 platforms and in general on as many platforms as possible. Code that obviously
 will cause warnings will not be accepted as-is.
 
-Some the rules that you won't be allowed to break are:
+Some of the rules that you won't be allowed to break are:
 
 ### Indentation
 

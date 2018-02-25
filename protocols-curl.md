@@ -19,9 +19,9 @@ over the network from a remote server. See RFC 1738.
 
 FTP stands for File Transfer Protocol and is an old (originates in the early
 1970s) way to transfer files back and forth between a client and a server. See
-RFC 959. It has been extended muchly over the years. FTP servers and clients
-use TCP port 21 plus one more port, though the second one is usually dynamicly
-established during communication.
+RFC 959. It has been extended greatly over the years. FTP servers and clients
+use TCP port 21 plus one more port, though the second one is usually
+dynamically established during communication.
 
 See the external page [FTP vs
 HTTP](https://daniel.haxx.se/docs/ftp-vs-http.html) for how it differs to
@@ -34,7 +34,7 @@ appending an 'S' to the protocol name to signify that the protocol is done
 like normal FTP but with an added SSL/TLS security layer. See RFC 4217.
 
 This protocol is very problematic to use through firewalls and other network
-equipments.
+equipment.
 
 ## GOPHER
 

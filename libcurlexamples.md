@@ -40,7 +40,7 @@ This example is a variation of the former that instead of sending the data to
 stdout (which often is not what you want), this stores the received data in a
 memory buffer that is made larger as the incoming data grows.
 
-It accomplishes this by usuing the write callback to receive the data.
+It accomplishes this by using the write callback to receive the data.
 
     #include <stdio.h>
     #include <stdlib.h>

@@ -7,7 +7,7 @@ doesn't implement the TLS protocol itself.
 curl is written to work with a large number of TLS libraries:
 
  - BoringSSL
- - GSkit (OS/400 specific)
+ - GSKit (OS/400 specific)
  - GnuTLS
  - NSS
  - OpenSSL

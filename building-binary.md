@@ -19,7 +19,7 @@ The most common ones are described below.
 ### apt
 
 `apt` is a tool to install prebuilt packages on Debian Linux and Ubuntu Linux
-distributions and derivates.
+distributions and derivatives.
 
 To install the curl command-line tool, you usually just
 
@@ -45,7 +45,7 @@ or
 
 ### yum
 
-With Redhat Linux and CentOS Linux derivates, you use `yum` to install
+With Redhat Linux and CentOS Linux derivatives, you use `yum` to install
 packages. Install the command-line tool with:
 
     yum install curl

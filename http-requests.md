@@ -48,7 +48,7 @@ In some rare circumstances, user may want to go creative and change this
 request target in ways that the URL doesn't really allow. For example, the
 HTTP OPTIONS method has a specially define request target for magic that
 concerns *the server* and not a specific path, and it uses `*` for that. Yes,
-a single asterisk. There's no way to specicy a URL for this, so if you want to
+a single asterisk. There's no way to specify a URL for this, so if you want to
 pass a single asterisk in the request target to a server, like for OPTIONS,
 you have to do it like this:
 
@@ -66,7 +66,7 @@ discard it.
 ## Customize headers
 
 In a HTTP request, after the initial request-line, there will typically follow
-a numbre of request headers. That's a set of `name: value` pairs that ends
+a number of request headers. That's a set of `name: value` pairs that ends
 with a blank line that separates the headers from the following request body
 (that sometimes is empty).
 
@@ -74,7 +74,7 @@ curl will by default and on its own account pass a few headers in requests,
 like for example `Host:`, `Accept:`, `User-Agent:` and a few others that may
 depend on what the user asks curl to do.
 
-All headers set by curl itself can be overriden, replaced if you will, by the
+All headers set by curl itself can be overridden, replaced if you will, by the
 user. You just then tell curl's `-H` or `--header` the new header to use and
 it will then replace the internal one if the header field matches one of those
 headers, or it will add the specified header to the list of headers to send in

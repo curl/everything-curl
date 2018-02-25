@@ -10,19 +10,19 @@ you want.
 All easy handles added to the same multi handle automatically share
 [cookies](libcurl-http-cookies.md), [connection
 cache](libcurl-connectionreuse), [dns cache](libcurl-names.md) and SSL
-sessiond id cache.
+session id cache.
 
 ## Sharing between easy handles
 
 libcurl has a generic "sharing interface", where the application creates a
 "share object" that then holds data that can be shared by any number of easy
 handles. The data is then stored and read from the shared object instead of
-kept witihn the handles that are sharing it.
+kept within the handles that are sharing it.
 
     CURLSH *share = curl_share_init();
 
-The shared object can be set to share all or any of cookies, conection cache,
-dns cache and SSL sessiond id cache.
+The shared object can be set to share all or any of cookies, connection cache,
+dns cache and SSL session id cache.
 
 For example, setting up the share to hold cookies and dns cache:
 
@@ -33,7 +33,7 @@ For example, setting up the share to hold cookies and dns cache:
 
     curl_easy_setopt(curl, CURLOPT_SHARE, share);
 
-Transgers done with this `curl` handle will thus use and store its cookie and
+Transfers done with this `curl` handle will thus use and store its cookie and
 dns information in the `share` handle. You can set several easy handles to
 share the same share object.
 
@@ -60,11 +60,11 @@ transfers to the same host in a serial manner.
 If you want have the share object shared by transfers in a multi-threaded
 environment. Perhaps you have a CPU with many cores and you want each core to
 run its own thread and transfer data, but you still want the different
-transfers to shara data. Then you need to set the mutex callbacks.
+transfers to share data. Then you need to set the mutex callbacks.
 
 If you don't use threading and you *know* you access the shared object in a
 serial one-at-a-time manner you don't need to set any locks. But if there is
-ever more than one tranfser that access share object at a time, it needs to
+ever more than one transfer that access share object at a time, it needs to
 get mutex callbacks setup to prevent data destruction and possibly even
 crashes.
 

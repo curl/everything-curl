@@ -120,7 +120,7 @@ shaky network conditions or faulty remote servers.
 
 To reduce the impact on your scripts or other use, you can set the maximum time
 in seconds which curl will allow for the connection attempt. With
-`--connnect-timeout` you tell curl the maximum time to allow for connecting,
+`--connect-timeout` you tell curl the maximum time to allow for connecting,
 and if curl has not connected in that time it returns a failure.
 
 The connection timeout only limits the time curl is allowed to spend up
@@ -135,7 +135,7 @@ networks.
 The connection timeout can be specified as a decimal value for sub-second
 precision. For example, to allow 2781 milliseconds to connect:
 
-    curl --connnect-timeout 2.781 https://example.com/
+    curl --connect-timeout 2.781 https://example.com/
 
 ## Network interface
 

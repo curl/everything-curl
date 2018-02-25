@@ -3,18 +3,18 @@
 Most transfers libcurl can do involves a name that first needs to be
 translated to an internet address. That's "name resolving". Using a numerical
 IP address directly in the URL usually avoids the name resolve phase, but in
-many cases it isn't easy to manully replace the name with the IP address.
+many cases it isn't easy to manually replace the name with the IP address.
 
 libcurl tries very hard to [re-use an existing
 connection](libcurl-connectionreuse.md) rather than to create and connection a
-new one. The function that checks for an exsting connection to use is based
+new one. The function that checks for an existing connection to use is based
 purely on the name and is performed before any name resolving is attempted.
 That's one of the reasons the re-use is so much faster. A transfer using a
 reused connection will not resolve the host name again.
 
 If no connection can be reused, libcurl resolves the host name to the set of
 addresses it resolves to. Typically this means asking for both IPv4 and IPv6
-adddresses and there may be a whole set of those returned to libcurl. That set
+addresses and there may be a whole set of those returned to libcurl. That set
 of addresses is then tried until one works, or it returns failure.
 
 An application can force libcurl to use only an IPv4 or IPv6 resolved address
@@ -40,7 +40,7 @@ during its operation and it is much harder to time out nicely.
 3. There's also support for resolving with the c-ares third party library,
 which supports asynchronous name resolving without the use of threads. This
 scales better to huge number of parallel transfers but it isn't always 100%
-compatible with the native name resolver funtionality.
+compatible with the native name resolver functionality.
 
 ## Caching
 
@@ -51,7 +51,7 @@ cache for 60 seconds, but that value can be changed with
 `CURLOPT_DNS_CACHE_TIMEOUT`.
 
 The DNS cache is kept within the easy handle when `curl_easy_perform` is used,
-or within the multi handle when the multi inteface is used. It can also be
+or within the multi handle when the multi interface is used. It can also be
 made shared between multiple easy handles using the [share
 interface](libcurl-sharing.md).
 

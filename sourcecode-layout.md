@@ -67,7 +67,7 @@ users.
 - WolfSSL: (formerly known as cyaSSL) is a TLS library more targeted
   towards the embedded market.
 - axTLS: a minuscule TLS library focused on a requiring a small footprint.
-- SChannel: the native TLS library on Windows.
+- Schannel: the native TLS library on Windows.
 - SecureTransport: the native TLS library on Mac OS X.
 - GSKit: the native TLS library on OS/400.
 

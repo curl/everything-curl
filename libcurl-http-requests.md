@@ -30,7 +30,7 @@ you want to send a `DELETE` method to the URL of your choice:
 
 The CURLOPT_CUSTOMREQUEST setting should only be the single keyword to use as
 method in the HTTP request line. If you want to change or add additional HTTP
-reuqest headers, see the following section.
+request headers, see the following section.
 
 ## Customize HTTP request headers
 

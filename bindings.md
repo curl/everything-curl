@@ -30,7 +30,7 @@ archives, but must be downloaded and installed separately.
 | Lua-cURL | <https://github.com/Lua-cURL/Lua-cURLv3> | Jürgen Hötzel, Alexey Melnichuk |
 | .NET | <https://github.com/masroore/CurlSharp> | Masroor Ehsan Choudhury, Jeffrey Phillips |
 | NodeJS | <https://github.com/JCMais/node-libcurl> | Jonathan Cardoso Machado |
-| O'Caml | <https://sourceforge.net/projects/ocurl/> | Lars Nilsson |
+| OCaml | <https://sourceforge.net/projects/ocurl/> | Lars Nilsson |
 | Pascal/Delphi/Kylix | <http://curlpas.sourceforge.net/curlpas/> | Jeffrey Pohlmeyer. |
 | Pascal/Delphi/Kylix | <http://www.tekool.com/opcurl> | Christophe Espern. |
 | Perl | <https://github.com/szbalint/WWW--Curl> | Cris Bailiff and Bálint Szilakszi |

@@ -354,6 +354,10 @@ A very basic Unix shell script could look like something like this:
 
  90. SSL public key does not matched pinned public key
 
+ 91. Invalid SSL certificate status
+
+ 92. Stream error in HTTP/2 framing layer
+
 ## Error message
 
 When curl exits with a non-zero code, it will also output an error message

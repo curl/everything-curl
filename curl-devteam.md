@@ -22,3 +22,5 @@ during the last several years include these stellar individuals:
 - Tatsuhiro Tsujikawa
 - Patrick Monnerat
 - Nick Zitzmann
+- Marcel Raad
+- Michael Kaufmann

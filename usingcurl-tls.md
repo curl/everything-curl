@@ -85,9 +85,9 @@ insecure already a very long time ago. SSL version 3 took over from there, and
 it too has been deemed not safe enough for use.
 
 TLS version 1.0 was the first "standard". RFC 2246 was published 1999. After
-that, TLS 1.1 came and and in November 2016 TLS 1.2 is the gold standard. TLS
+that, TLS 1.1 came and and in 2017, TLS 1.2 is still the gold standard. TLS
 1.3 is in the works and we expect to see it finalized and published as a
-standard by the IETF at some point during 2017.
+standard by the IETF at some point during 2018.
 
 curl is designed to use a "safe version" of SSL/TLS by default. It means that
 it will not negotiate SSLv2 or SSLv3 unless specifically told to, and in fact

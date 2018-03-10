@@ -20,7 +20,7 @@ weeks later and so it continues. Non-stop.
 For every release we tag the source code in the repository with "curl-release
 version" and we update the [changelog](https://curl.haxx.se/changes.html).
 
-We had done 160 curl releases by November 2016, and for all the ones made
+We had done 172 curl releases by January 2018, and for all the ones made
 since late 1999 there are lots of release stats available in our [curl release
 log](https://curl.haxx.se/docs/releases.html).
 

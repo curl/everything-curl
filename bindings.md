@@ -15,34 +15,39 @@ archives, but must be downloaded and installed separately.
 | Ch/C++ | <http://chcurl.sourceforge.net/> | Stephen Nestinger, Jonathan Rogado |
 | Cocoa \(BBHTTP\) | <https://github.com/brunodecarvalho/BBHTTP> | Bruno de Carvalho |
 | Cocoa \(CURLHandle\) | <https://github.com/karelia/curlhandle/> | Dan Wood |
-| D | <http://dlang.org/library/std/net/curl.html> | Kenneth Bogert |
-| Dylan | <http://opendylan.org/> | Chris Double |
+| D | <https://dlang.org/library/std/net/curl.html> | Kenneth Bogert |
+| Delphi | <https://github.com/Mercury13/curl4delphi> | Mikhail Merkuryev |
+| Dylan | <https://opendylan.org/> | Chris Double |
 | Eiffel | <https://room.eiffel.com/library/curl> | Eiffel Software |
-| Euphoria | <http://rays-web.com/eulibcurl.htm> | Ray Smith |
 | Falcon | <http://www.falconpl.org/> | Falcon |
 | Gambas | <http://gambas.sourceforge.net/> | Gambas |
 | glib/GTK+ | <http://atterer.org/glibcurl> | Richard Atterer |
+| Go | <https://github.com/andelf/go-curl> | ShuYu Wang |
 | Guile | <http://www.lonelycactus.com/guile-curl.html> | Michael L. Gran |
 | Harbour | <https://github.com/vszakats/harbour-core/tree/master/contrib/hbcurl> | Viktor Szakáts |
-| Haskell | <http://hackage.haskell.org/package/curl> | Galois, Inc |
+| Haskell | <https://hackage.haskell.org/package/curl> | Galois, Inc |
 | Java | <https://github.com/pjlegato/curl-java> | Paul Legato |
+| Julia | <https://github.com/JuliaWeb/LibCURL.jl> | JuliaWeb |
+| Lisp | <https://common-lisp.net/project/cl-curl/> | Liam Healy |
 | Lua (luacurl) | <http://luacurl.luaforge.net/> | Alexander Marinov |
 | Lua-cURL | <https://github.com/Lua-cURL/Lua-cURLv3> | Jürgen Hötzel, Alexey Melnichuk |
 | .NET | <https://github.com/masroore/CurlSharp> | Masroor Ehsan Choudhury, Jeffrey Phillips |
 | NodeJS | <https://github.com/JCMais/node-libcurl> | Jonathan Cardoso Machado |
 | OCaml | <https://sourceforge.net/projects/ocurl/> | Lars Nilsson |
 | Pascal/Delphi/Kylix | <http://curlpas.sourceforge.net/curlpas/> | Jeffrey Pohlmeyer. |
-| Pascal/Delphi/Kylix | <http://www.tekool.com/opcurl> | Christophe Espern. |
 | Perl | <https://github.com/szbalint/WWW--Curl> | Cris Bailiff and Bálint Szilakszi |
 | PHP | <https://php.net/curl> | Sterling Hughes |
+| PostgreSQL | <https://github.com/pramsey/pgsql-http> | Paul Ramsey |
 | Python (PycURL) | <https://github.com/pycurl/pycurl> | Kjetil Jacobsen |
-| R | <http://cran.r-project.org/package=curl> | Jeroen Ooms, Hadley Wickham, RStudio |
+| R | <https://cran.r-project.org/package=curl> | Jeroen Ooms, Hadley Wickham, RStudio |
 | Rexx | <http://rexxcurl.sourceforge.net/> | Mark Hessling |
+| Ring | <http://ring-lang.sourceforge.net/doc1.3/libcurl.html> | Mahmoud Fayed |
 | Ruby (curb) | <https://github.com/taf2/curb> | Ross Bamford |
 | Ruby (ruby-curl-multi) | <http://curl-multi.rubyforge.org/> | Kristjan Petursson and Keith Rarick |
 | Rust (curl-rust) | <https://github.com/carllerche/curl-rust> | Carl Lerche |
-| Scheme Bigloo | <http://www.metapaper.net/lisovsky/web/curl/> | Kirill Lisovsky |
-| S-Lang | <http://www.jedsoft.org/slang/modules/curl.html> | John E Davis |
+| Scheme Bigloo | <https://www.metapaper.net/lisovsky/web/curl/> | Kirill Lisovsky |
+| Scilab | <https://help.scilab.org/docs/current/fr_FR/getURL.html> | Sylvestre Ledru |
+| S-Lang | <https://www.jedsoft.org/slang/modules/curl.html> | John E Davis |
 | Smalltalk | <http://www.squeaksource.com/CurlPlugin/> | Danil Osipchuk |
 | SP-Forth | <http://www.forth.org.ru/~ac/lib/lin/curl/> | ygrek |
 | Tcl | <http://mirror.yellow5.com/tclcurl/> | Andrés García |

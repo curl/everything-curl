@@ -18,7 +18,7 @@
  - c-ares: [Name resolve tricks with c-ares](usingcurl-connections.md#name-resolve-tricks-with-c-ares), [c-ares](building-deps.md#c-ares), [Name resolver backends](libcurl-names.md#name-resolver-backends), [Name server options](libcurl-names.md#name-server-options)
  - C89: [Comments](sourcecode-style.md#comments), [Building and installing](building.md#building-and-installing)
  - CA: [Verbose mode](usingcurl-verbose.md#verbose-mode), [MITM-proxies](usingcurl-proxies.md#mitm-proxies), [Available exit codes](usingcurl-returns.md#available-exit-codes), [Verifying server certificates](usingcurl-tls.md#verifying-server-certificates), [CA store](usingcurl-tls.md#ca-store), [CA store on windows](usingcurl-tls.md#ca-store-on-windows), [OCSP stapling](usingcurl-tls.md#ocsp-stapling)
- - Chrome: [Copy as curl](usingcurl-copyas.md#copy-as-curl), [From Chrome](usingcurl-copyas.md#from-chrome)
+ - Chrome: [Copy as curl](usingcurl-copyas.md#copy-as-curl), [From Chrome](usingcurl-copyas.md#from-chrome), [From Safari](usingcurl-copyas.md#from-safari)
  - clone: [Clone the code](sourcecode.md#clone-the-code), [git](sourcecode-contributing.md#git), [Pull request](sourcecode-contributing.md#pull-request), [Web site source code](sourcecode-web.md#web-site-source-code), [build boringssl](building-boringssl.md#build-boringssl)
  - code of conduct: [Code of conduct](opensource-coc.md#code-of-conduct)
  - --compressed: [Compression](usingcurl-downloads.md#compression), [Gzipped transfers](http-response.md#gzipped-transfers), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
@@ -125,14 +125,14 @@
  - --data-urlencode: [URL encoding](http-post.md#url-encoding)
  - debian: [lib/vtls](sourcecode-layout.md#lib/vtls), [apt](building-binary.md#apt)
  - Debug callback: [Debug callback](callback-debug.md#debug-callback), [Verbose operations](libcurl-verbose.md#verbose-operations)
- - development: [Project communication](curl-comm.md#project-communication), [curl-users](curl-maillists.md#curl-users), [curl-library](curl-maillists.md#curl-library), [Reporting bugs](curl-bugs.md#reporting-bugs), [Problems must be known to get fixed](curl-bugs.md#problems-must-be-known-to-get-fixed), [The development team](curl-devteam.md#the-development-team), [Future](curl-future.md#future), [Development](opensource-devel.md#development), [Source code on github](opensource-devel.md#source-code-on-github), [Who decides what goes in?](sourcecode-contributing.md#who-decides-what-goes-in?), [SSL and TLS versions](usingcurl-tls.md#ssl-and-tls-versions), [Figure out what a browser sends](http-post.md#figure-out-what-a-browser-sends), [apt](building-binary.md#apt), [yum](building-binary.md#yum), [Which libcurl version runs](libcurl-api.md#which-libcurl-version-runs)
+ - development: [Project communication](curl-comm.md#project-communication), [curl-users](curl-maillists.md#curl-users), [curl-library](curl-maillists.md#curl-library), [Reporting bugs](curl-bugs.md#reporting-bugs), [Problems must be known to get fixed](curl-bugs.md#problems-must-be-known-to-get-fixed), [The development team](curl-devteam.md#the-development-team), [Future](curl-future.md#future), [Development](opensource-devel.md#development), [Source code on github](opensource-devel.md#source-code-on-github), [Who decides what goes in?](sourcecode-contributing.md#who-decides-what-goes-in?), [SSL and TLS versions](usingcurl-tls.md#ssl-and-tls-versions), [From Safari](usingcurl-copyas.md#from-safari), [Figure out what a browser sends](http-post.md#figure-out-what-a-browser-sends), [apt](building-binary.md#apt), [yum](building-binary.md#yum), [Which libcurl version runs](libcurl-api.md#which-libcurl-version-runs)
 ## E
  - environment variables: [Default config file](cmdline-configfile.md#default-config-file), [Proxy environment variables](usingcurl-proxies.md#proxy-environment-variables)
  - etiquette: [Mailing list etiquette](curl-etiquette.md#mailing-list-etiquette)
  - event-driven: [Driving with the "multi_socket" interface](libcurl-drive-multi-socket.md#driving-with-the-"multi_socket"-interface)
 ## F
  - -F: [multipart formpost](usingcurl-uploads.md#multipart-formpost), [Not perfect](usingcurl-copyas.md#not-perfect), [HTTP methods](http.md#http-methods), [Sending such a form with curl](http-multipart.md#sending-such-a-form-with-curl), [Content-Type](http-multipart.md#content-type), [-d vs -F](http-postvspost.md#d-vs--f), [HTML web forms](http-postvspost.md#html-web-forms), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
- - Firefox: [lib/vtls](sourcecode-layout.md#lib/vtls), [Discover your proxy](usingcurl-proxies.md#discover-your-proxy), [Copy as curl](usingcurl-copyas.md#copy-as-curl), [From Firefox](usingcurl-copyas.md#from-firefox), [On Firefox, without using the devtools](usingcurl-copyas.md#on-firefox,-without-using-the-devtools), [User-agent](http-requests.md#user-agent)
+ - Firefox: [lib/vtls](sourcecode-layout.md#lib/vtls), [Discover your proxy](usingcurl-proxies.md#discover-your-proxy), [Copy as curl](usingcurl-copyas.md#copy-as-curl), [From Firefox](usingcurl-copyas.md#from-firefox), [From Safari](usingcurl-copyas.md#from-safari), [On Firefox, without using the devtools](usingcurl-copyas.md#on-firefox,-without-using-the-devtools), [User-agent](http-requests.md#user-agent)
  - Fragment: [Fragment](cmdline-urls.md#fragment), [Anchors or fragments](http-requests.md#anchors-or-fragments)
  - --ftp-method: [multicwd](ftp-traversedir.md#multicwd), [nocwd](ftp-traversedir.md#nocwd), [singlecwd](ftp-traversedir.md#singlecwd)
  - --ftp-pasv: [Passive connections](ftp-twoconnections.md#passive-connections)
@@ -230,6 +230,7 @@
  - RTMP: [What protocols does curl support?](protocols-protocols.md#what-protocols-does-curl-support?), [RTMP](protocols-curl.md#rtmp), [Supported protocols](usingcurl.md#supported-protocols), [librtmp](building-deps.md#librtmp)
  - RTSP: [What protocols does curl support?](protocols-protocols.md#what-protocols-does-curl-support?), [RTSP](protocols-curl.md#rtsp), [Supported protocols](usingcurl.md#supported-protocols), [RTSP interleave callback](callback-rtsp.md#rtsp-interleave-callback), [Available information](libcurl-getinfo.md#available-information)
 ## S
+ - Safari: [Copy as curl](usingcurl-copyas.md#copy-as-curl), [From Safari](usingcurl-copyas.md#from-safari)
  - Schannel: [CA store on windows](usingcurl-tls.md#ca-store-on-windows), [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library), [Schannel](building-tls.md#schannel)
  - Scheme: [Connects to "port numbers"](protocols-network.md#connects-to-"port-numbers"), [FILE](protocols-curl.md#file), [Scheme](cmdline-urls.md#scheme), [The scheme separator](cmdline-urls.md#the-scheme-separator), [Without scheme](cmdline-urls.md#without-scheme), [Name and password](cmdline-urls.md#name-and-password), [Proxy type](usingcurl-proxies.md#proxy-type), [SOCKS types](usingcurl-proxies.md#socks-types), [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [Available exit codes](usingcurl-returns.md#available-exit-codes), [librtmp](building-deps.md#librtmp), [Proxy types](libcurl-proxies.md#proxy-types), [Available information](libcurl-getinfo.md#available-information), [Which libcurl version](libcurl-api.md#which-libcurl-version), [Bindings](bindings.md#bindings)
  - SCP: [What protocols does curl support?](protocols-protocols.md#what-protocols-does-curl-support?), [SCP](protocols-curl.md#scp), [Supported protocols](usingcurl.md#supported-protocols), [Protocols allowing upload](usingcurl-uploads.md#protocols-allowing-upload), [Available exit codes](usingcurl-returns.md#available-exit-codes), [SCP and SFTP](usingcurl-scpsftp.md#scp-and-sftp), [URLs](usingcurl-scpsftp.md#urls), [Known hosts](usingcurl-scpsftp.md#known-hosts), [libssh2](building-deps.md#libssh2)
@@ -261,8 +262,8 @@
  - --trace-time: [--trace-time](usingcurl-verbose.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http-response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http-post.md#chunked-encoded-posts)
 ## U
- - -U: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
  - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Command line leakage](cmdline-passwords.md#command-line-leakage), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [HTTP authentication](http-auth.md#http-authentication), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
+ - -U: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
  - URL Globbing: [URL globbing](cmdline-globbing.md#url-globbing)
 ## V
  - --verbose: [Long options](cmdline-options.md#long-options), [Verbose mode](usingcurl-verbose.md#verbose-mode), [--trace-time](usingcurl-verbose.md#trace-time)
@@ -271,8 +272,8 @@
  - Write callback: [Write callback](callback-write.md#write-callback), [Get a HTML page in memory](libcurlexamples.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http-responses.md#http-responses)
  - --write-out: [--write-out](usingcurl-verbose.md#write-out), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [HTTP response codes](http-response.md#http-response-codes), [CONNECT response codes](http-response.md#connect-response-codes)
 ## X
- - -X: [Request method](http-requests.md#request-method), [Request target](http-requests.md#request-target), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - -x: [HTTP](usingcurl-proxies.md#http), [HTTPS and proxy](usingcurl-proxies.md#https-and-proxy), [Non-HTTP protocols over an HTTP proxy](usingcurl-proxies.md#non-http-protocols-over-an-http-proxy), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling), [SOCKS types](usingcurl-proxies.md#socks-types), [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [Proxy environment variables](usingcurl-proxies.md#proxy-environment-variables), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
+ - -X: [Request method](http-requests.md#request-method), [Request target](http-requests.md#request-target), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
 ## Y
  - yum: [yum](building-binary.md#yum)
 ## Z

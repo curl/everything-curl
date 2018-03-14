@@ -183,8 +183,8 @@
 ## M
  - --max-filesize: [Maximum filesize](usingcurl-downloads.md#maximum-filesize)
  - --max-time: [Retrying failed attempts](usingcurl-downloads.md#retrying-failed-attempts), [Maximum time allowed to spend](usingcurl-timeouts.md#maximum-time-allowed-to-spend)
- - --metalink: [Metalink](usingcurl-downloads.md#metalink)
  - Metalink: [Metalink](usingcurl-downloads.md#metalink)
+ - --metalink: [Metalink](usingcurl-downloads.md#metalink)
  - MIT: [License](opensource-license.md#license)
  - MITM-proxies: [MITM-proxies](usingcurl-proxies.md#mitm-proxies)
  - multi-threading: [libcurl multi-threading](libcurl-threading.md#libcurl-multi-threading)
@@ -212,8 +212,9 @@
  - --post302: [Decide what method to use in redirects](http-redirects.md#decide-what-method-to-use-in-redirects)
  - --post303: [Decide what method to use in redirects](http-redirects.md#decide-what-method-to-use-in-redirects)
  - Progress callback: [timer_callback](libcurl-drive-multi-socket.md#timer_callback), [Progress callback](callback-progress.md#progress-callback)
- - proxy: [How it started](curl-started.md#how-it-started), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [Intermediaries' fiddlings](usingcurl-downloads.md#intermediaries'-fiddlings), [Proxies](usingcurl-proxies.md#proxies), [Discover your proxy](usingcurl-proxies.md#discover-your-proxy), [PAC](usingcurl-proxies.md#pac), [Proxy type](usingcurl-proxies.md#proxy-type), [HTTP](usingcurl-proxies.md#http), [HTTPS and proxy](usingcurl-proxies.md#https-and-proxy), [MITM-proxies](usingcurl-proxies.md#mitm-proxies), [Non-HTTP protocols over an HTTP proxy](usingcurl-proxies.md#non-http-protocols-over-an-http-proxy), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling), [SOCKS types](usingcurl-proxies.md#socks-types), [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [HTTPS to proxy](usingcurl-proxies.md#https-to-proxy), [Proxy environment variables](usingcurl-proxies.md#proxy-environment-variables), [Proxy headers](usingcurl-proxies.md#proxy-headers), [Available exit codes](usingcurl-returns.md#available-exit-codes), [CONNECT response codes](http-response.md#connect-response-codes), [Pass on transfer encoding](http-response.md#pass-on-transfer-encoding), [HTTP authentication](http-auth.md#http-authentication), [Proxies](libcurl-proxies.md#proxies), [Proxy types](libcurl-proxies.md#proxy-types), [Local or proxy name lookup](libcurl-proxies.md#local-or-proxy-name-lookup), [HTTP proxy](libcurl-proxies.md#http-proxy), [HTTPS proxy](libcurl-proxies.md#https-proxy), [Proxy authentication](libcurl-proxies.md#proxy-authentication), [Available information](libcurl-getinfo.md#available-information), [HTTP proxy](libcurl-http.md#http-proxy)
+ - pronunciation: [Pronunciation](curl-name.md#pronunciation)
  - --proxy: [HTTP](usingcurl-proxies.md#http), [HTTP authentication](http-auth.md#http-authentication)
+ - proxy: [How it started](curl-started.md#how-it-started), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [Intermediaries' fiddlings](usingcurl-downloads.md#intermediaries'-fiddlings), [Proxies](usingcurl-proxies.md#proxies), [Discover your proxy](usingcurl-proxies.md#discover-your-proxy), [PAC](usingcurl-proxies.md#pac), [Proxy type](usingcurl-proxies.md#proxy-type), [HTTP](usingcurl-proxies.md#http), [HTTPS and proxy](usingcurl-proxies.md#https-and-proxy), [MITM-proxies](usingcurl-proxies.md#mitm-proxies), [Non-HTTP protocols over an HTTP proxy](usingcurl-proxies.md#non-http-protocols-over-an-http-proxy), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling), [SOCKS types](usingcurl-proxies.md#socks-types), [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [HTTPS to proxy](usingcurl-proxies.md#https-to-proxy), [Proxy environment variables](usingcurl-proxies.md#proxy-environment-variables), [Proxy headers](usingcurl-proxies.md#proxy-headers), [Available exit codes](usingcurl-returns.md#available-exit-codes), [CONNECT response codes](http-response.md#connect-response-codes), [Pass on transfer encoding](http-response.md#pass-on-transfer-encoding), [HTTP authentication](http-auth.md#http-authentication), [Proxies](libcurl-proxies.md#proxies), [Proxy types](libcurl-proxies.md#proxy-types), [Local or proxy name lookup](libcurl-proxies.md#local-or-proxy-name-lookup), [HTTP proxy](libcurl-proxies.md#http-proxy), [HTTPS proxy](libcurl-proxies.md#https-proxy), [Proxy authentication](libcurl-proxies.md#proxy-authentication), [Available information](libcurl-getinfo.md#available-information), [HTTP proxy](libcurl-http.md#http-proxy)
  - --proxy-user: [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [HTTP authentication](http-auth.md#http-authentication)
  - --proxy1.0: [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling)
  - --proxytunnel: [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling)
@@ -262,8 +263,8 @@
  - --trace-time: [--trace-time](usingcurl-verbose.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http-response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http-post.md#chunked-encoded-posts)
 ## U
- - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Command line leakage](cmdline-passwords.md#command-line-leakage), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [HTTP authentication](http-auth.md#http-authentication), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - -U: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
+ - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Command line leakage](cmdline-passwords.md#command-line-leakage), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [HTTP authentication](http-auth.md#http-authentication), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - URL Globbing: [URL globbing](cmdline-globbing.md#url-globbing)
 ## V
  - --verbose: [Long options](cmdline-options.md#long-options), [Verbose mode](usingcurl-verbose.md#verbose-mode), [--trace-time](usingcurl-verbose.md#trace-time)
@@ -272,8 +273,8 @@
  - Write callback: [Write callback](callback-write.md#write-callback), [Get a HTML page in memory](libcurlexamples.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http-responses.md#http-responses)
  - --write-out: [--write-out](usingcurl-verbose.md#write-out), [Available --write-out variables](usingcurl-verbose.md#available---write-out-variables), [HTTP response codes](http-response.md#http-response-codes), [CONNECT response codes](http-response.md#connect-response-codes)
 ## X
- - -x: [HTTP](usingcurl-proxies.md#http), [HTTPS and proxy](usingcurl-proxies.md#https-and-proxy), [Non-HTTP protocols over an HTTP proxy](usingcurl-proxies.md#non-http-protocols-over-an-http-proxy), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling), [SOCKS types](usingcurl-proxies.md#socks-types), [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [Proxy environment variables](usingcurl-proxies.md#proxy-environment-variables), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - -X: [Request method](http-requests.md#request-method), [Request target](http-requests.md#request-target), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
+ - -x: [HTTP](usingcurl-proxies.md#http), [HTTPS and proxy](usingcurl-proxies.md#https-and-proxy), [Non-HTTP protocols over an HTTP proxy](usingcurl-proxies.md#non-http-protocols-over-an-http-proxy), [HTTP proxy tunneling](usingcurl-proxies.md#http-proxy-tunneling), [SOCKS types](usingcurl-proxies.md#socks-types), [Proxy authentication](usingcurl-proxies.md#proxy-authentication), [Proxy environment variables](usingcurl-proxies.md#proxy-environment-variables), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
 ## Y
  - yum: [yum](building-binary.md#yum)
 ## Z

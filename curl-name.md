@@ -20,6 +20,13 @@ wish we were that clever though…
 There are and were other projects using the name curl in various ways, but we
 were not aware of them by the time our curl came to be.
 
+### Pronunciation
+
+Most of us pronounce "curl" with an initial k sound, just like the English
+word curl.  It rhymes with words like girl and earl. Merriam Webster has a
+[short WAV file](https://media.merriam-webster.com/soundc11/c/curl0001.wav) to
+help.
+
 ### Confusions and mixups
 
 Soon after curl was first created another "curl" appeared that makes a

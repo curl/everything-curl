@@ -5,8 +5,7 @@ browser is one of the more common requests and areas people ask for help
 about.
 
 How do you get a curl command line to get a resource, just like the browser
-would get it, nice and easy? Both Chrome and Firefox have provided this
-feature for quite some time already!
+would get it, nice and easy? Chrome, Firefox and Safari all have this feature.
 
 ## From Firefox
 
@@ -31,6 +30,19 @@ that makes the transfer. This feature is available by default in all Chrome and
 Chromium installations.
 
 ![copy as curl with Chrome](chrome-copy-as-curl.png)
+
+## From Safari
+
+In Safari, the "development" menu isn't visible until you go into
+preferences->Advanced and enable it. But once you've done that, you can select
+"Show web inspector" in that development menu and get to see a new console pop
+up that is similar to the development tools of Firefox and Chrome.
+
+Select the network tab, reload the web page and then you can right click the
+particular resources that you want to fetch with curl, as if you did it with
+Safari..
+
+![copy as curl with Safari](safari-copy-as-curl.png)
 
 ## On Firefox, without using the devtools
 

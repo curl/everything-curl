@@ -372,6 +372,6 @@ used'. Those are exit status codes that aren't used in modern versions of curl
 but that have been used or were intended to be used in the past. They may very
 well be used in a future version of curl.
 
-Additionally, the highest used error status in this list is 90, but there is
+Additionally, the highest used error status in this list is 92, but there is
 no guarantee that a future curl version won't decide to add more exit codes
 after that number.

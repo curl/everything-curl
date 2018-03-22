@@ -235,9 +235,6 @@ reside.
 One solution for that is to use HTTPS to the proxy, which then establishes a
 secure and encrypted connection that is safe from easy surveillance.
 
-curl does not currently support HTTPS to the proxy, but there is work in
-progress for this that we hope to land in a future curl version.
-
 ### Proxy environment variables
 
 curl checks for the existence of specially-named environment variables before

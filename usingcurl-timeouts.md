@@ -27,6 +27,9 @@ Example:
 
     curl --max-time 5.5 https://example.com/
 
+(Your locale may use another symbol than a dot for expressing numerical
+fractions.)
+
 ## Never spend more than this to connect
 
 `--connect-timeout` limits the time curl will spend trying to connect to the

@@ -12,7 +12,7 @@ archives, but must be downloaded and installed separately.
 | :--- | :--- | :--- |
 | Script Basic | <http://scriptbasic.com/> | Peter Verhas |
 | C++ | <http://curlpp.org/> | Jean-Philippe, Barrette-LaPierre |
-| Ch/C++ | <http://chcurl.sourceforge.net/> | Stephen Nestinger, Jonathan Rogado |
+| Ch/C++ | <https://chcurl.sourceforge.io/> | Stephen Nestinger, Jonathan Rogado |
 | Cocoa \(BBHTTP\) | <https://github.com/brunodecarvalho/BBHTTP> | Bruno de Carvalho |
 | Cocoa \(CURLHandle\) | <https://github.com/karelia/curlhandle/> | Dan Wood |
 | D | <https://dlang.org/library/std/net/curl.html> | Kenneth Bogert |
@@ -20,7 +20,7 @@ archives, but must be downloaded and installed separately.
 | Dylan | <https://opendylan.org/> | Chris Double |
 | Eiffel | <https://room.eiffel.com/library/curl> | Eiffel Software |
 | Falcon | <http://www.falconpl.org/> | Falcon |
-| Gambas | <http://gambas.sourceforge.net/> | Gambas |
+| Gambas | <https://gambas.sourceforge.io/> | Gambas |
 | glib/GTK+ | <http://atterer.org/glibcurl> | Richard Atterer |
 | Go | <https://github.com/andelf/go-curl> | ShuYu Wang |
 | Guile | <http://www.lonelycactus.com/guile-curl.html> | Michael L. Gran |
@@ -34,14 +34,14 @@ archives, but must be downloaded and installed separately.
 | .NET | <https://github.com/masroore/CurlSharp> | Masroor Ehsan Choudhury, Jeffrey Phillips |
 | NodeJS | <https://github.com/JCMais/node-libcurl> | Jonathan Cardoso Machado |
 | OCaml | <https://sourceforge.net/projects/ocurl/> | Lars Nilsson |
-| Pascal/Delphi/Kylix | <http://curlpas.sourceforge.net/curlpas/> | Jeffrey Pohlmeyer. |
+| Pascal/Delphi/Kylix | <https://curlpas.sourceforge.io/curlpas/> | Jeffrey Pohlmeyer. |
 | Perl | <https://github.com/szbalint/WWW--Curl> | Cris Bailiff and Bálint Szilakszi |
 | PHP | <https://php.net/curl> | Sterling Hughes |
 | PostgreSQL | <https://github.com/pramsey/pgsql-http> | Paul Ramsey |
 | Python (PycURL) | <https://github.com/pycurl/pycurl> | Kjetil Jacobsen |
 | R | <https://cran.r-project.org/package=curl> | Jeroen Ooms, Hadley Wickham, RStudio |
-| Rexx | <http://rexxcurl.sourceforge.net/> | Mark Hessling |
-| Ring | <http://ring-lang.sourceforge.net/doc1.3/libcurl.html> | Mahmoud Fayed |
+| Rexx | <https://rexxcurl.sourceforge.io/> | Mark Hessling |
+| Ring | <https://ring-lang.sourceforge.io/doc1.3/libcurl.html> | Mahmoud Fayed |
 | Ruby (curb) | <https://github.com/taf2/curb> | Ross Bamford |
 | Ruby (ruby-curl-multi) | <http://curl-multi.rubyforge.org/> | Kristjan Petursson and Keith Rarick |
 | Rust (curl-rust) | <https://github.com/carllerche/curl-rust> | Carl Lerche |
@@ -52,5 +52,5 @@ archives, but must be downloaded and installed separately.
 | SP-Forth | <http://www.forth.org.ru/~ac/lib/lin/curl/> | ygrek |
 | Tcl | <http://mirror.yellow5.com/tclcurl/> | Andrés García |
 | Visual Basic | <https://sourceforge.net/projects/libcurl-vb/> | Jeffrey Phillips |
-| wxWidgets | <http://wxcode.sourceforge.net/components/wxcurl/> | Casey O'Donnell |
+| wxWidgets | <https://wxcode.sourceforge.io/components/wxcurl/> | Casey O'Donnell |
 | Xojo | <https://github.com/charonn0/RB-libcURL> | Andrew Lambert |

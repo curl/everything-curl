@@ -11,7 +11,7 @@ them are *required*, but most users will want to use at least some of them.
 
 ## zlib
 
-http://zlib.net/
+https://zlib.net/
 
 curl can do automatic decompression of data transferred over HTTP if built with
 zlib. Getting compressed data over the wire will use less bandwidth.
@@ -59,7 +59,7 @@ librtmp library that comes from the RTMPDump project.
 https://launchpad.net/libmetalink
 
 Build curl with libmetalink to have it support the
-[metalink](http://www.metalinker.org/) format, which allows curl to download
+[metalink](https://www.metalinker.org/) format, which allows curl to download
 the same file from multiple places. It includes checksums and more. See curl's
 [--metalink](https://curl.haxx.se/docs/manpage.html#--metalink) option.
 

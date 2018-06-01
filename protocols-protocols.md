@@ -5,7 +5,7 @@ called **the protocol**. The protocol describes exactly how to ask the server
 for data, or to tell the server that there is data coming.
 
 Protocols are typically defined by the IETF ([Internet Engineering Task
-Force](http://www.ietf.org)), which hosts RFC documents that describe exactly
+Force](https://www.ietf.org/)), which hosts RFC documents that describe exactly
 how each protocol works: how clients and servers are supposed to act and what
 to send and so on.
 

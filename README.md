@@ -27,7 +27,7 @@ This book project started at the end of September 2015.
 
 ## The book sites
 
-**http://bookcurl.haxx.se** is the home of this book. It features easy
+**https://bookcurl.haxx.se** is the home of this book. It features easy
 accessible links to read the book online in a web version or download a copy
 for offline reading using one of the many different versions offered,
 including PDF, ePUB and MOBI.
@@ -60,4 +60,4 @@ github page.
 ## License
 
 This document is licensed under the [Creative Commons Attribution 4.0
-license](http://creativecommons.org/licenses/by/4.0/).
+license](https://creativecommons.org/licenses/by/4.0/).

@@ -25,6 +25,11 @@ the options anywhere you like; they can also appear after the URL:
 
     curl http://example.com -Lv
 
+and the two separate short options can of course also be specified separately,
+like:
+
+    curl -v -L http://example.com
+
 ### Long options
 
 Single-letter options are convenient since they are quick to write and use, but

@@ -1,6 +1,6 @@
 # curl HTTP cheat sheet
 
-[online here](https://bagder.github.io/curl-cheat-sheet/http-sheet.html)
+[online here](https://curl.github.io/curl-cheat-sheet/http-sheet.html)
 
 | Verbose              | Hide progress           | extra info        | Write output     | Timeout
 |----------------------|-------------------------|-------------------|------------------|--------------

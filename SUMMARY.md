@@ -57,6 +57,7 @@
     * [SMTP](usingcurl-smtp.md)
     * [TELNET](usingcurl-telnet.md)
     * [TLS](usingcurl-tls.md)
+        * [SSLKEYLOGFILE](tls-sslkeylogfile.md)
     * [Debug](usingcurl-debug.md)
     * [Copy as curl](usingcurl-copyas.md)
     * [curl examples](curlexamples.md)

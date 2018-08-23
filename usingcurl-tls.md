@@ -84,15 +84,12 @@ was the first widespread version used on the Internet but that was deemed
 insecure already a very long time ago. SSL version 3 took over from there, and
 it too has been deemed not safe enough for use.
 
-TLS version 1.0 was the first "standard". RFC 2246 was published 1999.
+TLS version 1.0 was the first "standard". RFC 2246 was published 1999. TLS 1.1
+came out in 2006, further improving security, followed by TLS 1.2 in 2008. TLS
+1.2 came to be the gold standard for TLS for a decade.
 
-In 2006, TLS 1.1 came out, further improving security.
-
-In 2008, TLS 1.2 was published and this version came to be the gold standard
-for TLS for a decade.
-
-TLS 1.3 was finalized and published as a standard by the IETF in August
-2018. This is the most secure and fastest TLS version as of date. It is
+TLS 1.3 (RFC 8446) was finalized and published as a standard by the IETF in
+August 2018. This is the most secure and fastest TLS version as of date. It is
 however so new that a lot of software, tools and libraries don't yet support
 it.
 

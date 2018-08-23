@@ -84,10 +84,17 @@ was the first widespread version used on the Internet but that was deemed
 insecure already a very long time ago. SSL version 3 took over from there, and
 it too has been deemed not safe enough for use.
 
-TLS version 1.0 was the first "standard". RFC 2246 was published 1999. After
-that, TLS 1.1 came and and in 2017, TLS 1.2 is still the gold standard. TLS
-1.3 is in the works and we expect to see it finalized and published as a
-standard by the IETF at some point during 2018.
+TLS version 1.0 was the first "standard". RFC 2246 was published 1999.
+
+In 2006, TLS 1.1 came out, further improving security.
+
+In 2008, TLS 1.2 was published and this version came to be the gold standard
+for TLS for a decade.
+
+TLS 1.3 was finalized and published as a standard by the IETF in August
+2018. This is the most secure and fastest TLS version as of date. It is
+however so new that a lot of software, tools and libraries don't yet support
+it.
 
 curl is designed to use a "safe version" of SSL/TLS by default. It means that
 it will not negotiate SSLv2 or SSLv3 unless specifically told to, and in fact
@@ -100,10 +107,10 @@ serious effort.
 | --sslv2   | SSL version 2      |
 | --sslv3   | SSL version 3      |
 | --tlsv1   | TLS >= version 1.0 |
-| --tlsv1.0 | TLS version 1.0    |
-| --tlsv1.1 | TLS version 1.1    |
-| --tlsv1.2 | TLS version 1.2    |
-| --tlsv1.3 | TLS version 1.3    |
+| --tlsv1.0 | TLS >= version 1.0 |
+| --tlsv1.1 | TLS >= version 1.1 |
+| --tlsv1.2 | TLS >= version 1.2 |
+| --tlsv1.3 | TLS >= version 1.3 |
 
 **NOTE:** TLS version 1.3 is only supported in selected very recent
 development versions of certain TLS libraries and requires curl 7.52.0 or

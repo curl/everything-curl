@@ -68,20 +68,82 @@ the proxy to resolve.
 
 ## Which proxy?
 
-TBD
+If your network connection requires the use of a proxy to reach the
+destination, you must figure this out and tell libcurl to use the correct
+proxy. There is no support in libcurl to make it automatically figure out or
+detect a proxy.
 
-## Using proxies for various protocols
+When using a browser, it is popular to provide the proxy with a PAC script or
+other means but none of those are recognized by libcurl.
 
-TBD
+### Proxy environment variables
+
+If no proxy option has been set, libcurl will check for the existence of
+specially-named environment variables before it performs its transfer to see
+if a proxy is requested to get used.
+
+You can specify the proxy by setting a variable named `[scheme]_proxy` to hold
+the proxy host name (the same way you would specify the host with `-x`). So if
+you want to tell curl to use a proxy when access a HTTP server, you set the
+'http_proxy' environment variable. Like this:
+
+    http_proxy=http://proxy.example.com:80
+
+The proxy above example is for HTTP, but can of course also set `ftp_proxy`,
+`https_proxy`, and so on for the specific protocols you want to proxy. All
+these proxy environment variable names except http_proxy can also be specified
+in uppercase, like `HTTPS_PROXY`.
+
+To set a single variable that controls *all* protocols, the `ALL_PROXY`
+exists.  If a specific protocol variable one exists, such a one will take
+precedence.
+
+When using environment variables to set a proxy, you could easily end up in a
+situation where one or a few host names should be excluded from going through
+the proxy. This can be done with the `NO_PROXY` variable - or the
+corresponding `CURLOPT_NOPROXY` libcurl option. Set that to a comma- separated
+list of host names that should not use a proxy when being accessed. You can
+set NO_PROXY to be a single asterisk ('\*') to match all hosts.
 
 ## HTTP proxy
 
-TBD
+The HTTP protocol details exactly how a HTTP proxy should be used. Instead of
+sending the request to the actual remote server, the client (libcurl) instead
+asks the proxy for the specific resource. The connection to the HTTP proxy is
+made using plain unencrypted HTTP.
+
+If a HTTPS resource is requested, libcurl will instead issue a `CONNECT`
+request to the proxy. Such a request opens a tunnel through the proxy, where
+it basically just passes data through without understanding it. This way,
+libcurl can establish a secure end-to-end TLS connection even when a HTTP
+proxy is present.
+
+You *can* proxy non-HTTP protocols over a HTTP proxy, but since this is mostly
+done by the CONNECT method to tunnel data through it requires that the proxy
+is configured to allow the client to connect to those other particular remote
+port numbers. Many HTTP proxies are setup to inhibit connections to other port
+numbers than 80 and 443.
 
 ## HTTPS proxy
 
-TBD
+A HTTPS proxy is similar to a HTTP proxy but allows the client to connect to
+it using a secure HTTPS connection. Since the proxy connection is separate
+from the connection to the remote site even in this situation, as HTTPS to the
+remote site will be tunnelled through the HTTPS connection to the proxy,
+libcurl provies a whole set of TLS options for the proxy connection that are
+separate from the connection to the remote host.
+
+For example, `CURLOPT_PROXY_CAINFO` is basically the same functionality for
+the HTTPS proxy as `CURLOPT_CAINFO` is for the remote
+host. `CURLOPT_PROXY_SSL_VERIFYPEER` is the proxy version of
+`CURLOPT_SSL_VERIFYPEER` and so on.
+
+HTTPS proxies are still today fairly unusual in organizations and companies.
 
 ## Proxy authentication
+
+TBD
+
+## Proxy headers
 
 TBD

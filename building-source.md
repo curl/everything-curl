@@ -126,11 +126,16 @@ command line options.
 The default OpenSSL configure check will also detect and use BoringSSL or
 libressl.
 
+ - BoringSSL: - by default
  - GnuTLS: `--without-ssl --with-gnutls`.
- - Cyassl: `--without-ssl --with-cyassl`
  - NSS: `--without-ssl --with-nss`
+ - OpenSSL: - by default
  - PolarSSL: `--without-ssl --with-polarssl`
+ - Wolfssl: `--without-ssl --with-wolfssl`
+ - libressl: - by default
  - mbedTLS: `--without-ssl --with-mbedtls`
- - axTLS: `--without-ssl --with-axtls`
  - schannel: `--without-ssl --with-winssl`
  - secure transport: `--with-winssl --with-darwinssl`
+
+All the `--with-*` options also allow you to provide the install prefix so
+that configure will search for the specific library where you tell it to.

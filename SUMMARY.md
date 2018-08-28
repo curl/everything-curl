@@ -124,6 +124,7 @@
     * [HTTP requests](libcurl-http-requests.md)
     * [HTTP versions](libcurl-http-versions.md)
     * [HTTP ranges](libcurl-http-ranges.md)
+    * [HTTP authentication](libcurl-http-auth.md)
     * [Cookies with libcurl](libcurl-http-cookies.md)
     * [Download](libcurl-http-download.md)
     * [Upload](libcurl-http-upload.md)

@@ -10,4 +10,4 @@ TBD
 
 ## HTTP proxy
 
-TBD
+See [using Proxies with libcurl](libcurl-proxies.md)

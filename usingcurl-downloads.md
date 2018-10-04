@@ -437,4 +437,4 @@ If you instead just want a specific byte range from the remote resource
 transferred, you can ask for only that. For example, when you only want 1000
 bytes from offset 100 to avoid having to download the entire huge remote file:
 
-    curl --range 100-1999 http://example.com/bigfile
+    curl --range 100-1099 http://example.com/bigfile

@@ -115,7 +115,7 @@ clients use TCP port 22.
 The Server Message Block (SMB) protocol is also known as CIFS. It is a an
 application-layer network protocol mainly used for providing shared access to
 files, printers, and serial ports and miscellaneous communications between
-nodes on a network. SMB servers and clients use TCP port 485.
+nodes on a network. SMB servers and clients use TCP port 445.
 
 ## SMTP
 

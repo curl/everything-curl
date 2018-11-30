@@ -35,8 +35,8 @@ or "reply to all", and not just reply to the author of the single mail you
 reply to.
 
 We are actively discouraging replying back to the single person by setting the
-Reply-To: field in outgoing mails back to the mailing list address, making it
-harder for people to mail the author only by mistake.
+`Reply-To:` field in outgoing mails back to the mailing list address, making
+it harder for people to mail the author only by mistake.
 
 #### Use a sensible subject
 
@@ -70,7 +70,7 @@ after the quotes that relate to your comment. Then you continue downwards
 again.
 
 When most of the quotes have been removed and you have added your own words,
-you are done!
+you are done.
 
 #### HTML is not for mails
 
@@ -98,7 +98,7 @@ reply to.
 Change the subject name to something sensible and related to the subject,
 preferably even the actual subject of the single mail you wanted to reply to.
 
-#### Please tell us how you solved the problem!
+#### Please tell us how you solved the problem
 
 Many people mail questions to the list, people spend some of their time and
 make an effort in providing good answers to these questions.

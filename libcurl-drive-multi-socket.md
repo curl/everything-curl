@@ -111,7 +111,7 @@ There is only one timeout for the application to handle for the entire multi
 handle, no matter how many individual easy handles that have been added or
 transfers that are in progress. The timer callback will be updated with the
 current nearest-in-time period to wait. If libcurl gets called before the
-timeout expiry time because of socket activity, it may very well update the
+timeout expiry time because of socket activity, it may update the
 timeout value again before it expires.
 
 When the event system of your choice eventually tells you that the timer has
@@ -129,9 +129,8 @@ socket and timer callbacks in the multi handle, you are ready to start the
 transfer.
 
 To kick it all off, you tell libcurl it timed out (because all easy handles
-start out with a very, very short timeout) which will make libcurl call the
-callbacks to set things up and from then on you can can just let your event
-system drive:
+start out with a short timeout) which will make libcurl call the callbacks to
+set things up and from then on you can can just let your event system drive:
 
     /* all easy handles and callbacks are setup */
 

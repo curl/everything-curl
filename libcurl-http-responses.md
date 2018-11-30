@@ -15,8 +15,8 @@ The size of a response *as told by the server headers* can be extracted with
     double size;
     curl_easy_getinfo(curl, CURLINFO_CONTENT_LENGTH_DOWNLOAD, &size);
 
-but if you can wait until after the transfer is already done, which also is a
-more reliable way since not all URLs will provide the size up front (like for
+If you can wait until after the transfer is already done, which also is a more
+reliable way since not all URLs will provide the size up front (like for
 example for servers that generate content on demand) you can instead ask for
 the amount of downloaded data in the most recent transfer.
 
@@ -52,7 +52,7 @@ error.
 
 When libcurl is asked to perform a HTTP transfer it will return an error if that
 HTTP transfer fails. However, getting a HTTP 404 or the like back is not a
-problem for libcurl. It is not a HTTP transfer error. A user might very well be
+problem for libcurl. It is not a HTTP transfer error. A user might be
 writing a client for testing a server's HTTP responses.
 
 If you insist on curl treating HTTP response codes from 400 and up as errors,

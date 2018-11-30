@@ -26,7 +26,7 @@ three digits all the time:
 
     curl -O http://example.com/[001-100].png
 
-Or maybe you only want even numbered images so you tell curl a step counter
+Or maybe you only want even-numbered images so you tell curl a step counter
 too. This example range goes from 0 to 100 with an increment of 2:
 
     curl -O http://example.com/[0-100:2].png
@@ -50,7 +50,7 @@ of the brackets used for the ranges:
 
 You can use several globs in the same URL which then will make curl iterate
 over those, too. To download the images of Ben, Alice and Frank, in both the
-resolutions 100x100 and 1000x1000, a command line could look like:
+resolutions 100 * 100 and 1000 * 1000, a command line could look like:
 
     curl -O http://example.com/{Ben,Alice,Frank}-{100x100,1000x1000}.jpg
 

@@ -9,7 +9,7 @@ would get it, nice and easy? Chrome, Firefox and Safari all have this feature.
 
 ## From Firefox
 
-You get the site shown with Firefox's network tools.  You then right-click on
+You get the site shown with Firefox's network tools. You then right-click on
 the specific request you want to repeat in the "Web Developer->Network" tool
 when you see the HTTP traffic, and in the menu that appears you select "Copy
 as cURL". Like this screenshot below shows. The operation then generates a
@@ -58,9 +58,9 @@ example when I right-click an image in Firefox:
 
 ## Not perfect
 
-These methods all give you a command line to reproduce their HTTP transfers,
-but you will also learn they they are still often not the perfect solution to
-your problems. Why? Well mostly because these tools are written to rerun the
+These methods all give you a command line to reproduce their HTTP transfers.
+You will also learn they they are still often not the perfect solution to your
+problems. Why? Well mostly because these tools are written to rerun the
 *exact* same request that you copied, while you often want to rerun the same
 logic but not sending an exact copy of the same cookies and file contents etc.
 

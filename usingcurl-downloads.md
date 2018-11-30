@@ -58,12 +58,12 @@ which type of URL you download:
 
 If you ask curl to send the output to the terminal, it attempts to detect and prevent
 binary data from being sent there since that can seriously mess up your
-terminal (sometimes to the point where it basically stops working).  You can
+terminal (sometimes to the point where it basically stops working). You can
 override curl's binary-output-prevention and force the output to get sent to
 stdout by using `-o -`.
 
 curl has several other ways to store and name the downloaded data. Details
-follow!
+follow.
 
 ### Download to a file named by the URL
 
@@ -122,10 +122,10 @@ downloads a web page with something like:
     curl https://example.com/ -o storage.html
 
 …and when inspecting the `storage.html` file after the fact, the user realizes
-that one or more characters look funny or downright wrong. This can then very
-well be because the server sent the characters using charset X, while your
-editor and environment use charset Y. In an ideal world, we would all use
-UTF-8 everywhere but unfortunately, that is still not the case.
+that one or more characters look funny or downright wrong. This might occur
+because the server sent the characters using charset X, while your editor and
+environment use charset Y. In an ideal world, we would all use UTF-8
+everywhere but unfortunately, that is still not the case.
 
 A common work-around for this issue that works decently is to use the
 common `iconv` utility to translate a text file to and from different
@@ -139,10 +139,10 @@ situations where bandwidth is more limited than CPU this will help you receive
 more data in a shorter amount of time.
 
 HTTP compression can be done using two different mechanisms, one which might
-be considered "The Right Way" and the other that is the way that everyone actually
-uses and is the widespread and popular way to do it! The common way to
-compress HTTP content is using the **Content-Encoding** header. You ask curl to
-use this with the `--compressed` option:
+be considered "The Right Way" and the other that is the way that everyone
+actually uses and is the widespread and popular way to do it. The common way
+to compress HTTP content is using the **Content-Encoding** header. You ask
+curl to use this with the `--compressed` option:
 
     curl --compressed http://example.com/
 
@@ -191,7 +191,7 @@ redirect stderr with `2>file` like this:
 ### Multiple downloads
 
 As curl can be told to download many URLs in a single command line, there are,
-of course, times when you want to store these downloads in nicely-named local
+of course, times when you want to store these downloads in nicely named local
 files.
 
 The key to understanding this is that each download URL needs its own "storage
@@ -204,7 +204,7 @@ the first URL, the second one is sent to stdout. Like this:
 The "storage instructions" are read and handled in the same order as the
 download URLs so they don't have to be next to the URL in any way. You can
 round up all the output options first, last or interleaved with the URLs. You
-choose!
+choose.
 
 These examples all work the same way:
 
@@ -228,12 +228,12 @@ downloaded, the default action is then switched from stdout to -O style.
 
 ### "My browser shows something else"
 
-A very common use case is using curl to get a URL that you can get in your
-browser when you paste the URL in the browser's address bar.
+A common use case is using curl to get a URL that you can get in your browser
+when you paste the URL in the browser's address bar.
 
-But a browser getting a URL does so much more and in so many different ways
-than curl that what curl shows in your terminal output is probably not at all
-what you see in your browser window.
+A browser getting a URL as input does so much more and in so many different
+ways than curl that what curl shows in your terminal output is probably not at
+all what you see in your browser window.
 
 #### Client differences
 
@@ -399,7 +399,7 @@ retry certain failed transfers.
 
 If a transient error is returned when curl tries to perform a transfer, it
 will retry this number of times before giving up. Setting the number to 0
-makes curl do no retries (which is the default).  Transient error means
+makes curl do no retries (which is the default). Transient error means
 either: a timeout, an FTP 4xx response code or an HTTP 5xx response code.
 
 When curl is about to retry a transfer, it will first wait one second and then

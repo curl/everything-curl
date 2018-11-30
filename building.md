@@ -31,7 +31,7 @@ more machine-readable format on this URL: `https://curl.haxx.se/info`.
 
 ## off git!
 
-Of course, when building from source you can also always opt to build the very
+Of course, when building from source you can also always opt to build the
 latest version that exist in the [git
 repository](https://github.com/curl/curl). It could however be a bit more
 fragile and probably requires slightly more attention to detail.

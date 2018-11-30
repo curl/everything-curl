@@ -79,7 +79,7 @@ other means but none of those are recognized by libcurl.
 ### Proxy environment variables
 
 If no proxy option has been set, libcurl will check for the existence of
-specially-named environment variables before it performs its transfer to see
+specially named environment variables before it performs its transfer to see
 if a proxy is requested to get used.
 
 You can specify the proxy by setting a variable named `[scheme]_proxy` to hold
@@ -95,7 +95,7 @@ these proxy environment variable names except http_proxy can also be specified
 in uppercase, like `HTTPS_PROXY`.
 
 To set a single variable that controls *all* protocols, the `ALL_PROXY`
-exists.  If a specific protocol variable one exists, such a one will take
+exists. If a specific protocol variable one exists, such a one will take
 precedence.
 
 When using environment variables to set a proxy, you could easily end up in a

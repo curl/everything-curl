@@ -9,7 +9,7 @@ instruction to the client instead of giving back the contents the client
 wanted. The server basically says “go look over *here* instead for that thing
 you asked for“.
 
-But not all redirects are alike. How permanent is the redirect? What request
+Redirects are not all alike. How permanent is the redirect? What request
 method should the client use in the next request?
 
 All redirects also need to send back a `Location:` header with the new URI to
@@ -32,9 +32,9 @@ POST). This changing of the HTTP method to GET for 301 and 302 responses is
 said to be “for historical reasons”, but that’s still what browsers do so most
 of the public web will behave this way.
 
-In practice, the 303 code is very similar to 302. It will not be cached and it
-will make the client issue a GET in the next request. The differences between
-a 302 and 303 are subtle, but 303 seems to be more designed for an “indirect
+In practice, the 303 code is similar to 302. It will not be cached and it will
+make the client issue a GET in the next request. The differences between a 302
+and 303 are subtle, but 303 seems to be more designed for an “indirect
 response” to the original request rather than just a redirect.
 
 These three codes were the only redirect codes in the HTTP/1.0 spec.
@@ -57,7 +57,7 @@ maximum number of redirects to follow with the `--max-redirs` option.
 
 All three of these response codes, 301 and 302/303, will assume that the
 client sends a GET to get the new URI, even if the client might have sent a POST
-in the first request. This is very important, at least if you do something
+in the first request. This is important, at least if you do something
 that doesn't use GET.
 
 If the server instead wants to redirect the client to a new URI and wants it
@@ -77,7 +77,7 @@ request but temporarily is 307. This redirect will not be cached by the client
 though, so it’ll again post to A if requested to again. The 307 code was
 introduced in HTTP/1.1.
 
-Oh, and redirects work the exact same way in HTTP/2 as they do in HTTP/1.1.
+Oh, and redirects work the same same way in HTTP/2 as they do in HTTP/1.1.
 
 |                     |Permanent | Temporary   |
 |---------------------|----------|-------------|
@@ -103,9 +103,9 @@ control that behavior with the `CURLOPT_POSTREDIR` option.
 ## Redirecting to other host names
 
 When you use curl you may provide credentials like user name and password for
-a particular site, but since a HTTP redirect might very well move away to a
-different host curl limits what it sends away to other hosts than the original
-within the same "transfer".
+a particular site, but since a HTTP redirect might move away to a different
+host curl limits what it sends away to other hosts than the original within
+the same "transfer".
 
 So if you want the credentials to also get sent to the following host names
 even though they are not the same as the original—presumably because you

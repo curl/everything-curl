@@ -5,7 +5,7 @@ translated to an internet address. That's "name resolving". Using a numerical
 IP address directly in the URL usually avoids the name resolve phase, but in
 many cases it isn't easy to manually replace the name with the IP address.
 
-libcurl tries very hard to [re-use an existing
+libcurl tries hard to [re-use an existing
 connection](libcurl-connectionreuse.md) rather than to create and connection a
 new one. The function that checks for an existing connection to use is based
 purely on the name and is performed before any name resolving is attempted.

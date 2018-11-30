@@ -108,8 +108,8 @@ end of the DNS communication to a specific IP address and with
 `--dns-interface` you can instruct curl to use a specific network interface to
 use for its DNS requests.
 
-These `--dns-*` options are very advanced and are only meant for people who know
-what they are doing and understand what these options do. But they offer very
+These `--dns-*` options are advanced and are only meant for people who know
+what they are doing and understand what these options do. But they offer
 customizable DNS name resolution operations.
 
 ## Connection timeout
@@ -167,12 +167,11 @@ However, in some circumstances you find yourself behind network equipment,
 firewalls or similar setups that put restrictions on what source port numbers
 that can be allowed to set up the outgoing connections.
 
-For situations like this, you can specify which local ports curl should
-bind the the connection to. You can specify a single port number to use, or a
-range of ports. We recommend using a range because ports are scarce
-resources and the exact one you want may already be in use. If you ask for a
-local port number (or range) that curl can't obtain for you, it will exit with a
-failure.
+For situations like this, you can specify which local ports curl should bind
+the connection to. You can specify a single port number to use, or a range of
+ports. We recommend using a range because ports are scarce resources and the
+exact one you want may already be in use. If you ask for a local port number
+(or range) that curl can't obtain for you, it will exit with a failure.
 
 Also, on most operating systems you cannot bind to port numbers below 1024
 without having a higher privilege level (root) and we generally advise

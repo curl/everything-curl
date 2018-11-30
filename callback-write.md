@@ -26,7 +26,7 @@ data get passed to the write callback, you can get up to
 This function may be called with zero bytes data if the transferred file is empty.
 
 The data passed to this function will not be zero terminated! You cannot, for
-example, use printf's "%s" operator to display the contents nor strcpy to copy
+example, use printf's `%s` operator to display the contents nor strcpy to copy
 it.
 
 This callback should return the number of bytes actually taken care of. If

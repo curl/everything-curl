@@ -14,9 +14,9 @@ The `xfer_callback` function must match this prototype:
 
 If this option is set and `CURLOPT_NOPROGRESS` is set to 0 (zero), this
 callback function gets called by libcurl with a frequent interval. While data
-is being transferred it will be called very frequently, and during slow
-periods like when nothing is being transferred it can slow down to about one
-call per second.
+is being transferred it will be called frequently, and during slow periods
+like when nothing is being transferred it can slow down to about one call per
+second.
 
 The **clientp** pointer points to the private data set with
 `CURLOPT_XFERINFODATA`:

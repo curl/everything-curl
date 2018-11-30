@@ -31,7 +31,7 @@ command line that would otherwise do a GET will cause curl to hang, waiting
 for a response body that won't come.
 
 When asking curl to perform HTTP transfers, it will pick the correct method
-based on the option so you should only very rarely have to explicitly ask for
+based on the option so you should only rarely have to explicitly ask for
 it with `-X`. It should also be noted that when curl follows redirects like
 asked to with `-L`, the request method set with `-X` will be sent even on the
 subsequent redirects.
@@ -145,7 +145,7 @@ the given date by prefixing the date with a dash:
 
     curl --time-cond "-1 Jul 2011" https://www.example.org/file.html
 
-The date parser is very liberal and will accept most formats you can write the
+The date parser is liberal and will accept most formats you can write the
 date, and you can of couse also specify it complete with a time:
 
     curl --time-cond "Sun, 12 Sep 2004 15:05:58 -0700" https://www.example.org/file.html

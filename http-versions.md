@@ -11,7 +11,7 @@ enough and then you may need to instruct libcurl what to do.
 
 Since perhaps mid 2016, curl will default to use HTTP/1.1 for HTTP servers. If
 you connect to HTTPS and you have a libcurl that has HTTP/2 abilities
-built-in, curl will attempt to use HTTP/2 automatically or fall down to 1.1 in
+built-in, curl will attempt to use HTTP/2 automatically or fall back to 1.1 in
 case the negotiation failed. Non-HTTP/2 capable curls get 1.1 over HTTPS by
 default.
 

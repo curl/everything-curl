@@ -54,12 +54,12 @@ command-line options through a file—or from stdin—using the -K option.
 
 ## Garbage in, garbage out
 
-curl has very little will of its own. It tries to please you and your wishes
-to a very large extent. It also means that it will try to play with what you
-give it. If you misspell an option, it might do something unintended. If you
-pass in a slightly illegal URL, chances are curl will still deal with it and
-proceed. It means that you can pass in crazy data in some options and you can
-have curl pass on that crazy data in its transfer operation.
+curl has little will of its own. It tries to please you and your wishes to a
+large extent. It also means that it will try to play with what you give it. If
+you misspell an option, it might do something unintended. If you pass in a
+slightly illegal URL, chances are curl will still deal with it and proceed. It
+means that you can pass in crazy data in some options and you can have curl
+pass on that crazy data in its transfer operation.
 
 This is a design choice, as it allows you to really tweak how curl does its
 protocol communications and you can have curl massage your server

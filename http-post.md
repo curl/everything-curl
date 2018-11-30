@@ -150,7 +150,7 @@ from the request and avoid the waiting with `-H`:
     curl -H Expect: -d "payload to send" http://example.com
 
 In some situations, curl will inhibit the use of the Expect header if the
-content it is about to send is very small (like below one kilobyte), as having
+content it is about to send is small (like below one kilobyte), as having
 to "waste" such a small chunk of data is not considered much of a problem.
 
 ### Chunked encoded POSTs
@@ -170,14 +170,14 @@ You send a chunked POST with curl like this:
 This chapter has explained how sending a post with `-d` is the equivalent of
 what a browser does when an HTML form is filled in and submitted.
 
-Submitting such forms is a very common operation with curl; effectively, to have
+Submitting such forms is a common operation with curl; effectively, to have
 curl fill in a web form in an automated fashion.
 
 If you want to submit a form with curl and make it look as if it has been done
 with a browser, it is important to provide all the input fields from the
-form. A very common method for web pages is to set a few hidden input fields
-to the form and have them assigned values directly in the HTML. A successful
-form submission, of course, also includes those fields and in order to do that
+form. A common method for web pages is to set a few hidden input fields to the
+form and have them assigned values directly in the HTML. A successful form
+submission, of course, also includes those fields and in order to do that
 automatically you may be forced to first download the HTML page that holds the
 form, parse it, and extract the hidden field values so that you can send them
 off with curl.

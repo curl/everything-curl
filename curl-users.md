@@ -9,9 +9,8 @@ exactly what you would consider "a user" to be. Let's elaborate.
 
 ### Open Source
 
-The project being Open Source and very liberally licensed means that
-just about anyone can redistribute curl in source format or built into binary
-form.
+The project being Open Source and liberally licensed means that just about
+anyone can redistribute curl in source format or built into binary form.
 
 ### Counting downloads
 
@@ -34,7 +33,7 @@ or that authors ask for help and tell us about their use.
 
 The curl license says users need to repeat it somewhere, like in the
 documentation, but that's not easy for us to find in many cases and it's also
-not easy for us to do anything about should they decide not to follow the very
+not easy for us to do anything about should they decide not to follow the
 small license requirement.
 
 ### Command-line tool users

@@ -33,7 +33,7 @@ FTPS stands for Secure File Transfer Protocol. It follows the tradition of
 appending an 'S' to the protocol name to signify that the protocol is done
 like normal FTP but with an added SSL/TLS security layer. See RFC 4217.
 
-This protocol is very problematic to use through firewalls and other network
+This protocol is problematic to use through firewalls and other network
 equipment.
 
 ## GOPHER

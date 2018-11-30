@@ -29,7 +29,7 @@ For example, setting up the share to hold cookies and dns cache:
     curl_share_setopt(share, CURLSHOPT_SHARE, CURL_LOCK_DATA_COOKIE);
     curl_share_setopt(share, CURLSHOPT_SHARE, CURL_LOCK_DATA_DNS);
 
-... and then you setup the corresponding transfer to use this share object:
+You then set up the corresponding transfer to use this share object:
 
     curl_easy_setopt(curl, CURLOPT_SHARE, share);
 

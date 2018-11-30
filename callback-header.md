@@ -14,7 +14,7 @@ received. *ptr* points to the delivered data, and the size of that data is
 "full" headers, one by one, to this callback.
 
 The data passed to this function will not be zero terminated! You cannot, for
-example, use printf's "%s" operator to display the contents nor strcpy to copy
+example, use printf's `%s` operator to display the contents nor strcpy to copy
 it.
 
 This callback should return the number of bytes actually taken care of. If

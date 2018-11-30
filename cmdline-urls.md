@@ -20,7 +20,7 @@ the URL without curl noticing or caring and it will just pass them on.
 
 ### Scheme
 
-URLs start with the "scheme", which is the official name for the "http://"
+URLs start with the "scheme", which is the official name for the `http://`
 part. That tells which protocol the URL uses. The scheme must be a known one
 that this version of curl supports or it will show an error message and
 stop. Additionally, the scheme must neither start with nor contain any
@@ -28,7 +28,7 @@ whitespace.
 
 ### The scheme separator
 
-The scheme identifier is separated from the rest of the URL by the "://"
+The scheme identifier is separated from the rest of the URL by the `://`
 sequence. That is a colon and two forward slashes. There exists URL formats
 with only one slash, but curl doesn't support any of them. There are two
 additional notes to be aware of, about the number of slashes:
@@ -64,12 +64,12 @@ incorrect format:
 
 As a convenience, curl also allows users to leave out the scheme part from
 URLs. Then it guesses which protocol to use based on the first part of the
-host name. That guessing is very basic as it just checks if the first part of
-the host name matches one of a set of protocols, and assumes you meant to use
-that protocol. This heuristic is based on the fact that servers traditionally
-used to be named like that. The protocols that are detected this way are FTP,
-DICT, LDAP, IMAP, SMTP and POP3. Any other host name in a scheme-less URL will
-make curl default to HTTP.
+host name. That guessing is basic, as it just checks if the first part of the
+host name matches one of a set of protocols, and assumes you meant to use that
+protocol. This heuristic is based on the fact that servers traditionally used
+to be named like that. The protocols that are detected this way are FTP, DICT,
+LDAP, IMAP, SMTP and POP3. Any other host name in a scheme-less URL will make
+curl default to HTTP.
 
 You can modify the default protocol to something other than HTTP with the
 `--proto-default` option.
@@ -246,7 +246,7 @@ keeps previously used connections alive and around for a while after they were
 used so that subsequent requests to the same hosts can reuse an already
 established connection.
 
-Of course, they can only be kept alive for as long as the curl tool is running,
-but it is a very good reason for trying to get several transfers done within
-the same command line instead of running several independent curl command line
-invocations.
+Of course, they can only be kept alive for as long as the curl tool is
+running. It is a good reason for trying to get several transfers done
+within the same command line instead of running several independent curl
+command line invocations.

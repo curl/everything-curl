@@ -18,10 +18,10 @@ set there.
 To drive a multi interface transfer, you first need to add all the individual
 easy handles that should be transferred to the multi handle. You can add them
 to the multi handle at any point and you can remove them again whenever you
-like.  Removing an easy handle from a multi handle will, of course, remove the
+like. Removing an easy handle from a multi handle will, of course, remove the
 association and that particular transfer would stop immediately.
 
-Adding an easy handle to the multi handle is very easy:
+Adding an easy handle to the multi handle is easy:
 
     curl_multi_add_handle( multi_handle, easy_handle );
 

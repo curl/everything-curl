@@ -18,10 +18,10 @@ see all the commands and responses during a transfer.
 
 For an ordinary transfer, there are something like 5 to 8 commands necessary
 to send and as many responses to wait for and read. Perhaps needlessly to say,
-if the server is in a remote location there will be a lot of time waiting
-for the ping pong to go through before the actual file transfer can be set up
-and get started. For small files, the initial commands can very well take
-longer time than the actual data transfer.
+if the server is in a remote location there will be a lot of time waiting for
+the ping pong to go through before the actual file transfer can be set up and
+get started. For small files, the initial commands can take longer time than
+the actual data transfer.
 
 ## Transfer mode
 

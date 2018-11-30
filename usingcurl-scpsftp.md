@@ -10,7 +10,7 @@ uses public and private keys. Both SSH and TLS provide strong crypto and
 secure transfers when used correctly.
 
 The SCP protocol is generally considered to be the black sheep of the two
-since it isn't very portable and usually only works between Unix systems.
+since it isn't portable and usually only works between Unix systems.
 
 ### URLs
 
@@ -68,7 +68,7 @@ key hash is already present in the known hosts file or it will deny continued
 operation because it cannot trust that the server is the right one. Once the
 correct hash exists in `known_hosts` curl can perform transfers.
 
-To force curl to skip checking and obeying to the the `known_hosts` file, you
-can use the `-k / --insecure` command-line option. You must use this option
-with extreme care since it makes it possible for man-in-the-middle attacks not
-to be detected.
+To force curl to skip checking and obeying to the `known_hosts` file, you can
+use the `-k / --insecure` command-line option. You must use this option with
+extreme care since it makes it possible for man-in-the-middle attacks not to
+be detected.

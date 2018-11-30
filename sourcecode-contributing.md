@@ -49,7 +49,7 @@ documentation, graphics or web site contents, but the general rules apply
 equally to that.
 
 If you are fixing a problem you have or a problem that others are reporting, we
-will be thrilled to receive your fix and merge it as soon as possible!
+will be thrilled to receive your fix and merge it as soon as possible,
 
 ### What not to add
 
@@ -61,7 +61,7 @@ to get less friction and to be successful, faster:
   discussion. Always start out by discussing on the list, and send your
   initial review requests early to get feedback on your design and
   approach. It saves you from wasting time going down a route that might need
-  rewriting in the end anyway!
+  rewriting in the end anyway.
 
 - When introducing things in the code, you need to follow the style and
   architecture that already exists. When you add code to the ordinary transfer
@@ -85,8 +85,8 @@ to get less friction and to be successful, faster:
 Our preferred source control tool is [git](https://git-scm.com/).
 
 While git is sometimes not the easiest tool to learn and master, all the basic
-steps a casual developer and contributor needs to know are very
-straight-forward and do not take much time or effort to learn.
+steps a casual developer and contributor needs to know are straight-forward
+and do not take much time or effort to learn.
 
 This book will not help you learn git. All software developers in this day and
 age should learn git anyway.
@@ -100,8 +100,8 @@ To check out the curl source code from git, you can clone it like this:
 
 ### Pull request
 
-A very popular and convenient way to make your own changes and contribute them
-back to the project is by doing a so-called pull request on github.
+A popular and convenient way to make your own changes and contribute them back
+to the project is by doing a so-called pull request on github.
 
 First, you create your own version of the source tree, called a fork, on the
 github web site. That way you get your own version of the curl git tree that
@@ -129,7 +129,7 @@ upstream.
 
 Once your commits are fine enough to get sent to the mailing list, you just
 create patches with `git format-patch` and send them away. Even more fancy
-users go directly to `git send-email` and have git send the e-mail itself!
+users go directly to `git send-email` and have git send the e-mail itself.
 
 ### git commit style
 

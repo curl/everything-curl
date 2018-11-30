@@ -13,9 +13,9 @@ you can clone a copy of the web code like this:
 
 ### Building the web
 
-The web site is an old custom-made setup that mostly builds static HTML
-files from a set of source files. The sources files are preprocessed with what
-is basically a souped-up C preprocessor called
+The web site is a custom-made setup that mostly builds static HTML files from
+a set of source files. The sources files are preprocessed with what is
+basically a souped-up C preprocessor called
 [fcpp](https://daniel.haxx.se/projects/fcpp/) and a set of perl scripts. The
 man pages get converted to HTML with
 [roffit](https://daniel.haxx.se/projects/roffit/). Make sure fcpp, perl,

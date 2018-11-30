@@ -27,9 +27,9 @@ does, it also passes on *all* data sent and received so that your application
 gets a full trace of everything.
 
 The sent and received data passed to the trace callback is given to the
-callback in its unencrypted form, which can be very handy when working with
+callback in its unencrypted form, which can be handy when working with
 TLS or SSH based protocols when capturing the data off the network for
-debugging isn't very practical.
+debugging isn't practical.
 
 When you set the `CURLOPT_DEBUGFUNCTION` option, you still need to have
 `CURLOPT_VERBOSE` enabled but with the trace callback set libcurl will use

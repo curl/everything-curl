@@ -38,7 +38,7 @@ insecure.
 There are several ways to avoid this, and the key is, of course, then to avoid
 protocols or authentication schemes that sends credentials in the plain over
 the network. Easiest is perhaps to make sure you use encrypted versions of
-protocols.  Use HTTPS instead of HTTP, use FTPS instead of FTP and so on.
+protocols. Use HTTPS instead of HTTP, use FTPS instead of FTP and so on.
 
 If you need to stick to a plain text and insecure protocol, then see if you
 can switch to using an authentication method that avoids sending the

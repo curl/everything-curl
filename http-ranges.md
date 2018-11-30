@@ -1,13 +1,13 @@
 ## HTTP ranges
 
-What if the client only wants the first 200 bytes out of a remote
-resource or perhaps 300 bytes somewhere in the middle? The HTTP protocol
-allows a client to ask for only a specific data range.  The client asks the
-server for the specific range with a start offset and an end offset. It can even
-combine things and ask for several ranges in the same request by just listing a
-bunch of pieces next to each other. When a server sends back multiple
-independent pieces to answer such a request, you will get them separated with
-mime boundary strings and it will be up to the user application to handle that
+What if the client only wants the first 200 bytes out of a remote resource or
+perhaps 300 bytes somewhere in the middle? The HTTP protocol allows a client
+to ask for only a specific data range. The client asks the server for the
+specific range with a start offset and an end offset. It can even combine
+things and ask for several ranges in the same request by just listing a bunch
+of pieces next to each other. When a server sends back multiple independent
+pieces to answer such a request, you will get them separated with mime
+boundary strings and it will be up to the user application to handle that
 accordingly. curl will not further separate such a response.
 
 However, a byte range is only a request to the server. It does not have to

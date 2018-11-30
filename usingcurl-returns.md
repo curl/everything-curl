@@ -10,7 +10,7 @@ will find a list of return codes as of the time of this writing. Over time we
 tend to slowly add new ones so if you get a code back not listed here, please
 refer to more updated curl documentation for aid.
 
-A very basic Unix shell script could look like something like this:
+A basic Unix shell script could look like something like this:
 
     #!/bin/sh
     curl http://example.com
@@ -39,7 +39,7 @@ A very basic Unix shell script could look like something like this:
 
  4. A feature or option that was needed to perform the desired request was
     not enabled or was explicitly disabled at build-time. To make curl able
-    to do this, you probably need another build of libcurl!
+    to do this, you probably need another build of libcurl.
 
  5. Couldn't resolve proxy. The address of the given proxy host could not be
     resolved. Either the given proxy name is just wrong, or the DNS server is
@@ -104,7 +104,7 @@ A very basic Unix shell script could look like something like this:
     instead, with the `--ftp-port` option.
 
  15. FTP can't get host. Couldn't use the host IP address we got in the
-    227-line. This is most likely an internal error!
+    227-line. This is most likely an internal error.
 
  16. HTTP/2 error. A problem was detected in the HTTP2 framing layer. This is
     somewhat generic and can be one out of several problems, see the error
@@ -170,7 +170,7 @@ A very basic Unix shell script could look like something like this:
  29. **Not used**
 
  30. FTP PORT failed. The PORT command failed. Not all FTP servers support the
-    PORT command; try doing a transfer using PASV instead! The PORT command is
+    PORT command; try doing a transfer using PASV instead. The PORT command is
     used to ask the server to create the data connection by *connecting back*
     to curl. See also the [FTP uses two connections](ftp-twoconnections.md)
     section.
@@ -369,8 +369,8 @@ number can get different error messages.
 
 The list of exit codes above contains a number of values marked as 'not
 used'. Those are exit status codes that aren't used in modern versions of curl
-but that have been used or were intended to be used in the past. They may very
-well be used in a future version of curl.
+but that have been used or were intended to be used in the past. They may be
+used in a future version of curl.
 
 Additionally, the highest used error status in this list is 92, but there is
 no guarantee that a future curl version won't decide to add more exit codes

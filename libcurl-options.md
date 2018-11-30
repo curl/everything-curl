@@ -9,7 +9,7 @@ three parameters to the curl_easy_setopt() calls.
 
 Since the curl_easy_setopt() call accepts several hundred different options
 and the various options accept a variety of different types of arguments, it
-is very important to read up on the specifics and provide exactly the argument
+is important to read up on the specifics and provide exactly the argument
 type the specific option supports and expects. Passing in the wrong type can
 lead to unexpected side-effects or hard to understand hiccups.
 

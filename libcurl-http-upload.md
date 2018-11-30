@@ -10,7 +10,7 @@ provide the data to upload.
 ### HTTP POST
 
 POST is typically the HTTP method to pass data to a remote web application. A
-very common way to do that in browsers is by filling in a HTML form and pressing
+common way to do that in browsers is by filling in a HTML form and pressing
 submit. It is the standard way for a HTTP request to pass on data to the
 server. With libcurl you normally provide that data as a pointer and a length:
 

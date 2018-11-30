@@ -81,8 +81,8 @@ Get a file over HTTPS:
 
 SSL was invented in the mid 90s and has developed ever since. SSL version 2
 was the first widespread version used on the Internet but that was deemed
-insecure already a very long time ago. SSL version 3 took over from there, and
-it too has been deemed not safe enough for use.
+insecure already a long time ago. SSL version 3 took over from there, and it
+too has been deemed not safe enough for use.
 
 TLS version 1.0 was the first "standard". RFC 2246 was published 1999. TLS 1.1
 came out in 2006, further improving security, followed by TLS 1.2 in 2008. TLS
@@ -109,15 +109,11 @@ serious effort.
 | --tlsv1.2 | TLS >= version 1.2 |
 | --tlsv1.3 | TLS >= version 1.3 |
 
-**NOTE:** TLS version 1.3 is only supported in selected very recent
-development versions of certain TLS libraries and requires curl 7.52.0 or
-later.
-
 ## Verifying server certificates
 
 Having a secure connection to a server is not worth a lot if you cannot also
 be certain that you are communicating with the **correct** host. If we don't
-know that, we could just as well be talking with an imposter that just
+know that, we could just as well be talking with an impostor that just
 *appears* to be who we think it is.
 
 To check that it communicates with the right TLS server, curl uses a set of
@@ -175,7 +171,7 @@ if it does not exactly match the public key provided to this option, curl will
 abort the connection before sending or receiving any data.
 
 You tell curl a file name to read the sha256 value from, or you specify the
-base64 encoded hash directly in the command line with a "sha256//" prefix. You
+base64 encoded hash directly in the command line with a `sha256//` prefix. You
 can specify one or more hashes like that, separated with semicolons (;).
 
     curl --pinnedpubkey "sha256//83d34tasd3rt..." https://example.com/

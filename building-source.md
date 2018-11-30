@@ -12,9 +12,9 @@ to the world by other friendly people and organizations.
 The source code consists of a large number of files containing C
 code. Generally speaking, the same set of files are used to build binaries for
 all platforms and computer architectures that curl supports. curl can be built
-and run on a vast number of different platforms. If you use a rare operating
-system yourself, chances are that building curl from source is the
-easiest or perhaps the only way to get curl.
+and run on a vast number of platforms. If you use a rare operating system
+yourself, chances are that building curl from source is the easiest or perhaps
+the only way to get curl.
 
 Making it easy to build curl is a priority to the curl project, although we
 don't always necessarily succeed!
@@ -38,7 +38,7 @@ CMake approach.
 
 There are two different build environments to cater for people's different
 opinions and tastes. The configure based build is arguably the more mature and
-more complete build system and should probably be considered the default one.
+more convering build system and should probably be considered the default one.
 
 ### Autotools
 

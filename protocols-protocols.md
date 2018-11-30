@@ -49,7 +49,7 @@ things.
 Of course, nothing prevents anyone from developing a protocol entirely on their
 own at their own pleasure in their own backyard, but the major protocols are
 usually brought to the IETF at a fairly early stage where they are then
-discussed, refined, debated and polished and then eventually, hopefully, turned
+discussed, refined, debated and polished and then eventually, ideally, turned
 into a published RFC document.
 
 Software developers then read the RFC specifications and deploy their code in
@@ -90,10 +90,11 @@ even the last available one.
 Protocols are, however, spoken by two parties and like in any given
 conversation, there are then two sides of understanding something or
 interpreting the given instructions in a spec. Also, lots of network software
-is written without the authors paying very close attention to the spec so they
-end up taking some shortcuts, or perhaps they just interpreted the text
-differently. Sometimes even mistakes and bugs make software behave in ways that
-are not mandated by the spec and sometimes even downright forbidden in the specs.
+is written without the authors paying close attention to the spec so they end
+up taking some shortcuts, or perhaps they just interpreted the text
+differently. Sometimes even mistakes and bugs make software behave in ways
+that are not mandated by the spec and sometimes even downright forbidden in
+the specs.
 
 In the curl project we use the published specs as rules on how to act until we
 learn anything else. If popular alternative implementations act differently
@@ -109,7 +110,6 @@ where we think a spec and the real world don't align.
 
 In the worst cases we introduce options to let application developers and curl
 users have the final say on what curl should do. I say worst because it is
-often really tough to ask users to make these decisions as it usually involves very
+often really tough to ask users to make these decisions as it usually involves
 tricky details and weirdness going on and it is a lot to ask of users. We
-should always do our very best to avoid pushing such protocol decisions to
-users.
+should always do our best to avoid pushing such protocol decisions to users.

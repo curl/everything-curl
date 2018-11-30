@@ -45,10 +45,10 @@ command than PASV) with the `--no-epsv` command-line option.
 Sometimes the server is running a funky setup so that when curl issues the
 PASV command and the server responds with an IP address for curl to connect
 to, that address is wrong and then curl fails to setup the data
-connection. For this (hopefully rare) situation, you can ask curl to ignore
-the IP address mentioned in the PASV response (`--ftp-skip-pasv-ip`) and
-instead use the same IP address it has for the control connection even for the
-second connection.
+connection. For this (rare) situation, you can ask curl to ignore the IP
+address mentioned in the PASV response (`--ftp-skip-pasv-ip`) and instead use
+the same IP address it has for the control connection even for the second
+connection.
 
 ### Firewall issues
 

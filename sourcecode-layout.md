@@ -96,8 +96,7 @@ is `#include <curl/curl.h>`
 
 The main documentation location. Text files in this directory are typically
 plain text files. We have slowly started to move towards Markdown format so a
-few (but hopefully growing number of) files use the .md extension to signify
-that.
+few (but growing number of) files use the .md extension to signify that.
 
 Most of these documents are also shown on the curl web site automatically
 converted from text to a web friendly format/look.
@@ -124,9 +123,9 @@ converted from text to a web friendly format/look.
 - `MAIL-ETIQUETTE`: this is how to communicate on our mailing lists
 - `MANUAL`: a tutorial-like guide on how to use curl
 - `mk-ca-bundle.1`: the mk-ca-bundle tool man page, in nroff format
-- `README.cmake`: CMake-specific details
-- `README.netware`: Netware-specific details
-- `README.win32`: win32-specific details
+- `README.cmake`: CMake details
+- `README.netware`: Netware  details
+- `README.win32`: win32 details
 - `RELEASE-PROCEDURE`: how to do a curl and libcurl release
 - `RESOURCES`: further resources for further reading on what, why and how curl
   does things

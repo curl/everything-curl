@@ -8,7 +8,7 @@ Cookies are name/value pairs sent by the server (using a `Set-Cookie:` header)
 to be stored in the client, and are then supposed to get sent back again in
 requests that matches the host and path requirements that were specified along
 with the cookie when it came from the server (using the `Cookie:` header). On
-the modern web of today, sites are known to sometimes use very large numbers
+the modern web of today, sites are known to sometimes use large numbers
 of cookies.
 
 ## Cookie engine

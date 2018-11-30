@@ -25,8 +25,7 @@ transfer:
     char *content_type;
     res = curl_easy_getinfo(curl, CURLINFO_CONTENT_TYPE, &content_type);
 
-but if you want to extract the local port number that was used in that
-connection:
+If you want to extract the local port number that was used in that connection:
 
     CURLcode res;
     long port_number;

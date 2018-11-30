@@ -6,7 +6,7 @@ client.
 You can also see it as a middle man that sits between you and the server you
 want to work with, a middle man that you connect to instead of the actual
 remote server. You ask the proxy to perform your desired operation for you and
-then it will run off and do that and then return back the data to you.
+then it will run off and do that and then return the data to you.
 
 There are several different types of proxies and we shall list and discuss
 them further down in this section.
@@ -28,15 +28,15 @@ automatically.
 
 If you check your browser's network settings, sometimes under an advanced
 settings tab, you can learn what proxy or proxies your browser is configured
-to use. Chances are very big that you should use the same one or ones when you
-use curl.
+to use. Chances are big that you should use the same one or ones when you use
+curl.
 
 TBD: screenshots of how to find proxy settings in Firefox and Chrome?
 
 ### PAC
 
 Some network environments provides several different proxies that should be
-used in different situations, and a very customizable way to handle that is
+used in different situations, and a customizable way to handle that is
 supported by the browsers. This is called "proxy auto-config", or PAC.
 
 A PAC file contains a JavaScript function that decides which proxy a given
@@ -197,12 +197,11 @@ there's no name resolving done locally:
 
 HTTP proxies can require authentication, so curl then needs to provide
 the proper credentials to the proxy to be allowed to use it, and failing to do
-will only make the proxy return back HTTP responses using code 407.
+will only make the proxy return HTTP responses using code 407.
 
-Authentication for proxies is very similar to "normal" HTTP authentication,
-but is separate from the server authentication to allow clients to
-independently use both normal host authentication as well as proxy
-authentication.
+Authentication for proxies is similar to "normal" HTTP authentication.  It is
+separate from the server authentication to allow clients to independently use
+both normal host authentication as well as proxy authentication.
 
 With curl, you set the user name and password for the proxy authentication
 with the `-U user:password` or `--proxy-user user:password` option:
@@ -237,7 +236,7 @@ secure and encrypted connection that is safe from easy surveillance.
 
 ### Proxy environment variables
 
-curl checks for the existence of specially-named environment variables before
+curl checks for the existence of specially named environment variables before
 it runs to see if a proxy is requested to get used.
 
 You specify the proxy by setting a variable named `[scheme]_proxy` to hold the

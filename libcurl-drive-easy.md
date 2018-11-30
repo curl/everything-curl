@@ -9,7 +9,7 @@ a single function call and returns once it is completed:
 
 If the server is slow, if the transfer is large or if you have some unpleasant
 timeouts in the network or similar, this function call can end up taking a
-very long time. You can, of course, set timeouts to not allow it to spend more
+long time. You can, of course, set timeouts to not allow it to spend more
 than N seconds, but it could still mean a substantial amount of time depending
 on the particular conditions.
 

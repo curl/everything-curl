@@ -16,4 +16,4 @@ site](https://curl.haxx.se/) for every release.
 
 Since March 2010, the curl source code repository has been hosted on
 [github.com](https://github.com/). By being up to date with the changes there,
-you can follow our day to day development very closely.
+you can follow our day to day development closely.

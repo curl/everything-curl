@@ -34,5 +34,5 @@ command-line tool, you cannot take advantage of that cool feature since curl
 is doing all its network requests in a strictly serial manner, one after the
 next, with the second only ever starting once the previous one has ended.
 
-Hopefully, a future curl version will be enhanced to allow the use of this
+Preferably, a future curl version will be enhanced to allow the use of this
 feature.

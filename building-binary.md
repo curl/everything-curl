@@ -10,7 +10,7 @@ binary packages for popular operating systems.
 
 ## Installing from your package repository
 
-curl and libcurl have been around for a very long time and most Linux
+curl and libcurl have been around for a long time and most Linux
 distributions, BSD versions and other *nix versions have package repositories
 that allow you to install curl packages.
 

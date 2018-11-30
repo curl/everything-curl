@@ -2,7 +2,7 @@
 
 Source code that has a common style is easier to read than code that uses
 different styles in different places. It helps making the code feel like one
-continuous code base. Easy-to-read is a very important property of code and
+continuous code base. Easy-to-read is a important property of code and
 helps make it easier to review when new things are added and it helps
 debugging code when developers are trying to figure out why things go wrong. A
 unified style is more important than individual contributors having their own
@@ -36,9 +36,9 @@ standard until C99. We use only /\* and \*/ comments:
 
 ### Long lines
 
-Source code in curl may never be wider than 80 columns. There are two
-reasons for maintaining this even in the modern era of very large and high
-resolution screens:
+Source code in curl may never be wider than 80 columns. There are two reasons
+for maintaining this even in the modern era of large and high resolution
+screens:
 
 1. Narrower columns are easier to read than very wide ones. There's a reason
    newspapers have used columns for decades or centuries.

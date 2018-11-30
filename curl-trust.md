@@ -17,7 +17,7 @@ In the curl project we build trust for our users in a few different ways:
 3. We stick to promises and guarantees as much as possible. We don't break
    APIs and we don't abandon support for old systems.
 
-4. Security is of utmost importance and we take every reported incident very
+4. Security is of utmost importance and we take every reported incident
    seriously and realize that we **must** fix all known problems and we need
    to do it responsibly. We do our best to not endanger our users.
 

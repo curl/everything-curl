@@ -2,7 +2,7 @@
 
 Lots of operations within libcurl are controlled with the use of *callbacks*.
 A callback is a function pointer provided to libcurl that libcurl then calls
-at some point in time to get a particular job done.
+at some point to get a particular job done.
 
 Each callback has its specific documented purpose and it requires that you
 write it with the exact function prototype to accept the correct arguments and

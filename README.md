@@ -18,10 +18,10 @@ reports, pull requests or critiques to me and I will improve this book
 accordingly.
 
 This book will never be finished. I intend to keep working on it and while I
-may at some point in time consider it fairly complete and covering most
-aspects of the project (even if only that seems like an insurmountable goal),
-the curl project will continue to move so there will always be things to
-update in the book as well.
+may at some point consider it fairly complete and covering most aspects of the
+project (even if only that seems like an insurmountable goal), the curl
+project will continue to move so there will always be things to update in the
+book as well.
 
 This book project started at the end of September 2015.
 
@@ -45,7 +45,7 @@ profit. I live and work in Stockholm, Sweden.
 All there is to know about me can be found on [my web
 site](https://daniel.haxx.se/).
 
-## Help!
+## Help
 
 If you find mistakes, omissions, errors or blatant lies in this document,
 please send me a refreshed version of the affected paragraph and I will make

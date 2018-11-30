@@ -13,7 +13,7 @@ Any problem can be considered a bug. A weirdly phrased wording in the manual
 that prevents you from understanding something is a bug. A surprising side
 effect of combining multiple options can be a bug—or perhaps it should be
 better documented? Perhaps the option doesn't do at all what you expected it
-to? That's a problem and we should fix it!
+to? That's a problem and we should fix it.
 
 ### Problems must be known to get fixed
 
@@ -28,7 +28,7 @@ problems exist so that we can fix them.
 
 ### Fixing the problems
 
-Software engineering is, to a very large degree, about fixing problems. To fix a
+Software engineering is, to a large degree, about fixing problems. To fix a
 problem a developer needs to understand how to repeat it and to do that the
 debugging person needs to be told what set of circumstances that made the
 problem trigger.
@@ -66,8 +66,8 @@ the protocol layer.
 The test suite is meant to be possible to run after you have built curl
 yourself and there are a fair number of volunteers who also help out by
 running the test suite automatically a few times per day to make sure the
-latest commits get a run. This way, we hopefully discover the worst flaws
-pretty soon after they were introduced.
+latest commits get a run. This way, we discover the worst flaws pretty soon
+after they were introduced.
 
 We don't test everything and even when we try to test things there will always
 be subtle details that get through and that we, sometimes years after the

@@ -4,7 +4,7 @@ Previous chapters talked about [regular POST](http-post.md) and [multipart
 formpost](http-multipart.md), and in your typical command lines you do them
 with `-d` or `-F`.
 
-But when do you use which of them?
+When do you use which of them?
 
 As described in the chapters mentioned above, both these options send the
 specified data to the server. The difference is in how the data is

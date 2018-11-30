@@ -61,7 +61,7 @@ It accomplishes this by using the write callback to receive the data.
 
       mem->memory = realloc(mem->memory, mem->size + realsize + 1);
       if(mem->memory == NULL) {
-        /* out of memory! */
+        /* out of memory */
         printf("not enough memory (realloc returned NULL)\n");
         return 0;
       }

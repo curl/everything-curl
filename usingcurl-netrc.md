@@ -1,10 +1,10 @@
 ## .netrc
 
-Unix systems have for a very long time offered a way for users to store their
-user name and password for remote FTP servers. ftp clients have supported
-this for decades and this way allowed users to quickly login to known servers
-without manually having to reenter the credentials each time. The `.netrc` file
-is typically stored in a user's home directory. (On Windows, curl will look for
+Unix systems have for a long time offered a way for users to store their user
+name and password for remote FTP servers. ftp clients have supported this for
+decades and this way allowed users to quickly login to known servers without
+manually having to reenter the credentials each time. The `.netrc` file is
+typically stored in a user's home directory. (On Windows, curl will look for
 it with the name `_netrc`).
 
 This being a widespread and well used concept, curl also supports it—if you
@@ -21,7 +21,7 @@ machine.
 **machine name**
 
 Identifies a remote machine name.  curl searches the .netrc file for a machine
-token that matches the remote machine specified in the URL.  Once a match is
+token that matches the remote machine specified in the URL. Once a match is
 made, the subsequent .netrc tokens are processed, stopping when the end of
 file is reached or another machine is encountered.
 
@@ -31,7 +31,7 @@ The user name string for the remote machine.
 
 **password string**
 
-Supply a password.  If this token is present, curl will supply the specified
+Supply a password. If this token is present, curl will supply the specified
 string if the remote server requires a password as part of the login process.
 Note that if this token is present in the .netrc file you really **should**
 make sure the file is not readable by anyone besides the user.

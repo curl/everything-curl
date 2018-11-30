@@ -65,7 +65,7 @@ of the same input file would use the original cookie contents again.
 The place where cookies are stored is sometimes referred to as the "cookie
 jar". When you enable the cookie engine in curl and it has received cookies,
 you can instruct curl to write down all its known cookies to a file, the
-cookie jar, before it exists. It is important to remember that curl only
+cookie jar, before it exits. It is important to remember that curl only
 updates the output cookie jar on exit and not during its lifetime, no matter
 how long the handling of the given input takes.
 

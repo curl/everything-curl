@@ -25,7 +25,7 @@ subdirectory).
     $ mkdir lib
     $ cd lib
     $ ln -s ../build/ssl/libssl.a
-    $ ln -s ../build/crypoto/libcrypto.a
+    $ ln -s ../build/crypto/libcrypto.a
 
 
 ## configure curl

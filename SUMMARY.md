@@ -109,6 +109,7 @@
     * [Proxies](libcurl-proxies.md)
     * [Post transfer info](libcurl-getinfo.md)
     * [Share data between handles](libcurl-sharing.md)
+    * [URL API](libcurl-url.md)
     * [API compatibility](libcurl-api.md)
     * [--libcurl](libcurl--libcurl.md)
     * [Header files](libcurl-headers.md)

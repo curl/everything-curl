@@ -20,7 +20,3 @@ using `-d` or `-F` makes it a POST, `-I` generates a HEAD and `-T` sends a
 PUT.
 
 More about this in the [Modify the HTTP request](http-requests.md) section.
-
-## Scripting browser-like tasks
-
-TBD

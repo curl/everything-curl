@@ -119,4 +119,8 @@ and update the cookies.
 Some sites will check that the `Referer:` is actually identifying the
 legitimate "parent" URL when you request something or when you login or
 similar. You can then inform the server from which URL you arrived by using
-`-e https://example.com/` etc.
+`-e https://example.com/` etc. Appending that to the previous login attempt
+then makes it:
+
+    curl -d user=daniel -d secret=qwerty -d id=bc76 https://example.com/login.cgi \
+    -b cookies -c cookies -L -e "https://example.com/" -o out

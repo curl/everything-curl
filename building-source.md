@@ -135,7 +135,7 @@ libressl.
  - libressl: - by default
  - mbedTLS: `--without-ssl --with-mbedtls`
  - schannel: `--without-ssl --with-winssl`
- - secure transport: `--with-winssl --with-darwinssl`
+ - secure transport: `--without-ssl --with-darwinssl`
 
 All the `--with-*` options also allow you to provide the install prefix so
 that configure will search for the specific library where you tell it to.

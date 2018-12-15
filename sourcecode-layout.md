@@ -141,7 +141,7 @@ converted from text to a web friendly format/look.
 ### docs/libcurl
 
 All libcurl functions have their own man pages in individual files with .3
-extensions, using nroff format, in this directory. The are also a few other
+extensions, using nroff format, in this directory. There are also a few other
 files that are described below.
 
 - `ABI`

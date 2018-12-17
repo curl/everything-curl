@@ -22,10 +22,10 @@ the sockets.
 ## Pick one
 
 There are numerous event based systems to select from out there, and libcurl
-is completely agnostic to which one you use. libevent, libev are libuv three
-popular ones but you can also go directly to your operating system's native
-solutions such as epoll, kqueue, /dev/poll, pollset, Event Completion or I/O
-Completion Ports.
+is completely agnostic to which one you use. libevent, libev and libuv are
+three popular ones but you can also go directly to your operating system's
+native solutions such as epoll, kqueue, /dev/poll, pollset, Event Completion
+or I/O Completion Ports.
 
 ## Many easy handles
 
@@ -130,7 +130,7 @@ transfer.
 
 To kick it all off, you tell libcurl it timed out (because all easy handles
 start out with a short timeout) which will make libcurl call the callbacks to
-set things up and from then on you can can just let your event system drive:
+set things up and from then on you can just let your event system drive:
 
     /* all easy handles and callbacks are setup */
 

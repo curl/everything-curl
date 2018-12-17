@@ -6,11 +6,11 @@ IP address directly in the URL usually avoids the name resolve phase, but in
 many cases it isn't easy to manually replace the name with the IP address.
 
 libcurl tries hard to [re-use an existing
-connection](libcurl-connectionreuse.md) rather than to create and connection a
-new one. The function that checks for an existing connection to use is based
-purely on the name and is performed before any name resolving is attempted.
-That's one of the reasons the re-use is so much faster. A transfer using a
-reused connection will not resolve the host name again.
+connection](libcurl-connectionreuse.md) rather than to create a new one. The
+function that checks for an existing connection to use is based purely on the
+name and is performed before any name resolving is attempted.  That's one of
+the reasons the re-use is so much faster. A transfer using a reused connection
+will not resolve the host name again.
 
 If no connection can be reused, libcurl resolves the host name to the set of
 addresses it resolves to. Typically this means asking for both IPv4 and IPv6
@@ -81,7 +81,7 @@ following redirects etc.
 For libcurl built to use c-ares, there's a few options available that offer
 fine-grained control of what DNS servers to use and how. This is limited to
 c-ares build purely because these are powers that are not available when the
-standard system calls for name name resolving are used.
+standard system calls for name resolving are used.
 
  - With `CURLOPT_DNS_SERVERS`, the application can select to use a set of
    dedicated DNS servers.

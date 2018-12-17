@@ -70,7 +70,7 @@ point configure to a custom install path prefix where it can find nss:
 its default path by default. You can optionally point configure to a custom
 install path prefix where it can find WolfSSL:
 
-    ./configure --with-cyassl=/home/user/installed/nss --without-ssl
+    ./configure --with-cyassl=/home/user/installed/wolfssl --without-ssl
 
 ### axTLS
 

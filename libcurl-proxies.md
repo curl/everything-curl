@@ -84,12 +84,12 @@ if a proxy is requested to get used.
 
 You can specify the proxy by setting a variable named `[scheme]_proxy` to hold
 the proxy host name (the same way you would specify the host with `-x`). So if
-you want to tell curl to use a proxy when access a HTTP server, you set the
+you want to tell curl to use a proxy when accessing a HTTP server, you set the
 'http_proxy' environment variable. Like this:
 
     http_proxy=http://proxy.example.com:80
 
-The proxy above example is for HTTP, but can of course also set `ftp_proxy`,
+The proxy example above is for HTTP, but can of course also set `ftp_proxy`,
 `https_proxy`, and so on for the specific protocols you want to proxy. All
 these proxy environment variable names except http_proxy can also be specified
 in uppercase, like `HTTPS_PROXY`.

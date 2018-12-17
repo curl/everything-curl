@@ -64,13 +64,13 @@ point configure to a custom install path prefix where it can find nss:
 
 ### WolfSSL
 
-    ./configure --with-cyassl --without-ssl
+    ./configure --with-wolfssl --without-ssl
 
-(cyassl was the former name of the library) configure will detect WolfSSL in
-its default path by default. You can optionally point configure to a custom
-install path prefix where it can find WolfSSL:
+configure will detect WolfSSL in its default path by default. You can
+optionally point configure to a custom install path prefix where it can find
+WolfSSL:
 
-    ./configure --with-cyassl=/home/user/installed/wolfssl --without-ssl
+    ./configure --with-wolfssl=/home/user/installed/wolfssl --without-ssl
 
 ### axTLS
 

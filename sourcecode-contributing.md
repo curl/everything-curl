@@ -151,12 +151,12 @@ ask you to use:
 
 Don't forget to use `git commit --author="Jane Doe <jane@example.com>"` if you
 commit someone else's work, and make sure that you have your own user and
-e-mail setup correctly in git before you commit!
+e-mail setup correctly in git before you commit.
 
 The author and the \*-by: lines are, of course, there to make sure we give the
 proper credit in the project. We do not want to take someone else's work
 without clearly attributing where it comes from. Giving correct credit is of
-utmost importance!
+utmost importance.
 
 ### Who decides what goes in?
 

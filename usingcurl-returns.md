@@ -178,7 +178,7 @@ A basic Unix shell script could look like something like this:
  31. FTP couldn't use REST. The REST command failed. This command is used for
     resumed FTP transfers. curl needs to issue the REST command to do range or
     resumed transfers. The server is broken, try the same operation without
-    range/resume as a crude work-around!
+    range/resume as a crude work-around.
 
  32. **Not used**
 
@@ -188,7 +188,7 @@ A basic Unix shell script could look like something like this:
     transfers.
 
  34. HTTP post error. Internal post-request generation error. If you get this
-    error, please report the exact circumstances to the curl project!
+    error, please report the exact circumstances to the curl project.
 
  35. A TLS/SSL connect error. The SSL handshake failed. The SSL handshake can
     fail due to numerous different reasons so the error message may offer some
@@ -223,7 +223,7 @@ A basic Unix shell script could look like something like this:
     return code is present to help application authors to understand why
     libcurl can't perform certain actions and should never be return by the
     curl tool. Please file a bug report to the curl project if this happens to
-    you!
+    you.
 
  44. **Not used**
 

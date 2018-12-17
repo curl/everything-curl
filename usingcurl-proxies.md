@@ -199,7 +199,7 @@ HTTP proxies can require authentication, so curl then needs to provide
 the proper credentials to the proxy to be allowed to use it, and failing to do
 will only make the proxy return HTTP responses using code 407.
 
-Authentication for proxies is similar to "normal" HTTP authentication.  It is
+Authentication for proxies is similar to "normal" HTTP authentication. It is
 separate from the server authentication to allow clients to independently use
 both normal host authentication as well as proxy authentication.
 

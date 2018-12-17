@@ -11,7 +11,7 @@ cryptography and digital signatures.
 
 ## Ciphers
 
-When curl connections to a TLS server, it negotiates how to speak the protocol
+When curl connects to a TLS server, it negotiates how to speak the protocol
 and that negotiation involves several parameters and variables that both
 parties need to agree to. One of the parameters is which cryptography
 algorithms to use, the so called cipher. Over time, security researchers

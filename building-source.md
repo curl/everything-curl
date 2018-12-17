@@ -38,7 +38,7 @@ CMake approach.
 
 There are two different build environments to cater for people's different
 opinions and tastes. The configure based build is arguably the more mature and
-more convering build system and should probably be considered the default one.
+more covering build system and should probably be considered the default one.
 
 ### Autotools
 

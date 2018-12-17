@@ -2,12 +2,12 @@
 
 SMTP stands for [Simple Mail Transfer Protocol](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol).
 
-curl supports sending data to a an SMTP server, which combined with the right
+curl supports sending data to an SMTP server, which combined with the right
 set of command line options makes an email get sent to a set of receivers of
 your choice.
 
-When sending SMTP with curl, there are a two necessary command line options
-that **must** be used.
+When sending SMTP with curl, there are two necessary command line options that
+**must** be used.
 
  - You need to tell the server at least one recipient with `--mail-rcpt`. You
    can use this option several times and then curl will tell the server that
@@ -42,13 +42,13 @@ A basic command to send an email:
 ## Secure mail transfer
 
 Some mail providers allow or require using SSL for SMTP. They may use a
-dedicated port for SSL or allow SSL upgrading over a plaintext connection.
+dedicated port for SSL or allow SSL upgrading over a clear-text connection.
 
 If your mail provider has a dedicated SSL port you can use smtps:// instead of
 smtp://, which uses the SMTP SSL port of 465 by default and requires the entire
 connection to be SSL. For example smtps://smtp.gmail.com/.
 
-However, if your provider allows upgrading from plaintext to secure transfers
+However, if your provider allows upgrading from clear-text to secure transfers
 you can use one of these options:
 
     --ssl           Try SSL/TLS (FTP, IMAP, POP3, SMTP)

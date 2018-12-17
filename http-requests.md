@@ -132,10 +132,10 @@ User-Agent header:
 ## Time conditions
 
 HTTP allows for "conditional requests". They are requests that contain a
-condtition in the sense that it asks the server to only deliver a response
+condition in the sense that it asks the server to only deliver a response
 body if the associated condition evaluates true.
 
-A useful condition is time. For exanmple, ask the server to only deliver a
+A useful condition is time. For example, ask the server to only deliver a
 response if the resource has been modified after a particular time:
 
     curl --time-cond "1 Jul 2011" https://www.example.org/file.html
@@ -146,7 +146,7 @@ the given date by prefixing the date with a dash:
     curl --time-cond "-1 Jul 2011" https://www.example.org/file.html
 
 The date parser is liberal and will accept most formats you can write the
-date, and you can of couse also specify it complete with a time:
+date, and you can of course also specify it complete with a time:
 
     curl --time-cond "Sun, 12 Sep 2004 15:05:58 -0700" https://www.example.org/file.html
 

@@ -59,7 +59,7 @@ example when I right-click an image in Firefox:
 ## Not perfect
 
 These methods all give you a command line to reproduce their HTTP transfers.
-You will also learn they they are still often not the perfect solution to your
+You will also learn they are still often not the perfect solution to your
 problems. Why? Well mostly because these tools are written to rerun the
 *exact* same request that you copied, while you often want to rerun the same
 logic but not sending an exact copy of the same cookies and file contents etc.

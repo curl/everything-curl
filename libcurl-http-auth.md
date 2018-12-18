@@ -1,6 +1,6 @@
 # HTTP authentication
 
-libcurl supports a wide varity of HTTP authentication schemes.
+libcurl supports a wide variety of HTTP authentication schemes.
 
 Note that this way of authentication is different than the otherwise widely
 used scheme on the web today where authentication is performed by a HTTP POST
@@ -56,7 +56,7 @@ has compared to Basic, is that it doesn't send the password over the wire in
 plain text. This is however an authentication method that is rarely spoken by
 browsers and consequently is not a very frequently used one.
 
-You can explicitly tell libcurl to use the Digeste method for a specific
+You can explicitly tell libcurl to use the Digest method for a specific
 transfer like this (it still needs user name and password set as well):
 
     curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST);

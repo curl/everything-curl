@@ -11,12 +11,12 @@ libcurl](libcurl-http-cookies.md) for details on how to do that.
 
 libcurl won't try any HTTP authentication without a given user name. Set one like:
 
-     curl_easy_setopt(curl, CURLOPT_USERNAME, "joe");
+    curl_easy_setopt(curl, CURLOPT_USERNAME, "joe");
 
 and of course most authentications also require a set password that you set
 separately:
 
-     curl_easy_setopt(curl, CURLOPT_PASSWORD, "secret");
+    curl_easy_setopt(curl, CURLOPT_PASSWORD, "secret");
 
 That's all you need. This will make libcurl switch on its default
 authentication method for this transfer: *HTTP Basic*.
@@ -51,7 +51,15 @@ like this:
 
 ## Digest
 
-Another authentication method is called Digest. This method has an advantage that 
+Another HTTP authentication method is called Digest. One advantage this method
+has compared to Basic, is that it doesn't send the password over the wire in
+plain text. This is however an authentication method that is rarely spoken by
+browsers and consequently is not a very frequently used one.
+
+You can explicitly tell libcurl to use the Digeste method for a specific
+transfer like this (it still needs user name and password set as well):
+
+    curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST);
 
 ## NTLM
 

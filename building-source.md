@@ -110,6 +110,29 @@ keep up with or know all possible dependencies for all the libraries it can be
 made to build with, so users wanting to build with static libs mostly need to
 provide that list of libraries to link with.
 
+### Select TLS backend
+
+The configure based build offers the user to select from a wide variety of
+different TLS libraries when building. You select them by using the correct
+command line options.
+
+The default OpenSSL configure check will also detect and use BoringSSL or
+libressl.
+
+ - BoringSSL: - by default
+ - GnuTLS: `--without-ssl --with-gnutls`.
+ - NSS: `--without-ssl --with-nss`
+ - OpenSSL: - by default
+ - PolarSSL: `--without-ssl --with-polarssl`
+ - Wolfssl: `--without-ssl --with-wolfssl`
+ - libressl: - by default
+ - mbedTLS: `--without-ssl --with-mbedtls`
+ - schannel: `--without-ssl --with-winssl`
+ - secure transport: `--with-winssl --with-darwinssl`
+
+All the `--with-*` options also allow you to provide the install prefix so
+that configure will search for the specific library where you tell it to.
+
 ## CMake
 
 CMake is an alternative build method that works on most modern platforms,
@@ -142,15 +165,22 @@ To create a subdir for the build and run make in there:
 
 ## On Windows
 
-TBD
+You can build curl on Windows in several different ways. We recommend using
+the MSVC compiler from Microsoft or the free and open mingw compiler. The
+build process is however not limited to these.
 
-### make
+### nmake
 
-TBD
+Build with MSVC using the nmake utility like this:
 
-### CMake
+    cd winbuild
 
-TBD
+Decide what options to enable/disable in your build. The `BUILD.WINDOWS.txt`
+file details them all, but an example command line could look like this (split
+into several lines for readability):
+
+    nname WITH_SSL=dll WITH_NGHTTP2=dll ENABLE_IPV6=yes \
+    WITH_ZLIB=dll MACHINE=x64 
 
 ### other compilers
 
@@ -186,3 +216,4 @@ libressl.
 
 All the `--with-*` options also allow you to provide the install prefix so
 that configure will search for the specific library where you tell it to.
+

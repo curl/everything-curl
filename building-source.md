@@ -110,9 +110,35 @@ keep up with or know all possible dependencies for all the libraries it can be
 made to build with, so users wanting to build with static libs mostly need to
 provide that list of libraries to link with.
 
-### CMake
+## CMake
 
-TBD
+CMake is an alternative build method that works on most modern platforms,
+including Windows. Using this method you first need to have cmake installed on
+your build machine, invoke cmake to generate the build files and then
+build. With cmake's `-G` flag, you select which build system to generate files
+for. See `cmake --help` for the list of "generators" your cmake installation
+supports.
+
+On the cmake command line, in the first argument, you specify where to find
+the cmake source files. Which is `.` (a single dot) if in the same directory.
+
+To build on Linux using plain make with CmakeLists.txt in the same directory,
+you can do:
+
+    cmake -G "Unix Makefiles" .
+    make
+
+Or rely on the fact that unix makefiles is the default there:
+
+    cmake .
+    make
+
+To create a subdir for the build and run make in there:
+
+    mkdir build
+    cd build
+    cmake ..
+    make
 
 ## On Windows
 

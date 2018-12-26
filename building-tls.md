@@ -13,7 +13,7 @@ curl is written to work with a large number of TLS libraries:
  - OpenSSL
  - Secure Transport (native macOS)
  - WolfSSL
- - axTLS
+ - MesaLink
  - libressl
  - mbedTLS
  - Schannel (native Windows)
@@ -72,14 +72,15 @@ WolfSSL:
 
     ./configure --with-wolfssl=/home/user/installed/wolfssl --without-ssl
 
-### axTLS
+### MesaLink
 
-    ./configure --with-axtls --without-ssl
+    ./configure --with-mesalink --without-ssl
 
-configure will detect axTLS in its default path by default. You can optionally
-point configure to a custom install path prefix where it can find axTLS:
+configure will detect MesaLink in its default path by default. You can
+optionally point configure to a custom install path prefix where it can find
+mesalink:
 
-    ./configure --with-axtls=/home/user/installed/axtls --without-ssl
+    ./configure --with-mesalink=/home/user/installed/mesalink --without-ssl
 
 ### mbedTLS
 

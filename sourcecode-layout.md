@@ -66,7 +66,7 @@ users.
   towards the embedded market.
 - WolfSSL: (formerly known as cyaSSL) is a TLS library more targeted
   towards the embedded market.
-- axTLS: a minuscule TLS library focused on a requiring a small footprint.
+- MesaLink: a TLS library written in rust
 - Schannel: the native TLS library on Windows.
 - SecureTransport: the native TLS library on Mac OS X.
 - GSKit: the native TLS library on OS/400.

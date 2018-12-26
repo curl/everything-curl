@@ -25,9 +25,9 @@ only use IPv6 addresses:
 
 ## Name resolver backends
 
-libcurl can be built to do name resolves in at least three different ways and
-depending on which backend way that was used, it gets a slightly different
-feature set and sometimes modified behavior.
+libcurl can be built to do name resolves in one out of these three different
+ways and depending on which backend way that is used, it gets a slightly
+different feature set and sometimes modified behavior.
 
 1. The default backend is invoking the "normal" libc resolver functions in a
 new helper-thread, so that it can still do fine-grained timeouts if wanted and
@@ -41,6 +41,22 @@ during its operation and it is much harder to time out nicely.
 which supports asynchronous name resolving without the use of threads. This
 scales better to huge number of parallel transfers but it isn't always 100%
 compatible with the native name resolver functionality.
+
+### DNS over HTTPS
+
+Independently of what resolver backend that libcurl is built to use, since
+7.62.0 it also provides a way for the user to ask a specific DoH (DNS over
+HTTPS) server for the address of a name. This will avoid using the normal,
+native resolver method and server and instead asks a dedicated separate one.
+
+A DoH server is specified as a full URL with the `CURLOPT_DOH_URL` option like
+this:
+
+    curl_easy_setopt(easy, CURLOPT_DOH_URL, "https://example.com/doh");
+
+The URL passed to this option *must* be using https:// and it is generally
+recommended that you have HTTP/2 support enabled so that libcurl can perform
+multiple DoH requests multiplexed over the connection to the DoH server.
 
 ## Caching
 
@@ -94,7 +110,7 @@ standard system calls for name resolving are used.
 
 ## Global DNS cache is bad
 
-The is a *deprecated* option called `CURLOPT_DNS_USE_GLOBAL_CACHE` that when
+There is a *deprecated* option called `CURLOPT_DNS_USE_GLOBAL_CACHE` that when
 enabled tells curl to use a global DNS cache. This cache has no locks and
 stores data in a global context that then can be shared by all other easy
 handles that also is set to use the global cache.

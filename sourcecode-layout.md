@@ -59,8 +59,8 @@ users.
   few features due to lacking some functionality in the library.
 - LibreSSL: an OpenSSL fork maintained by the OpenBSD team.
 - NSS: a full-blown TLS library perhaps most known for being used by the
-  Firefox web browser. This is the default TLS backend for curl on Fedora and
-  Redhat systems.
+  Firefox web browser. This was the default TLS backend for curl on Fedora and
+  Redhat systems for a while in the past.
 - GnuTLS: a full-blown TLS library used by default by the Debian packaged curl.
 - mbedTLS: (formerly known as PolarSSL) is a TLS library more targeted
   towards the embedded market.

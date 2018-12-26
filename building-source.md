@@ -40,35 +40,38 @@ There are two different build environments to cater for people's different
 opinions and tastes. The configure based build is arguably the more mature and
 more covering build system and should probably be considered the default one.
 
-### Autotools
+## Autotools
 
 The "Autotools" is a collection of different tools that used together generate
-the `configure` script. The configure script is run by the user
-who wants to build curl and it does a whole bunch of things:
+the `configure` script. The configure script is run by the user who wants to
+build curl and it does a whole bunch of things:
 
  - it checks for features and functions present in your system
 
  - it offers command-line options so that you as a builder can decide what to
-   enable and disable in the build. Features and protocols, etc., can be toggled
-   on/off. Or even compiler warning levels and more.
+   enable and disable in the build. Features and protocols, etc., can be
+   toggled on/off. Or even compiler warning levels and more.
 
  - it offers command-line options to let the builder point to specific
    installation paths for various third-party dependencies that curl can be
    built to use.
 
- - specifies on which file path the generated installation should be placed when
-   ultimately the build is made and "make install" is invoked
+ - specifies on which file path the generated installation should be placed
+   when ultimately the build is made and "make install" is invoked
 
 In the most basic usage, just running `./configure` in the source directory is
 enough. When the script completes, it outputs a summary of what options it has
 detected/enabled and what features that are still disabled, some of them
 possibly because it failed to detect the presence of necessary third-party
-dependencies that are needed for those functions to work.
+dependencies that are needed for those functions to work. If the summary is
+not what you expected it to be, invoke configure again with new options or
+with the previously used options adjusted.
 
-Then you invoke `make` to build the entire thing and `make
-install` to install curl, libcurl and associated things. `make install`
-requires that you have the correct rights in your system to create and write
-files in the installation directory or you will get some errors.
+After configure has completed you invoke `make` to build the entire thing and
+then finally `make install` to install curl, libcurl and associated
+things. `make install` requires that you have the correct rights in your
+system to create and write files in the installation directory or you will get
+some errors.
 
 ### cross-compiling
 
@@ -85,11 +88,29 @@ Once you have a cross compiler, you can instruct configure to use that
 compiler instead of the "native" compiler when it builds curl so that the end
 result then can be moved over and used on the other machine.
 
-### CMake
-
-TBD
-
 ### static linking
+
+By default, configure will setup the build files so that the following 'make'
+command will create both shared and static versions of libcurl. You can change
+that with the `--disable-static` or `--disable-shared` options to configure.
+
+If you instead want to build with static versions of third party libraries
+instead of shared libraries, you need to prepare yourself for an uphill
+battle. curl's configure script is focused on setting up and building with
+shared libraries.
+
+One of the differences between linking with a static library compared to
+linking with a shared one is in how shared libraries handle their own
+dependencies while static ones do not. In order to link with library xyz as a
+shared library, it is as bsically a matter of adding `-lxyz` to the linker
+command line no matter which other libraries xyz itself was built to use, but
+if that xyz is instead a static library we also need to specify easy of xyz's
+dependencies on the linker command line. curl's configure typically cannot
+keep up with or know all possible dependencies for all the libraries it can be
+made to build with, so users wanting to build with static libs mostly need to
+provide that list of libraries to link with.
+
+### CMake
 
 TBD
 

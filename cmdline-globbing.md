@@ -40,7 +40,7 @@ to z:
 
 ### A list
 
-Sometimes the parts don't follow such an easy pattern, and then you can
+Sometimes the parts do not follow such an easy pattern, and then you can
 instead give the full list yourself but then within the curly braces instead
 of the brackets used for the ranges:
 

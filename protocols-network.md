@@ -15,7 +15,7 @@ from being reversed in a subsequent operation.
 ### Which machine
 
 When you want to initiate a transfer to one of the machines out there (a
-server), you usually don't know its IP addresses but instead you usually
+server), you usually do not know its IP addresses but instead you usually
 know its name. The name of the machine you will talk to is embedded in the URL
 that you work with when you use curl.
 
@@ -36,7 +36,7 @@ part of setting up the network.
 
 curl will therefore ask the DNS server: "Hello, please give me all the
 addresses for example.com", and the server responds with a list of them. Or in
-the case you spell the name wrong, it can answer back that the name doesn't
+the case you spell the name wrong, it can answer back that the name does not
 exist.
 
 ### Establish a connection

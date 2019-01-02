@@ -56,7 +56,7 @@ announcement.
   [distros@openwall](http://oss-security.openwall.org/wiki/mailing-lists/distros)
   when also informing and preparing them for the upcoming public security
   vulnerability announcement—attach the advisory draft for information. Note
-  that 'distros' won't accept an embargo longer than 14 days.
+  that 'distros' will not accept an embargo longer than 14 days.
 
 - Update the "security advisory" with the CVE number.
 
@@ -81,7 +81,7 @@ announcement.
 ### curl-security@haxx.se
 
 Who is on this list? There are a couple of criteria you must meet, and then we
-might ask you to join the list or you can ask to join it. It really isn't 
+might ask you to join the list or you can ask to join it. It really is not 
 formal. We basically only require that you have a long-term presence in the
 curl project and you have shown an understanding for the project and its way
 of working. You must have been around for a good while and you should have no

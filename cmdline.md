@@ -32,7 +32,7 @@ There are many different command lines, shells and prompts in which curl can
 be used. They all come with their own sets of limitations, rules and
 guidelines to follow. The curl tool is designed to work with any of them
 without causing troubles but there may be times when your specific command
-line system doesn't match what others use or what is otherwise documented.
+line system does not match what others use or what is otherwise documented.
 
 One way that command-line systems differ, for example, is how you can put
 quotes around arguments such as to embed spaces or special symbols. In

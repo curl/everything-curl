@@ -82,7 +82,7 @@ TLS (FTP, IMAP, POP3, and SMTP), you usually tell curl to use the non-TLS
 version of the protocol when specifying a URL and then ask curl to enable TLS
 with the `CURLOPT_USE_SSL` option.
 
-This option allows a client to let curl continue if it can't upgrade to TLS,
+This option allows a client to let curl continue if it cannot upgrade to TLS,
 but that's not a recommend path to walk as then you might be using an insecure
 protocol without properly noticing.
 

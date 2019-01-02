@@ -1,7 +1,7 @@
 ## Web site source code
 
 Most of the curl web site is also available in a public git repository,
-although separate from the source code repository since it generally isn't
+although separate from the source code repository since it generally is not
 interesting to the same people and we can maintain a different list of people
 that have push rights, etc.
 
@@ -26,6 +26,6 @@ bootstrap.sh` once to get a symlink and some some initial local files setup,
 and then you can build the web site locally by invoking `make` in the source
 root tree.
 
-Note that this doesn't make you a complete web site mirror, as some scripts
+Note that this does not make you a complete web site mirror, as some scripts
 and files are only available on the real actual site, but should give you
 enough to let you view most HTML pages locally.

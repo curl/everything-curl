@@ -33,7 +33,7 @@ HTTP transfer, separated with newlines and some extra text like this:
     curl -w "Type: %{content_type}\nCode: %{response_code}\n" http://example.com
 
 This feature writes the output to stdout so you probably want to make sure
-that you don't also send the downloaded content to stdout as then you might
+that you do not also send the downloaded content to stdout as then you might
 have a hard time to separate out the data.
 
 ## Available --write-out variables

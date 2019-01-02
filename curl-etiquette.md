@@ -25,7 +25,7 @@ the lists.
 
 Many mail programs and web archivers use information within mails to keep them
 together as "threads", as collections of posts that discuss a certain
-subject. If you don't intend to reply on the same or similar subject, don't
+subject. If you do not intend to reply on the same or similar subject, don't
 just hit reply on an existing mail and change subject; create a new mail.
 
 #### Reply to the list
@@ -46,7 +46,7 @@ and it makes it easier to track mail threads and topics.
 
 #### Do not top-post
 
-If you reply to a message, don't use top-posting. Top-posting is when you
+If you reply to a message, do not use top-posting. Top-posting is when you
 write the new text at the top of a mail and you insert the previous quoted
 mail conversation below. It forces users to read the mail in a backwards order
 to properly understand it.
@@ -64,7 +64,7 @@ makes it impossible to quote only parts of the original mail.
 
 When you reply to a mail you let the mail client insert the previous mail
 quoted. Then you put the cursor on the first line of the mail and you move
-down through the mail, deleting all parts of the quotes that don't add context
+down through the mail, deleting all parts of the quotes that do not add context
 for your comments. When you want to add a comment you do so, inline, right
 after the quotes that relate to your comment. Then you continue downwards
 again.

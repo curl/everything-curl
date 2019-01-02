@@ -28,7 +28,7 @@ example, ask curl to send a HEAD with `-X`, as HEAD is specified to send all
 the headers a GET response would get but *never* send a response body, even if
 the headers otherwise imply that one would come. So, adding `-X HEAD` to a
 command line that would otherwise do a GET will cause curl to hang, waiting
-for a response body that won't come.
+for a response body that will not come.
 
 When asking curl to perform HTTP transfers, it will pick the correct method
 based on the option so you should only rarely have to explicitly ask for
@@ -41,11 +41,11 @@ subsequent redirects.
 In the example above, you can see how the path section of the URL gets turned
 into `/file` in the request line. That is called the "request target". That's
 the resource this request will interact with. Normally this request target is
-extracted from the URL and then used in the request and as a user you don't
+extracted from the URL and then used in the request and as a user you do not
 need to think about it.
 
 In some rare circumstances, user may want to go creative and change this
-request target in ways that the URL doesn't really allow. For example, the
+request target in ways that the URL does not really allow. For example, the
 HTTP OPTIONS method has a specially define request target for magic that
 concerns *the server* and not a specific path, and it uses `*` for that. Yes,
 a single asterisk. There's no way to specify a URL for this, so if you want to
@@ -151,8 +151,8 @@ date, and you can of course also specify it complete with a time:
     curl --time-cond "Sun, 12 Sep 2004 15:05:58 -0700" https://www.example.org/file.html
 
 curl can also get the time stamp off a local file as a shortcut. No need to
-download the file again if it hasn't changed on the server, right? If the
-string doesn't match a time or date, curl checks if there's a file named like
+download the file again if it has not changed on the server, right? If the
+string does not match a time or date, curl checks if there's a file named like
 that, and if so gets the time from it's modification time.
 
     curl --time-cond file https://www.example.org/file.html -o file

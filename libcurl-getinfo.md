@@ -6,8 +6,8 @@ is cleaned or reused for another transfer, it can be used to extract
 information from the previous operation.
 
 Your friend for doing this is called `curl_easy_getinfo()` and you tell it
-which specific information you're interested in and it will return that to you
-if it can.
+which specific information you are interested in and it will return that to
+you if it can.
 
 When you use this function, you pass in the easy handle, which information you
 want and a pointer to a variable to hold the answer. You must pass in a

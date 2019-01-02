@@ -30,7 +30,7 @@ whitespace.
 
 The scheme identifier is separated from the rest of the URL by the `://`
 sequence. That is a colon and two forward slashes. There exists URL formats
-with only one slash, but curl doesn't support any of them. There are two
+with only one slash, but curl does not support any of them. There are two
 additional notes to be aware of, about the number of slashes:
 
 curl allow some illegal syntax and try to correct it internally; so it will
@@ -171,7 +171,7 @@ with a trailing slash as mentioned above.
 URLs offer a "fragment part". That's usually seen as a hash symbol (#) and a
 name for a specific name within a web page in browsers. curl supports
 fragments fine when a URL is passed to it, but the fragment part is never
-actually sent over the wire so it doesn't make a difference to curl's
+actually sent over the wire so it does not make a difference to curl's
 operations whether it is present or not.
 
 ### Browsers' "address bar"

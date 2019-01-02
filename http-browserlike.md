@@ -94,9 +94,9 @@ on that.
 
 It is very common for servers to use [redirects](http-redirects.md) when
 responding to a login POST. It is so common I would probably say it is rare
-that it isn't solved with a redirect.
+that it is not solved with a redirect.
 
-You then just need to remember that curl doesn't follow redirects
+You then just need to remember that curl does not follow redirects
 automatically. You need to instruct it to do this by adding the `-L` command
 line option. Adding that to the previous command line then makes the full one
 look like:

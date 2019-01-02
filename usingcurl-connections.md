@@ -28,7 +28,7 @@ server it speaks to, as typically an HTTP server serves many different names
 using the same software instance.
 
 So, by passing in a custom modified `Host:` header you can have the
-server respond with the contents of the site even when you didn't actually
+server respond with the contents of the site even when you did not actually
 connect to that host name.
 
 For example, you run a test instance of your main site `www.example.com` on
@@ -95,7 +95,7 @@ connect, but in all other ways still assume it is talking to
 As should be detailed elsewhere in this book, curl may be built with several
 different name resolving backends. One of those backends is powered by the
 c-ares library and when curl is built to use c-ares, it gets a few extra
-superpowers that curl built to use other name resolve backends don't get.
+superpowers that curl built to use other name resolve backends do not get.
 Namely, it gains the ability to more specifically instruct what DNS servers to
 use and how that DNS traffic is using the network.
 
@@ -162,7 +162,7 @@ port number can be specified in the URL and usually helps identify which
 service you are targeting.
 
 The local port number is usually randomly assigned to your TCP connection
-by the network stack and you normally don't have to think about it much further.
+by the network stack and you normally do not have to think about it much further.
 However, in some circumstances you find yourself behind network equipment,
 firewalls or similar setups that put restrictions on what source port numbers
 that can be allowed to set up the outgoing connections.
@@ -171,7 +171,7 @@ For situations like this, you can specify which local ports curl should bind
 the connection to. You can specify a single port number to use, or a range of
 ports. We recommend using a range because ports are scarce resources and the
 exact one you want may already be in use. If you ask for a local port number
-(or range) that curl can't obtain for you, it will exit with a failure.
+(or range) that curl cannot obtain for you, it will exit with a failure.
 
 Also, on most operating systems you cannot bind to port numbers below 1024
 without having a higher privilege level (root) and we generally advise

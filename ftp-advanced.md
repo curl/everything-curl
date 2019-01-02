@@ -4,7 +4,7 @@
 
 You can list a remote FTP directory with curl by making sure the URL ends with
 a trailing slash. If the URL ends with a slash, curl will presume that it is a
-directory you want to list. If it isn't actually a directory, you will most
+directory you want to list. If it is not actually a directory, you will most
 likely instead get an error.
 
     curl ftp://ftp.example.com/directory/

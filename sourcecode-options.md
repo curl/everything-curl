@@ -16,7 +16,7 @@ support for certain protocols disabled, etc.
 
 The project sometimes uses #ifdef protection around entire source files when,
 for example, a single file is provided for a specific operating system or
-perhaps for a specific feature that isn't always present. This is to make it
+perhaps for a specific feature that is not always present. This is to make it
 possible for all platforms to always build all files—it simplifies the build
 scripts and makefiles a lot. A file entirely #ifdefed out hardly adds anything
 to the build time, anyway.

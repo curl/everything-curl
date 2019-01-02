@@ -22,7 +22,7 @@ When the easy handle is done serving its purpose, you can close it. If you
 intend to do another transfer, you are however advised to rather reuse the
 handle rather than to close it and create a new one.
 
-If you don't intend to do another transfer with the easy handle, you simply
+If you do not intend to do another transfer with the easy handle, you simply
 ask libcurl to cleanup:
 
     curl_easy_cleanup( easy_handle );

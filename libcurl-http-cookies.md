@@ -47,7 +47,7 @@ cookies will be written to the given file. The file format is the well-known
 ## Setting custom cookies
 
 A simpler and more direct way to just pass on a set of specific cookies in a
-request that doesn't add any cookies to the cookie store and doesn't even
+request that does not add any cookies to the cookie store and doesn't even
 activate the cookie engine, is to set the set with `CURLOPT_COOKIE:':
 
     curl_easy_setopt(easy, CURLOPT_COOKIE, "name=daniel; present=yes;");
@@ -88,7 +88,7 @@ domain and path, etc.), it would overwrite the old one with the new contents.
 
 ### Get all cookies from the cookie store
 
-Sometimes writing the cookie file when you close the handle isn't enough and
+Sometimes writing the cookie file when you close the handle is not enough and
 then your application can opt to extract all the currently known cookies from
 the store like this:
 
@@ -102,7 +102,7 @@ is done with the information.
 
 ### Cookie store commands
 
-If setting and extracting cookies isn't enough, you can also interfere with
+If setting and extracting cookies is not enough, you can also interfere with
 the cookie store in more ways:
 
 Wipe the entire in-memory storage clean with:

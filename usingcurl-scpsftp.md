@@ -5,12 +5,12 @@ prerequisite 3rd party library, [libssh2](https://www.libssh2.org/).
 
 SCP and SFTP are both protocols that are built on top of SSH, a secure and
 encrypted data protocol that is similar to TLS but differs in a few important
-ways. For example, SSH doesn't use certificates of any sort but instead it
+ways. For example, SSH does not use certificates of any sort but instead it
 uses public and private keys. Both SSH and TLS provide strong crypto and
 secure transfers when used correctly.
 
 The SCP protocol is generally considered to be the black sheep of the two
-since it isn't portable and usually only works between Unix systems.
+since it is not portable and usually only works between Unix systems.
 
 ### URLs
 
@@ -28,7 +28,7 @@ a trailing slash:
 
     curl sftp://example.com/ -u user
 
-Note that both these protocols work with "users" and you don't ask for a file
+Note that both these protocols work with "users" and you do not ask for a file
 anonymously or with a standard generic name. Most systems will require that
 users authenticate, as outlined below.
 

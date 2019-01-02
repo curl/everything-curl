@@ -8,7 +8,7 @@ from 1985, published well over a decade before the first curl release.
 FTP was created in a different era of the Internet and computers and as such it
 works a little bit differently than most other protocols. These differences
 can often be ignored and things will just work, but they are also
-important to know at times when things don't run as planned.
+important to know at times when things do not run as planned.
 
 ## Ping-pong
 
@@ -37,7 +37,7 @@ instead with `-B, --use-ascii` or by making sure the URL ends with `;type=A`.
 
 ## Authentication
 
-FTP is one of the protocols you normally don't access without a user name and
+FTP is one of the protocols you normally do not access without a user name and
 password. It just happens that for systems that allow "anonymous" FTP access
 you can login with pretty much any name and password you like. When curl is
 used on an FTP URL to do transfer without any given user name or password, it

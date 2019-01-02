@@ -12,7 +12,7 @@ This callback function gets called by libcurl as soon as there is data
 received that needs to be saved. *ptr* points to the delivered data, and the
 size of that data is *size* multiplied with *nmemb*.
 
-If this callback isn't set, libcurl instead uses 'fwrite' by default.
+If this callback is not set, libcurl instead uses 'fwrite' by default.
 
 The write callback will be passed as much data as possible in all invokes, but
 it must not make any assumptions. It may be one byte, it may be thousands.

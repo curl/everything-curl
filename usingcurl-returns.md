@@ -34,7 +34,7 @@ A basic Unix shell script could look like something like this:
 
  3. URL malformed. The syntax was not correct. This happens when you mistype a
     URL so that it ends up wrong, or in rare situations you are using a URL
-    that is accepted by another tool that curl doesn't support only because
+    that is accepted by another tool that curl does not support only because
     there is no universal URL standard that everyone adheres to.
 
  4. A feature or option that was needed to perform the desired request was
@@ -44,14 +44,14 @@ A basic Unix shell script could look like something like this:
  5. Couldn't resolve proxy. The address of the given proxy host could not be
     resolved. Either the given proxy name is just wrong, or the DNS server is
     misbehaving and doesn't know about this name when it should or perhaps
-    even the system you run curl on is misconfigured so that it doesn't
+    even the system you run curl on is misconfigured so that it does not
     find/use the correct DNS server.
 
  6. Couldn't resolve host. The given remote host's address was not
     resolved. The address of the given server could not be resolved. Either
     the given host name is just wrong, or the DNS server is misbehaving and
-    doesn't know about this name when it should or perhaps even the system you
-    run curl on is misconfigured so that it doesn't find/use the correct DNS
+    does not know about this name when it should or perhaps even the system you
+    run curl on is misconfigured so that it does not find/use the correct DNS
     server.
 
  7. Failed to connect to host. curl managed to get an IP address to the
@@ -61,27 +61,27 @@ A basic Unix shell script could look like something like this:
     is a firewall or another network equipment in between that blocks the
     traffic from getting through.
 
- 8. Unknown FTP server response. The server sent data curl couldn't
+ 8. Unknown FTP server response. The server sent data curl could not
     parse. This is either because of a bug in curl, a bug in the server or
-    because the server is using an FTP protocol extension that curl doesn't
+    because the server is using an FTP protocol extension that curl does not
     support. The only real work-around for this is to tweak curl options to
-    try it to use other FTP commands that perhaps won't get this unknown
+    try it to use other FTP commands that perhaps will not get this unknown
     server response back.
 
  9. FTP access denied. The server denied login or denied access to the
     particular resource or directory you wanted to reach. Most often you tried
-    to change to a directory that doesn't exist on the server. The directory
+    to change to a directory that does not exist on the server. The directory
     of course is what you specify in the URL.
 
  10. FTP accept failed. While waiting for the server to connect back when an
     active FTP session is used, an error code was sent over the control
     connection or similar.
 
- 11. FTP weird PASS reply. Curl couldn't parse the reply sent to the PASS
+ 11. FTP weird PASS reply. Curl could not parse the reply sent to the PASS
     request. PASS in the command curl sends the password to the server with,
     and even anonymous connections to FTP server actually sends a password - a
     fixed anonymous string. Getting a response back from this command that
-    curl doesn't understand is a strong indication that this isn't an FTP
+    curl does not understand is a strong indication that this isn't an FTP
     server at all or that the server is badly broken.
 
  12. During an active FTP session (PORT is used) while waiting for the server
@@ -90,14 +90,14 @@ A basic Unix shell script could look like something like this:
     reaching curl successfully. Like a firewall or other network
     arrangements.
 .
- 13. Unknown response to FTP PASV command, Curl couldn't parse the reply sent
+ 13. Unknown response to FTP PASV command, Curl could not parse the reply sent
     to the PASV request. This is a strange server. PASV is used to setup the
     second data transfer connection in passive mode, see the [FTP uses two
     connections](ftp-twoconnections.md) section for more on that. You might be
     able to work-around this problem by using PORT instead, with the
     `--ftp-port` option.
 
- 14. Unknown FTP 227 format. Curl couldn't parse the 227-line the server sent.
+ 14. Unknown FTP 227 format. Curl could not parse the 227-line the server sent.
     This is most certainly a broken server. A 227 is the FTP server's response
     when sending back information on how curl should connect back to it in
     passive mode. You might be able to work-around this problem by using PORT
@@ -112,12 +112,12 @@ A basic Unix shell script could look like something like this:
 
  17. FTP couldn't set binary. Couldn't change transfer method to binary. This
     server is broken. curl needs to set the transfer to the correct mode
-    before it is started as otherwise the transfer can't work.
+    before it is started as otherwise the transfer cannot work.
 
  18. Partial file. Only a part of the file was transferred. When the transfer
     is considered complete, curl will verify that it actually received the
     same amount of data that it was told before-hand that it was going to
-    get. If the two numbers don't match, this is the error code. It could mean
+    get. If the two numbers do not match, this is the error code. It could mean
     that curl got fewer bytes than advertised or that it got more. curl itself
     cannot know which number that is wrong or which is correct. If any.
 
@@ -138,7 +138,7 @@ A basic Unix shell script could look like something like this:
     another error with the HTTP error code being 400 or above. This return
     code only appears if `-f, --fail` is used.
 
- 23. Write error. Curl couldn't write data to a local filesystem or
+ 23. Write error. Curl could not write data to a local filesystem or
     similar. curl receives data chunk by chunk from the network and it stores
     it like at (or writes it to stdout), one piece at a time. If that write
     action gets an error, this is the exit status.
@@ -182,8 +182,8 @@ A basic Unix shell script could look like something like this:
 
  32. **Not used**
 
- 33. HTTP range error. The range request didn't work. Resumed HTTP requests
-    aren't necessary acknowledged or supported, so this exit code signals that
+ 33. HTTP range error. The range request did not work. Resumed HTTP requests
+    are not necessary acknowledged or supported, so this exit code signals that
     for this resource on this server, there can be no range or resumed
     transfers.
 
@@ -192,10 +192,10 @@ A basic Unix shell script could look like something like this:
 
  35. A TLS/SSL connect error. The SSL handshake failed. The SSL handshake can
     fail due to numerous different reasons so the error message may offer some
-    additional clues. Maybe the parties couldn't agree to a SSL/TLS
+    additional clues. Maybe the parties could not agree to a SSL/TLS
     version, an agreeable cipher suite or similar.
 
- 36. Bad download resume. Couldn't continue an earlier aborted download. When
+ 36. Bad download resume. Could not continue an earlier aborted download. When
     asking to resume a transfer that then ends up not possible to do, this
     error can get returned. For FILE, FTP or SFTP.
 
@@ -221,7 +221,7 @@ A basic Unix shell script could look like something like this:
 
  43. Bad function argument. A function was called with a bad parameter - this
     return code is present to help application authors to understand why
-    libcurl can't perform certain actions and should never be return by the
+    libcurl cannot perform certain actions and should never be return by the
     curl tool. Please file a bug report to the curl project if this happens to
     you.
 
@@ -229,7 +229,7 @@ A basic Unix shell script could look like something like this:
 
  45. Interface error. A specified outgoing network interface could not be
     used. curl will typically decide outgoing network and IP addresses by itself
-    but when explicitly asked to use a specific one that curl can't use, this
+    but when explicitly asked to use a specific one that curl cannot use, this
     error can occur.
 
  46. **Not used**
@@ -242,10 +242,10 @@ A basic Unix shell script could look like something like this:
 
  48. Unknown option specified to libcurl. This could happen if you use a curl
     version that is out of sync with the underlying libcurl version. Perhaps
-    your newer curl tries to use an option in the older libcurl that wasn't
-    introduced until after the libcurl version you're using but is known to
+    your newer curl tries to use an option in the older libcurl that was not
+    introduced until after the libcurl version you are using but is known to
     your curl tool code as that is newer. To decrease the risk of this and
-    make sure it doesn't happen: use curl and libcurl of the same version
+    make sure it does not happen: use curl and libcurl of the same version
     number.
 
  49. Malformed telnet option. The telnet options you provide to curl was not
@@ -259,13 +259,13 @@ A basic Unix shell script could look like something like this:
     [using SCP and SFTP with curl](usingcurl-scpsftp.md) for more SSH specific
     details.
 
- 52. The server didn't reply anything, which in this context is considered an
+ 52. The server did not reply anything, which in this context is considered an
     error. When a HTTP(S) server responds to a HTTP(S) request, it will always
     return *something* as long as it is alive and sound. All valid HTTP
-    responses have a status line and responses header. Not getting anything
-    at all back is an indication the server is faulty or perhaps that
-    something prevented curl from reaching the right server or that you're
-    trying to connect to the wrong port number etc.
+    responses have a status line and responses header. Not getting anything at
+    all back is an indication the server is faulty or perhaps that something
+    prevented curl from reaching the right server or that you are trying to
+    connect to the wrong port number etc.
 
  53. SSL crypto engine not found.
 
@@ -288,7 +288,7 @@ A basic Unix shell script could look like something like this:
  57. **Not used**
 
  58. Problem with the local certificate. The client certificate had a problem
-    so it couldn't be used. Permissions? The wrong pass phrase?
+    so it could not be used. Permissions? The wrong pass phrase?
 
  59. Couldn't use the specified SSL cipher.
 
@@ -368,10 +368,10 @@ number can get different error messages.
 ## "Not used"
 
 The list of exit codes above contains a number of values marked as 'not
-used'. Those are exit status codes that aren't used in modern versions of curl
+used'. Those are exit status codes that are not used in modern versions of curl
 but that have been used or were intended to be used in the past. They may be
 used in a future version of curl.
 
 Additionally, the highest used error status in this list is 92, but there is
-no guarantee that a future curl version won't decide to add more exit codes
-after that number.
+no guarantee that a future curl version will not add more exit codes after
+that number.

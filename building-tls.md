@@ -2,7 +2,7 @@
 
 To make curl support TLS based protocols, such as HTTPS, FTPS, SMTPS, POP3S,
 IMAPS and more, you need to build with a third-party TLS library since curl
-doesn't implement the TLS protocol itself.
+does not implement the TLS protocol itself.
 
 curl is written to work with a large number of TLS libraries:
 

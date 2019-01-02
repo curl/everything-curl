@@ -101,7 +101,7 @@ this struct and how they are used:
 
 ### Setup connection
 
-If a connection can't be reused for a transfer, it needs to setup a connection
+If a connection cannot be reused for a transfer, it needs to setup a connection
 to the host given in the URL and when it does, it can also call the protocol
 handler's function for it. Like this:
 

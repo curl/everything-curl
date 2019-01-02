@@ -64,7 +64,8 @@ When a URL has been parsed or parts have been set, you can extract those pieces 
 Extracted parts are not URL decoded unless the user asks for it with the
 `CURLU_URLDECODE` flag.
 
-Remember to free the returned string with `curl_free` when you're done with it!
+Remember to free the returned string with `curl_free` when you are done with
+it!
 
 ## Set individual URL parts
 

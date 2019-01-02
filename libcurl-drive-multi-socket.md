@@ -45,7 +45,7 @@ those sockets: if it waits for the socket to become readable, writable or
 both!
 
 It also needs to tell libcurl when its timeout time has expired, as it is
-control of driving everything libcurl can't do it itself. So libcurl must tell
+control of driving everything libcurl cannot do it itself. So libcurl must tell
 the application an updated timeout value, too.
 
 ### socket_callback

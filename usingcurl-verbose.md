@@ -1,6 +1,6 @@
 ## Verbose mode
 
-If your curl command doesn't execute or return what you expected it to, your
+If your curl command does not execute or return what you expected it to, your
 first gut reaction should always be to run the command with the `-v /
 --verbose` option to get more information.
 
@@ -91,7 +91,7 @@ regular -v verbose mode does not show that data but only displays
 
 That 1270 bytes should then be in the 'saved' file. You can also see that
 there was a header named Content-Length: in the response that contained the
-exact file length (it won't always be present in responses).
+exact file length (it will not always be present in responses).
 
 ### HTTP/2
 

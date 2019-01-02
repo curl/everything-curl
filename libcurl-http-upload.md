@@ -57,7 +57,7 @@ destination:
     curl_easy_setopt(easy, CURLOPT_READFUNCTION, read_callback);
     curl_easy_setopt(easy, CURLOPT_URL, "https://example.com/handle/put");
 
-If you for some reason don't know the size of the upload before the transfer
+If you for some reason do not know the size of the upload before the transfer
 starts, and you are using HTTP 1.1 you can add a `Transfer-Encoding: chunked`
 header with [CURLOPT_HTTPHEADER](libcurl-http-requests.md). For HTTP 1.0 you
 must provide the size before hand and for HTTP 2 and later, neither the size

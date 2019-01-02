@@ -3,7 +3,7 @@
 Most transfers libcurl can do involves a name that first needs to be
 translated to an internet address. That's "name resolving". Using a numerical
 IP address directly in the URL usually avoids the name resolve phase, but in
-many cases it isn't easy to manually replace the name with the IP address.
+many cases it is not easy to manually replace the name with the IP address.
 
 libcurl tries hard to [re-use an existing
 connection](libcurl-connectionreuse.md) rather than to create a new one. The
@@ -39,7 +39,7 @@ during its operation and it is much harder to time out nicely.
 
 3. There's also support for resolving with the c-ares third party library,
 which supports asynchronous name resolving without the use of threads. This
-scales better to huge number of parallel transfers but it isn't always 100%
+scales better to huge number of parallel transfers but it is not always 100%
 compatible with the native name resolver functionality.
 
 ### DNS over HTTPS

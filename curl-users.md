@@ -3,7 +3,7 @@
 ![one billion users](one-billion-users.jpg)
 
 We used to say that there are a billion users of curl. It makes a good line to
-say but in reality we, of course, don't have any numbers that exact. We just
+say but in reality we, of course, do not have any numbers that exact. We just
 estimate and guess based on observations and trends. It also depends on
 exactly what you would consider "a user" to be. Let's elaborate.
 
@@ -22,10 +22,10 @@ completely inappropriate as a means of measurement.
 
 ### Finding users
 
-So, we can't count downloads and anyone may redistribute it and nobody is
+So, we cannot count downloads and anyone may redistribute it and nobody is
 forced to tell us they use curl. How can we figure out the numbers? How can we
-figure out the users? The answer is that we really can't with any decent level
-of accuracy.
+figure out the users? The answer is that we really cannot with any decent
+level of accuracy.
 
 Instead we rely on witness reports, circumstantial evidence, on findings on
 the Internet, the occasional "about box" or license agreement mentioning curl

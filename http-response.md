@@ -25,7 +25,7 @@ The response code is the server's way of giving the client a hint about how
 the request was handled.
 
 It is important to note that curl does not consider it an error even if the
-response code would indicate that the requested document couldn't be
+response code would indicate that the requested document could not be
 delivered (or similar). curl considers a successful sending and receiving of
 HTTP to be good.
 
@@ -34,7 +34,7 @@ The first digit of the HTTP response code is a kind of "error class":
  - 1xx: transient response, more is coming
  - 2xx: success
  - 3xx: a redirect
- - 4xx: the client asked for something the server couldn't/wouldn't deliver
+ - 4xx: the client asked for something the server could not or would not deliver
  - 5xx: there's problem in the server
 
 Remember that you can use curl's `--write-out` option to extract the response
@@ -52,7 +52,7 @@ numeric range and you can use `--write-out` to extract that code as well.
 ### Chunked transfer encoding
 
 An HTTP 1.1 server can decide to respond with a "chunked" encoded response, a
-feature that wasn't present in HTTP 1.0.
+feature that was not present in HTTP 1.0.
 
 When sending a chunked response, there's no Content-Length: for the response
 to indicate its size. Instead, there's a `Transfer-Encoding: chunked`
@@ -62,7 +62,7 @@ with the size of that particular chunk (in hexadecimal), then a newline and
 then the contents of the chunk. This is repeated over and over until the end of the
 response, which is signalled with a zero sized chunk. The point of this sort
 of response is for the client to be able to figure out when the responses has
-ended even though the server didn't know the full size before it started to
+ended even though the server did not know the full size before it started to
 send it. This is usually the case when the response is dynamic and generated
 at the point when the request comes.
 

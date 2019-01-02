@@ -20,7 +20,7 @@ We also work hard on writing code that is warning-free on all the major
 platforms and in general on as many platforms as possible. Code that obviously
 will cause warnings will not be accepted as-is.
 
-Some of the rules that you won't be allowed to break are:
+Some of the rules that you will not be allowed to break are:
 
 ### Indentation
 
@@ -29,7 +29,7 @@ open brace.
 
 ### Comments
 
-Since we write C89 code, // aren't allowed. They weren't introduced in the C
+Since we write C89 code, // are not allowed. They weren't introduced in the C
 standard until C99. We use only /\* and \*/ comments:
 
     /* this is a comment */

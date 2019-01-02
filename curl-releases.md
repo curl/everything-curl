@@ -28,7 +28,7 @@ log](https://curl.haxx.se/docs/releases.html).
 
 Every single change to the source code is committed and pushed to the source
 code repository. This repository is hosted on github.com and is using git
-these days (but hasn't always been this way). When building curl off the
+these days (but has not always been this way). When building curl off the
 repository, there are a few things you need to generate and setup that
 sometimes cause people some problems or just friction. To help with that, we
 provide daily snapshots.

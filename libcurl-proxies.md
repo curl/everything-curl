@@ -11,7 +11,7 @@ which case you are usually required to use them to reach the target server.
 There are several different kinds of proxies and different protocols to use
 when communicating with a proxy, and libcurl supports a few of the most
 common proxy protocols. It is important to realize that the protocol used to
-the proxy isn't necessarily the same protocol used to the remote server.
+the proxy is not necessarily the same protocol used to the remote server.
 
 When setting up a transfer with libcurl you need to point out the server name
 and port number of the proxy. You may find that your favorite browsers can do

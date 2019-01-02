@@ -29,8 +29,8 @@ the "http://example.com" example above) will get a slash ('/') appended to it
 internally and then that is the resource curl will ask for from the server.
 
 If you specify multiple URLs on the command line, curl will download each URL
-one by one. It won't start the second transfer until the first one is complete,
-etc.
+one by one. It will not start the second transfer until the first one is
+complete, etc.
 
 ### Storing downloads
 
@@ -68,7 +68,7 @@ follow.
 ### Download to a file named by the URL
 
 Many URLs, however, already contain the file name part in the rightmost
-end. curl lets you use that as a shortcut so you don't have to repeat it with
+end. curl lets you use that as a shortcut so you do not have to repeat it with
 `-o`. So instead of:
 
     curl -o file.html http://example.com/file.html
@@ -81,7 +81,7 @@ This is the `-O` (uppercase letter o) option, or `--remote-name` for the long
 name version. The -O option selects the local file name to use by picking the
 file name part of the URL that you provide. This is important. You specify the
 URL and curl picks the name from this data. If the site redirects curl further
-(and if you tell curl to follow redirects), it doesn't change the file name
+(and if you tell curl to follow redirects), it does not change the file name
 curl will use for storing this.
 
 ### Get the target file name from the server
@@ -148,7 +148,7 @@ curl to use this with the `--compressed` option:
 
 With this option enabled (and if the server supports it) it delivers the data
 in a compressed way and curl will decompress it before saving it or sending it
-to stdout. This usually means that as a user you don't really see or
+to stdout. This usually means that as a user you do not really see or
 experience the compression other than possibly noticing a faster transfer.
 
 The `--compressed` option asks for Content-Encoding compression using one of the
@@ -183,7 +183,7 @@ will get all the URLs' output stored in that single file.
 Unix shells usually allow you to redirect the *stderr* stream separately. The
 stderr stream is usually a stream that also gets shown in the terminal, but you
 can redirect it separately from the stdout stream. The stdout stream is for
-the data while stderr is metadata and errors, etc., that aren't data. You can
+the data while stderr is metadata and errors, etc., that are not data. You can
 redirect stderr with `2>file` like this:
 
     curl http://example.com > files.html 2>errors
@@ -202,7 +202,7 @@ the first URL, the second one is sent to stdout. Like this:
     curl -o one.html http://example.com/1 http://example.com/2
 
 The "storage instructions" are read and handled in the same order as the
-download URLs so they don't have to be next to the URL in any way. You can
+download URLs so they do not have to be next to the URL in any way. You can
 round up all the output options first, last or interleaved with the URLs. You
 choose.
 
@@ -337,10 +337,10 @@ maximum speed, but curl does not.
 
 ### Maximum filesize
 
-When you want to make sure your curl command line won't try to download a
+When you want to make sure your curl command line will not try to download a
 too-large file, you can instruct curl to stop before doing that, if it knows the
 size before the transfer starts! Maybe that would use too much bandwidth,
-take too long time or you don't have enough space on your hard drive:
+take too long time or you do not have enough space on your hard drive:
 
     curl --max-filesize 100000 https://example.com/
 

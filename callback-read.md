@@ -17,7 +17,7 @@ The **stream** pointer points to the private data set with `CURLOPT_READDATA`:
 
     curl_easy_setopt(handle, CURLOPT_READDATA, custom_pointer);
 
-If this callback isn't set, libcurl instead uses 'fread' by default.
+If this callback is not set, libcurl instead uses 'fread' by default.
 
 The data area pointed at by the pointer **buffer** should be filled up with at
 most **size** multiplied with **nitems** number of bytes by your function. The

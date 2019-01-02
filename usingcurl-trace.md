@@ -5,7 +5,7 @@ the complete stream including the actual transferred data.
 
 For situations when curl does encrypted file transfers with protocols such as
 HTTPS, FTPS or SFTP, other network monitoring tools (like Wireshark or
-tcpdump) won't be able to do this job as easily for you.
+tcpdump) will not be able to do this job as easily for you.
 
 For this, curl offers two other options that you use instead of `-v`.
 
@@ -37,7 +37,7 @@ this case, the 15 first lines of the dump file looks like:
 Every single sent and received byte get displayed individually in hexadecimal
 numbers.
 
-If you think the hexadecimals aren't helping, you can try `--trace-ascii
+If you think the hexadecimals are not helping, you can try `--trace-ascii
 [filename]` instead, also this accepting '-' for stdout and that makes the 15
 first lines of tracing look like:
 

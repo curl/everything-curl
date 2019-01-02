@@ -91,7 +91,7 @@ header in its request, as shown in the above example. This says
 `multipart/form-data` and then specifies the MIME boundary string. That
 content-type is the default for multipart formposts but you can, of course,
 still modify that for your own commands and if you do, curl is clever enough
-to still append the boundary magic to the replaced header. You can't really
+to still append the boundary magic to the replaced header. You cannot really
 alter the boundary string, since curl needs that for producing the POST
 stream.
 

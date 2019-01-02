@@ -41,7 +41,7 @@ Following that style of what Unix command-line tools worked, it was also never
 any question about that it should support multiple URLs on the command line.
 
 The command-line tool is designed to work perfectly from scripts or other
-automatic means. It doesn't feature any other GUI or UI other than mere text
+automatic means. It does not feature any other GUI or UI other than mere text
 in and text out.
 
 ### The library

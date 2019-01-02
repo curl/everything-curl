@@ -1,7 +1,7 @@
 # TLS
 
 TLS stands for Transport Layer Security and is the name for the technology that
-was formerly called SSL. The term SSL hasn't really died though so these days
+was formerly called SSL. The term SSL has not really died though so these days
 both the terms TLS and SSL are often used interchangeably to describe the same
 thing.
 
@@ -21,7 +21,7 @@ phased out over time.
 Using the verbose option, `-v`, you can get information about which cipher and
 TLS version are negotiated. By using the `--ciphers` option, you can change
 what cipher to prefer in the negotiation, but mind you, this is a power feature
-that takes knowledge to know how to use in ways that don't just make things
+that takes knowledge to know how to use in ways that do not just make things
 worse.
 
 ## Enable TLS
@@ -71,7 +71,7 @@ Suggest TLS to be used for your FTP transfer:
     curl --ssl ftp://ftp.example.com/file.txt
 
 Connecting directly with TLS (to HTTPS://, LDAPS://, FTPS:// etc) means that
-TLS is mandatory and curl will return an error if TLS isn't negotiated.
+TLS is mandatory and curl will return an error if TLS is not negotiated.
 
 Get a file over HTTPS:
 
@@ -90,7 +90,7 @@ came out in 2006, further improving security, followed by TLS 1.2 in 2008. TLS
 
 TLS 1.3 (RFC 8446) was finalized and published as a standard by the IETF in
 August 2018. This is the most secure and fastest TLS version as of date. It is
-however so new that a lot of software, tools and libraries don't yet support
+however so new that a lot of software, tools and libraries do not yet support
 it.
 
 curl is designed to use a "safe version" of SSL/TLS by default. It means that
@@ -112,7 +112,7 @@ serious effort.
 ## Verifying server certificates
 
 Having a secure connection to a server is not worth a lot if you cannot also
-be certain that you are communicating with the **correct** host. If we don't
+be certain that you are communicating with the **correct** host. If we do not
 know that, we could just as well be talking with an impostor that just
 *appears* to be who we think it is.
 
@@ -148,7 +148,7 @@ also set the environment variable `CURL_CA_BUNDLE` to the full path.
 
 ### CA store on windows
 
-curl built on windows that isn't using the native TLS library (Schannel), have
+curl built on windows that is not using the native TLS library (Schannel), have
 an extra sequence for how the CA store can be found and used.
 
 curl will search for a CA cert file named "curl-ca-bundle.crt" in these
@@ -183,10 +183,10 @@ This feature is not supported by all TLS backends.
 This uses the TLS extension called Certificate Status Request to ask the
 server to provide a fresh "proof" from the CA in the handshake, that the
 certificate that it returns is still valid. This is a way to make really sure
-the server's certificate hasn't been revoked.
+the server's certificate has not been revoked.
 
-If the server doesn't support this extension, the test will fail and curl
-returns an error. And it is still far too common that servers don't support
+If the server does not support this extension, the test will fail and curl
+returns an error. And it is still far too common that servers do not support
 this.
 
 Ask for the handshake to use the status request like this:

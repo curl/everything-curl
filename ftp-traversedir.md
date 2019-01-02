@@ -30,7 +30,7 @@ This then equals this FTP command/response sequence (simplified):
 The opposite to doing one CWD for each directory part is to not change the
 directory at all. This method asks the server using the entire path at once
 and is thus fast. Occasionally servers have a problem with this and it
-isn't purely standards-compliant:
+is not purely standards-compliant:
 
     curl --ftp-method nocwd ftp://example.com/one/two/three/file.txt
 

@@ -9,7 +9,8 @@ libcurl](libcurl-http-cookies.md) for details on how to do that.
 
 ## User name and password
 
-libcurl won't try any HTTP authentication without a given user name. Set one like:
+libcurl will not try any HTTP authentication without a given user name. Set
+one like:
 
     curl_easy_setopt(curl, CURLOPT_USERNAME, "joe");
 
@@ -23,7 +24,7 @@ authentication method for this transfer: *HTTP Basic*.
 
 ## Authentication required
 
-A client doesn't itself decide that it wants to send an authenticated
+A client does not itself decide that it wants to send an authenticated
 request. It is something the server requires. When the server has a resource
 that is protected and requires authentication, it will respond with a 401 HTTP
 response and a `WWW-Authenticate:` header. The header will include details
@@ -52,7 +53,7 @@ like this:
 ## Digest
 
 Another HTTP authentication method is called Digest. One advantage this method
-has compared to Basic, is that it doesn't send the password over the wire in
+has compared to Basic, is that it does not send the password over the wire in
 plain text. This is however an authentication method that is rarely spoken by
 browsers and consequently is not a very frequently used one.
 

@@ -1,7 +1,7 @@
 # Reading email
 
 There are two dominant protocols on the Internet for reading/downloading email
-from servers (at least if we don't count web based reading), and they are IMAP
+from servers (at least if we do not count web based reading), and they are IMAP
 and POP3. The former being the slightly more modern alternative. curl supports
 both.
 

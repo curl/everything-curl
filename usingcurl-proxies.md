@@ -43,14 +43,14 @@ A PAC file contains a JavaScript function that decides which proxy a given
 network connection (URL) should use, and even if it should not use a proxy at
 all. Browsers most typically read the PAC file off a URL on the local network.
 
-Since curl has no JavaScript capabilities, curl doesn't support PAC files. If
+Since curl has no JavaScript capabilities, curl does not support PAC files. If
 your browser and network use PAC files, the easiest route forward is usually
 to read the PAC file manually and figure out the proxy you need to specify to
 run curl successfully.
 
 ### Captive portals
 
-(these aren't proxies but in the way)
+(these are not proxies but in the way)
 
 TBD
 
@@ -125,8 +125,8 @@ other protocols as well. In particular, FTP is fairly commonly supported.
 
 When talking FTP "over" an HTTP proxy, it is usually done by more or less
 pretending the other protocol works like HTTP and asking the proxy to "get
-this URL" even if the URL isn't using HTTP. This distinction is important
-because it means that when sent over an HTTP proxy like this, curl doesn't
+this URL" even if the URL is not using HTTP. This distinction is important
+because it means that when sent over an HTTP proxy like this, curl does not
 really speak FTP even though given an FTP URL; thus FTP-specific features will
 not work:
 

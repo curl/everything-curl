@@ -14,8 +14,8 @@ In the curl project we build trust for our users in a few different ways:
    document best practices and we have a style guide that helps us keep code
    consistent.
 
-3. We stick to promises and guarantees as much as possible. We don't break
-   APIs and we don't abandon support for old systems.
+3. We stick to promises and guarantees as much as possible. We do not break
+   APIs and we do not abandon support for old systems.
 
 4. Security is of utmost importance and we take every reported incident
    seriously and realize that we **must** fix all known problems and we need

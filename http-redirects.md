@@ -23,7 +23,7 @@ back a 301. It also means that the user-agent (browser) is meant to cache this
 and keep going to the new URI from now on when the original URI is requested.
 
 The temporary alternative is 302. Right now the server wants the client to
-send a GET request to B, but it shouldn't cache this but keep trying the
+send a GET request to B, but it should not cache this but keep trying the
 original URI when directed to it next time.
 
 Note that both 301 and 302 will make browsers do a GET in the next request,
@@ -39,26 +39,26 @@ response” to the original request rather than just a redirect.
 
 These three codes were the only redirect codes in the HTTP/1.0 spec.
 
-curl however, doesn't remember or cache any redirects at all so to it, there's
-really no difference between permanent and temporary redirects.
+curl however, does not remember or cache any redirects at all so to it,
+there's really no difference between permanent and temporary redirects.
 
 ## Tell curl to follow redirects
 
 In curl's tradition of only doing the basics unless you tell it differently,
-it doesn't follow HTTP redirects by default. Use the `-L, --location` to tell
+it does not follow HTTP redirects by default. Use the `-L, --location` to tell
 it to do that.
 
 When following redirects is enabled, curl will follow up to 50 redirects by
-default. There's a maximum limit mostly to avoid the risk of getting
-caught in endless loops. If 50 isn't sufficient for you, you can change the
-maximum number of redirects to follow with the `--max-redirs` option.
+default. There's a maximum limit mostly to avoid the risk of getting caught in
+endless loops. If 50 is not sufficient for you, you can change the maximum
+number of redirects to follow with the `--max-redirs` option.
 
 ## GET or POST?
 
 All three of these response codes, 301 and 302/303, will assume that the
-client sends a GET to get the new URI, even if the client might have sent a POST
-in the first request. This is important, at least if you do something
-that doesn't use GET.
+client sends a GET to get the new URI, even if the client might have sent a
+POST in the first request. This is important, at least if you do something
+that does not use GET.
 
 If the server instead wants to redirect the client to a new URI and wants it
 to send the same method in the second request as it did in the first, like if
@@ -120,7 +120,7 @@ curl.
 
 ## HTML redirects
 
-If the above wasn't enough, the web world also provides a method to redirect
+If the above was not enough, the web world also provides a method to redirect
 browsers by plain HTML. See the example `<meta>` tag below. This is somewhat
 complicated with curl since curl never parses HTML and thus has no knowledge
 of these kinds of redirects.

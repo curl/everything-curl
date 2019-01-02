@@ -33,7 +33,7 @@ the situation changes from day to day and year to year. You can rest assured
 that there will be new protocols added in the list above in the future and that
 there will be new versions of the protocols already listed.
 
-There are, of course, already other protocols in existence that curl doesn't yet
+There are, of course, already other protocols in existence that curl does not yet
 support. We are open to supporting more protocols that suit the general curl
 paradigms, we just need developers to write the necessary code adjustments for
 them.
@@ -56,7 +56,7 @@ Software developers then read the RFC specifications and deploy their code in
 the world based on their interpretations of the words in those documents. It
 sometimes turn out that some of the specifications are subject to vastly
 different interpretations or sometimes the engineers are just lazy and ignore
-sound advice in the specs and deploy something that doesn't adhere.
+sound advice in the specs and deploy something that does not adhere.
 Writing software that interoperates with other implementations of the
 specifications can therefore end up being hard work.
 
@@ -84,7 +84,7 @@ for specific protocols. The protocol specs we follow are RFCs put together and
 published by IETF.
 
 Some protocols are not properly documented in a final RFC, like, for example,
-SFTP for which our implementation is based on an Internet-draft that isn't
+SFTP for which our implementation is based on an Internet-draft that is not
 even the last available one.
 
 Protocols are, however, spoken by two parties and like in any given
@@ -106,7 +106,7 @@ slightly, then we probably end up bending them exactly that way—if we can
 still work successfully with other implementations.
 
 Ultimately, it is a personal decision and up for discussion in every case
-where we think a spec and the real world don't align.
+where we think a spec and the real world do not align.
 
 In the worst cases we introduce options to let application developers and curl
 users have the final say on what curl should do. I say worst because it is

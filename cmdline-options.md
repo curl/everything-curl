@@ -86,18 +86,18 @@ Failing to use quotes, like if you would write the command line like this:
 
 … will make curl only use 'I' as a user-agent string, and the following
 strings, 'am', your, etc will instead all be treated as separate URLs since
-they don't start with `-` to indicate that they're options and curl only ever
+they do not start with `-` to indicate that they are options and curl only ever
 handles options and URLs.
 
 To make the string itself contain double quotes, which is common when you for
 example want to send a string of JSON to the server, you may need to use
-single quotes (except on Windows, where single quotes doesn't work the same
+single quotes (except on Windows, where single quotes does not work the same
 way). Send the JSON string `{ "name": "Darth" }`:
 
     curl -d '{ "name": "Darth" }' http://example.com
 
 Or if you want to avoid the single quote thing, you may prefer to send the
-data to curl via a file, which then doesn't need the extra quoting. Assuming
+data to curl via a file, which then does not need the extra quoting. Assuming
 we call the file 'json' that contains the above mentioned data:
 
     curl -d @json http://example.com

@@ -18,7 +18,7 @@ different options will be explored below.
 ## The latest version?
 
 Looking at the curl web site at https://curl.haxx.se you can see the latest
-curl and libcurl version released from the project. That's the latest source
+curl and libcurl version released from the project. That is the latest source
 code package you can get.
 
 When you opt for a prebuilt and prepackaged version for your operating system

@@ -4,7 +4,7 @@ The curl project creates source code that can be built to produce the two
 products curl and libcurl. The conversion from source code to binaries
 is often referred to as "building". You build curl and libcurl from source.
 
-The curl project doesn't provide any built binaries at all, it only ships the
+The curl project does not provide any built binaries at all, it only ships the
 source code. The binaries which can be found on the download page of the curl
 web and installed from other places on the Internet are all built and provided
 to the world by other friendly people and organizations.
@@ -16,8 +16,8 @@ and run on a vast number of platforms. If you use a rare operating system
 yourself, chances are that building curl from source is the easiest or perhaps
 the only way to get curl.
 
-Making it easy to build curl is a priority to the curl project, although we
-don't always necessarily succeed!
+Making it easy to build curl is a priority to the curl project, although we do
+not always necessarily succeed!
 
 ## git vs tarballs
 

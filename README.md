@@ -8,7 +8,7 @@ why all those millions of existing users use it.
 
 This book is meant to be interesting and useful to both casual readers and the
 somewhat more experienced developers, and offers something for you all to pick
-and choose from. Don't read it from front to back. Read the chapters you are
+and choose from. Do not read it from front to back. Read the chapters you are
 curious about and go back and forth as you see fit.
 
 I hope to run this book project as I do all other projects I work on: in the

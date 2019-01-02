@@ -78,7 +78,7 @@ to *read* cookies from a file. Oftentimes you want both.
 
 When curl writes cookies to this file, it will save all known cookies
 including those that are session cookies (without a given lifetime). curl
-itself has no notion of a session and it doesn't know when a session ends so
+itself has no notion of a session and it does not know when a session ends so
 it will not flush session cookies unless you tell it to.
 
 ### New cookie session

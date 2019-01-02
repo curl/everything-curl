@@ -1,7 +1,7 @@
 ## API compatibility
 
 libcurl promises API stability and guarantees that your program written today
-will remain working in the future. We don't break compatibility.
+will remain working in the future. We do not break compatibility.
 
 Over time, we add features, new options and new functions to the APIs but we
 do not change behavior in a non-compatible way or remove functions.
@@ -67,7 +67,7 @@ This number is also available as three separate defines:
 `LIBCURL_VERSION_MAJOR`, `LIBCURL_VERSION_MINOR` and `LIBCURL_VERSION_PATCH`.
 
 These defines are, of course, only suitable to figure out the version number
-built *just now* and they won't help you figuring out which libcurl version
+built *just now* and they will not help you figuring out which libcurl version
 that is used at run-time three years from now.
 
 ### Which libcurl version runs

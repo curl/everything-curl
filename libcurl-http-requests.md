@@ -55,13 +55,13 @@ for visual delimiters here), it would send the following headers:
     Content-Length: 6
     Content-Type: application/x-www-form-urlencoded
 
-If you're not pleased with the default set of headers libcurl sends, the
+If you are not pleased with the default set of headers libcurl sends, the
 application has the power to add, change or remove headers in the HTTP
 request.
 
 ### Add a header
 
-To add a header that wouldn't otherwise be in the request, add it with
+To add a header that would not otherwise be in the request, add it with
 `CURLOPT_HTTPHEADER`. Suppose you want a header called `Name:` that contains
 `Mr. Smith`:
 
@@ -73,7 +73,7 @@ To add a header that wouldn't otherwise be in the request, add it with
 
 ### Change a header
 
-If one of those default headers aren't to your satisfaction you can alter
+If one of those default headers are not to your satisfaction you can alter
 them. Like if you think the default `Host:` header is wrong (even though it is
 derived from the URL you give libcurl), you can tell libcurl your own:
 
@@ -86,7 +86,7 @@ derived from the URL you give libcurl), you can tell libcurl your own:
 ### Remove a header
 
 When you think libcurl uses a header in a request that you really think it
-shouldn't, you can easily tell it to just remove it from the request. Like if
+should not, you can easily tell it to just remove it from the request. Like if
 you want to take away the `Accept:` header. Just provide the header name with
 nothing to the right sight of the colon:
 

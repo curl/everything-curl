@@ -42,7 +42,7 @@ can be done with
 
 To allow the config files to look even more like a true config file, it also
 allows you to use '=' or ':' between the option and its argument. As you see
-above it isn't necessary, but some like the clarity it offers. Setting the
+above it is not necessary, but some like the clarity it offers. Setting the
 user-agent option again:
 
     user-agent = "Everything-is-an-agent"
@@ -58,7 +58,7 @@ therefore it can also be provided without the quotes like:
 
 Finally, if you want to provide a URL in a config file, you must do that the
 `--url` way, or just with `url`, and not like on the command line where
-basically everything that isn't an option is assumed to be a URL. So you
+basically everything that is not an option is assumed to be a URL. So you
 provide a URL for curl like this:
 
     url = "http://example.com"

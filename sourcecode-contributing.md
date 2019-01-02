@@ -4,8 +4,8 @@ Contributing means helping out.
 
 When you contribute anything to the project—code, documentation, bug fixes,
 suggestions or just good advice—we assume you do this with permission and you
-are not breaking any contracts or laws by providing that to us. If you don't
-have permission, don't contribute it to us.
+are not breaking any contracts or laws by providing that to us. If you do not
+have permission, do not contribute it to us.
 
 Contributing to a project like curl could be many different things. While
 source code is the stuff that is needed to build the products, we are also
@@ -44,7 +44,7 @@ The project generally approves of functions that improves the support for the
 current protocols, especially features that popular clients or browsers have
 but that curl still lacks.
 
-Of course, you can also add contents to the project that isn't code, like
+Of course, you can also add contents to the project that is not code, like
 documentation, graphics or web site contents, but the general rules apply
 equally to that.
 
@@ -53,9 +53,9 @@ will be thrilled to receive your fix and merge it as soon as possible,
 
 ### What not to add
 
-There aren't any good rules to say what features you can't add or that we will
-never accept, but let me instead try to mention a few things you should avoid
-to get less friction and to be successful, faster:
+There are no good rules that say what features you can or cannot add or that
+we will never accept, but let me instead try to mention a few things you
+should avoid to get less friction and to be successful, faster:
 
 - Do not write up a huge patch first and then send it to the list for
   discussion. Always start out by discussing on the list, and send your
@@ -67,17 +67,17 @@ to get less friction and to be successful, faster:
   architecture that already exists. When you add code to the ordinary transfer
   code path, it must, for example, work asynchronously in a non-blocking
   manner. We will not accept new code that introduces blocking behaviors—we
-  already have too many of those that we haven't managed to remove yet.
+  already have too many of those that we have not managed to remove yet.
 
 - Quick hacks or dirty solutions that have a high risk of not working on
-  platforms you don't run or on architectures you don't know. We don't care if
+  platforms you do not run or on architectures you don't know. We don't care if
   you are in a hurry or that it works for you. We do not accept high risk code
   or code that is hard to read or understand.
 
 - Code that breaks the build. Sure, we accept that we sometimes have to add
   code to certain areas that makes the new functionality perhaps depend on a
   specific 3rd party library or a specific operating system and similar, but
-  we can **never** do that at the expense of all other systems. We don't break
+  we can **never** do that at the expense of all other systems. We do not break
   the build, and we make sure all tests keep running successfully.
 
 ## git
@@ -149,8 +149,8 @@ ask you to use:
     [Reported-by: John Doe—credit the reporter]
     [whatever-else-by: credit all helpers, finders, doers]
 
-Don't forget to use `git commit --author="Jane Doe <jane@example.com>"` if you
-commit someone else's work, and make sure that you have your own user and
+Do not forget to use `git commit --author="Jane Doe <jane@example.com>"` if
+you commit someone else's work, and make sure that you have your own user and
 e-mail setup correctly in git before you commit.
 
 The author and the \*-by: lines are, of course, there to make sure we give the
@@ -182,5 +182,5 @@ someone else to be given "push rights" and become one of the selected few in
 that team.
 
 Daniel remains the project leader and while it is very rarely needed, he has
-the final say in debates that don't seem to sway in either direction or fail
+the final say in debates that do not seem to sway in either direction or fail
 to reach some sort of consensus.

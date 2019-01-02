@@ -11,14 +11,14 @@ the terminal, as then would the progress meter interfere with that output and
 just mess up what gets displayed. A user can also forcibly switch off the
 progress meter with the `-s / --silent` option, which tells curl to hush.
 
-If you invoke curl and don't get the progress meter, make sure your output is
+If you invoke curl and do not get the progress meter, make sure your output is
 directed somewhere other than the terminal.
 
 curl also features an alternative and simpler progress meter that you enable
 with `-# / --progress-bar`. As the long name implies, it instead shows the
 transfer as progress bar.
 
-At times when curl is asked to transfer data, it can't figure out the total
+At times when curl is asked to transfer data, it cannot figure out the total
 size of the requested operation and that then subsequently makes the progress
 meter contain fewer details and it cannot, for example, make forecasts for
 transfer times, etc.

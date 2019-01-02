@@ -18,7 +18,7 @@ also be made like this:
 
     curl -d name=admin -d shoesize=12 http://example.com/
 
-If the amount of data to send isn't really fit to put in a mere string on the
+If the amount of data to send is not really fit to put in a mere string on the
 command line, you can also read it off a file name in standard curl style:
 
     curl -d @filename http://example.com
@@ -29,7 +29,8 @@ POSTing with curl's -d option will make it include a default header that looks
 like `Content-Type: application/x-www-form-urlencoded`. That's what your
 typical browser will use for a plain POST.
 
-Many receivers of POST data don't care about or check the Content-Type header.
+Many receivers of POST data do not care about or check the Content-Type
+header.
 
 If that header is not good enough for you, you should, of course, replace that
 and instead provide the correct one. Such as if you POST JSON to a server and
@@ -56,7 +57,7 @@ The command-line options mentioned above all require that you provide properly
 encoded data, data you need to make sure already exists in the right format.
 While that gives you a lot of freedom, it is also a bit inconvenient at times.
 
-To help you send data you haven't already encoded, curl offers the
+To help you send data you have not already encoded, curl offers the
 `--data-urlencode` option. This option offers several different ways to URL
 encode the data you give it.
 
@@ -66,7 +67,7 @@ followed by a separator and a content specification. The **data** part can be
 passed to curl using one of the following syntaxes:
 
  - "content": This will make curl URL encode the content and pass that
-   on. Just be careful so that the content doesn't contain any = or @ symbols,
+   on. Just be careful so that the content does not contain any = or @ symbols,
    as that will then make the syntax match one of the other cases below!
 
  - "=content": This will make curl URL encode the content and pass that
@@ -108,10 +109,10 @@ entire string by prefixing it with an equals sign (that will not get sent):
 ### Convert that to a GET
 
 A little convenience feature that could be suitable to mention in this context
-(even though it isn't for POSTing), is the `-G` or `--get` option, which takes
-all data you have specified with the different `-d` variants and appends that
-data on the right end of the URL separated with a '?' and then makes curl send
-a GET instead.
+(even though it is not for POSTing), is the `-G` or `--get` option, which
+takes all data you have specified with the different `-d` variants and appends
+that data on the right end of the URL separated with a '?' and then makes curl
+send a GET instead.
 
 This option makes it easy to switch between POSTing and GETing a form, for
 example.
@@ -137,12 +138,12 @@ larger than just minuscule. curl also does this for PUT requests.
 
 When a server gets a request with an 100-continue and deems the request fine,
 it will respond with a 100 response that makes the client continue. If the
-server doesn't like the request, it sends back response code for the error it
+server does not like the request, it sends back response code for the error it
 thinks it is.
 
-Unfortunately, lots of servers in the world don't properly support the Expect:
-header or don't handle it correctly, so curl will only wait 1000 milliseconds
-for that first response before it will continue anyway.
+Unfortunately, lots of servers in the world do not properly support the
+Expect: header or do not handle it correctly, so curl will only wait 1000
+milliseconds for that first response before it will continue anyway.
 
 Those are 1000 wasted milliseconds. You can then remove the use of Expect:
 from the request and avoid the waiting with `-H`:
@@ -195,7 +196,7 @@ that form submission will then show you exactly how a browser sends it.
 
 A third option is, of course, to use a network capture tool such as Wireshark to
 check exactly what is sent over the wire. If you are working with HTTPS, you
-can't see form submissions in clear text on the wire but instead you need to
+cannot see form submissions in clear text on the wire but instead you need to
 make sure you can have Wireshark extract your TLS private key from your
 browser. See the Wireshark documentation for details on doing that.
 

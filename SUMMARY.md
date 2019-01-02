@@ -59,7 +59,6 @@
     * [TLS](usingcurl-tls.md)
         * [SSLKEYLOGFILE](tls-sslkeylogfile.md)
     * [Copy as curl](usingcurl-copyas.md)
-    * [curl examples](curlexamples.md)
 * [How to HTTP with curl](http.md)
     * [Protocol basics](http-basics.md)
     * [Responses](http-response.md)

@@ -1,4 +1,4 @@
-## HTTP upload
+# HTTP upload
 
 Uploads over HTTP can be done in many different ways and it is important to
 notice the differences. They can use different methods, like POST or PUT, and
@@ -7,7 +7,7 @@ when using POST the body formatting can differ.
 In addition to those HTTP differences, libcurl offers different ways to
 provide the data to upload.
 
-### HTTP POST
+## HTTP POST
 
 POST is typically the HTTP method to pass data to a remote web application. A
 common way to do that in browsers is by filling in a HTML form and pressing
@@ -26,7 +26,7 @@ get the data by using the regular [read callback](callback-read.md):
 This "normal" POST will also set the request header `Content-Type:
 application/x-www-form-urlencoded`.
 
-### HTTP multipart formposts
+## HTTP multipart formposts
 
 A multipart formpost is still using the same HTTP method POST; the difference
 is only in the formatting of the request body. A multipart formpost is
@@ -44,7 +44,35 @@ like this:
 
     curl_easy_setopt(easy, CURLOPT_HTTPPOST, formposthandle);
 
-### HTTP PUT
+## HTTP PUT
 
-TBD
+A PUT with libcurl will assume you pass the data to it using the read
+callback, as that is the typical "file upload" pattern libcurl uses and
+provides. You set the callback, you ask for PUT (by asking for
+`CURLOPT_UPLOAD`), you set the size of the upload and you set the URL to the
+destination:
 
+    curl_easy_setopt(easy, CURLOPT_UPLOAD, 1L);
+    curl_easy_setopt(easy, CURLOPT_INFILESIZE_LARGE, (curl_off_t) size);
+    curl_easy_setopt(easy, CURLOPT_READFUNCTION, read_callback);
+    curl_easy_setopt(easy, CURLOPT_URL, "https://example.com/handle/put");
+
+If you for some reason don't know the size of the upload before the transfer
+starts, and you are using HTTP 1.1 you can add a `Transfer-Encoding: chunked`
+header with [CURLOPT_HTTPHEADER](libcurl-http-requests.md). For HTTP 1.0 you
+must provide the size before hand and for HTTP 2 and later, neither the size
+nor the extra header is needed.
+
+## Expect: headers
+
+When doing HTTP uploads using HTTP 1.1, libcurl will insert an `Expect:
+100-continue` header in some circumstances. This header offers the server a
+way to reject the transfer early and save the client from having to send a lot
+of data in vain before the server gets a chance to decline.
+
+The header is added by libcurl if HTTP uploading is done with `CURLOPT_UPLOAD`
+or if it is asked to do a HTTP POST for which the body size is either unknown
+or known to be larger than 1024 bytes.
+
+A libcurl-using client can explicitly disable the use of the `Expect:` header
+with the [CURLOPT_HTTPHEADER](libcurl-http-requests.md) option.

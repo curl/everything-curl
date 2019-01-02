@@ -57,6 +57,44 @@ Preferably, you submit
 requests](https://github.com/bagder/everything-curl/pulls) on the book's
 github page.
 
+## Helpers
+
+Lots of people have reported bugs, improved sections or otherwise helped
+making this book what it is. These friends include the following:
+
+Anders Roxell,
+Angad Gill,
+Aris (Karim) Merchant,
+Ben Peachey,
+Carlton Gibson,
+Chris DeLuca,
+Citizen Esosa,
+Dan Fandrich,
+DrDoom74 at github,
+Emil Hessman,
+Frank Hassanabad,
+Gautham B A,
+Geir Hauge,
+Jay Satiro,
+JoyIfBam5,
+Luca Niccoli,
+Manuel,
+Marius Žilėnas,
+Martin van den Nieuwelaar,
+Ms2ger,
+Nick Travers,
+Oscar,
+Saravanan Musuwathi Kesavan,
+Senthil Kumaran,
+Viktor Szakats,
+Vitaliy T,
+Wieland Hoffmann,
+alawvt,
+bookofportals,
+ethomag,
+infinnovation-dev on github,
+mehandes
+
 ## License
 
 This document is licensed under the [Creative Commons Attribution 4.0

@@ -116,6 +116,7 @@
     * [Global initialization](libcurl-globalinit.md)
     * [multi-threading](libcurl-threading.md)
     * [curl easy options](libcurl-options.md)
+        * [TLS options](libcurl-tlsoptions.md)
     * [CURLcode return codes](libcurl-curlcode.md)
     * [Verbose operations](libcurl-verbose.md)
     * [libcurl examples](libcurlexamples.md)

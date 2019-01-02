@@ -224,12 +224,38 @@ different types:
 
 ## TLS auth
 
-TBD
+TLS connections offer a (rarely used) feature called Secure Remote
+Passwords. Using this, you authenticate the connection for the server using a
+name and password and the command line flags for this are `--tlsuser <name>`
+and `--tlspassword <secret>`. Like this:
+
+    curl --tlsuser daniel --tlspassword secret https://example.com
 
 ## Different TLS backends
 
-TBD
+When curl is built, it gets told to use a specific TLS library. That TLS
+library is the engine that provides curl with the powers to speak TLS over the
+wire. We often refer to them as different "backends" as they can be seen as
+different plugglable pieces into the curl machine. curl can be built to be
+able to use one or more of these backends.
+
+Sometimes features and behaviors differ slightly when curl is built with
+different TLS backends, but the developers work hard on making those
+differences as small and unnoticable as possible.
+
+Showing the curl version information with `curl --version` will always include
+the TLS library and version in the first line of output.
 
 ## Multiple TLS backends
 
-TBD
+When curl is built with *multiple* TLS backends, it be told which one to use
+each time it is started. It is always built to use a specific one by default
+unless one is asked for.
+
+If you invoke `curl --version` for a curl with multiple backends it will
+mention `MultiSSL` as a feature in the last line. The first line will then
+include all the supported TLS backends with all but the default one within
+parentheses.
+
+To set a specific one to get used, set the environment variaable
+`CURL_SSL_BACKEND` to the name of it!

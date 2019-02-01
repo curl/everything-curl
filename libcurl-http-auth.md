@@ -76,4 +76,31 @@ TBD
 
 ## Try-first
 
-TBD
+Some HTTP servers allow one out of several authentication methods, in some
+cases you will find yourself in a position where you as a client doesn't want
+or isn't able to select a single specific method before-hand and for yet
+another subset of cases your application doesn't know if the requested URL
+even require authentication or not!
+
+libcurl covers all these situations as well.
+
+You can ask libcurl to use more than one method, and when doing so, you imply
+that curl first tries the request without any authentication at all and then
+based on the HTTP response coming back, it selects one of the methods that
+both the server and your application allow. If more than one would work, curl
+will pick them in a order based on how secure the methods are considered to
+be, picking the safest of the available methods.
+
+Tell libcurl to accept multiple method by bitwise ORing them like this:
+
+    curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC | CURLAUTH_DIGEST);
+
+If you want libcurl to only allow a single specific method but still want it
+to probe first to check if it can possibly still make the request without the
+use of authentication, you can force that behavior by adding `CURLAUTH_ONLY`
+to the bitmask.
+
+Ask to use digest, but nothing else but digest, and only if proven really
+necesary:
+
+    curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST | CURLAUTH_ONLY);

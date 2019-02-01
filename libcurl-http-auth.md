@@ -64,11 +64,21 @@ transfer like this (it still needs user name and password set as well):
 
 ## NTLM
 
-TBD
+Another HTTP authentication method is called NTLM.
+
+You can explicitly tell libcurl to use the NTLM method for a specific transfer
+like this (it still needs user name and password set as well):
+
+    curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_NTLM);
 
 ## Negotiate
 
-TBD
+Another HTTP authentication method is called Negotiate.
+
+You can explicitly tell libcurl to use the Negotiate method for a specific
+transfer like this (it still needs user name and password set as well):
+
+    curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_NEGOTIATE);
 
 ## Bearer
 

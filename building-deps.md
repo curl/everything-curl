@@ -45,7 +45,7 @@ to support HTTP version 2.
 https://www.openldap.org/
 
 This library is one option to allow curl to get support for the LDAP and LDAPS
-URL schemes. On Windows, you can also opt to build curl to use the winssl library.
+URL schemes. On Windows, you can also opt to build curl to use the winldap library.
 
 ## librtmp
 

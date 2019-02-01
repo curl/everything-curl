@@ -105,11 +105,9 @@ DarwinSSL:
 
 ### Schannel
 
-    ./configure --with-winssl --without-ssl
+    ./configure --with-schannel --without-ssl
 
-(WinSSL is an alternative name for Schannel)
-configure will detect Schannel in its default path by default. You can
-optionally point configure to a custom install path prefix where it can find
-WinSSL:
+configure will detect Schannel in its default path by default.
 
-    ./configure --with-winssl=/home/user/installed/winssl --without-ssl
+(WinSSL was previously an alternative name for Schannel, and earlier curl
+versions instead needed `--with-winssl`)

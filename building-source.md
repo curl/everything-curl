@@ -211,7 +211,7 @@ libressl.
  - Wolfssl: `--without-ssl --with-wolfssl`
  - libressl: - by default
  - mbedTLS: `--without-ssl --with-mbedtls`
- - schannel: `--without-ssl --with-winssl`
+ - schannel: `--without-ssl --with-schannel` (formerly `--with-winssl`)
  - secure transport: `--without-ssl --with-darwinssl`
 
 All the `--with-*` options also allow you to provide the install prefix so

@@ -1,4 +1,4 @@
-## Proxies
+# Proxies
 
 A proxy is a machine or software that does something on behalf of you, the
 client.
@@ -11,7 +11,7 @@ then it will run off and do that and then return the data to you.
 There are several different types of proxies and we shall list and discuss
 them further down in this section.
 
-### Discover your proxy
+## Discover your proxy
 
 Some networks are setup to require a proxy in order for you to reach the
 Internet or perhaps that special network you are interested in. The use of
@@ -33,7 +33,7 @@ curl.
 
 TBD: screenshots of how to find proxy settings in Firefox and Chrome?
 
-### PAC
+## PAC
 
 Some network environments provides several different proxies that should be
 used in different situations, and a customizable way to handle that is
@@ -48,13 +48,27 @@ your browser and network use PAC files, the easiest route forward is usually
 to read the PAC file manually and figure out the proxy you need to specify to
 run curl successfully.
 
-### Captive portals
+## Captive portals
 
 (these are not proxies but in the way)
 
-TBD
+A "captive portal" is one of these systems that are popular to use in hotels,
+airports and for other sorts of network access to a larger audience. The
+portal will "capture" all network traffic and redirect you to a login web page
+until you've either clicked OK and verified that you've read their conditions
+or perhaps even made sure that you've paid plenty of money for the right to
+use the network.
 
-### Proxy type
+curl's traffic will of course also captured by such portals and often the best
+way is to use a browser to accept the conditions and "get rid of" the portal
+since from then on they often allow all other traffic originating from that
+same machine (MAC address) for a period of time.
+
+Most often you can use curl too to submit that "ok" affirmation, if you just
+figure out how to submit the form and what fields to include in it. If this is
+something you end up doing many times, it may be worth exploring.
+
+## Proxy type
 
 curl supports several different types of proxies.
 
@@ -65,7 +79,7 @@ curl goes with assuming it's an HTTP proxy.
 curl also allows a number of different options to set the proxy type instead of
 using the scheme prefix. See the [SOCKS](#socks) section below.
 
-### HTTP
+## HTTP
 
 An HTTP proxy is a proxy that the client speaks HTTP with to get the transfer
 done. curl will, by default, assume that a host you point out with `-x` or
@@ -86,7 +100,7 @@ If you enable verbose mode with `-v` when talking to a proxy, you will see
 that curl connects to the proxy instead of the remote server, and you will see
 that it uses a slightly different request line.
 
-### HTTPS and proxy
+## HTTPS and proxy
 
 HTTPS was designed to allow and provide secure and safe end-to-end privacy
 from the client to the server (and back). In order to provide that when
@@ -100,7 +114,7 @@ breaking the encryption:
 
     curl -x proxy.example.com:80 https://example.com/
 
-### MITM-proxies
+## MITM-proxies
 
 MITM means Man-In-The-Middle. MITM-proxies are usually deployed by companies
 in "enterprise environments" and elsewhere, where the owners of the network
@@ -117,7 +131,7 @@ traffic captured.
 This practice, of course, allows the middle man to decrypt and snoop on
 all TLS traffic.
 
-### Non-HTTP protocols over an HTTP proxy
+## Non-HTTP protocols over an HTTP proxy
 
 An "HTTP proxy" means the proxy itself speaks HTTP. HTTP proxies are primarily
 used to proxy HTTP but it is also fairly common that they support
@@ -134,7 +148,7 @@ not work:
 
 What you can do instead then, is to "tunnel through" the HTTP proxy!
 
-### HTTP proxy tunneling
+## HTTP proxy tunneling
 
 Most HTTP proxies allow clients to "tunnel through" it to a server on the other
 side. That's exactly what's done every time you use HTTPS through the HTTP
@@ -157,7 +171,7 @@ through to a remote server on any port number so you can do other protocols
 You can tell curl to use HTTP/1.0 in its CONNECT request issued to the HTTP
 proxy by using `--proxy1.0 [proxy]` instead of `-x`.
 
-### SOCKS types
+## SOCKS types
 
 SOCKS is a protocol used for proxies and curl supports it. curl supports both
 SOCKS version 4 as well as version 5, and both versions come in two flavors.
@@ -193,7 +207,7 @@ there's no name resolving done locally:
 
     curl --socks5-hostname proxy.example.com http://www.example.com/
 
-### Proxy authentication
+## Proxy authentication
 
 HTTP proxies can require authentication, so curl then needs to provide
 the proper credentials to the proxy to be allowed to use it, and failing to do
@@ -224,7 +238,7 @@ wants is then like this:
 
     curl -U daniel:secr3t -x myproxy:80 http://example.com --proxy-anyauth
 
-### HTTPS to proxy
+## HTTPS to proxy
 
 All the previously mentioned protocols to speak with the proxy are clear text
 protocols, HTTP and the SOCKS versions. Using these methods could allow
@@ -234,7 +248,7 @@ reside.
 One solution for that is to use HTTPS to the proxy, which then establishes a
 secure and encrypted connection that is safe from easy surveillance.
 
-### Proxy environment variables
+## Proxy environment variables
 
 curl checks for the existence of specially named environment variables before
 it runs to see if a proxy is requested to get used.
@@ -264,8 +278,18 @@ hosts.
 As an alternative to the NO_PROXY variable, there's also a `--noproxy` command
 line option that serves the same purpose and works the same way.
 
-### Proxy headers
+## Proxy headers
 
---proxy-header
+When you want to add HTTP headers meant specifically for a proxy and not for
+the remote server, the `--header` option falls short.
 
-TBD
+For example, if you issue a HTTPS request through a HTTP proxy, it will be
+done by first issuing a `CONNECT` to the proxy that establishes a tunnel to
+the remote server and then it sends the request to that server. That first
+`CONNECT` is only issued to the proxy and you may want to make sure only that
+receives your special header, and send another set of custom headers to the
+remote server.
+
+Set a specific different `User-Agent:` only to the proxy:
+
+    curl --proxy-header "User-Agent: magic/3000" -x proxy https://example.com/

@@ -16,8 +16,8 @@ anyone can redistribute curl in source format or built into binary form.
 
 The curl command-line tool and the libcurl library are available for download
 for most operating systems via the curl web site, they are provided via third
-party installers to a bunch and and they come installed by default with yet
-more operating systems. This makes counting downloads from the curl web site
+party installers to a bunch and they come installed by default with even more
+operating systems. This makes counting downloads from the curl web site
 completely inappropriate as a means of measurement.
 
 ### Finding users

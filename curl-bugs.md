@@ -70,7 +70,7 @@ latest commits get a run. This way, we discover the worst flaws pretty soon
 after they were introduced.
 
 We do not test everything and even when we try to test things there will always
-be subtlqe details that get through and that we, sometimes years after the
+be subtle details that get through and that we, sometimes years after the
 fact, figure out were wrong.
 
 Due to the nature of different systems and funny use cases on the Internet,

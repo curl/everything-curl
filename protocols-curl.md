@@ -59,13 +59,15 @@ servers and clients use TCP port 443.
 
 The Internet Message Access Protocol, IMAP, is a protocol for accessing,
 controlling and "reading" email. See RFC 3501. IMAP servers and clients use
-TCP port 143.
+TCP port 143. Whilst connections to the server start out as cleartext, SSL/TLS
+communication may be supported by the client explicitly requesting to upgrade
+the connection using the `STARTTLS` command. See RFC 2595.
 
 ## IMAPS
 
-Secure IMAP is IMAP done over an SSL/TLS connection. Such connections usually
-start out as a "normal" IMAP connection that is then upgraded to IMAPS using
-the `STARTTLS` command.
+Secure IMAP is IMAP done over an SSL/TLS connection. Such connections implicity
+start out using SSL/TLS and as such servers and clients use TCP port 993 to
+communicate with each other. See RFC 8314.
 
 ## LDAP
 
@@ -80,13 +82,16 @@ Secure LDAP is LDAP done over an SSL/TLS connection.
 ## POP3
 
 The Post Office Protocol version 3 (POP3) is a protocol for retrieving email
-from a server. See RFC 1939. POP3 servers and clients use TCP port 110.
+from a server. See RFC 1939. POP3 servers and clients use TCP port 110. Whilst
+connections to the server start out as cleartext, SSL/TLS communication may be
+supported by the client explicitly requesting to upgrade the connection using
+the `STLS` command. See RFC 2595.
 
 ## POP3S
 
-Secure POP3 is POP3 done over an SSL/TLS connection. Such connections usually
-start out as a "normal" POP3 connection that is then upgraded to POP3S using
-the `STARTTLS` command.
+Secure POP3 is POP3 done over an SSL/TLS connection. Such connections implicity
+start out using SSL/TLS and as such servers and clients use TCP port 995 to
+communicate with each other. See RFC 8314.
 
 ## RTMP
 
@@ -120,13 +125,16 @@ nodes on a network. SMB servers and clients use TCP port 445.
 ## SMTP
 
 The Simple Mail Transfer Protocol (SMTP) is a protocol for email
-transmission. See RFC 821. SMTP servers and clients use TCP port 25.
+transmission. See RFC 821. SMTP servers and clients use TCP port 25. Whilst
+connections to the server start out as cleartext, SSL/TLS communication may be
+supported by the client explicitly requesting to upgrade the connection using
+the `STARTTLS` command. See RFC 3207.
 
 ## SMTPS
 
-Secure SMTP is SMTP done over an SSL/TLS connection. Such connections usually
-start out as a "normal" SMTP connection that is then upgraded to SMTPS using
-the `STARTTLS` command.
+Secure SMTP, sometimes called SSMTP, is SMTP done over an SSL/TLS connection.
+Such connections implicity start out using SSL/TLS and as such servers and
+clients use TCP port 465 to communicate with each other. See RFC 8314.
 
 ## TELNET
 

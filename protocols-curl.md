@@ -125,7 +125,7 @@ nodes on a network. SMB servers and clients use TCP port 445.
 ## SMTP
 
 The Simple Mail Transfer Protocol (SMTP) is a protocol for email
-transmission. See RFC 821. SMTP servers and clients use TCP port 25. Whilst
+transmission. See RFC 5321. SMTP servers and clients use TCP port 25. Whilst
 connections to the server start out as cleartext, SSL/TLS communication may be
 supported by the client explicitly requesting to upgrade the connection using
 the `STARTTLS` command. See RFC 3207.

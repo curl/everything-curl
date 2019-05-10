@@ -28,4 +28,4 @@ Or everything in the file starting from index 200:
 
 Get 200 bytes from index 0 *and* 200 bytes from index 1000:
 
-    curl -r 0-199,1000-199 http://example.com/
+    curl -r 0-199,1000-1199 http://example.com/

@@ -19,9 +19,9 @@ mailing lists. Also messages associated with any commits should not make
 any reference to the security nature of the commit if done prior to the public
 announcement.
 
-- The person discovering the issue, the reporter, reports the vulnerability
-  privately to `curl-security@haxx.se`. That's an e-mail alias that reaches a
-  handful of selected and trusted people.
+- The person discovering the issue, the reporter, reports the vulnerability on
+  [https://hackerone.com/curl](https://hackerone.com/curl). Issues filed there
+  reach a handful of selected and trusted people.
 
 - Messages that do not relate to the reporting or managing of an undisclosed
   security vulnerability in curl or libcurl are ignored and no further action
@@ -52,13 +52,16 @@ announcement.
   workarounds and when the fix was released, making sure to credit all
   contributors properly.
 
-- Request a CVE number from
-  [distros@openwall](http://oss-security.openwall.org/wiki/mailing-lists/distros)
-  when also informing and preparing them for the upcoming public security
-  vulnerability announcement—attach the advisory draft for information. Note
-  that 'distros' will not accept an embargo longer than 14 days.
+- Request a CVE number using HackerOne's form for this purpose.
 
 - Update the "security advisory" with the CVE number.
+
+- Consider informing
+  [distros@openwall](https://oss-security.openwall.org/wiki/mailing-lists/distros)
+  to prepare them about the upcoming public security vulnerability
+  announcement - attach the advisory draft for information. Note that
+  'distros' won't accept an embargo longer than 14 days and they do not care
+  for Windows-specific flaws.
 
 - The security team commits the fix in a private branch. The commit message
   should ideally contain the CVE number. This fix is usually also distributed

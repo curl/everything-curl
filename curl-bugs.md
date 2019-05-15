@@ -40,7 +40,7 @@ happen. Tell us exactly what versions of the different components you used and
 take us step by step through what you do to get the problem.
 
 After you submit a bug report, you can expect there to be follow-up
-questions or perhaps requests that you try out varies things and tasks in
+questions or perhaps requests that you try out various things and tasks in
 order for the developer to be able to narrow down the suspects and make sure
 your problem is being cornered in properly.
 

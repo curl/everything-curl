@@ -114,8 +114,8 @@ customizable DNS name resolution operations.
 
 ## Connection timeout
 
-curl will typically make a TCP connection to the host as an initial part of its
-network transfer. This TCP connection can fail or be very slow, if there are
+curl will typically make a TCP connection to the host as an initial part of
+its network transfer. This TCP connection can fail or be slow, if there are
 shaky network conditions or faulty remote servers.
 
 To reduce the impact on your scripts or other use, you can set the maximum time

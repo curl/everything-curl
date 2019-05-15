@@ -2,8 +2,8 @@
 
 Since version 7.62.0, libcurl offers an API for parsing, updating and
 generating URLs. Using this, applications can take advantage of using
-libcurl's URL parser for its own purposes. By using the exact same parser,
-security problems due to different interpretations can be avoided.
+libcurl's URL parser for its own purposes. By using the same parser, security
+problems due to different interpretations can be avoided.
 
 ## Include files
 

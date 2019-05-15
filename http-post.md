@@ -185,9 +185,8 @@ off with curl.
 
 ### Figure out what a browser sends
 
-A very common shortcut is to simply fill in the form with your browser and
-submit it and check in the browser's network development tools exactly what it
-sent.
+A common shortcut is to simply fill in the form with your browser and submit
+it and check in the browser's network development tools exactly what it sent.
 
 A slightly different way is to save the HTML page containing the form, and
 then edit that HTML page to redirect the 'action=' part of the form to your
@@ -202,12 +201,12 @@ browser. See the Wireshark documentation for details on doing that.
 
 ### JavaScript and forms
 
-A very common mitigation against automated "agents" or scripts using curl is
-to have the page with the HTML form use JavaScript to set values of some input
-fields, usually one of the hidden ones. Often, there's some
-JavaScript code that executes on page load or when the submit button is
-pressed which sets a magic value that the server then can verify
-before it considers the submission to be valid.
+A common mitigation against automated "agents" or scripts using curl is to
+have the page with the HTML form use JavaScript to set values of some input
+fields, usually one of the hidden ones. Often, there's some JavaScript code
+that executes on page load or when the submit button is pressed which sets a
+magic value that the server then can verify before it considers the submission
+to be valid.
 
 You can usually work around that by just reading the JavaScript code and redoing
 that logic in your script. Using the above mentioned tricks to check exactly

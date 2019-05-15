@@ -37,9 +37,9 @@ somewhere. In many cases you even logged in a while ago with your browser but
 it has kept the state and keeps you logged in.
 
 The logged-in state is almost always done by using [cookies](http-cookies.md).
-A very common operation would be to first login and save the returned cookies
-in a file, and then let the site update the cookies in the subsequent command
-lines when you traverse the site with curl.
+A common operation would be to first login and save the returned cookies in a
+file, and then let the site update the cookies in the subsequent command lines
+when you traverse the site with curl.
 
 ## Web logins and sessions
 
@@ -92,9 +92,9 @@ on that.
 
 ## Redirects
 
-It is very common for servers to use [redirects](http-redirects.md) when
-responding to a login POST. It is so common I would probably say it is rare
-that it is not solved with a redirect.
+It is common for servers to use [redirects](http-redirects.md) when responding
+to a login POST. It is so common I would probably say it is rare that it is
+not solved with a redirect.
 
 You then just need to remember that curl does not follow redirects
 automatically. You need to instruct it to do this by adding the `-L` command

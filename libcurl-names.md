@@ -8,7 +8,7 @@ many cases it is not easy to manually replace the name with the IP address.
 libcurl tries hard to [re-use an existing
 connection](libcurl-connectionreuse.md) rather than to create a new one. The
 function that checks for an existing connection to use is based purely on the
-name and is performed before any name resolving is attempted.  That's one of
+name and is performed before any name resolving is attempted. That's one of
 the reasons the re-use is so much faster. A transfer using a reused connection
 will not resolve the host name again.
 

@@ -30,7 +30,7 @@ know and keep in mind:
 
  - `result` is the usual name we use for a `CURLcode` variable to hold the
    return values from functions and if that return value is different than
-   zero, it is an error and the function should clean up and return back
+   zero, it is an error and the function should clean up and return
    (usually passing on the same error code to its parent function).
 
 ## Everything is multi

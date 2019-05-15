@@ -55,7 +55,7 @@ like this:
 Another HTTP authentication method is called Digest. One advantage this method
 has compared to Basic, is that it does not send the password over the wire in
 plain text. This is however an authentication method that is rarely spoken by
-browsers and consequently is not a very frequently used one.
+browsers and consequently is not a frequently used one.
 
 You can explicitly tell libcurl to use the Digest method for a specific
 transfer like this (it still needs user name and password set as well):

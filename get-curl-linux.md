@@ -6,23 +6,52 @@ be installed if they aren't installed by default.
 
 ## Ubuntu and Debian
 
-Install curl:
+`apt` is a tool to install prebuilt packages on Debian Linux and Ubuntu Linux
+distributions and derivatives.
 
-    sudo apt-get install curl
+To install the curl command-line tool, you usually just
 
-Install libcurl (for development):
+    apt install curl
 
-    sudo apt-get install libcurl4-openssl-dev
+…and that then makes sure the dependencies are installed and usually
+libcurl is then also installed as an individual package.
+
+If you want to build applications against libcurl, you need a development
+package installed to get the include headers and some additional
+documentation, etc. You can then select a libcurl with the TLS backend you
+prefer:
+
+    apt install libcurl4-openssl-dev
+
+or
+
+    apt install libcurl4-nss-dev
+
+or
+
+    apt install libcurl4-gnutls-dev
 
 ## Redhat and Centos
 
-Install curl:
+With Redhat Linux and CentOS Linux derivatives, you use `yum` to install
+packages. Install the command-line tool with:
 
-    sudo yum install curl
+    yum install curl
 
-Install libcurl (for development):
+You install the libcurl development package (with include files and some docs,
+etc.) with this:
 
-    sudo yum install libcurl-devel
+    yum install libcurl-devel
+
+
+### nix
+
+[Nix](https://nixos.org/nix/) is a package manager default to the NixOS
+distribution, but it can also be used on any Linux distribution.
+
+In order to install command-line tool:
+
+    nix-env -i curl
 
 ## Arch Linux
 

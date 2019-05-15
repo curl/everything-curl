@@ -83,7 +83,6 @@
     * [HTTP cheat sheet](http-cheatsheet.md)
     * [Scripting browser-like tasks](http-browserlike.md)
 * [Building and installing](building.md)
-    * [Installing prebuilt binaries](building-binary.md)
     * [Build from source](building-source.md)
     * [Dependencies](building-deps.md)
     * [TLS libraries](building-tls.md)

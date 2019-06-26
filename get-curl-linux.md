@@ -55,7 +55,12 @@ In order to install command-line tool:
 
 ## Arch Linux
 
-TBD
+curl is located in the core repository of Arch Linux. This means it should be 
+installed automatically if you follow the normal installation procedure.
+
+If curl is not installed, Arch Linux uses `pacman` to install packages:
+    
+    pacman -S curl
 
 ## Other distros
 

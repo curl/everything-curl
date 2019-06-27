@@ -278,6 +278,22 @@ hosts.
 As an alternative to the NO_PROXY variable, there's also a `--noproxy` command
 line option that serves the same purpose and works the same way.
 
+## http_proxy in lower case only
+
+The HTTP version of the proxy environment variables is treated differently
+than the others. It is only accepted in its lower case version because of the
+CGI protocol, which lets users run scripts in a server when invoked by an HTTP
+server. When a CGI script is invoked by a server, it automatically creates
+environment variables for the script based on the incoming headers in the
+request. Those environment variables are prefixed with uppercase `HTTP_'!
+
+An incoming request to a HTTP server using a request header like `Proxy: yada`
+will therefore create the environment variable `HTTP_PROXY` set to contain
+`yada` before the CGI script is started. If that CGI script runs curl...
+
+Accepting the upper case version of this environment variable has been the
+source for many security problems in lots of software through times.
+
 ## Proxy headers
 
 When you want to add HTTP headers meant specifically for a proxy and not for

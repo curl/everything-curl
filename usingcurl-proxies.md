@@ -285,7 +285,7 @@ than the others. It is only accepted in its lower case version because of the
 CGI protocol, which lets users run scripts in a server when invoked by an HTTP
 server. When a CGI script is invoked by a server, it automatically creates
 environment variables for the script based on the incoming headers in the
-request. Those environment variables are prefixed with uppercase `HTTP_'!
+request. Those environment variables are prefixed with uppercase `HTTP_`!
 
 An incoming request to a HTTP server using a request header like `Proxy: yada`
 will therefore create the environment variable `HTTP_PROXY` set to contain

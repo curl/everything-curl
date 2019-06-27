@@ -65,6 +65,7 @@
 /etc/hosts
 <curl/curl.h>
 ALPN
+Arch Linux
 BoringSSL
 C89
 CA
@@ -196,6 +197,7 @@ TELNET
 TLS
 TODO
 URL Globbing
+Ubuntu
 Vulnerability
 Wireshark
 Write callback

@@ -1,7 +1,7 @@
 # Name resolving
 
 Most transfers libcurl can do involves a name that first needs to be
-translated to an internet address. That's "name resolving". Using a numerical
+translated to an Internet address. That's "name resolving". Using a numerical
 IP address directly in the URL usually avoids the name resolve phase, but in
 many cases it is not easy to manually replace the name with the IP address.
 

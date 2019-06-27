@@ -8,8 +8,9 @@ world to download.
 It is one single source code archive for all platforms curl can run on. It is
 the one and only package for both curl and libcurl.
 
-We never ship any curl or libcurl _binaries_ from the project. All the
-packaged binaries that are provided with operating systems or on other
+We never ship any curl or libcurl _binaries_ from the project with one
+exception: we host official curl binaries built for Windows users. All the
+othrt packaged binaries that are provided with operating systems or on other
 download sites are done by gracious volunteers outside of the project.
 
 As of a few years back, we make an effort to do our releases on an eight week
@@ -20,7 +21,7 @@ weeks later and so it continues. Non-stop.
 For every release we tag the source code in the repository with "curl-release
 version" and we update the [changelog](https://curl.haxx.se/changes.html).
 
-We had done 172 curl releases by January 2018, and for all the ones made
+We had done 182 curl releases by June 2019, and for all the ones made
 since late 1999 there are lots of release stats available in our [curl release
 log](https://curl.haxx.se/docs/releases.html).
 

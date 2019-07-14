@@ -111,6 +111,6 @@ use of authentication, you can force that behavior by adding `CURLAUTH_ONLY`
 to the bitmask.
 
 Ask to use digest, but nothing else but digest, and only if proven really
-necesary:
+necessary:
 
     curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST | CURLAUTH_ONLY);

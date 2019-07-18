@@ -7,7 +7,7 @@ how long it has been going on and how long it thinks it might be left until
 completion.
 
 The progress meter is inhibited if curl deems that there is output going to
-the terminal, as then would the progress meter interfere with that output and
+the terminal, as the progress meter would interfere with that output and
 just mess up what gets displayed. A user can also forcibly switch off the
 progress meter with the `-s / --silent` option, which tells curl to hush.
 

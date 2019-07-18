@@ -1,6 +1,6 @@
 ## Passwords and snooping
 
-Passwords are tricky and sensitive. Leaking a password can make someone else
+Passwords are tricky and sensitive. Leaking a password can make someone other
 than you access the resources and the data otherwise protected.
 
 curl offers several ways to receive passwords from the user and then

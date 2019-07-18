@@ -36,7 +36,7 @@ example, it makes curl use HTTP Basic authentication and that is completely
 insecure.
 
 There are several ways to avoid this, and the key is, of course, then to avoid
-protocols or authentication schemes that sends credentials in the plain over
+protocols or authentication schemes that sends credentials in plain text over
 the network. Easiest is perhaps to make sure you use encrypted versions of
 protocols. Use HTTPS instead of HTTP, use FTPS instead of FTP and so on.
 

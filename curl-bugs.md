@@ -54,7 +54,7 @@ github](https://github.com/curl/curl/issues)!
 ## Testing
 
 Testing software thoroughly and properly is a lot of work. Testing software
-that runs on dozens on operating systems and dozens of CPU architectures, with
+that runs on dozens of operating systems and dozens of CPU architectures, with
 server implementations with their owns sets of bugs and interpretations of the
 specs, is even more work.
 

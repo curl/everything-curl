@@ -10,7 +10,7 @@ the one and only package for both curl and libcurl.
 
 We never ship any curl or libcurl _binaries_ from the project with one
 exception: we host official curl binaries built for Windows users. All the
-othrt packaged binaries that are provided with operating systems or on other
+other packaged binaries that are provided with operating systems or on other
 download sites are done by gracious volunteers outside of the project.
 
 As of a few years back, we make an effort to do our releases on an eight week

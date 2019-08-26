@@ -69,8 +69,8 @@ sub single {
             $w =~ s/[,\.\`\']//g;
             $w = folded($w);
             if($index{$w}) {
-                if(!$word{$w}{$url}) {
-                    $word{$w}{$url}++;
+                if(!$word{$w}{$fname}) {
+                    $word{$w}{$fname}++;
                     $all{$w} .= ($all{$w}?", ":"")."[$section]($url)";
                 }
             }
@@ -78,9 +78,9 @@ sub single {
         # check longer words
         foreach my $w (@lwords) {
             if(folded($l) =~ /$w/) {
-                if(!$word{$w}{$url}) {
+                if(!$word{$w}{$fname}) {
                     #print " $w ($url)\n";
-                    $word{$w}{$url}++;
+                    $word{$w}{$fname}++;
                     $all{$w} .= ($all{$w}?", ":"")."[$section]($url)";
                 }
             }

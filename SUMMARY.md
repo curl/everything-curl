@@ -85,6 +85,8 @@
     * [HTTP PUT](http-put.md)
     * [Cookies](http-cookies.md)
     * [HTTP/2](http-http2.md)
+    * [Alternative Services](http-altsvc.md)
+    * [HTTP/3](http-http3.md)
     * [HTTP cheat sheet](http-cheatsheet.md)
     * [Scripting browser-like tasks](http-browserlike.md)
 * [libcurl basics](libcurl.md)

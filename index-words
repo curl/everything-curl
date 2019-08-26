@@ -13,6 +13,10 @@
 --ftp-skip-pasv-ip
 --get
 --header
+--http1.1
+--http2
+--http2-prior-knowledge
+--http3
 --keepalive-time
 --libcurl
 --limit-rate
@@ -159,6 +163,7 @@ HTTP ranges
 HTTP redirects
 HTTP/1.1
 HTTP/2
+HTTP/3
 Header callback
 Host:
 HttpGet

@@ -70,7 +70,6 @@ sub single {
             $w = folded($w);
             if($index{$w}) {
                 if(!$word{$w}{$url}) {
-                    #print " $w ($url)\n";
                     $word{$w}{$url}++;
                     $all{$w} .= ($all{$w}?", ":"")."[$section]($url)";
                 }

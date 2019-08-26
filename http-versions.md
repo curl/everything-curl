@@ -20,8 +20,9 @@ If the default is not good enough for your transfer, the
 
 | Option                              | Description |
 |-------------------------------------|-------------|
-| [default]                           | fill in
-| --http1.0                           | fill in
-| --http1.1                           | fill in
-| --http2                             | fill in
-| --http2-prior-knowledge             | fill in
+| [default]                           |
+| --http1.0                           | HTTP/1.0
+| --http1.1                           | HTTP/1.1
+| --http2                             | [HTTP/2](http-http2.md)
+| --http2-prior-knowledge             | HTTP/2
+| --http3                             | [HTTP/3](http-http3.md)

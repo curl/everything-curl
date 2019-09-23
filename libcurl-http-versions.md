@@ -26,3 +26,4 @@ If the default behavior is not good enough for your transfer, the
 | CURL_HTTP_VERSION_2_0               | Attempt to use HTTP/2
 | CURL_HTTP_VERSION_2TLS              | Attempt to use HTTP/2 on HTTPS connections only, otherwise do HTTP/1.1
 | CURL_HTTP_VERSION_2_PRIOR_KNOWLEDGE | Use HTTP/2 straight away without "upgrading" from 1.1. It requires that you know that this server is OK with it.
+| CURL_HTTP_VERSION_3 | Use HTTP/3 straight away. It requires that you know that this server is OK with it.

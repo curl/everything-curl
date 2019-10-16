@@ -2,11 +2,11 @@
 
 Creative people have written bindings or interfaces for various environments
 and programming languages. Using one of these allows you to take advantage of
-curl powers from within your favorite language or system. This is a list of
-all known interfaces as of this writing.
+the power of curl from within your favorite language or system. This is a list of
+all known interfaces, as of the time of this writing.
 
 The bindings listed below are not part of the curl/libcurl distribution
-archives, but must be downloaded and installed separately.
+archives. They must be downloaded and installed separately.
 
 | Language | Site | Author\(s\) |
 | :--- | :--- | :--- |

@@ -37,8 +37,8 @@ what you want. That's also why virtually all curl options that allow reading fro
 a file or writing to a file, also have the ability to select doing it to stdout
 or from stdin.
 
-Following that style of what Unix command-line tools worked, it was also never
-any question about that it should support multiple URLs on the command line.
+Following the Unix style of how command-line tools work, there was also never
+any question about whether curl should support multiple URLs on the command line.
 
 The command-line tool is designed to work perfectly from scripts or other
 automatic means. It does not feature any other GUI or UI other than mere text

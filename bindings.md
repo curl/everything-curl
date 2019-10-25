@@ -33,7 +33,7 @@ archives. They must be downloaded and installed separately.
 | Lua-cURL | <https://github.com/Lua-cURL/Lua-cURLv3> | Jürgen Hötzel, Alexey Melnichuk |
 | .NET | <https://github.com/masroore/CurlSharp> | Masroor Ehsan Choudhury, Jeffrey Phillips |
 | NodeJS | <https://github.com/JCMais/node-libcurl> | Jonathan Cardoso Machado |
-| OCaml | <https://sourceforge.net/projects/ocurl/> | Lars Nilsson |
+| OCaml | <http://ygrek.org.ua/p/ocurl/> | Lars Nilsson |
 | Pascal/Delphi/Kylix | <https://curlpas.sourceforge.io/curlpas/> | Jeffrey Pohlmeyer. |
 | Perl | <https://github.com/szbalint/WWW--Curl> | Cris Bailiff and Bálint Szilakszi |
 | PHP | <https://php.net/curl> | Sterling Hughes |

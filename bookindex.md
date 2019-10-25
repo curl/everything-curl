@@ -171,8 +171,8 @@
  - HTTP ranges: [HTTP ranges](http-ranges.md#http-ranges), [HTTP ranges](libcurl-http-ranges.md#http-ranges)
  - HTTP redirects: [Short options](cmdline-options.md#short-options), [Available exit codes](usingcurl-returns.md#available-exit-codes), [HTTP redirects](http-redirects.md#http-redirects), [Submit a login form over HTTP](libcurlex-login.md#submit-a-login-form-over-http)
  - HTTP/1.1: [HTTP](protocols-curl.md#http), [Verbose mode](usingcurl-verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl-trace.md#trace-and---trace-ascii), [HTTP protocol basics](http-basics.md#http-protocol-basics), [HTTP versions](http-versions.md#http-versions), [The HTTP this generates](http-multipart.md#the-http-this-generates), [GET or POST?](http-redirects.md#get-or-post?), [Request method](http-requests.md#request-method), [HTTP/2](http-http2.md#http/2), [Customize HTTP request headers](libcurl-http-requests.md#customize-http-request-headers), [HTTP versions](libcurl-http-versions.md#http-versions)
- - HTTP/2: [docs](sourcecode-layout.md#docs), [nghttp2](building-deps.md#nghttp2), [HTTP](protocols-curl.md#http), [HTTP/2](usingcurl-verbose.md#http/2), [Available exit codes](usingcurl-returns.md#available-exit-codes), [HTTP versions](http-versions.md#http-versions), [GET or POST?](http-redirects.md#get-or-post?), [HTTP/2](http-http2.md#http/2), [HTTP/3](http-altsvc.md#http/3), [DNS over HTTPS](libcurl-names.md#dns-over-https), [HTTP versions](libcurl-http-versions.md#http-versions)
- - HTTP/3: [HTTP/3](http-altsvc.md#http/3), [HTTP/3](http-http3.md#http/3)
+ - HTTP/2: [docs](sourcecode-layout.md#docs), [nghttp2](building-deps.md#nghttp2), [HTTP/2](usingcurl-verbose.md#http/2), [Available exit codes](usingcurl-returns.md#available-exit-codes), [HTTP versions](http-versions.md#http-versions), [GET or POST?](http-redirects.md#get-or-post?), [HTTP/2](http-http2.md#http/2), [HTTP/3](http-altsvc.md#http/3), [DNS over HTTPS](libcurl-names.md#dns-over-https), [HTTP versions](libcurl-http-versions.md#http-versions)
+ - HTTP/3: [HTTP/3](http-altsvc.md#http/3), [HTTP/3](http-http3.md#http/3), [HTTP versions](libcurl-http-versions.md#http-versions)
  - --http1.1: [HTTP versions](http-versions.md#http-versions)
  - --http2: [HTTP versions](http-versions.md#http-versions), [HTTP/2](http-http2.md#http/2)
  - --http2-prior-knowledge: [HTTP versions](http-versions.md#http-versions), [HTTP/2](http-http2.md#http/2)
@@ -207,8 +207,8 @@
  - --max-filesize: [Maximum filesize](usingcurl-downloads.md#maximum-filesize)
  - --max-time: [Retrying failed attempts](usingcurl-downloads.md#retrying-failed-attempts), [Maximum time allowed to spend](usingcurl-timeouts.md#maximum-time-allowed-to-spend)
  - MesaLink: [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library)
- - --metalink: [Metalink](usingcurl-downloads.md#metalink)
  - Metalink: [Metalink](usingcurl-downloads.md#metalink)
+ - --metalink: [Metalink](usingcurl-downloads.md#metalink)
  - MIT: [License](opensource-license.md#license)
  - MITM-proxies: [MITM-proxies](usingcurl-proxies.md#mitm-proxies)
  - multi-threading: [libcurl multi-threading](libcurl-threading.md#libcurl-multi-threading)
@@ -229,6 +229,8 @@
  - OpenSSL: [lib/vtls](sourcecode-layout.md#lib/vtls), [Select TLS backend](building-source.md#select-tls-backend), [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library), [OCSP stapling](usingcurl-tls.md#ocsp-stapling), [Proxy types](libcurl-proxies.md#proxy-types), [Available information](libcurl-getinfo.md#available-information)
 ## P
  - PAC: [PAC](usingcurl-proxies.md#pac), [Which proxy?](libcurl-proxies.md#which-proxy?)
+ - --parallel: [Do the transfers in parallel](cmdline-urls.md#do-the-transfers-in-parallel)
+ - --parallel-max: [Do the transfers in parallel](cmdline-urls.md#do-the-transfers-in-parallel)
  - Percent-encoding: [URL encoding](http-post.md#url-encoding)
  - pop3: [What protocols does curl support?](protocols-protocols.md#what-protocols-does-curl-support?), [POP3](protocols-curl.md#pop3), [Without scheme](cmdline-urls.md#without-scheme), [Supported protocols](usingcurl.md#supported-protocols), [Verbose mode](usingcurl-verbose.md#verbose-mode), [Available exit codes](usingcurl-returns.md#available-exit-codes), [Reading email](usingcurl-reademail.md#reading-email), [Secure mail transfer](usingcurl-smtp.md#secure-mail-transfer), [Enable TLS](usingcurl-tls.md#enable-tls), [STARTTLS](libcurl-tlsoptions.md#starttls)
  - port number: [Connects to "port numbers"](protocols-network.md#connects-to-"port-numbers"), [Port number](cmdline-urls.md#port-number), [Available --write-out variables](usingcurl-writeout.md#available---write-out-variables), [Provide a replacement name](usingcurl-connections.md#provide-a-replacement-name), [HTTP](usingcurl-proxies.md#http), [Available exit codes](usingcurl-returns.md#available-exit-codes), [The URL converted to a request](http-basics.md#the-url-converted-to-a-request), [Enable](http-http3.md#enable), [Connection reuse](libcurl-connectionreuse.md#connection-reuse), [Custom addresses for hosts](libcurl-names.md#custom-addresses-for-hosts), [Proxies](libcurl-proxies.md#proxies), [Post transfer info](libcurl-getinfo.md#post-transfer-info)
@@ -323,9 +325,10 @@
  - Write callback: [Write callback](callback-write.md#write-callback), [Get a HTML page in memory](libcurlex-getinmem.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http-responses.md#http-responses)
  - --write-out: [--write-out](usingcurl-writeout.md#write-out), [HTTP response codes](http-response.md#http-response-codes)
 ## X
- - -X: [Request method](http-requests.md#request-method), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - -x: [HTTP](usingcurl-proxies.md#http), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl-proxies.md#proxy-environment-variables)
+ - -X: [Request method](http-requests.md#request-method), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
 ## Y
  - yum: [Redhat and Centos](get-curl-linux.md#redhat-and-centos)
 ## Z
+ - -Z: [Do the transfers in parallel](cmdline-urls.md#do-the-transfers-in-parallel)
  - zlib: [zlib](building-deps.md#zlib)

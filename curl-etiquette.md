@@ -104,7 +104,7 @@ Many people mail questions to the list, people spend some of their time and
 make an effort in providing good answers to these questions.
 
 If you are the one who asks, please consider responding once more in case one
-of the hints was what solved your problems. The guys who write answers feel
+of the hints was what solved your problems. Those who write answers feel
 good to know that they provided a good answer and that you fixed the
 problem. Far too often, the person who asked the question is never heard of
 again, and we never get to know if he/she is gone because the problem was

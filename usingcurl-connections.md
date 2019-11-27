@@ -17,7 +17,7 @@ Maybe you want the command `curl http://example.com` to connect to your local
 server instead of the actual server.
 
 You can normally and easily do that by editing your `hosts` file (`/etc/hosts`
-on Linux and Unix systems) and adding, for example, `127.0.0.1 example.com` to
+on Linux and Unix-like systems) and adding, for example, `127.0.0.1 example.com` to
 redirect the host to your localhost. However this edit requires admin access and
 it has the downside that it affects all other applications at the same time.
 

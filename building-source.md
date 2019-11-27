@@ -27,7 +27,7 @@ repository, because they are generated and there is no need to
 store them in git.
 
 So, if you want to build curl from git you need to generate some of those
-files yourself before you can build. On Linux and Unix systems, do this by
+files yourself before you can build. On Linux and Unix-like systems, do this by
 running `./buildconf` and on Windows you run `buildconf.bat`.
 
 ## On Linux and Unix-like systems

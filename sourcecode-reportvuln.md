@@ -52,7 +52,7 @@ announcement.
   workarounds and when the fix was released, making sure to credit all
   contributors properly.
 
-- Request a CVE number using HackerOne's form for this purpose.
+- Request a CVE number ([Common Vulnerabilities and Exposures](https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures)) using HackerOne's form for this purpose.
 
 - Update the "security advisory" with the CVE number.
 

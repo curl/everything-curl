@@ -15,7 +15,7 @@ when you download these files are the same bytes in the same order as were
 originally uploaded there by the curl team.
 
 If you instead would rather work directly with the curl source code off our source
-code repository, you find all details in [the curl github
+code repository, you find all details in [the curl Github
 repository](https://github.com/curl/curl/).
 
 ## Clone the code

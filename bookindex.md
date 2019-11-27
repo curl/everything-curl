@@ -252,7 +252,7 @@
  - RELEASE-NOTES: [scripts](sourcecode-layout.md#scripts)
  - releases: [1. [The cURL project](curl.md)](how.md#1.-[the-curl-project](curl.md)), [curl-announce](curl-maillists.md#curl-announce), [Releases](curl-releases.md#releases), [scripts](sourcecode-layout.md#scripts), [Verbose mode](usingcurl-verbose.md#verbose-mode), [Which libcurl version](libcurl-api.md#which-libcurl-version)
  - --remote-name-all: [Use the URL's file name part for all URLs](usingcurl-downloads.md#use-the-url's-file-name-part-for-all-urls)
- - repository: [Releases](curl-releases.md#releases), [Arch Linux](get-curl-linux.md#arch-linux), [Source code on github](opensource-devel.md#source-code-on-github), [Hosting and download](sourcecode.md#hosting-and-download), [root](sourcecode-layout.md#root), [What to add](sourcecode-contributing.md#what-to-add), [Web site source code](sourcecode-web.md#web-site-source-code), [git vs tarballs](building-source.md#git-vs-tarballs)
+ - repository: [Releases](curl-releases.md#releases), [Arch Linux](get-curl-linux.md#arch-linux), [Source code on Github](opensource-devel.md#source-code-on-github), [Hosting and download](sourcecode.md#hosting-and-download), [root](sourcecode-layout.md#root), [What to add](sourcecode-contributing.md#what-to-add), [Web site source code](sourcecode-web.md#web-site-source-code), [git vs tarballs](building-source.md#git-vs-tarballs)
  - --resolve: [Provide a custom IP address for a name](usingcurl-connections.md#provide-a-custom-ip-address-for-a-name)
  - RFC 1436: [GOPHER](protocols-curl.md#gopher)
  - RFC 1738: [FILE](protocols-curl.md#file), [multicwd](ftp-traversedir.md#multicwd)

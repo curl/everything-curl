@@ -59,7 +59,7 @@ to make this document better over time.
 Preferably, you could submit
 [errors](https://github.com/bagder/everything-curl/issues) or [pull
 requests](https://github.com/bagder/everything-curl/pulls) on the book's
-github page.
+Github page.
 
 ## Helpers
 
@@ -74,7 +74,7 @@ Carlton Gibson,
 Chris DeLuca,
 Citizen Esosa,
 Dan Fandrich,
-DrDoom74 at github,
+DrDoom74 at Github,
 Emil Hessman,
 Frank Hassanabad,
 Gautham B A,
@@ -96,7 +96,7 @@ Wieland Hoffmann,
 alawvt,
 bookofportals,
 ethomag,
-infinnovation-dev on github,
+infinnovation-dev on Github,
 mehandes
 
 ## License

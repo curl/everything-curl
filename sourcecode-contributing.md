@@ -150,8 +150,12 @@ ask you to use:
     [whatever-else-by: credit all helpers, finders, doers]
 
 Do not forget to use `git commit --author="Jane Doe <jane@example.com>"` if
-you commit someone else's work, and make sure that you have your own user and
-e-mail setup correctly in git before you commit.
+you commit someone else's work, and make sure that you have your own Github username and
+e-mail setup correctly in git before you commit via commands below:
+
+    git config --global user.name "johndoe"
+    git config --global user.email "johndoe@example.com"
+
 
 The author and the \*-by: lines are, of course, there to make sure we give the
 proper credit in the project. We do not want to take someone else's work

@@ -168,7 +168,7 @@ To create a subdir for the build and run make in there:
 ## On Windows
 
 You can build curl on Windows in several different ways. We recommend using
-the MSVC compiler from Microsoft or the free and open mingw compiler. The
+the MSVC compiler from Microsoft or the free and open source mingw compiler. The
 build process is however not limited to these.
 
 ### nmake

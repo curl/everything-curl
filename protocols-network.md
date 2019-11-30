@@ -2,7 +2,7 @@
 
 Networking means communicating between two endpoints on the Internet. The
 Internet is just a bunch of interconnected machines (computers really), each
-using their own private addresses (called IP addresses). The addresses each
+using their own private addresses (called [IP addresses](https://en.wikipedia.org/wiki/IP_address)). The addresses each
 machine have can be of different types and machines can even have temporary
 addresses. These computers are often called hosts.
 

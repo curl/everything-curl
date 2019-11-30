@@ -42,7 +42,7 @@ exist.
 ### Establish a connection
 
 With a list of IP addresses for the host curl wants to contact, curl sends out
-a "connect request". The connection curl wants to establish is called TCP and
+a "connect request". The connection curl wants to establish is called TCP ([Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)) and
 it works sort of like connecting an invisible string between two
 computers. Once established, it can be used to send a stream of data in both
 directions.

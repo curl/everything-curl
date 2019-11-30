@@ -28,7 +28,7 @@ Once we know the host name, we need to figure out which IP addresses that host
 has so that we can contact it.
 
 Converting the name to an IP address is often called 'name resolving'. The name
-is "resolved" to a set of addresses. This is usually done by a "DNS
+is "resolved" to one or a set of addresses. This is usually done by a "DNS
 server", DNS being like a big lookup table that can convert names to
 addresses—all the names on the Internet, really. Your computer normally
 already knows the address of a computer that runs the DNS server as that is

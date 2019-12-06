@@ -37,7 +37,7 @@ TBD: screenshots of how to find proxy settings in Firefox and Chrome?
 
 Some network environments provides several different proxies that should be
 used in different situations, and a customizable way to handle that is
-supported by the browsers. This is called "proxy auto-config", or PAC.
+supported by the browsers. This is called "[proxy auto-config](https://en.wikipedia.org/wiki/Proxy_auto-config)", or PAC.
 
 A PAC file contains a JavaScript function that decides which proxy a given
 network connection (URL) should use, and even if it should not use a proxy at

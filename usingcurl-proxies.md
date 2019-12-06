@@ -31,7 +31,9 @@ settings tab, you can learn what proxy or proxies your browser is configured
 to use. Chances are big that you should use the same one or ones when you use
 curl.
 
-TBD: screenshots of how to find proxy settings in Firefox and Chrome?
+As an example, you can find [proxy settings for Firefox browser](https://support.mozilla.org/en-US/kb/connection-settings-firefox) in Preferences => General => Network Settings as shown below:
+
+![proxy settings for Firefox](proxy-firefox-screenshot.png)
 
 ## PAC
 

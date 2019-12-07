@@ -173,17 +173,16 @@ and push changes and host them online and build their own curl versions from
 and so on, but in order to get changes into the *official* repository they need
 to be pushed by a trusted person.
 
-The core team is a small set of curl developers who have been around for a
-several years and that have shown that they are skilled developers and that
-they fully comprehend the values and the style of development we do in this
-project. They are some of the people listed in the [The development
-team](curl-devteam.md) section.
+The core team is a small set of curl developers who have been around for
+several years and have shown they are skilled developers and that they fully
+comprehend the values and the style of development we do in this project. They
+are some of the people listed in the [The development team](curl-devteam.md)
+section.
 
-You can always bring a discussion to the mailing list and motivation why you
-think your changes should get accepted, or perhaps even object to other
-changes that are getting in and so forth. You can even suggest yourself or
-someone else to be given "push rights" and become one of the selected few in
-that team.
+You can always bring a discussion to the mailing list and argue why you think
+your changes should get accepted, or perhaps even object to other changes that
+are getting in and so forth. You can even suggest yourself or someone else to
+be given "push rights" and become one of the selected few in that team.
 
 Daniel remains the project leader and while it is rarely needed, he has the
 final say in debates that do not seem to sway in either direction or fail to

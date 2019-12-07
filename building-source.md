@@ -119,8 +119,10 @@ command line options.
 The default OpenSSL configure check will also detect and use BoringSSL or
 libressl.
 
+ - BearTLS: `--without-ssl --with-bearssl`.
  - BoringSSL: - by default
  - GnuTLS: `--without-ssl --with-gnutls`.
+ - MesaLink: `--without-ssl --with-mesalink`.
  - NSS: `--without-ssl --with-nss`
  - OpenSSL: - by default
  - PolarSSL: `--without-ssl --with-polarssl`
@@ -193,27 +195,3 @@ TBD
 ## Porting curl to non-supported systems
 
 TBD
-
-## Select TLS backend
-
-The configure based build offers the user to select from a wide variety of
-different TLS libraries when building. You select them by using the correct
-command line options.
-
-The default OpenSSL configure check will also detect and use BoringSSL or
-libressl.
-
- - BoringSSL: - by default
- - GnuTLS: `--without-ssl --with-gnutls`.
- - NSS: `--without-ssl --with-nss`
- - OpenSSL: - by default
- - PolarSSL: `--without-ssl --with-polarssl`
- - Wolfssl: `--without-ssl --with-wolfssl`
- - libressl: - by default
- - mbedTLS: `--without-ssl --with-mbedtls`
- - schannel: `--without-ssl --with-schannel` (formerly `--with-winssl`)
- - secure transport: `--without-ssl --with-darwinssl`
-
-All the `--with-*` options also allow you to provide the install prefix so
-that configure will search for the specific library where you tell it to.
-

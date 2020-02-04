@@ -15,8 +15,8 @@ that it can decrypt them:
 choice before you start the browser or curl
 
 2. Setting the same file name path in the Master-secret field in Wireshark. Go
-to Preferences->Protocols->SSL and edit the path as shown in the screenshot
-below.
+to Preferences->Protocols->TLS (SSL in older versions) and edit the path as
+shown in the screenshot below.
 
 ![set the ssl key file name](wireshark-ssl-master-secret.png)
 

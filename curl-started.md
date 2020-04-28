@@ -12,7 +12,7 @@ In order to have the provided exchange rates as accurate as possible, the bot
 would download the rates daily from a web site that was hosting them. A small
 tool to download data over HTTP was needed for this task. A quick look-around
 at the time had Daniel find a tiny tool named httpget (written by a Brazilian
-named Rafael Sagula). It did the job, almost, just needed a few little a tweaks
+named Rafael Sagula). It did the job, almost, just needed a few little tweaks
 here and there and soon Daniel had taken over maintenance of the few hundred
 lines of code it was.
 

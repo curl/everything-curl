@@ -56,7 +56,7 @@
  - CURLOPT_DNS_LOCAL_IP4: [Name server options](libcurl-names.md#name-server-options)
  - CURLOPT_DNS_LOCAL_IP6: [Name server options](libcurl-names.md#name-server-options)
  - CURLOPT_DNS_SERVERS: [Name server options](libcurl-names.md#name-server-options)
- - CURLOPT_DNS_USE_GLOBAL_CACHE: [Global DNS cache is bad](libcurl-names.md#global-dns-cache-is-bad)
+ - CURLOPT_DNS_USE_GLOBAL_CACHE: [No global DNS cache](libcurl-names.md#no-global-dns-cache)
  - CURLOPT_ERRORBUFFER: [curl --libcurl](libcurl--libcurl.md#curl---libcurl), [CURLcode return code](libcurl-curlcode.md#curlcode-return-code)
  - CURLOPT_FAILONERROR: [About HTTP response code "errors"](libcurl-http-responses.md#about-http-response-code-"errors")
  - CURLOPT_HEADER: [Write callback](callback-write.md#write-callback), [Referrer](libcurl-http-requests.md#referrer), [Download headers too](libcurl-http-download.md#download-headers-too)
@@ -157,7 +157,7 @@
  - --ftp-pasv: [Passive connections](ftp-twoconnections.md#passive-connections)
  - --ftp-port: [Available exit codes](usingcurl-returns.md#available-exit-codes), [Active connections](ftp-twoconnections.md#active-connections)
  - --ftp-skip-pasv-ip: [Passive connections](ftp-twoconnections.md#passive-connections)
- - future: [Project communication](curl-comm.md#project-communication), [Future](curl-future.md#future), [docs](sourcecode-layout.md#docs), [curl-security@haxx.se](sourcecode-reportvuln.md#curl-security@haxx.se), [What other protocols are there?](protocols-protocols.md#what-other-protocols-are-there?), ["Not used"](usingcurl-returns.md#"not-used"), [Cookies](http-cookies.md#cookies), [Multiplexing](http-http2.md#multiplexing), [When QUIC is denied](http-http3.md#when-quic-is-denied), [Global DNS cache is bad](libcurl-names.md#global-dns-cache-is-bad), [API compatibility](libcurl-api.md#api-compatibility)
+ - future: [Project communication](curl-comm.md#project-communication), [Future](curl-future.md#future), [docs](sourcecode-layout.md#docs), [curl-security@haxx.se](sourcecode-reportvuln.md#curl-security@haxx.se), [What other protocols are there?](protocols-protocols.md#what-other-protocols-are-there?), ["Not used"](usingcurl-returns.md#"not-used"), [Cookies](http-cookies.md#cookies), [Multiplexing](http-http2.md#multiplexing), [When QUIC is denied](http-http3.md#when-quic-is-denied), [API compatibility](libcurl-api.md#api-compatibility)
 ## G
  - --get: [Convert that to a GET](http-post.md#convert-that-to-a-get)
  - git: [Daily snapshots](curl-releases.md#daily-snapshots), [Clone the code](sourcecode.md#clone-the-code), [root](sourcecode-layout.md#root), [git](sourcecode-contributing.md#git), [Web site source code](sourcecode-web.md#web-site-source-code), [git vs tarballs](building-source.md#git-vs-tarballs), [build boringssl](building-boringssl.md#build-boringssl)
@@ -313,8 +313,8 @@
  - --trace-time: [--trace-time](usingcurl-trace.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http-response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http-post.md#chunked-encoded-posts)
 ## U
- - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [HTTP authentication](http-auth.md#http-authentication), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - -U: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
+ - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [HTTP authentication](http-auth.md#http-authentication), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - Ubuntu: [Ubuntu and Debian](get-curl-linux.md#ubuntu-and-debian)
  - URL Globbing: [URL globbing](cmdline-globbing.md#url-globbing)
 ## V
@@ -325,8 +325,8 @@
  - Write callback: [Write callback](callback-write.md#write-callback), [Get a HTML page in memory](libcurlex-getinmem.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http-responses.md#http-responses)
  - --write-out: [--write-out](usingcurl-writeout.md#write-out), [HTTP response codes](http-response.md#http-response-codes)
 ## X
- - -x: [HTTP](usingcurl-proxies.md#http), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl-proxies.md#proxy-environment-variables)
  - -X: [Request method](http-requests.md#request-method), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
+ - -x: [HTTP](usingcurl-proxies.md#http), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl-proxies.md#proxy-environment-variables)
 ## Y
  - yum: [Redhat and Centos](get-curl-linux.md#redhat-and-centos)
 ## Z

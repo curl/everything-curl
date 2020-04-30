@@ -52,7 +52,8 @@ run curl successfully.
 
 ## Captive portals
 
-(these are not proxies but in the way)
+These are not proxies but they're blocking the way between you and the server
+you want to access.
 
 A "captive portal" is one of these systems that are popular to use in hotels,
 airports and for other sorts of network access to a larger audience. The

@@ -8,11 +8,11 @@ separated with MIME boundaries.
 An example piece of HTML would look like this:
 
 ~~~
-    <form action="submit.cgi" method="post" enctype="multipart/form-data">
-       Name: <input type="text" name="person"><br>
-       File: <input type="file" name="secret"><br>
-       <input type="submit" value="Submit">
-    </form> 
+<form action="submit.cgi" method="post" enctype="multipart/form-data">
+  Name: <input type="text" name="person"><br>
+  File: <input type="file" name="secret"><br>
+  <input type="submit" value="Submit">
+</form> 
 ~~~
 Which could look something like this in a web browser:
 

@@ -108,13 +108,8 @@ standard system calls for name resolving are used.
  - With `CURLOPT_DNS_LOCAL_IP4` and `CURLOPT_DNS_LOCAL_IP6`, the application
    can specify which specific network addresses to bind DNS resolves to.
 
-## Global DNS cache is bad
+## No global DNS cache
 
-There is a *deprecated* option called `CURLOPT_DNS_USE_GLOBAL_CACHE` that when
-enabled tells curl to use a global DNS cache. This cache has no locks and
-stores data in a global context that then can be shared by all other easy
-handles that also is set to use the global cache.
-
-This option should only be used by legacy applications and you *should* work
-on converting this over to using the share interface for sharing DNS cache the
-"proper" way. This option will be removed in a future version.
+The option called `CURLOPT_DNS_USE_GLOBAL_CACHE` once told curl to use a
+global DNS cache. This functionality has been removed since 7.65.0, so while
+this option still exists it does nothing.

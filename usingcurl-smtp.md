@@ -100,4 +100,4 @@ to learn which mail server(s) to use when sending email to example.com users.
 curl does no MX lookups by itself. If you want to figure out which server to
 send an email to for a particular domain, we recommend you figure that out
 first and then call curl to use those servers. Useful command line tools to
-get MX records with include 'dig' and 'nslookup'.
+get MX records include 'dig' and 'nslookup'.

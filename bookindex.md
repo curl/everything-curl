@@ -1,5 +1,7 @@
 # Index
 
+## %
+ - %{json}: [Available --write-out variables](usingcurl-writeout.md#available---write-out-variables)
 ## .
  - .netrc: [Command line leakage](cmdline-passwords.md#command-line-leakage), [.netrc](usingcurl-netrc.md#netrc)
 ## /
@@ -185,7 +187,7 @@
  - IPv6: [Host name or address](cmdline-urls.md#host-name-or-address), [URL globbing](cmdline-globbing.md#url-globbing), [Available --write-out variables](usingcurl-writeout.md#available---write-out-variables), [Name resolving](libcurl-names.md#name-resolving)
 ## J
  - JavaScript: [Client differences](usingcurl-downloads.md#client-differences), [PAC](usingcurl-proxies.md#pac), [JavaScript and forms](http-post.md#javascript-and-forms), [JavaScript redirects](http-redirects.md#javascript-redirects), [Figure out what the browser does](http-browserlike.md#figure-out-what-the-browser-does)
- - json: [Arguments with spaces](cmdline-options.md#arguments-with-spaces), [Content-Type](http-post.md#content-type), [POST outside of HTML](http-postvspost.md#post-outside-of-html)
+ - json: [Arguments with spaces](cmdline-options.md#arguments-with-spaces), [Available --write-out variables](usingcurl-writeout.md#available---write-out-variables), [Content-Type](http-post.md#content-type), [POST outside of HTML](http-postvspost.md#post-outside-of-html)
 ## K
  - -K: [Command lines, quotes and aliases](cmdline.md#command-lines,-quotes-and-aliases), [Config file](cmdline-configfile.md#config-file)
  - keep-alive: [Keep connections alive](usingcurl-timeouts.md#keep-connections-alive)
@@ -281,7 +283,7 @@
 ## S
  - Safari: [Copy as curl](usingcurl-copyas.md#copy-as-curl)
  - Schannel: [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library), [CA store on windows](usingcurl-tls.md#ca-store-on-windows)
- - Scheme: [librtmp](building-deps.md#librtmp), [Connects to "port numbers"](protocols-network.md#connects-to-"port-numbers"), [FILE](protocols-curl.md#file), [Scheme](cmdline-urls.md#scheme), [Proxy type](usingcurl-proxies.md#proxy-type), [Available exit codes](usingcurl-returns.md#available-exit-codes), [Proxy types](libcurl-proxies.md#proxy-types), [Available information](libcurl-getinfo.md#available-information), [Which libcurl version](libcurl-api.md#which-libcurl-version), [Get a HTML page in memory](libcurlex-getinmem.md#get-a-html-page-in-memory), [HTTPS](libcurl-http.md#https), [HTTP authentication](libcurl-http-auth.md#http-authentication), [Bindings](bindings.md#bindings), [Different protocols "hooked in"](internals.md#different-protocols-"hooked-in")
+ - Scheme: [librtmp](building-deps.md#librtmp), [Connects to "port numbers"](protocols-network.md#connects-to-"port-numbers"), [FILE](protocols-curl.md#file), [Scheme](cmdline-urls.md#scheme), [Available --write-out variables](usingcurl-writeout.md#available---write-out-variables), [Proxy type](usingcurl-proxies.md#proxy-type), [Available exit codes](usingcurl-returns.md#available-exit-codes), [Proxy types](libcurl-proxies.md#proxy-types), [Available information](libcurl-getinfo.md#available-information), [Which libcurl version](libcurl-api.md#which-libcurl-version), [Get a HTML page in memory](libcurlex-getinmem.md#get-a-html-page-in-memory), [HTTPS](libcurl-http.md#https), [HTTP authentication](libcurl-http-auth.md#http-authentication), [Bindings](bindings.md#bindings), [Different protocols "hooked in"](internals.md#different-protocols-"hooked-in")
  - SCP: [libssh2](building-deps.md#libssh2), [What protocols does curl support?](protocols-protocols.md#what-protocols-does-curl-support?), [SCP](protocols-curl.md#scp), [Supported protocols](usingcurl.md#supported-protocols), [Protocols allowing upload](usingcurl-uploads.md#protocols-allowing-upload), [Available exit codes](usingcurl-returns.md#available-exit-codes), [SCP and SFTP](usingcurl-scpsftp.md#scp-and-sftp)
  - security: [curl-announce](curl-maillists.md#curl-announce), [Security](curl-security.md#security), [Trust](curl-trust.md#trust), [docs](sourcecode-layout.md#docs), [Reporting vulnerabilities](sourcecode-reportvuln.md#reporting-vulnerabilities), [TLS](protocols-network.md#tls), [How much do protocols change?](protocols-protocols.md#how-much-do-protocols-change?), [FTPS](protocols-curl.md#ftps), [http_proxy in lower case only](usingcurl-proxies.md#http_proxy-in-lower-case-only), [TLS](usingcurl-tls.md#tls), [How to HTTP with curl](http.md#how-to-http-with-curl), [URL API](libcurl-url.md#url-api), [Protocol version](libcurl-tlsoptions.md#protocol-version), [HTTPS](libcurl-http.md#https)
  - SFTP: [libssh2](building-deps.md#libssh2), [What protocols does curl support?](protocols-protocols.md#what-protocols-does-curl-support?), [SFTP](protocols-curl.md#sftp), [Supported protocols](usingcurl.md#supported-protocols), [--trace and --trace-ascii](usingcurl-trace.md#trace-and---trace-ascii), [Protocols allowing upload](usingcurl-uploads.md#protocols-allowing-upload), [Available exit codes](usingcurl-returns.md#available-exit-codes), [SCP and SFTP](usingcurl-scpsftp.md#scp-and-sftp)
@@ -313,8 +315,8 @@
  - --trace-time: [--trace-time](usingcurl-trace.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http-response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http-post.md#chunked-encoded-posts)
 ## U
- - -U: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
  - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [HTTP authentication](http-auth.md#http-authentication), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
+ - -U: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
  - Ubuntu: [Ubuntu and Debian](get-curl-linux.md#ubuntu-and-debian)
  - URL Globbing: [URL globbing](cmdline-globbing.md#url-globbing)
 ## V

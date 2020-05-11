@@ -1,3 +1,4 @@
+%{json}
 --alt-svc
 --anyauth
 --basic
@@ -63,12 +64,12 @@
 -T
 -U
 -X
+-Z
 -b
 -c
 -d
 -u
 -x
--Z
 .netrc
 /etc/hosts
 <curl/curl.h>
@@ -187,6 +188,28 @@ PAC
 Percent-encoding
 Progress callback
 RELEASE-NOTES
+RFC 1436
+RFC 1738
+RFC 1939
+RFC 1945
+RFC 2229
+RFC 2246
+RFC 2326
+RFC 2595
+RFC 2818
+RFC 3207
+RFC 3501
+RFC 3986
+RFC 4217
+RFC 4511
+RFC 5321
+RFC 7230
+RFC 7540
+RFC 7838
+RFC 8314
+RFC 8446
+RFC 854
+RFC 959
 RTMP
 RTSP
 Read callback
@@ -288,25 +311,3 @@ testing
 transfer-encoding
 yum
 zlib
-RFC 1436
-RFC 1738
-RFC 1939
-RFC 1945
-RFC 2229
-RFC 2246
-RFC 2326
-RFC 2595
-RFC 2818
-RFC 3207
-RFC 3501
-RFC 3986
-RFC 4217
-RFC 4511
-RFC 5321
-RFC 7230
-RFC 7540
-RFC 7838
-RFC 8314
-RFC 8446
-RFC 854
-RFC 959

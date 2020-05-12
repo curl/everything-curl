@@ -142,7 +142,14 @@ HTTPS proxies are still today fairly unusual in organizations and companies.
 
 ## Proxy authentication
 
-TBD
+Authentication with a proxy means that you need to provide valid credentials
+in the handshake negotiation with the proxy itself. The proxy authentication
+is then in addition to and separate of the possible authentication or lack of
+authentication with the remote host.
+
+libcurl supports authentication with HTTP, HTTPS and SOCKS5 proxies. The key
+option is then `CURLOPT_PROXYUSERPWD` which sets the user name and password to
+use - unless you set it within the `CURLOPT_PROXY` string.
 
 ## Proxy headers
 

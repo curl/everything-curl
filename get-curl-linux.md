@@ -61,7 +61,3 @@ installed automatically if you follow the normal installation procedure.
 If curl is not installed, Arch Linux uses `pacman` to install packages:
     
     pacman -S curl
-
-## Other distros
-
-TBD

@@ -13,16 +13,16 @@ exception: we host official curl binaries built for Windows users. All the
 other packaged binaries that are provided with operating systems or on other
 download sites are done by gracious volunteers outside of the project.
 
-As of a few years back, we make an effort to do our releases on an eight week
-cycle and unless some really serious and urgent problem shows up we stick to
-this schedule. We release on a Wednesday, and then again a Wednesday eight
+As of several years back, we make an effort to do our releases on an eight
+week cycle and unless some really serious and urgent problem shows up we stick
+to this schedule. We release on a Wednesday, and then again a Wednesday eight
 weeks later and so it continues. Non-stop.
 
 For every release we tag the source code in the repository with "curl-release
 version" and we update the [changelog](https://curl.haxx.se/changes.html).
 
-We had done 182 curl releases by June 2019, and for all the ones made
-since late 1999 there are lots of release stats available in our [curl release
+We had done 191 curl releases by May 2020. The entire release history and
+changelog is available in our [curl release
 log](https://curl.haxx.se/docs/releases.html).
 
 ## Daily snapshots

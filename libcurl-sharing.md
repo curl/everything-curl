@@ -8,9 +8,7 @@ you want.
 ## Multi handle
 
 All easy handles added to the same multi handle automatically share
-[cookies](libcurl-http-cookies.md), [connection
-cache](libcurl-connectionreuse), [dns cache](libcurl-names.md) and SSL
-session id cache.
+[connection cache](libcurl-connectionreuse) and [dns cache](libcurl-names.md).
 
 ## Sharing between easy handles
 

@@ -257,5 +257,5 @@ mention `MultiSSL` as a feature in the last line. The first line will then
 include all the supported TLS backends with all but the default one within
 parentheses.
 
-To set a specific one to get used, set the environment variaable
+To set a specific one to get used, set the environment variable
 `CURL_SSL_BACKEND` to the name of it!

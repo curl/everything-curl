@@ -49,7 +49,7 @@ closed if the developer fails to understand it, fails to reproduce it or faces
 other problems when working on it. Do not abandon your report!
 
 Report curl bugs in the [curl bug tracker on
-Github](https://github.com/curl/curl/issues)!
+GitHub](https://github.com/curl/curl/issues)!
 
 ## Testing
 

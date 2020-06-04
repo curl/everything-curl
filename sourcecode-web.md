@@ -5,7 +5,7 @@ although separate from the source code repository since it generally is not
 interesting to the same people and we can maintain a different list of people
 that have push rights, etc.
 
-The web site git repository is available on Github at this URL:
+The web site git repository is available on GitHub at this URL:
 [https://github.com/curl/curl-www](https://github.com/curl/curl-www) and
 you can clone a copy of the web code like this:
 

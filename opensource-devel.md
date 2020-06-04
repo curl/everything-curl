@@ -8,7 +8,7 @@ help that is needed and useful.
 We develop and discuss everything in the open, preferably on the mailing
 lists.
 
-## Source code on Github
+## Source code on GitHub
 
 The source code to curl and libcurl have also been provided and published
 publicly and it continues to be uploaded to the [main web

@@ -91,7 +91,7 @@ and do not take much time or effort to learn.
 This book will not help you learn git. All software developers in this day and
 age should learn git anyway.
 
-The curl git tree can be browsed with a web browser on our Github page at
+The curl git tree can be browsed with a web browser on our GitHub page at
 [https://github.com/curl/curl](https://github.com/curl/curl).
 
 To check out the curl source code from git, you can clone it like this:
@@ -101,7 +101,7 @@ To check out the curl source code from git, you can clone it like this:
 ### Pull request
 
 A popular and convenient way to make your own changes and contribute them back
-to the project is by doing a so-called pull request on Github.
+to the project is by doing a so-called pull request on GitHub.
 
 First, you create your own version of the source tree, called a fork, on the
 Github web site. That way you get your own version of the curl git tree that

@@ -248,13 +248,13 @@ the TLS library and version in the first line of output.
 
 ## Multiple TLS backends
 
-When curl is built with *multiple* TLS backends, it be told which one to use
+When curl is built with *multiple* TLS backends, it can be told which one to use
 each time it is started. It is always built to use a specific one by default
 unless one is asked for.
 
 If you invoke `curl --version` for a curl with multiple backends it will
 mention `MultiSSL` as a feature in the last line. The first line will then
-include all the supported TLS backends with all but the default one within
+include all the supported TLS backends with the non-default ones within
 parentheses.
 
 To set a specific one to get used, set the environment variable

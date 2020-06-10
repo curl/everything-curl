@@ -21,6 +21,6 @@ added. This is especially important if you want to take a curl command line
 using a modern curl version back to an older system that might be running an
 older installation.
 
-The developers of curl are working hard to not change existing behavior
-though. Command lines written to use curl in 1998, 2003 or 2010 should all be
-possible to run unmodified even today.
+The developers of curl are working hard to not change existing behavior.
+Command lines written to use curl in 1998, 2003 or 2010 should all be possible
+to run unmodified even today.

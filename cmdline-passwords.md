@@ -11,7 +11,7 @@ argument that is the user name and password, colon separated. Like when alice
 wants to request a page requiring HTTP authentication and her password is
 '12345':
 
-   $ curl -u alice:12345 http://example.com/
+    $ curl -u alice:12345 http://example.com/
 
 ### Command line leakage
 

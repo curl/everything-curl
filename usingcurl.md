@@ -11,7 +11,9 @@ you do your file transfer tasks as conveniently as possible.
 
 ## Supported protocols
 
-curl supports or can be made to support (if built so) the following protocols.
+curl supports or can be made to support (if built so) the following transfer
+protocols.
 
-DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3,
-POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SBMS, SMTP, SMTPS, TELNET and TFTP
+DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT,
+POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SBMS, SMTP, SMTPS, TELNET and
+TFTP

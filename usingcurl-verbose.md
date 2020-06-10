@@ -15,13 +15,17 @@ example (saving the downloaded data in the file called 'saved'):
 Ok so we invoked curl with a URL that it considers incomplete so it helps us
 and it adds a trailing slash before it moves on.
 
+~~~
     *   Trying 93.184.216.34...
+~~~
 
 This tells us curl now tries to connect to this IP address. It means the name
 'example.com' has been resolved to one or more addresses and this is the first
 (and possibly only) address curl will try to connect to.
 
+~~~
     * Connected to example.com (93.184.216.34) port 80 (#0)
+~~~
 
 It worked! curl connected to the site and here it explains how the name maps
 to the IP address and on which port it has connected to. The '(#0)' part is
@@ -43,11 +47,13 @@ responses as headers and they will thus also be shown with -v.
 If we then continue the output seen from the command above (but ignore the
 actual HTML response), curl will show:
 
+~~~
     > GET / HTTP/1.1
     > Host: example.com
     > User-Agent: curl/7.45.0
     > Accept: */*
     >
+~~~
 
 This is the full HTTP request to the site. This request is how it looks
 in a default curl 7.45.0 installation and it may, of course, differ slightly

@@ -99,12 +99,13 @@ That 1270 bytes should then be in the 'saved' file. You can also see that
 there was a header named Content-Length: in the response that contained the
 exact file length (it will not always be present in responses).
 
-### HTTP/2
+### HTTP/2 and HTTP/3
 
-When doing file transfers using version two of the HTTP protocol, HTTP/2, curl
-sends and receives **compressed** headers. So to display outgoing and incoming
-HTTP/2 headers in a readable and understandable way, curl will actually show
-the uncompressed versions in a style similar to how they appear with HTTP/1.1.
+When doing file transfers using version two or three of the HTTP protocol,
+curl sends and receives **compressed** headers. So to display outgoing and
+incoming HTTP/2 and HTTP/3 headers in a readable and understandable way, curl
+will actually show the uncompressed versions in a style similar to how they
+appear with HTTP/1.1.
 
 ### Silence
 

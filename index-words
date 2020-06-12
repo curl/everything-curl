@@ -55,6 +55,7 @@
 --trace
 --trace-ascii
 --trace-time
+--version
 --verbose
 --write-out
 -F

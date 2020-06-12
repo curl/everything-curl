@@ -51,6 +51,7 @@
     * [Verbose](usingcurl-verbose.md)
         * [Trace options](usingcurl-trace.md)
         * [Write out](usingcurl-writeout.md)
+    * [Version](usingcurl-version.md)
     * [Persistent connections](usingcurl-persist.md)
     * [Downloads](usingcurl-downloads.md)
     * [Uploads](usingcurl-uploads.md)

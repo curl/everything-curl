@@ -43,6 +43,17 @@ curl uses, often with their invidual version number next to it with a slash
 separator. Like `OpenSSL/1.1.1g` and `nghttp2/1.41.0`. This can for example
 tell you which TLS backends this curl uses.
 
+### Line 1: TLS versions
+
+Line 1 may contain one or more TLS libraries. curl can be built to support
+more than one TLS library which then makes curl - at startup - select which
+particular backend to use for this invoke.
+
+If curl supports more than one TLS library like this, the ones that are *not*
+selected by default will be listed within parentheses. Thus, if you do not
+specify which backend to use use (with the `CURL_SSL_BACKEND` environment
+variable) the one listed without parentheses will be used.
+
 ## Line 2: Release-Date
 
 This line shows the date this curl version was released by the curl project,
@@ -58,7 +69,7 @@ and the curl project does not recommend it.
 This is a list of all transfer protocols (URL schemes really) in alphabetical
 order that this curl build supports. All names are shown in lowercase letters.
 
-As of curl 7.70.0 this list can contain these protocols:
+As of curl 7.71.1 this list can contain these protocols:
 
 dict, file, ftp, ftps, gopher, http, https, imap, imaps, ldap, ldaps, mqtt,
 pop3, pop3s, rtmp, rtsp, scp, sftp, smb, smbs, smtp, smtps, telnet and tftp

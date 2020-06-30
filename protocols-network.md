@@ -79,3 +79,7 @@ When the connecting "string" we call TCP is attached to the remote computer
 established connection between the two machines and that connection can then
 be used to exchange data. That communication is done using a "protocol", as
 discussed in the following chapter.
+
+Traditionally, what is called a *download* is when data is tranferred from a
+server to a client and inversely an *upload* is when data is transferred from
+the client to the server. The client is down here. The server is up there.

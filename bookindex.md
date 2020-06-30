@@ -133,6 +133,7 @@
  - curl_multi_wait: [Driving with the multi interface](libcurl-drive-multi.md#driving-with-the-multi-interface)
  - curl_off_t: [Progress callback](callback-progress.md#progress-callback), [Setting numerical options](libcurl-options.md#setting-numerical-options), [HTTP PUT](libcurl-http-upload.md#http-put)
  - CURL_SOCKET_TIMEOUT: [timer_callback](libcurl-drive-multi-socket.md#timer_callback)
+ - CURL_SSL_BACKEND: [Line 1: TLS versions](usingcurl-version.md#line-1:-tls-versions), [Multiple TLS backends](usingcurl-tls.md#multiple-tls-backends)
  - curl_url: [Create, cleanup, duplicate](libcurl-url.md#create,-cleanup,-duplicate)
  - curl_url_cleanup: [Create, cleanup, duplicate](libcurl-url.md#create,-cleanup,-duplicate)
  - curl_url_dup: [Create, cleanup, duplicate](libcurl-url.md#create,-cleanup,-duplicate)
@@ -209,8 +210,8 @@
  - --max-filesize: [Maximum filesize](usingcurl-downloads.md#maximum-filesize)
  - --max-time: [Retrying failed attempts](usingcurl-downloads.md#retrying-failed-attempts), [Maximum time allowed to spend](usingcurl-timeouts.md#maximum-time-allowed-to-spend)
  - MesaLink: [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library)
- - Metalink: [Line 4: Features](usingcurl-version.md#line-4:-features), [Metalink](usingcurl-downloads.md#metalink)
  - --metalink: [Metalink](usingcurl-downloads.md#metalink)
+ - Metalink: [Line 4: Features](usingcurl-version.md#line-4:-features), [Metalink](usingcurl-downloads.md#metalink)
  - MIT: [License](opensource-license.md#license)
  - MITM-proxies: [MITM-proxies](usingcurl-proxies.md#mitm-proxies)
  - multi-threading: [libcurl multi-threading](libcurl-threading.md#libcurl-multi-threading)
@@ -328,8 +329,8 @@
  - Write callback: [Write callback](callback-write.md#write-callback), [Get a HTML page in memory](libcurlex-getinmem.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http-responses.md#http-responses)
  - --write-out: [--write-out](usingcurl-writeout.md#write-out), [HTTP response codes](http-response.md#http-response-codes)
 ## X
- - -X: [Request method](http-requests.md#request-method), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - -x: [HTTP](usingcurl-proxies.md#http), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl-proxies.md#proxy-environment-variables)
+ - -X: [Request method](http-requests.md#request-method), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
 ## Y
  - yum: [Redhat and Centos](get-curl-linux.md#redhat-and-centos)
 ## Z

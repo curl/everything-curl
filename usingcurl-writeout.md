@@ -111,7 +111,7 @@ Some of these variables are not available in really old curl versions.
 
 - `%{stderr}` - makes the rest of the output get written to stderr.
 
-- `%{stdout`} - makes the rest of the output get written to stdout.
+- `%{stdout}` - makes the rest of the output get written to stdout.
 
 - `%{time_appconnect}` shows the time, in seconds, it took from the start until
   the SSL/SSH/etc connect/handshake to the remote host was completed.

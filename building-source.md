@@ -183,15 +183,3 @@ into several lines for readability):
 
     nname WITH_SSL=dll WITH_NGHTTP2=dll ENABLE_IPV6=yes \
     WITH_ZLIB=dll MACHINE=x64 
-
-### other compilers
-
-TBD
-
-## On other systems
-
-TBD
-
-## Porting curl to non-supported systems
-
-TBD

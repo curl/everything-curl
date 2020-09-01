@@ -5,9 +5,9 @@ explicitly enabled in the build.)
 
 ## Drafts, not standard
 
-As of August 2019, **the HTTP/3 protocol has not yet been
-finalized**. Everything and everyone that speaks HTTP/3 at this point does it
-with the knowledge and awareness that it might change going forward.
+As of September 2020, **the HTTP/3 protocol has not yet been finalized**.
+Everything and everyone that speaks HTTP/3 at this point does it with the
+knowledge and awareness that it might change going forward.
 
 ## QUIC
 

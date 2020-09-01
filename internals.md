@@ -134,11 +134,3 @@ When a transfer is completed, the "done" action is taken:
 The connection is about to be taken down.
 
     result = conn->handler->disconnect(conn, dead_connection);
-
-## Name resolving
-
-TBD
-
-## vtls
-
-TBD

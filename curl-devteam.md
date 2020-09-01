@@ -5,7 +5,7 @@ project. Everybody else that participates or contributes in the project has
 thus arrived at a later point. Some contributors worked for a while and then
 left again. Most contributors hang around only for a short while to get their
 bug fixed or feature merged or similar. Counting all contributors we know the
-names of, we have received help from almost 2000 individuals.
+names of, we have received help from more than 2,200 individuals.
 
 The full list of people who ever did ten commits or more within a single year
 in the project are:

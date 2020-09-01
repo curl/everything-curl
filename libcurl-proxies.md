@@ -114,9 +114,9 @@ made using plain unencrypted HTTP.
 
 If a HTTPS resource is requested, libcurl will instead issue a `CONNECT`
 request to the proxy. Such a request opens a tunnel through the proxy, where
-it basically just passes data through without understanding it. This way,
-libcurl can establish a secure end-to-end TLS connection even when a HTTP
-proxy is present.
+it passes data through without understanding it. This way, libcurl can
+establish a secure end-to-end TLS connection even when a HTTP proxy is
+present.
 
 You *can* proxy non-HTTP protocols over a HTTP proxy, but since this is mostly
 done by the CONNECT method to tunnel data through it requires that the proxy
@@ -133,8 +133,8 @@ remote site will be tunnelled through the HTTPS connection to the proxy,
 libcurl provies a whole set of TLS options for the proxy connection that are
 separate from the connection to the remote host.
 
-For example, `CURLOPT_PROXY_CAINFO` is basically the same functionality for
-the HTTPS proxy as `CURLOPT_CAINFO` is for the remote
+For example, `CURLOPT_PROXY_CAINFO` is the same functionality for the HTTPS
+proxy as `CURLOPT_CAINFO` is for the remote
 host. `CURLOPT_PROXY_SSL_VERIFYPEER` is the proxy version of
 `CURLOPT_SSL_VERIFYPEER` and so on.
 

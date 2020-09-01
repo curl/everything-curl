@@ -23,7 +23,7 @@ pointer you set with `CURLOPT_OPENSOCKETDATA`.
 
 The other two arguments pass in data that identifies for what *purpose* and
 *address* the socket is to be used. The *purpose* is a typedef with a value of
-`CURLSOCKTYPE_IPCXN` or `CURLSOCKTYPE_ACCEPT`, basically identifying in which
+`CURLSOCKTYPE_IPCXN` or `CURLSOCKTYPE_ACCEPT`, identifying in which
 circumstance the socket is created. The "accept" case being when libcurl is
 used to accept an incoming FTP connection for when FTP active mode is used,
 and all other cases when libcurl creates a socket for its own outgoing

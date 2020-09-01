@@ -23,8 +23,8 @@ contents could look like:
     CURLcode ret = curl_easy_setopt(easy, CURLOPT_URL, "http://example.com");
 
 Again: this only sets the option in the handle. It will not do the actual
-transfer or anything. It will basically just tell libcurl to copy the string
-and if that works it returns OK.
+transfer or anything. It will just tell libcurl to copy the string and if that
+works it returns OK.
 
 It is, of course, good form to check the return code to see that nothing went
 wrong.

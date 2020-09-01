@@ -26,10 +26,10 @@ full:
     be used in advertising or otherwise to promote the sale, use or other dealings
     in this Software without prior written authorization of the copyright holder.
 
-This is basically legalese that says you are allowed to change the code,
-redistribute the code, redistribute binaries built from the code and build
-proprietary code with it, without anyone requiring you to give any changes
-back to the project—but you may not claim that you wrote it.
+This is legalese that says you are allowed to change the code, redistribute
+the code, redistribute binaries built from the code and build proprietary code
+with it, without anyone requiring you to give any changes back to the
+project—but you may not claim that you wrote it.
 
 Early on in the project we iterated over a few different other licenses before
 we settled on this. We started out GPL, then tried MPL and landed on this MIT

@@ -29,9 +29,9 @@ application/x-www-form-urlencoded`.
 ## HTTP multipart formposts
 
 A multipart formpost is still using the same HTTP method POST; the difference
-is only in the formatting of the request body. A multipart formpost is
-basically a series of separate "parts", separated by MIME-style boundary
-strings. There's no limit to how many parts you can send.
+is only in the formatting of the request body. A multipart formpost is a
+series of separate "parts", separated by MIME-style boundary strings. There's
+no limit to how many parts you can send.
 
 Each such part has a name, a set of headers and a few other properties.
 

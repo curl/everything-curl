@@ -56,9 +56,9 @@ which type of URL you download:
 
     curl -o file.txt ftp://example.com/path/to/file-name.ext
 
-If you ask curl to send the output to the terminal, it attempts to detect and prevent
-binary data from being sent there since that can seriously mess up your
-terminal (sometimes to the point where it basically stops working). You can
+If you ask curl to send the output to the terminal, it attempts to detect and
+prevent binary data from being sent there since that can seriously mess up
+your terminal (sometimes to the point where it stops working). You can
 override curl's binary-output-prevention and force the output to get sent to
 stdout by using `-o -`.
 
@@ -373,9 +373,8 @@ system.
 
 When saving a download to a file with curl, the `--xattr` option tells curl to
 also store certain file metadata in "extended file attributes". These extended
-attributes are basically standardized name/value pairs stored in the file
-system, assuming one of the supported file systems and operating systems are
-used.
+attributes are standardized name/value pairs stored in the file system,
+assuming one of the supported file systems and operating systems are used.
 
 Currently, the URL is stored in the `xdg.origin.url` attribute and, for HTTP,
 the content type is stored in the `mime_type` attribute. If the file system

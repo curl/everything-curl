@@ -6,8 +6,8 @@ present and is documented already in the first spec (RFC 1945), published in
 
 A redirect is exactly what it sounds like. It is the server sending back an
 instruction to the client instead of giving back the contents the client
-wanted. The server basically says “go look over *here* instead for that thing
-you asked for“.
+wanted. The server says “go look over *here* instead for that thing you asked
+for“.
 
 Redirects are not all alike. How permanent is the redirect? What request
 method should the client use in the next request?

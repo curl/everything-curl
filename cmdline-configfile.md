@@ -6,9 +6,9 @@ length of the command line you want to enter even hits the maximum length your
 command-line system allows. The Microsoft Windows command prompt being an
 example of something that has a fairly small maximum line length.
 
-To aid such situations, curl offers a feature we call "config file". It
-basically allows you to write command-line options in a text file instead and
-then tell curl to read options from that file in addition to the command line.
+To aid such situations, curl offers a feature we call "config file". It allows
+you to write command-line options in a text file instead and then tell curl to
+read options from that file in addition to the command line.
 
 You tell curl to read more command-line options from a specific file with the
 -K/--config option, like this:
@@ -58,8 +58,8 @@ therefore it can also be provided without the quotes like:
 
 Finally, if you want to provide a URL in a config file, you must do that the
 `--url` way, or just with `url`, and not like on the command line where
-basically everything that is not an option is assumed to be a URL. So you
-provide a URL for curl like this:
+everything that is not an option is assumed to be a URL. So you provide a URL
+for curl like this:
 
     url = "http://example.com"
 

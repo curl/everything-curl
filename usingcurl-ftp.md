@@ -26,11 +26,10 @@ the actual data transfer.
 ## Transfer mode
 
 When an FTP client is about to transfer data, it specifies to the server which
-"transfer mode" it would like the upcoming transfer to use. The two transfer modes
-curl supports are 'ASCII' and 'BINARY'. Ascii is basically for text and
-usually means that the server will send the files with converted newlines
-while binary means sending the data unaltered and assuming the file is not
-text.
+"transfer mode" it would like the upcoming transfer to use. The two transfer
+modes curl supports are 'ASCII' and 'BINARY'. Ascii is for text and usually
+means that the server will send the files with converted newlines while binary
+means sending the data unaltered and assuming the file is not text.
 
 curl will default to binary transfer mode for FTP, and you ask for ascii mode
 instead with `-B, --use-ascii` or by making sure the URL ends with `;type=A`.

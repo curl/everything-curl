@@ -84,10 +84,10 @@ announcement.
 ### curl-security@haxx.se
 
 Who is on this list? There are a couple of criteria you must meet, and then we
-might ask you to join the list or you can ask to join it. It really is not 
-formal. We basically only require that you have a long-term presence in the
-curl project and you have shown an understanding for the project and its way
-of working. You must have been around for a good while and you should have no
+might ask you to join the list or you can ask to join it. It really is not
+formal. We only require that you have a long-term presence in the curl project
+and you have shown an understanding for the project and its way of
+working. You must have been around for a good while and you should have no
 plans on vanishing in the near future.
 
 We do not make the list of participants public mostly because it tends to vary

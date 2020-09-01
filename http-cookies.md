@@ -83,12 +83,10 @@ it will not flush session cookies unless you tell it to.
 
 ### New cookie session
 
-Instead of telling curl when a session ends, in order to flush session cookies
-and with this basically signal to the server that we are starting a new
-session, curl features an option that lets the user decide when a new session
-begins.
+Instead of telling curl when a session ends, curl features an option that lets
+the user decide when a new session *begins*.
 
-A new cookie session means that all the session cookies will be thrown
+A new cookie session means that all the old session cookies will be thrown
 away. It is the equivalent of closing a browser and starting it up again.
 
 Tell curl a new cookie session starts by using `-j, --junk-session-cookies`:

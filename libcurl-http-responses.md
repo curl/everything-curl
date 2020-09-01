@@ -28,7 +28,7 @@ the amount of downloaded data in the most recent transfer.
 Every HTTP response starts off with a single line that contains the HTTP
 response code. It is a three digit number that contains the server's idea of
 the status for the request. The numbers are detailed in the HTTP standard
-specifications but they are divided into ranges that basically work like this:
+specifications but they are divided into ranges that work like this:
 
 | Code | Meaning                               |
 |------|---------------------------------------|

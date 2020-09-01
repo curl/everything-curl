@@ -33,8 +33,8 @@ Having added the easy handles representing the transfers you want to perform,
 you write the transfer loop. With the multi interface, you do the looping so
 you can ask libcurl for a set of file descriptors and a timeout value and do
 the `select()` call yourself, or you can use the slightly simplified version
-which does that for us, with `curl_multi_wait`. The simplest loop would
-basically be this: (*note that a real application would check return codes*)
+which does that for us, with `curl_multi_wait`. The simplest loop could look
+like this: (*note that a real application would check return codes*)
 
     int transfers_running;
     do {

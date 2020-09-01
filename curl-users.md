@@ -1,11 +1,11 @@
 ## Users of curl
 
-![one billion users](one-billion-users.jpg)
+![ten billion installations](ten-billion.jpg)
 
-We used to say that there are a billion users of curl. It makes a good line to
-say but in reality we, of course, do not have any numbers that exact. We just
-estimate and guess based on observations and trends. It also depends on
-exactly what you would consider "a user" to be. Let's elaborate.
+We use to say that there are around ten billion curl installations. It makes a
+good line to say but in reality we, of course, do not have any numbers that
+exact. We just estimate and guess based on observations and trends. It also
+depends on exactly what we consider "an installation". Let's elaborate.
 
 ### Open Source
 
@@ -80,14 +80,14 @@ in the products. We usually only find out they do by accident, by reading
 about dialogues, documentation and license agreements. Of course some
 companies also just flat out tell us.
 
-We collect names of companies and products on our web site of users that use
-the project's products "in commercial environments". We do this mostly just to
-show-off to other big brands that if these other guys can build products that
-depend on us, maybe you can, too?
+We used to collect names of companies and products on our web site of users
+that use the project's products "in commercial environments". We did this
+mostly just to show-off to other big brands that if these other guys can build
+products that depend on us, maybe you can, too?
 
-The list of companies are well over 200 names, but extracting some of the
-larger or more well-known brands, here's a pretty good list that, of course, is
-only a small selection:
+The list of companies contains hundreds of names, but extracting some of the
+larger or more well-known brands, here's a pretty good list that, of course,
+is only a small selection:
 
 Adobe, Altera, AOL, Apple, AT&T, BBC, Blackberry, BMW, Bosch, Broadcom,
 Chevrolet, Cisco, Comcast, Facebook, Google, Hitachi, Honeywell, HP, Huawei,
@@ -95,3 +95,8 @@ HTC, IBM, Intel, LG, Mazda, Mercedes-Benz, Motorola, Netflix, Nintendo,
 Oracle, Panasonic, Philips, Pioneer, RBS, Samsung, SanDisk, SAP, SAS
 Institute, SEB, Sharp, Siemens, Sony, Spotify, Sun, Swisscom, Tomtom, Toshiba,
 VMware, Xilinx, Yahoo, Yamaha
+
+## Famous high volumne apps using curl
+
+The Google Youtube app, the Google Photos app, Spotify, Instagram, Skype (on
+Android), bundled with iOS, Grand Theft Auto V, Fortnite.

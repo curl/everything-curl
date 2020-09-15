@@ -80,6 +80,12 @@ lookup. See RFC 4511. LDAP servers and clients use TCP port 389.
 
 Secure LDAP is LDAP done over an SSL/TLS connection.
 
+## MQTT
+
+Message Queuing Telemetry Transport, MQTT, is a protocol commonly used in IoT
+systems for interchanging data mostly involving smaller devices. It is a so
+called "publish-subscribe" protocol.
+
 ## POP3
 
 The Post Office Protocol version 3 (POP3) is a protocol for retrieving email

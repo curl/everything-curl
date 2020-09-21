@@ -67,6 +67,7 @@
     * [SCP and SFTP](usingcurl-scpsftp.md)
     * [Reading email](usingcurl-reademail.md)
     * [Sending email](usingcurl-smtp.md)
+    * [MQTT](usingcurl-mqtt.md)
     * [TELNET](usingcurl-telnet.md)
     * [TLS](usingcurl-tls.md)
         * [SSLKEYLOGFILE](tls-sslkeylogfile.md)

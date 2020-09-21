@@ -20,7 +20,7 @@ payload.
 
 ## Caveats
 
-Remaining limitations in curl's MQTT support :as of September 2020:
+Remaining limitations in curl's MQTT support as of September 2020:
  - No username support
  - Only QoS level 0 is implemented for publish
  - No way to set retain flag for publish

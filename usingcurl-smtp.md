@@ -1,6 +1,8 @@
-# SMTP
+# Sending email
 
-SMTP stands for [Simple Mail Transfer Protocol](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol).
+Sending email with curl is done with the SMTP protocol. SMTP stands for
+[Simple Mail Transfer
+Protocol](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol).
 
 curl supports sending data to an SMTP server, which combined with the right
 set of command line options makes an email get sent to a set of receivers of

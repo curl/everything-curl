@@ -46,7 +46,7 @@ The fourth argument to `curl_multi_wait`, set to 1000 in the example above, is
 a timeout in milliseconds. It is the longest time the function will wait for
 any activity before it returns anyway. You do not want to lock up for too long
 before calling `curl_multi_perform` again as there are timeouts, progress
-callbacks and more that may loose precision if you do so.
+callbacks and more that may lose precision if you do so.
 
 To instead do select() on our own, we extract the file descriptors and timeout
 value from libcurl like this (*note that a real application would check return

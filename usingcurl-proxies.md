@@ -93,7 +93,7 @@ historical).
 If you want to request the example.com web page using a proxy on 192.168.0.1
 port 8080, a command line could look like:
 
-    curl -x 192.168.0.1:8080 http:/example.com/
+    curl -x 192.168.0.1:8080 http://example.com/
 
 Recall that the proxy receives your request, forwards it to the real
 server, then reads the response from the server and then hands that back to the

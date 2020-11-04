@@ -51,7 +51,7 @@ person who builds libcurl to select from a wide variety TLS libraries to build
 with.
 
 We also maintain a [SSL comparison
-table](https://curl.haxx.se/docs/ssl-compared.html) on the web site to aid
+table](https://www.curl.se/docs/ssl-compared.html) on the web site to aid
 users.
 
 - OpenSSL: the (by far) most popular TLS library.

@@ -52,7 +52,7 @@ the application an updated timeout value, too.
 
 libcurl informs the application about socket activity to wait for with a
 callback called
-[CURLMOPT_SOCKETFUNCTION](https://curl.haxx.se/libcurl/c/CURLMOPT_SOCKETFUNCTION.html). Your
+[CURLMOPT_SOCKETFUNCTION](https://www.curl.se/libcurl/c/CURLMOPT_SOCKETFUNCTION.html). Your
 application needs to implement such a function:
 
     int socket_callback(CURL *easy,      /* easy handle */
@@ -95,7 +95,7 @@ takes too long, etc. To make that work, the application must also make sure to
 handle a single-shot timeout that libcurl sets.
 
 libcurl sets the timeout with the timer_callback
-[CURLMOPT_TIMERFUNCTION](https://curl.haxx.se/libcurl/c/CURLMOPT_TIMERFUNCTION.html):
+[CURLMOPT_TIMERFUNCTION](https://www.curl.se/libcurl/c/CURLMOPT_TIMERFUNCTION.html):
 
     int timer_callback(multi_handle,   /* multi handle */
                        timeout_ms,     /* milliseconds to wait */

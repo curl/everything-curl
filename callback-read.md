@@ -25,6 +25,6 @@ callback should then return the number of bytes that it stored in that memory
 area, or 0 if we have reached the end of the data. The callback can also
 return a few "magic" return codes to cause libcurl to return failure
 immediately or to pause the particular transfer. See the [CURLOPT_READFUNCTION
-man page](https://curl.haxx.se/libcurl/c/CURLOPT_READFUNCTION.html) for
+man page](https://www.curl.se/libcurl/c/CURLOPT_READFUNCTION.html) for
 details.
 

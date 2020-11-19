@@ -42,7 +42,7 @@ or to use the local file name as the remote name:
 curl also supports [globbing](cmdline-globbing.md) in the -T argument so you
 can opt to easily upload a range or a series of files:
 
-    curl -T image[1-99].jpg ftp://ftp.example.com/upload/
+    curl -T 'image[1-99].jpg' ftp://ftp.example.com/upload/
 
 or
 

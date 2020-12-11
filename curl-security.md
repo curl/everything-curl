@@ -16,13 +16,13 @@ advantage of a problem until a fixed version has been deployed.
 
 During the years we have had our fair share of security related problems. We
 work hard on [documenting every
-problem](https://www.curl.se/docs/security.html) thoroughly with all details
+problem](https://curl.se/docs/security.html) thoroughly with all details
 listed and clearly stated to aid users. Users of curl should be able to figure
 out what problems their particular curl versions and use cases are vulnerable
 to.
 
 To help with this, we present [this waterfall
-chart](https://www.curl.se/docs/vulnerabilities.html) showing how all
+chart](https://curl.se/docs/vulnerabilities.html) showing how all
 vulnerabilities affect which curl versions and we have this complete list of
 all known security problems since the birth of this project.
 

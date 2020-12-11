@@ -78,7 +78,7 @@ libcurl will connect to a different address instead of one an actual name
 resolve would suggest.
 
 With the help of the
-[CURLOPT_RESOLVE](https://www.curl.se/libcurl/c/CURLOPT_RESOLVE.html) option,
+[CURLOPT_RESOLVE](https://curl.se/libcurl/c/CURLOPT_RESOLVE.html) option,
 an application can pre-populate libcurl's DNS cache with a custom address for
 a given host name and port number.
 

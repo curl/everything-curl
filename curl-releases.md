@@ -19,11 +19,11 @@ to this schedule. We release on a Wednesday, and then again a Wednesday eight
 weeks later and so it continues. Non-stop.
 
 For every release we tag the source code in the repository with "curl-release
-version" and we update the [changelog](https://www.curl.se/changes.html).
+version" and we update the [changelog](https://curl.se/changes.html).
 
 We had done 191 curl releases by May 2020. The entire release history and
 changelog is available in our [curl release
-log](https://www.curl.se/docs/releases.html).
+log](https://curl.se/docs/releases.html).
 
 ## Daily snapshots
 
@@ -38,7 +38,7 @@ The daily snapshots are generated daily (clever naming, right?) as if a
 release had been made at that point. It produces a package of all sources code
 and all files that are normally part of a release and puts it in a package and
 uploads it to a special place
-([https://www.curl.se/snapshots/](https://www.curl.se/snapshots/)) to allow
+([https://curl.se/snapshots/](https://curl.se/snapshots/)) to allow
 interested people to get the latest code to test, to experiment or
 whatever.
 

@@ -9,12 +9,12 @@ We are looking forward to support for more protocols, support for more features
 within the already supported protocols, and more and better APIs for libcurl to
 allow users to do transfers even better and faster.
 
-The project casually maintains a [TODO](https://www.curl.se/docs/todo.html)
+The project casually maintains a [TODO](https://curl.se/docs/todo.html)
 file holding a bunch of ideas that we could work on in the future. It also
-keeps a [KNOWN_BUGS](https://www.curl.se/docs/knownbugs.html) document with,
+keeps a [KNOWN_BUGS](https://curl.se/docs/knownbugs.html) document with,
 a list of known problems we would like to fix.
 
-There's a [ROADMAP](https://www.curl.se/dev/roadmap.html) document that
+There's a [ROADMAP](https://curl.se/dev/roadmap.html) document that
 describe some plans for the short-term that some of the active developers
 thought they would work on next. Of course, we can not promise that we will
 always follow it perfectly.

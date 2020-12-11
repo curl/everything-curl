@@ -7,5 +7,5 @@ give you some answers to start with, but will not be a complete reference.
 Some operating systems ship curl by default. Some don't.
 
 In addition, You can always download the source from
-[www.curl.se](https://www.curl.se) or find binary packages to download from
+[curl.se](https://curl.se) or find binary packages to download from
 there.

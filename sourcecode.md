@@ -8,7 +8,7 @@ curl and libcurl are written in C.
 ## Hosting and download
 
 You can always find the source code for the latest curl and libcurl release on
-the [official curl web site](https://www.curl.se/). From there you can also
+the [official curl web site](https://curl.se/). From there you can also
 find alternative mirrors that host copies and there are checksums and digital
 signatures provided to help you verify that what ends up on your local system
 when you download these files are the same bytes in the same order as were

@@ -1,7 +1,7 @@
 ## Reporting vulnerabilities
 
 All known and public curl or libcurl related vulnerabilities are listed on
-[the curl web site security page](https://www.curl.se/docs/security.html).
+[the curl web site security page](https://curl.se/docs/security.html).
 
 Security vulnerabilities should not be entered in the project's public bug
 tracker unless the necessary configuration is in place to limit access to the

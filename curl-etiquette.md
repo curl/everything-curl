@@ -3,7 +3,7 @@
 Like many communities and subcultures, we have developed guidelines and rules
 of what we think is the right way to behave and how to communicate on the
 mailing lists. The [curl mailing list
-etiquette](https://www.curl.se/mail/etiquette.html) follows the style of
+etiquette](https://curl.se/mail/etiquette.html) follows the style of
 traditional Open Source projects.
 
 #### Do not mail a single individual

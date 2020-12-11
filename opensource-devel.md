@@ -12,7 +12,7 @@ lists.
 
 The source code to curl and libcurl have also been provided and published
 publicly and it continues to be uploaded to the [main web
-site](https://www.curl.se/) for every release.
+site](https://curl.se/) for every release.
 
 Since March 2010, the curl source code repository has been hosted on
 [github.com](https://github.com/). By being up to date with the changes there,

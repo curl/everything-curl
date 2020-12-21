@@ -43,6 +43,11 @@ Internet", Gopher is somewhat of the grand father to HTTP as HTTP has mostly
 taken over completely for the same use cases. See RFC 1436. Gopher servers and
 clients use TCP port 70.
 
+## GOPHERS
+
+Gopher over TLS. A recent extension to the very old protocol.
+
+
 ## HTTP
 
 The Hypertext Transfer Protocol, HTTP, is the most widely used protocol for

@@ -166,7 +166,8 @@
  - git: [Daily snapshots](curl-releases.md#daily-snapshots), [Clone the code](sourcecode.md#clone-the-code), [root](sourcecode-layout.md#root), [git](sourcecode-contributing.md#git), [Web site source code](sourcecode-web.md#web-site-source-code), [git vs tarballs](building-source.md#git-vs-tarballs), [build boringssl](building-boringssl.md#build-boringssl)
  - Globbing: [URL globbing](cmdline-globbing.md#url-globbing)
  - GnuTLS: [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library), [OCSP stapling](usingcurl-tls.md#ocsp-stapling), [Proxy types](libcurl-proxies.md#proxy-types)
- - Gopher: [How it started](curl-started.md#how-it-started), [What protocols does curl support?](protocols-protocols.md#what-protocols-does-curl-support?), [GOPHER](protocols-curl.md#gopher), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl-version.md#version)
+ - GOPHER: [How it started](curl-started.md#how-it-started), [What protocols does curl support?](protocols-protocols.md#what-protocols-does-curl-support?), [GOPHER](protocols-curl.md#gopher), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl-version.md#version)
+ - GOPHERS: [GOPHERS](protocols-curl.md#gophers)
 ## H
  - --header: [Server differences](usingcurl-downloads.md#server-differences), [Proxy headers](usingcurl-proxies.md#proxy-headers), [Customize headers](http-requests.md#customize-headers)
  - Header callback: [Header callback](callback-header.md#header-callback), [HTTP responses](libcurl-http-responses.md#http-responses)
@@ -210,8 +211,8 @@
  - --max-filesize: [Maximum filesize](usingcurl-downloads.md#maximum-filesize)
  - --max-time: [Retrying failed attempts](usingcurl-downloads.md#retrying-failed-attempts), [Maximum time allowed to spend](usingcurl-timeouts.md#maximum-time-allowed-to-spend)
  - MesaLink: [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library)
- - Metalink: [Line 4: Features](usingcurl-version.md#line-4:-features), [Metalink](usingcurl-downloads.md#metalink)
  - --metalink: [Metalink](usingcurl-downloads.md#metalink)
+ - Metalink: [Line 4: Features](usingcurl-version.md#line-4:-features), [Metalink](usingcurl-downloads.md#metalink)
  - MIT: [License](opensource-license.md#license)
  - MITM-proxies: [MITM-proxies](usingcurl-proxies.md#mitm-proxies)
  - MQTT: [What protocols does curl support?](protocols-protocols.md#what-protocols-does-curl-support?), [MQTT](protocols-curl.md#mqtt), [Supported protocols](usingcurl.md#supported-protocols), [Line 3: Protocols](usingcurl-version.md#line-3:-protocols), [MQTT](usingcurl-mqtt.md#mqtt)
@@ -309,7 +310,7 @@
  - -T: [PUT](usingcurl-uploads.md#put), [Uploading with FTP](ftp-advanced.md#uploading-with-ftp), [HTTP methods](http.md#http-methods), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - TELNET: [What protocols does curl support?](protocols-protocols.md#what-protocols-does-curl-support?), [TELNET](protocols-curl.md#telnet), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl-version.md#version), [Available exit codes](usingcurl-returns.md#available-exit-codes), [TELNET](usingcurl-telnet.md#telnet)
  - testing: [What does curl do?](curl-does.md#what-does-curl-do?), [Reporting bugs](curl-bugs.md#reporting-bugs), [Handling different build options](sourcecode-options.md#handling-different-build-options), [Contributing](sourcecode-contributing.md#contributing), [About HTTP response code "errors"](libcurl-http-responses.md#about-http-response-code-"errors")
- - TLS: [Ubuntu and Debian](get-curl-linux.md#ubuntu-and-debian), [lib/vtls](sourcecode-layout.md#lib/vtls), [Handling different build options](sourcecode-options.md#handling-different-build-options), [Select TLS backend](building-source.md#select-tls-backend), [TLS libraries](building-deps.md#tls-libraries), [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library), [TLS](protocols-network.md#tls), [How much do protocols change?](protocols-protocols.md#how-much-do-protocols-change?), [Connection reuse](cmdline-urls.md#connection-reuse), [Verbose mode](usingcurl-verbose.md#verbose-mode), [Line 1: curl](usingcurl-version.md#line-1:-curl), [Change the Host: header](usingcurl-connections.md#change-the-host:-header), [MITM-proxies](usingcurl-proxies.md#mitm-proxies), [Available exit codes](usingcurl-returns.md#available-exit-codes), [SCP and SFTP](usingcurl-scpsftp.md#scp-and-sftp), [TLS for emails](usingcurl-reademail.md#tls-for-emails), [Caveats](usingcurl-mqtt.md#caveats), [TLS](usingcurl-tls.md#tls), [SSLKEYLOGFILE](tls-sslkeylogfile.md#sslkeylogfile), [How to HTTP with curl](http.md#how-to-http-with-curl), [The URL converted to a request](http-basics.md#the-url-converted-to-a-request), [HTTPS](http-https.md#https), [Figure out what a browser sends](http-post.md#figure-out-what-a-browser-sends), [HTTPS only](http-http3.md#https-only), [Proxy types](libcurl-proxies.md#proxy-types), [Available information](libcurl-getinfo.md#available-information), [libcurl TLS options](libcurl-tlsoptions.md#libcurl-tls-options), [Trace everything](libcurl-verbose.md#trace-everything), [HTTPS](libcurl-http.md#https)
+ - TLS: [Ubuntu and Debian](get-curl-linux.md#ubuntu-and-debian), [lib/vtls](sourcecode-layout.md#lib/vtls), [Handling different build options](sourcecode-options.md#handling-different-build-options), [Select TLS backend](building-source.md#select-tls-backend), [TLS libraries](building-deps.md#tls-libraries), [Build to use a TLS library](building-tls.md#build-to-use-a-tls-library), [TLS](protocols-network.md#tls), [How much do protocols change?](protocols-protocols.md#how-much-do-protocols-change?), [GOPHERS](protocols-curl.md#gophers), [Connection reuse](cmdline-urls.md#connection-reuse), [Verbose mode](usingcurl-verbose.md#verbose-mode), [Line 1: curl](usingcurl-version.md#line-1:-curl), [Change the Host: header](usingcurl-connections.md#change-the-host:-header), [MITM-proxies](usingcurl-proxies.md#mitm-proxies), [Available exit codes](usingcurl-returns.md#available-exit-codes), [SCP and SFTP](usingcurl-scpsftp.md#scp-and-sftp), [TLS for emails](usingcurl-reademail.md#tls-for-emails), [Caveats](usingcurl-mqtt.md#caveats), [TLS](usingcurl-tls.md#tls), [SSLKEYLOGFILE](tls-sslkeylogfile.md#sslkeylogfile), [How to HTTP with curl](http.md#how-to-http-with-curl), [The URL converted to a request](http-basics.md#the-url-converted-to-a-request), [HTTPS](http-https.md#https), [Figure out what a browser sends](http-post.md#figure-out-what-a-browser-sends), [HTTPS only](http-http3.md#https-only), [Proxy types](libcurl-proxies.md#proxy-types), [Available information](libcurl-getinfo.md#available-information), [libcurl TLS options](libcurl-tlsoptions.md#libcurl-tls-options), [Trace everything](libcurl-verbose.md#trace-everything), [HTTPS](libcurl-http.md#https)
  - TODO: [Suggestions](sourcecode-contributing.md#suggestions)
  - --tr-encoding: [Compression](usingcurl-downloads.md#compression), [Transfer encoding](http-response.md#transfer-encoding)
  - --trace: [--trace and --trace-ascii](usingcurl-trace.md#trace-and---trace-ascii)
@@ -317,8 +318,8 @@
  - --trace-time: [--trace-time](usingcurl-trace.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http-response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http-post.md#chunked-encoded-posts)
 ## U
- - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [IMAP](usingcurl-reademail.md#imap), [HTTP authentication](http-auth.md#http-authentication), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - -U: [Proxy authentication](usingcurl-proxies.md#proxy-authentication)
+ - -u: [Passwords and snooping](cmdline-passwords.md#passwords-and-snooping), [Authentication](usingcurl-ftp.md#authentication), [URLs](usingcurl-scpsftp.md#urls), [IMAP](usingcurl-reademail.md#imap), [HTTP authentication](http-auth.md#http-authentication), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - Ubuntu: [Ubuntu and Debian](get-curl-linux.md#ubuntu-and-debian)
  - URL Globbing: [URL globbing](cmdline-globbing.md#url-globbing)
 ## V
@@ -330,8 +331,8 @@
  - Write callback: [Write callback](callback-write.md#write-callback), [Get a HTML page in memory](libcurlex-getinmem.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http-responses.md#http-responses)
  - --write-out: [--write-out](usingcurl-writeout.md#write-out), [HTTP response codes](http-response.md#http-response-codes)
 ## X
- - -X: [Request method](http-requests.md#request-method), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
  - -x: [HTTP](usingcurl-proxies.md#http), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl-proxies.md#proxy-environment-variables)
+ - -X: [Request method](http-requests.md#request-method), [PUT](http-put.md#put), [curl HTTP cheat sheet](http-cheatsheet.md#curl-http-cheat-sheet)
 ## Y
  - yum: [Redhat and Centos](get-curl-linux.md#redhat-and-centos)
 ## Z

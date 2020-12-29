@@ -53,11 +53,13 @@ exact URL to send the POST to, using the "action" parameter.
 
 In our imaginary case, the form tag looks like this:
 
-    <form action="login.cgi" method="POST">
-      <input type="text" name="user">
-      <input type="password" name="secret">
-      <input type="hidden" name="id" value="bc76">
-    </form>
+~~~
+<form action="login.cgi" method="POST">
+  <input type="text" name="user">
+  <input type="password" name="secret">
+  <input type="hidden" name="id" value="bc76">
+</form>
+~~~
 
 There are three fields of importance. **text**, **secret** and **id**. The
 last one, the id, is marked "hidden" which means that it will not show up in

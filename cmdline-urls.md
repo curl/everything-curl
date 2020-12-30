@@ -214,12 +214,12 @@ that fails, use the `--fail-early` option.
 In previous sections we described how curl always parses all options in the
 whole command line and applies those to all the URLs that it transfers.
 
-That was a simplification: curl also offers an option (-;, --next) that
-inserts a sort of boundary between a set of options and URLs for which it will
-apply the options. When the command-line parser finds a --next option, it
-applies the following options to the next set of URLs. The --next option thus
-works as a *divider* between a set of options and URLs. You can use as many
---next options as you please.
+That was a simplification: curl also offers an option (`-:`, `--next`) that
+inserts a boundary between a set of options and URLs for which it will apply
+the options. When the command-line parser finds a `--next` option, it applies
+the following options to the next set of URLs. The `--next` option thus works
+as a *divider* between a set of options and URLs. You can use as many `--next`
+options as you please.
 
 As an example, we do an HTTP GET to a URL and follow redirects, we then make a
 second HTTP POST to a different URL and we round it up with a HEAD request to
@@ -229,7 +229,7 @@ a third URL. All in a single command line:
       --data sendthis http://example.com/2 --next
       --head http://example.com/3
 
-Trying something like that _without_ the --next options on the command line
+Trying something like that _without_ the `--next` options on the command line
 would generate an illegal command line since curl would attempt to combine
 both a POST and a HEAD:
 

@@ -48,11 +48,10 @@ the [HTTP multipart formposts](http-multipart.md) chapter.
 
 #### PUT
 
-HTTP PUT is the sort of upload that was designed to send a complete resource
-that is meant to be put as-is on the remote site or even replace an existing
-resource there. That said, this is also the least used upload method for HTTP
-on the web today and lots, if not most, web servers do not even have PUT
-enabled.
+HTTP PUT is the upload method that was designed to send a complete resource
+meant to be put as-is on the remote site or even replace an existing resource
+there. That said, this is also the least used upload method for HTTP on the
+web today and lots, if not most, web servers do not even have PUT enabled.
 
 You send off an HTTP upload using the -T option with the file to upload:
 

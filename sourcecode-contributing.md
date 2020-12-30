@@ -186,4 +186,4 @@ be given "push rights" and become one of the selected few in that team.
 
 Daniel remains the project leader and while it is rarely needed, he has the
 final say in debates that do not seem to sway in either direction or fail to
-reach some sort of consensus.
+reach consensus.

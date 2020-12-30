@@ -12,8 +12,8 @@ Later on, someone suggested that curl could actually be a clever "recursive
 acronym" (where the first letter in the acronym refers back to the same word):
 "Curl URL Request Library"
 
-While that is awesome, it was actually not the original thought. We sort of
-wish we were that clever though…
+While that is awesome, it was actually not the original thought. We wish we
+were that clever…
 
 There are and were other projects using the name curl in various ways, but we
 were not aware of them by the time our curl came to be.

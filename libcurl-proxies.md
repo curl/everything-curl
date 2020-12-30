@@ -1,11 +1,10 @@
 # Proxies
 
-A proxy in a network context is a sort of middle man, a server in between you
-as a client and the remote server you want to communicate with. The client
-contacts the middle man which then goes on to contact the remote server for
-you.
+A proxy in a network context is a middle man, a server in between you as a
+client and the remote server you want to communicate with. The client contacts
+the middle man which then goes on to contact the remote server for you.
 
-This sort of proxy use is sometimes used by companies and organizations, in
+This style of proxy use is sometimes used by companies and organizations, in
 which case you are usually required to use them to reach the target server.
 
 There are several different kinds of proxies and different protocols to use

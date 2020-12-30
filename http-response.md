@@ -55,16 +55,16 @@ An HTTP 1.1 server can decide to respond with a "chunked" encoded response, a
 feature that was not present in HTTP 1.0.
 
 When sending a chunked response, there's no Content-Length: for the response
-to indicate its size. Instead, there's a `Transfer-Encoding: chunked`
-header that tells curl there's chunked data coming and then in the response
-body, the data comes in a series of "chunks". Every individual chunk starts
-with the size of that particular chunk (in hexadecimal), then a newline and
-then the contents of the chunk. This is repeated over and over until the end of the
-response, which is signalled with a zero sized chunk. The point of this sort
-of response is for the client to be able to figure out when the responses has
-ended even though the server did not know the full size before it started to
-send it. This is usually the case when the response is dynamic and generated
-at the point when the request comes.
+to indicate its size. Instead, there's a `Transfer-Encoding: chunked` header
+that tells curl there's chunked data coming and then in the response body, the
+data comes in a series of "chunks". Every individual chunk starts with the
+size of that particular chunk (in hexadecimal), then a newline and then the
+contents of the chunk. This is repeated over and over until the end of the
+response, which is signalled with a zero sized chunk. The point of this
+response encoding is for the client to be able to figure out when the
+responses has ended even though the server did not know the full size before
+it started to send it. This is usually the case when the response is dynamic
+and generated at the point when the request comes.
 
 Clients like curl will, of course, decode the chunks and not show the chunk
 sizes to users.
@@ -106,10 +106,10 @@ It should be noted that not many HTTP servers in the wild support this.
 
 ### Pass on transfer encoding
 
-In some situations you may want to use curl as some sort of proxy or other in
-between software. In those cases, curl's way to deal with transfer-encoding
-headers and then decoding the actual data transparently may not be desired, if
-the end receiver *also* expects to do the same.
+In some situations you may want to use curl as a proxy or other in-between
+software. In those cases, curl's way to deal with transfer-encoding headers
+and then decoding the actual data transparently may not be desired, if the end
+receiver *also* expects to do the same.
 
 You can then ask curl to pass on the received data, without decoding it. That
 means passing on the sizes in the chunked encoding format or the compressed

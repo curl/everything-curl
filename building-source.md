@@ -119,7 +119,7 @@ command line options.
 The default OpenSSL configure check will also detect and use BoringSSL or
 libressl.
 
- - BearTLS: `--without-ssl --with-bearssl`.
+ - BearSSL: `--without-ssl --with-bearssl`.
  - BoringSSL: - by default
  - GnuTLS: `--without-ssl --with-gnutls`.
  - MesaLink: `--without-ssl --with-mesalink`.

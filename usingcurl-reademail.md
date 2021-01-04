@@ -55,7 +55,7 @@ or
 "Implicit" SSL means that the connection gets secured already at first
 connect, which you make curl attempt by specifying a scheme in the URL that
 uses SSL. In this case either `pop3s://` or `imaps://`. For such connections,
-curl will insist on connection and negotiating a TLS connection already from
+curl will insist on connecting and negotiating a TLS connection already from
 the start, or it will fail its operation.
 
 The previous explicit examples done with implicit SSL:

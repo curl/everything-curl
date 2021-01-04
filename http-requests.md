@@ -7,8 +7,7 @@ headers, and this chapter details how you can modify all of those.
 ## Request method
 
 The first line of the request includes the *method* - sometimes also referred
-to as "the verb". When doing a simple GET request as this command line would
-do:
+to as the verb. When doing a simple GET request as this command line would do:
 
     curl http://example.com/file
 
@@ -39,7 +38,7 @@ subsequent redirects.
 ## Request target
 
 In the example above, you can see how the path section of the URL gets turned
-into `/file` in the request line. That is called the "request target". That's
+into `/file` in the request line. That is called the request target. That's
 the resource this request will interact with. Normally this request target is
 extracted from the URL and then used in the request and as a user you do not
 need to think about it.
@@ -104,7 +103,7 @@ instead end the header field name with a *semicolon*. Like this:
 ## Referer
 
 When a user clicks on a link on a web page and the browser takes the user away
-to the next URL, it will send the new URL a "referer" header in the new
+to the next URL, it will send the new URL a `Referer:` header in the new
 request telling it where it came from. That is the referer header. And yes,
 referer is misspelled but that's how it is supposed to be!
 
@@ -131,9 +130,9 @@ User-Agent header:
 
 ## Time conditions
 
-HTTP allows for "conditional requests". They are requests that contain a
-condition in the sense that it asks the server to only deliver a response
-body if the associated condition evaluates true.
+HTTP supports conditional requests. They are requests that contain a condition
+in the sense that it asks the server to only deliver a response body if the
+associated condition evaluates true.
 
 A useful condition is time. For example, ask the server to only deliver a
 response if the resource has been modified after a particular time:

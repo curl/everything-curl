@@ -105,7 +105,7 @@ control that behavior with the `CURLOPT_POSTREDIR` option.
 When you use curl you may provide credentials like user name and password for
 a particular site, but since a HTTP redirect might move away to a different
 host curl limits what it sends away to other hosts than the original within
-the same "transfer".
+the same transfer.
 
 So if you want the credentials to also get sent to the following host names
 even though they are not the same as the original—presumably because you

@@ -6,8 +6,8 @@ works. It usually sends a chunk of relatively small amounts of data to the
 receiver.
 
 When the data is sent by a browser after data have been filled in a form, it
-will send it "URL encoded", as a serialized name=value pairs separated with
-ampersand symbols ('&'). You send such data with curl's `-d` or `--data`
+will send it URL encoded, as a serialized name=value pairs separated with
+ampersand symbols (`&`). You send such data with curl's `-d` or `--data`
 option like this:
 
     curl -d 'name=admin&shoesize=12' http://example.com/
@@ -66,20 +66,20 @@ options. To be CGI-compliant, the **data** part should begin with a name
 followed by a separator and a content specification. The **data** part can be
 passed to curl using one of the following syntaxes:
 
- - "content": This will make curl URL encode the content and pass that
+ - `content`: This will make curl URL encode the content and pass that
    on. Just be careful so that the content does not contain any = or @ symbols,
    as that will then make the syntax match one of the other cases below!
 
- - "=content": This will make curl URL encode the content and pass that
+ - `=content`: This will make curl URL encode the content and pass that
    on. The initial '=' symbol is not included in the data.
 
- - "name=content": This will make curl URL encode the content part and pass
+ - `name=content`: This will make curl URL encode the content part and pass
    that on. Note that the name part is expected to be URL encoded already.
 
- - "@filename": This will make curl load data from the given file (including
+ - `@filename`: This will make curl load data from the given file (including
    any newlines), URL encode that data and pass it on in the POST.
 
- - "name@filename": This will make curl load data from the given file
+ - `name@filename`: This will make curl load data from the given file
    (including any newlines), URL encode that data and pass it on in the POST.
    The name part gets an equal sign appended, resulting in
    name=urlencoded-file-content. Note that the name is expected to be URL
@@ -101,7 +101,7 @@ you can tell curl to send that contents URL encoded using the field name
 
 In both these examples above, the field name is not URL encoded but is passed
 on as-is. If you want to URL encode the field name as well, like if you want
-to pass on a field name called "user name", you can ask curl to encode the
+to pass on a field name called `user name`, you can ask curl to encode the
 entire string by prefixing it with an equals sign (that will not get sent):
 
     curl --data-urlencode "=user name=John Doe (Junior)" http://example.com
@@ -151,15 +151,15 @@ from the request and avoid the waiting with `-H`:
     curl -H Expect: -d "payload to send" http://example.com
 
 In some situations, curl will inhibit the use of the Expect header if the
-content it is about to send is small (like below one kilobyte), as having
-to "waste" such a small chunk of data is not considered much of a problem.
+content it is about to send is small (like below one kilobyte), as having to
+waste such a small chunk of data is not considered much of a problem.
 
 ### Chunked encoded POSTs
 
 When talking to a HTTP 1.1 server, you can tell curl to send the request body
 without a `Content-Length:` header upfront that specifies exactly how big the
 POST is. By insisting on curl using chunked Transfer-Encoding, curl will send
-the POST "chunked" piece by piece in a special style that also sends the size
+the POST chunked piece by piece in a special style that also sends the size
 for each such chunk as it goes along.
 
 You send a chunked POST with curl like this:
@@ -201,13 +201,13 @@ browser. See the Wireshark documentation for details on doing that.
 
 ### JavaScript and forms
 
-A common mitigation against automated "agents" or scripts using curl is to
-have the page with the HTML form use JavaScript to set values of some input
-fields, usually one of the hidden ones. Often, there's some JavaScript code
-that executes on page load or when the submit button is pressed which sets a
-magic value that the server then can verify before it considers the submission
-to be valid.
+A common mitigation against automated agents or scripts using curl is to have
+the page with the HTML form use JavaScript to set values of some input fields,
+usually one of the hidden ones. Often, there's some JavaScript code that
+executes on page load or when the submit button is pressed which sets a magic
+value that the server then can verify before it considers the submission to be
+valid.
 
-You can usually work around that by just reading the JavaScript code and redoing
-that logic in your script. Using the above mentioned tricks to check exactly
-what a browser sends is then also a good help.
+You can usually work around that by just reading the JavaScript code and
+redoing that logic in your script. Using the above mentioned tricks to check
+exactly what a browser sends is then also a good help.

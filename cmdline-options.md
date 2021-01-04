@@ -105,7 +105,7 @@ we call the file 'json' that contains the above mentioned data:
 ### Negative options
 
 For options that switch on something, there is also a way to switch it
-off. You then use the long form of the option with an initial "no-" prefix
+off. You then use the long form of the option with an initial `no-` prefix
 before the name. As an example, to switch off verbose mode:
 
     curl --no-verbose http://example.com

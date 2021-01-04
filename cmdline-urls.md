@@ -9,7 +9,7 @@ URL is, strictly speaking, the former name for these. URI (Uniform Resource
 Identifier) is the more modern and correct name for them. Their syntax is defined
 in [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
 
-Where curl accepts a "URL" as input, it is then really a "URI". Most of the
+Where curl accepts a “URL” as input, it is then really a “URI”. Most of the
 protocols curl understands also have a corresponding URI syntax document that
 describes how that particular URI format works.
 
@@ -123,7 +123,7 @@ With the name given as an IPv6 address:
 
 ### Path
 
-Every URL contains a path. If there's none given, "/" is implied. The path is
+Every URL contains a path. If there's none given, `/` is implied. The path is
 sent to the specified server to identify exactly which resource that is
 requested or that will be provided.
 
@@ -147,8 +147,8 @@ to also tell the client (curl in this case) which file type the resource
 is. This is because FTP is a little special and can change mode for a transfer
 and thus handle the file differently than if it would use another mode.
 
-You tell curl that the FTP resource is an ASCII type by appending ";type=A"
-to the URL. Getting the 'foo' file from example.com's root directory using ASCII
+You tell curl that the FTP resource is an ASCII type by appending `;type=A` to
+the URL. Getting the `foo` file from example.com's root directory using ASCII
 could then be made with:
 
     curl "ftp://example.com/foo;type=A"
@@ -168,20 +168,20 @@ with a trailing slash as mentioned above.
 
 ### Fragment
 
-URLs offer a "fragment part". That's usually seen as a hash symbol (#) and a
+URLs offer a fragment part. That's usually seen as a hash symbol (#) and a
 name for a specific name within a web page in browsers. curl supports
 fragments fine when a URL is passed to it, but the fragment part is never
 actually sent over the wire so it does not make a difference to curl's
 operations whether it is present or not.
 
-### Browsers' "address bar"
+### Browsers' address bar
 
-It is important to realize that when you use a modern web browser, the
-"address bar" they tend to feature at the top of their main windows are not
-using "URLs" or even "URIs". They are in fact mostly using IRIs, which is a
-superset of URIs to allow internationalization like non-Latin symbols and
-more, but it usually goes beyond that, too, as they tend to, for example, handle
-spaces and do magic things on percent encoding in ways none of these mentioned
+It is important to realize that when you use a modern web browser, the address
+bar they tend to feature at the top of their main windows are not using URLs
+or even URIs. They are in fact mostly using IRIs, which is a superset of URIs
+to allow internationalization like non-Latin symbols and more, but it usually
+goes beyond that, too, as they tend to, for example, handle spaces and do
+magic things on percent encoding in ways none of these mentioned
 specifications say a client should do.
 
 The address bar is quite simply an interface for humans to enter and see

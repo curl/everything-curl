@@ -1,10 +1,5 @@
 # Alternative Services
 
-(This feature is marked **experimental** as of this time and needs to be
-explicitly enabled in the build.)
-
-## Alternatives
-
 [RFC 7838](https://www.rfc-editor.org/rfc/rfc7838.txt) defines a HTTP header
 which lets a server tell a client that there is one or more *alternatives* for
 that server at "another place" with the use of the `Alt-Svc:` response ehader.

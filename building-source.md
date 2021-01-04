@@ -119,10 +119,10 @@ command line options.
 The default OpenSSL configure check will also detect and use BoringSSL or
 libressl.
 
- - BearSSL: `--without-ssl --with-bearssl`.
+ - BearSSL: `--without-ssl --with-bearssl`
  - BoringSSL: - by default
- - GnuTLS: `--without-ssl --with-gnutls`.
- - MesaLink: `--without-ssl --with-mesalink`.
+ - GnuTLS: `--without-ssl --with-gnutls`
+ - MesaLink: `--without-ssl --with-mesalink`
  - NSS: `--without-ssl --with-nss`
  - OpenSSL: - by default
  - PolarSSL: `--without-ssl --with-polarssl`
@@ -134,6 +134,25 @@ libressl.
 
 All the `--with-*` options also allow you to provide the install prefix so
 that configure will search for the specific library where you tell it to.
+
+### Select SSH backend
+
+The configure based build offers the user to select from a variety of
+different SSH libraries when building. You select them by using the
+correct command line options.
+
+ - libssh2: `--with-libssh2`
+ - libssh: `--with-libssh`
+ - wolfSSH: `--with-wolfssh`
+
+### Select HTTP/3 backend
+
+The configure based build offers the user to select different HTTP/3
+libraries when building. You select them by using the correct command
+line options.
+
+ - quiche: `--with-quiche`
+ - ngtcp2: `--with-ngtcp2 --with-nghttp3`
 
 ## CMake
 

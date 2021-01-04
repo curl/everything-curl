@@ -221,6 +221,7 @@ HTTP redirects
 HTTP/1.1
 HTTP/2
 HTTP/3
+HTTP/3 backend
 HttpGet
 IDN
 Indentation
@@ -242,8 +243,8 @@ MesaLink
 Metalink
 MIT
 MITM-proxies
-multi-threading
 MQTT
+multi-threading
 name resolving
 nghttp2
 nix
@@ -301,18 +302,22 @@ SMTPS
 snapshots
 SNI
 SSH
+SSH backend
 SSL context callback
 SSLKEYLOGFILE
 STARTTLS
 TELNET
 testing
 TLS
+TLS backend
 TODO
 transfer-encoding
 Ubuntu
 URL Globbing
 Vulnerability
 Wireshark
+wolfSSH
+wolfSSL
 Write callback
 yum
 zlib

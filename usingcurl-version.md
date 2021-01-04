@@ -77,7 +77,7 @@ pop3, pop3s, rtmp, rtsp, scp, sftp, smb, smbs, smtp, smtps, telnet and tftp
 ## Line 4: Features
 
 The list of features this build of curl supports. If the name is present in
-the list, that feature is enabled. If the name isn't present, that feature is
+the list, that feature is enabled. If the name is not present, that feature is
 not enabled.
 
 Features that can be present there:

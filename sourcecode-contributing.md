@@ -70,9 +70,9 @@ should avoid to get less friction and to be successful, faster:
   already have too many of those that we have not managed to remove yet.
 
 - Quick hacks or dirty solutions that have a high risk of not working on
-  platforms you do not run or on architectures you don't know. We don't care if
-  you are in a hurry or that it works for you. We do not accept high risk code
-  or code that is hard to read or understand.
+  platforms you do not run or on architectures you do not know. We do not care
+  if you are in a hurry or that it works for you. We do not accept high risk
+  code or code that is hard to read or understand.
 
 - Code that breaks the build. Sure, we accept that we sometimes have to add
   code to certain areas that makes the new functionality perhaps depend on a

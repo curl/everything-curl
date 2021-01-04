@@ -58,9 +58,9 @@ you want to access.
 A "captive portal" is one of these systems that are popular to use in hotels,
 airports and for other sorts of network access to a larger audience. The
 portal will "capture" all network traffic and redirect you to a login web page
-until you've either clicked OK and verified that you've read their conditions
-or perhaps even made sure that you've paid plenty of money for the right to
-use the network.
+until you have either clicked OK and verified that you have read their
+conditions or perhaps even made sure that you have paid plenty of money for
+the right to use the network.
 
 curl's traffic will of course also captured by such portals and often the best
 way is to use a browser to accept the conditions and "get rid of" the portal

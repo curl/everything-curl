@@ -13,11 +13,11 @@ Like, this example sets the URL:
     res = curl_easy_setopt(easy_handle, CURLOPT_URL, "http://example.com/");
 
 Creating the easy handle and setting options on it does not make any transfer
-happen, and usually do not even make much more happen other than libcurl storing
-your wish to be used later when the transfer actually occurs. Lots of
+happen, and usually do not even make much more happen other than libcurl
+storing your wish to be used later when the transfer actually occurs. Lots of
 syntax checking and validation of the input may also be postponed, so just
-because `curl_easy_setopt` did not complain, it doesn't mean that the input was
-correct and valid; you may get an error returned later.
+because `curl_easy_setopt` did not complain, it does not mean that the input
+was correct and valid; you may get an error returned later.
 
 Read more on [easy options](libcurl-options.md) in its separate section.
 

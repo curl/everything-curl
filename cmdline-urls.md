@@ -272,7 +272,7 @@ to allow you to change that as well.
 ### Parallel transfer progress meter
 
 Naturally, the ordinary progress meter display that shows file transfer
-progress for a single transfer isn't that useful for parallel transfers so
+progress for a single transfer is not that useful for parallel transfers so
 when curl performs parallel transfers, it will show a different progress meter
 that displays information about all the current ongoing transfers in a single
 line.

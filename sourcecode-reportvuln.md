@@ -60,7 +60,7 @@ announcement.
   [distros@openwall](https://oss-security.openwall.org/wiki/mailing-lists/distros)
   to prepare them about the upcoming public security vulnerability
   announcement - attach the advisory draft for information. Note that
-  'distros' won't accept an embargo longer than 14 days and they do not care
+  'distros' do not accept an embargo longer than 14 days and they do not care
   for Windows-specific flaws.
 
 - The security team commits the fix in a private branch. The commit message

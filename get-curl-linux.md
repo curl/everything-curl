@@ -2,7 +2,7 @@
 
 Linux distributions come with "packager managers" that let you install
 software that they offer. Most Linux distributions offer curl and libcurl to
-be installed if they aren't installed by default.
+be installed if they are not installed by default.
 
 ## Ubuntu and Debian
 

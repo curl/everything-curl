@@ -87,9 +87,9 @@ TBD
 ## Try-first
 
 Some HTTP servers allow one out of several authentication methods, in some
-cases you will find yourself in a position where you as a client doesn't want
-or isn't able to select a single specific method before-hand and for yet
-another subset of cases your application doesn't know if the requested URL
+cases you will find yourself in a position where you as a client does not want
+or is not able to select a single specific method before-hand and for yet
+another subset of cases your application does not know if the requested URL
 even require authentication or not!
 
 libcurl covers all these situations as well.

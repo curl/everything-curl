@@ -25,7 +25,7 @@ the lists.
 
 Many mail programs and web archivers use information within mails to keep them
 together as "threads", as collections of posts that discuss a certain
-subject. If you do not intend to reply on the same or similar subject, don't
+subject. If you do not intend to reply on the same or similar subject, do not
 just hit reply on an existing mail and change subject; create a new mail.
 
 #### Reply to the list

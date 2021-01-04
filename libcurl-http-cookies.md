@@ -47,7 +47,7 @@ cookies will be written to the given file. The file format is the well-known
 ## Setting custom cookies
 
 A simpler and more direct way to just pass on a set of specific cookies in a
-request that does not add any cookies to the cookie store and doesn't even
+request that does not add any cookies to the cookie store and does not even
 activate the cookie engine, is to set the set with `CURLOPT_COOKIE:':
 
     curl_easy_setopt(easy, CURLOPT_COOKIE, "name=daniel; present=yes;");

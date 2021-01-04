@@ -43,7 +43,7 @@ A basic Unix shell script could look like something like this:
 
  5. Couldn't resolve proxy. The address of the given proxy host could not be
     resolved. Either the given proxy name is just wrong, or the DNS server is
-    misbehaving and doesn't know about this name when it should or perhaps
+    misbehaving and does not know about this name when it should or perhaps
     even the system you run curl on is misconfigured so that it does not
     find/use the correct DNS server.
 
@@ -81,7 +81,7 @@ A basic Unix shell script could look like something like this:
     request. PASS in the command curl sends the password to the server with,
     and even anonymous connections to FTP server actually sends a password - a
     fixed anonymous string. Getting a response back from this command that
-    curl does not understand is a strong indication that this isn't an FTP
+    curl does not understand is a strong indication that this is not an FTP
     server at all or that the server is badly broken.
 
  12. During an active FTP session (PORT is used) while waiting for the server

@@ -34,8 +34,8 @@ request headers, see the following section.
 
 ## Customize HTTP request headers
 
-When libcurl issues HTTP requests as part of performing the data transfers
-you've asked it to, it will of course send them off with a set of HTTP headers
+When libcurl issues HTTP requests as part of performing the data transfers you
+have asked it to, it will of course send them off with a set of HTTP headers
 that are suitable for fulfilling the task given to it.
 
 If just given the URL "http://localhost/file1.txt", libcurl 7.51.0 would send

@@ -39,7 +39,7 @@ TC + TLS.
 The [alt-svc](http-altsvc.md) method of changing to HTTP/3 is the official way
 to bootstrap into HTTP/3 for a server.
 
-Note that you need that feature built-in and that it doesn't switch to HTTP/3
+Note that you need that feature built-in and that it does not switch to HTTP/3
 for the *current* request unless the alt-svc cache is already populated, but
 it will rather store the info for use in the *next* request to the host.
 
@@ -52,8 +52,8 @@ Currently, curl features no fall-back logic but if a HTTP/3 (or QUIC rather)
 connection fails it will be reported as, yes, a failure.
 
 Web browsers will upgrade to HTTP/3 in the background and only switch over
-once they know it works, which is a smoother way that doesn't break things for
-users as much.
+once they know it works, which is a smoother way that does not break things
+for users as much.
 
 Future curl versions will likely offer better fall-back and error handling for
 this.

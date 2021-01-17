@@ -43,7 +43,7 @@ one.
 
 ## Autotools
 
-The "Autotools" is a collection of different tools that used together generate
+The "Autotools" are a collection of different tools that used together generate
 the `configure` script. The configure script is run by the user who wants to
 build curl and it does a whole bunch of things:
 

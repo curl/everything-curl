@@ -1,6 +1,6 @@
 ## Handling different build options
 
-The curl and libcurl source code have been carefully written to build and run
+The curl and libcurl source code has been carefully written to build and run
 on virtually every computer platform in existence. This can only be done
 through hard work and by adhering to a few guidelines (and, of course, a fair
 amount of testing).

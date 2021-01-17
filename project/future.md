@@ -15,7 +15,7 @@ keeps a [KNOWN_BUGS](https://curl.se/docs/knownbugs.html) document with,
 a list of known problems we would like to fix.
 
 There's a [ROADMAP](https://curl.se/dev/roadmap.html) document that
-describe some plans for the short-term that some of the active developers
+describes some plans for the short-term that some of the active developers
 thought they would work on next. Of course, we can not promise that we will
 always follow it perfectly.
 

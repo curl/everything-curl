@@ -11,7 +11,7 @@ allow users to do transfers even better and faster.
 
 The project casually maintains a [TODO](https://curl.se/docs/todo.html)
 file holding a bunch of ideas that we could work on in the future. It also
-keeps a [KNOWN_BUGS](https://curl.se/docs/knownbugs.html) document with,
+keeps a [KNOWN_BUGS](https://curl.se/docs/knownbugs.html) document with
 a list of known problems we would like to fix.
 
 There's a [ROADMAP](https://curl.se/dev/roadmap.html) document that

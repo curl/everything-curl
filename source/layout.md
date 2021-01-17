@@ -46,7 +46,7 @@ source files may contain code that is not used in your particular build.
 The VTLS sub section within libcurl is the home of all the TLS back-ends
 libcurl can be built to support. The "virtual" TLS internal API is a common
 API that is used within libcurl to access TLS and crypto functions without the
-main code knowing exactly which TLS library that is used. This allows the
+main code knowing exactly which TLS library is used. This allows the
 person who builds libcurl to select from a wide variety TLS libraries to build
 with.
 

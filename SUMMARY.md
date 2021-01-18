@@ -133,7 +133,7 @@
         * [Submit a login form over HTTP](libcurlex-login.md)
     * [for C++ programmers](libcurl-cplusplus.md)
 * [HTTP with libcurl](libcurl-http.md)
-    * [HTTP responses](libcurl-http-responses.md)
+    * [HTTP responses](libcurl-http/responses.md)
     * [HTTP requests](libcurl-http-requests.md)
     * [HTTP versions](libcurl-http-versions.md)
     * [HTTP ranges](libcurl-http-ranges.md)

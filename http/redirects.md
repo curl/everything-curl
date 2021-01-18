@@ -45,8 +45,8 @@ there's really no difference between permanent and temporary redirects.
 ## Tell curl to follow redirects
 
 In curl's tradition of only doing the basics unless you tell it differently,
-it does not follow HTTP redirects by default. Use the `-L, --location` to tell
-it to do that.
+it does not follow HTTP redirects by default. Use the `-L, --location` option
+to tell it to do that.
 
 When following redirects is enabled, curl will follow up to 50 redirects by
 default. There's a maximum limit mostly to avoid the risk of getting caught in

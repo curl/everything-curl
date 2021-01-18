@@ -89,3 +89,9 @@ or known to be larger than 1024 bytes.
 
 A libcurl-using client can explicitly disable the use of the `Expect:` header
 with the [CURLOPT_HTTPHEADER](libcurl-http-requests.md) option.
+
+## Uploads also downloads
+
+HTTP is a protocol that can respond with contents back even when you upload
+data to it - it is up to the server to decide. The response data may even
+start getting sent back to the client before the upload has completed.

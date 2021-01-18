@@ -35,7 +35,7 @@ The first digit of the HTTP response code is a kind of "error class":
  - 2xx: success
  - 3xx: a redirect
  - 4xx: the client asked for something the server could not or would not deliver
- - 5xx: there's problem in the server
+ - 5xx: there's a problem in the server
 
 Remember that you can use curl's `--write-out` option to extract the response
 code. See the [--write-out](../usingcurl/verbose/writeout.md) section.

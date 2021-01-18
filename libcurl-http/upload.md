@@ -90,6 +90,8 @@ or known to be larger than 1024 bytes.
 A libcurl-using client can explicitly disable the use of the `Expect:` header
 with the [CURLOPT_HTTPHEADER](libcurl-http-requests.md) option.
 
+This header is not used with HTTP/2 or HTTP/3.
+
 ## Uploads also downloads
 
 HTTP is a protocol that can respond with contents back even when you upload

@@ -35,14 +35,27 @@ no limit to how many parts you can send.
 
 Each such part has a name, a set of headers and a few other properties.
 
-libcurl offers a convenience function for constructing such a series of parts
-and to send that off to the server. `curl_formadd` is the function to build a
-formpost. Invoke it once for each part, and pass in arguments to it
-detailing the specifics and characteristics of that part. When all parts you
-want to send have been added, you pass in the handle `curl_formadd` returned
+libcurl offers a set of convenience functions for constructing such a series
+of parts and to send that off to the server, all prefixed with
+`curl_mime`. Create a multipart post and for each part in the data you set the
+name, the data and perhaps additional meta-data. A very basic setup might look
 like this:
 
-    curl_easy_setopt(easy, CURLOPT_HTTPPOST, formposthandle);
+    /* Create the form */
+    form = curl_mime_init(curl);
+
+    /* Fill in the file upload field */
+    field = curl_mime_addpart(form);
+    curl_mime_name(field, "sendfile");
+    curl_mime_filedata(field, "photo.jpg");
+
+Then you pass that post to libcurl like this:
+
+    curl_easy_setopt(easy, CURLOPT_MIMEPOST, form);
+
+(`curl_formadd` is the former API to build multi-part fromposts with but we no
+longer recommend using that)
+
 
 ## HTTP PUT
 

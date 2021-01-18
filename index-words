@@ -108,6 +108,10 @@ curl_global_cleanup
 curl_global_init
 CURL_IPRESOLVE_V6
 CURL_MAX_WRITE_SIZE
+curl_mime_addpart
+curl_mime_filedata
+curl_mime_init
+curl_mime_name
 curl_multi_add_handle
 curl_multi_cleanup
 curl_multi_fdset
@@ -157,6 +161,7 @@ CURLOPT_HTTPPOST
 CURLOPT_IPRESOLVE
 CURLOPT_MAXFILE_LARGE
 CURLOPT_MAXREDIRS
+CURLOPT_MIMEPOST
 CURLOPT_NOBODY
 CURLOPT_NOPROGRESS
 CURLOPT_OPENSOCKETDATA

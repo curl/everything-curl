@@ -32,7 +32,7 @@ to the given host name and port number, use `--http3`. Like this:
     curl --http3 https://example.com/
 
 Normally, a `HTTPS://` URL implies that a client needs to connect to it using
-TC + TLS.
+TCP + TLS.
 
 ## Alt-svc:
 

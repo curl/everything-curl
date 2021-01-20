@@ -31,11 +31,10 @@ This book project started at the end of September 2015.
 
 ## The book sites
 
-**https://ec.haxx.se** is the home of this book. It features accessible
-links to read the book online in a web version, or download a PDF
-version for offline reading. Unfortunately, the previously provided
-ebook formats are no longer provided by gitbook.com that we use to
-produce the book.
+**https://everything.curl.dev** is the home of this book. It features
+accessible links to read the book online in a web version, or download a PDF
+version for offline reading. Unfortunately, the previously provided ebook
+formats are no longer provided by gitbook.com that we use to produce the book.
 
 **https://github.com/bagder/everything-curl** hosts all the book content.
 

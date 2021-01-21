@@ -100,7 +100,7 @@ precedence.
 When using environment variables to set a proxy, you could easily end up in a
 situation where one or a few host names should be excluded from going through
 the proxy. This can be done with the `NO_PROXY` variable - or the
-corresponding `CURLOPT_NOPROXY` libcurl option. Set that to a comma- separated
+corresponding `CURLOPT_NOPROXY` libcurl option. Set that to a comma-separated
 list of host names that should not use a proxy when being accessed. You can
 set NO_PROXY to be a single asterisk ('\*') to match all hosts.
 

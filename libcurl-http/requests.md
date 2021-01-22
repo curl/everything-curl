@@ -2,7 +2,7 @@
 
 A HTTP request is what curl sends to the server when it tells the server what
 to do. When it wants to get data or send data. All transfers involving HTTP
-starts with a HTTP request.
+start with a HTTP request.
 
 A HTTP request contains a method, a path, HTTP version and a set of request
 headers. And of course a libcurl using application can tweak all those fields.

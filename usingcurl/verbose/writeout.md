@@ -43,6 +43,12 @@ Some of these variables are not available in really old curl versions.
 - `%{content_type}` the Content-Type of the requested document, if there
   was any.
 
+- `%{errormsg}` the error message from the transfer. Empty if no error
+  occured. (Introduced in 7.75.0)
+
+- `%{exitcode}` the numerical exit code from the transfer. 0 if no error
+  occured. (Introduced in 7.75.0)
+
 - `%{filename_effective}` the ultimate filename that curl writes out
   to. This is only meaningful if curl is told to write to a file with the
   `--remote-name` or `--output` option. It's most useful in combination with
@@ -75,6 +81,9 @@ Some of these variables are not available in really old curl versions.
 - `%{num_headers}` number of response headers in the last responsea
 
 - `%{num_redirects}` number of redirects that were followed in the request.
+
+- `%{onerror}` if the transfer ended with an error, show the rest of the
+  string, otherwise stop here. (Introduced in 7.75.0)
 
 - `%{proxy_ssl_verify_result}` the result of the SSL peer certificate
   verification that was requested when communicating with a proxy. 0 means the
@@ -143,6 +152,10 @@ Some of these variables are not available in really old curl versions.
 - `%{time_total}` the total time, in seconds, that the full operation
   lasted. The time will be displayed with millisecond resolution.
 
+- `%{url}` the URL used in the transfer. (Introduced in 7.75.0)
+
 - `%{url_effective}` the URL that was fetched last. This is particularly
   meaningful if you have told curl to follow Location: headers (with `-L`).
 
+- `%{urlnum}` the 0-based numerical index of the URL used in the
+  transfer. (Introduced in 7.75.0)

@@ -100,6 +100,7 @@ curl-announce
 curl-library
 curl-users
 curl_easy_cleanup
+curl_easy_getinfo
 curl_easy_init
 curl_easy_perform
 curl_easy_reset
@@ -133,6 +134,11 @@ curl_url_get
 curl_url_set
 curl_version_info
 CURLE_ABORTED_BY_CALLBACK
+CURLINFO_CERTINFO
+CURLINFO_CONTENT_TYPE
+CURLINFO_EFFECTIVE_URL
+CURLINFO_FILETIME
+CURLINFO_TOTAL_TIME_T
 CURLMOPT_SOCKETFUNCTION
 CURLMOPT_TIMERFUNCTION
 CURLOPT_CLOSEOCKETFUNCTION

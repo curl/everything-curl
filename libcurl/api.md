@@ -120,4 +120,30 @@ following layout:
 
       const char *libssh_version; /* human readable string */
 
+      /* when 'age' is 4 or higher, the member below also exists: */
+      unsigned int brotli_ver_num; /* Numeric Brotli version
+                                      (MAJOR << 24) | (MINOR << 12) | PATCH */
+      const char *brotli_version; /* human readable string. */
+
+      /* when 'age' is 5 or higher, the member below also exists: */
+      unsigned int nghttp2_ver_num; /* Numeric nghttp2 version
+                                       (MAJOR << 16) | (MINOR << 8) | PATCH */
+      const char *nghttp2_version; /* human readable string. */
+      const char *quic_version;    /* human readable quic (+ HTTP/3) library +
+                                      version or NULL */
+
+      /* when 'age' is 6 or higher, the member below also exists: */
+      const char *cainfo;          /* the built-in default CURLOPT_CAINFO, might
+                                      be NULL */
+      const char *capath;          /* the built-in default CURLOPT_CAPATH, might
+                                      be NULL */
+
+      /* when 'age' is 7 or higher, the member below also exists: */
+      unsigned int zstd_ver_num; /* Numeric Zstd version
+                                      (MAJOR << 24) | (MINOR << 12) | PATCH */
+      const char *zstd_version; /* human readable string. */
+
+      /* when 'age' is 8 or higher, the member below also exists: */
+      const char *hyper_version; /* human readable string. */
+
     } curl_version_info_data;

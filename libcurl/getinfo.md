@@ -81,6 +81,5 @@ If you want to extract the local port number that was used in that connection:
 | CURLINFO_SSL_ENGINES    | struct curl_slist * | A list of OpenSSL crypto engines
 | CURLINFO_SSL_VERIFYRESULT | long | Certificate verification result
 | CURLINFO_STARTTRANSFER_TIME | double | Time from start until just when the first byte is received
-| CURLINFO_TLS_SESSION    | struct curl_slist * | TLS session info that can be used for further processing.  (**Deprecated option, use CURLINFO_TLS_SSL_PTR instead!**)
 | CURLINFO_TLS_SSL_PTR    | struct curl_slist * | TLS session info that can be used for further processing
 | CURLINFO_TOTAL_TIME     | double | Total time of previous transfer

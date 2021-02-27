@@ -152,7 +152,7 @@ date, and you can of course also specify it complete with a time:
 curl can also get the time stamp off a local file as a shortcut. No need to
 download the file again if it has not changed on the server, right? If the
 string does not match a time or date, curl checks if there's a file named like
-that, and if so gets the time from it's modification time.
+that, and if so gets the time from its modification time.
 
     curl --time-cond file https://www.example.org/file.html -o file
 

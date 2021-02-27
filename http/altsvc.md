@@ -2,7 +2,7 @@
 
 [RFC 7838](https://www.rfc-editor.org/rfc/rfc7838.txt) defines a HTTP header
 which lets a server tell a client that there is one or more *alternatives* for
-that server at "another place" with the use of the `Alt-Svc:` response ehader.
+that server at "another place" with the use of the `Alt-Svc:` response header.
 
 The *alternatives* the server suggests can include a server running on another
 port on the same host, on another completely different host name and it can

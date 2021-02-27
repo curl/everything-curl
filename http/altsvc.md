@@ -22,7 +22,7 @@ new or updated `Alt-Svc:` headers, curl will store those in the cache at exit.
 ## The alt-svc cache
 
 The alt-svc cache is very similar to a cookie jar. It is a text based file
-that stores one alternative per line and each entry also has an expiry time so
+that stores one alternative per line and each entry also has an expiry time
 for which duration that particular alternative is valid.
 
 ## HTTPS only

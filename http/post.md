@@ -110,7 +110,7 @@ entire string by prefixing it with an equals sign (that will not get sent):
 
 A little convenience feature that could be suitable to mention in this context
 is the `-G` or `--get` option, which takes all data you have specified with the
-different `-d` variants and appends that data on the right end of the URL
+different `-d` variants and appends that data as if on the right end of a URL
 separated with a '?' and then makes curl send a GET instead.
 
 This option makes it easy to switch between POSTing and GETing a form, for

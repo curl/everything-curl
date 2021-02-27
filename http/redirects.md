@@ -130,7 +130,7 @@ of these kinds of redirects.
 ## JavaScript redirects
 
 The modern web is full of JavaScript and as you know, JavaScript is a
-language and a full run time that allows code to execute in the browser when
+language and a full runtime that allows code to execute in the browser when
 visiting web sites.
 
 JavaScript also provides means for it to instruct the browser to move on to

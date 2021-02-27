@@ -62,7 +62,7 @@ size of that particular chunk (in hexadecimal), then a newline and then the
 contents of the chunk. This is repeated over and over until the end of the
 response, which is signalled with a zero sized chunk. The point of this
 response encoding is for the client to be able to figure out when the
-responses has ended even though the server did not know the full size before
+response has ended even though the server did not know the full size before
 it started to send it. This is usually the case when the response is dynamic
 and generated at the point when the request comes.
 

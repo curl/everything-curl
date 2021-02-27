@@ -26,7 +26,7 @@ type=file>` tag, for file uploads.
 The default `enctype` used by forms, which is rarely spelled out in HTML since
 it is default, is `application/x-www-form-urlencoded`. It makes the browser
 "URL encode" the input as name=value pairs with the data encoded to avoid
-unsafe character. We often refer to that as a [regular POST](http-post.md),
+unsafe characters. We often refer to that as a [regular POST](http-post.md),
 and you perform one with curl's `-d` and friends.
 
 ## POST outside of HTML

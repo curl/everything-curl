@@ -25,7 +25,7 @@ what HTTP operations it performs.
 The [Copy as curl](usingcurl-copyas.md) section describes how you can record a
 browser's request and easily convert that to a curl command line.
 
-Those copied curl command lines are often not Good enough though since they
+Those copied curl command lines are often not good enough though since they
 tend to copy *exactly* that request, while you probably want to be a bad bit
 more dynamic so that you can reproduce the same operation and not just resend
 the verbatim request.

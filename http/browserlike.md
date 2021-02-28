@@ -9,7 +9,7 @@ Here are some tricks and advice on how to proceed when doing this.
 
 ## Figure out what the browser does
 
-This is really a necessary first step. Second-guessing what it does risk having
+This is really a necessary first step. Second-guessing what it does risks having
 you chase down the wrong problem rat-hole. The scientific approach to this
 problem pretty much requires that you first understand what the browser does.
 

@@ -77,7 +77,7 @@ tag anyway, you could do something like this first:
 
     curl -c cookies https://example.com/ -o loginform
 
-You would often need a HTML parser or some script language to extract the id
+You would often need a HTML parser or some scripting language to extract the id
 field from there and then you can proceed and login as mentioned above, but
 with the added cookie loading (I'm splitting the line into two lines to make
 it more readable):

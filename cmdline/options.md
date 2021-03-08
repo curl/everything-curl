@@ -13,7 +13,7 @@ behave. Like you can ask curl to switch on verbose mode with the -v option:
 
 -v is here used as a "short option". You write those with the minus symbol and
 a single letter immediately following it. Many options are just switches that
-switches something on or changes something between two known states. They can
+switch something on or change something between two known states. They can
 be used with just that option name. You can then also combine several
 single-letter options after the minus. To ask for both verbose mode and that
 curl follows HTTP redirects:

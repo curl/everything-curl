@@ -33,7 +33,7 @@ sequence. That is a colon and two forward slashes. There exists URL formats
 with only one slash, but curl does not support any of them. There are two
 additional notes to be aware of, about the number of slashes:
 
-curl allow some illegal syntax and try to correct it internally; so it will
+curl allows some illegal syntax and tries to correct it internally; so it will
 also understand and accept URLs with one or three slashes, even though they
 are in fact not properly formed URLs. curl does this because the browsers
 started this practice so it has lead to such URLs being used in the wild every

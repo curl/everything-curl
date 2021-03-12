@@ -18,7 +18,7 @@ little tweaks here and there.
 Rafael released HttpGet 0.1 on November 11, 1996 and already in the next
 release, called 0.2 relased in December that year, Daniel had his first
 changes incuded. Soon after that, Daniel had taken over maintenance of the few
-hundred lines of code it was
+hundred lines of code it was.
 
 HttpGet 1.0 was subsequently released on April 8th 1997 with brand new HTTP
 proxy support.

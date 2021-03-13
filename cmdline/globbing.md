@@ -81,13 +81,13 @@ differently. curl, of course, has a solution for these situations as well:
 output file name variables.
 
 Each "glob" used in a URL gets a separate variable. They are referenced as
-'#[num]' - that means the single letter '#' followed by the glob number which
+'#[num]' - that means the single character '#' followed by the glob number which
 starts with 1 for the first glob and ends with the last glob.
 
 Save the main pages of two different sites:
 
     curl "http://{one,two}.example.com" -o "file_#1.txt"
 
-Save the outputs from a command line with two globs in a subdirectory;
+Save the outputs from a command line with two globs in a subdirectory:
 
     curl "http://{site,host}.host[1-5].example.com" -o "subdir/#1_#2"

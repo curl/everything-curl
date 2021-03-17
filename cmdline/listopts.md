@@ -12,8 +12,8 @@ area. Use `curl -h category` to list all existing categories or `curl -h all`
 to list *all* available options.
 
 Before curl 7.73.0, the help category system didn't exist and then `curl
---help` or simply `curl -h` would simply list all existing options in an
-alphabetical with a brief explanation next to each.
+--help` or simply `curl -h` would simply list all existing options in
+alphabetical order with a brief explanation next to each.
 
 The `curl --manual` option outputs the entire man page for curl. That is a
 thorough and complete document on how each option works amassing several

@@ -109,9 +109,9 @@ entire string by prefixing it with an equals sign (that will not get sent):
 ### Convert that to a GET
 
 A little convenience feature that could be suitable to mention in this context
-(even though it is not for POSTing), is the `-G` or `--get` option, which
+is the `-G` or `--get` option, which
 takes all data you have specified with the different `-d` variants and appends
-that data on the right end of the URL separated with a '?' and then makes curl
+that data to the inputted URL e.g. ```http://example.com``` separated with a '?' and then makes curl
 send a GET instead.
 
 This option makes it easy to switch between POSTing and GETing a form, for

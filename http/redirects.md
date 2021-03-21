@@ -77,7 +77,7 @@ request but temporarily is 307. This redirect will not be cached by the client
 though, so it’ll again post to A if requested to again. The 307 code was
 introduced in HTTP/1.1.
 
-Oh, and redirects work the same same way in HTTP/2 as they do in HTTP/1.1.
+Oh, and redirects work the same way in HTTP/2 as they do in HTTP/1.1.
 
 |                     |Permanent | Temporary   |
 |---------------------|----------|-------------|

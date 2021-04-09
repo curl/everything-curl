@@ -91,8 +91,8 @@ is only a small selection:
 
 Adobe, Altera, AOL, Apple, AT&T, BBC, Blackberry, BMW, Bosch, Broadcom,
 Chevrolet, Cisco, Comcast, Facebook, Google, Hitachi, Honeywell, HP, Huawei,
-HTC, IBM, Intel, LG, Mazda, Mercedes-Benz, Motorola, Netflix, Nintendo,
-Oracle, Panasonic, Philips, Pioneer, RBS, Samsung, SanDisk, SAP, SAS
+HTC, IBM, Intel, LG, Mazda, Mercedes-Benz, Microsoft, Motorola, NASA, Netflix,
+Nintendo, Oracle, Panasonic, Philips, Pioneer, RBS, Samsung, SanDisk, SAP, SAS
 Institute, SEB, Sharp, Siemens, Sony, Spotify, Sun, Swisscom, Tomtom, Toshiba,
 VMware, Xilinx, Yahoo, Yamaha
 

@@ -1,6 +1,6 @@
 # The protocols curl supports
 
-curl supports about 22 protocols. We say "about" because it depends on how you
+curl supports about 26 protocols. We say "about" because it depends on how you
 count and what you consider to be distinctly different protocols.
 
 ## DICT
@@ -47,7 +47,6 @@ clients use TCP port 70.
 
 Gopher over TLS. A recent extension to the very old protocol.
 
-
 ## HTTP
 
 The Hypertext Transfer Protocol, HTTP, is the most widely used protocol for
@@ -71,9 +70,9 @@ the connection using the `STARTTLS` command. See RFC 2595.
 
 ## IMAPS
 
-Secure IMAP is IMAP done over an SSL/TLS connection. Such connections implicitly
-start out using SSL/TLS and as such servers and clients use TCP port 993 to
-communicate with each other. See RFC 8314.
+Secure IMAP is IMAP done over an SSL/TLS connection. Such connections
+implicitly start out using SSL/TLS and as such servers and clients use TCP
+port 993 to communicate with each other. See RFC 8314.
 
 ## LDAP
 
@@ -101,9 +100,9 @@ the `STLS` command. See RFC 2595.
 
 ## POP3S
 
-Secure POP3 is POP3 done over an SSL/TLS connection. Such connections implicitly
-start out using SSL/TLS and as such servers and clients use TCP port 995 to
-communicate with each other. See RFC 8314.
+Secure POP3 is POP3 done over an SSL/TLS connection. Such connections
+implicitly start out using SSL/TLS and as such servers and clients use TCP
+port 995 to communicate with each other. See RFC 8314.
 
 ## RTMP
 
@@ -133,6 +132,10 @@ The Server Message Block (SMB) protocol is also known as CIFS. It is an
 application-layer network protocol mainly used for providing shared access to
 files, printers, and serial ports and miscellaneous communications between
 nodes on a network. SMB servers and clients use TCP port 445.
+
+## SMB
+
+SMBS done over TLS.
 
 ## SMTP
 

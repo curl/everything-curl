@@ -29,4 +29,4 @@ The mailing lists and the bug tracker have changed hosting providers a few
 times and there are reasons to suspect it might happen again in the future. It
 is just the kind of thing that happens to a project that lives for a long time.
 
-A few users also hang out on IRC in the #curl channel on freenode.
+A few users also hang out on IRC in the #curl channel on [libera.chat](https://libera.chat/).

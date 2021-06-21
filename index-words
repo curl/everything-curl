@@ -245,14 +245,12 @@ keep-alive
 KNOWN_BUGS
 libcurl version
 libidn2
-libmetalink
 libpsl
 libressl
 librtmp
 libssh2
 license
 MesaLink
-Metalink
 MIT
 MITM-proxies
 MQTT

@@ -54,15 +54,6 @@ https://rtmpdump.mplayerhq.hu/
 To enable curl's support for the RTMP URL scheme, you must build curl with the
 librtmp library that comes from the RTMPDump project.
 
-## libmetalink
-
-https://launchpad.net/libmetalink
-
-Build curl with libmetalink to have it support the
-[metalink](https://www.metalinker.org/) format, which allows curl to download
-the same file from multiple places. It includes checksums and more. See curl's
-[--metalink](https://curl.se/docs/manpage.html#--metalink) option.
-
 ## libpsl
 
 https://rockdaboot.github.io/libpsl/

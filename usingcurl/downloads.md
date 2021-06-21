@@ -352,23 +352,6 @@ There are many situations in which curl cannot figure out the size at the time
 the transfer starts and this option will not affect those transfers, even if
 they may end up larger than the specified amount.
 
-### Metalink
-
-Metalink is a file description standard that tells a client multiple locations
-where the same content resides. A client can then opt to transfer that content
-from one or many of those sources.
-
-curl supports the Metalink format when asked to with the `--metalink`
-option. Then given URL should then point to a Metalink file. Such as:
-
-    curl --metalink https://example.com/example.metalink
-
-curl will make use of the mirrors listed within the file for failover if there
-are errors (such as the file or server not being available). It will also
-verify the hash of the file after the download completes. The Metalink file
-itself is downloaded and processed in memory and not stored in the local file
-system.
-
 ### Storing metadata in file system
 
 When saving a download to a file with curl, the `--xattr` option tells curl to

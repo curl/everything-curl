@@ -71,6 +71,14 @@ to be named like that. The protocols that are detected this way are FTP, DICT,
 LDAP, IMAP, SMTP and POP3. Any other host name in a scheme-less URL will make
 curl default to HTTP.
 
+For example, this gets a file from an FTP site:
+
+    curl ftp.funet.fi/README
+    
+While this gets data from a HTTP server:
+
+    curl example.com
+
 You can modify the default protocol to something other than HTTP with the
 `--proto-default` option.
 

@@ -40,6 +40,10 @@ The first digit of the HTTP response code is a kind of "error class":
 Remember that you can use curl's `--write-out` option to extract the response
 code. See the [--write-out](usingcurl-writeout.md) section.
 
+To make curl return an error for response codes >= 400, you need to use
+`--fail` or `--fail-with-body`. Then curl will exit with error code 22 for
+such occurrances.
+
 ### CONNECT response codes
 
 Since there can be a HTTP request and a separate CONNECT request in the same

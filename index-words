@@ -8,6 +8,8 @@
 --data
 --data-binary
 --data-urlencode
+--fail
+--fail-with-body
 --ftp-method
 --ftp-pasv
 --ftp-port

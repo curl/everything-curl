@@ -164,6 +164,8 @@
  - event-driven: [Driving with the "multi_socket" interface](libcurl/drive/multi-socket.md#driving-with-the-"multi_socket"-interface), [Everything is multi](internals.md#everything-is-multi)
 ## F
  - -F: [multipart formpost](usingcurl/uploads.md#multipart-formpost), [Not perfect](usingcurl/copyas.md#not-perfect), [HTTP methods](http.md#http-methods), [Sending such a form with curl](http/multipart.md#sending-such-a-form-with-curl), [-d vs -F](http/postvspost.md#d-vs--f), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
+ - --fail: [Available exit codes](usingcurl/returns.md#available-exit-codes), [HTTP response codes](http/response.md#http-response-codes)
+ - --fail-with-body: [HTTP response codes](http/response.md#http-response-codes)
  - Firefox: [lib/vtls](source/layout.md#lib/vtls), [Discover your proxy](usingcurl/proxies.md#discover-your-proxy), [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md#sslkeylogfile), [Copy as curl](usingcurl/copyas.md#copy-as-curl), [User-agent](http/requests.md#user-agent)
  - Fragment: [Fragment](cmdline/urls.md#fragment), [Anchors or fragments](http/requests.md#anchors-or-fragments)
  - --ftp-method: [multicwd](usingcurl/ftp/traversedir.md#multicwd)
@@ -343,8 +345,8 @@
  - Write callback: [Write callback](libcurl/callbacks/write.md#write-callback), [Get a HTML page in memory](libcurl/examples/getinmem.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http/responses.md#http-responses)
  - --write-out: [--write-out](usingcurl/verbose/writeout.md#write-out), [HTTP response codes](http/response.md#http-response-codes)
 ## X
- - -x: [HTTP](usingcurl/proxies.md#http), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
  - -X: [Request method](http/requests.md#request-method), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
+ - -x: [HTTP](usingcurl/proxies.md#http), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
 ## Y
  - yum: [Redhat and Centos](get/linux.md#redhat-and-centos)
 ## Z

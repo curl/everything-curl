@@ -133,9 +133,9 @@ application-layer network protocol mainly used for providing shared access to
 files, printers, and serial ports and miscellaneous communications between
 nodes on a network. SMB servers and clients use TCP port 445.
 
-## SMB
+## SMBS
 
-SMBS done over TLS.
+SMB done over TLS.
 
 ## SMTP
 

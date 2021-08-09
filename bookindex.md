@@ -227,6 +227,7 @@
  - MIT: [License](opensource/license.md#license)
  - MITM-proxies: [MITM-proxies](usingcurl/proxies.md#mitm-proxies)
  - MQTT: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [MQTT](protocols/curl.md#mqtt), [Supported protocols](usingcurl.md#supported-protocols), [Line 3: Protocols](usingcurl/version.md#line-3:-protocols), [MQTT](usingcurl/mqtt.md#mqtt)
+ - mTLS: [Client certificates](usingcurl/tls.md#client-certificates)
  - multi-threading: [libcurl multi-threading](libcurl/threading.md#libcurl-multi-threading)
 ## N
  - name resolving: [Handling different build options](source/options.md#handling-different-build-options), [Host name resolving](protocols/network.md#host-name-resolving), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Name resolve tricks with c-ares](usingcurl/connections.md#name-resolve-tricks-with-c-ares), [SOCKS types](usingcurl/proxies.md#socks-types), [Connection reuse](libcurl/connectionreuse.md#connection-reuse), [Name resolving](libcurl/names.md#name-resolving), [Proxy types](libcurl/proxies.md#proxy-types), [Available information](libcurl/getinfo.md#available-information)
@@ -345,8 +346,8 @@
  - Write callback: [Write callback](libcurl/callbacks/write.md#write-callback), [Get a HTML page in memory](libcurl/examples/getinmem.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http/responses.md#http-responses)
  - --write-out: [--write-out](usingcurl/verbose/writeout.md#write-out), [HTTP response codes](http/response.md#http-response-codes)
 ## X
- - -X: [Request method](http/requests.md#request-method), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
  - -x: [HTTP](usingcurl/proxies.md#http), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
+ - -X: [Request method](http/requests.md#request-method), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
 ## Y
  - yum: [Redhat and Centos](get/linux.md#redhat-and-centos)
 ## Z

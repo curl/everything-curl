@@ -198,7 +198,7 @@ This feature is only supported by the OpenSSL, GnuTLS and NSS backends.
 ## Client certificates
 
 TLS client certificates are a way for clients to cryptographically prove to
-servers that they are truly the right peer. A command line that uses a client
+servers that they are truly the right peer (mTLS). A command line that uses a client
 certificate specifies the certificate and the corresponding key, and they are
 then passed on the TLS handshake with the server.
 

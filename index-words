@@ -256,6 +256,7 @@ MesaLink
 MIT
 MITM-proxies
 MQTT
+mTLS
 multi-threading
 name resolving
 nghttp2

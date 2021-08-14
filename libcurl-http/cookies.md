@@ -70,7 +70,7 @@ Add a new cookie to the cookie store by simply passing it into curl with
 line in the cookie file format, or formatted as a `Set-Cookie:` response
 header, but we recommend the cookie file style:
 
-    #define SEP  "\\t"  /* Tab separates the fields */
+    #define SEP  "\t"  /* Tab separates the fields */
 
     char *my_cookie =
       "example.com"    /* Hostname */

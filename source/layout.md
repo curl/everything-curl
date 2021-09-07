@@ -178,12 +178,13 @@ Handy scripts.
 - `contributors.sh`: extracts all contributors from the git repository since a
   given hash/tag. The purpose is to generate a list for the RELEASE-NOTES file
   and to allow manually added names to remain in there even on updates. The
-  script uses the 'THANKS-filter` file to rewrite some names.  
+  script uses the `THANKS-filter` file to rewrite some names.
 - `contrithanks.sh`: extracts contributors from the git repository since a
   given hash/tag, filters out all the names that are already mentioned in
   `THANKS`, and then outputs `THANKS` to stdout with the list of new
-  contributors appended at the end; it's meant to allow easier updates of the THANKS
-  document. The script uses the 'THANKS-filter` file to rewrite some names.
+  contributors appended at the end; it's meant to allow easier updates of the
+  THANKS document. The script uses the `THANKS-filter` file to rewrite some
+  names.
 - `log2changes.pl`: generates the `CHANGES` file for releases, as used by the
   release script. It simply converts git log output.
 - `zsh.pl`: helper script to provide curl command-line completions to users of

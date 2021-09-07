@@ -1,8 +1,8 @@
 ## Code layout
 
 The curl source code tree is neither large nor complicated. A key thing to
-remember is, perhaps, that libcurl is the library and that library is the
-biggest component of the curl command-line tool.
+remember is, that libcurl is the library and that this library is the biggest
+component of the curl command-line tool.
 
 ### root
 
@@ -62,14 +62,13 @@ users.
   Firefox web browser. This was the default TLS backend for curl on Fedora and
   Redhat systems for a while in the past.
 - GnuTLS: a full-blown TLS library used by default by the Debian packaged curl.
-- mbedTLS: (formerly known as PolarSSL) is a TLS library more targeted
-  towards the embedded market.
-- WolfSSL: (formerly known as cyaSSL) is a TLS library more targeted
-  towards the embedded market.
+- mbedTLS: a TLS library targeted towards the embedded market.
+- wolfSSL: a TLS library targeted towards the embedded market.
 - MesaLink: a TLS library written in rust
 - Schannel: the native TLS library on Windows.
 - SecureTransport: the native TLS library on Mac OS X.
 - GSKit: the native TLS library on OS/400.
+- rustls: a TLS library written in rust
 
 ### src
 

@@ -35,7 +35,7 @@ this case, the 15 first lines of the dump file looks like:
     0010: 79 74 65 73 0d 0a                               ytes..
 
 Every single sent and received byte get displayed individually in hexadecimal
-numbers.
+numbers. Received headers will be output line by line.
 
 If you think the hexadecimals are not helping, you can try `--trace-ascii
 [filename]` instead, also this accepting '-' for stdout and that makes the 15

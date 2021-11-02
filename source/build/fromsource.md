@@ -102,7 +102,7 @@ shared libraries.
 One of the differences between linking with a static library compared to
 linking with a shared one is in how shared libraries handle their own
 dependencies while static ones do not. In order to link with library xyz as a
-shared library, it is as bsically a matter of adding `-lxyz` to the linker
+shared library, it is as basically a matter of adding `-lxyz` to the linker
 command line no matter which other libraries xyz itself was built to use, but
 if that xyz is instead a static library we also need to specify each of xyz's
 dependencies on the linker command line. curl's configure typically cannot

@@ -44,10 +44,10 @@ Some of these variables are not available in really old curl versions.
   was any.
 
 - `%{errormsg}` the error message from the transfer. Empty if no error
-  occured. (Introduced in 7.75.0)
+  occurred. (Introduced in 7.75.0)
 
 - `%{exitcode}` the numerical exit code from the transfer. 0 if no error
-  occured. (Introduced in 7.75.0)
+  occurred. (Introduced in 7.75.0)
 
 - `%{filename_effective}` the ultimate filename that curl writes out
   to. This is only meaningful if curl is told to write to a file with the

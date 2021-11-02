@@ -110,7 +110,7 @@ keep up with or know all possible dependencies for all the libraries it can be
 made to build with, so users wanting to build with static libs mostly need to
 provide that list of libraries to link with.
 
-### Select TLS backend
+### Select TLS back-end
 
 The configure based build offers the user to select from a wide variety of
 different TLS libraries when building. You select them by using the correct
@@ -135,7 +135,7 @@ libressl.
 All the `--with-*` options also allow you to provide the install prefix so
 that configure will search for the specific library where you tell it to.
 
-### Select SSH backend
+### Select SSH back-end
 
 The configure based build offers the user to select from a variety of
 different SSH libraries when building. You select them by using the
@@ -145,7 +145,7 @@ correct command line options.
  - libssh: `--with-libssh`
  - wolfSSH: `--with-wolfssh`
 
-### Select HTTP/3 backend
+### Select HTTP/3 back-end
 
 The configure based build offers the user to select different HTTP/3
 libraries when building. You select them by using the correct command
@@ -166,7 +166,7 @@ supports.
 On the cmake command line, in the first argument, you specify where to find
 the cmake source files. Which is `.` (a single dot) if in the same directory.
 
-To build on Linux using plain make with CmakeLists.txt in the same directory,
+To build on Linux using plain make with CMakeLists.txt in the same directory,
 you can do:
 
     cmake -G "Unix Makefiles" .
@@ -200,5 +200,5 @@ Decide what options to enable/disable in your build. The `BUILD.WINDOWS.txt`
 file details them all, but an example command line could look like this (split
 into several lines for readability):
 
-    nname WITH_SSL=dll WITH_NGHTTP2=dll ENABLE_IPV6=yes \
+    nmake WITH_SSL=dll WITH_NGHTTP2=dll ENABLE_IPV6=yes \
     WITH_ZLIB=dll MACHINE=x64 

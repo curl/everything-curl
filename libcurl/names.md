@@ -23,13 +23,13 @@ only use IPv6 addresses:
 
     curl_easy_setopt(easy, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V6);
 
-## Name resolver backends
+## Name resolver back-ends
 
 libcurl can be built to do name resolves in one out of these three different
-ways and depending on which backend way that is used, it gets a slightly
+ways and depending on which back-end way that is used, it gets a slightly
 different feature set and sometimes modified behavior.
 
-1. The default backend is invoking the "normal" libc resolver functions in a
+1. The default back-end is invoking the "normal" libc resolver functions in a
 new helper-thread, so that it can still do fine-grained timeouts if wanted and
 there will be no blocking calls involved.
 
@@ -44,7 +44,7 @@ compatible with the native name resolver functionality.
 
 ### DNS over HTTPS
 
-Independently of what resolver backend that libcurl is built to use, since
+Independently of what resolver back-end that libcurl is built to use, since
 7.62.0 it also provides a way for the user to ask a specific DoH (DNS over
 HTTPS) server for the address of a name. This will avoid using the normal,
 native resolver method and server and instead asks a dedicated separate one.

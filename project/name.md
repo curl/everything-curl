@@ -25,7 +25,7 @@ word curl. It rhymes with words like girl and earl. Merriam Webster has a
 [short WAV file](https://media.merriam-webster.com/soundc11/c/curl0001.wav) to
 help.
 
-### Confusions and mixups
+### Confusions and mix-ups
 
 Soon after our curl was created another "curl" appeared that created a
 programming language. That curl still [exists](http://www.curl.com).

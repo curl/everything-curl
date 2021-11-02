@@ -61,7 +61,7 @@ and printers.
 A fair number of best-selling games are also using libcurl, on Windows and
 game consoles.
 
-### In web site backends
+### In web site back-ends
 
 The libcurl binding for PHP was one of, if not the, first bindings for libcurl
 to really catch on and get used widely. It quickly got adopted as a default
@@ -71,7 +71,7 @@ Internet (recent numbers indicated that something like a quarter of all sites on
 the Internet uses PHP).
 
 A few really high-demand sites are using PHP and are using libcurl in the
-backend. Facebook and Yahoo are two such sites.
+back-end. Facebook and Yahoo are two such sites.
 
 ## Famous users
 

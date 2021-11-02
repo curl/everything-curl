@@ -78,7 +78,7 @@ Some of these variables are not available in really old curl versions.
 - `%{num_connects}` the number of new connects made in the recent
   transfer.
 
-- `%{num_headers}` number of response headers in the last responsea
+- `%{num_headers}` number of response headers in the last response
 
 - `%{num_redirects}` number of redirects that were followed in the request.
 

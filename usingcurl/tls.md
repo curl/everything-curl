@@ -113,7 +113,7 @@ serious effort.
 
 Having a secure connection to a server is not worth a lot if you cannot also
 be certain that you are communicating with the **correct** host. If we do not
-know that, we could just as well be talking with an impostor that just
+know that, we could just as well be talking with an imposter that just
 *appears* to be who we think it is.
 
 To check that it communicates with the right TLS server, curl uses a set of
@@ -176,7 +176,7 @@ can specify one or more hashes like that, separated with semicolons (;).
 
     curl --pinnedpubkey "sha256//83d34tasd3rt..." https://example.com/
 
-This feature is not supported by all TLS backends.
+This feature is not supported by all TLS back-ends.
 
 ## OCSP stapling
 
@@ -193,7 +193,7 @@ Ask for the handshake to use the status request like this:
 
     curl --cert-status https://example.com/
 
-This feature is only supported by the OpenSSL, GnuTLS and NSS backends.
+This feature is only supported by the OpenSSL, GnuTLS and NSS back-ends.
 
 ## Client certificates
 
@@ -217,7 +217,7 @@ specify the key file independently with `--key`:
     curl --cert mycert:mypassword https://example.com
     curl --cert mycert:mypassword --key mykey https://example.com
 
-For some TLS backends you can also pass in the key and certificate using
+For some TLS back-ends you can also pass in the key and certificate using
 different types:
 
     curl --cert mycert:mypassword --cert-type PEM \
@@ -232,31 +232,31 @@ and `--tlspassword <secret>`. Like this:
 
     curl --tlsuser daniel --tlspassword secret https://example.com
 
-## Different TLS backends
+## Different TLS back-ends
 
 When curl is built, it gets told to use a specific TLS library. That TLS
 library is the engine that provides curl with the powers to speak TLS over the
-wire. We often refer to them as different "backends" as they can be seen as
-different plugglable pieces into the curl machine. curl can be built to be
-able to use one or more of these backends.
+wire. We often refer to them as different "back-ends" as they can be seen as
+different pluggable pieces into the curl machine. curl can be built to be
+able to use one or more of these back-ends.
 
 Sometimes features and behaviors differ slightly when curl is built with
-different TLS backends, but the developers work hard on making those
+different TLS back-ends, but the developers work hard on making those
 differences as small and unnoticeable as possible.
 
 Showing the curl version information with [curl
 --version](usingcurl-version.md) will always include the TLS library and
 version in the first line of output.
 
-## Multiple TLS backends
+## Multiple TLS back-ends
 
-When curl is built with *multiple* TLS backends, it can be told which one to use
+When curl is built with *multiple* TLS back-ends, it can be told which one to use
 each time it is started. It is always built to use a specific one by default
 unless one is asked for.
 
-If you invoke `curl --version` for a curl with multiple backends it will
+If you invoke `curl --version` for a curl with multiple back-ends it will
 mention `MultiSSL` as a feature in the last line. The first line will then
-include all the supported TLS backends with the non-default ones within
+include all the supported TLS back-ends with the non-default ones within
 parentheses.
 
 To set a specific one to get used, set the environment variable

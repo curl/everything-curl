@@ -53,7 +53,7 @@ Then you pass that post to libcurl like this:
 
     curl_easy_setopt(easy, CURLOPT_MIMEPOST, form);
 
-(`curl_formadd` is the former API to build multi-part fromposts with but we no
+(`curl_formadd` is the former API to build multi-part formposts with but we no
 longer recommend using that)
 
 

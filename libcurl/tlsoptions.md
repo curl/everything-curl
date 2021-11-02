@@ -16,7 +16,7 @@ protocol versions have been found detect and unsuitable for use over time and
 even if curl itself will raise its default lower version over time you might
 want to opt for only using the latest and most security protocol versions.
 
-These options take a lowest acceptiable version and optionally a maximum. If
+These options take a lowest acceptable version and optionally a maximum. If
 the server cannot negotiate a connection with that condition, the transfer
 will fail.
 
@@ -60,7 +60,7 @@ Here too, a mismatch will cause the transfer to fail.
 
 ### TLS Client certificates
 
-When using TLS and the server asks the client to authentice using
+When using TLS and the server asks the client to authenticate using
 certificates, you typically specify the private key and the corresponding
 client certificate using `CURLOPT_SSLKEY` and `CURLOPT_SSLCERT`. The password
 for the key is usually also required to be set, with `CURLOPT_SSLKEYPASSWD`.
@@ -77,7 +77,7 @@ name and password and the options are called `CURLOPT_TLSAUTH_USERNAME` and
 
 ## STARTTLS
 
-For protocols that are using the STARTLS method to upgrade the connection to
+For protocols that are using the STARTTLS method to upgrade the connection to
 TLS (FTP, IMAP, POP3, and SMTP), you usually tell curl to use the non-TLS
 version of the protocol when specifying a URL and then ask curl to enable TLS
 with the `CURLOPT_USE_SSL` option.

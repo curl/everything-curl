@@ -1,6 +1,6 @@
 ## CURLcode return code
 
-Many libcurl functions return a CURLcode. That's a special libcurl typedefed
+Many libcurl functions return a CURLcode. That's a special libcurl typedeffed
 variable for error codes. It returns `CURLE_OK` (which has the value zero) if
 everything is fine and dandy and it returns a non-zero number if a problem was
 detected. There are almost one hundred `CURLcode` errors in use, and you can

@@ -42,7 +42,7 @@ code. See the [--write-out](usingcurl-writeout.md) section.
 
 To make curl return an error for response codes >= 400, you need to use
 `--fail` or `--fail-with-body`. Then curl will exit with error code 22 for
-such occurrances.
+such occurrences.
 
 ### CONNECT response codes
 

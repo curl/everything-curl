@@ -39,7 +39,7 @@ built straight from a in-development source code and it is not an officially
 released and "blessed" version.
 
 The rest of this line contains names of third party components this build of
-curl uses, often with their invidual version number next to it with a slash
+curl uses, often with their individual version number next to it with a slash
 separator. Like `OpenSSL/1.1.1g` and `nghttp2/1.41.0`. This can for example
 tell you which TLS backends this curl uses.
 
@@ -61,7 +61,7 @@ and it can also show a secondary "Patch date" if it has been updated somehow
 after it was originally released.
 
 This says `[unreleased]` if curl was built another way than from a release
-tarball, and as you can see above that's how Microsft did it for Windows 10
+tarball, and as you can see above that's how Microsoft did it for Windows 10
 and the curl project does not recommend it.
 
 ## Line 3: Protocols

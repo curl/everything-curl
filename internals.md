@@ -25,7 +25,7 @@ know and keep in mind:
    currently working on this connection. A single connection can be reused
    over time by several transfers (and thus easy handles) and a single
    connection can also be used by several easy handles simultaneously when
-   multiplexed connections are used. When muliplexing are used, the
+   multiplexed connections are used. When multiplexing are used, the
    `conn->data` pointer has to be updated accordingly quite frequently.
 
  - `result` is the usual name we use for a `CURLcode` variable to hold the

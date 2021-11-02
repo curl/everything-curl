@@ -242,7 +242,7 @@ able to use one or more of these backends.
 
 Sometimes features and behaviors differ slightly when curl is built with
 different TLS backends, but the developers work hard on making those
-differences as small and unnoticable as possible.
+differences as small and unnoticeable as possible.
 
 Showing the curl version information with [curl
 --version](usingcurl-version.md) will always include the TLS library and

@@ -125,7 +125,7 @@ automatically check for OpenSSL, but in modern versions it does not.
  - MesaLink: `--with-mesalink`
  - NSS: `--with-nss`
  - OpenSSL: `--with-openssl`
- - Rustls: `--with-rustls`
+ - Rustls: `--with-rustls` (point to the rustls-ffi install path)
  - schannel: `--with-schannel`
  - secure transport: `--with-secure-transport`
  - Wolfssl: `--with-wolfssl`

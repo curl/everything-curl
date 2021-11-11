@@ -16,7 +16,7 @@
 ## B
  - -b: [Cookie engine](http/cookies.md#cookie-engine), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
  - --basic: [HTTP authentication](http/auth.md#http-authentication)
- - BoringSSL: [Select TLS back-end](source/build/fromsource.md#select-tls-back-end), [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library), [Build curl with boringssl](source/build/boringssl.md#build-curl-with-boringssl)
+ - BoringSSL: [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library), [Build curl with boringssl](source/build/boringssl.md#build-curl-with-boringssl)
 ## C
  - -c: [Writing cookies to file](http/cookies.md#writing-cookies-to-file), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
  - c-ares: [c-ares](source/build/deps.md#c-ares), [Line 4: Features](usingcurl/version.md#line-4:-features), [Name resolve tricks with c-ares](usingcurl/connections.md#name-resolve-tricks-with-c-ares), [Name resolver back-ends](libcurl/names.md#name-resolver-back-ends)
@@ -212,7 +212,7 @@
  - libcurl version: [The latest version?](source/build.md#the-latest-version?), [Line 1: curl](usingcurl/version.md#line-1:-curl), [Available exit codes](usingcurl/returns.md#available-exit-codes), [Which libcurl version](libcurl/api.md#which-libcurl-version)
  - libidn2: [libidn2](source/build/deps.md#libidn2)
  - libpsl: [libpsl](source/build/deps.md#libpsl)
- - libressl: [Select TLS back-end](source/build/fromsource.md#select-tls-back-end), [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library)
+ - libressl: [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library)
  - librtmp: [librtmp](source/build/deps.md#librtmp)
  - libssh2: [libssh2](source/build/deps.md#libssh2)
  - license: [Finding users](project/users.md#finding-users), [License](opensource/license.md#license), [root](source/layout.md#root)
@@ -254,8 +254,8 @@
  - --post303: [Decide what method to use in redirects](http/redirects.md#decide-what-method-to-use-in-redirects)
  - Progress callback: [timer_callback](libcurl/drive/multi-socket.md#timer_callback), [Progress callback](libcurl/callbacks/progress.md#progress-callback)
  - pronunciation: [Pronunciation](project/name.md#pronunciation)
- - --proxy: [HTTP](usingcurl/proxies.md#http), [HTTP authentication](http/auth.md#http-authentication)
  - proxy: [How it started](project/started.md#how-it-started), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Line 4: Features](usingcurl/version.md#line-4:-features), [Intermediaries' fiddlings](usingcurl/downloads.md#intermediaries'-fiddlings), [Proxies](usingcurl/proxies.md#proxies), [Available exit codes](usingcurl/returns.md#available-exit-codes), [CONNECT response codes](http/response.md#connect-response-codes), [HTTP authentication](http/auth.md#http-authentication), [Proxies](libcurl/proxies.md#proxies), [Available information](libcurl/getinfo.md#available-information), [Verification](libcurl/tlsoptions.md#verification), [HTTP proxy](libcurl-http.md#http-proxy)
+ - --proxy: [HTTP](usingcurl/proxies.md#http), [HTTP authentication](http/auth.md#http-authentication)
  - --proxy-user: [Proxy authentication](usingcurl/proxies.md#proxy-authentication), [HTTP authentication](http/auth.md#http-authentication)
  - --proxy1.0: [HTTP proxy tunneling](usingcurl/proxies.md#http-proxy-tunneling)
  - --proxytunnel: [HTTP proxy tunneling](usingcurl/proxies.md#http-proxy-tunneling)
@@ -293,6 +293,7 @@
  - RFC 959: [FTP](protocols/curl.md#ftp), [FTP](usingcurl/ftp.md#ftp)
  - RTMP: [librtmp](source/build/deps.md#librtmp), [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [RTMP](protocols/curl.md#rtmp), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl/version.md#version)
  - RTSP: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [RTSP](protocols/curl.md#rtsp), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl/version.md#version), [RTSP interleave callback](libcurl/callbacks/rtsp.md#rtsp-interleave-callback), [Available information](libcurl/getinfo.md#available-information)
+ - rustls-ffi: [Select TLS back-end](source/build/fromsource.md#select-tls-back-end)
 ## S
  - Safari: [Copy as curl](usingcurl/copyas.md#copy-as-curl)
  - Schannel: [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library), [CA store on windows](usingcurl/tls.md#ca-store-on-windows)
@@ -328,8 +329,8 @@
  - --trace-time: [--trace-time](usingcurl/verbose/trace.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http/response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http/post.md#chunked-encoded-posts)
 ## U
- - -U: [Proxy authentication](usingcurl/proxies.md#proxy-authentication)
  - -u: [Passwords and snooping](cmdline/passwords.md#passwords-and-snooping), [Authentication](usingcurl/ftp.md#authentication), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [HTTP authentication](http/auth.md#http-authentication), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
+ - -U: [Proxy authentication](usingcurl/proxies.md#proxy-authentication)
  - Ubuntu: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian)
  - URL Globbing: [URL globbing](cmdline/globbing.md#url-globbing)
 ## V
@@ -342,8 +343,8 @@
  - Write callback: [Write callback](libcurl/callbacks/write.md#write-callback), [Get a HTML page in memory](libcurl/examples/getinmem.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http/responses.md#http-responses)
  - --write-out: [--write-out](usingcurl/verbose/writeout.md#write-out), [HTTP response codes](http/response.md#http-response-codes)
 ## X
- - -x: [HTTP](usingcurl/proxies.md#http), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
  - -X: [Request method](http/requests.md#request-method), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
+ - -x: [HTTP](usingcurl/proxies.md#http), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
 ## Y
  - yum: [Redhat and Centos](get/linux.md#redhat-and-centos)
 ## Z

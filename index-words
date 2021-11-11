@@ -304,6 +304,8 @@ RFC 959
 roadmap
 RTMP
 RTSP
+rustls
+rustls-ffi
 Safari
 Schannel
 Scheme

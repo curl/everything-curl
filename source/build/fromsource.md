@@ -140,6 +140,14 @@ this:
 
     ./configure --with-gnutls=/home/user/custom-gnutls
 
+You can opt to build with support for **multiple** TLS libraries by specifying
+muliple `--with-*` options on the configure command line. Pick which one to
+make the default TLS back-end with `--with-default-ssl-backend=[NAME]`. For
+example, build with support for both GnuTLS and OpenSSL and default to
+OpenSSL:
+
+    ./configure --with-openssl --with-gnutls --with-default-ssl-backend=openssl
+
 ### Select SSH back-end
 
 The configure-based build offers the user to select from a variety of

@@ -114,26 +114,31 @@ provide that list of libraries to link with.
 
 The configure-based build offers the user to select from a wide variety of
 different TLS libraries when building. You select them by using the correct
-command line options.
+command line options. Before curl 7.77.0, the configure script would
+automatically check for OpenSSL, but in modern versions it does not.
 
-The default OpenSSL configure check will also detect and use BoringSSL or
-LibreSSL.
+ - BearSSL: `--with-bearssl`
+ - BoringSSL: `--with-openssl`
+ - GnuTLS: `--with-gnutls`
+ - libressl: `--with-openssl`
+ - mbedTLS: `--with-mbedtls`
+ - MesaLink: `--with-mesalink`
+ - NSS: `--with-nss`
+ - OpenSSL: `--with-openssl`
+ - Rustls: `--with-rustls`
+ - schannel: `--with-schannel`
+ - secure transport: `--with-secure-transport`
+ - Wolfssl: `--with-wolfssl`
 
- - BearSSL: `--without-ssl --with-bearssl`
- - BoringSSL: - by default
- - GnuTLS: `--without-ssl --with-gnutls`
- - MesaLink: `--without-ssl --with-mesalink`
- - NSS: `--without-ssl --with-nss`
- - OpenSSL: - by default
- - PolarSSL: `--without-ssl --with-polarssl`
- - Wolfssl: `--without-ssl --with-wolfssl`
- - LibreSSL: - by default
- - mbedTLS: `--without-ssl --with-mbedtls`
- - Schannel: `--without-ssl --with-winssl`
- - Secure Transport: `--with-winssl --with-darwinssl`
+If you do not specify wich TLS library to use, the configure script will
+fail. If you want to build *without* TLS support, you must explicitly ask for
+that with `--without-ssl`.
 
-All the `--with-*` options also allow you to provide the install prefix so
-that configure will search the specific library that you give.
+These `--with-*` options also allow you to provide the install prefix so that
+configure will search for the specific library where you tell it to. Like
+this:
+
+    ./configure --with-gnutls=/home/user/custom-gnutls
 
 ### Select SSH back-end
 
@@ -145,11 +150,16 @@ correct command-line options.
  - libssh: `--with-libssh`
  - wolfSSH: `--with-wolfssh`
 
+These `--with-*` options also allow you to provide the install prefix so that
+configure will search for the specific library where you tell it to. Like
+this:
+
+    ./configure --with-libssh2=/home/user/custom-libssh2
+
 ### Select HTTP/3 back-end
 
-The configure-based build offers the user to select different HTTP/3
-libraries when building. You select them by using the correct
-command-line options.
+The configure-based build offers the user to select different HTTP/3 libraries
+when building. You select them by using the correct command-line options.
 
  - quiche: `--with-quiche`
  - ngtcp2: `--with-ngtcp2 --with-nghttp3`

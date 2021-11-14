@@ -159,6 +159,9 @@
  - development: [Project communication](project/comm.md#project-communication), [curl-users](project/maillists.md#curl-users), [Reporting bugs](project/bugs.md#reporting-bugs), [The development team](project/devteam.md#the-development-team), [Future](project/future.md#future), [Ubuntu and Debian](get/linux.md#ubuntu-and-debian), [Development](opensource/devel.md#development), [Who decides what goes in?](source/contributing.md#who-decides-what-goes-in?), [From Safari](usingcurl/copyas.md#from-safari), [Figure out what a browser sends](http/post.md#figure-out-what-a-browser-sends), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs), [Verification](libcurl/tlsoptions.md#verification)
 ## E
  - environment variables: [Default config file](cmdline/configfile.md#default-config-file), [Proxy environment variables](usingcurl/proxies.md#proxy-environment-variables), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
+ - ETag: [Conditionals](http/conditionals.md#conditionals)
+ - --etag-compare: [Check by modification of content](http/conditionals.md#check-by-modification-of-content)
+ - --etag-save: [Check by modification of content](http/conditionals.md#check-by-modification-of-content)
  - etiquette: [Mailing list etiquette](project/etiquette.md#mailing-list-etiquette)
  - event-driven: [Driving with the "multi_socket" interface](libcurl/drive/multi-socket.md#driving-with-the-"multi_socket"-interface), [Everything is multi](internals.md#everything-is-multi)
 ## F
@@ -176,7 +179,7 @@
  - --get: [Convert that to a GET](http/post.md#convert-that-to-a-get)
  - git: [Daily snapshots](project/releases.md#daily-snapshots), [Clone the code](source.md#clone-the-code), [root](source/layout.md#root), [git](source/contributing.md#git), [Web site source code](source/web.md#web-site-source-code), [git vs tarballs](source/build/fromsource.md#git-vs-tarballs), [build boringssl](source/build/boringssl.md#build-boringssl)
  - Globbing: [URL globbing](cmdline/globbing.md#url-globbing)
- - GnuTLS: [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library), [OCSP stapling](usingcurl/tls.md#ocsp-stapling), [Proxy types](libcurl/proxies.md#proxy-types)
+ - GnuTLS: [Select TLS back-end](source/build/fromsource.md#select-tls-back-end), [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library), [OCSP stapling](usingcurl/tls.md#ocsp-stapling), [Proxy types](libcurl/proxies.md#proxy-types)
  - GOPHER: [How it started](project/started.md#how-it-started), [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [GOPHER](protocols/curl.md#gopher), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl/version.md#version)
  - GOPHERS: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [GOPHERS](protocols/curl.md#gophers), [Supported protocols](usingcurl.md#supported-protocols)
 ## H
@@ -239,7 +242,7 @@
  - NSS: [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library), [OCSP stapling](usingcurl/tls.md#ocsp-stapling), [Proxy types](libcurl/proxies.md#proxy-types)
  - --ntlm: [Network leakage](cmdline/passwords.md#network-leakage), [HTTP authentication](http/auth.md#http-authentication)
 ## O
- - -O: [Many options and URLs](cmdline/urls.md#many-options-and-urls), [Numerical ranges](cmdline/globbing.md#numerical-ranges), [Download to a file named by the URL](usingcurl/downloads.md#download-to-a-file-named-by-the-url), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
+ - -O: [Many options and URLs](cmdline/urls.md#many-options-and-urls), [Numerical ranges](cmdline/globbing.md#numerical-ranges), [Download to a file named by the URL](usingcurl/downloads.md#download-to-a-file-named-by-the-url), [Check by modification date](http/conditionals.md#check-by-modification-date), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
  - openldap: [openldap](source/build/deps.md#openldap)
  - OpenSSL: [lib/vtls](source/layout.md#lib/vtls), [Select TLS back-end](source/build/fromsource.md#select-tls-back-end), [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library), [OCSP stapling](usingcurl/tls.md#ocsp-stapling), [Proxy types](libcurl/proxies.md#proxy-types), [Available information](libcurl/getinfo.md#available-information)
 ## P
@@ -321,6 +324,7 @@
  - -T: [PUT](usingcurl/uploads.md#put), [Uploading with FTP](usingcurl/ftp/advanced.md#uploading-with-ftp), [HTTP methods](http.md#http-methods), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
  - TELNET: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [TELNET](protocols/curl.md#telnet), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl/version.md#version), [Available exit codes](usingcurl/returns.md#available-exit-codes), [TELNET](usingcurl/telnet.md#telnet)
  - testing: [What does curl do?](project/does.md#what-does-curl-do?), [Reporting bugs](project/bugs.md#reporting-bugs), [Handling different build options](source/options.md#handling-different-build-options), [Contributing](source/contributing.md#contributing), [About HTTP response code "errors"](libcurl-http/responses.md#about-http-response-code-"errors")
+ - --time-cond: [Check by modification date](http/conditionals.md#check-by-modification-date), [Time conditions](http/requests.md#time-conditions)
  - TLS: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian), [lib/vtls](source/layout.md#lib/vtls), [Handling different build options](source/options.md#handling-different-build-options), [Select TLS back-end](source/build/fromsource.md#select-tls-back-end), [TLS libraries](source/build/deps.md#tls-libraries), [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library), [TLS](protocols/network.md#tls), [How much do protocols change?](protocols/protocols.md#how-much-do-protocols-change?), [GOPHERS](protocols/curl.md#gophers), [Connection reuse](cmdline/urls.md#connection-reuse), [Verbose mode](usingcurl/verbose.md#verbose-mode), [Line 1: curl](usingcurl/version.md#line-1:-curl), [Change the Host: header](usingcurl/connections.md#change-the-host:-header), [MITM-proxies](usingcurl/proxies.md#mitm-proxies), [Available exit codes](usingcurl/returns.md#available-exit-codes), [SCP and SFTP](usingcurl/scpsftp.md#scp-and-sftp), [TLS for emails](usingcurl/reademail.md#tls-for-emails), [Caveats](usingcurl/mqtt.md#caveats), [TLS](usingcurl/tls.md#tls), [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md#sslkeylogfile), [How to HTTP with curl](http.md#how-to-http-with-curl), [The URL converted to a request](http/basics.md#the-url-converted-to-a-request), [HTTPS](http/https.md#https), [Figure out what a browser sends](http/post.md#figure-out-what-a-browser-sends), [HTTPS only](http/http3.md#https-only), [Proxy types](libcurl/proxies.md#proxy-types), [Available information](libcurl/getinfo.md#available-information), [libcurl TLS options](libcurl/tlsoptions.md#libcurl-tls-options), [Trace everything](libcurl/verbose.md#trace-everything), [HTTPS](libcurl-http.md#https)
  - TODO: [Suggestions](source/contributing.md#suggestions)
  - --tr-encoding: [Compression](usingcurl/downloads.md#compression), [Transfer encoding](http/response.md#transfer-encoding)
@@ -329,8 +333,8 @@
  - --trace-time: [--trace-time](usingcurl/verbose/trace.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http/response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http/post.md#chunked-encoded-posts)
 ## U
- - -u: [Passwords and snooping](cmdline/passwords.md#passwords-and-snooping), [Authentication](usingcurl/ftp.md#authentication), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [HTTP authentication](http/auth.md#http-authentication), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
  - -U: [Proxy authentication](usingcurl/proxies.md#proxy-authentication)
+ - -u: [Passwords and snooping](cmdline/passwords.md#passwords-and-snooping), [Authentication](usingcurl/ftp.md#authentication), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [HTTP authentication](http/auth.md#http-authentication), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
  - Ubuntu: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian)
  - URL Globbing: [URL globbing](cmdline/globbing.md#url-globbing)
 ## V
@@ -343,10 +347,11 @@
  - Write callback: [Write callback](libcurl/callbacks/write.md#write-callback), [Get a HTML page in memory](libcurl/examples/getinmem.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http/responses.md#http-responses)
  - --write-out: [--write-out](usingcurl/verbose/writeout.md#write-out), [HTTP response codes](http/response.md#http-response-codes)
 ## X
- - -X: [Request method](http/requests.md#request-method), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
  - -x: [HTTP](usingcurl/proxies.md#http), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
+ - -X: [Request method](http/requests.md#request-method), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
 ## Y
  - yum: [Redhat and Centos](get/linux.md#redhat-and-centos)
 ## Z
+ - -z: [Check by modification date](http/conditionals.md#check-by-modification-date)
  - -Z: [Do the transfers in parallel](cmdline/urls.md#do-the-transfers-in-parallel)
  - zlib: [zlib](source/build/deps.md#zlib)

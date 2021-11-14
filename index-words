@@ -8,6 +8,8 @@
 --data
 --data-binary
 --data-urlencode
+--etag-compare
+--etag-save
 --fail
 --fail-with-body
 --ftp-method
@@ -53,6 +55,7 @@
 --socks5-hostname
 --speed-limit
 --speed-time
+--time-cond
 --tr-encoding
 --trace
 --trace-ascii
@@ -73,6 +76,7 @@
 -X
 -x
 -Z
+-z
 .netrc
 /etc/hosts
 <curl/curl.h>
@@ -216,6 +220,7 @@ debian
 Debug callback
 development
 environment variables
+ETag
 etiquette
 event-driven
 Firefox

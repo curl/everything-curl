@@ -78,6 +78,7 @@
     * [Authentication](http/auth.md)
     * [Ranges](http/ranges.md)
     * [HTTP versions](http/versions.md)
+    * [Conditionals](http/conditionals.md)
     * [HTTPS](http/https.md)
     * [HTTP POST](http/post.md)
     * [Multipart formposts](http/multipart.md)

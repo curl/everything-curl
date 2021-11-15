@@ -25,7 +25,7 @@ Non-HTTP/2 capable curls get 1.1 over HTTPS by default.
 ## Accepting HTTP/0.9
 
 The HTTP version used before HTTP/1.0 was made available is often referred to
-as HTTP/0.9. Back in those days, HTTP respones had no headers as they would
+as HTTP/0.9. Back in those days, HTTP responses had no headers as they would
 only return a response body and then immediately close the connection.
 
 curl can be told to support such responses but will by default not recognize

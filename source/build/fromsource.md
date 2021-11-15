@@ -130,7 +130,7 @@ automatically check for OpenSSL, but in modern versions it does not.
  - secure transport: `--with-secure-transport`
  - Wolfssl: `--with-wolfssl`
 
-If you do not specify wich TLS library to use, the configure script will
+If you do not specify which TLS library to use, the configure script will
 fail. If you want to build *without* TLS support, you must explicitly ask for
 that with `--without-ssl`.
 
@@ -141,7 +141,7 @@ this:
     ./configure --with-gnutls=/home/user/custom-gnutls
 
 You can opt to build with support for **multiple** TLS libraries by specifying
-muliple `--with-*` options on the configure command line. Pick which one to
+multiple `--with-*` options on the configure command line. Pick which one to
 make the default TLS back-end with `--with-default-ssl-backend=[NAME]`. For
 example, build with support for both GnuTLS and OpenSSL and default to
 OpenSSL:

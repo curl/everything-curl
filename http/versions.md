@@ -1,4 +1,4 @@
-## HTTP versions
+# HTTP versions
 
 As any other Internet protocol, the HTTP protocol has kept evolving over the
 years and now there are clients and servers distributed over the world and

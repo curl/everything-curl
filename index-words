@@ -18,6 +18,7 @@
 --ftp-skip-pasv-ip
 --get
 --header
+--hsts
 --http1.1
 --http2
 --http2-prior-knowledge
@@ -234,8 +235,10 @@ GOPHERS
 Header callback
 homebrew
 Host:
+HSTS
 HTTP ranges
 HTTP redirects
+HTTP Strict Transport Security
 HTTP/1.1
 HTTP/2
 HTTP/3

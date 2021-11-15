@@ -90,6 +90,7 @@
     * [HTTP/2](http/http2.md)
     * [Alternative Services](http/altsvc.md)
     * [HTTP/3](http/http3.md)
+    * [HSTS](http/hsts.md)
     * [HTTP cheat sheet](http/cheatsheet.md)
     * [Scripting browser-like tasks](http/browserlike.md)
 * [libcurl basics](libcurl.md)

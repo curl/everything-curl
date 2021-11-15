@@ -19,6 +19,7 @@
 --get
 --header
 --hsts
+--http0.9
 --http1.1
 --http2
 --http2-prior-knowledge

@@ -1,9 +1,9 @@
 # Conditionals
 
 Sometimes users want to avoid downloading a file again if the exact same file
-maybe already has been been downloaded the day before. This can be done by
+maybe already has been downloaded the day before. This can be done by
 making the HTTP transfer "conditioned" on something. curl supports two
-different conditions: the file time stamp and etag.
+different conditions: the file timestamp and etag.
 
 ## Check by modification date
 
@@ -17,13 +17,13 @@ prefixing the date with a dash:
 
     curl -z "-Jan 10, 2017" https://example.com/file -O
 
-The `-z` option can olso extract and use the timestamp from a local file,
+The `-z` option can also extract and use the timestamp from a local file,
 which is handy to only download a file if it has been updated remotely:
 
     curl -z file.html https://example.com/file.html -O
 
 It is often useful to combine the use of `-z` with the `--remote-time` flag,
-which sets the time of the locally created file to the same time stamp as the
+which sets the time of the locally created file to the same timestamp as the
 remote file had.
 
 ## Check by modification of content

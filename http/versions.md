@@ -9,11 +9,10 @@ use. libcurl is designed in a way so that it tries to use the most common, the
 most sensible if you want, default values first but sometimes that is not
 enough and then you may need to instruct libcurl on what to do.
 
-Since perhaps mid 2016, curl will default to use HTTP/1.1 for HTTP servers. If
-you connect to HTTPS and you have a libcurl that has HTTP/2 abilities
-built-in, curl will attempt to use HTTP/2 automatically or fall back to 1.1 in
-case the negotiation failed. Non-HTTP/2 capable curls get 1.1 over HTTPS by
-default.
+curl defaults to HTTP/1.1 for HTTP servers but if you connect to HTTPS and you
+have a curl that has HTTP/2 abilities built-in, it attempts to negotiate
+HTTP/2 automatically or falls back to 1.1 in case the negotiation failed.
+Non-HTTP/2 capable curls get 1.1 over HTTPS by default.
 
 | Option                              | Description |
 |-------------------------------------|-------------|

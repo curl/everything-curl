@@ -210,7 +210,7 @@
  - JavaScript: [Client differences](usingcurl/downloads.md#client-differences), [PAC](usingcurl/proxies.md#pac), [JavaScript and forms](http/post.md#javascript-and-forms), [JavaScript redirects](http/redirects.md#javascript-redirects), [Figure out what the browser does](http/browserlike.md#figure-out-what-the-browser-does)
  - json: [Arguments with spaces](cmdline/options.md#arguments-with-spaces), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Content-Type](http/post.md#content-type), [POST outside of HTML](http/postvspost.md#post-outside-of-html)
 ## K
- - -K: [Command lines, quotes and aliases](cmdline.md#command-lines,-quotes-and-aliases), [Config file](cmdline/configfile.md#config-file)
+ - -K: [Config file](cmdline/configfile.md#config-file)
  - keep-alive: [Keep connections alive](usingcurl/timeouts.md#keep-connections-alive)
  - --keepalive-time: [Keep alive](usingcurl/connections.md#keep-alive), [Keep connections alive](usingcurl/timeouts.md#keep-connections-alive)
 ## L
@@ -328,7 +328,7 @@
  - -T: [PUT](usingcurl/uploads.md#put), [Uploading with FTP](usingcurl/ftp/advanced.md#uploading-with-ftp), [HTTP methods](http.md#http-methods), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
  - TELNET: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [TELNET](protocols/curl.md#telnet), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl/version.md#version), [Available exit codes](usingcurl/returns.md#available-exit-codes), [TELNET](usingcurl/telnet.md#telnet)
  - testing: [What does curl do?](project/does.md#what-does-curl-do?), [Reporting bugs](project/bugs.md#reporting-bugs), [Handling different build options](source/options.md#handling-different-build-options), [Contributing](source/contributing.md#contributing), [About HTTP response code "errors"](libcurl-http/responses.md#about-http-response-code-"errors")
- - --time-cond: [Check by modification date](http/conditionals.md#check-by-modification-date), [Time conditions](http/requests.md#time-conditions)
+ - --time-cond: [Check by modification date](http/conditionals.md#check-by-modification-date)
  - TLS: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian), [lib/vtls](source/layout.md#lib/vtls), [Handling different build options](source/options.md#handling-different-build-options), [Select TLS back-end](source/build/fromsource.md#select-tls-back-end), [TLS libraries](source/build/deps.md#tls-libraries), [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library), [TLS](protocols/network.md#tls), [How much do protocols change?](protocols/protocols.md#how-much-do-protocols-change?), [GOPHERS](protocols/curl.md#gophers), [Connection reuse](cmdline/urls.md#connection-reuse), [Verbose mode](usingcurl/verbose.md#verbose-mode), [Line 1: curl](usingcurl/version.md#line-1:-curl), [Change the Host: header](usingcurl/connections.md#change-the-host:-header), [MITM-proxies](usingcurl/proxies.md#mitm-proxies), [Available exit codes](usingcurl/returns.md#available-exit-codes), [SCP and SFTP](usingcurl/scpsftp.md#scp-and-sftp), [TLS for emails](usingcurl/reademail.md#tls-for-emails), [Caveats](usingcurl/mqtt.md#caveats), [TLS](usingcurl/tls.md#tls), [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md#sslkeylogfile), [How to HTTP with curl](http.md#how-to-http-with-curl), [The URL converted to a request](http/basics.md#the-url-converted-to-a-request), [HTTPS](http/https.md#https), [Figure out what a browser sends](http/post.md#figure-out-what-a-browser-sends), [HTTPS only](http/http3.md#https-only), [Proxy types](libcurl/proxies.md#proxy-types), [Available information](libcurl/getinfo.md#available-information), [libcurl TLS options](libcurl/tlsoptions.md#libcurl-tls-options), [Trace everything](libcurl/verbose.md#trace-everything), [HTTPS](libcurl-http.md#https)
  - TODO: [Suggestions](source/contributing.md#suggestions)
  - --tr-encoding: [Compression](usingcurl/downloads.md#compression), [Transfer encoding](http/response.md#transfer-encoding)
@@ -356,6 +356,6 @@
 ## Y
  - yum: [Redhat and Centos](get/linux.md#redhat-and-centos)
 ## Z
- - -z: [Check by modification date](http/conditionals.md#check-by-modification-date)
  - -Z: [Do the transfers in parallel](cmdline/urls.md#do-the-transfers-in-parallel)
+ - -z: [Check by modification date](http/conditionals.md#check-by-modification-date)
  - zlib: [zlib](source/build/deps.md#zlib)

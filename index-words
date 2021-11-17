@@ -47,6 +47,7 @@
 --proxy-user
 --proxy1.0
 --proxytunnel
+--quote
 --remote-name-all
 --resolve
 --show-error
@@ -72,6 +73,7 @@
 -K
 -L
 -O
+-Q
 -T
 -U
 -u
@@ -227,6 +229,7 @@ etiquette
 event-driven
 Firefox
 Fragment
+FTPS
 future
 git
 Globbing

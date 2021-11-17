@@ -1,4 +1,4 @@
-# How to HTTP with curl
+# HTTP with curl
 
 In all user surveys and during all curl's lifetime, HTTP has been the most
 important and most frequently used protocol that curl supports. This chapter

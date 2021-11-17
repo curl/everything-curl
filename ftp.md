@@ -1,4 +1,4 @@
-# FTP
+# FTP with curl
 
 FTP, the File Transfer Protocol, is probably the oldest network protocol that
 curl supports—it was created in the early 1970s. The official spec that

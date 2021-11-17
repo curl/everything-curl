@@ -31,7 +31,7 @@ Going deeper, looking at things you do with curl the command line tool.
 
 Digging deeper on HTTP specific actions to do with the curl command line tool.
 
-## 8. [FTP with curl](http.md)
+## 8. [FTP with curl](ftp.md)
 
 Learn FTP specific operations in this chapter.
 

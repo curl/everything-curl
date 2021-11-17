@@ -1,3 +1,0 @@
-# Common FTP problems
-
-TBD

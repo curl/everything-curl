@@ -96,7 +96,6 @@
     * [Two connections](ftp/twoconnections.md)
     * [Directory traversing](ftp/traversedir.md)
     * [FTPS](ftp/ftps.md)
-    * [Common FTP problems](ftp/problems.md)
 * [libcurl basics](libcurl.md)
     * [Easy handle](libcurl/easyhandle.md)
     * [Drive transfers](libcurl/drive.md)

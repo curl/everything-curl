@@ -15,7 +15,12 @@ Download the file only if it is newer than a specific date with the use of the
 Or the reverse, get the file only if it is older than the specific time by
 prefixing the date with a dash:
 
-    curl -z "-Jan 10, 2017" https://example.com/file -O
+    curl --time-cond "-Jan 10, 2017" https://example.com/file -O
+
+The date parser is liberal and accepts most formats you can write the date
+with, and you can also specify it complete with a time:
+
+    curl --time-cond "Sun, 12 Sep 2004 15:05:58 -0700" https://www.example.org/file.html
 
 The `-z` option can also extract and use the timestamp from a local file,
 which is handy to only download a file if it has been updated remotely:
@@ -24,7 +29,9 @@ which is handy to only download a file if it has been updated remotely:
 
 It is often useful to combine the use of `-z` with the `--remote-time` flag,
 which sets the time of the locally created file to the same timestamp as the
-remote file had.
+remote file had:
+
+    curl -z file.html -o file.html --remote-time https://example.com/file.html
 
 ## Check by modification of content
 

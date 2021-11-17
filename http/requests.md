@@ -127,32 +127,3 @@ As comparison, a recent test version of Firefox on a Linux machine sent this
 User-Agent header:
 
 `User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0`
-
-## Time conditions
-
-HTTP supports conditional requests. They are requests that contain a condition
-in the sense that it asks the server to only deliver a response body if the
-associated condition evaluates true.
-
-A useful condition is time. For example, ask the server to only deliver a
-response if the resource has been modified after a particular time:
-
-    curl --time-cond "1 Jul 2011" https://www.example.org/file.html
-
-curl can also reverse the condition. Only get the file if it is *older* than
-the given date by prefixing the date with a dash:
-
-    curl --time-cond "-1 Jul 2011" https://www.example.org/file.html
-
-The date parser is liberal and will accept most formats you can write the
-date, and you can of course also specify it complete with a time:
-
-    curl --time-cond "Sun, 12 Sep 2004 15:05:58 -0700" https://www.example.org/file.html
-
-curl can also get the time stamp off a local file as a shortcut. No need to
-download the file again if it has not changed on the server, right? If the
-string does not match a time or date, curl checks if there's a file named like
-that, and if so gets the time from its modification time.
-
-    curl --time-cond file https://www.example.org/file.html -o file
-

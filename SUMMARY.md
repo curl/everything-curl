@@ -61,6 +61,7 @@
     * [Proxies](usingcurl/proxies.md)
     * [Exit status](usingcurl/returns.md)
     * [FTP](usingcurl/ftp.md)
+        * [Uploading with FTP](usingcurl/ftp/upload.md)
         * [Two connections](usingcurl/ftp/twoconnections.md)
         * [Directory traversing](usingcurl/ftp/traversedir.md)
         * [FTPS](usingcurl/ftp/ftps.md)

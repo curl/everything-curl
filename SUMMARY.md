@@ -63,6 +63,7 @@
     * [FTP](usingcurl/ftp.md)
         * [Two connections](usingcurl/ftp/twoconnections.md)
         * [Directory traversing](usingcurl/ftp/traversedir.md)
+        * [FTPS](usingcurl/ftp/ftps.md)
         * [Advanced FTP use](usingcurl/ftp/advanced.md)
     * [SCP and SFTP](usingcurl/scpsftp.md)
     * [Reading email](usingcurl/reademail.md)

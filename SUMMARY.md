@@ -136,6 +136,7 @@
         * [Get a simple HTTP page](libcurl/examples/get.md)
         * [Get a page in memory](libcurl/examples/getinmem.md)
         * [Submit a login form over HTTP](libcurl/examples/login.md)
+        * [Get an FTP directory listing](libcurl/examples/ftplist.md)
     * [for C++ programmers](libcurl/cplusplus.md)
 * [HTTP with libcurl](libcurl-http.md)
     * [HTTP responses](libcurl-http/responses.md)

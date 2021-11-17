@@ -28,4 +28,13 @@ done - if any.
 
 ## Common FTPS problems
 
-TBD
+The single most common problem with FTPS comes from the fact that the FTP
+protocol (that FTP still mostly uses) uses a separate connection setup for the
+data transfer. This connection is done to another port and when FTP is done
+over clear text (non-FTPS), firewalls and network inspectors etc can figure
+out that this is FTP in progress and they can adapt things and rules for the
+new connection.
+
+When everything is encrypted, with FTPS, firewalls cannot see what is going on
+and no outside can dynamically adapt network rules or permission based on
+this.

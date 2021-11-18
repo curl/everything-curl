@@ -89,6 +89,7 @@ apt
 Arch Linux
 BearSSL
 BoringSSL
+brotli
 bugreports
 c-ares
 C89
@@ -262,9 +263,8 @@ libidn2
 libpsl
 libressl
 librtmp
-libssh2
 libssh
-wolfssh
+libssh2
 license
 MesaLink
 MIT
@@ -345,8 +345,10 @@ Ubuntu
 URL Globbing
 Vulnerability
 Wireshark
+wolfssh
 wolfSSH
 wolfSSL
 Write callback
 yum
 zlib
+zstd

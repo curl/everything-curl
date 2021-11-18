@@ -16,22 +16,21 @@ know and keep in mind:
 
  - 'data' is the variable name we use all over to refer to the easy handle
    (`struct Curl_easy`) for the transfer being worked on. No other name should
-   be used for this and nothing else should use this name.
+   be used for this and nothing else should use this name. The easy handle is
+   the main object identifying a transfer.  A transfer typically uses a
+   connection at some point and typically only one at a time. There's a
+   `data->conn` pointer that identifies the connection that is currently used
+   by this transfer. A single connection can be used over time and even
+   concorrently by several transfers (and thus easy handles) when multiplexed
+   connections are used.
 
  - `conn` is the variable name we use all over the internals to refer to the
-   current *connection* the code works on (`struct connectdata`). A transfer
-   typically uses a connection at some point and typically only one at a
-   time. There's a `conn->data` pointer that identifies the transfer that is
-   currently working on this connection. A single connection can be reused
-   over time by several transfers (and thus easy handles) and a single
-   connection can also be used by several easy handles simultaneously when
-   multiplexed connections are used. When multiplexing are used, the
-   `conn->data` pointer has to be updated accordingly quite frequently.
+   current *connection* the code works on (`struct connectdata`).
 
  - `result` is the usual name we use for a `CURLcode` variable to hold the
    return values from functions and if that return value is different than
-   zero, it is an error and the function should clean up and return
-   (usually passing on the same error code to its parent function).
+   zero, it is an error and the function should clean up and return (usually
+   passing on the same error code to its parent function).
 
 ## Everything is multi
 

@@ -1,7 +1,9 @@
 ## SCP and SFTP
 
-curl supports the SCP and SFTP protocols if built with the correct
-prerequisite 3rd party library, [libssh2](https://www.libssh2.org/).
+curl supports the SCP and SFTP protocols if built with a prerequisite 3rd
+party library: [libssh2](https://www.libssh2.org/),
+[libssh](https://www.libssh.org/) or
+[wolfSSH](https://www.wolfssl.com/products/wolfssh/).
 
 SCP and SFTP are both protocols that are built on top of SSH, a secure and
 encrypted data protocol that is similar to TLS but differs in a few important

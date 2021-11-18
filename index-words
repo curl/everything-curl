@@ -263,6 +263,8 @@ libpsl
 libressl
 librtmp
 libssh2
+libssh
+wolfssh
 license
 MesaLink
 MIT

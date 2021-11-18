@@ -149,4 +149,5 @@
     * [Upload](libcurl-http/upload.md)
 * [Bindings](bindings.md)
 * [libcurl internals](internals.md)
+    * [Protocol handler](internals/handler.md)
 * [Index](bookindex.md)

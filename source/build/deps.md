@@ -9,12 +9,18 @@ A whole slew of features that curl provides require that it is built to use
 one or more external libraries. They are then dependencies of curl. None of
 them are *required*, but most users will want to use at least some of them.
 
-## zlib
+## HTTP Compression
 
-https://zlib.net/
+curl can do automatic decompression of data transferred over HTTP if built
+with the proper 3rd party libraries. You can build curl to use one or more of
+these libraries:
 
-curl can do automatic decompression of data transferred over HTTP if built with
-zlib. Getting compressed data over the wire will use less bandwidth.
+ - gzip compression with [zlib](https://zlib.net/)
+ - brotli compression with [brotli](https://github.com/google/brotli)
+ - zstd compression with [libzstd](https://github.com/facebook/zstd)
+
+Getting compressed data over the wire will use less bandwidth, which might
+also result in shorter transfer times.
 
 ## c-ares
 
@@ -25,13 +31,6 @@ Another option to enable asynchronous name resolution is to build curl with the
 threaded name resolver back-end, which will then instead create a separate
 helper thread for each name resolve. c-ares does it all within the
 same thread.
-
-## libssh2
-
-https://libssh2.org/
-
-When curl is built with libssh2, it enables support for the SCP and SFTP
-protocols.
 
 ## nghttp2
 
@@ -66,6 +65,15 @@ the Public Suffix List and thus handle such cookies appropriately.
 https://www.gnu.org/software/libidn/libidn2/manual/libidn2.html
 
 curl handles International Domain Names (IDN) with the help of the libidn2 library.
+
+## SSH libraries
+
+If you want curl to have SCP and SFTP support, build with one of these SSH
+libraries:
+
+- [libssh2](https://libssh2.org/)
+- [libssh](https://www.libssh.org/)
+- [wolfSSH](https://www.wolfssl.com/products/wolfssh/)
 
 ## TLS libraries
 

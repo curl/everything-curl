@@ -66,7 +66,7 @@ sub single {
 
         my @words = split(/[ \(\)]+/, $_);
         for my $w (@words) {
-            $w =~ s/[,\.\`\']//g;
+            $w =~ s/[,\.\`\'\]\[]//g;
             $w = folded($w);
             if($index{$w}) {
                 if(!$word{$w}{$fname}) {

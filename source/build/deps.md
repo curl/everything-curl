@@ -24,7 +24,7 @@ also result in shorter transfer times.
 
 ## c-ares
 
-https://c-ares.haxx.se/
+https://c-ares.org/
 
 curl can be built with c-ares to be able to do asynchronous name resolution.
 Another option to enable asynchronous name resolution is to build curl with the

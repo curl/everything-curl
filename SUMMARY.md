@@ -16,6 +16,8 @@
 * [Get curl](get.md)
     * [Linux](get/linux.md)
     * [Windows](get/windows.md)
+        * [MSYS2](get/win-msys2.md)
+        * [vcpkg](get/win-vcpkg.md)
     * [macOS](get/macos.md)
 * [Open Source](opensource.md)
     * [License](opensource/license.md)

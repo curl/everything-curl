@@ -34,9 +34,7 @@ When replying to a message from the list, make sure that you do "group reply"
 or "reply to all", and not just reply to the author of the single mail you
 reply to.
 
-We are actively discouraging replying back to the single person by setting the
-`Reply-To:` field in outgoing mails back to the mailing list address, making
-it harder for people to mail the author only by mistake.
+We are actively discouraging replying back to just a single person privately. Keep follow-ups on discussions on the list.
 
 #### Use a sensible subject
 

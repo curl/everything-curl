@@ -21,16 +21,17 @@ jobs:
 
     - name: install prereqs
       run: sudo apt-get install python3-proselint
-      
+
+    # config file help: https://github.com/amperser/proselint/
     - name: store proselint config
       run: |
-        echo '{' > .proselintrc
-        echo '   "checks": {' >> .proselintrc
-        echo '     "typography.diacritical_marks": false,' >> .proselintrc
-        echo '     "typography.symbols": false,' >> .proselintrc
-        echo '     "annotations.misc": false' >> .proselintrc
-        echo '   }' >> .proselintrc
-        echo '}' >> .proselintrc
+        echo '{' > $HOME/.proselintrc
+        echo '   "checks": {' >> $HOME/.proselintrc
+        echo '     "typography.diacritical_marks": false,' >> $HOME/.proselintrc
+        echo '     "typography.symbols": false,' >> $HOME/.proselintrc
+        echo '     "annotations.misc": false' >> $HOME/.proselintrc
+        echo '   }' >> $HOME/.proselintrc
+        echo '}' >> $HOME/.proselintrc
 
     - name: check prose
       run: make check

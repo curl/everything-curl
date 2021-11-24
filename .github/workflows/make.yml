@@ -24,16 +24,13 @@ jobs:
       
     - name: store proselint config
       run: |
-      cat > .proselint (cat <<-EOF
-      {
-        "checks": {
-          "typography.diacritical_marks": false,
-          "typography.symbols": false,
-          "annotations.misc": false
-        }
-      }
-      EOF
-      )
+        echo '{' > .proselint
+        echo '   "checks": {' >> .proselint
+        echo '     "typography.diacritical_marks": false,' >> .proselint
+        echo '     "typography.symbols": false,' >> .proselint
+        echo '     "annotations.misc": false' >> .proselint
+        echo '   }' >> .proselint
+        echo '}' >> .proselint
 
     - name: check prose
       run: make check

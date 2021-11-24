@@ -1,11 +1,10 @@
 # Introduction
 
-*Everything curl* is an extensive guide for all things curl.
-The project, the command-line tool, the library, how everything started
-and how it came to be the useful tool it is today. 
-
-This guide explains how we work on developing it further, what it takes to use it,
-how you can contribute with code or bug reports and why millions of existing users use it.
+*Everything curl* is an extensive guide for all things curl. The project, the
+command-line tool, the library, how everything started and how it came to be
+the useful tool it is today. It explains how we work on developing it further,
+what it takes to use it, how you can contribute with code or bug reports and
+why millions of existing users use it.
 
 This book is meant to be interesting and useful to both casual readers and
 somewhat more experienced developers. It offers something for everyone to pick
@@ -18,8 +17,8 @@ I hope to run this book project as I do all other projects I work on: in the
 open, completely free to download and read. I want it to be free for anyone to comment on,
 and available for everyone to contribute to and help out with. 
 
-Send your bug reports, pull requests or critiques to me and I will improve this book
-accordingly.
+Send your bug reports, pull requests or critiques to me and I will improve
+this book accordingly.
 
 This book will never be finished. I intend to keep working on it. While I
 may at some point consider it fairly complete, covering most aspects of the

@@ -33,8 +33,7 @@ command than PORT) with the `--no-eprt` command-line option.
 Curl defaults to asking for a "passive" connection, which means it sends a
 PASV or EPSV command to the server and then the server opens up a new port for
 the second connection that then curl connects to. Outgoing connections to a
-new port are generally easier and less restricted for end users and clients,
-but it then requires that the network in the server's end allows it.
+new port are generally easier and less restricted for end users and clients, but it then requires that the network in the server's end allows it.
 
 Passive connections are enabled by default, but if you have switched on active
 before, you can switch back to passive with `--ftp-pasv`.

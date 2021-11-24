@@ -45,7 +45,7 @@ clients use TCP port 70.
 
 ## GOPHERS
 
-Gopher over TLS. A recent extension to the very old protocol.
+Gopher over TLS. A recent extension to the old protocol.
 
 ## HTTP
 

@@ -10,7 +10,7 @@ with it.
 ## HSTS cache
 
 The HSTS status for a certain server name is set in a response header and has
-an expire time. The status for each and every HSTS host name needs to be saved
+an expire time. The status for every HSTS host name needs to be saved
 in a file for curl to pick it up and to update the status and expire time.
 
 Invoke curl and tell it which file to use as a hsts cache:

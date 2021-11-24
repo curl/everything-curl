@@ -51,7 +51,7 @@ Example, rename a file then do a transfer:
 ## Fallible commands
 
 You can opt to send indidivual quote commands that are allowed to fail, to get
-an error return back from the server without causing everything to stop.
+an error returned from the server without causing everything to stop.
 
 You make the command "fallible" by prefixing it with an asterisk (`*`). For
 example, send a delete (`DELE`) after a transfer and allow it to fail:

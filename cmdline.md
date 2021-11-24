@@ -53,7 +53,7 @@ put into a single line. curl adapts to this by offering a way to provide
 command-line options through a file—or from stdin—using the [-K
 option](cmdline/configfile.md).
 
-## Garbage in, garbage out
+## Garbage in gives garbage out
 
 curl has little will of its own. It tries to please you and your wishes to a
 large extent. It also means that it will try to play with what you give it. If

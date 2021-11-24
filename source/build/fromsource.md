@@ -66,7 +66,7 @@ detected/enabled and what features that are still disabled, some of which
 possibly because it failed to detect the presence of necessary third-party
 dependencies that are needed for those functions to work. If the summary is
 not what you expected it to be, invoke configure again with new options or
-with the previously-used options adjusted.
+with the previously used options adjusted.
 
 After configure has completed, you invoke `make` to build the entire thing and
 then finally `make install` to install curl, libcurl and associated

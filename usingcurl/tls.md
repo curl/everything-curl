@@ -113,7 +113,7 @@ serious effort.
 
 Having a secure connection to a server is not worth a lot if you cannot also
 be certain that you are communicating with the **correct** host. If we do not
-know that, we could just as well be talking with an imposter that just
+know that, we could just as well be talking with an impostor that just
 *appears* to be who we think it is.
 
 To check that it communicates with the right TLS server, curl uses a set of

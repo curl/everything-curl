@@ -9,7 +9,7 @@ or use the shorthand version:
     curl -V
 
 The output from that command line is typically four lines, out of which some
-will be rather long and might very well wrap in your terminal window.
+will be rather long and might wrap in your terminal window.
 
 An example output from a Debian Linux as of June 2020:
 

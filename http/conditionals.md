@@ -1,9 +1,9 @@
 # Conditionals
 
-Sometimes users want to avoid downloading a file again if the exact same file
-maybe already has been downloaded the day before. This can be done by
-making the HTTP transfer "conditioned" on something. curl supports two
-different conditions: the file timestamp and etag.
+Sometimes users want to avoid downloading a file again if the same file maybe
+already has been downloaded the day before. This can be done by making the
+HTTP transfer "conditioned" on something. curl supports two different
+conditions: the file timestamp and etag.
 
 ## Check by modification date
 

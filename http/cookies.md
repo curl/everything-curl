@@ -13,8 +13,7 @@ important for how long the cookie should live on.
 
 The expiry of a cookie is either set to a fixed time in the future (or to live
 a number of seconds) or it gets no expiry at all. A cookie without an expire
-time is called a "session cookie" and is meant to live during the "session"
-but not longer. A session in this aspect is typically thought to be the life
+time is called a "session cookie" and is meant to live during the "session" but not longer. A session in this aspect is typically thought to be the life
 time of the browser used to view a site. When you close the browser, you end
 your session. Doing HTTP operations with a command-line client that supports
 cookies begs the question of when a session really ends…

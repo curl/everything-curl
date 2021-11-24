@@ -17,7 +17,7 @@ know and keep in mind:
  - 'data' is the variable name we use all over to refer to the easy handle
    (`struct Curl_easy`) for the transfer being worked on. No other name should
    be used for this and nothing else should use this name. The easy handle is
-   the main object identifying a transfer.  A transfer typically uses a
+   the main object identifying a transfer. A transfer typically uses a
    connection at some point and typically only one at a time. There's a
    `data->conn` pointer that identifies the connection that is currently used
    by this transfer. A single connection can be used over time and even

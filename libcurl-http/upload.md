@@ -38,8 +38,8 @@ Each such part has a name, a set of headers and a few other properties.
 libcurl offers a set of convenience functions for constructing such a series
 of parts and to send that off to the server, all prefixed with
 `curl_mime`. Create a multipart post and for each part in the data you set the
-name, the data and perhaps additional meta-data. A very basic setup might look
-like this:
+name, the data and perhaps additional meta-data. A basic setup might look like
+this:
 
     /* Create the form */
     form = curl_mime_init(curl);

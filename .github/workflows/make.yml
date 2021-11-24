@@ -24,13 +24,13 @@ jobs:
       
     - name: store proselint config
       run: |
-        echo '{' > .proselint
-        echo '   "checks": {' >> .proselint
-        echo '     "typography.diacritical_marks": false,' >> .proselint
-        echo '     "typography.symbols": false,' >> .proselint
-        echo '     "annotations.misc": false' >> .proselint
-        echo '   }' >> .proselint
-        echo '}' >> .proselint
+        echo '{' > .proselintrc
+        echo '   "checks": {' >> .proselintrc
+        echo '     "typography.diacritical_marks": false,' >> .proselintrc
+        echo '     "typography.symbols": false,' >> .proselintrc
+        echo '     "annotations.misc": false' >> .proselintrc
+        echo '   }' >> .proselintrc
+        echo '}' >> .proselintrc
 
     - name: check prose
       run: make check

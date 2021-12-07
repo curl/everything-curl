@@ -50,6 +50,11 @@
 --quote
 --remote-name-all
 --resolve
+--retry
+--retry-all-errors
+--retry-connrefused
+--retry-delay
+--retry-max-time
 --show-error
 --silent
 --socks4

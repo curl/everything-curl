@@ -191,8 +191,8 @@
  - Header callback: [Header callback](libcurl/callbacks/header.md#header-callback), [HTTP responses](libcurl-http/responses.md#http-responses)
  - homebrew: [Get curl for macOS](get/macos.md#get-curl-for-macos)
  - Host:: [Verbose mode](usingcurl/verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl/verbose/trace.md#trace-and---trace-ascii), [Change the Host: header](usingcurl/connections.md#change-the-host:-header), [HTTP protocol basics](http/basics.md#http-protocol-basics), [The HTTP this generates](http/multipart.md#the-http-this-generates), [Customize headers](http/requests.md#customize-headers), [Customize HTTP request headers](libcurl-http/requests.md#customize-http-request-headers)
- - --hsts: [HSTS cache](http/hsts.md#hsts-cache)
  - HSTS: [HTTP Strict Transport Security](http/hsts.md#http-strict-transport-security)
+ - --hsts: [HSTS cache](http/hsts.md#hsts-cache)
  - HTTP ranges: [HTTP ranges](http/ranges.md#http-ranges), [HTTP ranges](libcurl-http/ranges.md#http-ranges)
  - HTTP redirects: [Short options](cmdline/options.md#short-options), [Available exit codes](usingcurl/returns.md#available-exit-codes), [HTTP redirects](http/redirects.md#http-redirects), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http)
  - HTTP Strict Transport Security: [HTTP Strict Transport Security](http/hsts.md#http-strict-transport-security)
@@ -286,6 +286,11 @@
  - --remote-name-all: [Use the URL's file name part for all URLs](usingcurl/downloads/url-named.md#use-the-url's-file-name-part-for-all-urls)
  - repository: [Releases](project/releases.md#releases), [Arch Linux](get/linux.md#arch-linux), [Source code on GitHub](opensource/devel.md#source-code-on-github), [Hosting and download](source.md#hosting-and-download), [root](source/layout.md#root), [What to add](source/contributing.md#what-to-add), [Web site source code](source/web.md#web-site-source-code), [off git!](source/build.md#off-git!), [git vs tarballs](source/build/fromsource.md#git-vs-tarballs)
  - --resolve: [Provide a custom IP address for a name](usingcurl/connections.md#provide-a-custom-ip-address-for-a-name)
+ - --retry: [Retrying failed attempts](usingcurl/downloads/retry.md#retrying-failed-attempts)
+ - --retry-all-errors: [Retry on any and all errors](usingcurl/downloads/retry.md#retry-on-any-and-all-errors)
+ - --retry-connrefused: [Connection refused](usingcurl/downloads/retry.md#connection-refused)
+ - --retry-delay: [Tweak your retries](usingcurl/downloads/retry.md#tweak-your-retries)
+ - --retry-max-time: [Tweak your retries](usingcurl/downloads/retry.md#tweak-your-retries)
  - RFC 1436: [GOPHER](protocols/curl.md#gopher)
  - RFC 1738: [FILE](protocols/curl.md#file), [multicwd](ftp/traversedir.md#multicwd)
  - RFC 1939: [POP3](protocols/curl.md#pop3)
@@ -364,8 +369,8 @@
  - Write callback: [Write callback](libcurl/callbacks/write.md#write-callback), [Get a HTML page in memory](libcurl/examples/getinmem.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http/responses.md#http-responses)
  - --write-out: [--write-out](usingcurl/verbose/writeout.md#write-out), [HTTP response codes](http/response.md#http-response-codes)
 ## X
- - -x: [HTTP](usingcurl/proxies.md#http), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
  - -X: [Request method](http/requests.md#request-method), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
+ - -x: [HTTP](usingcurl/proxies.md#http), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
 ## Y
  - yum: [Redhat and Centos](get/linux.md#redhat-and-centos)
 ## Z

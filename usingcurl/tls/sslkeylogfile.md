@@ -8,8 +8,8 @@ sent and received by Firefox and Chrome.
 
 This is similarly possible to do with curl.
 
-You do this by making the browser or curl tell Wireshark the SSL secrets so
-that it can decrypt them:
+You do this by making the browser or curl tell Wireshark the encryption
+secrets so that it can decrypt them:
 
 1. set the environment variable named `SSLKEYLOGFILE` to a file name of your
 choice before you start the browser or curl

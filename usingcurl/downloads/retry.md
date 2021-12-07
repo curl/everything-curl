@@ -19,6 +19,36 @@ your own delay between the attempts. With `--retry-max-time` you cap the total
 time allowed for retries. The `--max-time` option will still specify the
 longest time a single of these transfers is allowed to spend.
 
-## Retry even more
+Make curl retry up to 5 times, but no less than two minutes:
 
-TBD
+    curl --retry 5 --retry-max-time 120 https://example.com
+
+## Connection refused
+
+The default retry mechanism only retries tranfers for what are considered
+transient errors. Those are errors that the server itselfs hints and qualifies
+are there right now but might be gone at a later time.
+
+Sometimes you as a user know more about the situation and you can then help
+out curl to do better retries. For starters, you can tell curl to consisder
+"connection refused" to be a transient error. Maybe you know that the server
+you communicate with is a flaky one or maybe you know that you sometimes try
+to download from it when it reboots or similar. You use `--retry-connrefused`
+for this.
+
+For example: retry up to 5 times and consider `ECONNREFUSED` a reason for
+retry:
+
+    curl --retry 5 --retry-connrefused https://example.com
+
+## Retry on any and all errors
+
+The most aggressive form of retry is for the cases where you **know** that the
+URL is supposed to work and you will not tolerate any failures. Using
+`--retry-all-errors` makes curl treat all transfers failures as reason for
+retry.
+
+For example: retry up to 12 times for all errors:
+
+    curl --retry 12 --retry-all-errors https://example.com
+

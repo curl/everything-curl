@@ -346,7 +346,7 @@ A basic Unix shell script could look like something like this:
 
  86. RTSP: mismatch of Session Identifiers
 
- 87. unable to parse FTP file list
+ 87. Unable to parse FTP file list
 
  88. FTP chunk callback reported error
 
@@ -357,6 +357,17 @@ A basic Unix shell script could look like something like this:
  91. Invalid SSL certificate status
 
  92. Stream error in HTTP/2 framing layer
+
+ 93. An API function was called from inside a callback. If the curl tool
+     returns this, something has gone wrong internally
+
+ 94. Authentication error.
+
+ 95. HTTP/3 layer error. This is somewhat generic and can be one out of
+     several problems, see the error message for details.
+
+ 96. QUIC connection error. This error may be caused by an TLS library
+     error. QUIC is the transport protocol used for HTTP/3.
 
 ## Error message
 

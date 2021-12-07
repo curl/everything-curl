@@ -11,7 +11,7 @@ or use the shorthand version:
 The output from that command line is typically four lines, out of which some
 will be rather long and might wrap in your terminal window.
 
-An example output from a Debian Linux as of June 2020:
+An example output from a Debian Linux in June 2020:
 
     curl 7.68.0 (x86_64-pc-linux-gnu) libcurl/7.68.0 OpenSSL/1.1.1g zlib/1.2.11 brotli/1.0.7 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.8.0 nghttp2/1.41.0 librtmp/2.3
     Release-Date: 2020-01-08
@@ -69,7 +69,7 @@ and the curl project does not recommend it.
 This is a list of all transfer protocols (URL schemes really) in alphabetical
 order that this curl build supports. All names are shown in lowercase letters.
 
-As of curl 7.71.1 this list can contain these protocols:
+This list can contain these protocols:
 
 dict, file, ftp, ftps, gopher, http, https, imap, imaps, ldap, ldaps, mqtt,
 pop3, pop3s, rtmp, rtsp, scp, sftp, smb, smbs, smtp, smtps, telnet and tftp
@@ -82,27 +82,38 @@ not enabled.
 
 Features that can be present there:
 
- - alt-svc - Support for the alt-svc: header
- - AsynchDNS - This curl uses asynchronous name resolves. Asynchronous name resolves can be done using either the c-ares or the threaded resolver back-ends.
- - brotli - support for automatic brotli compression over HTTP(S)
- - CharConv - curl was built with support for character set conversions (like EBCDIC)
- - Debug - This curl uses a libcurl built with Debug. This enables more error-tracking and memory debugging etc. For curl-developers only!
- - GSS-API - GSS-API authentication is enabled
- - HTTP2 - HTTP/2 support has been built-in.
- - HTTP3 - HTTP/3 support has been built-in.
- - HTTPS-proxy - This curl is built to support HTTPS proxy.
- - IDN - This curl supports IDN - international domain names.
- - IPv6 - You can use IPv6 with this.
- - krb4 - Krb4 for FTP is supported
- - Largefile - This curl supports transfers of large files, files larger than 2GB.
- - libz - Automatic gzip decompression of compressed files over HTTP is supported.
- - Metalink - This curl supports Metalink
- - MultiSSL - This curl supports multiple TLS back-ends.
- - NTLM - NTLM authentication is supported.
- - NTLM_WB - NTLM authentication is supported.
- - PSL - PSL is short for Public Suffix List and means that this curl has been built with knowledge about "public suffixes".
- - SPNEGO - SPNEGO authentication is supported.
- - SSL - SSL versions of various protocols are supported, such as HTTPS, FTPS, POP3S and so on.
- - SSPI - SSPI is supported
- - TLS-SRP - SRP (Secure Remote Password) authentication is supported for TLS.
- - UnixSockets - Unix sockets support is provided.
+ - **alt-svc** - Support for the alt-svc: header
+ - **AsynchDNS** - This curl uses asynchronous name resolves. Asynchronous
+   name resolves can be done using either the c-ares or the threaded resolver
+   back-ends.
+ - **brotli** - support for automatic brotli compression over HTTP(S)
+ - **CharConv** - curl was built with support for character set conversions
+   (like EBCDIC)
+ - **Debug** - This curl uses a libcurl built with Debug. This enables more
+   error-tracking and memory debugging etc. For curl-developers only!
+ - **GSS-API** - GSS-API authentication is enabled
+ - **HTTP2** - HTTP/2 support has been built-in.
+ - **HTTP3** - HTTP/3 support has been built-in.
+ - **HTTPS-proxy** - This curl is built to support HTTPS proxy.
+ - **IDN** - This curl supports IDN - international domain names.
+ - **IPv6** - You can use IPv6 with this.
+ - **krb4** - Krb4 for FTP is supported
+ - **Largefile** - This curl supports transfers of large files, files larger
+   than 2GB.
+ - **libz** - Automatic gzip decompression of compressed files over HTTP is
+   supported.
+ - **Metalink** - This curl supports Metalink. In modern curl versions this
+   option is never available.
+ - **MultiSSL** - This curl supports multiple TLS back-ends. The first line
+   will detail exactly which TLS libraries.
+ - **NTLM** - NTLM authentication is supported.
+ - **NTLM_WB** - NTLM authentication is supported.
+ - **PSL** - Public Suffix List (PSL) is avaiable and means that this curl has
+   been built with knowledge about "public suffixes", used for cookies.
+ - **SPNEGO** - SPNEGO authentication is supported.
+ - **SSL** - SSL versions of various protocols are supported, such as HTTPS,
+   FTPS, POP3S and so on.
+ - **SSPI** - SSPI is supported
+ - **TLS-SRP** - SRP (Secure Remote Password) authentication is supported for
+   TLS.
+ - **UnixSockets** - Unix sockets support is provided.

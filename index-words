@@ -63,6 +63,8 @@
 --socks5-hostname
 --speed-limit
 --speed-time
+--tftp-blksize
+--tftp-no-options
 --time-cond
 --tr-encoding
 --trace
@@ -343,6 +345,7 @@ SSLKEYLOGFILE
 STARTTLS
 TELNET
 testing
+TFTP
 TLS
 TLS backend
 TODO

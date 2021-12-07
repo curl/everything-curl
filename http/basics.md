@@ -61,19 +61,3 @@ request to the server. Let's take the an example URL:
 
  - **/path/to/file** is used in the HTTP request to tell the server which exact
    document/resources curl wants to fetch
-
-### --path-as-is
-
-The path part of the URL is the part that starts with the first slash after
-the host name and ends either at the end of the URL or at a '?' or '#'
-(roughly speaking).
-
-If you include substrings including `/../` or `/./` in the path, curl will
-automatically squash them before the path is sent to the server, as is
-dictated by standards and how such strings tend to work in local file
-systems. The `/../` sequence will remove the previous section so that
-`/hello/sir/../` ends up just `/hello/` and `/./` is simply removed so that
-`/hello/./sir/` becomes `/hello/sir/`.
-
-To *prevent* curl from squashing those magic sequences before they are sent to
-the server and thus allow them through, the `--path-as-is` option exists.

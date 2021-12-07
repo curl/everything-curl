@@ -19,15 +19,15 @@ installations.
 
 ![copy as curl with Firefox](firefox-copy-as-curl.png)
 
-## From Chrome
+## From Chrome and Edge
 
-When you pop up the More tools->Developer mode in Chrome, and you select the
-Network tab you see the HTTP traffic used to get the resources of the site. On
-the line of the specific resource you are interested in, you right-click with
-the mouse and you select "Copy as cURL" and it will generate a command line
-for you in your clipboard. Paste that in a shell to get a curl command line
-that makes the transfer. This feature is available by default in all Chrome and
-Chromium installations.
+When you pop up the More tools->Developer mode in Chrome or Edge, and you
+select the Network tab you see the HTTP traffic used to get the resources of
+the site. On the line of the specific resource you are interested in, you
+right-click with the mouse and you select "Copy as cURL" and it will generate
+a command line for you in your clipboard. Paste that in a shell to get a curl
+command line that makes the transfer. This feature is available by default in
+all Chrome and Chromium installations.
 
 ![copy as curl with Chrome](chrome-copy-as-curl.png)
 

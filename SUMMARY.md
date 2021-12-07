@@ -67,6 +67,7 @@
     * [Sending email](usingcurl/smtp.md)
     * [MQTT](usingcurl/mqtt.md)
     * [TELNET](usingcurl/telnet.md)
+    * [TFTP](usingcurl/tftp.md)
     * [TLS](usingcurl/tls.md)
         * [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md)
     * [Copy as curl](usingcurl/copyas.md)

@@ -4,7 +4,7 @@
 then clearly considered to be "above" you. This is loading data down from the
 server onto your machine where you are running curl.
 
-Downloading is probably the most common use case for curl—retrieving the
+Downloading is probably the most common use case for curl — retrieving the
 specific data pointed to by a URL onto your machine.
 
 * [What exactly is downloading?](downloads/whatis.md)

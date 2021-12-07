@@ -1,11 +1,11 @@
 # Copy as curl
 
-Using curl to perform an operation a user just managed to do with his or her
-browser is one of the more common requests and areas people ask for help
-about.
+Using curl to reproduce an operation a user just managed to do with his or her
+browser is a common request and area people ask for help about.
 
 How do you get a curl command line to get a resource, just like the browser
-would get it, nice and easy? Chrome, Firefox and Safari all have this feature.
+would get it, nice and easy? Chrome, Firefox, Edge and Safari all have this
+feature.
 
 ## From Firefox
 

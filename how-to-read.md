@@ -2,7 +2,7 @@
 
 Here is an overview of the main sections of this book and what they cover.
 
-## 1. [The cURL project](curl.md)
+## 1. [The cURL project](project.md)
 
 Project things. How it started, how we work and how often releases are made.
 

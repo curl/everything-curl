@@ -44,6 +44,6 @@ document root of your HTTP server to the curl-www source code root.
 - The main origin machine is sponsored by **Haxx**
 - The curl.se domain is served by anycasted distributed DNS servers sponsored
   by **Kirei**
-- The site is delivered to the world a CDN run by **Fastly**
+- The site is delivered to the world via a CDN run by **Fastly**
 - The website updates itself from GitHub every N minutes. The CDN front-ends
   cache content for Y minutes (different types cache content different times)

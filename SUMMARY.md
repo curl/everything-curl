@@ -30,7 +30,7 @@
     * [Code style](source/style.md)
     * [Contributing](source/contributing.md)
     * [Reporting vulnerabilities](source/reportvuln.md)
-    * [Web site](source/web.md)
+    * [Website](source/web.md)
     * [Build and install](source/build.md)
       * [Build from source](source/build/fromsource.md)
       * [Dependencies](source/build/deps.md)

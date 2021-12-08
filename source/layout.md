@@ -51,7 +51,7 @@ person who builds libcurl to select from a wide variety TLS libraries to build
 with.
 
 We also maintain a [SSL comparison
-table](https://curl.se/docs/ssl-compared.html) on the web site to aid
+table](https://curl.se/docs/ssl-compared.html) on the website to aid
 users.
 
 - OpenSSL: the (by far) most popular TLS library.
@@ -97,7 +97,7 @@ The main documentation location. Text files in this directory are typically
 plain text files. We have slowly started to move towards Markdown format so a
 few (but growing number of) files use the .md extension to signify that.
 
-Most of these documents are also shown on the curl web site automatically
+Most of these documents are also shown on the curl website automatically
 converted from text to a web friendly format/look.
 
 - `BINDINGS`: lists all known libcurl language bindings and where to find them

@@ -9,7 +9,7 @@ to get current exchange rates, to ask the bot "please exchange 200 USD into
 SEK" or similar.
 
 In order to have the provided exchange rates as accurate as possible, the bot
-would download the rates daily from a web site that was hosting them. A small
+would download the rates daily from a website that was hosting them. A small
 tool to download data over HTTP was needed for this task. A quick look-around
 at the time had Daniel find a tiny tool named httpget (written by the
 Brazilian developer Rafael Sagula). It did the job, almost, just needed a few

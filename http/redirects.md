@@ -131,7 +131,7 @@ of these kinds of redirects.
 
 The modern web is full of JavaScript and as you know, JavaScript is a
 language and a full run-time that allows code to execute in the browser when
-visiting web sites.
+visiting websites.
 
 JavaScript also provides means for it to instruct the browser to move on to
 another site—a redirect, if you will.

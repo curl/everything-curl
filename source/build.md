@@ -17,7 +17,7 @@ different options will be explored below.
 
 ## The latest version?
 
-Looking at the curl web site at https://curl.se you can see the latest
+Looking at the curl website at https://curl.se you can see the latest
 curl and libcurl version released from the project. That is the latest source
 code package you can get.
 

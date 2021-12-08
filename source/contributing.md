@@ -45,7 +45,7 @@ current protocols, especially features that popular clients or browsers have
 but that curl still lacks.
 
 Of course, you can also add contents to the project that is not code, like
-documentation, graphics or web site contents, but the general rules apply
+documentation, graphics or website contents, but the general rules apply
 equally to that.
 
 If you are fixing a problem you have or a problem that others are reporting, we
@@ -104,11 +104,11 @@ A popular and convenient way to make your own changes and contribute them back
 to the project is by doing a so-called pull request on GitHub.
 
 First, you create your own version of the source tree, called a fork, on the
-Github web site. That way you get your own version of the curl git tree that
+Github website. That way you get your own version of the curl git tree that
 you can clone to a local copy.
 
 You edit your own local copy, commit the changes, push them to the git
-repository on Github and then on the Github web site you can select to create
+repository on Github and then on the Github website you can select to create
 a pull request based on your changes done to your local repository clone of
 the original curl repository.
 

@@ -2,7 +2,7 @@
 
 A release in the curl project means packaging up all the source code that is
 in the master branch of the code repository, signing the package, tagging the
-point in the code repository, and then putting it up on the web site for the
+point in the code repository, and then putting it up on the website for the
 world to download.
 
 It is one single source code archive for all platforms curl can run on. It is

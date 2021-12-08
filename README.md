@@ -14,8 +14,8 @@ Do not try to read it from front to back. Read the chapters or content you are
 curious about and flip back and forth as you see fit.
 
 I hope to run this book project as I do all other projects I work on: in the
-open, completely free to download and read. I want it to be free for anyone to comment on,
-and available for everyone to contribute to and help out with. 
+open, completely free to download and read. I want it to be free for anyone to
+comment on, and available for everyone to contribute to and help out with.
 
 Send your bug reports, pull requests or critiques to me and I will improve
 this book accordingly.
@@ -30,12 +30,14 @@ This book project started at the end of September 2015.
 
 ## The book sites
 
-**https://everything.curl.dev** is the home of this book. It features
-accessible links to read the book online in a web version, or download a PDF
-version for offline reading. Unfortunately, the previously provided ebook
-formats are no longer provided by gitbook.com that we use to produce the book.
+[https://everything.curl.dev](https://everything.curl.dev) is the home of this
+book. It features accessible links to read the book online in a web version,
+or download a PDF version for offline reading. Unfortunately, the previously
+provided ebook formats are no longer provided by gitbook.com that we use to
+produce the book.
 
-**https://github.com/bagder/everything-curl** hosts all the book content.
+[https://github.com/bagder/everything-curl](https://github.com/bagder/everything-curl)
+hosts all the book content.
 
 ## The author
 

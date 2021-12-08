@@ -4,7 +4,7 @@ Telnet is an ancient application protocol for bidirectional **clear-text**
 communication. It was designed for interactive text-oriented communications
 and *there is no encrypted or secure version* of Telnet.
 
-TELNET is not a very good match for curl. The protocol is not done to handle
+TELNET is not a perfect match for curl. The protocol is not done to handle
 plain uploads or downloads so the usual curl paradigms have had to be
 stretched somewhat to make curl deal with it appropriately.
 

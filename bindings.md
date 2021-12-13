@@ -38,6 +38,7 @@ archives. They must be downloaded and installed separately.
 | Perl | <https://github.com/szbalint/WWW--Curl> | Cris Bailiff and Bálint Szilakszi |
 | PHP | <https://php.net/curl> | Sterling Hughes |
 | PostgreSQL | <https://github.com/pramsey/pgsql-http> | Paul Ramsey |
+| PostgreSQL | <https://github.com/RekGRpth/pg_curl> | RekGRpth |
 | Python (PycURL) | <https://github.com/pycurl/pycurl> | Kjetil Jacobsen |
 | R | <https://cran.r-project.org/package=curl> | Jeroen Ooms, Hadley Wickham, RStudio |
 | Rexx | <https://rexxcurl.sourceforge.io/> | Mark Hessling |

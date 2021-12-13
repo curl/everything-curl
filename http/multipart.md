@@ -130,9 +130,9 @@ An example action looks like this:
 
 If the form is found in a web page hosted on a URL like for example
 `https://example.com/user/login` the `action=submit.cgi` is a relative path
-within the same "directory" as the the form itself. The full URL to submit
-this form thus becomes `https://example.com/user/submit.cgi`. That is the URL
-to use in the curl command line.
+within the same "directory" as the form itself. The full URL to submit this
+form thus becomes `https://example.com/user/submit.cgi`. That is the URL to
+use in the curl command line.
 
 Next, you must identify every `<input>` tag used within the form, including
 the ones that are marked as "hidden". Hidden just means that they are not

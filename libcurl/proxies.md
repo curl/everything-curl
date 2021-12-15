@@ -150,6 +150,13 @@ libcurl supports authentication with HTTP, HTTPS and SOCKS5 proxies. The key
 option is then `CURLOPT_PROXYUSERPWD` which sets the user name and password to
 use - unless you set it within the `CURLOPT_PROXY` string.
 
-## Proxy headers
+## HTTP Proxy headers
 
-TBD
+With an HTTP or HTTP proxy, libcurl will issue a request to the proxy that
+includes a set of headers. An application can of course modify the headers,
+just like for requests sent to servers.
+
+libcurl offers the `CURLOPT_PROXYHEADER` for controlling the headers that are
+sent to a proxy **when there is a separate request sent to the server**. This
+typically means the initial `CONNECT` request sent to a proxy for setting up a
+tunnel through the proxy.

@@ -20,6 +20,8 @@ Normally this can be done by looking at the scheme part of the URL. For
 `imaps`. Using the provided scheme, libcurl sets the `conn->handler` pointer
 to the handler struct for the protocol that handles this URL.
 
+![libcurl protocol handlers](slide-protocol-handlers.jpg)
+
 The handler struct contains a set of function pointers that can be NULL or set
 to point to a protocol specific function to do things necessary for that
 protocol to work for a transfer. Things that not all other protocols need. The

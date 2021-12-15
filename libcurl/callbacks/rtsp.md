@@ -1,6 +1,6 @@
 # RTSP interleave callback
 
-The the callback with the `CURLOPT_INTERLEAVEFUNCTION` option.
+The callback with the `CURLOPT_INTERLEAVEFUNCTION` option.
 
 This callback gets called by libcurl as soon as it has received interleaved
 RTP data when doing an RTSP transfer. It gets called for each `$` block and

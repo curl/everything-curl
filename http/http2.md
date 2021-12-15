@@ -2,7 +2,7 @@
 
 curl supports HTTP/2 for both HTTP:// and HTTPS:// URLs assuming that curl was
 built with the proper prerequisites. It will even default to using HTTP/2 when
-given a HTTPS URL since doing so implies no penalty and when curl is used with
+given an HTTPS URL since doing so implies no penalty and when curl is used with
 sites that do not support HTTP/2 the request will instead negotiate HTTP/1.1.
 
 With HTTP:// URLs however, the upgrade to HTTP/2 is done with an `Upgrade:`

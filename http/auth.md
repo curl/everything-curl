@@ -1,10 +1,10 @@
 # HTTP authentication
 
-Each HTTP request can be made authenticated. If a server or a proxy wants the
-user to provide proof that they have the correct credentials to access a URL or
-perform an action, it can send back a HTTP response code that informs the
-client that it needs to provide a correct HTTP authentication header in the
-request to be allowed.
+Each HTTP request can be made authenticated. If a server or a proxy want the
+user to provide proof that they have the correct credentials to access a URL
+or perform an action, it can send an HTTP response code that informs the client
+that it needs to provide a correct HTTP authentication header in the request
+to be allowed.
 
 A server that requires authentication sends back a 401 response code and an
 associated `WWW-Authenticate:` header that lists all the authentication
@@ -31,7 +31,7 @@ basic method, use `--basic`.
 The Basic authentication method sends the user name and password in clear text
 over the network (base64 encoded) and should be avoided for HTTP transport.
 
-When asking to do a HTTP transfer using a single (specified or implied),
+When asking to do an HTTP transfer using a single (specified or implied),
 authentication method, curl will insert the authentication header already in
 the first request on the wire.
 

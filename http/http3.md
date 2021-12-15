@@ -48,7 +48,7 @@ it will rather store the info for use in the *next* request to the host.
 A certain amount of QUIC connection attempts will fail, partly because many
 networks and hosts block or throttle the traffic.
 
-Currently, curl features no fall-back logic but if a HTTP/3 (or QUIC rather)
+Currently, curl features no fall-back logic but if an HTTP/3 (or QUIC rather)
 connection fails it will be reported as, yes, a failure.
 
 Web browsers will upgrade to HTTP/3 in the background and only switch over

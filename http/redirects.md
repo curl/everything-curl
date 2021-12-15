@@ -103,7 +103,7 @@ control that behavior with the `CURLOPT_POSTREDIR` option.
 ## Redirecting to other host names
 
 When you use curl you may provide credentials like user name and password for
-a particular site, but since a HTTP redirect might move away to a different
+a particular site, but since an HTTP redirect might move away to a different
 host curl limits what it sends away to other hosts than the original within
 the same transfer.
 

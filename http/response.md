@@ -46,7 +46,7 @@ such occurrences.
 
 ### CONNECT response codes
 
-Since there can be a HTTP request and a separate CONNECT request in the same
+Since there can be an HTTP request and a separate CONNECT request in the same
 curl transfer, we often separate the CONNECT response (from the proxy) from
 the remote server's HTTP response.
 

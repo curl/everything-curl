@@ -25,12 +25,12 @@ Make curl retry up to 5 times, but no less than two minutes:
 
 ## Connection refused
 
-The default retry mechanism only retries tranfers for what are considered
-transient errors. Those are errors that the server itselfs hints and qualifies
-are there right now but might be gone at a later time.
+The default retry mechanism only retries transfers for what are considered
+transient errors. Those are errors that the server itself hints and qualifies
+as being there right now but that might be gone at a later time.
 
 Sometimes you as a user know more about the situation and you can then help
-out curl to do better retries. For starters, you can tell curl to consisder
+out curl to do better retries. For starters, you can tell curl to consider
 "connection refused" to be a transient error. Maybe you know that the server
 you communicate with is a flaky one or maybe you know that you sometimes try
 to download from it when it reboots or similar. You use `--retry-connrefused`

@@ -108,7 +108,7 @@ Features that can be present there:
    will detail exactly which TLS libraries.
  - **NTLM** - NTLM authentication is supported.
  - **NTLM_WB** - NTLM authentication is supported.
- - **PSL** - Public Suffix List (PSL) is avaiable and means that this curl has
+ - **PSL** - Public Suffix List (PSL) is available and means that this curl has
    been built with knowledge about "public suffixes", used for cookies.
  - **SPNEGO** - SPNEGO authentication is supported.
  - **SSL** - SSL versions of various protocols are supported, such as HTTPS,

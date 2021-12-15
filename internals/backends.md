@@ -16,7 +16,7 @@ which backend or backends (plural) to use when you build curl.
 ## Different backends
 
 In the libcurl source code, there are internal APIs for providing
-functionlity. In these different areas there are multiple different providers:
+functionality. In these different areas there are multiple different providers:
 
 1. IDN
 2. Name resolving

@@ -58,7 +58,7 @@ what to do with the file:
  - `CURL_CHUNK_BGN_FUNC_SKIP`
  - `CURL_CHUNK_BGN_FUNC_FAIL` stop because of error
 
-After the matched file has been transfered or skipped, the
+After the matched file has been transferred or skipped, the
 `CURLOPT_CHUNK_END_FUNCTION` callback is called.
 
 The end chunk callback can only return success or error.

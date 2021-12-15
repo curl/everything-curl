@@ -10,7 +10,7 @@ know and keep in mind:
    connection at some point and typically only one at a time. There's a
    `data->conn` pointer that identifies the connection that is currently used
    by this transfer. A single connection can be used over time and even
-   concorrently by several transfers (and thus easy handles) when multiplexed
+   concurrently by several transfers (and thus easy handles) when multiplexed
    connections are used.
 
  - `conn` is the variable name we use all over the internals to refer to the

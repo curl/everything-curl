@@ -1,6 +1,6 @@
 # Custom FTP commands
 
-The FTP protocol offers a wide variety of differerent commands that allow the
+The FTP protocol offers a wide variety of different commands that allow the
 client to perform actions, other than the plain file transfers that curl is
 focused on.
 
@@ -34,7 +34,7 @@ curl has changed the working directory, just **before the commands** that kick
 off the transfer are sent. To send command then, prefix the command with a '+'
 (plus).
 
-## A series of commmands
+## A series of commands
 
 You can in fact send commands in all three different times by using multiple
 `-Q` on the command line. You can also send multiple commands in the same
@@ -50,7 +50,7 @@ Example, rename a file then do a transfer:
 
 ## Fallible commands
 
-You can opt to send indidivual quote commands that are allowed to fail, to get
+You can opt to send individual quote commands that are allowed to fail, to get
 an error returned from the server without causing everything to stop.
 
 You make the command "fallible" by prefixing it with an asterisk (`*`). For

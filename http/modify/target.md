@@ -20,7 +20,7 @@ you have to do it like this:
 That example command line makes the first line of the outgoing HTTP request to
 look like this:
 
-    OPITONS * HTTP/1.1
+    OPTIONS * HTTP/1.1
 
 ## --path-as-is
 

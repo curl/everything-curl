@@ -18,3 +18,16 @@ callback function.
 Unless explicitly stated in a libcurl function documentation, it is not
 legal to invoke libcurl functions from within a libcurl callback.
 
+ * [Write data](callbacks/write.md)
+ * [Read data](callbacks/read.md)
+ * [Progress information](callbacks/progress.md)
+ * [Header data](callbacks/header.md)
+ * [Debug](callbacks/debug.md)
+ * [sockopt](callbacks/sockopt.md)
+ * [SSL context](callbacks/sslcontext.md)
+ * [Seek and ioctl](callbacks/seek.md)
+ * [Network data conversion](callbacks/conversions.md)
+ * [Opensocket and closesocket](callbacks/openclosesocket.md)
+ * [SSH key](callbacks/sshkey.md)
+ * [RTSP interleaved data](callbacks/rtsp.md)
+ * [FTP matching](callbacks/ftpmatch.md)

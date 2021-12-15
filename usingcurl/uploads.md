@@ -1,25 +1,25 @@
-## Uploads
+# Uploads
 
 Uploading is a term for sending data to a remote server. Uploading is done
 differently for each protocol, and several protocols may even allow different
 ways of uploading data.
 
-### Protocols allowing upload
+## Protocols allowing upload
 
 You can upload data using one of these protocols: FILE, FTP, FTPS, HTTP,
 HTTPS, IMAP, IMAPS, SCP, SFTP, SMB, SMBS, SMTP, SMTPS and TFTP.
 
-### HTTP offers several "uploads"
+## HTTP offers several "uploads"
 
-HTTP (and its bigger brother HTTPS) provides several different ways to upload
-data to a server and curl offers easy command-line options to do it the three
-most common ways, described below.
+HTTP, and its bigger brother HTTPS, offer several different ways to upload
+data to a server and curl provides easy command-line options to do it the
+three most common ways, described below.
 
 An interesting detail with HTTP is also that an upload can also be a download,
 in the same operation and in fact many downloads are initiated with an HTTP
 POST.
 
-#### POST
+### POST
 
 POST is the HTTP method that was invented to send data to a receiving web
 application, and it is, for example, how most common HTML forms on the web
@@ -32,7 +32,7 @@ are a few additional alterations.
 Read the detailed description on how to do this with curl in the [HTTP POST
 with curl](http-post.md) chapter.
 
-#### multipart formpost
+### multipart formpost
 
 Multipart formposts are also used in HTML forms on websites; typically when
 there's a file upload involved. This type of upload is also an HTTP POST but
@@ -46,7 +46,7 @@ receiving server end expects and can handle.
 HTTP multipart formposts are done with `-F`. See the detailed description in
 the [HTTP multipart formposts](http-multipart.md) chapter.
 
-#### PUT
+### PUT
 
 HTTP PUT is the upload method that was designed to send a complete resource
 meant to be put as-is on the remote site or even replace an existing resource
@@ -57,7 +57,7 @@ You send off an HTTP upload using the -T option with the file to upload:
 
     curl -T uploadthis http://example.com/
 
-### FTP uploads
+## FTP uploads
 
 Working with FTP, you get to see the remote file system you will be accessing.
 You tell the server exactly in which directory you want the upload to be
@@ -75,7 +75,7 @@ you have used locally, you specify it in the URL:
 Learn more about FTPing with curl in the [Using curl/FTP](usingcurl-ftp.md)
 section.
 
-### SMTP uploads
+## SMTP uploads
 
 You may not consider sending an e-mail to be "uploading", but to curl it is.
 You upload the mail body to the SMTP server. With SMTP, you also need to
@@ -87,7 +87,7 @@ body as curl will not add any at all.
 Learn more about using SMTP with curl in the [Using
 curl/SMTP](usingcurl-smtp.md) section.
 
-### Progress meter for uploads
+## Progress meter for uploads
 
 The general progress meter curl provides (see the [Progress
 meter](cmdline-progressmeter.md) section) works fine for uploads as well.
@@ -99,7 +99,7 @@ Therefore, you may need to explicitly redirect the downloaded data to a file
 (using shell redirect '>', `-o` or similar) to get the progress meter
 displayed for upload.
 
-### Rate limiting
+## Rate limiting
 
 Rate limiting works exactly the same for uploads as for downloads and curl, in
 fact, only has a single limit that will limit the speed in both directions.

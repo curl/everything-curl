@@ -82,7 +82,16 @@ transfer like this (it still needs user name and password set as well):
 
 ## Bearer
 
-TBD
+To pass on an OAuth 2.0 Bearer Access Token in a request, use
+`CURLOPT_XOAUTH2_BEARER` for example:
+
+    CURL *curl = curl_easy_init();
+    if(curl) {
+      curl_easy_setopt(curl, CURLOPT_URL, "pop3://example.com/");
+      curl_easy_setopt(curl, CURLOPT_XOAUTH2_BEARER, "1ab9cb22ba269a7");
+      ret = curl_easy_perform(curl);
+      curl_easy_cleanup(curl);
+    }
 
 ## Try-first
 

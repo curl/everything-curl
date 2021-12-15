@@ -1,4 +1,4 @@
-# Everything is state machines
+# State machines
 
 To facilitate non-blocking behavior all through, the curl source is full of
 state machines. Work on as much data as there is and drive the state machine

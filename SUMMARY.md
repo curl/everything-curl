@@ -212,7 +212,7 @@
 * [libcurl internals](internals.md)
     * [Easy handles and connections](internals/easy.md)
     * [Everything is multi](internals/multi.md)
-    * [Everything is state machines](internals/statemachines.md)
+    * [State machines](internals/statemachines.md)
     * [Protocol handler](internals/handler.md)
     * [Backends](internals/backends.md)
 * [Index](bookindex.md)

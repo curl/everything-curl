@@ -9,3 +9,6 @@ GET instead.
 This option makes it easy to switch between POSTing and GETing a form, for
 example.
 
+An example that adds an encoded piece of data as a query in the URL:
+
+    curl -G --data-urlencode "name=daniel stenberg" https://example.com/

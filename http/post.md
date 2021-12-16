@@ -23,11 +23,21 @@ command line, you can also read it off a file name in standard curl style:
 
     curl -d @filename http://example.com
 
+While the server might assume that the data is encoded in some special way,
+curl does not encode or change the data you tell it to send. **curl sends
+exactly the bytes you give it**.
+
+To send a POST body that starts with a `@` symbol, to avoid that curl tries to
+load that as a file name, use `--data-raw` instead. This option has no file
+loading capability:
+
+    curl --data-raw '@string' https://example.com
+
 ### Content-Type
 
-POSTing with curl's -d option will make it include a default header that looks
-like `Content-Type: application/x-www-form-urlencoded`. That is what your
-typical browser will use for a plain POST.
+POSTing with curl's `-d` option will make it include a default header that
+looks like `Content-Type: application/x-www-form-urlencoded`. That is what
+your typical browser will use for a plain POST.
 
 Many receivers of POST data do not care about or check the Content-Type
 header.

@@ -76,9 +76,9 @@ Learn much more about FTPing in the [FTP with curl](../ftp.md) section.
 
 ## SMTP uploads
 
-You may not consider sending an e-mail to be "uploading", but to curl it is.
+You may not consider sending an email to be "uploading", but to curl it is.
 You upload the mail body to the SMTP server. With SMTP, you also need to
-include all the e-mail headers you need (To:, From:, Date:, etc.) in the mail
+include all the mail headers you need (To:, From:, Date:, etc.) in the mail
 body as curl will not add any at all.
 
     curl -T mail smtp://mail.example.com/ --mail-from user@example.com

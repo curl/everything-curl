@@ -13,14 +13,14 @@ bored and fades away, sometimes a new eager contributor steps out from the
 shadows and starts helping out more. To keep this ship going forward as well
 as possible, it is important that we maintain open discussions and that is one
 of the reasons why we frown upon users who take discussions privately or try
-to e-mail individual team members about development issues, questions,
+to email individual team members about development issues, questions,
 debugging or whatever.
 
 In this day, mailing lists may be considered the old style of communication —
 no fancy web forums or similar. Using a mailing list is therefore becoming an
 art that is not practised everywhere and may be a bit strange and unusual to
 you. But fear not. It is just about sending emails to an address that then
-sends that e-mail out to all the subscribers. Our mailing lists have at most a
+sends that email out to all the subscribers. Our mailing lists have at most a
 few thousand subscribers. If you are mailing for the first time, it might be
 good to read a few old mails first to get to learn the culture and what's
 considered good practice.

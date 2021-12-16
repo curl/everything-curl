@@ -129,7 +129,7 @@ upstream.
 
 Once your commits are fine enough to get sent to the mailing list, you just
 create patches with `git format-patch` and send them away. Even more fancy
-users go directly to `git send-email` and have git send the e-mail itself.
+users go directly to `git send-email` and have git send the email itself.
 
 ### git commit style
 
@@ -150,8 +150,9 @@ ask you to use:
     [whatever-else-by: credit all helpers, finders, doers]
 
 Do not forget to use `git commit --author="Jane Doe <jane@example.com>"` if
-you commit someone else's work, and make sure that you have your own Github username and
-e-mail setup correctly in git before you commit via commands below:
+you commit someone else's work, and make sure that you have your own Github
+username and email setup correctly in git before you commit via commands
+below:
 
     git config --global user.name "johndoe"
     git config --global user.email "johndoe@example.com"

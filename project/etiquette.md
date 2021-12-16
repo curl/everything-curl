@@ -54,7 +54,7 @@ This is why top posting is so bad:
     A: Because it messes up the order in which people normally read text.
     Q: Why is top-posting such a bad thing?
     A: Top-posting.
-    Q: What is the most annoying thing in e-mail?
+    Q: What is the most annoying thing in email?
 
 Apart from the screwed-up read order (especially when mixed together in a
 thread when someone responds using the mandated bottom-posting style), it also

@@ -27,7 +27,7 @@ announcement.
   security vulnerability in curl or libcurl are ignored and no further action
   is required.
 
-- A person in the security team sends an e-mail to the original reporter to
+- A person in the security team sends an email to the original reporter to
   acknowledge the report.
 
 - The security team investigates the report and either rejects it or accepts

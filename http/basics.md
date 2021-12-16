@@ -1,7 +1,7 @@
 ### HTTP protocol basics
  
-(This assumes you have read the [Network and protocols](protocols.md) section
-or are otherwise already familiar with protocols.)
+(This assumes you have read the [Network and protocols](../protocols.md)
+section or are otherwise already familiar with protocols.)
 
 HTTP is a protocol that is easy to learn the basics of. A client connects to a
 server—and it is always the client that takes the initiative—sends a

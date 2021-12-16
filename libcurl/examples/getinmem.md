@@ -5,7 +5,7 @@ data to stdout (which often is not what you want), this example instead stores
 the incoming data in a memory buffer that is enlarged as the incoming data
 grows.
 
-It accomplishes this by using a [write callback](callback-write.md) to
+It accomplishes this by using a [write callback](../callbacks/write.md) to
 receive the data.
 
 This example uses a fixed URL string with a set URL scheme, but you can of

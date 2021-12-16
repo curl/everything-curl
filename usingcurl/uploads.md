@@ -30,7 +30,7 @@ The upload kind is usually done with the `-d` or `--data` options, but there
 are a few additional alterations.
 
 Read the detailed description on how to do this with curl in the [HTTP POST
-with curl](http-post.md) chapter.
+with curl](../http/post.md) chapter.
 
 ### multipart formpost
 
@@ -44,7 +44,7 @@ which type of POST to use at your own whim but it entirely depends on what the
 receiving server end expects and can handle.
 
 HTTP multipart formposts are done with `-F`. See the detailed description in
-the [HTTP multipart formposts](http-multipart.md) chapter.
+the [HTTP multipart formposts](../http/multipart.md) chapter.
 
 ### PUT
 
@@ -72,8 +72,7 @@ you have used locally, you specify it in the URL:
 
     curl -T uploadthis ftp://example.com/this/directory/remotename
 
-Learn more about FTPing with curl in the [Using curl/FTP](usingcurl-ftp.md)
-section.
+Learn much more about FTPing in the [FTP with curl](../ftp.md) section.
 
 ## SMTP uploads
 
@@ -85,15 +84,15 @@ body as curl will not add any at all.
     curl -T mail smtp://mail.example.com/ --mail-from user@example.com
 
 Learn more about using SMTP with curl in the [Using
-curl/SMTP](usingcurl-smtp.md) section.
+curl/SMTP](smtp.md) section.
 
 ## Progress meter for uploads
 
 The general progress meter curl provides (see the [Progress
-meter](cmdline-progressmeter.md) section) works fine for uploads as well.
+meter](../cmdline/progressmeter.md) section) works fine for uploads as well.
 What needs to be remembered is that the progress meter is automatically
-disabled when you are sending output to stdout, and most protocols curl support
-can output something even for an upload.
+disabled when you are sending output to stdout, and most protocols curl
+support can output something even for an upload.
 
 Therefore, you may need to explicitly redirect the downloaded data to a file
 (using shell redirect '>', `-o` or similar) to get the progress meter
@@ -105,4 +104,4 @@ Rate limiting works exactly the same for uploads as for downloads and curl, in
 fact, only has a single limit that will limit the speed in both directions.
 
 See further details in the [Download Rate limiting
-section](usingcurl-downloads.md#rate-limiting).
+section](downloads/rate-limiting.md).

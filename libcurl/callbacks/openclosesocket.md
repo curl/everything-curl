@@ -43,7 +43,7 @@ will cause an unrecoverable error within libcurl and it will eventually return
 `CURLE_COULDNT_CONNECT` from its perform function.
 
 If you want to return a file descriptor that is *already connected* to a
-server, then you must also set the [sockopt callback](callback-sockopt.md) and
+server, then you must also set the [sockopt callback](sockopt.md) and
 make sure that returns the correct return value.
 
 The `curl_sockaddress` struct looks like this:

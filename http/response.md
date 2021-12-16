@@ -38,7 +38,7 @@ The first digit of the HTTP response code is a kind of "error class":
  - 5xx: there's problem in the server
 
 Remember that you can use curl's `--write-out` option to extract the response
-code. See the [--write-out](usingcurl-writeout.md) section.
+code. See the [--write-out](../usingcurl/verbose/writeout.md) section.
 
 To make curl return an error for response codes >= 400, you need to use
 `--fail` or `--fail-with-body`. Then curl will exit with error code 22 for

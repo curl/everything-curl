@@ -19,7 +19,7 @@ server), you usually do not know its IP addresses but instead you usually
 know its name. The name of the machine you will talk to is embedded in the URL
 that you work with when you use curl.
 
-You might use a URL like "http://example.com/index.html", which means you will
+You might use a URL like `http://example.com/index.html`, which means you will
 connect to and communicate with the host named example.com.
 
 ### Host name resolving
@@ -55,16 +55,16 @@ to the next one until either one works or they all fail.
 ### Connects to "port numbers"
 
 When connecting with TCP to a remote server, a client selects which port
-number to do that on. A port number is just a dedicated place for a
-particular service, which allows that same server to listen to other services on
-other port numbers at the same time.
+number to do that on. A port number is just a dedicated place for a particular
+service, which allows that same server to listen to other services on other
+port numbers at the same time.
 
 Most common protocols have default port numbers that clients and servers
-use. For example, when using the "http://example.com/index.html" URL, that URL
+use. For example, when using the `http://example.com/index.html` URL, that URL
 specifies a scheme called "http" which tells the client that it should try TCP
 port number 80 on the server by default. The URL can optionally provide
-another, custom, port number but if nothing special is specified, it will use the
-default port for the scheme used in the URL.
+another, custom, port number but if nothing special is specified, it will use
+the default port for the scheme used in the URL.
 
 ### TLS
 

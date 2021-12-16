@@ -8,7 +8,7 @@ you want.
 ## Multi handle
 
 All easy handles added to the same multi handle automatically share
-[connection cache](libcurl-connectionreuse) and [dns cache](libcurl-names.md).
+[connection cache](connectionreuse.md) and [dns cache](names.md).
 
 ## Sharing between easy handles
 

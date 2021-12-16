@@ -21,7 +21,7 @@ syntax checking and validation of the input may also be postponed, so just
 because `curl_easy_setopt` did not complain, it does not mean that the input
 was correct and valid; you may get an error returned later.
 
-Read more on [easy options](libcurl-options.md) in its separate section.
+Read more on [easy options](options.md) in its separate section.
 
 When you are done setting options to your easy handle, you can fire off the
 actual transfer.
@@ -32,13 +32,13 @@ application and how libcurl is best integrated into your architecture. Those
 are further described later in this chapter.
 
 While the transfer is ongoing, libcurl calls your specified functions—known as
-*[callbacks](libcurl-callbacks.md])* — to deliver data, to read data or to do
-a wide variety of things.
+*[callbacks](callbacks.md)* — to deliver data, to read data and to do a
+variety of things.
 
 After the transfer has completed, you can figure out if it succeeded or not
 and you can extract statistics and other information that libcurl gathered
 during the transfer from the easy handle. See [Post transfer
-information](libcurl-getinfo.md).
+information](getinfo.md).
 
 ### Reuse!
 

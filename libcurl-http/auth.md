@@ -5,7 +5,7 @@ libcurl supports a wide variety of HTTP authentication schemes.
 Note that this way of authentication is different than the otherwise widely
 used scheme on the web today where authentication is performed by a HTTP POST
 and then keeping state in cookies. See [Cookies with
-libcurl](libcurl-http-cookies.md) for details on how to do that.
+libcurl](cookies.md) for details on how to do that.
 
 ## User name and password
 

@@ -1,4 +1,4 @@
-# Bindings
+# Bindings for libcurl
 
 Creative people have written bindings or interfaces for various environments
 and programming languages. Using one of these allows you to take advantage of
@@ -8,6 +8,7 @@ all known interfaces, as of the time of this writing.
 The bindings listed below are not part of the curl/libcurl distribution
 archives. They must be downloaded and installed separately.
 
+<!-- markdown-link-check-disable -->
 | Language | Site | Author\(s\) |
 | :--- | :--- | :--- |
 | Script Basic | <https://scriptbasic.com/> | Peter Verhas |
@@ -64,3 +65,4 @@ archives. They must be downloaded and installed separately.
 | Visual Basic | <https://sourceforge.net/projects/libcurl-vb/> | Jeffrey Phillips |
 | wxWidgets | <https://wxcode.sourceforge.io/components/wxcurl/> | Casey O'Donnell |
 | Xojo | <https://github.com/charonn0/RB-libcURL> | Andrew Lambert |
+<!-- markdown-link-check-enable -->

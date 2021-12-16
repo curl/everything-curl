@@ -18,9 +18,9 @@ Non-HTTP/2 capable curls get 1.1 over HTTPS by default.
 |-------------------------------------|-------------|
 | --http1.0                           | HTTP/1.0
 | --http1.1                           | HTTP/1.1
-| --http2                             | [HTTP/2](http-http2.md)
-| --http2-prior-knowledge             | [HTTP/2](http-http2.md)
-| --http3                             | [HTTP/3](http-http3.md)
+| --http2                             | [HTTP/2](http2.md)
+| --http2-prior-knowledge             | [HTTP/2](http2.md)
+| --http3                             | [HTTP/3](http3.md)
 
 ## Accepting HTTP/0.9
 

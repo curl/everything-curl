@@ -36,8 +36,8 @@ TC + TLS.
 
 ## Alt-svc:
 
-The [alt-svc](http-altsvc.md) method of changing to HTTP/3 is the official way
-to bootstrap into HTTP/3 for a server.
+The [alt-svc](altsvc.md) method of changing to HTTP/3 is the official way to
+bootstrap into HTTP/3 for a server.
 
 Note that you need that feature built-in and that it does not switch to HTTP/3
 for the *current* request unless the alt-svc cache is already populated, but

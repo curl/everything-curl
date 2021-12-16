@@ -38,16 +38,16 @@ When libcurl issues HTTP requests as part of performing the data transfers you
 have asked it to, it will of course send them off with a set of HTTP headers
 that are suitable for fulfilling the task given to it.
 
-If just given the URL "http://localhost/file1.txt", libcurl 7.51.0 would send
-the following request to the server:
+If just given the URL `http://localhost/file1.txt`, libcurl sends the
+following request to the server:
 
     GET /file1.txt HTTP/1.1
     Host: localhost
     Accept: */*
 
-If you would instead instruct your application to also set
-`CURLOPT_POSTFIELDS` to the string "foobar" (6 letters, the quotes only used
-for visual delimiters here), it would send the following headers:
+If you instruct your application to also set `CURLOPT_POSTFIELDS` to the
+string "foobar" (6 letters, the quotes only used for visual delimiters here),
+it would send the following headers:
 
     POST /file1.txt HTTP/1.1
     Host: localhost

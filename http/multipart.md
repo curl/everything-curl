@@ -54,15 +54,16 @@ request headers to the host example.com:
 **Content-Length**, of course, tells the server how much data to expect. This
 example's 313 bytes is really small.
 
-The **Expect** header is explained in the [HTTP POST](http-post.md) chapter.
+The **Expect** header is explained in the [Expect 100
+continue](post/expect100.md) chapter.
 
 The **Content-Type** header is a bit special. It tells that this is a
 multipart formpost and then it sets the "boundary" string. The boundary string
 is a line of characters with a bunch of random digits somewhere in it, that
 serves as a separator between the different parts of the form that will be
 submitted. The particular boundary you see in this example has the random part
-`d74496d66958873e` but you will, of course, get something different when you run
-curl (or when you submit such a form with a browser).
+`d74496d66958873e` but you will, of course, get something different when you
+run curl (or when you submit such a form with a browser).
 
 So after that initial set of headers follows the request body
 

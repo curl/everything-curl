@@ -5,9 +5,10 @@ metadata and a response body, where the body can occasionally be zero bytes
 and thus nonexistent. A HTTP response will however always have response
 headers.
 
-The response body will be passed to the [write callback](callback-write.md)
-and the response headers to the [header callback](callback-header.md), but
-sometimes an application just want to know the size of the data.
+The response body will be passed to the [write
+callback](../libcurl/callbacks/write.md) and the response headers to the
+[header callback](../libcurl/callbacks/header.md), but sometimes an
+application just want to know the size of the data.
 
 The size of a response *as told by the server headers* can be extracted with
 `curl_easy_getinfo()` like this:

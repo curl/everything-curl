@@ -2,7 +2,7 @@
 
 multi_socket is the extra spicy version of the regular multi interface and is
 designed for event-driven applications. Make sure you read the [Drive with
-multi interface](libcurl-drive-multi.md) section first.
+multi interface](multi.md) section first.
 
 multi_socket supports multiple parallel transfers—all done in the same
 single thread—and have been used to run several tens of thousands of

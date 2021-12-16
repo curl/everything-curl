@@ -18,7 +18,8 @@ server. With libcurl you normally provide that data as a pointer and a length:
     curl_easy_setopt(easy, CURLOPT_POSTFIELDSIZE, (long)datalength);
 
 Or you tell libcurl that it is a post but would prefer to have libcurl instead
-get the data by using the regular [read callback](callback-read.md):
+get the data by using the regular [read
+callback](../libcurl/callbacks/read.md):
 
     curl_easy_setopt(easy, CURLOPT_POST, 1L);
     curl_easy_setopt(easy, CURLOPT_READFUNCTION, read_callback);
@@ -72,9 +73,9 @@ destination:
 
 If you for some reason do not know the size of the upload before the transfer
 starts, and you are using HTTP 1.1 you can add a `Transfer-Encoding: chunked`
-header with [CURLOPT_HTTPHEADER](libcurl-http-requests.md). For HTTP 1.0 you
-must provide the size before hand and for HTTP 2 and later, neither the size
-nor the extra header is needed.
+header with [CURLOPT_HTTPHEADER](requests.md). For HTTP 1.0 you must provide
+the size before hand and for HTTP 2 and later, neither the size nor the extra
+header is needed.
 
 ## Expect: headers
 
@@ -88,7 +89,7 @@ or if it is asked to do a HTTP POST for which the body size is either unknown
 or known to be larger than 1024 bytes.
 
 A libcurl-using client can explicitly disable the use of the `Expect:` header
-with the [CURLOPT_HTTPHEADER](libcurl-http-requests.md) option.
+with the [CURLOPT_HTTPHEADER](requests.md) option.
 
 This header is not used with HTTP/2 or HTTP/3.
 

@@ -93,8 +93,8 @@ A basic Unix shell script could look like something like this:
  13. Unknown response to FTP PASV command, Curl could not parse the reply sent
     to the PASV request. This is a strange server. PASV is used to setup the
     second data transfer connection in passive mode, see the [FTP uses two
-    connections](ftp-twoconnections.md) section for more on that. You might be
-    able to work-around this problem by using PORT instead, with the
+    connections](../ftp/twoconnections.md) section for more on that. You might
+    be able to work-around this problem by using PORT instead, with the
     `--ftp-port` option.
 
  14. Unknown FTP 227 format. Curl could not parse the 227-line the server sent.
@@ -161,7 +161,7 @@ A basic Unix shell script could look like something like this:
     memory to work with.
 
  28. Operation timeout. The specified time-out period was reached according to
-    the conditions. curl offers several [timeouts](usingcurl-timeouts.md), and
+    the conditions. curl offers several [timeouts](timeouts.md), and
     this exit code tells one of those timeout limits were reached. Extend the
     timeout or try changing something else that allows curl to finish its
     operation faster. Often, this happens due to network and remote server
@@ -172,7 +172,7 @@ A basic Unix shell script could look like something like this:
  30. FTP PORT failed. The PORT command failed. Not all FTP servers support the
     PORT command; try doing a transfer using PASV instead. The PORT command is
     used to ask the server to create the data connection by *connecting back*
-    to curl. See also the [FTP uses two connections](ftp-twoconnections.md)
+    to curl. See also the [FTP uses two connections](../ftp/twoconnections.md)
     section.
 
  31. FTP could not use REST. The REST command failed. This command is used for
@@ -255,8 +255,8 @@ A basic Unix shell script could look like something like this:
 
  51. The server's SSL/TLS certificate or SSH fingerprint failed verification.
     curl can then not be sure of the server being who it claims to be. See the
-    [using TLS with curl](usingcurl-tls.md) section for more TLS details and
-    [using SCP and SFTP with curl](usingcurl-scpsftp.md) for more SSH specific
+    [using TLS with curl](tls.md) section for more TLS details and
+    [using SCP and SFTP with curl](scpsftp.md) for more SSH specific
     details.
 
  52. The server did not reply anything, which in this context is considered an

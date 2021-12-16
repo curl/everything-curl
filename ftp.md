@@ -45,6 +45,6 @@ uses the name `anonymous` with the password `ftp@example.com`.
 If you want to provide another user name and password, you can pass them on to
 curl either with the `-u, --user` option or embed the info in the URL:
 
-   curl --user daniel:secret ftp://example.com/download
+    curl --user daniel:secret ftp://example.com/download
 
-   curl ftp://daniel:secret@example.com/download
+    curl ftp://daniel:secret@example.com/download

@@ -1,11 +1,11 @@
-### Driving with the multi interface
+# Driving with the multi interface
 
 The name 'multi' is for multiple, as in multiple parallel transfers, all done
 in the same single thread. The multi API is non-blocking so it can also make
 sense to use it for single transfers.
 
 The transfer is still set in an "easy" `CURL *` handle as described
-[above](libcurl-easyhandle.md), but with the multi interface you also need a
+[above](../easyhandle.md), but with the multi interface you also need a
 multi `CURLM *` handle created and use that to drive all the individual
 transfers. The multi handle can "hold" one or many easy handles:
 

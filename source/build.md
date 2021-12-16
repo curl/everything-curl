@@ -1,4 +1,4 @@
-# Building and installing
+# Build
 
 The source code for this project is written in a way that allows it to get
 compiled and built on just about any operating system and platform, with as

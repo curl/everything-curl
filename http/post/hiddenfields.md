@@ -1,7 +1,7 @@
 # Hidden form fields
 
-This chapter has explained how sending a post with `-d` is the equivalent of
-what a browser does when an HTML form is filled in and submitted.
+Sending a post with `-d` is the equivalent of what a browser does when an HTML
+form is filled in and submitted.
 
 Submitting such forms is a common operation with curl; effectively, to have
 curl fill in a web form in an automated fashion.

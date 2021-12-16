@@ -1,4 +1,4 @@
-### Write callback
+# Write callback
 
 The write callback is set with `CURLOPT_WRITEFUNCTION`:
 
@@ -25,7 +25,7 @@ data get passed to the write callback, you can get up to
 
 This function may be called with zero bytes data if the transferred file is empty.
 
-The data passed to this function will not be zero terminated! You cannot, for
+The data passed to this function will not be zero terminated. You cannot, for
 example, use printf's `%s` operator to display the contents nor strcpy to copy
 it.
 
@@ -38,3 +38,49 @@ The user pointer passed in to the callback in the *userdata* argument is set
 with `CURLOPT_WRITEDATA`:
 
     curl_easy_setopt(handle, CURLOPT_WRITEDATA, custom_pointer);
+
+## Store in memory
+
+A popular demand is to store the retrieved response in memory, and the
+callback explained above supports that. When doing this, just be careful as
+the response can potentially be enormous.
+
+You implement the callback in a manner similar to:
+
+    struct response {
+      char *memory;
+      size_t size;
+    };
+
+    static size_t
+    mem_cb(void *contents, size_t size, size_t nmemb, void *userp)
+    {
+      size_t realsize = size * nmemb;
+      struct repsonse *mem = (struct response *)userp;
+
+      char *ptr = realloc(mem->memory, mem->size + realsize + 1);
+      if(!ptr) {
+        /* out of memory! */
+        printf("not enough memory (realloc returned NULL)\n");
+        return 0;
+      }
+
+      mem->memory = ptr;
+      memcpy(&(mem->memory[mem->size]), contents, realsize);
+      mem->size += realsize;
+      mem->memory[mem->size] = 0;
+
+      return realsize;
+    }
+
+    int main()
+    {
+      struct response chunk;
+
+      /* send all data to this function  */
+      curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, mem_cb);
+
+      /* we pass our 'chunk' to the callback function */
+      curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *)&chunk);
+
+    }

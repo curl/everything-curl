@@ -35,7 +35,7 @@ When asking to do an HTTP transfer using a single (specified or implied),
 authentication method, curl will insert the authentication header already in
 the first request on the wire.
 
-If you'd rather have curl first *test* if the authentication is really
+If you would rather have curl first *test* if the authentication is really
 required, you can ask curl to figure that out and then automatically use the
 most safe method it knows about with `--anyauth`. This makes curl try the
 request unauthenticated, and then switch over to authentication if necessary:

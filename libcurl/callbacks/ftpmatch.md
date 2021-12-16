@@ -65,6 +65,6 @@ The end chunk callback can only return success or error.
 
 ## FTP matching callback
 
-If the default pattern matching function isn't to your liking, you can provide
+If the default pattern matching function is not to your liking, you can provide
 your own replacement function by setting the `CURLOPT_FNMATCH_FUNCTION` option
 to your alternative.

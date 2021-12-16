@@ -1,6 +1,6 @@
 # Fragment
 
-URLs offer a fragment part. That's usually seen as a hash symbol (#) and a
+URLs offer a fragment part. That is usually seen as a hash symbol (#) and a
 name for a specific name within a web page in browsers. An example of such a
 URL might look like:
 

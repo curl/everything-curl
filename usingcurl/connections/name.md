@@ -51,7 +51,7 @@ redirects or if you just want to have your command line work with multiple
 URLs.
 
 `--resolve` inserts the address into curl's DNS cache, so it will effectively
-make curl believe that's the address it got when it resolved the name.
+make curl believe that is the address it got when it resolved the name.
 
 When talking HTTPS, this will send SNI for the name in the URL and curl will
 verify the server's response to make sure it serves for the name in the URL.

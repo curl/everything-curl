@@ -53,7 +53,7 @@ What you can do instead then, is to "tunnel through" the HTTP proxy!
 ## HTTP proxy tunneling
 
 Most HTTP proxies allow clients to "tunnel through" it to a server on the other
-side. That's exactly what's done every time you use HTTPS through the HTTP
+side. That is exactly what's done every time you use HTTPS through the HTTP
 proxy.
 
 You tunnel through an HTTP proxy with curl using `-p` or `--proxytunnel`.

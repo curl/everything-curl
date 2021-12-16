@@ -33,7 +33,7 @@ anything else than that it would output data on stdout, to the terminal, by
 default. The "everything is a pipe" mantra of standard Unix philosophy was
 something Daniel believed in. curl is like 'cat' or one of the other Unix tools;
 it sends data to stdout to make it easy to chain together with other tools to do
-what you want. That's also why virtually all curl options that allow reading from
+what you want. That is also why virtually all curl options that allow reading from
 a file or writing to a file, also have the ability to select doing it to stdout
 or from stdin.
 

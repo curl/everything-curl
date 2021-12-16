@@ -1,6 +1,6 @@
 # Captive portals
 
-These are not proxies but they're blocking the way between you and the server
+These are not proxies but they are blocking the way between you and the server
 you want to access.
 
 A "captive portal" is one of these systems that are popular to use in hotels,

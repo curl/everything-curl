@@ -2,7 +2,7 @@
 
 When given an input URL such as `http://example.com/file`, the path section of
 the URL gets extracted and is turned into `/file` in the HTTP request line.
-That item in the protocol is called the *request target* in HTTP. That's the
+That item in the protocol is called the *request target* in HTTP. That is the
 resource this request will interact with. Normally this request target is
 extracted from the URL and then used in the request and as a user you do not
 need to think about it.

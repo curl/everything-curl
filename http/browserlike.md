@@ -47,7 +47,7 @@ The site at https://example.com/ features a login prompt. The login on the web
 site is a HTML form to which you send a [HTTP POST](http-post.md) to. Save the
 response cookies and the response (HTML) output.
 
-Although the login page is visible (if you'd use a browser) on
+Although the login page is visible (if you would use a browser) on
 https://example.com/, the HTML form tag on that page informs you about which
 exact URL to send the POST to, using the `action` parameter.
 

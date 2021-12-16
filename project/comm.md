@@ -11,7 +11,7 @@ It is important to realize that we are all jointly taking care of the project,
 we fix problems and we add features. Sometimes a regular contributor grows
 bored and fades away, sometimes a new eager contributor steps out from the
 shadows and starts helping out more. To keep this ship going forward as well
-as possible, it is important that we maintain open discussions and that's one
+as possible, it is important that we maintain open discussions and that is one
 of the reasons why we frown upon users who take discussions privately or try
 to e-mail individual team members about development issues, questions,
 debugging or whatever.

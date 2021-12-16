@@ -26,7 +26,7 @@ command line, you can also read it off a file name in standard curl style:
 ### Content-Type
 
 POSTing with curl's -d option will make it include a default header that looks
-like `Content-Type: application/x-www-form-urlencoded`. That's what your
+like `Content-Type: application/x-www-form-urlencoded`. That is what your
 typical browser will use for a plain POST.
 
 Many receivers of POST data do not care about or check the Content-Type

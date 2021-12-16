@@ -19,7 +19,7 @@ separately:
 
     curl_easy_setopt(curl, CURLOPT_PASSWORD, "secret");
 
-That's all you need. This will make libcurl switch on its default
+That is all you need. This will make libcurl switch on its default
 authentication method for this transfer: *HTTP Basic*.
 
 ## Authentication required

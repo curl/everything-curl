@@ -103,14 +103,14 @@ A basic Unix shell script could look like something like this:
     passive mode. You might be able to work-around this problem by using PORT
     instead, with the `--ftp-port` option.
 
- 15. FTP can't get host. Couldn't use the host IP address we got in the
+ 15. FTP cannot get host. Couldn't use the host IP address we got in the
     227-line. This is most likely an internal error.
 
  16. HTTP/2 error. A problem was detected in the HTTP2 framing layer. This is
     somewhat generic and can be one out of several problems, see the error
     message for details.
 
- 17. FTP couldn't set binary. Couldn't change transfer method to binary. This
+ 17. FTP could not set binary. Couldn't change transfer method to binary. This
     server is broken. curl needs to set the transfer to the correct mode
     before it is started as otherwise the transfer cannot work.
 
@@ -121,7 +121,7 @@ A basic Unix shell script could look like something like this:
     that curl got fewer bytes than advertised or that it got more. curl itself
     cannot know which number that is wrong or which is correct. If any.
 
- 19. FTP couldn't download/access the given file. The RETR (or similar)
+ 19. FTP could not download/access the given file. The RETR (or similar)
     command failed. curl got an error from the server when trying to download
     the file.
 
@@ -175,7 +175,7 @@ A basic Unix shell script could look like something like this:
     to curl. See also the [FTP uses two connections](ftp-twoconnections.md)
     section.
 
- 31. FTP couldn't use REST. The REST command failed. This command is used for
+ 31. FTP could not use REST. The REST command failed. This command is used for
     resumed FTP transfers. curl needs to issue the REST command to do range or
     resumed transfers. The server is broken, try the same operation without
     range/resume as a crude work-around.

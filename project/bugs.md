@@ -13,7 +13,7 @@ Any problem can be considered a bug. A weirdly phrased wording in the manual
 that prevents you from understanding something is a bug. A surprising side
 effect of combining multiple options can be a bug—or perhaps it should be
 better documented? Perhaps the option does not do at all what you expected it
-to? That's a problem and we should fix it.
+to? That is a problem and we should fix it.
 
 ### Problems must be known to get fixed
 

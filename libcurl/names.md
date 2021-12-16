@@ -1,14 +1,14 @@
 # Name resolving
 
 Most transfers libcurl can do involves a name that first needs to be
-translated to an Internet address. That's "name resolving". Using a numerical
+translated to an Internet address. That is "name resolving". Using a numerical
 IP address directly in the URL usually avoids the name resolve phase, but in
 many cases it is not easy to manually replace the name with the IP address.
 
 libcurl tries hard to [re-use an existing
 connection](connectionreuse.md) rather than to create a new one. The
 function that checks for an existing connection to use is based purely on the
-name and is performed before any name resolving is attempted. That's one of
+name and is performed before any name resolving is attempted. That is one of
 the reasons the re-use is so much faster. A transfer using a reused connection
 will not resolve the host name again.
 

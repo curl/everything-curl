@@ -61,7 +61,7 @@ and it can also show a secondary "Patch date" if it has been updated somehow
 after it was originally released.
 
 This says `[unreleased]` if curl was built another way than from a release
-tarball, and as you can see above that's how Microsoft did it for Windows 10
+tarball, and as you can see above that is how Microsoft did it for Windows 10
 and the curl project does not recommend it.
 
 ## Line 3: Protocols

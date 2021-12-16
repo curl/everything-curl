@@ -4,7 +4,7 @@ Copyright is a legal right granted by the law of a country that gives the
 creator of an original work exclusive rights for its use and distribution.
 
 The copyright owner(s) can agree to allow others to use their work by
-licensing it. That's what we do in the curl project. The copyright is the
+licensing it. That is what we do in the curl project. The copyright is the
 foundation on which the licensing works.
 
 Daniel Stenberg is the owner of most copyrights in the curl project.
@@ -28,7 +28,7 @@ work together on a software project.
 The curl project obeys national laws of the countries in which it works. However,
 it is a highly visible international project, downloadable and usable in
 effectively every country on earth, so some local laws could be broken
-when using curl. That's just the nature of it and if uncertain, you should check
+when using curl. That is just the nature of it and if uncertain, you should check
 your own local situation.
 
 There have been law suits involving technology that curl provides. One such

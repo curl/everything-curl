@@ -34,7 +34,7 @@ You ask curl to use a different size than the default with
 
     curl --tftp-blksize 8192 tftp://localserver/file
 
-It has been shown that there are server implementations that don't handle option
+It has been shown that there are server implementations that do not handle option
 negotiation at all, so curl also has the ability to completely switch off all
 attempts of setting options. If you are in the unfortunate of working with
 such a server, use the flag like this:

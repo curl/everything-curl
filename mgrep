@@ -1,0 +1,42 @@
+#!/usr/bin/perl
+
+open(P, "<badwords.txt");
+my $w;
+while(<P>) {
+    chomp;
+    push @w, $_;
+}
+close(P);
+
+my $errors;
+
+sub file {
+    my ($f) = @_;
+    my $l = 1;
+    open(F, "<$f");
+    while(<F>) {
+        my $in = $_;
+        chomp $in;
+        if($in =~ /^    /) {
+            next;
+        }
+        # remove the link part
+        $in =~ s/(\[.*\])\(.*\)/$1/g;
+        # remove backticked texts
+        $in =~ s/\`.*\`//g;
+        foreach my $w (@w) {
+            if($in =~ /$w/i) {
+                print STDERR "$f:$l $in\n";
+                $errors++;
+            }
+        }
+    }
+    close(F);
+}
+
+my @files = @ARGV;
+
+foreach my $each (@files) {
+    file($each);
+}
+exit $errors;

@@ -1,0 +1,49 @@
+#!/bin/sh
+sed -i -e "s/hasn't/has not/gi" \
+    -e "s/haven't/have not/gi" \
+    -e "s/won't/will not/gi" \
+    -e "s/wasn't/was not/gi" \
+    -e "s/don't/do not/g" \
+    -e "s/Don't/Do not/g" \
+    -e "s/Doesn't/Does not/g" \
+    -e "s/doesn't/does not/g" \
+    -e "s/Didn't/Did not/g" \
+    -e "s/didn't/did not/g" \
+    -e "s/can't/cannot/gi" \
+    -e "s/aren't/are not/gi" \
+    -e "s/weren't/were not/gi" \
+    -e "s/isn't/is not/gi" \
+    -e "s/you're/you are/gi" \
+    -e "s/you'll/you will/gi" \
+    -e "s/you'd/you would/g" \
+    -e "s/They're/They are/g" \
+    -e "s/they're/they are/g" \
+    -e "s/We're/We are/g" \
+    -e "s/we're/we are/g" \
+    -e "s/he's/he is/gi" \
+    -e "s/is's/is is/gi" \
+    -e "s/That's/That is/g" \
+    -e "s/that's/that is/g" \
+    -e "s/There's/There is/g" \
+    -e "s/there's/there is/g" \
+    -e "s/That'll/That will/g" \
+    -e "s/that'll/that will/g" \
+    -e "s/We'll/We will/g" \
+    -e "s/we'll/we will/g" \
+    -e "s/You'll/You will/g" \
+    -e "s/you'll/you will/g" \
+    -e "s/you've/you have/g" \
+    -e "s/they've/they have/g" \
+    -e "s/must've/must have/g" \
+    -e "s/we've/we have/g" \
+    -e "s/We've/We have/g" \
+    -e "s/I'm/I am/g" \
+    -e "s/I've/I have/g" \
+    -e "s/I'd/I would/g" \
+    -e "s/could've/could have/g" \
+    -e "s/couldn't/could not/g" \
+    -e "s/would've/would have/g" \
+    -e "s/wouldn't/would not/g" \
+    -e "s/it'll/it will/gi" \
+    -e "s/shouldn't/should not/gi" $1
+echo "did $1"

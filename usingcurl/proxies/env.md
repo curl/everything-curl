@@ -39,7 +39,7 @@ request. Those environment variables are prefixed with uppercase `HTTP_`!
 
 An incoming request to a HTTP server using a request header like `Proxy: yada`
 will therefore create the environment variable `HTTP_PROXY` set to contain
-`yada` before the CGI script is started. If that CGI script runs curl...
+`yada` before the CGI script is started. If that CGI script runs curl…
 
 Accepting the upper case version of this environment variable has been the
 source for many security problems in lots of software through times.

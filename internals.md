@@ -13,5 +13,5 @@ library do something new.
  * [Everything is multi](internals/multi.md)
  * [State machines](internals/statemachines.md)
  * [Protocol handler](internals/handler.md)
- * [Backends](internals/backends.md)
+ * [Back-ends](internals/backends.md)
 

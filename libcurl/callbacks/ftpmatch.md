@@ -1,12 +1,12 @@
 # FTP matching
 
-libcurl supports FTP wildcard matching. You use this feature by setting
-`CURLOPT_WILDCARDMATCH` to `1L` and then use a "wildcard pattern" in the in
+libcurl supports FTP wild card matching. You use this feature by setting
+`CURLOPT_WILDCARDMATCH` to `1L` and then use a "wild card pattern" in the in
 the file name part of the URL.
 
-## Wildcard patterns
+## Wild card patterns
 
-The default libcurl wildcard matching function supports:
+The default libcurl wild card matching function supports:
 
 `*` - ASTERISK
 
@@ -48,7 +48,7 @@ Using the rules above, a file name pattern can be constructed:
 
 ## FTP chunk callbacks
 
-When FTP wildcard matching is used, the `CURLOPT_CHUNK_BGN_FUNCTION` callback
+When FTP wild card matching is used, the `CURLOPT_CHUNK_BGN_FUNCTION` callback
 is called before a transfer is initiated for a file that matches.
 
 The callback can then opt to return one of these return codes to tell libcurl

@@ -30,7 +30,7 @@ the default block size of 512 bytes or negotiate a different one. curl
 supports block sizes between 8 to 65464 bytes.
 
 You ask curl to use a different size than the default with
-`--tftp-blksize`. Asl for 8192 bytes blocks like this:
+`--tftp-blksize`. Ask for 8192 bytes blocks like this:
 
     curl --tftp-blksize 8192 tftp://localserver/file
 

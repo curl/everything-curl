@@ -3,7 +3,7 @@
 libcurl offers a special TLS related callback called
 `CURLOPT_SSL_CTX_FUNCTION`. This option only works for libcurl powered by
 OpenSSL, wolfSSL or mbedTLS and it does nothing if libcurl is built with
-another TLS backend.
+another TLS back-end.
 
 This callback gets called by libcurl just before the initialization of a TLS
 connection after having processed all other TLS related options to give a last

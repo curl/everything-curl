@@ -17,5 +17,5 @@ cryptography and digital signatures.
 * [OCSP stapling](tls/stapling.md)
 * [Client certificates](tls/clientcert.md)
 * [TLS auth](tls/auth.md)
-* [TLS backends](tls/backends.md)
+* [TLS back-ends](tls/backends.md)
 * [SSLKEYLOGFILE](tls/sslkeylogfile.md)

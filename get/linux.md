@@ -31,7 +31,7 @@ or
 
     apt install libcurl4-gnutls-dev
 
-## Redhat and Centos
+## Redhat and CentOS
 
 With Redhat Linux and CentOS Linux derivatives, you use `yum` to install
 packages. Install the command-line tool with:

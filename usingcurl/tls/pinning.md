@@ -12,6 +12,6 @@ You tell curl a file name to read the sha256 value from, or you specify the
 base64 encoded hash directly in the command line with a `sha256//` prefix. You
 can specify one or more hashes like that, separated with semicolons (;).
 
-    curl --pinnedpubkey "sha256//83d34tasd3rt..." https://example.com/
+    curl --pinnedpubkey "sha256//83d34tasd3rt…" https://example.com/
 
 This feature is not supported by all TLS back-ends.

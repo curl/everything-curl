@@ -8,7 +8,7 @@ TELNET is not a perfect match for curl. The protocol is not done to handle
 plain uploads or downloads so the usual curl paradigms have had to be
 stretched somewhat to make curl deal with it appropriately.
 
-curl sends received data to stdout and it reads input to ssend on stdin. The
+curl sends received data to stdout and it reads input to send on stdin. The
 transfer is complete when the connection is dropped or when the user presses
 control-c.
 

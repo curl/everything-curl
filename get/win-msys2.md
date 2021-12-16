@@ -77,5 +77,5 @@ pacman -U mingw-w64-x86_64-curl-winssl-7.80.0-1-any.pkg.tar.zst
 Have a look at the [msys2 docs](https://www.msys2.org/docs/package-management/) or join the [gitter](https://gitter.im/msys2/msys2) to learn more about building with pacman and msys2!
 
 
-[^1]: Be careful not to confuse the [mingw-package](https://github.com/msys2/MINGW-packages) `mingw-w64-curl` with the [msys-packages](https://github.com/msys2/MSYS2-packages) `curl` and `curl-devel`. The latter are part of msys2 environment itself (e.g. to support pacman downloads), but not suitable for redistribution. To build redistributable software that does not depend on MSYS2 itself, you always need `mingw-w64-...` packages and toolchains.
+[^1]: Be careful not to confuse the [mingw-package](https://github.com/msys2/MINGW-packages) `mingw-w64-curl` with the [msys-packages](https://github.com/msys2/MSYS2-packages) `curl` and `curl-devel`. The latter are part of msys2 environment itself (e.g. to support pacman downloads), but not suitable for redistribution. To build redistributable software that does not depend on MSYS2 itself, you always need `mingw-w64-…` packages and tool chains.
 

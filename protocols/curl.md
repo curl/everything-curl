@@ -58,7 +58,7 @@ port 80.
 
 Secure HTTP is HTTP done over an SSL/TLS connection. See RFC 2818. HTTPS
 servers and clients use TCP port 443, unless they speak
-[HTTP/3](http-http3.md) which then uses QUIC and is done over UDP...
+[HTTP/3](http-http3.md) which then uses QUIC and is done over UDP.
 
 ## IMAP
 

@@ -149,7 +149,7 @@ A regular tag using type "text" in the style like
 
 should then set the field name with content like this:
 
-    curl -F "person=mr Smith" https://example.com/
+    curl -F "person=Mr Smith" https://example.com/
 
 ### file input
 
@@ -183,5 +183,5 @@ the examples above were used in the same `<form>`, then a complete curl
 command line to send, including the correct URL as extracted above, would look
 like:
 
-    curl -F "person=mr Smith" -F image=@funnycat.gif -F "username=bob123" \
+    curl -F "person=Mr Smith" -F image=@funnycat.gif -F "username=bob123" \
     https://example.com/user/submit.cgi

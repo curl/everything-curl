@@ -8,7 +8,7 @@ use of all states for all transfers.
 
 However, each different protocol libcurl speaks also has its unique
 particularities and specialties. In order to not have the code littered with
-conditions in the style "if the protocol is XYZ, then do...", we instead have
+conditions in the style "if the protocol is XYZ, then do…", we instead have
 the concept of `Curl_handler`. Each supported protocol defines one of those in
 `lib/url.c` there's an array of pointers to such handlers called
 `protocols[]`.

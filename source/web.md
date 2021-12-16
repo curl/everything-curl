@@ -21,7 +21,7 @@ and a set of perl scripts. The man pages get converted to HTML with
 roffit, make and curl are all in your $PATH.
 
 Once you have cloned the git repository the first time, invoke `sh
-bootstrap.sh` once to get a symlink and some some initial local files setup,
+bootstrap.sh` once to get a symlink and some initial local files setup,
 and then you can build the website locally by invoking `make` in the source
 root tree.
 
@@ -42,7 +42,7 @@ document root of your HTTP server to the curl-www source code root.
 - The public curl website is hosted at [curl.se](https://curl.se).
 - The domain name is owned by **Daniel Stenberg**
 - The main origin machine is sponsored by **Haxx**
-- The curl.se domain is served by anycasted distributed DNS servers sponsored
+- The curl.se domain is served by anycast distributed DNS servers sponsored
   by **Kirei**
 - The site is delivered to the world via a CDN run by **Fastly**
 - The website updates itself from GitHub every N minutes. The CDN front-ends

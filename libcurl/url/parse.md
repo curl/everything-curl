@@ -27,7 +27,7 @@ from that: like spaces or "control characters".
 
 ## `CURLU_DEFAULT_SCHEME`
 
-If the passed in string doesn't use a scheme, assume that the default one was
+If the passed in string does not use a scheme, assume that the default one was
 intended. The default scheme is HTTPS. If this is not set, a URL without a
 scheme part will not be accepted as valid. Overrides the `CURLU_GUESS_SCHEME`
 option if both are set.

@@ -7,7 +7,7 @@ easily extract that URL at any point:
     rc = curl_url_get(h, CURLUPART_URL, &url, CURLU_NO_DEFAULT_PORT);
     curl_free(url);
 
-If the handle doesn't have enough information to extra a full URL, it will
+If the handle does not have enough information to extra a full URL, it will
 return error.
 
 The returned string must be freed with `curl_free()` after you are done with

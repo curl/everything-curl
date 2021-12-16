@@ -79,7 +79,7 @@ tag anyway, you could do something like this first:
 
 You would often need a HTML parser or some scripting language to extract the id
 field from there and then you can proceed and login as mentioned above, but
-with the added cookie loading (I'm splitting the line into two lines to make
+with the added cookie loading (I am splitting the line into two lines to make
 it more readable):
 
     curl -d user=daniel -d secret=qwerty -d id=bc76 https://example.com/login.cgi \

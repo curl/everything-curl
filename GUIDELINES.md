@@ -38,3 +38,15 @@ Use an English phrase instead. This is not a man page.
 ## Use backticks around libcurl constants
 
 For example, `CURLE_OK` and `CURLOPT_URL`.
+
+## Consistent spelling
+
+Use American English spellings.  Use the following spellings of these terms
+that could be spelled multiple ways;
+
+* back-end
+* e-mail
+* run-time
+* setup (as a noun)
+* tool chain
+* wild card

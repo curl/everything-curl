@@ -8,5 +8,10 @@ for each such chunk as it goes along.
 
 You send a chunked POST with curl like this:
 
-    curl -H "Transfer-Encoding: chunked" -d "payload to send" http://example.com
+    curl -H "Transfer-Encoding: chunked" -d @file http://example.com
 
+## Caveats
+
+This assumes that you know you do this against an HTTP/1.1 server. Before 1.1,
+there was no chunked encoding, and after version 1.1 chunked encoding has been
+deprecated.

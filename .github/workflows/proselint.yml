@@ -1,4 +1,4 @@
-name: make
+name: proselint
 
 on:
   # Trigger the workflow on push or pull requests, but only for the
@@ -12,7 +12,7 @@ on:
     - master
 
 jobs:
-  build:
+  check:
 
     runs-on: ubuntu-latest
 

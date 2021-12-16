@@ -28,7 +28,7 @@ help.
 ### Confusions and mix-ups
 
 Soon after our curl was created another "curl" appeared that created a
-programming language. That curl still [exists](http://www.curl.com).
+programming language. That curl still [exists](https://www.curl.com).
 
 Several libcurl bindings for various programming languages use the term "curl"
 or "CURL" in part or completely to describe their bindings. Sometimes

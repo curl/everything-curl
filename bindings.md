@@ -10,7 +10,7 @@ archives. They must be downloaded and installed separately.
 
 | Language | Site | Author\(s\) |
 | :--- | :--- | :--- |
-| Script Basic | <http://scriptbasic.com/> | Peter Verhas |
+| Script Basic | <https://scriptbasic.com/> | Peter Verhas |
 | C++ | <http://curlpp.org/> | Jean-Philippe, Barrette-LaPierre |
 | Ch/C++ | <https://chcurl.sourceforge.io/> | Stephen Nestinger, Jonathan Rogado |
 | Cocoa \(BBHTTP\) | <https://github.com/brunodecarvalho/BBHTTP> | Bruno de Carvalho |
@@ -33,7 +33,7 @@ archives. They must be downloaded and installed separately.
 | Lua-cURL | <https://github.com/Lua-cURL/Lua-cURLv3> | Jürgen Hötzel, Alexey Melnichuk |
 | .NET | <https://github.com/masroore/CurlSharp> | Masroor Ehsan Choudhury, Jeffrey Phillips |
 | NodeJS | <https://github.com/JCMais/node-libcurl> | Jonathan Cardoso Machado |
-| OCaml | <http://ygrek.org.ua/p/ocurl/> | Lars Nilsson |
+| OCaml | <https://ygrek.org.ua/p/ocurl/> | Lars Nilsson |
 | Pascal/Delphi/Kylix | <https://curlpas.sourceforge.io/curlpas/> | Jeffrey Pohlmeyer. |
 | Perl | <https://github.com/szbalint/WWW--Curl> | Cris Bailiff and Bálint Szilakszi |
 | PHP | <https://php.net/curl> | Sterling Hughes |
@@ -44,13 +44,13 @@ archives. They must be downloaded and installed separately.
 | Rexx | <https://rexxcurl.sourceforge.io/> | Mark Hessling |
 | Ring | <https://ring-lang.sourceforge.io/doc1.3/libcurl.html> | Mahmoud Fayed |
 | Ruby (curb) | <https://github.com/taf2/curb> | Ross Bamford |
-| Ruby (ruby-curl-multi) | <http://curl-multi.rubyforge.org/> | Kristjan Petursson and Keith Rarick |
+| Ruby (ruby-curl-multi) | <https://github.com/kball/curl_multi.rb> | Kristjan Petursson and Keith Rarick |
 | Rust (curl-rust) | <https://github.com/carllerche/curl-rust> | Carl Lerche |
 | Scheme Bigloo | <https://www.metapaper.net/lisovsky/web/curl/> | Kirill Lisovsky |
 | Scilab | <https://help.scilab.org/docs/current/fr_FR/getURL.html> | Sylvestre Ledru |
 | S-Lang | <https://www.jedsoft.org/slang/modules/curl.html> | John E Davis |
-| Smalltalk | <http://www.squeaksource.com/CurlPlugin/> | Danil Osipchuk |
-| SP-Forth | <http://www.forth.org.ru/~ac/lib/lin/curl/> | ygrek |
+| Smalltalk | <https://www.squeaksource.com/CurlPlugin/> | Danil Osipchuk |
+| SP-Forth | <https://www.forth.org.ru/~ac/lib/lin/curl/> | ygrek |
 | Tcl | <http://mirror.yellow5.com/tclcurl/> | Andrés García |
 | Visual Basic | <https://sourceforge.net/projects/libcurl-vb/> | Jeffrey Phillips |
 | wxWidgets | <https://wxcode.sourceforge.io/components/wxcurl/> | Casey O'Donnell |

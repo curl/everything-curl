@@ -35,7 +35,7 @@ with curl](../http/post.md) chapter.
 ### multipart formpost
 
 Multipart formposts are also used in HTML forms on websites; typically when
-there's a file upload involved. This type of upload is also an HTTP POST but
+there is a file upload involved. This type of upload is also an HTTP POST but
 it sends the data formatted according to some special rules, which is what the
 "multipart" name means.
 

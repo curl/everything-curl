@@ -40,7 +40,7 @@ response” to the original request rather than just a redirect.
 These three codes were the only redirect codes in the HTTP/1.0 spec.
 
 curl however, does not remember or cache any redirects at all so to it,
-there's really no difference between permanent and temporary redirects.
+there is really no difference between permanent and temporary redirects.
 
 ## Tell curl to follow redirects
 
@@ -49,7 +49,7 @@ it does not follow HTTP redirects by default. Use the `-L, --location` option
 to tell it to do that.
 
 When following redirects is enabled, curl will follow up to 50 redirects by
-default. There's a maximum limit mostly to avoid the risk of getting caught in
+default. There is a maximum limit mostly to avoid the risk of getting caught in
 endless loops. If 50 is not sufficient for you, you can change the maximum
 number of redirects to follow with the `--max-redirs` option.
 
@@ -109,7 +109,7 @@ the same transfer.
 
 So if you want the credentials to also get sent to the following host names
 even though they are not the same as the original—presumably because you
-trust them and know that there's no harm in doing that—you can tell curl that
+trust them and know that there is no harm in doing that—you can tell curl that
 it is fine to do so by using the `--location-trusted` option.
 
 # Non-HTTP redirects

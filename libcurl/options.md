@@ -50,7 +50,7 @@ Enforce a curl_off_t:
 
 ## Get handle options
 
-No, there's no general method to extract the same information you previously
+No, there is no general method to extract the same information you previously
 set with `curl_easy_setopt()`! If you need to be able to extract the
 information again that you set earlier, then we encourage you to keep track of
 that data yourself in your application.

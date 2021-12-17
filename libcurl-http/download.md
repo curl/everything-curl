@@ -11,7 +11,7 @@ particular resource—the standard HTTP download request:
 Since options set in an easy handle are sticky and remain until changed, there
 may be times when you have asked for another request method than GET and then
 want to switch back to GET again for a subsequent request. For this purpose,
-there's the `CURLOPT_HTTPGET` option:
+there is the `CURLOPT_HTTPGET` option:
 
     curl_easy_setopt(easy, CURLOPT_HTTPGET, 1L);
 

@@ -32,7 +32,7 @@ When setting a custom `Host:` header and using cookies, curl will extract the
 custom name and use that as host when matching cookies to send off.
 
 The `Host:` header is not enough when communicating with an HTTPS server. With
-HTTPS there's a separate extension field in the TLS protocol called SNI
+HTTPS there is a separate extension field in the TLS protocol called SNI
 (Server Name Indication) that lets the client tell the server the name of the
 server it wants to talk to. curl will only extract the SNI name to send from
 the given URL.

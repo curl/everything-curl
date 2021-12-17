@@ -11,7 +11,7 @@ In some rare circumstances, user may want to go creative and change this
 request target in ways that the URL does not really allow. For example, the
 HTTP OPTIONS method has a specially define request target for magic that
 concerns *the server* and not a specific path, and it uses `*` for that. Yes,
-a single asterisk. There's no way to specify a URL for this, so if you want to
+a single asterisk. There is no way to specify a URL for this, so if you want to
 pass a single asterisk in the request target to a server, like for OPTIONS,
 you have to do it like this:
 

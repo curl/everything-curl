@@ -25,7 +25,7 @@ separated list of host names that should not use a proxy when being
 accessed. You can set NO_PROXY to be a single asterisk ('\*') to match all
 hosts.
 
-As an alternative to the NO_PROXY variable, there's also a `--noproxy` command
+As an alternative to the NO_PROXY variable, there is also a `--noproxy` command
 line option that serves the same purpose and works the same way.
 
 ## `http_proxy` in lower case only

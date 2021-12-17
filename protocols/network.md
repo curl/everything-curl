@@ -9,7 +9,7 @@ addresses. These computers are often called hosts.
 The computer, tablet or phone you sit in front of is usually called "the
 client" and the machine out there somewhere that you want to exchange data
 with is called "the server". The main difference between the client and the
-server is in the roles they play here. There's nothing that prevents the roles
+server is in the roles they play here. There is nothing that prevents the roles
 from being reversed in a subsequent operation.
 
 ### Which machine
@@ -76,7 +76,7 @@ will do a TLS handshake first and only continue further if that succeeds.
 ### Transfer data
 
 When the connecting "string" we call TCP is attached to the remote computer
-(and we have done the possible additional TLS handshake), there's an
+(and we have done the possible additional TLS handshake), there is an
 established connection between the two machines and that connection can then
 be used to exchange data. That communication is done using a "protocol", as
 discussed in the following chapter.

@@ -11,7 +11,7 @@ the specific [HTTPS](#https) section below.
 
 ## HTTP methods
 
-In every HTTP request, there's a method. Sometimes called a verb. The most
+In every HTTP request, there is a method. Sometimes called a verb. The most
 commonly used ones are GET, POST, HEAD and PUT.
 
 Normally however you do not specify the method in the command line, but

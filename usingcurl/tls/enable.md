@@ -32,7 +32,7 @@ The support table looks like this:
 The protocols that _can_ do `--ssl` all favor that method. Using `--ssl` means
 that curl will *attempt* to upgrade the connection to TLS but if that fails,
 it will still continue with the transfer using the plain-text version of the
-protocol. To make the `--ssl` option **require** TLS to continue, there's
+protocol. To make the `--ssl` option **require** TLS to continue, there is
 instead the `--ssl-reqd` option which will make the transfer fail if curl
 cannot successfully negotiate TLS.
 

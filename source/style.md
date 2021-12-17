@@ -40,7 +40,7 @@ Source code in curl may never be wider than 80 columns. There are two reasons
 for maintaining this even in the modern era of large and high resolution
 screens:
 
-1. Narrower columns are easier to read than wide ones. There's a reason
+1. Narrower columns are easier to read than wide ones. There is a reason
    newspapers have used columns for decades or centuries.
 
 2. Narrower columns allow developers to more easily view multiple pieces of code

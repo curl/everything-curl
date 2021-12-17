@@ -15,7 +15,7 @@ stdout. You would use it like this:
 
     $ curl --trace dump http://example.com
 
-When completed, there's a 'dump' file that can turn out pretty sizable. In
+When completed, there is a 'dump' file that can turn out pretty sizable. In
 this case, the 15 first lines of the dump file looks like:
 
     == Info: Rebuilt URL to: http://example.com/

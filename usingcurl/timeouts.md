@@ -61,7 +61,7 @@ seconds, stop it:
 ## Keep connections alive
 
 curl enables TCP keep-alive by default. TCP keep-alive is a feature that makes
-the TCP stack send a probe to the other side when there's no traffic, to make
+the TCP stack send a probe to the other side when there is no traffic, to make
 sure that it is still there and "alive". By using keep-alive, curl is much
 more likely to discover that the TCP connection is dead.
 

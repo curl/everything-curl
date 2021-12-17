@@ -35,7 +35,7 @@ The first digit of the HTTP response code is a kind of "error class":
  - 2xx: success
  - 3xx: a redirect
  - 4xx: the client asked for something the server could not or would not deliver
- - 5xx: there's a problem in the server
+ - 5xx: there is a problem in the server
 
 Remember that you can use curl's `--write-out` option to extract the response
 code. See the [--write-out](../usingcurl/verbose/writeout.md) section.
@@ -58,9 +58,9 @@ numeric range and you can use `--write-out` to extract that code as well.
 An HTTP 1.1 server can decide to respond with a "chunked" encoded response, a
 feature that was not present in HTTP 1.0.
 
-When receiving a chunked response, there's no Content-Length: for the response
-to indicate its size. Instead, there's a `Transfer-Encoding: chunked` header
-that tells curl there's chunked data coming and then in the response body, the
+When receiving a chunked response, there is no Content-Length: for the response
+to indicate its size. Instead, there is a `Transfer-Encoding: chunked` header
+that tells curl there is chunked data coming and then in the response body, the
 data comes in a series of "chunks". Every individual chunk starts with the
 size of that particular chunk (in hexadecimal), then a newline and then the
 contents of the chunk. This is repeated over and over until the end of the
@@ -79,7 +79,7 @@ Responses over HTTP can be sent in compressed format. This is most commonly
 done by the server when it includes a `Content-Encoding: gzip` in the response
 as a hint to the client. Compressed responses make a lot of sense when either
 static resources are sent (that were compressed previously) or even in
-run-time when there's more CPU power available than bandwidth. Sending a much
+run-time when there is more CPU power available than bandwidth. Sending a much
 smaller amount of data is often preferred.
 
 You can ask curl to both ask for compressed content *and* automatically and

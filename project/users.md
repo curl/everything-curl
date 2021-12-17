@@ -39,7 +39,7 @@ small license requirement.
 ### Command-line tool users
 
 The command-line tool curl is widely used by programmers around the world in
-shell and batch scripts, to debug servers and to test out things. There's no
+shell and batch scripts, to debug servers and to test out things. There is no
 doubt it is used by millions every day.
 
 ### Embedded library

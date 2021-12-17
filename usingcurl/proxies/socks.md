@@ -28,7 +28,7 @@ resolving the host name locally:
     curl --socks5 proxy.example.com http://www.example.com/
 
 The SOCKS5-hostname versions. This sends the host name to the server so
-there's no name resolving done locally:
+there is no name resolving done locally:
 
     curl -x socks5h://proxy.example.com http://www.example.com/
 

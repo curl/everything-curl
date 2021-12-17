@@ -2,7 +2,7 @@
 
 As mentioned above, curl supports hundreds of command-line options and it also
 supports an unlimited number of URLs. If your shell or command-line system
-supports it, there's really no limit to how long a command line you can pass
+supports it, there is really no limit to how long a command line you can pass
 to curl.
 
 curl will parse the entire command line first, apply the wishes from the

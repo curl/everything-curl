@@ -37,7 +37,7 @@ there will be no blocking calls involved.
 functions. They unfortunately make all transfers within a multi handle block
 during its operation and it is much harder to time out nicely.
 
-3. There's also support for resolving with the c-ares third party library,
+3. There is also support for resolving with the c-ares third party library,
 which supports asynchronous name resolving without the use of threads. This
 scales better to huge number of parallel transfers but it is not always 100%
 compatible with the native name resolver functionality.
@@ -94,7 +94,7 @@ following redirects etc.
 
 ## Name server options
 
-For libcurl built to use c-ares, there's a few options available that offer
+For libcurl built to use c-ares, there is a few options available that offer
 fine-grained control of what DNS servers to use and how. This is limited to
 c-ares build purely because these are powers that are not available when the
 standard system calls for name resolving are used.

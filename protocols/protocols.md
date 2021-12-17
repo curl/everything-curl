@@ -28,7 +28,7 @@ or flavors as well.
 ## What other protocols are there?
 
 The world is full of protocols, both old and new. Old protocols get abandoned
-and dropped and new ones get introduced. There's never a state of stability but
+and dropped and new ones get introduced. There is never a state of stability but
 the situation changes from day to day and year to year. You can rest assured
 that there will be new protocols added in the list above in the future and that
 there will be new versions of the protocols already listed.

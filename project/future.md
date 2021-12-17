@@ -2,7 +2,7 @@
 
 ![curl future](devgraph-800.png)
 
-There's no slowdown in sight in curl's future, bugs reported, development
+There is no slowdown in sight in curl's future, bugs reported, development
 pace or how Internet protocols are being developed or updated.
 
 We are looking forward to support for more protocols, support for more features
@@ -14,8 +14,9 @@ file holding a bunch of ideas that we could work on in the future. It also
 keeps a [KNOWN_BUGS](https://curl.se/docs/knownbugs.html) document with
 a list of known problems we would like to fix.
 
-There's a [ROADMAP](https://curl.se/dev/roadmap.html) document that
+There is a [ROADMAP](https://curl.se/dev/roadmap.html) document that
 describes some plans for the short-term that some of the active developers
+
 thought they would work on next. Of course, we can not promise that we will
 always follow it perfectly.
 

@@ -31,7 +31,7 @@ The server that receives the request and delivers data is often setup to act in
 certain ways depending on what kind of client it thinks communicates with it.
 Sometimes it is as innocent as trying to deliver the best content for the
 client, sometimes it is to hide some content for some clients or even to try
-to work around known problems in specific browsers. Then there's also, of
+to work around known problems in specific browsers. Then there is also, of
 course, various kind of login systems that might rely on HTTP authentication or
 cookies or the client being from the pre-validated IP address range.
 

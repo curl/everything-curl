@@ -38,7 +38,7 @@ One way that command-line systems differ, for example, is how you can put
 quotes around arguments such as to embed spaces or special symbols. In
 most Unix-like shells you use double quotes (") and single quotes (')
 depending if you want to allow variable expansions or not within the quoted
-string, but on Windows there's no support for the single quote version.
+string, but on Windows there is no support for the single quote version.
 
 In some environments, like PowerShell on Windows, the authors of the command
 line system decided they know better and "help" the user to use another tool

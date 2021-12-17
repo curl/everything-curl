@@ -8,10 +8,10 @@ one. Reusing a connection instead of creating a new one offers significant
 benefits in speed and required resources.
 
 When libcurl is about to make a new connection for the purposes of doing a
-transfer, it will first check to see if there's an existing connection in the
+transfer, it will first check to see if there is an existing connection in the
 pool that it can reuse instead. The connection re-use check is done before any
 DNS or other name resolving mechanism is used, so it is purely host name
-based. If there's an existing live connection to the right host name, a lot of
+based. If there is an existing live connection to the right host name, a lot of
 other properties (port number, protocol, etc) are also checked to see that it
 can be used.
 

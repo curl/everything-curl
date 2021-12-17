@@ -1,6 +1,6 @@
 # Path
 
-Every URL contains a path. If there's none given, `/` is implied. For example
+Every URL contains a path. If there is none given, `/` is implied. For example
 when you use just the host name like in:
 
     curl https://example.com

@@ -5,7 +5,7 @@ in responses. That header may contain a suggested file name for the contents
 delivered, and curl can be told to use that hint to name its local file. The
 `-J / --remote-header-name` enables this. If you also use the `-O` option,
 it makes curl use the file name from the URL by default and only *if*
-there's actually a valid Content-Disposition header available, it switches to
+there is actually a valid Content-Disposition header available, it switches to
 saving using that name.
 
 `-J` has some problems and risks associated with it that users need to be

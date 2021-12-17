@@ -15,7 +15,7 @@ several reasons.
 The client can opt to ask the server to connect to the client to set it up, a
 so-called "active" connection. This is done with the PORT or EPRT
 commands. Allowing a remote host to connect back to a client on a port that
-the client opens up requires that there's no firewall or other network
+the client opens up requires that there is no firewall or other network
 appliance in between that refuses that to go through and that is far from
 always the case. You ask for an active transfer using `curl -P [arg]` (also
 known as `--ftp-port` in long form) and while the option allows you to specify

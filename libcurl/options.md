@@ -46,7 +46,7 @@ Enforce a long:
 Enforce a curl_off_t:
 
     curl_off_t no_larger_than = 0x50000;
-    curl_easy_setopt(handle, CURLOPT_MAXFILE_LARGE, no_larger_than);
+    curl_easy_setopt(handle, CURLOPT_MAXFILESIZE_LARGE, no_larger_than);
 
 ## Get handle options
 

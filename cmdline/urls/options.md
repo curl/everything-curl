@@ -17,6 +17,19 @@ curl will return an exit code for its operation on the last URL used. If you
 instead rather want curl to exit with an error on the first URL in the set
 that fails, use the `--fail-early` option.
 
+## One output for each given URL
+
+If you use a command-line with two URLs, you must tell curl how to handle both
+of them. The `-o` and `-O` options instruct curl how to save the output for
+*one* URL of the URLs, so you might want to have as many of those options as
+you have URLs on the command line.
+
+If you have more URLs than output options on the command line, the URL content
+without corresponding output instructions will then instead be sent to stdout.
+
+Using the `--remote-name-all` flag will automatically make curl act as if `-O`
+was used for all given URLs that don't have any output option.
+
 ## Separate options per URL
 
 In previous sections we described how curl always parses all options in the
@@ -41,6 +54,5 @@ Trying something like that _without_ the `--next` options on the command line
 would generate an illegal command line since curl would attempt to combine
 both a POST and a HEAD:
 
-    Warning: You can only select one HTTP request method! You asked for both POST
-    Warning: (-d, --data) and HEAD (-I, --head).
-
+    Warning: You can only select one HTTP request method! You asked for both
+    Warning: POST (-d, --data) and HEAD (-I, --head).

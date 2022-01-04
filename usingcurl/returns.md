@@ -290,11 +290,18 @@ A basic Unix shell script could look like something like this:
  58. Problem with the local certificate. The client certificate had a problem
     so it could not be used. Permissions? The wrong pass phrase?
 
- 59. Couldn't use the specified SSL cipher.
+ 59. Couldn't use the specified SSL cipher. The cipher names need to be
+     specified exact and they are also unfortunately specific to the
+     particular TLS backend curl has been built to use. For the current list
+     of support ciphers anad how to write them, see the online docs at
+     [https://curl.se/docs/ssl-ciphers.html](https://curl.se/docs/ssl-ciphers.html).
 
- 60. Peer certificate cannot be authenticated with known CA certificates.
+ 60. Peer certificate cannot be authenticated with known CA certificates. This
+     usually means that the certificate is either self-signed or signed by a
+     CA (Certificate Auhority) that isn't present in the CA store curl uses.
 
- 61. Unrecognized transfer encoding.
+ 61. Unrecognized transfer encoding. Content received from the server could
+     not be parsed by curl.
 
  62. Invalid LDAP URL.
 

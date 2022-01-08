@@ -1,11 +1,11 @@
 # HTTP/3
 
-(This feature is marked **experimental** as of this time and needs to be
-explicitly enabled in the build.)
+This feature is marked **experimental** as of this time and needs to be
+explicitly enabled in the build to function.
 
 ## Drafts, not standard
 
-As of September 2020, **the HTTP/3 protocol has not yet been finalized**.
+As of January 2022, **the HTTP/3 protocol has not yet been finalized**.
 Everything and everyone that speaks HTTP/3 at this point does it with the
 knowledge and awareness that it might change going forward.
 
@@ -31,8 +31,8 @@ to the given host name and port number, use `--http3`. Like this:
 
     curl --http3 https://example.com/
 
-Normally, a `HTTPS://` URL implies that a client needs to connect to it using
-TCP + TLS.
+Normally, without the `--http3` option, an `HTTPS://` URL implies that a
+client needs to connect to it using TCP (and TLS).
 
 ## Alt-svc:
 

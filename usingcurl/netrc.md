@@ -47,6 +47,14 @@ Note that if this token is present in the .netrc file you really **should**
 make sure the file is not readable by anyone besides the user. You cannot use
 a space when you enter the password.
 
+**macdef name**
+
+Define a macro. This is **not supported by curl**. In order for the rest of
+the `.netrc` to still work fine, curl will properly skip every definition done
+with `macdef` that it finds.
+
+## Example
+
 An example .netrc for the host example.com with a user named 'daniel', using
 the password 'qwerty' would look like:
 

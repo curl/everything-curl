@@ -74,7 +74,7 @@
  - CURLOPT_HTTPGET: [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http), [libcurl HTTP download](libcurl-http/download.md#libcurl-http-download)
  - CURLOPT_HTTPHEADER: [Non-blocking HTTP form-post](libcurl/examples/http-ul-nonblock.md#non-blocking-http-form-post), [Add a header](libcurl-http/requests.md#add-a-header), [HTTP PUT](libcurl-http/upload.md#http-put)
  - CURLOPT_IPRESOLVE: [Name resolving](libcurl/names.md#name-resolving)
- - CURLOPT_MAXFILE_LARGE: [Setting numerical options](libcurl/options.md#setting-numerical-options)
+ - CURLOPT_MAXFILESIZE_LARGE: [Setting numerical options](libcurl/options.md#setting-numerical-options)
  - CURLOPT_MAXREDIRS: [curl --libcurl](libcurl/--libcurl.md#curl---libcurl)
  - CURLOPT_MIMEPOST: [Non-blocking HTTP form-post](libcurl/examples/http-ul-nonblock.md#non-blocking-http-form-post), [HTTP multipart formposts](libcurl-http/upload.md#http-multipart-formposts)
  - CURLOPT_NOBODY: [Request method](libcurl-http/requests.md#request-method)
@@ -193,8 +193,8 @@
  - Header callback: [Header callback](libcurl/callbacks/header.md#header-callback), [HTTP responses](libcurl-http/responses.md#http-responses), [Download headers too](libcurl-http/download.md#download-headers-too)
  - homebrew: [Get curl for macOS](get/macos.md#get-curl-for-macos)
  - Host:: [Verbose mode](usingcurl/verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl/verbose/trace.md#trace-and---trace-ascii), [Change the Host: header](usingcurl/connections/name.md#change-the-host:-header), [HTTP protocol basics](http/basics.md#http-protocol-basics), [The HTTP this generates](http/multipart.md#the-http-this-generates), [Customize headers](http/modify/headers.md#customize-headers), [Customize HTTP request headers](libcurl-http/requests.md#customize-http-request-headers)
- - HSTS: [HTTP Strict Transport Security](http/hsts.md#http-strict-transport-security), [Callbacks](libcurl/callbacks.md#callbacks), [HSTS](libcurl/callbacks/hsts.md#hsts)
  - --hsts: [HSTS cache](http/hsts.md#hsts-cache)
+ - HSTS: [HTTP Strict Transport Security](http/hsts.md#http-strict-transport-security), [Callbacks](libcurl/callbacks.md#callbacks), [HSTS](libcurl/callbacks/hsts.md#hsts)
  - HTTP ranges: [HTTP ranges](http/ranges.md#http-ranges), [HTTP ranges](libcurl-http/ranges.md#http-ranges)
  - HTTP redirects: [Short options](cmdline/options.md#short-options), [Available exit codes](usingcurl/returns.md#available-exit-codes), [HTTP redirects](http/redirects.md#http-redirects), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http)
  - HTTP Strict Transport Security: [HTTP Strict Transport Security](http/hsts.md#http-strict-transport-security), [HSTS](libcurl/callbacks/hsts.md#hsts)
@@ -360,8 +360,8 @@
  - --trace-time: [--trace-time](usingcurl/verbose/trace.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http/response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http/post/chunked.md#chunked-encoded-posts)
 ## U
- - -U: [Building libcurl on MSYS2](get/win-msys2.md#building-libcurl-on-msys2), [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication)
  - -u: [Building libcurl on MSYS2](get/win-msys2.md#building-libcurl-on-msys2), [Passwords and snooping](cmdline/passwords.md#passwords-and-snooping), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [HTTP authentication](http/auth.md#http-authentication), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Authentication](ftp.md#authentication)
+ - -U: [Building libcurl on MSYS2](get/win-msys2.md#building-libcurl-on-msys2), [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication)
  - Ubuntu: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian)
  - URL Globbing: [URL globbing](cmdline/globbing.md#url-globbing)
 ## V
@@ -380,7 +380,7 @@
 ## Y
  - yum: [Redhat and CentOS](get/linux.md#redhat-and-centos)
 ## Z
- - -z: [Check by modification date](http/conditionals.md#check-by-modification-date)
  - -Z: [Parallel transfers](cmdline/urls/parallel.md#parallel-transfers)
+ - -z: [Check by modification date](http/conditionals.md#check-by-modification-date)
  - zlib: [HTTP Compression](source/build/deps.md#http-compression)
  - zstd: [HTTP Compression](source/build/deps.md#http-compression), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs)

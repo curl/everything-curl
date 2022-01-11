@@ -1,4 +1,4 @@
-## .netrc
+# .netrc
 
 Unix systems have for a long time offered a way for users to store their user
 name and password for remote FTP servers. ftp clients have supported this for
@@ -12,7 +12,7 @@ ask it to. curl does not, however, limit this feature to FTP, but can get
 credentials for machines for any protocol with this. See further below for
 how.
 
-### The .netrc file format
+## The .netrc file format
 
 The .netrc file format is simple: you specify lines with a machine name and
 follow that with lines for the login and password that are associated with that
@@ -25,25 +25,45 @@ token that matches the remote machine specified in the URL. Once a match is
 made, the subsequent .netrc tokens are processed, stopping when the end of
 file is reached or another machine is encountered.
 
+**default**
+
+This is the same as machine name except that `default` matches any name. There
+can be only one default token, and it must be after all machine tokens. To
+provide a default anonymous login for hosts that are not otherwise matched,
+add a line similar to this in the end:
+
+    default login anonymous password user@domain
+
 **login name**
 
-The user name string for the remote machine.
+The user name string for the remote machine. You cannot use a space in the
+name.
 
 **password string**
 
 Supply a password. If this token is present, curl will supply the specified
 string if the remote server requires a password as part of the login process.
 Note that if this token is present in the .netrc file you really **should**
-make sure the file is not readable by anyone besides the user.
+make sure the file is not readable by anyone besides the user. You cannot use
+a space when you enter the password.
 
-An example .netrc for the host example.com with a user named 'daniel', using the
-password 'qwerty' would look like:
+An example .netrc for the host example.com with a user named 'daniel', using
+the password 'qwerty' would look like:
 
     machine example.com
     login daniel
     password qwerty
 
-### Enable netrc
+It can also be written on a single line with the same funtionality:
+
+    machine example.com login daniel password qwerty
+
+## User name matching
+
+When a URL is provided with a user name and .netrc is used, then curl will try
+to find the matching password for that machine and login combination.
+
+## Enable netrc
 
 `-n, --netrc` tells curl to look for and use the .netrc file.
 

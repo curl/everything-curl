@@ -10,6 +10,6 @@ software package manager) and then install the curl package from them:
 ### Get libcurl for macOS
 
 A popular and easy way to get libcurl installed for macOS is to use
-[homebrew](https://brew.sh/ and then run this simple command in a terminal:
+[homebrew](https://brew.sh/) and then run this simple command in a terminal:
 
     brew install libcurl

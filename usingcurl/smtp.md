@@ -28,7 +28,7 @@ typically include `To:`, `From:`, `Subject:`, `Date:` etc.
 
 A basic command to send an email:
 
-    curl smtp://mail.example.com --mail-from myself@example.com --mail-rcpt
+    curl smtp://mail.example.com --mail-from myself@example.com --mail-rcpt \
     receiver@example.com --upload-file email.txt
 
 ## Example email.txt
@@ -60,15 +60,15 @@ you can use one of these options:
 You can tell curl to _try_ but not require upgrading to secure transfers by
 adding `--ssl` to the command:
 
-    curl --ssl smtp://mail.example.com --mail-from myself@example.com
-         --mail-rcpt receiver@example.com --upload-file email.txt
+    curl --ssl smtp://mail.example.com --mail-from myself@example.com \
+         --mail-rcpt receiver@example.com --upload-file email.txt \
          --user 'user@your-account.com:your-account-password'
 
 You can tell curl to _require_ upgrading to using secure transfers by adding
 `--ssl-reqd` to the command:
 
-    curl --ssl-reqd smtp://mail.example.com --mail-from myself@example.com
-         --mail-rcpt receiver@example.com --upload-file email.txt
+    curl --ssl-reqd smtp://mail.example.com --mail-from myself@example.com \
+         --mail-rcpt receiver@example.com --upload-file email.txt \
          --user 'user@your-account.com:your-account-password'
 
 ## The SMTP URL

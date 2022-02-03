@@ -47,9 +47,13 @@ user-agent option again:
 
     user-agent = "Everything-is-an-agent"
 
+If the parameter contains whitespace (or starts with : or =), the parameter
+must be enclosed within quotes. Within double quotes, the following escape
+sequences are available: \\\\, \\", \t, \n, \r and \v. A backslash preceding
+any other letter is ignored.
+
 The argument to an option can be specified without double quotes and then curl
-will treat the next space or newline as the end of the argument. So if you
-want to provide an argument with embedded spaces you must use double quotes.
+will treat the next space or newline as the end of the argument.
 
 The user agent string example we have used above has no white spaces and
 therefore it can also be provided without the quotes like:
@@ -66,18 +70,26 @@ for curl like this:
 ### Default config file
 
 When curl is invoked, it always (unless `-q` is used) checks for a default
-config file and uses it if found. The file name it checks for is `.curlrc` on
-Unix-like systems and `_curlrc` on Windows.
+config file and uses it if found.
 
 The default config file is checked for in the following places in this order:
 
-1. curl tries to find the "home directory": It first checks for the CURL_HOME
-and then the HOME environment variables. Failing that, it uses `getpwuid()` on
-Unix-like systems (which returns the home directory given the current user in
-your system). On Windows, it then checks for the APPDATA variable, or as a
-last resort the '%USERPROFILE%\Application Data'.
+1) "$CURL_HOME/.curlrc"
 
-2. On Windows, if there is no _curlrc file in the home directory, it checks for one
-in the same directory the curl executable is placed. On Unix-like systems, it will
-simply try to load .curlrc from the determined home directory.
+2) "$XDG_CONFIG_HOME/.curlrc" (Added in 7.73.0)
 
+3) "$HOME/.curlrc"
+
+4) Windows: "%USERPROFILE%\\.curlrc"
+
+5) Windows: "%APPDATA%\\.curlrc"
+
+6) Windows: "%USERPROFILE%\\Application Data\\.curlrc"
+
+7) Non-Windows: use getpwuid to find the home directory
+
+8) On Windows, if it finds no .curlrc file in the sequence described above, it
+checks for one in the same dir the curl executable is placed.
+
+On Windows two filenames are checked per location: .curlrc and _curlrc,
+preferring the former. Older versions on Windows checked for _curlrc only.

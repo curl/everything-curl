@@ -163,7 +163,7 @@
  - DICT: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [DICT](protocols/curl.md#dict), [Without scheme](cmdline/urls/scheme.md#without-scheme), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl/version.md#version), [DICT](usingcurl/dict.md#dict), [`CURLU_GUESS_SCHEME`](libcurl/url/parse.md#`curlu_guess_scheme`)
 ## E
  - Edge: [Copy as curl](usingcurl/copyas.md#copy-as-curl)
- - environment variables: [Default config file](cmdline/configfile.md#default-config-file), [Proxies](usingcurl/proxies.md#proxies), [Proxy environment variables](usingcurl/proxies/env.md#proxy-environment-variables), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
+ - environment variables: [Proxies](usingcurl/proxies.md#proxies), [Proxy environment variables](usingcurl/proxies/env.md#proxy-environment-variables), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
  - ETag: [Conditionals](http/conditionals.md#conditionals)
  - --etag-compare: [Check by modification of content](http/conditionals.md#check-by-modification-of-content)
  - --etag-save: [Check by modification of content](http/conditionals.md#check-by-modification-of-content)
@@ -237,7 +237,6 @@
 ## M
  - --max-filesize: [Maximum filesize](usingcurl/downloads/max-filesize.md#maximum-filesize)
  - --max-time: [Tweak your retries](usingcurl/downloads/retry.md#tweak-your-retries), [Maximum time allowed to spend](usingcurl/timeouts.md#maximum-time-allowed-to-spend)
- - MesaLink: [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library)
  - MIT: [License](opensource/license.md#license)
  - MQTT: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [MQTT](protocols/curl.md#mqtt), [Supported protocols](usingcurl.md#supported-protocols), [Line 3: Protocols](usingcurl/version.md#line-3:-protocols), [MQTT](usingcurl/mqtt.md#mqtt)
  - mTLS: [Client certificates](usingcurl/tls/clientcert.md#client-certificates)
@@ -270,8 +269,8 @@
  - --post303: [Decide what method to use in redirects](http/redirects.md#decide-what-method-to-use-in-redirects)
  - Progress callback: [timer_callback](libcurl/drive/multi-socket.md#timer_callback), [Progress callback](libcurl/callbacks/progress.md#progress-callback)
  - pronunciation: [Pronunciation](project/name.md#pronunciation)
- - proxy: [How it started](project/started.md#how-it-started), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Line 4: Features](usingcurl/version.md#line-4:-features), [Intermediaries' fiddlings](usingcurl/downloads/browsers.md#intermediaries'-fiddlings), [Proxies](usingcurl/proxies.md#proxies), [Discover your proxy](usingcurl/proxies/discover.md#discover-your-proxy), [PAC](usingcurl/proxies/pac.md#pac), [Proxy type](usingcurl/proxies/type.md#proxy-type), [HTTP proxy](usingcurl/proxies/http.md#http-proxy), [SOCKS proxy](usingcurl/proxies/socks.md#socks-proxy), [MITM proxy](usingcurl/proxies/mitm.md#mitm-proxy), [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication), [HTTPS proxy](usingcurl/proxies/https.md#https-proxy), [Proxy environment variables](usingcurl/proxies/env.md#proxy-environment-variables), [Proxy headers](usingcurl/proxies/headers.md#proxy-headers), [Available exit codes](usingcurl/returns.md#available-exit-codes), [CONNECT response codes](http/response.md#connect-response-codes), [HTTP authentication](http/auth.md#http-authentication), [Proxies](libcurl/proxies.md#proxies), [Available information](libcurl/getinfo.md#available-information), [Verification](libcurl/tlsoptions.md#verification), [HTTP proxy](libcurl-http.md#http-proxy)
  - --proxy: [HTTP proxy](usingcurl/proxies/http.md#http-proxy), [HTTP authentication](http/auth.md#http-authentication)
+ - proxy: [How it started](project/started.md#how-it-started), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Line 4: Features](usingcurl/version.md#line-4:-features), [Intermediaries' fiddlings](usingcurl/downloads/browsers.md#intermediaries'-fiddlings), [Proxies](usingcurl/proxies.md#proxies), [Discover your proxy](usingcurl/proxies/discover.md#discover-your-proxy), [PAC](usingcurl/proxies/pac.md#pac), [Proxy type](usingcurl/proxies/type.md#proxy-type), [HTTP proxy](usingcurl/proxies/http.md#http-proxy), [SOCKS proxy](usingcurl/proxies/socks.md#socks-proxy), [MITM proxy](usingcurl/proxies/mitm.md#mitm-proxy), [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication), [HTTPS proxy](usingcurl/proxies/https.md#https-proxy), [Proxy environment variables](usingcurl/proxies/env.md#proxy-environment-variables), [Proxy headers](usingcurl/proxies/headers.md#proxy-headers), [Available exit codes](usingcurl/returns.md#available-exit-codes), [CONNECT response codes](http/response.md#connect-response-codes), [HTTP authentication](http/auth.md#http-authentication), [Proxies](libcurl/proxies.md#proxies), [Available information](libcurl/getinfo.md#available-information), [Verification](libcurl/tlsoptions.md#verification), [HTTP proxy](libcurl-http.md#http-proxy)
  - --proxy-user: [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication), [HTTP authentication](http/auth.md#http-authentication)
  - --proxy1.0: [HTTP proxy tunneling](usingcurl/proxies/http.md#http-proxy-tunneling)
  - --proxytunnel: [HTTP proxy tunneling](usingcurl/proxies/http.md#http-proxy-tunneling)
@@ -360,8 +359,8 @@
  - --trace-time: [--trace-time](usingcurl/verbose/trace.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http/response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http/post/chunked.md#chunked-encoded-posts)
 ## U
- - -u: [Building libcurl on MSYS2](get/win-msys2.md#building-libcurl-on-msys2), [Passwords and snooping](cmdline/passwords.md#passwords-and-snooping), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [HTTP authentication](http/auth.md#http-authentication), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Authentication](ftp.md#authentication)
  - -U: [Building libcurl on MSYS2](get/win-msys2.md#building-libcurl-on-msys2), [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication)
+ - -u: [Building libcurl on MSYS2](get/win-msys2.md#building-libcurl-on-msys2), [Passwords and snooping](cmdline/passwords.md#passwords-and-snooping), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [HTTP authentication](http/auth.md#http-authentication), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Authentication](ftp.md#authentication)
  - Ubuntu: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian)
  - URL Globbing: [URL globbing](cmdline/globbing.md#url-globbing)
 ## V

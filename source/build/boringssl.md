@@ -10,7 +10,7 @@ like.
     $ cd boringssl
     $ mkdir build
     $ cd build
-    $ cmake ..
+    $ cmake -DCMAKE_POSITION_INDEPENDENT_CODE=on ..
     $ make
 
 ## set up the build tree to get detected by curl's configure

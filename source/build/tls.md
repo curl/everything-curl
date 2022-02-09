@@ -13,7 +13,6 @@ curl is written to work with a large number of TLS libraries:
  - GSKit (OS/400 specific)
  - libressl
  - mbedTLS
- - MesaLink
  - NSS
  - OpenSSL
  - rustls
@@ -74,16 +73,6 @@ optionally point configure to a custom install path prefix where it can find
 WolfSSL:
 
     ./configure --with-wolfssl=/home/user/installed/wolfssl
-
-### MesaLink
-
-    ./configure --with-mesalink
-
-configure will detect MesaLink in its default path by default. You can
-optionally point configure to a custom install path prefix where it can find
-mesalink:
-
-    ./configure --with-mesalink=/home/user/installed/mesalink
 
 ### mbedTLS
 

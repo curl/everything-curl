@@ -27,3 +27,16 @@ If the default behavior is not good enough for your transfer, the
 | CURL_HTTP_VERSION_2TLS              | Attempt to use HTTP/2 on HTTPS connections only, otherwise do HTTP/1.1
 | CURL_HTTP_VERSION_2_PRIOR_KNOWLEDGE | Use HTTP/2 straight away without "upgrading" from 1.1. It requires that you know that this server is OK with it.
 | CURL_HTTP_VERSION_3 | Use HTTP/3 straight away. It requires that you know that this server is OK with it.
+
+## Version 2 not mandatory
+
+When asking libcurl to use HTTP/2, it is an ask not a requirement. libcurl
+will then allow the server to select to use HTTP/1.1 or HTTP/2 and that is
+what decides which protocol that is ultimately used.
+
+## Version 3 is mandatory
+
+When asking libcurl to use HTTP/3 with the `CURL_HTTP_VERSION_3` option, that
+makes libcurl use QUIC to connect to the server and unless the server supports
+HTTP/3 the transfer will fail - there is no fallback to earlier versions from
+this in the way the HTTP/2 option works.

@@ -232,6 +232,7 @@
     * [Cookies with libcurl](libcurl-http/cookies.md)
     * [Download](libcurl-http/download.md)
     * [Upload](libcurl-http/upload.md)
+    * [Multiplexing](libcurl-http/multiplexing.md)
 * [Bindings](bindings.md)
 * [libcurl internals](internals.md)
     * [Easy handles and connections](internals/easy.md)

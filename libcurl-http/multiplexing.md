@@ -2,7 +2,7 @@
 
 The HTTP versions 2 and 3 offer "multiplexing". Using this protocol feature,
 an HTTP client can do several concurrent transfers to a server *over the same
-physical connection*. This feature does not exist in earlier versions of the
+single connection*. This feature does not exist in earlier versions of the
 HTTP protocol. In earlier HTTP versions, the client would either have to
 create multiple connections or do the transfers in a serial manner, one after
 the other.

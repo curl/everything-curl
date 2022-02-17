@@ -240,4 +240,5 @@
     * [State machines](internals/statemachines.md)
     * [Protocol handler](internals/handler.md)
     * [Back-ends](internals/backends.md)
+    * [Memory debugging](internals/memory-debugging.md)
 * [Index](bookindex.md)

@@ -243,4 +243,5 @@
     * [Windows vs Unix](internals/windows-vs-unix.md)
     * [Memory debugging](internals/memory-debugging.md)
     * [Content Encoding](internals/content-encoding.md)
+    * [Structs](internals/structs.md)
 * [Index](bookindex.md)

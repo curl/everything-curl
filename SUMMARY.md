@@ -244,4 +244,5 @@
     * [Memory debugging](internals/memory-debugging.md)
     * [Content Encoding](internals/content-encoding.md)
     * [Structs](internals/structs.md)
+    * [Resolving host names](internals/resolving.md)
 * [Index](bookindex.md)

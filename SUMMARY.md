@@ -241,4 +241,5 @@
     * [Protocol handler](internals/handler.md)
     * [Back-ends](internals/backends.md)
     * [Windows vs Unix](internals/windows-vs-unix.md)
+    * [Memory debugging](internals/memory-debugging.md)
 * [Index](bookindex.md)

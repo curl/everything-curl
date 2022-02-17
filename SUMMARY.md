@@ -242,4 +242,5 @@
     * [Back-ends](internals/backends.md)
     * [Windows vs Unix](internals/windows-vs-unix.md)
     * [Memory debugging](internals/memory-debugging.md)
+    * [Content Encoding](internals/content-encoding.md)
 * [Index](bookindex.md)

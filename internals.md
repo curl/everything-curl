@@ -14,4 +14,6 @@ library do something new.
  * [State machines](internals/statemachines.md)
  * [Protocol handler](internals/handler.md)
  * [Back-ends](internals/backends.md)
-
+ * [Windows vs Unix](internals/windows-vs-unix.md)
+ * [Memory debugging](internals/memory-debugging.md)
+ * [Content Encoding](internals/content-encoding.md)

@@ -3,13 +3,15 @@
 There are a few differences in how to program curl the Unix way compared to
 the Windows way. Perhaps the four most notable details are:
 
-1. Different function names for socket operations.
+## Different function names for socket operations
 
   In curl, this is solved with defines and macros, so that the source looks
   the same in all places except for the header file that defines them. The
   macros in use are `sclose()`, `sread()` and `swrite()`.
 
-2. Windows requires a couple of init calls for the socket stuff.
+## Init calls
+
+  Windows requires a couple of init calls for the socket stuff.
 
   That is taken care of by the `curl_global_init()` call, but if other libs
   also do it etc there might be reasons for applications to alter that
@@ -17,16 +19,22 @@ the Windows way. Perhaps the four most notable details are:
 
   We require WinSock version 2.2 and load this version during global init.
 
-3. The file descriptors for network communication and file operations are
-   not as easily interchangeable as in Unix.
+## File descriptors
+
+  File descriptors for network communication and file operations are not as
+  easily interchangeable as in Unix.
 
   We avoid this by not trying any funny tricks on file descriptors.
 
-4. When writing data to stdout, Windows makes end-of-lines the DOS way, thus
-   destroying binary data, although you do want that conversion if it is
-   text coming through... (sigh)
+## Stdout
+
+  When writing data to stdout, Windows makes end-of-lines the DOS way, thus
+  destroying binary data, although you do want that conversion if it is text
+  coming through... (sigh)
 
   We set stdout to binary under windows
+
+## Ifdefs
 
 Inside the source code, We make an effort to avoid `#ifdef [Your OS]`. All
 conditionals that deal with features *should* instead be in the format

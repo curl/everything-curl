@@ -62,7 +62,7 @@ the password 'qwerty' would look like:
     login daniel
     password qwerty
 
-It can also be written on a single line with the same funtionality:
+It can also be written on a single line with the same functionality:
 
     machine example.com login daniel password qwerty
 

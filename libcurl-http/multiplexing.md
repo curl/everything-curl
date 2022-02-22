@@ -13,7 +13,7 @@ Make sure you do multiple transfers using the multi interface to a server that
 supports HTTP multiplexing. libcurl can only multiplex transfers when the same
 host name is used for subsequent transfers.
 
-For all practicular purposes and API behaviors, an application does not have
+For all practical purposes and API behaviors, an application does not have
 to care about if multiplexing is done or not.
 
 libcurl enables multiplexing by default, but if you start multiple transfers

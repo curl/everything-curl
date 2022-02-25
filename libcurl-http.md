@@ -16,3 +16,16 @@ options](libcurl/tlsoptions.md) section.
 ## HTTP proxy
 
 See [using Proxies with libcurl](libcurl/proxies.md)
+
+## Sections
+
+  * [HTTP responses](libcurl-http/responses.md)
+  * [HTTP requests](libcurl-http/requests.md)
+  * [HTTP versions](libcurl-http/versions.md)
+  * [HTTP ranges](libcurl-http/ranges.md)
+  * [HTTP authentication](libcurl-http/auth.md)
+  * [Cookies with libcurl](libcurl-http/cookies.md)
+  * [Download](libcurl-http/download.md)
+  * [Upload](libcurl-http/upload.md)
+  * [Multiplexing](libcurl-http/multiplexing.md)
+  * [HSTS](libcurl-http/hsts.md)

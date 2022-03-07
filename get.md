@@ -9,3 +9,7 @@ Some operating systems ship curl by default. Some do not.
 In addition, You can always download the source from
 [curl.se](https://curl.se) or find binary packages to download from
 there.
+
+  * [Linux](get/linux.md)
+  * [Windows](get/windows.md)
+  * [macOS](get/macos.md)

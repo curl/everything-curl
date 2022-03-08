@@ -11,6 +11,7 @@ This section describes the simple posts, for multipart formposts done with
 * [Simple POST](post/simple.md)
 * [Content-Type](post/content-type.md)
 * [Posting binary](post/binary.md)
+* [JSON](post/json.md)
 * [URL encoding](post/url-encode.md)
 * [Convert to GET](post/convert-to-get.md)
 * [Expect 100-continue](post/expect100.md)

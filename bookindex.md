@@ -160,7 +160,7 @@
  - curl_version_info: [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs)
 ## D
  - -d: [Arguments to options](cmdline/options.md#arguments-to-options), [Separate options per URL](cmdline/urls/options.md#separate-options-per-url), [POST](usingcurl/uploads.md#post), [MQTT](usingcurl/mqtt.md#mqtt), [HTTP methods](http.md#http-methods), [Simple POST](http/post/simple.md#simple-post), [Content-Type](http/post/content-type.md#content-type), [Posting binary](http/post/binary.md#posting-binary), [Convert to GET](http/post/convert-to-get.md#convert-to-get), [Expect 100-continue](http/post/expect100.md#expect-100-continue), [Chunked encoded POSTs](http/post/chunked.md#chunked-encoded-posts), [Hidden form fields](http/post/hiddenfields.md#hidden-form-fields), [-d vs -F](http/postvspost.md#d-vs--f), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
- - --data: [Arguments to options](cmdline/options.md#arguments-to-options), [Separate options per URL](cmdline/urls/options.md#separate-options-per-url), [POST](usingcurl/uploads.md#post), [Simple POST](http/post/simple.md#simple-post), [URL encoding](http/post/url-encode.md#url-encoding)
+ - --data: [Arguments to options](cmdline/options.md#arguments-to-options), [Separate options per URL](cmdline/urls/options.md#separate-options-per-url), [POST](usingcurl/uploads.md#post), [Simple POST](http/post/simple.md#simple-post), [JSON](http/post/json.md#json), [URL encoding](http/post/url-encode.md#url-encoding)
  - --data-binary: [Not perfect](usingcurl/copyas.md#not-perfect), [Posting binary](http/post/binary.md#posting-binary), [URL encoding](http/post/url-encode.md#url-encoding)
  - --data-urlencode: [URL encoding](http/post/url-encode.md#url-encoding), [Convert to GET](http/post/convert-to-get.md#convert-to-get)
  - debian: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian), [lib/vtls](source/layout.md#lib/vtls), [Version](usingcurl/version.md#version)
@@ -195,12 +195,12 @@
  - GOPHER: [How it started](project/started.md#how-it-started), [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [GOPHER](protocols/curl.md#gopher), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl/version.md#version)
  - GOPHERS: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [GOPHERS](protocols/curl.md#gophers), [Supported protocols](usingcurl.md#supported-protocols)
 ## H
- - --header: [Server differences](usingcurl/downloads/browsers.md#server-differences), [Proxy headers](usingcurl/proxies/headers.md#proxy-headers), [Customize headers](http/modify/headers.md#customize-headers)
+ - --header: [Server differences](usingcurl/downloads/browsers.md#server-differences), [Proxy headers](usingcurl/proxies/headers.md#proxy-headers), [JSON](http/post/json.md#json), [Customize headers](http/modify/headers.md#customize-headers)
  - Header callback: [Header callback](libcurl/callbacks/header.md#header-callback), [HTTP responses](libcurl-http/responses.md#http-responses), [Download headers too](libcurl-http/download.md#download-headers-too)
  - homebrew: [Get curl for macOS](get/macos.md#get-curl-for-macos)
  - Host:: [Verbose mode](usingcurl/verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl/verbose/trace.md#trace-and---trace-ascii), [Change the Host: header](usingcurl/connections/name.md#change-the-host:-header), [HTTP protocol basics](http/basics.md#http-protocol-basics), [The HTTP this generates](http/multipart.md#the-http-this-generates), [Customize headers](http/modify/headers.md#customize-headers), [Customize HTTP request headers](libcurl-http/requests.md#customize-http-request-headers)
- - --hsts: [HSTS cache](http/hsts.md#hsts-cache)
  - HSTS: [HTTP Strict Transport Security](http/hsts.md#http-strict-transport-security), [Callbacks](libcurl/callbacks.md#callbacks), [HSTS](libcurl/callbacks/hsts.md#hsts), [Sections](libcurl-http.md#sections), [HSTS](libcurl-http/hsts.md#hsts)
+ - --hsts: [HSTS cache](http/hsts.md#hsts-cache)
  - HTTP ranges: [HTTP ranges](http/ranges.md#http-ranges), [Sections](libcurl-http.md#sections), [HTTP ranges](libcurl-http/ranges.md#http-ranges)
  - HTTP redirects: [Short options](cmdline/options.md#short-options), [Available exit codes](usingcurl/returns.md#available-exit-codes), [HTTP redirects](http/redirects.md#http-redirects), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http)
  - HTTP Strict Transport Security: [HTTP Strict Transport Security](http/hsts.md#http-strict-transport-security), [HSTS](libcurl/callbacks/hsts.md#hsts)
@@ -221,7 +221,8 @@
  - IRC: [How it started](project/started.md#how-it-started), [Project communication](project/comm.md#project-communication)
 ## J
  - JavaScript: [Client differences](usingcurl/downloads/browsers.md#client-differences), [PAC](usingcurl/proxies/pac.md#pac), [HTTP POST](http/post.md#http-post), [JavaScript and forms](http/post/javascript.md#javascript-and-forms), [JavaScript redirects](http/redirects.md#javascript-redirects), [Figure out what the browser does](http/browserlike.md#figure-out-what-the-browser-does)
- - json: [Arguments with spaces](cmdline/options.md#arguments-with-spaces), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Content-Type](http/post/content-type.md#content-type), [POST outside of HTML](http/postvspost.md#post-outside-of-html)
+ - json: [Arguments with spaces](cmdline/options.md#arguments-with-spaces), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [HTTP POST](http/post.md#http-post), [Content-Type](http/post/content-type.md#content-type), [JSON](http/post/json.md#json), [POST outside of HTML](http/postvspost.md#post-outside-of-html)
+ - --json: [JSON](http/post/json.md#json)
 ## K
  - -K: [Command lines, quotes and aliases](cmdline.md#command-lines,-quotes-and-aliases), [Config file](cmdline/configfile.md#config-file)
  - keep-alive: [Keep connections alive](usingcurl/timeouts.md#keep-connections-alive)
@@ -365,8 +366,8 @@
  - --trace-time: [--trace-time](usingcurl/verbose/trace.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http/response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http/post/chunked.md#chunked-encoded-posts)
 ## U
- - -u: [Building libcurl on MSYS2](get/win-msys2.md#building-libcurl-on-msys2), [Passwords and snooping](cmdline/passwords.md#passwords-and-snooping), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [HTTP authentication](http/auth.md#http-authentication), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Authentication](ftp.md#authentication)
  - -U: [Building libcurl on MSYS2](get/win-msys2.md#building-libcurl-on-msys2), [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication)
+ - -u: [Building libcurl on MSYS2](get/win-msys2.md#building-libcurl-on-msys2), [Passwords and snooping](cmdline/passwords.md#passwords-and-snooping), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [HTTP authentication](http/auth.md#http-authentication), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Authentication](ftp.md#authentication)
  - Ubuntu: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian)
  - URL Globbing: [URL globbing](cmdline/globbing.md#url-globbing)
 ## V
@@ -380,12 +381,12 @@
  - Write callback: [Write callback](libcurl/callbacks/write.md#write-callback), [Get a HTML page in memory](libcurl/examples/getinmem.md#get-a-html-page-in-memory), [Callback considerations](libcurl/cplusplus.md#callback-considerations)
  - --write-out: [--write-out](usingcurl/verbose/writeout.md#write-out), [HTTP response codes](http/response.md#http-response-codes)
 ## X
- - -X: [Modify the request method](http/modify/method.md#modify-the-request-method), [Modify request target](http/modify/target.md#modify-request-target), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
  - -x: [HTTP proxy](usingcurl/proxies/http.md#http-proxy), [SOCKS proxy](usingcurl/proxies/socks.md#socks-proxy), [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication), [Proxy environment variables](usingcurl/proxies/env.md#proxy-environment-variables), [Proxy headers](usingcurl/proxies/headers.md#proxy-headers), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
+ - -X: [Modify the request method](http/modify/method.md#modify-the-request-method), [Modify request target](http/modify/target.md#modify-request-target), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
 ## Y
  - yum: [Redhat and CentOS](get/linux.md#redhat-and-centos)
 ## Z
- - -z: [Check by modification date](http/conditionals.md#check-by-modification-date)
  - -Z: [Parallel transfers](cmdline/urls/parallel.md#parallel-transfers)
+ - -z: [Check by modification date](http/conditionals.md#check-by-modification-date)
  - zlib: [HTTP Compression](source/build/deps.md#http-compression), [About content encodings](internals/content-encoding.md#about-content-encodings)
  - zstd: [HTTP Compression](source/build/deps.md#http-compression), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs), [Supported content encodings](internals/content-encoding.md#supported-content-encodings)

@@ -28,7 +28,7 @@ If you have more URLs than output options on the command line, the URL content
 without corresponding output instructions will then instead be sent to stdout.
 
 Using the `--remote-name-all` flag will automatically make curl act as if `-O`
-was used for all given URLs that don't have any output option.
+was used for all given URLs that do not have any output option.
 
 ## Separate options per URL
 

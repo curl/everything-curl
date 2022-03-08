@@ -4,7 +4,7 @@ open(P, "<badwords.txt");
 my $w;
 while(<P>) {
     chomp;
-    push @w, $_;
+    push @w, $_ if($_);
 }
 close(P);
 
@@ -12,10 +12,11 @@ my $errors;
 
 sub file {
     my ($f) = @_;
-    my $l = 1;
+    my $l = 0;
     open(F, "<$f");
     while(<F>) {
         my $in = $_;
+        $l++;
         chomp $in;
         if($in =~ /^    /) {
             next;
@@ -25,8 +26,10 @@ sub file {
         # remove backticked texts
         $in =~ s/\`.*\`//g;
         foreach my $w (@w) {
-            if($in =~ /$w/i) {
+            if($in =~ /^(.*)$w/i) {
+                my $p = $1;
                 print STDERR "$f:$l $in\n";
+                printf STDERR "$f:$l %*s^ (found $w)\n", length($p), " ";
                 $errors++;
             }
         }

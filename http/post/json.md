@@ -8,11 +8,11 @@ a single option that replaces these three:
     --header "Content-Type: application/json"
     --header "Accept: application/json"
 
-This option doesn't make curl actually understand or know about the JSON data
-it sends, but it makes it easer to send it. curl will not touch or parse the
+This option does not make curl actually understand or know about the JSON data
+it sends, but it makes it easier to send it. curl will not touch or parse the
 data that it sends, so you need to make sure it is valid JSON yourself.
 
-Send a very basic JSON object to a server:
+Send a basic JSON object to a server:
 
     curl --json '{"tool": "curl"}' https://example.com/
 
@@ -32,3 +32,35 @@ any way merge the JSON object as per JSON.
 Send JSON from a file and concatenate a string to the end:
 
     curl --json @json.txt --json ", "end": "true"}' https://example.com/
+
+## Crafting JSON to send
+
+The quotes used in JSON data sometimes makes it a bit difficult and cumbersome
+to write and use in shells and scripts.
+
+Using a separate tool for this purpose might make things easier for you, and
+one tool in particular that might help you accomplish this is [jo](https://github.com/jpmens/jo).
+
+Send a basic JSON object to a server with jo and `--json`
+
+    jo -p name=jo n=17 parser=false | curl --json @- https://example.com/
+
+## Receiving JSON
+
+curl itself does not know or understand the contents it sends or receives,
+including when the server returns JSON in its response.
+
+Using a separate tool for the purpose of parsing or pretty-printing JSON
+responses might make things easier for you, and one tool in particular that
+might help you accomplish this is [jq](https://stedolan.github.io/jq/).
+
+Send a basic JSON object to a server, and print-print the JSON response:
+
+    curl --json '{"tool": "curl"}' https://example.com/ | jq
+
+Send the JSON with `jo`, print the response with `jq`:
+
+    jo -p name=jo n=17 | curl --json @- https://example.com/ | jq
+
+jq is a powerful and very capable tool for extracting, filtering and managing
+JSON content that goes way beyond just pretty-printing.

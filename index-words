@@ -24,6 +24,7 @@
 --http2
 --http2-prior-knowledge
 --http3
+--json
 --keepalive-time
 --libcurl
 --limit-rate

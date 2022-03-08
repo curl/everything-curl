@@ -1,4 +1,4 @@
-# FTP wildcard matching
+# FTP wild card matching
 
 libcurl supports FTP wild card matching. You use this feature by setting
 `CURLOPT_WILDCARDMATCH` to `1L` and then use a "wild card pattern" in the in

@@ -30,7 +30,7 @@ legal to invoke libcurl functions from within a libcurl callback.
  * [Opensocket and closesocket](callbacks/openclosesocket.md)
  * [SSH key](callbacks/sshkey.md)
  * [RTSP interleaved data](callbacks/rtsp.md)
- * [FTP wildcard matching](callbacks/ftpmatch.md)
+ * [FTP wild card matching](callbacks/ftpmatch.md)
  * [Resolver start](callbacks/resolver.md)
  * [Sending trailers](callbacks/trailers.md)
  * [HSTS](callbacks/hsts.md)

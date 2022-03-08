@@ -62,5 +62,5 @@ Send the JSON with `jo`, print the response with `jq`:
 
     jo -p name=jo n=17 | curl --json @- https://example.com/ | jq
 
-jq is a powerful and very capable tool for extracting, filtering and managing
-JSON content that goes way beyond just pretty-printing.
+jq is a powerful and capable tool for extracting, filtering and managing JSON
+content that goes way beyond just pretty-printing.

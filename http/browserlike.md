@@ -126,3 +126,13 @@ then makes it:
 
     curl -d user=daniel -d secret=qwerty -d id=bc76 https://example.com/login.cgi \
     -b cookies -c cookies -L -e "https://example.com/" -o out
+
+## TLS fingerprinting
+
+Anti-bot detections nowadays use TLS fingerprinting to figure out whether a
+request is coming from a browser. Curl's fingerprint can vary depending on your
+environment and most likely is different from those of browsers. Curl's CLI
+does not have options to change all the various parts of the fingerprint,
+however an advanced user can customize the fingerprint through the use of
+libcurl and by compiling curl from source themselves.
+

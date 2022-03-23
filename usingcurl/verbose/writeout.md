@@ -1,12 +1,11 @@
 # --write-out
 
-This is one of the often forgotten little gems in the curl arsenal of command
-line options. `--write-out` or just `-w` for short, writes out information
-after a transfer has completed and it has a large range of variables that you
-can include in the output, variables that have been set with values and
+`--write-out` or just `-w` for short, outputs text and information after a
+transfer is completed. It offers a large range of variables that you can
+include in the output, variables that have been set with values and
 information from the transfer.
 
-You tell curl to write a string just by passing that string to this option:
+Instruct curl to output a string by passing plain text to this option:
 
     curl -w "formatted string" http://example.com/
 

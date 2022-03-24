@@ -115,14 +115,14 @@ provide that list of libraries to link with.
 The configure-based build offers the user to select from a wide variety of
 different TLS libraries when building. You select them by using the correct
 command line options. Before curl 7.77.0, the configure script would
-automatically check for OpenSSL, but in modern versions it does not.
+automatically check for OpenSSL, but modern versions do not.
 
+ - AmiSSL: `--with-amissl`
  - BearSSL: `--with-bearssl`
  - BoringSSL: `--with-openssl`
  - GnuTLS: `--with-gnutls`
- - libressl: `--with-openssl`
+ - LibreSSL: `--with-openssl`
  - mbedTLS: `--with-mbedtls`
- - MesaLink: `--with-mesalink`
  - NSS: `--with-nss`
  - OpenSSL: `--with-openssl`
  - Rustls: `--with-rustls` (point to the rustls-ffi install path)

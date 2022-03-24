@@ -61,3 +61,26 @@ installed automatically if you follow the normal installation procedure.
 If curl is not installed, Arch Linux uses `pacman` to install packages:
     
     pacman -S curl
+
+## SUSE and openSUSE
+
+With SUSE Linux and openSUSE Linux you use `zypper` to install install
+packages. To install the curl command-line utility:
+
+    zypper install curl
+
+In order to install the libcurl development package you run:
+
+    zypper install libcurl-devel
+
+### SUSE SLE Micro and openSUSE MicroOS
+
+These versions of SUSE/openSUSE Linux are immutable OSes and have a read
+only root file system, to install packages you would use `transactional-update`
+instead of `zypper`. To install the curl command-line utility:
+
+    transactional-update pkg install curl
+
+And to install the libcurl development package:
+
+    transactional-update pkg install libcurl-devel

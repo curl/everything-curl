@@ -44,31 +44,28 @@ source files may contain code that is not used in your particular build.
 ### lib/vtls
 
 The VTLS sub section within libcurl is the home of all the TLS back-ends
-libcurl can be built to support. The "virtual" TLS internal API is a common
-API that is used within libcurl to access TLS and crypto functions without the
-main code knowing exactly which TLS library is used. This allows the
-person who builds libcurl to select from a wide variety TLS libraries to build
-with.
+libcurl can be built to support. The "virtual" TLS internal API is a backend
+agnostic API used internally to access TLS and crypto functions without the
+main code knowing which specific TLS library is used. This allows the person
+who builds libcurl to select from a wide variety TLS libraries to build with.
 
 We also maintain a [SSL comparison
 table](https://curl.se/docs/ssl-compared.html) on the website to aid
 users.
 
-- OpenSSL: the (by far) most popular TLS library.
-- BoringSSL: an OpenSSL fork maintained by Google. It will make libcurl disable a
-  few features due to lacking some functionality in the library.
-- LibreSSL: an OpenSSL fork maintained by the OpenBSD team.
-- NSS: a full-blown TLS library perhaps most known for being used by the
-  Firefox web browser. This was the default TLS back-end for curl on Fedora and
-  Redhat systems for a while in the past.
-- GnuTLS: a full-blown TLS library used by default by the Debian packaged curl.
-- mbedTLS: a TLS library targeted towards the embedded market.
-- wolfSSL: a TLS library targeted towards the embedded market.
-- MesaLink: a TLS library written in rust
-- Schannel: the native TLS library on Windows.
-- SecureTransport: the native TLS library on Mac OS X.
+- AmiSSL: an OpenSSL fork made for AmigaOS (uses `openssl.c`)
+- BearSSL
+- BoringSSL: an OpenSSL fork maintained by Google. (uses `openssl.c`)
+- GnuTLS
 - GSKit: the native TLS library on OS/400.
+- LibreSSL: an OpenSSL fork maintained by the OpenBSD team. (uses `openssl.c`)
+- mbedTLS
+- NSS: TLS library most known for being used by the Firefox web browser.
+- OpenSSL
 - rustls: a TLS library written in rust
+- Schannel: the native TLS library on Windows.
+- Secure Transport: the native TLS library on macOs
+- wolfSSL
 
 ### src
 

@@ -17,3 +17,12 @@ With the name given as an IPv6 address:
 
 The port number is an unsigned 16 bit number, so it has to be within the range
 0 to 65535.
+
+## TCP vs UDP
+
+The given port number is used when setting up the connection to the server
+specified in the URL. The port is then a either a TCP port number or a UDP
+port number depending on which actual underlying transport protocol that is
+used. TCP is the most common one, but TFTP and HTTP/3 use UDP.
+
+URLs using the `file://` scheme cannot have a port number.

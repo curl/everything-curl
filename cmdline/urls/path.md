@@ -18,3 +18,7 @@ trailing slash means that it is a directory and not a file. Thus asking for a
 directory list from an FTP server is implied with such a slash:
 
     curl ftp://ftp.example.com/tmp/
+
+If you want a non-ASCII letter or maybe even space (` `) as part of the path
+field, remember to "URL-encode" that letter: write it as `%HH` where `HH` is
+the hexadecimal byte value. ` ` is `%20`.

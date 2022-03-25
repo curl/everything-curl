@@ -61,6 +61,8 @@ and printers.
 A fair number of best-selling games are also using libcurl, on Windows and
 game consoles.
 
+![different devices, tool, applications and services that all run curl](curl-runs-in-all-your-devices.jpg)
+
 ### In website back-ends
 
 The libcurl binding for PHP was one of, if not the, first bindings for libcurl

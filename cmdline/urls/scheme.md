@@ -61,3 +61,12 @@ While this gets data from a HTTP server:
 
 You can modify the default protocol to something other than HTTP with the
 `--proto-default` option.
+
+## Supported schemes
+
+curl supports or can be made to support (if built so) the following transfer
+schemes and protocols:
+
+DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS,
+MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SBMS, SMTP, SMTPS,
+TELNET and TFTP

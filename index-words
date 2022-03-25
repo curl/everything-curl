@@ -41,6 +41,7 @@
 --ntlm
 --parallel
 --parallel-max
+--parallel-immediate
 --path-as-is
 --post301
 --post302

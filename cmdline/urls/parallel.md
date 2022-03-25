@@ -23,3 +23,15 @@ progress for a single transfer is not that useful for parallel transfers so
 when curl performs parallel transfers, it will show a different progress meter
 that displays information about all the current ongoing transfers in a single
 line.
+
+## Speed before parallelism
+
+When curl is asked to do parallel transfers, it prioritizes to have the
+additional transfer reuse and multiplex over other already existing
+connections. This can potentially lower the total amount of connections (and
+thereby resources) necessary but it might be slightly slower at start-up.
+
+With `--parallel-immediate`, curl is instructed to reverse the prioritization
+and instead prefer creating a new connection immediately rather than risk
+waiting a little to see if the transfer can be multiplexed of another
+connection.

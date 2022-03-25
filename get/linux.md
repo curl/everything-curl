@@ -44,7 +44,7 @@ etc.) with this:
     yum install libcurl-devel
 
 
-### nix
+## nix
 
 [Nix](https://nixos.org/nix/) is a package manager default to the NixOS
 distribution, but it can also be used on any Linux distribution.

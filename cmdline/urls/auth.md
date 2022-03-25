@@ -11,3 +11,6 @@ The presence of user name and password in the URL is completely optional. curl
 also allows that information to be provide with normal command-line options,
 outside of the URL.
 
+If you want a non-ASCII letter or maybe a `:` or `@` as part of the user name
+and/or password, remember to "URL-encode" that letter: write it as `%HH` where
+`HH` is the hexadecimal byte value. `:` is `%3a` and `@` is `%40`.

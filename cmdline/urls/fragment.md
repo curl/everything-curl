@@ -14,3 +14,13 @@ If you want to make the `#` character as part of the path and not separating
 the fragment, make sure to pass it URL-encoded, as `%23`:
 
     curl https://www.example.com/info.html%23the-plot
+
+## The "fragment trick"
+
+The fact that the fragment part is not actually used over the network can be
+taken advantage of when you craft command lines.
+
+For example, if you want to request the same URL from a server 10 times, you
+can make a loop and put the loop instruction in the fragment part. Like this:
+
+    curl https://example.com/#[1-10]

@@ -24,7 +24,7 @@ when curl performs parallel transfers, it will show a different progress meter
 that displays information about all the current ongoing transfers in a single
 line.
 
-## Speed before parallelism
+## Connection before multiplex
 
 When curl is asked to do parallel transfers, it prioritizes to have the
 additional transfer reuse and multiplex over other already existing

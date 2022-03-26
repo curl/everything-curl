@@ -93,9 +93,9 @@ connect, but in all other ways still assume it is talking to
 ## Name resolve tricks with c-ares
 
 As should be detailed elsewhere in this book, curl may be built with several
-different name resolving back-ends. One of those back-ends is powered by the
+different name resolving backends. One of those backends is powered by the
 c-ares library and when curl is built to use c-ares, it gets a few extra
-superpowers that curl built to use other name resolve back-ends do not get.
+superpowers that curl built to use other name resolve backends do not get.
 Namely, it gains the ability to more specifically instruct what DNS servers to
 use and how that DNS traffic is using the network.
 

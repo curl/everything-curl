@@ -110,7 +110,7 @@ keep up with or know all possible dependencies for all the libraries it can be
 made to build with, so users wanting to build with static libs mostly need to
 provide that list of libraries to link with.
 
-### Select TLS back-end
+### Select TLS backend
 
 The configure-based build offers the user to select from a wide variety of
 different TLS libraries when building. You select them by using the correct
@@ -142,13 +142,13 @@ this:
 
 You can opt to build with support for **multiple** TLS libraries by specifying
 multiple `--with-*` options on the configure command line. Pick which one to
-make the default TLS back-end with `--with-default-ssl-backend=[NAME]`. For
+make the default TLS backend with `--with-default-ssl-backend=[NAME]`. For
 example, build with support for both GnuTLS and OpenSSL and default to
 OpenSSL:
 
     ./configure --with-openssl --with-gnutls --with-default-ssl-backend=openssl
 
-### Select SSH back-end
+### Select SSH backend
 
 The configure-based build offers the user to select from a variety of
 different SSH libraries when building. You select them by using the
@@ -164,7 +164,7 @@ this:
 
     ./configure --with-libssh2=/home/user/custom-libssh2
 
-### Select HTTP/3 back-end
+### Select HTTP/3 backend
 
 The configure-based build offers the user to select different HTTP/3 libraries
 when building. You select them by using the correct command-line options.

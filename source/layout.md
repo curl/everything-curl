@@ -43,7 +43,7 @@ source files may contain code that is not used in your particular build.
 
 ### lib/vtls
 
-The VTLS sub section within libcurl is the home of all the TLS back-ends
+The VTLS sub section within libcurl is the home of all the TLS backends
 libcurl can be built to support. The "virtual" TLS internal API is a backend
 agnostic API used internally to access TLS and crypto functions without the
 main code knowing which specific TLS library is used. This allows the person

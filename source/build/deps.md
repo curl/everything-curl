@@ -28,7 +28,7 @@ https://c-ares.org/
 
 curl can be built with c-ares to be able to do asynchronous name resolution.
 Another option to enable asynchronous name resolution is to build curl with the
-threaded name resolver back-end, which will then instead create a separate
+threaded name resolver backend, which will then instead create a separate
 helper thread for each name resolve. c-ares does it all within the
 same thread.
 

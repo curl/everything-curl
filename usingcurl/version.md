@@ -41,17 +41,17 @@ released and "blessed" version.
 The rest of this line contains names of third party components this build of
 curl uses, often with their individual version number next to it with a slash
 separator. Like `OpenSSL/1.1.1g` and `nghttp2/1.41.0`. This can for example
-tell you which TLS back-ends this curl uses.
+tell you which TLS backends this curl uses.
 
 ### Line 1: TLS versions
 
 Line 1 may contain one or more TLS libraries. curl can be built to support
 more than one TLS library which then makes curl - at start-up - select which
-particular back-end to use for this invoke.
+particular backend to use for this invoke.
 
 If curl supports more than one TLS library like this, the ones that are *not*
 selected by default will be listed within parentheses. Thus, if you do not
-specify which back-end to use use (with the `CURL_SSL_BACKEND` environment
+specify which backend to use use (with the `CURL_SSL_BACKEND` environment
 variable) the one listed without parentheses will be used.
 
 ## Line 2: Release-Date
@@ -85,7 +85,7 @@ Features that can be present there:
  - **alt-svc** - Support for the alt-svc: header
  - **AsynchDNS** - This curl uses asynchronous name resolves. Asynchronous
    name resolves can be done using either the c-ares or the threaded resolver
-   back-ends.
+   backends.
  - **brotli** - support for automatic brotli compression over HTTP(S)
  - **CharConv** - curl was built with support for character set conversions
    (like EBCDIC)
@@ -104,7 +104,7 @@ Features that can be present there:
    supported.
  - **Metalink** - This curl supports Metalink. In modern curl versions this
    option is never available.
- - **MultiSSL** - This curl supports multiple TLS back-ends. The first line
+ - **MultiSSL** - This curl supports multiple TLS backends. The first line
    will detail exactly which TLS libraries.
  - **NTLM** - NTLM authentication is supported.
  - **NTLM_WB** - NTLM authentication is supported.

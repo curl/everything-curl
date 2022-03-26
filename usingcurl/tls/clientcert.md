@@ -20,7 +20,7 @@ specify the key file independently with `--key`:
     curl --cert mycert:mypassword https://example.com
     curl --cert mycert:mypassword --key mykey https://example.com
 
-For some TLS back-ends you can also pass in the key and certificate using
+For some TLS backends you can also pass in the key and certificate using
 different types:
 
     curl --cert mycert:mypassword --cert-type PEM \

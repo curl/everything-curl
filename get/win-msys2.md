@@ -14,7 +14,7 @@ Current information about the [`mingw-w64-curl`](https://github.com/msys2/MINGW-
 
     pacman -Sy mingw-w64-x86_64-curl
 
-This package contains both the `curl` command line tool as well as libcurl headers and shared libraries. The default `curl` packages are built with the OpenSSL back-end and hence depend on `mingw-w64-x86_64-openssl`. There are also `mingw-w64-x86_64-curl-gnutls` and `mingw-w64-x86_64-curl-gnutls` packages, refer to the [msys2 website](https://packages.msys2.org/base/mingw-w64-curl) for more details.
+This package contains both the `curl` command line tool as well as libcurl headers and shared libraries. The default `curl` packages are built with the OpenSSL backend and hence depend on `mingw-w64-x86_64-openssl`. There are also `mingw-w64-x86_64-curl-gnutls` and `mingw-w64-x86_64-curl-gnutls` packages, refer to the [msys2 website](https://packages.msys2.org/base/mingw-w64-curl) for more details.
 
 
 Just like on Linux, we can use `pkg-config` to query the flags needed to build against libcurl. Start msys2 using the mingw64 shell (which automatically sets the path to include `/mingw64`) and run:

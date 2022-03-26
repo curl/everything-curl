@@ -14,4 +14,4 @@ can specify one or more hashes like that, separated with semicolons (;).
 
     curl --pinnedpubkey "sha256//83d34tasd3rt…" https://example.com/
 
-This feature is not supported by all TLS back-ends.
+This feature is not supported by all TLS backends.

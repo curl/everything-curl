@@ -18,7 +18,7 @@ libcurl is then also installed as an individual package.
 
 If you want to build applications against libcurl, you need a development
 package installed to get the include headers and some additional
-documentation, etc. You can then select a libcurl with the TLS back-end you
+documentation, etc. You can then select a libcurl with the TLS backend you
 prefer:
 
     apt install libcurl4-openssl-dev

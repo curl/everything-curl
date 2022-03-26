@@ -13,4 +13,4 @@ Ask for the handshake to use the status request like this:
 
     curl --cert-status https://example.com/
 
-This feature is only supported by the OpenSSL, GnuTLS and NSS back-ends.
+This feature is only supported by the OpenSSL, GnuTLS and NSS backends.

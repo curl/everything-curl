@@ -68,7 +68,7 @@ This number is also available as three separate defines:
 
 These defines are, of course, only suitable to figure out the version number
 built *just now* and they will not help you figuring out which libcurl version
-that is used at run-time three years from now.
+that is used at runtime three years from now.
 
 ### Which libcurl version runs
 

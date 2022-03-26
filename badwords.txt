@@ -1,15 +1,16 @@
-back-end
-e-mail
-run-time
-set-up
-toolchain
-tool-chain
-wildcard
-I'm
-You've
-They're
-should've
-don't
-could've
-doesn't
-isn't
+back-end:backend
+e-mail:email
+run-time:runtime
+set-up:setup
+toolchain:tool chain
+tool-chain:tool chain
+wild-card:wildcard
+wild card:wildcard
+I'm:I am
+You've:You have
+They're:They are
+should've:should have
+don't:do not
+could've:could have
+doesn't:does not
+isn't:is not

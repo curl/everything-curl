@@ -4,7 +4,11 @@ open(P, "<badwords.txt");
 my $w;
 while(<P>) {
     chomp;
-    push @w, $_ if($_);
+    if($_ =~ /^([^:]*):(.*)/) {
+        my ($bad, $better)=($1, $2);
+        push @w, $bad;
+        $alt{$bad} = $better;
+    }
 }
 close(P);
 
@@ -28,8 +32,12 @@ sub file {
         foreach my $w (@w) {
             if($in =~ /^(.*)$w/i) {
                 my $p = $1;
-                print STDERR "$f:$l $in\n";
-                printf STDERR "$f:$l %*s^ (found $w)\n", length($p), " ";
+                my $c = length($p)+1;
+                print STDERR  "$f:$l:$c: error: found bad word \"$w\"\n";
+                printf STDERR " %4d | $in\n", $l;
+                printf STDERR "      | %*s^%s\n", length($p), " ",
+                    "~" x (length($w)-1);
+                printf STDERR " maybe use \"%s\" instead?\n", $alt{$w};
                 $errors++;
             }
         }

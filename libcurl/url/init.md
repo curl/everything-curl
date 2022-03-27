@@ -11,7 +11,7 @@ Create a URL handle like this:
 
     CURLU *h = curl_url();
 
-When the done with it, clean it up:
+When you are done with it, clean it up:
 
     curl_url_cleanup(h);
 

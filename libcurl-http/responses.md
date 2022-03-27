@@ -1,28 +1,38 @@
 # HTTP responses
 
-Every HTTP request includes a HTTP response. A HTTP response is a set of
+Every HTTP request includes an HTTP response. An HTTP response is a set of
 metadata and a response body, where the body can occasionally be zero bytes
-and thus nonexistent. A HTTP response will however always have response
+and thus nonexistent. An HTTP response will however always have response
 headers.
+
+## Response body
 
 The response body will be passed to the [write
 callback](../libcurl/callbacks/write.md) and the response headers to the
-[header callback](../libcurl/callbacks/header.md), but sometimes an
-application just want to know the size of the data.
+[header callback](../libcurl/callbacks/header.md).
 
-The size of a response *as told by the server headers* can be extracted with
+Virtually all libcurl-using applications need to set at least one of those
+callbacks instructing libcurl what to do with received headers and data.
+
+## Response meta-data
+
+libcurl offers the `curl_easy_getinfo()` function that allows an application
+to query libcurl for information from the previously performed transfer.
+
+Sometimes an application just want to know the size of the data. The size of
+a response *as told by the server headers* can be extracted with
 `curl_easy_getinfo()` like this:
 
-    double size;
-    curl_easy_getinfo(curl, CURLINFO_CONTENT_LENGTH_DOWNLOAD, &size);
+    curl_off_t size;
+    curl_easy_getinfo(curl, CURLINFO_CONTENT_LENGTH_DOWNLOAD_T, &size);
 
 If you can wait until after the transfer is already done, which also is a more
 reliable way since not all URLs will provide the size up front (like for
 example for servers that generate content on demand) you can instead ask for
 the amount of downloaded data in the most recent transfer.
 
-    double size;
-    curl_easy_getinfo(curl, CURLINFO_SIZE_DOWNLOAD, &size);
+    curl_off_t size;
+    curl_easy_getinfo(curl, CURLINFO_SIZE_DOWNLOAD_T, &size);
 
 ## HTTP response code
 
@@ -51,9 +61,9 @@ which the server uses to signal that there was an error processing the request,
 it is important to realize that this will not cause libcurl to return an
 error.
 
-When libcurl is asked to perform a HTTP transfer it will return an error if that
-HTTP transfer fails. However, getting a HTTP 404 or the like back is not a
-problem for libcurl. It is not a HTTP transfer error. A user might be
+When libcurl is asked to perform an HTTP transfer it will return an error if
+that HTTP transfer fails. However, getting an HTTP 404 or the like back is not
+a problem for libcurl. It is not an HTTP transfer error. A user might be
 writing a client for testing a server's HTTP responses.
 
 If you insist on curl treating HTTP response codes from 400 and up as errors,

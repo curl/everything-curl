@@ -5,7 +5,7 @@ it runs to see if a proxy is requested to get used.
 
 You specify the proxy by setting a variable named `[scheme]_proxy` to hold the
 proxy host name (the same way you would specify the host with `-x`). So if you
-want to tell curl to use a proxy when access a HTTP server, you set the
+want to tell curl to use a proxy when access an HTTP server, you set the
 'http_proxy' environment variable. Like this:
 
     http_proxy=http://proxy.example.com:80
@@ -37,7 +37,7 @@ server. When a CGI script is invoked by a server, it automatically creates
 environment variables for the script based on the incoming headers in the
 request. Those environment variables are prefixed with uppercase `HTTP_`!
 
-An incoming request to a HTTP server using a request header like `Proxy: yada`
+An incoming request to an HTTP server using a request header like `Proxy: yada`
 will therefore create the environment variable `HTTP_PROXY` set to contain
 `yada` before the CGI script is started. If that CGI script runs curl…
 

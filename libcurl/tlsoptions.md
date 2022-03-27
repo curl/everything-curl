@@ -41,7 +41,8 @@ that the certificate contains the server's name. Failing any of these checks
 will cause the transfer to fail.
 
 For development purposes and for experimenting, curl allows an application to
-switch off either or both of these checks for the server or for a HTTPS proxy.
+switch off either or both of these checks for the server or for an HTTPS
+proxy.
 
 - `CURLOPT_SSL_VERIFYPEER` controls the check that the certificate is signed
   by a trusted CA.

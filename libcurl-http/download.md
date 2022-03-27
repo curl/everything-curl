@@ -1,6 +1,6 @@
 ## libcurl HTTP download
 
-The GET method is the default method libcurl uses when a HTTP URL is requested
+The GET method is the default method libcurl uses when an HTTP URL is requested
 and no particular other method is asked for. It asks the server for a
 particular resource—the standard HTTP download request:
 
@@ -17,7 +17,7 @@ there is the `CURLOPT_HTTPGET` option:
 
 ### Download headers too
 
-A HTTP transfer also includes a set of response headers. Response headers are
+An HTTP transfer also includes a set of response headers. Response headers are
 metadata associated with the actual payload, called the response body. All
 downloads will get a set of headers too, but when using libcurl you can select
 whether you want to have them downloaded (seen) or not.

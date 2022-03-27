@@ -14,3 +14,5 @@ don't:do not
 could've:could have
 doesn't:does not
 isn't:is not
+a http:an http
+a ftp:an ftp

@@ -59,7 +59,7 @@ verify the server's response to make sure it serves for the name in the URL.
 The pattern you specify in the option needs be a host name and its
 corresponding port number and only if that exact pair is used in the URL will
 the address be substituted. For example, if you want to replace a host name in
-a HTTPS URL on its default port number, you need to tell curl it is for port
+an HTTPS URL on its default port number, you need to tell curl it is for port
 443, like:
 
     curl --resolve example.com:443:192.168.0.1 https://example.com/

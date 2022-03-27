@@ -6,7 +6,7 @@ someone to eavesdrop on your traffic the local network where you or the proxy
 reside. Because over the connection between curl and the proxy, the data is
 sent in the clear.
 
-One solution for that is to use a HTTPS proxy, speaking HTTPS to the proxy,
+One solution for that is to use an HTTPS proxy, speaking HTTPS to the proxy,
 which then establishes a secure and encrypted connection that is safe from
 easy surveillance.
 

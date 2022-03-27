@@ -11,7 +11,7 @@ provide the data to upload.
 
 POST is typically the HTTP method to pass data to a remote web application. A
 common way to do that in browsers is by filling in a HTML form and pressing
-submit. It is the standard way for a HTTP request to pass on data to the
+submit. It is the standard way for an HTTP request to pass on data to the
 server. With libcurl you normally provide that data as a pointer and a length:
 
     curl_easy_setopt(easy, CURLOPT_POSTFIELDS, dataptr);
@@ -85,7 +85,7 @@ way to reject the transfer early and save the client from having to send a lot
 of data in vain before the server gets a chance to decline.
 
 The header is added by libcurl if HTTP uploading is done with `CURLOPT_UPLOAD`
-or if it is asked to do a HTTP POST for which the body size is either unknown
+or if it is asked to do an HTTP POST for which the body size is either unknown
 or known to be larger than 1024 bytes.
 
 A libcurl-using client can explicitly disable the use of the `Expect:` header

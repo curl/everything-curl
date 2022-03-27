@@ -83,8 +83,8 @@ if a proxy is requested to get used.
 
 You can specify the proxy by setting a variable named `[scheme]_proxy` to hold
 the proxy host name (the same way you would specify the host with `-x`). So if
-you want to tell curl to use a proxy when accessing a HTTP server, you set the
-'http_proxy' environment variable. Like this:
+you want to tell curl to use a proxy when accessing an HTTP server, you set
+the `http_proxy` environment variable. Like this:
 
     http_proxy=http://proxy.example.com:80
 
@@ -106,26 +106,26 @@ set NO_PROXY to be a single asterisk ('\*') to match all hosts.
 
 ## HTTP proxy
 
-The HTTP protocol details exactly how a HTTP proxy should be used. Instead of
+The HTTP protocol details exactly how an HTTP proxy should be used. Instead of
 sending the request to the actual remote server, the client (libcurl) instead
 asks the proxy for the specific resource. The connection to the HTTP proxy is
 made using plain unencrypted HTTP.
 
-If a HTTPS resource is requested, libcurl will instead issue a `CONNECT`
+If an HTTPS resource is requested, libcurl will instead issue a `CONNECT`
 request to the proxy. Such a request opens a tunnel through the proxy, where
 it passes data through without understanding it. This way, libcurl can
-establish a secure end-to-end TLS connection even when a HTTP proxy is
+establish a secure end-to-end TLS connection even when an HTTP proxy is
 present.
 
-You *can* proxy non-HTTP protocols over a HTTP proxy, but since this is mostly
-done by the CONNECT method to tunnel data through it requires that the proxy
-is configured to allow the client to connect to those other particular remote
-port numbers. Many HTTP proxies are setup to inhibit connections to other port
-numbers than 80 and 443.
+You *can* proxy non-HTTP protocols over an HTTP proxy, but since this is
+mostly done by the CONNECT method to tunnel data through it requires that the
+proxy is configured to allow the client to connect to those other particular
+remote port numbers. Many HTTP proxies are setup to inhibit connections to
+other port numbers than 80 and 443.
 
 ## HTTPS proxy
 
-A HTTPS proxy is similar to a HTTP proxy but allows the client to connect to
+An HTTPS proxy is similar to an HTTP proxy but allows the client to connect to
 it using a secure HTTPS connection. Since the proxy connection is separate
 from the connection to the remote site even in this situation, as HTTPS to the
 remote site will be tunnelled through the HTTPS connection to the proxy,

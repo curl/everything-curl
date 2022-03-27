@@ -1,8 +1,8 @@
 # HTTP responses
 
-Every HTTP request includes a HTTP response. A HTTP response is a set of
+Every HTTP request includes an HTTP response. An HTTP response is a set of
 metadata and a response body, where the body can occasionally be zero bytes
-and thus nonexistent. A HTTP response will however always have response
+and thus nonexistent. An HTTP response will however always have response
 headers.
 
 The response body will be passed to the [write
@@ -51,9 +51,9 @@ which the server uses to signal that there was an error processing the request,
 it is important to realize that this will not cause libcurl to return an
 error.
 
-When libcurl is asked to perform a HTTP transfer it will return an error if that
-HTTP transfer fails. However, getting a HTTP 404 or the like back is not a
-problem for libcurl. It is not a HTTP transfer error. A user might be
+When libcurl is asked to perform an HTTP transfer it will return an error if
+that HTTP transfer fails. However, getting an HTTP 404 or the like back is not
+a problem for libcurl. It is not an HTTP transfer error. A user might be
 writing a client for testing a server's HTTP responses.
 
 If you insist on curl treating HTTP response codes from 400 and up as errors,

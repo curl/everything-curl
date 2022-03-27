@@ -13,3 +13,4 @@ there.
   * [Linux](get/linux.md)
   * [Windows](get/windows.md)
   * [macOS](get/macos.md)
+  * [Docker](get/docker.md)

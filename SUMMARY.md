@@ -219,6 +219,7 @@
         * [Set string options](libcurl/options/strings.md)
         * [TLS options](libcurl/options/tls.md)
         * [All options](libcurl/options/all.md)
+        * [Get option information](libcurl/options/info.md)
     * [CURLcode return codes](libcurl/curlcode.md)
     * [Verbose operations](libcurl/verbose.md)
     * [libcurl examples](libcurl/examples.md)

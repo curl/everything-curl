@@ -123,6 +123,9 @@ curl-users
 curl_easy_cleanup
 curl_easy_getinfo
 curl_easy_init
+curl_easy_option_by_id
+curl_easy_option_by_next
+curl_easy_option_by_next
 curl_easy_perform
 curl_easy_reset
 curl_easy_setopt

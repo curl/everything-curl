@@ -222,6 +222,7 @@
         * [Get option information](libcurl/options/info.md)
     * [CURLcode return codes](libcurl/curlcode.md)
     * [Verbose operations](libcurl/verbose.md)
+    * [Caches](libcurl/caches.md)
     * [libcurl examples](libcurl/examples.md)
         * [Get a simple HTTP page](libcurl/examples/get.md)
         * [Get a page in memory](libcurl/examples/getinmem.md)

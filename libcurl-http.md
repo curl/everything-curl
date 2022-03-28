@@ -11,7 +11,7 @@ layer and server verification etc is done automatically and transparently by
 default. Just use the `https://` scheme in the URL.
 
 HTTPS is HTTP with TLS on top. See also the [TLS
-options](libcurl/tlsoptions.md) section.
+options](libcurl/options/tls.md) section.
 
 ## HTTP proxy
 

@@ -14,7 +14,7 @@ interface](sharing.md).
 
 When libcurl resolves a host name to one or more IP addresses, that is stored
 in the DNS cache so that subsequent transfers in the near term will not have
-to redo the same resolve again. A name resolve easily take several hundred
+to redo the same resolve again. A name resolve can easily take several hundred
 milliseconds and sometimes even much longer.
 
 By default, each such host name is stored in the cache for 60 seconds
@@ -27,7 +27,7 @@ keeps using stale addresses longer periods than necessary.
 
 ## Connection cache
 
-Also sometimes refered to as the connection pool. This is a collection of
+Also sometimes referred to as the connection pool. This is a collection of
 previously used connections that instead of being closed after use, are kept
 around alive so that subsequent transfers that are targeting the same host
 name and have several other checks also matching, can use them instead of

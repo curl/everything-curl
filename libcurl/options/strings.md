@@ -19,8 +19,8 @@ appliction using this option **must** keep the memory around for the entire
 duration of the associated transfer.
 
 If that is problematic, an alternative is to instead use
-`CURLOPT_COPYPOSTFIELDS` which copies the data. If the data is binary and
-doesn't stop at the first present of a null byte, make sure that
+`CURLOPT_COPYPOSTFIELDS` which copies the data. If the data is binary and does
+not stop at the first present of a null byte, make sure that
 `CURLOPT_POSTFIELDSIZE` is set *before* this option is used.
 
 ## C++

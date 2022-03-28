@@ -237,6 +237,7 @@
     * [Upload](libcurl-http/upload.md)
     * [Multiplexing](libcurl-http/multiplexing.md)
     * [HSTS](libcurl-http/hsts.md)
+    * [alt-svc](libcurl-http/alt-svc.md)
 * [Bindings](bindings.md)
 * [libcurl internals](internals.md)
     * [Easy handles and connections](internals/easy.md)

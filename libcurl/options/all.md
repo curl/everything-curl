@@ -46,7 +46,7 @@ This is a table of a complete list of all available options for
 | `CURLOPT_DEBUGFUNCTION`             | debug callback |
 | `CURLOPT_DEFAULT_PROTOCOL`          | default protocol to use if the URL is missing a |
 | `CURLOPT_DIRLISTONLY`               | ask for names only in a directory listing |
-| `CURLOPT_DISALLOW_USERNAME_IN_URL`  | disallow specifying username in the url |
+| `CURLOPT_DISALLOW_USERNAME_IN_URL`  | disallow specifying username in the URL |
 | `CURLOPT_DNS_CACHE_TIMEOUT`         | life-time for DNS cache entries |
 | `CURLOPT_DNS_INTERFACE`             | interface to speak DNS over |
 | `CURLOPT_DNS_LOCAL_IP4`             | IPv4 address to bind DNS resolves to |

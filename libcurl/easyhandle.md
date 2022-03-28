@@ -53,8 +53,8 @@ again, or call `curl_easy_reset()` on the handle.
 ## Reset
 
 By calling `curl_easy_reset()`, all options for the given easy handle will be
-reset and restored to their default values. The exact same values the options
-had when the handle was initially created. The caches remain intact.
+reset and restored to their default values. The same values the options had
+when the handle was initially created. The caches remain intact.
 
 ## Duplicate
 

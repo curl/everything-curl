@@ -6,9 +6,9 @@ toolchain:tool chain
 tool-chain:tool chain
 wild-card:wildcard
 wild card:wildcard
-I'm:I am
-You've:You have
-They're:They are
+i'm:I am
+you've:You have
+they're:They are
 should've:should have
 don't:do not
 could've:could have
@@ -16,3 +16,5 @@ doesn't:does not
 isn't:is not
 a http:an http
 a ftp:an ftp
+ url =URL
+internet=Internet

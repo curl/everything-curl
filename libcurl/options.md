@@ -29,28 +29,9 @@ works it returns OK.
 It is, of course, good form to check the return code to see that nothing went
 wrong.
 
-## Setting numerical options
+## Get options
 
-Since `curl_easy_setopt()` is a vararg function where the 3rd argument can use
-different types depending on the situation, normal C language type conversion
-cannot be done. So you **must** make sure that you truly pass a `long` and not
-an `int` if the documentation tells you so. On architectures where they are
-the same size, you may not get any problems but not all work like
-that. Similarly, for options that accept a `curl_off_t` type, it is
-**crucial** that you pass in an argument using that type and no other.
-
-Enforce a `long`:
-
-    curl_easy_setopt(handle, CURLOPT_TIMEOUT, 5L); /* 5 seconds timeout */
-
-Enforce a `curl_off_t`:
-
-    curl_off_t no_larger_than = 0x50000;
-    curl_easy_setopt(handle, CURLOPT_MAXFILESIZE_LARGE, no_larger_than);
-
-## Get handle options
-
-No, there is no general method to extract the same information you previously
-set with `curl_easy_setopt()`! If you need to be able to extract the
-information again that you set earlier, then we encourage you to keep track of
-that data yourself in your application.
+There is no way to extract the values previously set with
+`curl_easy_setopt()`. If you need to be able to extract the information again
+that you set earlier, we encourage you to keep track of that data yourself in
+your application.

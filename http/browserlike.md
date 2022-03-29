@@ -44,7 +44,7 @@ when you traverse the site with curl.
 ## Web logins and sessions
 
 The site at https://example.com/ features a login prompt. The login on the web
-site is a HTML form to which you send a [HTTP POST](post.md) to. Save the
+site is an HTML form to which you send a [HTTP POST](post.md) to. Save the
 response cookies and the response (HTML) output.
 
 Although the login page is visible (if you would use a browser) on
@@ -77,8 +77,8 @@ tag anyway, you could do something like this first:
 
     curl -c cookies https://example.com/ -o loginform
 
-You would often need a HTML parser or some scripting language to extract the id
-field from there and then you can proceed and login as mentioned above, but
+You would often need an HTML parser or some scripting language to extract the
+id field from there and then you can proceed and login as mentioned above, but
 with the added cookie loading (I am splitting the line into two lines to make
 it more readable):
 

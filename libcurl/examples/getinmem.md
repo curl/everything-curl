@@ -1,4 +1,4 @@
-# Get a HTML page in memory
+# Get a response into memory
 
 This example is a variation of the former that instead of sending the received
 data to stdout (which often is not what you want), this example instead stores

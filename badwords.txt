@@ -2,8 +2,8 @@ back-end:backend
 e-mail:email
 run-time:runtime
 set-up:setup
-toolchain:tool chain
-tool-chain:tool chain
+tool chain:toolchain
+tool-chain:toolchain
 wild-card:wildcard
 wild card:wildcard
 i'm:I am

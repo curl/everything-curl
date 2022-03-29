@@ -225,7 +225,7 @@
     * [Caches](libcurl/caches.md)
     * [libcurl examples](libcurl/examples.md)
         * [Get a simple HTTP page](libcurl/examples/get.md)
-        * [Get a page in memory](libcurl/examples/getinmem.md)
+        * [Get a response into memory](libcurl/examples/getinmem.md)
         * [Submit a login form over HTTP](libcurl/examples/login.md)
         * [Get an FTP directory listing](libcurl/examples/ftplist.md)
         * [Non-blocking HTTP form-post](libcurl/examples/http-ul-nonblock.md)

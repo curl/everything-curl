@@ -156,6 +156,7 @@
         * [User-agent](http/modify/user-agent.md)
     * [HTTP PUT](http/put.md)
     * [Cookies](http/cookies.md)
+        * [Cookie file format](http/cookies/fileformat.md)
     * [HTTP/2](http/http2.md)
     * [Alternative Services](http/altsvc.md)
     * [HTTP/3](http/http3.md)

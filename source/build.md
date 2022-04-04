@@ -69,7 +69,7 @@ running `./buildconf` and on Windows, run `buildconf.bat`.
 
 There are two distinctly different ways to build curl on Linux and other
 Unix-like systems; there is the one using [the configure
-script](build/autotools.md]) and there is [the CMake
+script](build/autotools.md) and there is [the CMake
 approach](build/cmake.md).
 
 There are two different build environments to cater to people's different

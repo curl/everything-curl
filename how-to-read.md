@@ -6,22 +6,22 @@ Here is an overview of the main sections of this book and what they cover.
 
 Project things. How it started, how we work and how often releases are made.
 
-## 2. [Get curl](get.md)
+## 2. [Network and protocols](protocols.md)
+
+What exactly are networks and protocols?
+
+## 3. [Install curl](get.md)
 
 How and where to get and install curl.
 
-## 3. [Open Source](opensource.md)
-
-An attempt to explain what open source is and how it works.
-
-## 4. [The source code](source.md)
+## 4. [Source code](source.md)
 
 A description of the curl source tree and how the layout of the code is and
 works.
 
-## 5. [Network and protocols](protocols.md)
+## 5. [Build curl](build.md)
 
-What exactly are networks and protocols?
+How to build curl and libcurl from source.
 
 ## 6. [Command line basics](cmdline.md)
 

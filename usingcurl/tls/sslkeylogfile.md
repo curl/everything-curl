@@ -35,7 +35,7 @@ use libcurl - not just the curl command line tool.
 
 ## Restrictions
 
-The support for `SSLKEYLOGFILE` requires that (lib)was built with a TLS
+The support for `SSLKEYLOGFILE` requires that curl was built with a TLS
 backend that supports this feature. The backends that support SSLKEYLOGFILE
 are: OpenSSL, libressl, BoringSSL, GnuTLS, NSS and wolfSSL.
 

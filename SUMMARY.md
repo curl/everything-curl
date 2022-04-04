@@ -7,6 +7,7 @@
     * [Mailing list etiquette](project/etiquette.md)
     * [Mailing lists](project/maillists.md)
     * [Reporting bugs](project/bugs.md)
+    * [Commercial support](project/support.md)
     * [Releases](project/releases.md)
     * [Security](project/security.md)
     * [Trust](project/trust.md)

@@ -22,6 +22,5 @@ In the curl project we build trust for our users in a few different ways:
    to do it responsibly. We do our best to not endanger our users.
 
 5. We act like adults. We can be silly and we can joke around, but we do it
-   responsibly and we follow our [Code of
-   Conduct](../source/opensource/coc.md). Everyone should be able to even
-   trust us to behave.
+   responsibly and we follow our [Code of Conduct](coc.md). Everyone should be
+   able to even trust us to behave.

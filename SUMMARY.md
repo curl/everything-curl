@@ -10,6 +10,8 @@
     * [Releases](project/releases.md)
     * [Security](project/security.md)
     * [Trust](project/trust.md)
+    * [Code of Conduct](project/coc.md)
+    * [Development](project/devel.md)
     * [The development team](project/devteam.md)
     * [Users of curl](project/users.md)
     * [Future](project/future.md)
@@ -28,8 +30,6 @@
     * [Open Source](source/opensource.md)
         * [License](source/opensource/license.md)
         * [Copyright and Legal](source/opensource/copyright.md)
-        * [Code of Conduct](source/opensource/coc.md)<
-        * [Development](source/opensource/devel.md)
     * [Code layout](source/layout.md)
     * [Handling build options](source/options.md)
     * [Code style](source/style.md)

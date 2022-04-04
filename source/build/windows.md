@@ -4,7 +4,7 @@ You can build curl on Windows in several different ways. We recommend using
 the MSVC compiler from Microsoft or the free and open source mingw
 compiler. The build process is, however, not limited to these.
 
-If you use mingw, you might want to use the [autotools.md](autotools) build
+If you use mingw, you might want to use the [autotools](autotools.md) build
 system.
 
 ## winbuild

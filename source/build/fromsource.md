@@ -33,8 +33,8 @@ running `./buildconf` and on Windows, run `buildconf.bat`.
 ## On Linux and Unix-like systems
 
 There are two distinctly different ways to build curl on Linux and other
-Unix-like systems; there is the one using [autotools.md](the configure script)
-and there is [cmake.md](the CMake approach).
+Unix-like systems; there is the one using [the configure script](autotools.md])
+and there is [the CMake approach](cmake.md).
 
 There are two different build environments to cater to people's different
 opinions and tastes. The configure-based build is arguably the more mature and
@@ -44,7 +44,7 @@ one.
 ## On Windows
 
 On Windows there are at least four different ways to build. The above
-mentioned ways, [cmake.md](the CMake approach) and using
+mentioned ways, [the CMake approach](cmake.md) and using
 [configure](autotools.md) with msys work, but the more popular and common
 methods are probably building with Microsoft's Visual Studio compiler using
 either `nmake` or project files. See the build on [windows](windows.md)

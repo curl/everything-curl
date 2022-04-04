@@ -17,9 +17,9 @@ different options will be explored below.
 
 ## The latest version?
 
-Looking at the curl website at https://curl.se you can see the latest
-curl and libcurl version released from the project. That is the latest source
-code package you can get.
+Looking at the [curl website](https://curl.se), you can see the latest curl and
+libcurl version released from the project. That is the latest source code
+release package you can get.
 
 When you opt for a prebuilt and prepackaged version for your operating system
 or distribution of choice, you may not always find the latest version but you

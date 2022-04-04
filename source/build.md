@@ -29,9 +29,68 @@ for your environment, or you need to build it yourself from source.
 The curl project also provides info about the latest version in a somewhat
 more machine-readable format on this URL: `https://curl.se/info`.
 
-## off git!
+## Releases source code
 
-Of course, when building from source you can also always opt to build the
-latest version that exist in the [git
+The curl project creates source code that can be built to produce the two
+products curl and libcurl. The conversion from source code to binaries
+is often referred to as "building". You build curl and libcurl from source.
+
+The curl project does not provide any built binaries at all — it only ships
+the source code. The binaries which can be found on the download page of the
+curl web and installed from other places on the Internet are all built and
+provided to the world by other friendly people and organizations.
+
+The source code consists of a large number of files containing C
+code. Generally speaking, the same set of files are used to build binaries for
+all platforms and computer architectures that curl supports. curl can be built
+and run on a vast number of platforms. If you use a rare operating system
+yourself, chances are that building curl from source is the easiest or perhaps
+the only way to get curl.
+
+Making it easy to build curl is a priority to the curl project, although we do
+not always necessarily succeed!
+
+## git vs release tarballs
+
+When release tarballs are created, a few files are generated and included in
+the final release bundle. Those generated files are not present in the git
+repository, because they are generated and there is no need to store them in
+git.
+
+Of course, can also opt to build the latest version that exist in the [git
 repository](https://github.com/curl/curl). It could however be a bit more
 fragile and probably requires slightly more attention to detail.
+
+If you build curl from a git checkout, you need to generate some files
+yourself before you can build. On Linux and Unix-like systems, do this by
+running `./buildconf` and on Windows, run `buildconf.bat`.
+
+## On Linux and Unix-like systems
+
+There are two distinctly different ways to build curl on Linux and other
+Unix-like systems; there is the one using [the configure
+script](build/autotools.md) and there is [the CMake
+approach](build/cmake.md).
+
+There are two different build environments to cater to people's different
+opinions and tastes. The configure-based build is arguably the more mature and
+more encompassing build system and should probably be considered the default
+one.
+
+## On Windows
+
+On Windows there are at least four different ways to build. The above
+mentioned ways, [the CMake approach](build/cmake.md) and using
+[configure](build/autotools.md) with msys work, but the more popular and
+common methods are probably building with Microsoft's Visual Studio compiler
+using either `nmake` or project files. See the build on
+[windows](build/windows.md) section.
+
+## Learn more
+
+* [Autotools](build/autotools.md) - build with configure
+* [CMake](build/cmake.md)
+* [On Windows](build/windows.md) - Windows-specific ways to build
+* [Dependencies](build/deps.md)
+* [TLS libraries](build/tls.md)
+

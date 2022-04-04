@@ -32,3 +32,12 @@ that traffic capture at a later time as well.
 Support for `SSLKEYLOGFILE` is provided by libcurl itself - making it possible
 for you to trace and inspect the TLS network data for any application built to
 use libcurl - not just the curl command line tool.
+
+## Restrictions
+
+The support for `SSLKEYLOGFILE` requires that curl was built with a TLS
+backend that supports this feature. The backends that support SSLKEYLOGFILE
+are: OpenSSL, libressl, BoringSSL, GnuTLS, NSS and wolfSSL.
+
+If curl was built to use another backend, you cannot record your curl TLS
+traffic this way.

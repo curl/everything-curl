@@ -218,7 +218,7 @@ This is a table of a complete list of all available options for
 | `CURLOPT_RTSP_SESSION_ID`           | RTSP session ID |
 | `CURLOPT_RTSP_STREAM_URI`           | RTSP stream URI |
 | `CURLOPT_RTSP_TRANSPORT`            | RTSP Transport: header |
-| `CURLOPT_SASL_AUTHZID`              | authorisation identity (identity to act as) |
+| `CURLOPT_SASL_AUTHZID`              | authorization identity (identity to act as) |
 | `CURLOPT_SASL_IR`                   | send initial response in first packet |
 | `CURLOPT_SEEKDATA`                  | pointer passed to the seek callback |
 | `CURLOPT_SEEKFUNCTION`              | user callback for seeking in input stream |

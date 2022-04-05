@@ -19,3 +19,4 @@ isn't:is not
  a ftp: an ftp
  url =URL
 internet=Internet
+isation:ization

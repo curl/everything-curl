@@ -75,12 +75,14 @@ You implement the callback in a manner similar to:
 
     int main()
     {
-      struct response chunk;
+      struct response chunk = {.memory = malloc(0),
+                               .size = 0};
 
       /* send all data to this function  */
       curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, mem_cb);
 
       /* we pass our 'chunk' to the callback function */
       curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *)&chunk);
-
+    
+      free(chunk.memory);
     }

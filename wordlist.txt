@@ -530,7 +530,6 @@ winbuild
 WinSock
 WinSSL
 Wireshark
-wireshark
 wolfSSH
 wolfSSL
 www

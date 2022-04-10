@@ -1,6 +1,6 @@
 # SSLKEYLOGFILE
 
-![view network traffic with wireshark](wireshark-screenshot.png)
+![view network traffic with Wireshark](wireshark-screenshot.png)
 
 Since a long time back, the venerable network analyzer tool Wireshark
 (screenshot above) has provided a way to decrypt and inspect TLS traffic when

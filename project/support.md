@@ -11,4 +11,4 @@ code reviews of libcurl API use, security scanning your curl use and more -
 with several different support options from basic up to full 24/7 support.
 With guaranteed response times.
 
-See [curl.se/support.html](https://curl.se/support.html) for contact details.
+See [the support page](https://curl.se/support.html) for contact details.

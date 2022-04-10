@@ -15,7 +15,7 @@ what additional arguments to provide to them.
 If you specify the filename as a single dash, as in `--libcurl -` you will get
 the program written to stdout instead of a file.
 
-As an example, we run a command to just get http://example.com:
+As an example, we run a command to get `http://example.com`:
 
     curl http://example.com --libcurl example.c
 

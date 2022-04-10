@@ -58,11 +58,11 @@ shared libraries.
 
 One of the differences between linking with a static library compared to
 linking with a shared one is in how shared libraries handle their own
-dependencies while static ones do not. In order to link with library xyz as a
-shared library, it is as basically a matter of adding `-lxyz` to the linker
-command line no matter which other libraries xyz itself was built to use. But,
-if that xyz is instead a static library we also need to specify each of xyz's
-dependencies on the linker command line. curl's configure typically cannot
+dependencies while static ones do not. In order to link with library `xyz` as
+a shared library, it is as basically a matter of adding `-lxyz` to the linker
+command line no matter which other libraries `xyz` itself was built to
+use. But, if that `xyz` is instead a static library we also need to specify
+each dependency of `xyz` on the linker command line. curl's configure cannot
 keep up with or know all possible dependencies for all the libraries it can be
 made to build with, so users wanting to build with static libs mostly need to
 provide that list of libraries to link with.
@@ -83,9 +83,9 @@ automatically check for OpenSSL, but modern versions do not.
  - NSS: `--with-nss`
  - OpenSSL: `--with-openssl`
  - Rustls: `--with-rustls` (point to the rustls-ffi install path)
- - schannel: `--with-schannel`
- - secure transport: `--with-secure-transport`
- - Wolfssl: `--with-wolfssl`
+ - Schannel: `--with-schannel`
+ - Secure Transport: `--with-secure-transport`
+ - wolfSSL: `--with-wolfssl`
 
 If you do not specify which TLS library to use, the configure script will
 fail. If you want to build *without* TLS support, you must explicitly ask for

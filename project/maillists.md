@@ -10,7 +10,7 @@ protocols curl can speak or even related tools. We tend to move development
 issues or more advanced bug fixes discussions over to curl-library instead,
 since libcurl is the engine that drives most of curl.
 
-See https://lists.haxx.se/listinfo/curl-users
+See [curl-users](https://lists.haxx.se/listinfo/curl-users)
 
 ### curl-library
 
@@ -19,11 +19,12 @@ use libcurl in applications as well as development of libcurl itself. You will
 find lots of questions on libcurl behavior, debugging and documentation
 issues.
 
-See https://lists.haxx.se/listinfo/curl-library
+See [curl-library](https://lists.haxx.se/listinfo/curl-library)
 
 ### curl-announce
 
 This mailing list only gets announcements about new releases and security
 problems—nothing else. This one is for those who want a more casual feed of
 information from the project.
-https://lists.haxx.se/listinfo/curl-announce
+
+See [curl-announce](https://lists.haxx.se/listinfo/curl-announce)

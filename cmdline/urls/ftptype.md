@@ -8,8 +8,8 @@ is. This is because FTP is a little special and can change mode for a transfer
 and thus handle the file differently than if it would use another mode.
 
 You tell curl that the FTP resource is an ASCII type by appending `;type=A` to
-the URL. Getting the `foo` file from example.com's root directory using ASCII
-could then be made with:
+the URL. Getting the `foo` file from the root directory of `example.com` using
+ASCII could then be made with:
 
     curl "ftp://example.com/foo;type=A"
 

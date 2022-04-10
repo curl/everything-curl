@@ -81,8 +81,8 @@ differently. curl, of course, has a solution for these situations as well:
 output file name variables.
 
 Each "glob" used in a URL gets a separate variable. They are referenced as
-'#[num]' - that means the single character '#' followed by the glob number which
-starts with 1 for the first glob and ends with the last glob.
+`#[num]` - that means the single character `#` followed by the glob number
+which starts with 1 for the first glob and ends with the last glob.
 
 Save the main pages of two different sites:
 

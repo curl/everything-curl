@@ -128,7 +128,7 @@ other port numbers than 80 and 443.
 An HTTPS proxy is similar to an HTTP proxy but allows the client to connect to
 it using a secure HTTPS connection. Since the proxy connection is separate
 from the connection to the remote site even in this situation, as HTTPS to the
-remote site will be tunnelled through the HTTPS connection to the proxy,
+remote site will be tunneled through the HTTPS connection to the proxy,
 libcurl provides a whole set of TLS options for the proxy connection that are
 separate from the connection to the remote host.
 

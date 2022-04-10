@@ -26,12 +26,12 @@ The **clientp** pointer points to the private data set with
 The callback gets told how much data libcurl will transfer and has
 transferred, in number of bytes:
 
- - **dltotal** is the total number of bytes libcurl expects to download in
+ - `dltotal` is the total number of bytes libcurl expects to download in
    this transfer.
- - **dlnow** is the number of bytes downloaded so far.
- - **ultotal** is the total number of bytes libcurl expects to upload in this
+ - `dlnow` is the number of bytes downloaded so far.
+ - `ultotal` is the total number of bytes libcurl expects to upload in this
    transfer.
- - **ulnow** is the number of bytes uploaded so far.
+ - `ulnow` is the number of bytes uploaded so far.
 
 Unknown/unused argument values passed to the callback will be set to zero
 (like if you only download data, the upload size will remain 0). Many times

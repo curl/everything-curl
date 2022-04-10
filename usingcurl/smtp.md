@@ -98,8 +98,9 @@ to the mail server at `mail.example.com`, use:
 
 When you send email with an ordinary mail client, it will first check for an
 MX record for the particular domain you want to send email to. If you send an
-email to joe@example.com, the client will get the MX records for `example.com`
-to learn which mail server(s) to use when sending email to example.com users.
+email to `joe@example.com`, the client will get the MX records for
+`example.com` to learn which mail server(s) to use when sending email to
+example.com users.
 
 curl does no MX lookups by itself. If you want to figure out which server to
 send an email to for a particular domain, we recommend you figure that out

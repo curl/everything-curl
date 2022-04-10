@@ -36,7 +36,7 @@ triggered by HTML or involve a browser. Lots of services, APIs and other systems
 allow you to pass in data these days in order to get things done.
 
 If these services expect plain "raw" data or perhaps data formatted as JSON or
-similar, you want the [regular POST](post.md) approach. curl's `-d`
-option does not alter or encode the data at all but will just send exactly
-what you tell it to. Just pay attention to -d's default Content-Type as that
+similar, you want the [regular POST](post.md) approach. curl's `-d` option
+does not alter or encode the data at all but will just send exactly what you
+tell it to. Just pay attention that `-d` sets a default `Content-Type:` that
 might not be what you want.

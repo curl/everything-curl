@@ -48,7 +48,7 @@ Some of these variables are not available in really old curl versions.
 | `ftp_entry_path` | The initial path curl ended up in when logging on to the remote FTP server.                      |
 | `http_code`     | The former variable name for what is now known as `response_code`.                               |
 | `http_connect`   | the numerical code that was found in the last response (from a proxy) to a curl CONNECT request. |
-| `http_version`   | The http version that was used.                                                                  |
+| `http_version`   | The HTTP version that was used.                                                                  |
 | `json`           | all write-out variables as a single JSON object.                                                 |
 | `local_ip` | IP address of the local end of the most recently used connection - can be either IPv4 or IPv6 |
 | `local_port` | Local port number of the most recently used connection |

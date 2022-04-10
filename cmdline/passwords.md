@@ -7,9 +7,9 @@ curl offers several ways to receive passwords from the user and then
 subsequently pass them on or use them to something else.
 
 The most basic curl authentication option is `-u / --user`. It accepts an
-argument that is the user name and password, colon separated. Like when alice
-wants to request a page requiring HTTP authentication and her password is
-`12345`:
+argument that is the user name and password, colon separated. Like when
+`alice` wants to request a page requiring HTTP authentication and her password
+is `12345`:
 
     $ curl -u alice:12345 http://example.com/
 

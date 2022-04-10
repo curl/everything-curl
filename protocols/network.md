@@ -61,7 +61,7 @@ port numbers at the same time.
 
 Most common protocols have default port numbers that clients and servers
 use. For example, when using the `http://example.com/index.html` URL, that URL
-specifies a scheme called "http" which tells the client that it should try TCP
+specifies a scheme called "HTTP" which tells the client that it should try TCP
 port number 80 on the server by default. The URL can optionally provide
 another, custom, port number but if nothing special is specified, it will use
 the default port for the scheme used in the URL.

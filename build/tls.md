@@ -37,7 +37,7 @@ using `--without-ssl`.
 
 configure will detect OpenSSL in its default path by default. You can
 optionally point configure to a custom install path prefix where it can find
-openssl:
+OpenSSL:
 
     ./configure --with-openssl=/home/user/installed/openssl
 
@@ -60,7 +60,7 @@ gnutls:
     ./configure --with-nss
 
 configure will detect NSS in its default path by default. You can optionally
-point configure to a custom install path prefix where it can find nss:
+point configure to a custom install path prefix where it can find NSS:
 
     ./configure --with-nss=/home/user/installed/nss
 

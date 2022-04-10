@@ -51,17 +51,17 @@ happening. The different fields in the output have the following meaning:
 
 From left to right:
 
-|Title|Meaning|
-|-----|-------|
-| %        |Percentage completed of the whole transfer              |
-|Total     |Total size of the whole expected transfer (if known)    |
-| %        |Percentage completed of the download                    |
-| Received |Currently downloaded number of bytes                    |
-| %        |Percentage completed of the upload                      | 
-|Xferd     |Currently uploaded number of bytes                      |
-|Average Speed Dload| Average transfer speed of the entire download so far, in number of bytes per second |
-|Average Speed Upload| Average transfer speed of the entire upload so far, in number of bytes per second |
-|Time Total|Expected time to complete the operation, in HH:MM:SS notation for hours, minutes and seconds |
-|Time Current|Time passed since the start of the transfer, in HH:MM:SS notation for hours, minutes and seconds |
-|Time Left |Expected time left to completion, in HH:MM:SS notation for hours, minutes and seconds |
-|Curr.Speed|Average transfer speed over the last 5 seconds (the first 5 seconds of a transfer is based on less time, of course) in number of bytes per second |
+| Title                  | Meaning                                                                                                                                           |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| `%`                    | Percentage completed of the whole transfer                                                                                                        |
+| `Total`                | Total size of the whole expected transfer (if known)                                                                                              |
+| `%`                    | Percentage completed of the download                                                                                                              |
+| `Received`             | Currently downloaded number of bytes                                                                                                              |
+| `%`                    | Percentage completed of the upload                                                                                                                |
+| `Xferd`                | Currently uploaded number of bytes                                                                                                                |
+| `Average Speed Dload`  | Average transfer speed of the entire download so far, in number of bytes per second                                                               |
+| `Average Speed Upload` | Average transfer speed of the entire upload so far, in number of bytes per second                                                                 |
+| `Time Total`           | Expected time to complete the operation, in `HH:MM:SS` notation for hours, minutes and seconds                                                      |
+| `Time Current`         | Time passed since the start of the transfer, in `HH:MM:SS` notation for hours, minutes and seconds                                                  |
+| `Time Left`            | Expected time left to completion, in `HH:MM:SS` notation for hours, minutes and seconds                                                             |
+| `Curr. Speed`          | Average transfer speed over the last 5 seconds (the first 5 seconds of a transfer is based on less time, of course) in number of bytes per second |

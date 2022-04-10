@@ -13,9 +13,9 @@ Set a URL in the handle:
 
 ## `CURLOPT_POSTFIELDS`
 
-The exeception to the rule that libcurl always copies data,
+The exception to the rule that libcurl always copies data,
 `CURLOPT_POSTFIELDS` only stores the pointer to the data, meaning an
-appliction using this option **must** keep the memory around for the entire
+application using this option **must** keep the memory around for the entire
 duration of the associated transfer.
 
 If that is problematic, an alternative is to instead use

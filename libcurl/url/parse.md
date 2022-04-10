@@ -6,7 +6,7 @@ You parse a full URL by *setting* the `CURLUPART_URL` part in the handle:
     rc = curl_url_set(h, CURLUPART_URL,
                       "https://example.com:449/foo/bar?name=moo", 0);
 
-If successful, rc contains `CURLUE_OK` and the different URL components are
+If successful, `rc` contains `CURLUE_OK` and the different URL components are
 held in the handle. It means that the URL was valid as far as libcurl
 concerns.
 

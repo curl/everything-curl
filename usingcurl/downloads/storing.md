@@ -17,8 +17,8 @@ difference:
     curl -o /tmp/index.html http://example.com/
     curl http://example.com -o ../../folder/savethis.html
 
-This is, of course, not limited to http:// URLs but works the same way no matter
-which type of URL you download:
+This is, of course, not limited to `http://` URLs but works the same way no
+matter which type of URL you download:
 
     curl -o file.txt ftp://example.com/path/to/file-name.ext
 

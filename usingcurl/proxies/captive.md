@@ -15,6 +15,6 @@ way is to use a browser to accept the conditions and "get rid of" the portal
 since from then on they often allow all other traffic originating from that
 same machine (MAC address) for a period of time.
 
-Most often you can use curl too to submit that "ok" affirmation, if you just
-figure out how to submit the form and what fields to include in it. If this is
+Most often you can use curl too to submit that affirmation, if you just figure
+out how to submit the form and what fields to include in it. If this is
 something you end up doing many times, it may be worth exploring.

@@ -8,8 +8,8 @@ when you use just the host name like in:
 The path is sent to the specified server to identify exactly which resource
 that is requested or that will be provided.
 
-The exact use of the path is protocol dependent. For example, getting a file
-README from the default anonymous user from an FTP server:
+The exact use of the path is protocol dependent. For example, getting the file
+`README` from the default anonymous user from an FTP server:
 
     curl ftp://ftp.example.com/README
 

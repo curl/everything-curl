@@ -52,7 +52,7 @@ If you want to extract the local port number that was used in that connection:
 | CURLINFO_FTP_ENTRY_PATH | char * | The entry path after logging in to an FTP server
 | CURLINFO_HEADER_SIZE    | long   | Number of bytes of all headers received
 | CURLINFO_HTTP_CONNECTCODE | long | Last proxy CONNECT response code
-| CURLINFO_HTTP_VERSION   | long   | The http version used in the connection
+| CURLINFO_HTTP_VERSION   | long   | The HTTP version used in the connection
 | CURLINFO_HTTPAUTH_AVAIL | long   | Available HTTP authentication methods (bitmask)
 | CURLINFO_LASTSOCKET     | long   | Last socket used
 | CURLINFO_LOCAL_IP       | char * | Local-end IP address of last connection

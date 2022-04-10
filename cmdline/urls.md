@@ -1,8 +1,8 @@
 # URLs
 
-curl is called curl because a substring in its name is URL (Uniform
-Resource Locator). It operates on URLs. URL is the name we casually use for
-the web address strings, like the ones we usually see prefixed with http:// or
+curl is called curl because a substring in its name is URL (Uniform Resource
+Locator). It operates on URLs. URL is the name we casually use for the web
+address strings, like the ones we usually see prefixed with `HTTP://` or
 starting with www.
 
 URL is, strictly speaking, the former name for these. URI (Uniform Resource

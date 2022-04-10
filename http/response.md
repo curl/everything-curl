@@ -58,17 +58,17 @@ numeric range and you can use `--write-out` to extract that code as well.
 An HTTP 1.1 server can decide to respond with a "chunked" encoded response, a
 feature that was not present in HTTP 1.0.
 
-When receiving a chunked response, there is no Content-Length: for the response
-to indicate its size. Instead, there is a `Transfer-Encoding: chunked` header
-that tells curl there is chunked data coming and then in the response body, the
-data comes in a series of "chunks". Every individual chunk starts with the
-size of that particular chunk (in hexadecimal), then a newline and then the
-contents of the chunk. This is repeated over and over until the end of the
-response, which is signalled with a zero sized chunk. The point of this
-response encoding is for the client to be able to figure out when the
-response has ended even though the server did not know the full size before
-it started to send it. This is usually the case when the response is dynamic
-and generated at the point when the request comes.
+When receiving a chunked response, there is no Content-Length: for the
+response to indicate its size. Instead, there is a `Transfer-Encoding:
+chunked` header that tells curl there is chunked data coming and then in the
+response body, the data comes in a series of "chunks". Every individual chunk
+starts with the size of that particular chunk (in hexadecimal), then a newline
+and then the contents of the chunk. This is repeated over and over until the
+end of the response, which is signaled with a zero sized chunk. The point of
+this response encoding is for the client to be able to figure out when the
+response has ended even though the server did not know the full size before it
+started to send it. This is usually the case when the response is dynamic and
+generated at the point when the request comes.
 
 Clients like curl will, of course, decode the chunks and not show the chunk
 sizes to users.

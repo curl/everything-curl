@@ -147,9 +147,9 @@ the `STARTTLS` command. See RFC 3207.
 
 ## SMTPS
 
-Secure SMTP, sometimes called SSMTP, is SMTP done over an SSL/TLS connection.
-Such connections implicitly start out using SSL/TLS and as such servers and
-clients use TCP port 465 to communicate with each other. See RFC 8314.
+Secure SMTP, is SMTP done over an SSL/TLS connection.  Such connections
+implicitly start out using SSL/TLS and as such servers and clients use TCP
+port 465 to communicate with each other. See RFC 8314.
 
 ## TELNET
 

@@ -67,7 +67,7 @@ If curl cannot authenticate with the public key for any reason, it will
 instead attempt to use the user name + password if the server allows it and
 the credentials are passed on the command line.
 
-For example, the same user from above has the password 'RHvxC6wUA' on a remote
+For example, the same user from above has the password `RHvxC6wUA` on a remote
 system and can download a file via SCP like this:
 
     curl -u john:RHvxC6wUA -O scp://ssh.example.com/file.tar.gz

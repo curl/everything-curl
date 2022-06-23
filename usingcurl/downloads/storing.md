@@ -30,3 +30,38 @@ stdout by using `-o -`.
 
 curl has several other ways to store and name the downloaded data. Details
 follow.
+
+## Overwriting
+
+When curl downloads a remote resource into a local file name as described
+above, it will overwrite that file in case it already existed. It will
+*clobber* it.
+
+curl offers a way to avoid this clobbering: `--no-clobber`.
+
+When using this option, and curl finds that there already exists a file with
+the given name, curl instead appends a period plus a number to the file name
+in an attempt to find a name that is not already used. It will start with `1`
+and then continue trying until it reaches `100` and pick the first available
+one.
+
+For example, if you ask curl to download a URL to `picture.png`, and in that
+directory there already are two files called `picture.png` and
+`picture.png.1`, the following will create save the file as `picture.png.2`:
+
+    curl --no-clobber https://example.com/image -o picture.png
+
+A user can use the [--write-out](../verbose/writeout.md) option's
+`%filename_effective` variable to figure out which name that was eventually
+used.
+
+## Leftovers on errors
+
+By default, if curl runs into a problem during a download and exits with an
+error, the partially transferred file will be left as-is. It could be a small
+fraction of the intended file, or it could be almost the entire thing. It is
+up to the user to decide what to do with the leftovers.
+
+The `--remove-on-error` command line option changes this behavior. It tells
+curl to delete any partially saved file if curl exits with an error. No more
+leftovers!

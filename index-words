@@ -36,12 +36,13 @@
 --negotiate
 --netrc-file
 --netrc-optional
+--no-clobber
 --no-eprt
 --no-epsv
 --ntlm
 --parallel
---parallel-max
 --parallel-immediate
+--parallel-max
 --path-as-is
 --post301
 --post302
@@ -52,6 +53,7 @@
 --proxytunnel
 --quote
 --remote-name-all
+--remove-on-error
 --resolve
 --retry
 --retry-all-errors

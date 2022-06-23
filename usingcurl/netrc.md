@@ -21,7 +21,7 @@ Each field is provided as a sequence of letters that ends with a space or
 newline. Since 7.84.0, curl also supports quoted strings. They start and end
 with double quotes (`"`) and support the escaped special letters `\"`, `\n`
 (newline), `\r` (carriage return), and `\t` (TAB). Quoted strings are the only
-way a space character can be used in a user namd or password.
+way a space character can be used in a user name or password.
 
 **machine name**
 

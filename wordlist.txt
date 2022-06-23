@@ -82,6 +82,7 @@ CSeq
 CTRL
 cURL
 CURLcode
+CURLH
 CURLHSTS
 curlimages
 CURLINFO

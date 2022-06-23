@@ -10,7 +10,7 @@
 This function returns information about a field with a specific **name**, and
 you ask the function to search for it in one or more **origins**.
 
-The **index** argument is when you want to ask for the nth occurance of a
+The **index** argument is when you want to ask for the nth occurrence of a
 header; when there are more than one available. Setting **index** to 0 will of
 course return the first instance - in many cases that is the only one.
 

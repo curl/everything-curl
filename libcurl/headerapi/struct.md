@@ -1,6 +1,6 @@
 # Header struct
 
-The header struct pointer the header API functions return, points to mmemory
+The header struct pointer the header API functions return, points to memory
 associated with the easy handle and subsequent calls to the functions will
 clobber that struct. Applications need to copy the data if they want to keep
 it around. The memory used for the struct gets freed with calling
@@ -22,7 +22,7 @@ instance of the header with this name.
 
 **value** is the content. It comes exactly as delivered over the network but
 with leading and trailing whitespace and newlines stripped off. The data is
-always nul-terminated.
+always null-terminated.
 
 **amount** is the number of headers using this name that exist, within the
 asked origin and request context.

@@ -87,6 +87,7 @@
         * [Retry](usingcurl/downloads/retry.md)
         * [Resuming and ranges](usingcurl/downloads/resume.md)
     * [Uploads](usingcurl/uploads.md)
+    * [Transfer controls](usingcurl/transfers.md)
     * [Connections](usingcurl/connections.md)
         * [Name resolve tricks](usingcurl/connections/name.md)
         * [Connection timeout](usingcurl/connections/timeout.md)

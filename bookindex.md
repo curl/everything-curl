@@ -202,8 +202,8 @@
  - Header callback: [Header callback](libcurl/callbacks/header.md#header-callback), [All easy options](libcurl/options/all.md#all-easy-options), [Response body](libcurl-http/responses.md#response-body), [Download headers too](libcurl-http/download.md#download-headers-too)
  - homebrew: [Get curl for macOS](get/macos.md#get-curl-for-macos)
  - Host:: [Verbose mode](usingcurl/verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl/verbose/trace.md#trace-and---trace-ascii), [Change the Host: header](usingcurl/connections/name.md#change-the-host:-header), [HTTP protocol basics](http/basics.md#http-protocol-basics), [The HTTP this generates](http/multipart.md#the-http-this-generates), [Customize headers](http/modify/headers.md#customize-headers), [Customize HTTP request headers](libcurl-http/requests.md#customize-http-request-headers)
- - --hsts: [HSTS cache](http/hsts.md#hsts-cache)
  - HSTS: [HTTP Strict Transport Security](http/hsts.md#http-strict-transport-security), [Callbacks](libcurl/callbacks.md#callbacks), [HSTS](libcurl/callbacks/hsts.md#hsts), [All easy options](libcurl/options/all.md#all-easy-options), [Sections](libcurl-http.md#sections), [HSTS](libcurl-http/hsts.md#hsts)
+ - --hsts: [HSTS cache](http/hsts.md#hsts-cache)
  - HTTP ranges: [HTTP ranges](http/ranges.md#http-ranges), [Sections](libcurl-http.md#sections), [HTTP ranges](libcurl-http/ranges.md#http-ranges)
  - HTTP redirects: [Short options](cmdline/options.md#short-options), [Available exit codes](usingcurl/returns.md#available-exit-codes), [HTTP redirects](http/redirects.md#http-redirects), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http)
  - HTTP Strict Transport Security: [HTTP Strict Transport Security](http/hsts.md#http-strict-transport-security), [HSTS](libcurl/callbacks/hsts.md#hsts)
@@ -225,12 +225,12 @@
  - IRC: [How it started](project/started.md#how-it-started), [Project communication](project/comm.md#project-communication)
 ## J
  - JavaScript: [Client differences](usingcurl/downloads/browsers.md#client-differences), [PAC](usingcurl/proxies/pac.md#pac), [HTTP POST](http/post.md#http-post), [JavaScript and forms](http/post/javascript.md#javascript-and-forms), [JavaScript redirects](http/redirects.md#javascript-redirects), [Figure out what the browser does](http/browserlike.md#figure-out-what-the-browser-does)
- - --json: [JSON](http/post/json.md#json)
  - json: [Arguments with spaces](cmdline/options.md#arguments-with-spaces), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [HTTP POST](http/post.md#http-post), [Content-Type](http/post/content-type.md#content-type), [JSON](http/post/json.md#json), [POST outside of HTML](http/postvspost.md#post-outside-of-html)
+ - --json: [JSON](http/post/json.md#json)
 ## K
  - -K: [Command lines, quotes and aliases](cmdline.md#command-lines,-quotes-and-aliases), [Config file](cmdline/configfile.md#config-file)
- - keep-alive: [Keep connections alive](usingcurl/timeouts.md#keep-connections-alive), [All easy options](libcurl/options/all.md#all-easy-options)
- - --keepalive-time: [Keep alive](usingcurl/connections/keepalive.md#keep-alive), [Keep connections alive](usingcurl/timeouts.md#keep-connections-alive)
+ - keep-alive: [All easy options](libcurl/options/all.md#all-easy-options)
+ - --keepalive-time: [Keep alive](usingcurl/connections/keepalive.md#keep-alive)
  - KNOWN_BUGS: [Future](project/future.md#future)
 ## L
  - -L: [Short options](cmdline/options.md#short-options), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Tell curl to follow redirects](http/redirects.md#tell-curl-to-follow-redirects), [Modify the request method](http/modify/method.md#modify-the-request-method), [Cookie engine](http/cookies.md#cookie-engine), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Redirects](http/browserlike.md#redirects)

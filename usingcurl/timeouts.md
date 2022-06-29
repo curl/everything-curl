@@ -57,16 +57,3 @@ For example, if a transfer speed goes below 1000 bytes per second during 15
 seconds, stop it:
 
     curl --speed-time 15 --speed-limit 1000 https://example.com/
-
-## Keep connections alive
-
-curl enables TCP keep-alive by default. TCP keep-alive is a feature that makes
-the TCP stack send a probe to the other side when there is no traffic, to make
-sure that it is still there and "alive". By using keep-alive, curl is much
-more likely to discover that the TCP connection is dead.
-
-Use `--keepalive-time` to specify how often in full seconds you would like the
-probe to get sent to the peer. The default value is 60 seconds.
-
-Sometimes this probing disturbs what you are doing and then you can easily
-disable it with `--no-keepalive`.

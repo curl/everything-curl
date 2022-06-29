@@ -97,11 +97,3 @@ support can output something even for an upload.
 Therefore, you may need to explicitly redirect the downloaded data to a file
 (using shell redirect '>', `-o` or similar) to get the progress meter
 displayed for upload.
-
-## Rate limiting
-
-Rate limiting works exactly the same for uploads as for downloads and curl, in
-fact, only has a single limit that will limit the speed in both directions.
-
-See further details in the [Download Rate limiting
-section](downloads/rate-limiting.md).

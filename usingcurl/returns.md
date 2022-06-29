@@ -303,17 +303,25 @@ A basic Unix shell script could look like something like this:
  61. Unrecognized transfer encoding. Content received from the server could
   not be parsed by curl.
 
- 62. Invalid LDAP URL.
+ 62. **Not used**
 
- 63. Maximum file size exceeded.
+ 63. Maximum file size exceeded. When curl has been told to restrict downloads
+  to not do it if the file is too big, this is the exit code for that
+  condition.
 
- 64. Requested FTP SSL level failed.
+ 64. Requested SSL (TLS) level failed. In most cases this means that curl
+  failed to upgrade the connection to TLS when asked to.
 
- 65. Sending the data requires a rewind that failed.
+ 65. Sending the data requires a rewind that failed. In some situations curl
+  needs to rewind in order to send the data again and if this can't be done,
+  the operations fails.
 
- 66. Failed to initialize SSL Engine.
+ 66. Failed to initialize the OpenSSL SSL Engine. This can only happen when
+  OpenSSL is used and would signify a serious internal problem.
 
- 67. The user name, password, or similar was not accepted and curl failed to log in.
+ 67. The user name, password, or similar was not accepted and curl failed to
+  log in. Verify that the credentials are provided correctly and that they are
+  encoded the right way.
 
  68. File not found on TFTP server.
 
@@ -329,15 +337,18 @@ A basic Unix shell script could look like something like this:
 
  74. No such user (TFTP).
 
- 75. Character conversion failed.
+ 75. **Not used**
 
- 76. Character conversion functions required.
+ 76. **Not used**
 
- 77. Problem with reading the SSL CA cert
+ 77. Problem with reading the SSL CA cert. The default or specified CA cert
+  bundle could not be read/used to verify the server certificate.
 
- 78. The resource referenced in the URL does not exist.
+ 78. The resource (file) referenced in the URL does not exist.
 
- 79. An unspecified error occurred during the SSH session.
+ 79. An unspecified error occurred during the SSH session. This sometimes
+  indicate an incompatibility problem between the SSH libcurl curl uses and
+  the SSH version used by the server curl speaks to.
 
  80. Failed to shut down the SSL connection.
 
@@ -345,25 +356,33 @@ A basic Unix shell script could look like something like this:
 
  82. Could not load CRL file, missing or wrong format
 
- 83. TLS certificate issuer check failed
+ 83. TLS certificate issuer check failed. The most common reason for this is
+  that the server did not send the proper intermediate certificate in the TLS
+  handshake.
 
- 84. The FTP PRET command failed
+ 84. The FTP `PRET` command failed. This is a non-standard command and far
+  from all servers support it.
 
  85. RTSP: mismatch of CSeq numbers
 
  86. RTSP: mismatch of Session Identifiers
 
- 87. Unable to parse FTP file list
+ 87. Unable to parse FTP file list. The FTP directory listing format used by
+  the server could not be parsed by curl. FTP wildcards can not be used on
+  this server.
 
  88. FTP chunk callback reported error
 
  89. No connection available, the session will be queued
 
- 90. SSL public key does not matched pinned public key
+ 90. SSL public key does not matched pinned public key. Either you provided
+  a bad public key, or the server has changed.
 
- 91. Invalid SSL certificate status
+ 91. Invalid SSL certificate status. The server did not provide a proper
+  valid certificate in the TLS handshake.
 
- 92. Stream error in HTTP/2 framing layer
+ 92. Stream error in HTTP/2 framing layer. This is usually an unrecoverable
+  error, but trying to force curl to speak HTTP/1 instead might circumvent it.
 
  93. An API function was called from inside a callback. If the curl tool
   returns this, something has gone wrong internally
@@ -375,6 +394,14 @@ A basic Unix shell script could look like something like this:
 
  96. QUIC connection error. This error may be caused by an TLS library
   error. QUIC is the transport protocol used for HTTP/3.
+
+ 97. Proxy handshake error. Usually that means that a SOCKS proxy did not play
+  along.
+
+ 98. A TLS client certificate is required but was not provided.
+
+ 99. An internal call to poll() or select() returned error that is not
+  recoverable.
 
 ## Error message
 

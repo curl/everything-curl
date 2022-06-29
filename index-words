@@ -52,6 +52,7 @@
 --proxy1.0
 --proxytunnel
 --quote
+--rate
 --remote-name-all
 --remove-on-error
 --resolve

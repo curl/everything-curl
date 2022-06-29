@@ -16,7 +16,6 @@ specific data pointed to by a URL onto your machine.
 * [Shell redirects](downloads/redirects.md)
 * [Multiple downloads](downloads/multiple.md)
 * [My browser shows something else](downloads/browsers.md)
-* [Rate limiting](downloads/rate-limiting.md)
 * [Maximum file size](downloads/max-filesize.md)
 * [Storing metadata in file system](downloads/metadata-fs.md)
 * [Raw](downloads/raw.md)

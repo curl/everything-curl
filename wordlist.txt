@@ -18,6 +18,8 @@ ascii
 asynch
 AsynchDNS
 auth
+autobuild
+autobuilds
 Autotools
 autotools
 backend
@@ -39,6 +41,7 @@ boringssl
 Boukris
 Broadcom
 brotli
+bugfix
 bugfixes
 buildconf
 CDN
@@ -151,11 +154,13 @@ Fortnite
 FOSS
 FPL
 fread
+FreeBSD
 Frexx
 fseek
 FTPing
 fwrite
 gcc
+gdb
 Gergely
 getaddrinfo
 gethostname
@@ -271,6 +276,7 @@ libz
 libzstd
 linux
 localhost
+logfile
 lookups
 LSB
 lseek
@@ -348,6 +354,7 @@ parsers
 PASV
 PEM
 perl
+permafailing
 PKGBUILD
 pluggable
 pollset
@@ -398,6 +405,7 @@ RTMPS
 RTP
 RTSP
 rtsp
+runtests
 runtime
 Ruslan
 rustls
@@ -437,6 +445,7 @@ SOCKETFUNCTION
 socketopen
 sockopt
 SOCKOPT
+Solaris
 Soref
 SPNEGO
 Spotify

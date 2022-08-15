@@ -19,3 +19,4 @@ library do something new.
  * [Content Encoding](internals/content-encoding.md)
  * [Structs](internals/structs.md)
  * [Resolving host names](internals/resolving.md)
+ * [Tests](internals/tests.md)

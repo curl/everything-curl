@@ -7,7 +7,7 @@ time. We call this persistent connections. curl will always try to keep
 connections alive and reuse existing connections as far as it can.
 
 Connections are kept in the *connection pool*, sometimes also called the
-*conneciton cache*.
+*connection cache*.
 
 The curl command-line tool can, however, only keep connections alive for as
 long as it runs, so as soon as it exits back to your command line it has to

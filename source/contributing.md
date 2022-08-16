@@ -40,7 +40,7 @@ discuss with them if the idea is feasible for inclusion and then how an
 implementation is best done—and done in the best possible way to get merged
 into the source code repository, assuming that is what you want.
 
-The project generally approves of functions that improves the support for the
+The project generally approves functions that improve the support for the
 current protocols, especially features that popular clients or browsers have
 but that curl still lacks.
 
@@ -121,7 +121,8 @@ you decide to just throw it away.
 
 Even if you opt to not make a pull request but prefer the old fashioned and
 trusted method of sending a patch to the curl-library mailing list, it is
-still a good to work in a local git branch and commit your changes there.
+still a good practice to work in a local git branch and commit your changes
+there.
 
 A branch makes it easy to edit and rebase when you need to change things and
 it makes it easy to keep syncing to the master branch when things are updated

@@ -222,7 +222,7 @@ arrived safely. Set `nocheck="yes"` to prevent the test script from verifying
 the arrival of this data.
 
 If the data contains `swsclose` anywhere within the start and end tag, and
-this is a HTTP test, then the connection will be closed by the server after
+this is an HTTP test, then the connection will be closed by the server after
 this response is sent. If not, the connection will be kept persistent.
 
 If the data contains `swsbounce` anywhere within the start and end tag, the
@@ -235,7 +235,7 @@ size is zero bytes. Used to verify curl's behavior on zero bytes transfers.
 
 `base64=yes` means that the data provided in the test-file is a chunk of data
 encoded with base64. It is the only way a test case can contain binary
-data. (This attribute can in fact be used on any section, but it doesn't make
+data. (This attribute can in fact be used on any section, but it does not make
 much sense for other sections than "data").
 
 `hex=yes` means that the data is a sequence of hex pairs. It will get decoded
@@ -256,10 +256,10 @@ Send back this contents instead of the <data> one. The num is set by:
  - The test number in the request line is >10000 and this is the remainder
    of [test case number]%10000.
  - The request was HTTP and included digest details, which adds 1000 to NUM
- - If a HTTP request is NTLM type-1, it adds 1001 to num
- - If a HTTP request is NTLM type-3, it adds 1002 to num
- - If a HTTP request is Basic and num is already >=1000, it adds 1 to num
- - If a HTTP request is Negotiate, num gets incremented by one for each
+ - If an HTTP request is NTLM type-1, it adds 1001 to num
+ - If an HTTP request is NTLM type-3, it adds 1002 to num
+ - If an HTTP request is Basic and num is already >=1000, it adds 1 to num
+ - If an HTTP request is Negotiate, num gets incremented by one for each
    request with Negotiate authorization header on the same test case.
 
 Dynamically changing num in this way allows the test harness to be used to
@@ -289,11 +289,11 @@ The contents of numbered datacheck sections are appended to the non-numbered
 one.
 
 ### `<size>`
-number to return on a ftp SIZE command (set to -1 to make this command fail)
+number to return on an ftp SIZE command (set to -1 to make this command fail)
 
 ### `<mdtm>`
 what to send back if the client sends a (FTP) MDTM command, set to -1 to
-have it return that the file doesn't exist
+have it return that the file does not exist
 
 ### `<postcmd>`
 special purpose server-command to control its behavior *after* the
@@ -324,9 +324,9 @@ about to issue.
   time
 - `RETRWEIRDO` - Enable the "weirdo" RETR case when multiple response lines
    appear at once when a file is transferred
-- `RETRNOSIZE` - Make sure the RETR response doesn't contain the size of the
+- `RETRNOSIZE` - Make sure the RETR response does not contain the size of the
   file
-- `NOSAVE` - Don't actually save what is received
+- `NOSAVE` - Do not save what is received
 - `SLOWDOWN` - Send FTP responses with 0.01 sec delay between each byte
 - `PASVBADIP` - makes PASV send back an illegal IP in its 227 response
 - `CAPA [capabilities]` - Enables support for and specifies a list of space
@@ -352,7 +352,7 @@ about to issue.
 - `upgrade` - when an HTTP upgrade header is found, the server will upgrade to
   http2
 - `swsclose` - instruct server to close connection after response
-- `no-expect` - don't read the request body if Expect: is present
+- `no-expect` - do not read the request body if Expect: is present
 
 #### For TFTP
 `writedelay: [secs]` delay this amount between reply packets (each packet
@@ -578,7 +578,7 @@ comparisons are made.
 
 ### `<proxy [nonewline="yes"]>`
 
-The protocol dump curl should transmit to a HTTP proxy (when the http-proxy
+The protocol dump curl should transmit to an HTTP proxy (when the http-proxy
 server is used), if 'nonewline' is set, we will cut off the trailing newline
 of this given data before comparing with the one actually sent by the client
 The `<strip>` and `<strippart>` rules are applied before comparisons are made.

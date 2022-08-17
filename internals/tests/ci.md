@@ -6,7 +6,7 @@ virtual machines fire up, check out that code from git, build it with
 different options and run the test suite and make sure that everything is
 working fine.
 
-We run CI jobs on several different operation systems, including Linux, macOS,
+We run CI jobs on several different operating systems, including Linux, macOS,
 Windows, Solaris and FreeBSD.
 
 We run jobs that build and test many different (combinations of) backends.

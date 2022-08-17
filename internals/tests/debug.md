@@ -1,6 +1,6 @@
 # Debug builds
 
-When we speak of *debug builds*, we usually refer to curl builds that done
+When we speak of *debug builds*, we usually refer to curl builds that are done
 with debug code and symbols still present. We strongly recommend you do this
 if you want to work with curl development as it makes it easier to test and
 debug.
@@ -33,6 +33,6 @@ This is a poor-man's version of valgrind but does not at all compare with its
 features. It is however fairly portable and low-impact.
 
 In a debug build, the memdebug system is enabled by curl if the
-`CURL_MEMDEBUG` environment variable set to a file name, which is used for the
-log. The test suite sets this variable for us (see `tests/memdump`) and
+`CURL_MEMDEBUG` environment variable is set to a file name, which is used for
+the log. The test suite sets this variable for us (see `tests/log/memdump`) and
 verifies it after each test run, if present.

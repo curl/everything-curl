@@ -16,7 +16,7 @@ The torture tests work like this:
  - verify that there is no leak or crash
  - continue until all fallible functions have been made to fail
 
-This test can take a seriously long time. I advice you to switch off
+This way of testing can take a seriously long time. I advise you to switch off
 [valgrind](valgrind.md) when trying this out.
 
 ## Rerun a specific failure

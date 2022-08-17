@@ -33,7 +33,7 @@ not match) such keywords.
 
 Under the hood, each test input file is "preprocessed" at startup by
 runtests.pl. This means that variables, macros and keywords are expanded and a
-temporary version of the file is stored in `tests/log/tesyNUM` - and *that*
+temporary version of the file is stored in `tests/log/testNUM` - and *that*
 file is then used by all the test servers etc.
 
 This processing allows the test format to offer features like `%repeat` to

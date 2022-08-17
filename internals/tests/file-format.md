@@ -14,7 +14,7 @@ characters at the end of lines are the biggest differences).
 All tests must begin with a `<testcase>` tag, which encompasses the remainder
 of the file. See below for other tags.
 
-Each test file is called `tests/data/testNUM` where `NUM` is a unique
+Each test file is called `tests/data/testNUMBER` where `NUMBER` is a unique
 numerical test identifier. Each test has to use its own dedicated number. The
 number has no meaning other than identifying the test.
 
@@ -245,13 +245,14 @@ and used as "raw" data.
 should be cut off from the data before sending or comparing it.
 
 For FTP file listings, the `<data>` section will be used *only* if you make
-sure that there has been a CWD done first to a directory named `test-[num]`
-where [num] is the test case number. Otherwise the ftp server can't know from
-which test file to load the list content.
+sure that there has been a CWD done first to a directory named `test-[number]`
+where `[number]` is the test case number. Otherwise the ftp server can't know
+from which test file to load the list content.
 
-### `<dataNUM>`
+### `<dataNUMBER>`
 
-Send back this contents instead of the <data> one. The number `NUM` is set by:
+Send back this contents instead of the <data> one. The number `NUMBER` is set
+by:
 
  - The test number in the request line is >10000 and this is the remainder
    of [test case number]%10000.
@@ -319,8 +320,8 @@ about to issue.
   connect as a welcome.
 - `REPLYLF` (like above but sends the response terminated with LF-only and not
    CRLF)
-- `COUNT [command] [num]` - Do the `REPLY` change for `[command]` only `[num]`
-  times and then go back to the built-in approach
+- `COUNT [command] [number]` - Do the `REPLY` change for `[command]` only
+  `[number]` times and then go back to the built-in approach
 - `DELAY [command] [secs]` - Delay responding to this command for the given
   time
 - `RETRWEIRDO` - Enable the "weirdo" RETR case when multiple response lines
@@ -344,8 +345,8 @@ about to issue.
 - `idle` - do nothing after receiving the request, just "sit idle"
 - `stream` - continuously send data to the client, never-ending
 - `writedelay: [msecs]` delay this amount between reply packets
-- `skip: [num]` - instructs the server to ignore reading this many bytes from
-  a PUT or POST request
+- `skip: [number]` - instructs the server to ignore reading this many bytes
+  from a PUT or POST request
 - `rtp: part [num] channel [num] size [num]` - stream a fake RTP packet for
   the given part on a chosen channel with the given payload size
 - `connection-monitor` - When used, this will log `[DISCONNECT]` to the

@@ -1,6 +1,6 @@
 # Test servers
 
-A large portion of the curl test suit actually runs curl command lines that
+A large portion of the curl test suite actually runs curl command lines that
 interact with servers that are started on the local machine for testing
 purposes only during the test, and that are shut down again at the end of the
 test round.

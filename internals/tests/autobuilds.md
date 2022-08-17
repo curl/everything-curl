@@ -6,7 +6,7 @@ automatically that:
 - checks out the latest code from the git repository
 - builds everything
 - runs the test suite
-- send the full log over email to the curl server
+- sends the full log over email to the curl server
 
 As they are then run on different platforms with different build options, they
 offer an extra dimension of feedback on curl build health.

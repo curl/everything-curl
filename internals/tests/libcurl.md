@@ -9,4 +9,4 @@ Apart from that, everything else is tested, verified and checked the same way
 Since these C programs are usually built and run on a plethora of different
 platforms, considerations might need to be taken.
 
-All libcurl test programs are kept in `tests/libtests`
+All libcurl test programs are kept in `tests/libtest`

@@ -8,8 +8,8 @@ written in its own line. Comments are either XML-style (enclosed with `<!--`
 and `-->`) or shell script style (beginning with `#`) and must appear on their
 own lines and not alongside actual test data. Most test data files are
 syntactically valid XML, although a few files are not (lack of support for
-character entities and the preservation of CR/LF characters at the end of
-lines are the biggest differences).
+character entities and the preservation of carriage return and linefeed
+characters at the end of lines are the biggest differences).
 
 All tests must begin with a `<testcase>` tag, which encompasses the remainder
 of the file. See below for other tags.
@@ -98,7 +98,7 @@ For example, to insert the word hello a 100 times:
 Lines in the test file can be made to appear conditionally on a specific
 feature (see the "features" section below) being set or not set. If the
 specific feature is present, the following lines will be output, otherwise it
-outputs nothing, until a following else or endif clause. Like this:
+outputs nothing, until a following `else` or `endif` clause. Like this:
 
     %if brotli
     Accept-Encoding
@@ -139,7 +139,7 @@ Available substitute variables include:
 - `%FTPSPORT` - Port number of the FTPS server
 - `%FTPTIME2` - Timeout in seconds that should be just sufficient to receive a
   response from the test FTP server
-- `%FTPTIME3` - Even longer than %FTPTIME2
+- `%FTPTIME3` - Even longer than `%FTPTIME2`
 - `%GOPHER6PORT` - IPv6 port number of the Gopher server
 - `%GOPHERPORT` - Port number of the Gopher server
 - `%GOPHERSPORT` - Port number of the Gophers server
@@ -251,22 +251,23 @@ which test file to load the list content.
 
 ### `<dataNUM>`
 
-Send back this contents instead of the <data> one. The num is set by:
+Send back this contents instead of the <data> one. The number `NUM` is set by:
 
  - The test number in the request line is >10000 and this is the remainder
    of [test case number]%10000.
- - The request was HTTP and included digest details, which adds 1000 to NUM
- - If an HTTP request is NTLM type-1, it adds 1001 to num
- - If an HTTP request is NTLM type-3, it adds 1002 to num
- - If an HTTP request is Basic and num is already >=1000, it adds 1 to num
- - If an HTTP request is Negotiate, num gets incremented by one for each
-   request with Negotiate authorization header on the same test case.
+ - The request was HTTP and included digest details, which adds 1000 to the
+   number
+ - If an HTTP request is NTLM type-1, it adds 1001 to the number
+ - If an HTTP request is NTLM type-3, it adds 1002 to the number
+ - If an HTTP request is Basic and the number is already >=1000, it adds 1
+ - If an HTTP request is Negotiate, the number gets incremented by one for
+   each request with Negotiate authorization header on the same test case.
 
-Dynamically changing num in this way allows the test harness to be used to
-test authentication negotiation where several different requests must be sent
-to complete a transfer. The response to each request is found in its own data
-section. Validating the entire negotiation sequence can be done by specifying
-a datacheck section.
+Dynamically changing the test number in this way allows the test harness to be
+used to test authentication negotiation where several different requests must
+be sent to complete a transfer. The response to each request is found in its
+own data section. Validating the entire negotiation sequence can be done by
+specifying a `datacheck` section.
 
 ### `<connect>`
 The connect section is used instead of the 'data' for all CONNECT
@@ -285,15 +286,15 @@ Use the `mode="text"` attribute if the output is in text mode on platforms
 that have a text/binary difference.
 
 ### `<datacheckNUM [nonewline="yes"] [mode="text"]>`
-The contents of numbered datacheck sections are appended to the non-numbered
+The contents of numbered `datacheck` sections are appended to the non-numbered
 one.
 
 ### `<size>`
 number to return on an ftp SIZE command (set to -1 to make this command fail)
 
 ### `<mdtm>`
-what to send back if the client sends a (FTP) MDTM command, set to -1 to
-have it return that the file does not exist
+what to send back if the client sends an FTP `MDTM` command, set to -1 to have
+it return that the file does not exist
 
 ### `<postcmd>`
 special purpose server-command to control its behavior *after* the
@@ -480,8 +481,8 @@ to have failed.
 
 ### `<tool>`
 Name of tool to invoke instead of "curl". This tool must be built and exist
-either in the libtest/ directory (if the tool name starts with 'lib') or in
-the unit/ directory (if the tool name starts with 'unit').
+either in the `libtest/` directory (if the tool name starts with `lib`) or in
+the `unit/` directory (if the tool name starts with `unit`).
 
 ### `<name>`
 Brief test case description, shown when the test runs.
@@ -545,13 +546,13 @@ needed.
 This creates the named file with this content before the test case is run,
 which is useful if the test case needs a file to act on.
 
-If 'nonewline="yes"` is used, the created file will have the final newline
+If `nonewline="yes"` is used, the created file will have the final newline
 stripped off.
 
 ### `<stdin [nonewline="yes"]>`
 Pass this given data on stdin to the tool.
 
-If 'nonewline' is set, we will cut off the trailing newline of this given data
+If `nonewline` is set, we will cut off the trailing newline of this given data
 before comparing with the one actually received by the client
 
 ## `<verify>`
@@ -571,7 +572,7 @@ advanced. Example: `s/^EPRT .*/EPRT stripped/`.
 
 ### `<protocol [nonewline="yes"]>`
 
-the protocol dump curl should transmit, if 'nonewline' is set, we will cut off
+the protocol dump curl should transmit, if `nonewline` is set, we will cut off
 the trailing newline of this given data before comparing with the one actually
 sent by the client The `<strip>` and `<strippart>` rules are applied before
 comparisons are made.
@@ -579,26 +580,26 @@ comparisons are made.
 ### `<proxy [nonewline="yes"]>`
 
 The protocol dump curl should transmit to an HTTP proxy (when the http-proxy
-server is used), if 'nonewline' is set, we will cut off the trailing newline
+server is used), if `nonewline` is set, we will cut off the trailing newline
 of this given data before comparing with the one actually sent by the client
 The `<strip>` and `<strippart>` rules are applied before comparisons are made.
 
 ### `<stderr [mode="text"] [nonewline="yes"]>`
 This verifies that this data was passed to stderr.
 
-Use the mode="text" attribute if the output is in text mode on platforms that
-have a text/binary difference.
+Use the `mode="text"` attribute if the output is in text mode on platforms
+that have a text/binary difference.
 
-If 'nonewline' is set, we will cut off the trailing newline of this given data
+If `nonewline` is set, we will cut off the trailing newline of this given data
 before comparing with the one actually received by the client
 
 ### `<stdout [mode="text"] [nonewline="yes"]>`
 This verifies that this data was passed to stdout.
 
-Use the mode="text" attribute if the output is in text mode on platforms that
-have a text/binary difference.
+Use the `mode="text"` attribute if the output is in text mode on platforms
+that have a text/binary difference.
 
-If 'nonewline' is set, we will cut off the trailing newline of this given data
+If `nonewline` is set, we will cut off the trailing newline of this given data
 before comparing with the one actually received by the client
 
 ### `<file name="log/filename" [mode="text"]>`
@@ -621,7 +622,7 @@ compared with what is stored in the test file. This is pretty
 advanced. Example: "s/^EPRT .*/EPRT stripped/"
 
 ### `<stripfile1>`
-1 to 4 can be appended to 'stripfile' to strip the corresponding <fileN>
+1 to 4 can be appended to `stripfile` to strip the corresponding <fileN>
 content
 
 ### `<stripfile2>`

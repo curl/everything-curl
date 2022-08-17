@@ -75,7 +75,9 @@ COOKIEFILE
 CookieInfo
 cookiejar
 COOKIELIST
+CR
 CRL
+CRLF
 crt
 crypto
 cryptographic
@@ -253,6 +255,7 @@ LDAP
 ldap
 LDAPS
 ldaps
+LF
 libc
 libcurl
 libcurl's
@@ -366,6 +369,7 @@ PowerShell
 pre
 prebuilt
 precompiled
+preprocess
 preprocessed
 preprocessor
 Prereq
@@ -412,6 +416,7 @@ rustls
 Sagula
 SanDisk
 SAS
+SASL
 Satiro
 Schannel
 Schindelin

@@ -1,4 +1,4 @@
-### "Drive" transfers
+# "Drive" transfers
 
 libcurl provides three different ways to perform the transfer. Which way to
 use in your case is entirely up to you and what you need.

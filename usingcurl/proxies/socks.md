@@ -1,4 +1,4 @@
-## SOCKS proxy
+# SOCKS proxy
 
 SOCKS is a protocol used for proxies and curl supports it. curl supports both
 SOCKS version 4 as well as version 5, and both versions come in two flavors.

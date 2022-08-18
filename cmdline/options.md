@@ -1,10 +1,10 @@
-## Command line options
+# Command line options
 
 When telling curl to do something, you invoke curl with zero, one or several
 command-line options to accompany the URL or set of URLs you want the transfer
 to be about. curl supports over two hundred different options.
 
-### Short options
+## Short options
 
 Command line options pass on information to curl about how you want it to
 behave. Like you can ask curl to switch on verbose mode with the -v option:
@@ -30,7 +30,7 @@ like:
 
     curl -v -L http://example.com
 
-### Long options
+## Long options
 
 Single-letter options are convenient since they are quick to write and use, but
 as there are only a limited number of letters in the alphabet and there are
@@ -50,7 +50,7 @@ and asking for HTTP redirects as well using the long format looks like:
 
     curl --verbose --location http://example.com
 
-### Arguments to options
+## Arguments to options
 
 Not all options are just simple boolean flags that enable or disable
 features. For some of them you need to pass on data, like perhaps a user name
@@ -69,7 +69,7 @@ data without the space separator:
 
     curl -darbitrary http://example.com
 
-### Arguments with spaces
+## Arguments with spaces
 
 At times you want to pass on an argument to an option, and that argument
 contains one or more spaces. For example you want to set the user-agent field
@@ -102,7 +102,7 @@ we call the file 'json' that contains the above mentioned data:
 
     curl -d @json http://example.com
 
-### Negative options
+## Negative options
 
 For options that switch on something, there is also a way to switch it
 off. You then use the long form of the option with an initial `no-` prefix

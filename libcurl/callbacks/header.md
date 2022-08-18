@@ -1,4 +1,4 @@
-### Header callback
+# Header callback
 
 The header callback is set with `CURLOPT_HEADERFUNCTION`:
 

@@ -1,4 +1,4 @@
-## Users of curl
+# Users of curl
 
 ![ten billion installations](ten-billion.jpg)
 
@@ -7,12 +7,12 @@ good line to say but in reality we, of course, do not have any numbers that
 exact. We just estimate and guess based on observations and trends. It also
 depends on exactly what we consider "an installation". Let's elaborate.
 
-### Open Source
+## Open Source
 
 The project being Open Source and liberally licensed means that just about
 anyone can redistribute curl in source format or built into binary form.
 
-### Counting downloads
+## Counting downloads
 
 The curl command-line tool and the libcurl library are available for download
 for most operating systems via the curl website, they are provided via third
@@ -20,7 +20,7 @@ party installers to a bunch and they come installed by default with even more
 operating systems. This makes counting downloads from the curl website
 completely inappropriate as a means of measurement.
 
-### Finding users
+## Finding users
 
 So, we cannot count downloads and anyone may redistribute it and nobody is
 forced to tell us they use curl. How can we figure out the numbers? How can we
@@ -36,13 +36,13 @@ documentation, but that is not easy for us to find in many cases and it's also
 not easy for us to do anything about should they decide not to follow the
 small license requirement.
 
-### Command-line tool users
+## Command-line tool users
 
 The command-line tool curl is widely used by programmers around the world in
 shell and batch scripts, to debug servers and to test out things. There is no
 doubt it is used by millions every day.
 
-### Embedded library
+## Embedded library
 
 libcurl is what makes our project reach the really large volume of users. The
 ability to quickly and easily get client side file transfer abilities into
@@ -63,7 +63,7 @@ game consoles.
 
 ![different devices, tool, applications and services that all run curl](curl-runs-in-all-your-devices.jpg)
 
-### In website backends
+## In website backends
 
 The libcurl binding for PHP was one of, if not the, first bindings for libcurl
 to really catch on and get used widely. It quickly got adopted as a default

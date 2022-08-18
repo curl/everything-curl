@@ -1,4 +1,4 @@
-## Config file
+# Config file
 
 You can easily end up with curl command lines that use a large number of
 command-line options, making them rather hard to work with. Sometimes the
@@ -67,7 +67,7 @@ for curl like this:
 
     url = "http://example.com"
 
-### Default config file
+## Default config file
 
 When curl is invoked, it always (unless `-q` is used) checks for a default
 config file and uses it if found.

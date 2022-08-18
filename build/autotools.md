@@ -31,7 +31,7 @@ things. `make install` requires that you have the correct rights in your
 system to create and write files in the installation directory or you will get
 some errors.
 
-### Cross-compiling
+## Cross-compiling
 
 Cross-compiling means that you build the source on one architecture but the
 output is created to be run on a different one. For example, you could build
@@ -45,7 +45,7 @@ Once you have a cross compiler, you can instruct configure to use that
 compiler instead of the "native" compiler when it builds curl so that the end
 result then can be moved over and used on the other machine.
 
-### Static linking
+## Static linking
 
 By default, configure will setup the build files so that the following 'make'
 command will create both shared and static versions of libcurl. You can change
@@ -67,7 +67,7 @@ keep up with or know all possible dependencies for all the libraries it can be
 made to build with, so users wanting to build with static libs mostly need to
 provide that list of libraries to link with.
 
-### Select TLS backend
+## Select TLS backend
 
 The configure-based build offers the user to select from a wide variety of
 different TLS libraries when building. You select them by using the correct
@@ -105,7 +105,7 @@ OpenSSL:
 
     ./configure --with-openssl --with-gnutls --with-default-ssl-backend=openssl
 
-### Select SSH backend
+## Select SSH backend
 
 The configure-based build offers the user to select from a variety of
 different SSH libraries when building. You select them by using the
@@ -121,7 +121,7 @@ this:
 
     ./configure --with-libssh2=/home/user/custom-libssh2
 
-### Select HTTP/3 backend
+## Select HTTP/3 backend
 
 The configure-based build offers the user to select different HTTP/3 libraries
 when building. You select them by using the correct command-line options.

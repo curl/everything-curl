@@ -1,4 +1,4 @@
-## MITM proxy
+# MITM proxy
 
 MITM means Man-In-The-Middle. MITM proxies are usually deployed by companies
 in "enterprise environments" and elsewhere, where the owners of the network

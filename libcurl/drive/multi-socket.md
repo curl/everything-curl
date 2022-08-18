@@ -1,4 +1,4 @@
-## Driving with the "multi_socket" interface
+# Driving with the "multi_socket" interface
 
 multi_socket is the extra spicy version of the regular multi interface and is
 designed for event-driven applications. Make sure you read the [Drive with

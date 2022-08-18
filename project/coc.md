@@ -1,4 +1,4 @@
-## Code of conduct
+# Code of conduct
 
 As contributors and maintainers of this project, we pledge to respect all
 people who contribute through reporting issues, posting feature requests,

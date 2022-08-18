@@ -1,4 +1,4 @@
-## HTTP POST
+# HTTP POST
 
 POST is the HTTP method that was invented to send data to a receiving web
 application, and it is how most common HTML forms on the web

@@ -1,4 +1,4 @@
-## Verbose operations
+# Verbose operations
 
 Okay, we just showed how to get the error as a human readable text as that is
 an excellent help to figure out what went wrong in a particular transfer and
@@ -19,7 +19,7 @@ it different things. You can redirect the output elsewhere by changing stderr
 with `CURLOPT_STDERR` or you can get even more info in a fancier way with the
 debug callback (explained further in a later section).
 
-### Trace everything
+## Trace everything
 
 Verbose is certainly fine, but sometimes you need more. libcurl also offers a
 trace callback that in addition to showing you all the stuff the verbose mode

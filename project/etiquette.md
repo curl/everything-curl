@@ -1,4 +1,4 @@
-### Mailing list etiquette
+# Mailing list etiquette
 
 Like many communities and subcultures, we have developed guidelines and rules
 of what we think is the right way to behave and how to communicate on the
@@ -6,7 +6,7 @@ mailing lists. The [curl mailing list
 etiquette](https://curl.se/mail/etiquette.html) follows the style of
 traditional Open Source projects.
 
-#### Do not mail a single individual
+## Do not mail a single individual
 
 Many people send one question directly to one person. One person gets many mails, and
 there is only one person who can give you a reply. The question may be
@@ -18,7 +18,7 @@ If you really want to contact an individual and perhaps pay for his or her
 services, by all means go ahead, but if it's just another curl question, take
 it to a suitable list instead.
 
-#### Reply or new mail
+## Reply or new mail
 
 Please do not reply to an existing message as a shortcut to post a message to
 the lists.
@@ -28,7 +28,7 @@ together as "threads", as collections of posts that discuss a certain
 subject. If you do not intend to reply on the same or similar subject, do not
 just hit reply on an existing mail and change subject; create a new mail.
 
-#### Reply to the list
+## Reply to the list
 
 When replying to a message from the list, make sure that you do "group reply"
 or "reply to all", and not just reply to the author of the single mail you
@@ -36,13 +36,13 @@ reply to.
 
 We are actively discouraging replying back to just a single person privately. Keep follow-ups on discussions on the list.
 
-#### Use a sensible subject
+## Use a sensible subject
 
 Please use a subject of the mail that makes sense and that is related to the
 contents of your mail. It makes it a lot easier to find your mail afterwards
 and it makes it easier to track mail threads and topics.
 
-#### Do not top-post
+## Do not top-post
 
 If you reply to a message, do not use top-posting. Top-posting is when you
 write the new text at the top of a mail and you insert the previous quoted
@@ -70,18 +70,18 @@ again.
 When most of the quotes have been removed and you have added your own words,
 you are done.
 
-#### HTML is not for mails
+## HTML is not for mails
 
 Please switch off those HTML encoded messages. You can mail all those funny
 mails to your friends. We speak plain text mails.
 
-#### Quoting
+## Quoting
 
 Quote as little as possible. Just enough to provide the context you cannot
 leave out. A lengthy description can be found
 [here](https://www.netmeister.org/news/learn2quote.html).
 
-#### Digest
+## Digest
 
 We allow subscribers to subscribe to the "digest" version of the mailing
 lists. A digest is a collection of mails lumped together in one single mail.
@@ -96,7 +96,7 @@ reply to.
 Change the subject name to something sensible and related to the subject,
 preferably even the actual subject of the single mail you wanted to reply to.
 
-#### Please tell us how you solved the problem
+## Please tell us how you solved the problem
 
 Many people mail questions to the list, people spend some of their time and
 make an effort in providing good answers to these questions.

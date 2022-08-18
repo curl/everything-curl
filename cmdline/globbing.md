@@ -1,4 +1,4 @@
-## URL globbing
+# URL globbing
 
 At times you want to get a range of URLs that are mostly the same, with only a
 small portion of it changing between the requests. Maybe it is a numeric range
@@ -18,7 +18,7 @@ for example '&', '?' and '*'.
 While most transfer related functionality in curl is provided by the libcurl
 library, the URL globbing feature is not!
 
-### Numerical ranges
+## Numerical ranges
 
 You can ask for a numerical range with [N-M] syntax, where N is the start
 index and it goes up to and including M. For example, you can ask for 100
@@ -36,14 +36,14 @@ too. This example range goes from 0 to 100 with an increment of 2:
 
     curl -O "http://example.com/[0-100:2].png"
 
-### Alphabetical ranges
+## Alphabetical ranges
 
 curl can also do alphabetical ranges, like when a site has sections named a
 to z:
 
     curl -O "http://example.com/section[a-z].html"
 
-### A list
+## List
 
 Sometimes the parts do not follow such an easy pattern, and then you can
 instead give the full list yourself but then within the curly braces instead
@@ -51,7 +51,7 @@ of the brackets used for the ranges:
 
     curl -O "http://example.com/{one,two,three,alpha,beta}.html"
 
-### Combinations
+## Combinations
 
 You can use several globs in the same URL which then will make curl iterate
 over those, too. To download the images of Ben, Alice and Frank, in both the
@@ -69,7 +69,7 @@ both the web server and the mail server:
 
     curl -O "http://example.com/{web,mail}-log[0-6].txt"
 
-### Output variables for globbing
+## Output variables for globbing
 
 In all the globbing examples previously in this chapter we have selected to
 use the `-O / --remote-name` option, which makes curl save the target file

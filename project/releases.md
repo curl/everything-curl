@@ -1,4 +1,4 @@
-## Releases
+# Releases
 
 A release in the curl project means packaging up all the source code that is
 in the master branch of the code repository, signing the package, tagging the

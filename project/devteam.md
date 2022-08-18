@@ -1,4 +1,4 @@
-## The development team
+# The development team
 
 Daniel Stenberg is the founder and self-proclaimed leader of the
 project. Everybody else that participates or contributes in the project has

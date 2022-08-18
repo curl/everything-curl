@@ -1,4 +1,4 @@
-## Copyright
+# Copyright
 
 Copyright is a legal right granted by the law of a country that gives the
 creator of an original work exclusive rights for its use and distribution.

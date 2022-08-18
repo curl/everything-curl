@@ -1,4 +1,4 @@
-## Verbose mode
+# Verbose mode
 
 If your curl command does not execute or return what you expected it to, your
 first gut reaction should always be to run the command with the `-v /
@@ -99,7 +99,7 @@ That 1270 bytes should then be in the 'saved' file. You can also see that
 there was a header named Content-Length: in the response that contained the
 exact file length (it will not always be present in responses).
 
-### HTTP/2 and HTTP/3
+## HTTP/2 and HTTP/3
 
 When doing file transfers using version two or three of the HTTP protocol,
 curl sends and receives **compressed** headers. So to display outgoing and
@@ -107,7 +107,7 @@ incoming HTTP/2 and HTTP/3 headers in a readable and understandable way, curl
 will actually show the uncompressed versions in a style similar to how they
 appear with HTTP/1.1.
 
-### Silence
+## Silence
 
 The opposite of verbose is, of course, to make curl more silent. With the `-s`
 (or `--silent`) option you make curl switch off the progress meter and not

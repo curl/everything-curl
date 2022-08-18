@@ -1,4 +1,4 @@
-## Security
+# Security
 
 Security is a primary concern for us in the curl project. We take it seriously
 and we work hard on providing secure and safe implementations of all protocols
@@ -12,7 +12,7 @@ openwall.org list a few days before we announce the problem and fix to the
 world. This, in an attempt to shorten the time span the bad guys can take
 advantage of a problem until a fixed version has been deployed.
 
-### Past security problems
+## Past security problems
 
 During the years we have had our fair share of security related problems. We
 work hard on [documenting every

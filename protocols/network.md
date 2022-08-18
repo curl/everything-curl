@@ -20,30 +20,30 @@ contact the client but the client can contact the server.
 
 ## Which machine
 
-When you as a client want to initiate a transfer from or to one of the
-machines out there (a server), you usually do not know its IP addresses but
-instead you usually know its name. The name of the machine you will talk to is
-embedded in the URL that you work with when you use tools like curl.
+When we as a client want to initiate a transfer from or to one of the machines
+out there (a server), we usually do not know its IP addresses but instead we
+usually know its name. The name of the machine you will talk to is embedded in
+the URL that we work with when we use tools like curl or a browser.
 
-You might use a URL like `http://example.com/index.html`, which means you will
-connect to and communicate with the host named example.com.
+We might use a URL like `http://example.com/index.html`, which means the
+client will connect to and communicate with the host named example.com.
 
 ## Host name resolving
 
-Once we know the host name, we need to figure out which IP addresses that host
-has so that we can contact it.
+Once the client knows the host name, it needs to figure out which IP addresses
+the host with that name has so that it can contact it.
 
-Converting the name to an IP address is often called 'name resolving'. The name
-is "resolved" to one or a set of addresses. This is usually done by a "DNS
-server", DNS being like a big lookup table that can convert names to
-addresses—all the names on the Internet, really. Your computer normally
-already knows the address of a computer that runs the DNS server as that is
-part of setting up the network.
+Converting the name to an IP address is often called 'name resolving'. The
+name is "resolved" to one or a set of addresses. This is usually done by a
+"DNS server", DNS being like a big lookup table that can convert names to
+addresses—all the names on the Internet, really. The computer normally already
+knows the address of a computer that runs the DNS server as that is part of
+setting up the network.
 
 The network client will therefore ask the DNS server: "Hello, please give me
 all the addresses for example.com", and the server responds with a list of
-them. Or in the case you spell the name wrong, it can answer back that the
-name does not exist.
+them. Or in case of spelling errors, it can answer back that the name does not
+exist.
 
 ## Establish a connection
 
@@ -70,7 +70,7 @@ on other port numbers at the same time.
 Most common protocols have default port numbers that clients and servers
 use. For example, when using the `http://example.com/index.html` URL, that URL
 specifies a *scheme* called `HTTP` which tells the client that it should try
-TCP port number 80 on the server by default. If you go with `HTTPS` instead,
+TCP port number 80 on the server by default. If the URL uses `HTTPS` instead,
 the default port number is 443.
 
 The URL can optionally provide another, custom, port number but if nothing

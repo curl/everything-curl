@@ -91,3 +91,31 @@ Save the main pages of two different sites:
 Save the outputs from a command line with two globs in a subdirectory:
 
     curl "http://{site,host}.host[1-5].example.com" -o "subdir/#1_#2"
+
+## Using `[]{}` in URLs
+
+When the globbing concept was introduced in curl in the 1990s, we all used the
+same Internet standard for how the URL syntax was defined, and in this
+standard these four symbols are documented as *reserved*. You should
+URL-encode them in the URL if you wanted to use them (`%HH` style). Those
+symbols were therefore not used in URLs and were downright attractive to use
+for globbing purposes.
+
+Later on, the URL syntax has gradually been relaxed and changed and these days
+every now and then we see URLs used where one of the four symbols `[]{}` are
+used as-is, as in not encoded. Passing such a URL to curl causes it to spew
+out syntax errors when the glob parser goes crazy.
+
+To work around that problem, you have two separate options. You either encode
+the symbols yourself, or you switch off globbing.
+
+Encode the symbols like this:
+
+|symbol | encoding|
+|-------|---------|
+| `[`   | `%5b`   |
+| `]`   | `%5d`   |
+| `{`   | `%7b`   |
+| `}`   | `%7d`   |
+
+Or switch off globbing with `-g` or `--globoff`.

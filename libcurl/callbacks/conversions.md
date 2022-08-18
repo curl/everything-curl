@@ -1,4 +1,13 @@
-# Convert to and from network callbacks
+# Network data conversion
+
+Up until libcurl version 7.82.0, these callbacks were provided to make things
+work on non-ASCII platforms. **The support for these callbacks have since been
+removed.**
+
+The documentation below is kept here for a while and describes how they used
+to work. It will be removed from this book at a future date.
+
+## Convert to and from network callbacks
 
 For non-ASCII platforms, `CURLOPT_CONV_FROM_NETWORK_FUNCTION` is
 provided. This function should convert **to** host encoding **from** the

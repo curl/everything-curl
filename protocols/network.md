@@ -44,9 +44,10 @@ exist.
 With a list of IP addresses for the host curl wants to contact, curl sends out
 a "connect request". The connection curl wants to establish is called TCP
 ([Transmission Control
-Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)) and it
-works similar to connecting an invisible string between two computers. Once
-established, it can be used to send a stream of data in both directions.
+Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)) or
+[QUIC](https://en.wikipedia.org/wiki/QUIC) and they work similar to connecting
+an invisible string between two computers. Once established, the string can be
+used to send a stream of data in both directions.
 
 As curl gets a list of addresses for the host, it will actually traverse that
 list of addresses when connecting and in case one fails it will try to connect
@@ -54,32 +55,39 @@ to the next one until either one works or they all fail.
 
 ### Connects to "port numbers"
 
-When connecting with TCP to a remote server, a client selects which port
-number to do that on. A port number is just a dedicated place for a particular
-service, which allows that same server to listen to other services on other
-port numbers at the same time.
+When connecting with TCP or QUIC to a remote server, a client selects which
+port number to do that on. A port number is just a dedicated place for a
+particular service, which allows that same server to listen to other services
+on other port numbers at the same time.
 
 Most common protocols have default port numbers that clients and servers
 use. For example, when using the `http://example.com/index.html` URL, that URL
-specifies a scheme called "HTTP" which tells the client that it should try TCP
-port number 80 on the server by default. The URL can optionally provide
-another, custom, port number but if nothing special is specified, it will use
-the default port for the scheme used in the URL.
+specifies a *scheme* called `HTTP` which tells the client that it should try
+TCP port number 80 on the server by default. If you go with `HTTPS` instead,
+the default port number is 443.
 
-### TLS
+The URL can optionally provide another, custom, port number but if nothing
+special is specified, it will use the default port for the scheme used in the
+URL.
 
-After the TCP connection has been established, many transfers will require
-that both sides negotiate a better security level before continuing, and that
-is often TLS; Transport Layer Security. If that is used, the client and server
-will do a TLS handshake first and only continue further if that succeeds.
+### Security
+
+After a TCP connection has been established, many transfers will require that
+both sides negotiate a better security level before continuing (if for example
+`HTTPS` is used), done with TLS; [Transport Layer
+Security](https://en.wikipedia.org/wiki/Transport_Layer_Security). If that is
+used, the client and server will do a TLS handshake first and only continue
+further if that succeeds.
+
+If the connection is done using QUIC, the TLS handshake is done automatically
+in connect phase.
 
 ### Transfer data
 
-When the connecting "string" we call TCP is attached to the remote computer
-(and we have done the possible additional TLS handshake), there is an
-established connection between the two machines and that connection can then
-be used to exchange data. That communication is done using a "protocol", as
-discussed in the following chapter.
+When the connected metaphorical "string" is attached to the remote computer,
+there is an established *connection* between the two machines and this
+connection can then be used to exchange data. That communication is done using
+a "protocol", as discussed in the following chapter.
 
 Traditionally, what is called a *download* is when data is transferred from a
 server to a client and inversely an *upload* is when data is transferred from

@@ -1,0 +1,54 @@
+#!/usr/bin/perl
+
+# Check the heading levels in the given markdown files
+#
+my @f = @ARGV;
+my $ecount; # error counter
+
+sub error {
+    my ($file, $line, $num, $txt)=@_;
+    print STDERR "$file:$num:1: error: $txt\n";
+    $ecount++;
+}
+
+sub check {
+    my ($f)=@_;
+    open(F, "<$f");
+    my $l = 1;
+    my $lvl = 0;
+    while(<F>) {
+        my $line = $_;
+        chomp $line;
+        if($line =~ /^(\#+) /) {
+            # check the new used level
+            my $nlvl = length($1);
+            if($l==1) {
+                if($nlvl != 1) {
+                    error($f, $line, $l, "Not a toplevel heading");
+                }
+            }
+            else {
+                # accept level 1, same level, one level higher or (back to) a
+                # lower level
+                if(($nlvl != 1) &&
+                   ($nlvl != $lvl) &&
+                   ($nlvl != $lvl +1) &&
+                   ($nlvl > $lvl)) {
+                    error($f, $line, $l, "Heading level mismatch (old: $lvl, new: $nlvl");
+                }
+            }
+            $lvl = $nlvl;
+        }
+        $l++;
+        if(($l > 1) && !$lvl) {
+            error($f, $line, 1, "Missing first toplevel heading");
+        }
+    }
+    close(F);
+}
+
+for my $e (@f) {
+    check($e);
+}
+
+exit 1 if($ecount);

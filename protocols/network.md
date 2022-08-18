@@ -88,7 +88,7 @@ used, the client and server will do a TLS handshake first and only continue
 further if that succeeds.
 
 If the connection is done using QUIC, the TLS handshake is done automatically
-in connect phase.
+in the connect phase.
 
 ## Transfer data
 

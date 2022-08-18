@@ -22,8 +22,9 @@ contact the client but the client can contact the server.
 
 When we as a client want to initiate a transfer from or to one of the machines
 out there (a server), we usually do not know its IP addresses but instead we
-usually know its name. The name of the machine you will talk to is embedded in
-the URL that we work with when we use tools like curl or a browser.
+usually know its name. The name of the machine to communicate with is
+typically embedded in the URL that we work with when we use tools like curl or
+a browser.
 
 We might use a URL like `http://example.com/index.html`, which means the
 client will connect to and communicate with the host named example.com.

@@ -103,8 +103,8 @@ for globbing purposes.
 
 Later on, the URL syntax has gradually been relaxed and changed and these days
 every now and then we see URLs used where one of the four symbols `[]{}` are
-used unencoded. Passing such a URL to curl causes it to spew out syntax errors
-when the glob parser goes crazy.
+used as-is, as in not encoded. Passing such a URL to curl causes it to spew
+out syntax errors when the glob parser goes crazy.
 
 To work around that problem, you have two separate options. You either encode
 the symbols yourself, or you switch off globbing.

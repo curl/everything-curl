@@ -5,7 +5,7 @@ Internet is just a bunch of interconnected machines (computers really), each
 using its own individual addresses (called [IP
 addresses](https://en.wikipedia.org/wiki/IP_address)). The addresses each
 machine has can be of different types and machines can even have temporary
-addresses. These computers are often called hosts.
+addresses. These computers are also called hosts.
 
 ## Client and server
 
@@ -34,9 +34,9 @@ client will connect to and communicate with the host named example.com.
 Once the client knows the host name, it needs to figure out which IP addresses
 the host with that name has so that it can contact it.
 
-Converting the name to an IP address is often called 'name resolving'. The
-name is "resolved" to one or a set of addresses. This is usually done by a
-"DNS server", DNS being like a big lookup table that can convert names to
+Converting the name to an IP address is called 'name resolving'. The name is
+"resolved" to one or a set of addresses. This is usually done by a "DNS
+server", DNS being like a big lookup table that can convert names to
 addresses—all the names on the Internet, really. The computer normally already
 knows the address of a computer that runs the DNS server as that is part of
 setting up the network.

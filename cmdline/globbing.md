@@ -106,8 +106,8 @@ every now and then we see URLs used where one of the four symbols `[]{}` are
 used un-escaped. Passing such a URL to curl causes it to spew out syntax
 errors when the glob parser goes crazy.
 
-To work around that problem, you then have two separate options. You either
-encode the symbols yourself, or you switch off globbing.
+To work around that problem, you have two separate options. You either encode
+the symbols yourself, or you switch off globbing.
 
 Encode the symbols like this:
 

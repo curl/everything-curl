@@ -1,10 +1,10 @@
-## Code layout
+# Code layout
 
 The curl source code tree is neither large nor complicated. A key thing to
 remember is, that libcurl is the library and that this library is the biggest
 component of the curl command-line tool.
 
-### root
+## root
 
 We try to keep the number of files in the source tree root to a minimum. You
 will see a slight difference in files if you check a release archive compared
@@ -30,7 +30,7 @@ Some of the more notable ones include:
   found in git it contains the changes done since the previous release that
   are destined to end up in the coming release.
 
-### lib
+## lib
 
 This directory contains the full source code for libcurl. It is the same
 source code for all platforms—over one hundred C source files and a few more
@@ -41,7 +41,7 @@ Depending on what features are enabled in your own build and what
 functions your platform provides, some of the source files or portions of the
 source files may contain code that is not used in your particular build.
 
-### lib/vtls
+## lib/vtls
 
 The VTLS sub section within libcurl is the home of all the TLS backends
 libcurl can be built to support. The "virtual" TLS internal API is a backend
@@ -67,7 +67,7 @@ users.
 - Secure Transport: the native TLS library on macOS
 - wolfSSL
 
-### src
+## src
 
 This directory holds the source code for the curl command-line tool. It is the
 same source code for all platforms that run the tool.
@@ -79,7 +79,7 @@ user's wishes.
 
 This code uses libcurl just as any other application would.
 
-### include/curl
+## include/curl
 
 Here are the public header files that are provided for libcurl-using
 applications. Some of them are generated at configure or release time so they
@@ -88,7 +88,7 @@ do not look identical in the git repository as they do in a release archive.
 With modern libcurl, all an application is expected to include in its C source code
 is `#include <curl/curl.h>`
 
-### docs
+## docs
 
 The main documentation location. Text files in this directory are typically
 plain text files. We have slowly started to move towards Markdown format so a
@@ -134,7 +134,7 @@ converted from text to a web friendly format/look.
 - `TODO`: things we or you can work on implementing
 - `VERSIONS`: how the version numbering of libcurl works
 
-### docs/libcurl
+## docs/libcurl
 
 All libcurl functions have their own man pages in individual files with .3
 extensions, using nroff format, in this directory. There are also a few other
@@ -152,7 +152,7 @@ files that are described below.
 - `libcurl-tutorial.3`
 - `symbols-in-versions`
 
-### docs/libcurl/opts
+## docs/libcurl/opts
 
 This directory contains the man pages for the individual options for three
 different libcurl functions.
@@ -161,14 +161,14 @@ different libcurl functions.
 `curl_multi_setopt()` options start with `CURLMOPT_` and
 `curl_easy_getinfo()` options start with `CURLINFO_`.
 
-### docs/examples
+## docs/examples
 
 Contains around 100 stand-alone examples that are meant to help readers
 understand how libcurl can be used.
 
 See also the [libcurl examples](../libcurl/examples.md) section of this book.
 
-### scripts
+## scripts
 
 Handy scripts.
 

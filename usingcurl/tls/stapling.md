@@ -1,4 +1,4 @@
-## OCSP stapling
+# OCSP stapling
 
 This uses the TLS extension called Certificate Status Request to ask the
 server to provide a fresh "proof" from the CA in the handshake, that the

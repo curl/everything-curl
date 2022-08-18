@@ -1,4 +1,4 @@
-## Reporting bugs
+# Reporting bugs
 
 The development team does a lot of testing. We have a whole test suite that is
 run frequently every day on numerous platforms in order to exercise all
@@ -7,7 +7,7 @@ code and make sure everything works as supposed.
 Still, there are times when things are not working the way they should. Then
 we appreciate getting those problems reported.
 
-### A bug is a problem
+## A bug is a problem
 
 Any problem can be considered a bug. A weirdly phrased wording in the manual
 that prevents you from understanding something is a bug. A surprising side
@@ -15,7 +15,7 @@ effect of combining multiple options can be a bug—or perhaps it should be
 better documented? Perhaps the option does not do at all what you expected it
 to? That is a problem and we should fix it.
 
-### Problems must be known to get fixed
+## Problems must be known to get fixed
 
 This may sound easy and uncomplicated but is a fundamental truth in our and
 other projects. Just because it is an old project and have thousands of users
@@ -26,14 +26,14 @@ perhaps it just never triggered for anyone else.
 We rely on users experiencing problems to report them. We need to learn the
 problems exist so that we can fix them.
 
-### Fixing the problems
+## Fixing the problems
 
 Software engineering is, to a large degree, about fixing problems. To fix a
 problem a developer needs to understand how to repeat it and to do that the
 debugging person needs to be told what set of circumstances that made the
 problem trigger.
 
-### A good bug report
+## A good bug report
 
 A good report explains what happened and what you thought was going to
 happen. Tell us exactly what versions of the different components you used and

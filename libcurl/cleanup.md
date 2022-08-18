@@ -1,10 +1,10 @@
-## Cleanup
+# Cleanup
 
 In previous sections we have discussed how to setup handles and how to drive
 the transfers. All transfers will, of course, end up at some point, either
 successfully or with a failure.
 
-### Multi API
+## Multi API
 
 When you have finished a single transfer with the multi API, you use
 `curl_multi_info_read()` to identify exactly which easy handle was completed
@@ -16,7 +16,7 @@ transfers going on, you can close the multi handle like this:
 
     curl_multi_cleanup( multi_handle );
 
-### easy handle
+## easy handle
 
 When the easy handle is done serving its purpose, you can close it. If you
 intend to do another transfer, you are however advised to rather reuse the

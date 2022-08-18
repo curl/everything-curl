@@ -1,4 +1,4 @@
-## Options depend on version
+# Options depend on version
 
 `curl` was first typed on a command line back in the glorious year of 1998. It
 already then worked on the specified URL and none, one or more command-line

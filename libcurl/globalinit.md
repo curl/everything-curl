@@ -1,4 +1,4 @@
-## Global initialization
+# Global initialization
 
 Before you do anything libcurl related in your program, you should do a global
 libcurl initialize call with `curl_global_init()`. This is necessary because

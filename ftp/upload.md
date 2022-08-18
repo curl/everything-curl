@@ -1,4 +1,4 @@
-## Uploading with FTP
+# Uploading with FTP
 
 To upload to an FTP server, you specify the entire target file path and name
 in the URL, and you specify the local file name to upload with `-T,

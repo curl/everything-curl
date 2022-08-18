@@ -1,4 +1,4 @@
-### HTTP protocol basics
+# HTTP protocol basics
  
 (This assumes you have read the [Network and protocols](../protocols.md)
 section or are otherwise already familiar with protocols.)
@@ -44,7 +44,7 @@ If the client would instead send a request with a small request body
 
 A server always responds to an HTTP request unless something is wrong.
 
-### The URL converted to a request
+## The URL converted to a request
 
 So when an HTTP client is given a URL to operate on, that URL is then used,
 picked apart and those parts are used in various places in the outgoing

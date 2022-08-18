@@ -1,4 +1,4 @@
-### Read callback
+# Read callback
 
 The read callback is set with `CURLOPT_READFUNCTION`:
 

@@ -1,4 +1,4 @@
-## Callbacks
+# Callbacks
 
 Lots of operations within libcurl are controlled with the use of *callbacks*.
 A callback is a function pointer provided to libcurl that libcurl then calls

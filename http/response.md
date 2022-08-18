@@ -1,10 +1,10 @@
-### HTTP responses
+# HTTP responses
 
 When an HTTP client talks HTTP to a server, the server *will* respond with an
 HTTP response message or curl will consider it an error and returns 52 with
 the error message "Empty reply from server".
 
-#### Size of an HTTP response
+## Size of an HTTP response
 
 An HTTP response has a certain size and curl needs to figure it out. There are
 several different ways to signal the end of an HTTP response but the most
@@ -18,7 +18,7 @@ Content-Length: header completely with `--ignore-content-length`. Doing so may
 have some other negative side-effects but should at least let you get the
 data.
 
-### HTTP response codes
+## HTTP response codes
 
 An HTTP transfer gets a 3 digit response code back in the first response line.
 The response code is the server's way of giving the client a hint about how
@@ -44,7 +44,7 @@ To make curl return an error for response codes >= 400, you need to use
 `--fail` or `--fail-with-body`. Then curl will exit with error code 22 for
 such occurrences.
 
-### CONNECT response codes
+## CONNECT response codes
 
 Since there can be an HTTP request and a separate CONNECT request in the same
 curl transfer, we often separate the CONNECT response (from the proxy) from
@@ -53,7 +53,7 @@ the remote server's HTTP response.
 The CONNECT is also an HTTP request so it gets response codes in the same
 numeric range and you can use `--write-out` to extract that code as well.
 
-### Chunked transfer encoding
+## Chunked transfer encoding
 
 An HTTP 1.1 server can decide to respond with a "chunked" encoded response, a
 feature that was not present in HTTP 1.0.
@@ -73,7 +73,7 @@ generated at the point when the request comes.
 Clients like curl will, of course, decode the chunks and not show the chunk
 sizes to users.
 
-### Gzipped transfers
+## Gzipped transfers
 
 Responses over HTTP can be sent in compressed format. This is most commonly
 done by the server when it includes a `Content-Encoding: gzip` in the response
@@ -89,7 +89,7 @@ in fact any other compression algorithm that curl understands) by using
 
     curl --compressed http://example.com/
 
-### Transfer encoding
+## Transfer encoding
 
 A less common feature used with transfer encoding is compression.
 
@@ -108,7 +108,7 @@ for compressed transfer encoding with `--tr-encoding`:
 
 It should be noted that not many HTTP servers in the wild support this.
 
-### Pass on transfer encoding
+## Pass on transfer encoding
 
 In some situations you may want to use curl as a proxy or other in-between
 software. In those cases, curl's way to deal with transfer-encoding headers

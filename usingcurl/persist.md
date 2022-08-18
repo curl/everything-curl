@@ -1,4 +1,4 @@
-## Persistent connections
+# Persistent connections
 
 When setting up connections to sites, curl keeps old connections around for a
 while so that if the next transfer is done using the same host as a previous

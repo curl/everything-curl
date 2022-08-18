@@ -1,4 +1,4 @@
-## Downloads
+# Downloads
 
 "Download" means getting data from a server on a network, and the server is
 then clearly considered to be "above" you. This is loading data down from the

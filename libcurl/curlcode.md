@@ -1,4 +1,4 @@
-## CURLcode return code
+# CURLcode return code
 
 Many libcurl functions return a CURLcode. That is a special libcurl typedefed
 variable for error codes. It returns `CURLE_OK` (which has the value zero) if

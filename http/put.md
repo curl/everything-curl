@@ -1,9 +1,9 @@
-## PUT
+# HTTP PUT
 
-The difference between a PUT and a POST is subtle. They are virtually identical
-transmissions except for the different method strings. Where POST is meant to
-pass on data to a remote resource, PUT is supposed to be the new version of
-that resource.
+The difference between a PUT and a POST is subtle. They are virtually
+identical transmissions except for the different method strings. Where POST is
+meant to pass on data to a remote resource, PUT is supposed to be the new
+version of that resource.
 
 In that aspect, PUT is similar to good old standard file upload found in other
 protocols. You upload a new version of the resource with PUT. The URL

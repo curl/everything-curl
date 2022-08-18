@@ -1,4 +1,4 @@
-## What does curl do?
+# What does curl do?
 
 cURL is a project and its primary purpose and focus is to make two products:
 
@@ -26,7 +26,7 @@ The library is used in every imaginable sort of embedded device where Internet
 transfers are needed: car infotainment, televisions, Blu-Ray players, set-top
 boxes, printers, routers, game systems, etc.
 
-### Command line tool
+## Command line tool
 
 Running curl from the command line was natural and Daniel never considered
 anything else than that it would output data on stdout, to the terminal, by
@@ -44,7 +44,7 @@ The command-line tool is designed to work perfectly from scripts or other
 automatic means. It does not feature any other GUI or UI other than mere text
 in and text out.
 
-### The library
+## The library
 
 While the command-line tool came first, the network engine was ripped out and
 converted into a library during the year 2000 and the concepts we still have

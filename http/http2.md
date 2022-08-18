@@ -1,4 +1,4 @@
-## HTTP/2
+# HTTP/2
 
 curl supports HTTP/2 for both HTTP:// and HTTPS:// URLs assuming that curl was
 built with the proper prerequisites. It will even default to using HTTP/2 when
@@ -26,7 +26,7 @@ within your own controlled environment where you know exactly what runs in
 your machines) you can shortcut the HTTP/2 "negotiation" with
 `--http2-prior-knowledge`.
 
-### Multiplexing
+## Multiplexing
 
 One of the primary features in the HTTP/2 protocol is the ability to multiplex
 several logical stream over the same physical connection. When using the curl

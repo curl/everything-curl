@@ -1,4 +1,4 @@
-## Header files
+# Header files
 
 There is only ever one header your libcurl using application needs to include:
 

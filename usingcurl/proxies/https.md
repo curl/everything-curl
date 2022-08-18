@@ -1,4 +1,4 @@
-## HTTPS proxy
+# HTTPS proxy
 
 All the other mentioned protocols to speak with the proxy are clear text
 protocols, HTTP and the SOCKS versions. Using those methods could allow

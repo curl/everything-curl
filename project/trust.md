@@ -1,4 +1,4 @@
-## Trust
+# Trust
 
 For a software to conquer the world, it needs to be trusted. It takes trust to
 build more trust and it can all be broken down really fast if the foundation

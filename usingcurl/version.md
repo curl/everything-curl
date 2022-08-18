@@ -1,4 +1,4 @@
-## Version
+# Version
 
 To get to know what version of curl you have installed, run
 

@@ -1,4 +1,4 @@
-## Passwords and snooping
+# Passwords and snooping
 
 Passwords are tricky and sensitive. Leaking a password can make someone other
 than you access the resources and the data otherwise protected.
@@ -13,7 +13,7 @@ is `12345`:
 
     $ curl -u alice:12345 http://example.com/
 
-### Command line leakage
+## Command line leakage
 
 Several potentially bad things are going on here. First, we are entering a
 password on the command line and the command line might be readable for other
@@ -27,7 +27,7 @@ file](configfile.md). You can also use the `-u` option without
 specifying the password, and then curl will instead prompt the user for it
 when it runs.
 
-### Network leakage
+## Network leakage
 
 Secondly, this command line sends the user credentials to an HTTP server,
 which is a clear-text protocol that is open for man-in-the-middle or other

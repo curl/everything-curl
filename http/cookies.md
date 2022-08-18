@@ -1,4 +1,4 @@
-## Cookies
+# Cookies
 
 HTTP cookies are key/value pairs that a client stores on the behalf of a
 server. They are sent back in subsequent requests to
@@ -18,7 +18,7 @@ time of the browser used to view a site. When you close the browser, you end
 your session. Doing HTTP operations with a command-line client that supports
 cookies begs the question of when a session really ends…
 
-### Cookie engine
+## Cookie engine
 
 The general concept of curl only doing the bare minimum unless you tell it
 differently makes it not acknowledge cookies by default. You need to switch on
@@ -38,7 +38,7 @@ then do a redirect we would do:
 
     curl -L -b non-existing http://example.com
 
-### Reading cookies from file
+## Reading cookies from file
 
 Starting off with a blank cookie store may not be desirable. Why not start off
 with cookies you stored in a previous fetch or that you otherwise acquired?
@@ -59,7 +59,7 @@ cookies in its response, curl would update that cookie in its in-memory store
 but then eventually throw them all away when it exits and a subsequent invocation
 of the same input file would use the original cookie contents again.
 
-### Writing cookies to file
+## Writing cookies to file
 
 The place where cookies are stored is sometimes referred to as the "cookie
 jar". When you enable the cookie engine in curl and it has received cookies,
@@ -80,7 +80,7 @@ including those that are session cookies (without a given lifetime). curl
 itself has no notion of a session and it does not know when a session ends so
 it will not flush session cookies unless you tell it to.
 
-### New cookie session
+## New cookie session
 
 Instead of telling curl when a session ends, curl features an option that lets
 the user decide when a new session *begins*.

@@ -1,4 +1,4 @@
-## How it started
+# How it started
 
 Back in 1996, [Daniel Stenberg](https://daniel.haxx.se/) was writing an IRC
 bot in his spare time, an automated program that would offer services for the

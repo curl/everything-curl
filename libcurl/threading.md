@@ -1,4 +1,4 @@
-## libcurl multi-threading
+# libcurl multi-threading
 
 libcurl is thread safe but has no internal thread synchronization. You may have
 to provide your own locking or change options to properly use libcurl threaded.

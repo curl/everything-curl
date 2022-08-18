@@ -1,4 +1,4 @@
-## FTP uses two connections
+# FTP uses two connections
 
 FTP uses two TCP connections! The first connection is setup by the client when
 it connects to an FTP server, and is called the *control connection*. As the
@@ -10,7 +10,7 @@ transferred over that.
 This setting up of a second connection causes nuisances and headaches for
 several reasons.
 
-### Active connections
+## Active connections
 
 The client can opt to ask the server to connect to the client to set it up, a
 so-called "active" connection. This is done with the PORT or EPRT
@@ -28,7 +28,7 @@ for a file:
 You can also explicitly ask curl to not use EPRT (which is a slightly newer
 command than PORT) with the `--no-eprt` command-line option.
 
-### Passive connections
+## Passive connections
 
 Curl defaults to asking for a "passive" connection, which means it sends a
 PASV or EPSV command to the server and then the server opens up a new port for
@@ -49,7 +49,7 @@ address mentioned in the PASV response (`--ftp-skip-pasv-ip`) and instead use
 the same IP address it has for the control connection even for the second
 connection.
 
-### Firewall issues
+## Firewall issues
 
 Using either active or passive transfers, any existing firewalls in the
 network path pretty much have to have stateful inspection of the FTP traffic

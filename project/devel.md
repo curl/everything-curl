@@ -1,4 +1,4 @@
-## Development
+# Development
 
 We encourage everyone to participate in the development of curl and
 libcurl. We appreciate all the help we can get and while the main portion of

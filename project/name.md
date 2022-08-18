@@ -1,4 +1,4 @@
-## The name
+# The name
 
 Naming things is hard.
 
@@ -18,14 +18,14 @@ were that clever…
 There are and were other projects using the name curl in various ways, but we
 were not aware of them by the time our curl came to be.
 
-### Pronunciation
+## Pronunciation
 
 Most of us pronounce "curl" with an initial k sound, just like the English
 word curl. It rhymes with words like girl and earl. Merriam Webster has a
 [short WAV file](https://media.merriam-webster.com/soundc11/c/curl0001.wav) to
 help.
 
-### Confusions and mix-ups
+## Confusions and mix-ups
 
 Soon after our curl was created another "curl" appeared that created a
 programming language. That curl still [exists](https://www.curl.com).
@@ -35,7 +35,7 @@ or "CURL" in part or completely to describe their bindings. Sometimes
 you will find users talking about curl but referring to neither the command-line tool
 nor the library that is made by this project.
 
-### Used as a verb
+## As a verb
 
 'To curl something' is sometimes used as a reference to use a non-browser tool
 to download a file or resource from a URL.

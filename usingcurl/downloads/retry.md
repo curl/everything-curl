@@ -19,7 +19,7 @@ your own delay between the attempts. With `--retry-max-time` you cap the total
 time allowed for retries. The `--max-time` option will still specify the
 longest time a single of these transfers is allowed to spend.
 
-Make curl retry up to 5 times, but no less than two minutes:
+Make curl retry up to 5 times, but no more than two minutes:
 
     curl --retry 5 --retry-max-time 120 https://example.com
 

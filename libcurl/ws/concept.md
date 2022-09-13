@@ -15,18 +15,18 @@ retrieve information about the incoming WebSocket data.
 
 ## 2. The connect-only approach
 
-The other way to do it, if using the write callback is not suitable, is set to
-set `CURLOPT_CONNECT_ONLY` to the value `2L` and let libcurl do a transfer
-that only sets up the connection to the server and then is considered
-complete. After that *connect-only* transfer, the application can use
-`curl_ws_recv()` and `curl_ws_send()` to receive and send WebSocket data over
-the connection.
+The other way to do it, if using the write callback is not suitable, is to set
+`CURLOPT_CONNECT_ONLY` to the value `2L` and let libcurl do a transfer that
+only sets up the connection to the server, does the WebSocket upgrade and then
+is considered complete. After that *connect-only* transfer, the application
+can use `curl_ws_recv()` and `curl_ws_send()` to receive and send WebSocket
+data over the connection.
 
 ## Upgrade or die
 
 Doing a transfer with a `ws://` or `wss://` URL implies that libcurl makes a
-successful upgrade to the WebSocket protocol; libcurl returns error otherwise.
-A HTTP 200 response code which for example is considered fine in a normal HTTP
+successful upgrade to the WebSocket protocol or an error is returned. An HTTP
+200 response code which for example is considered fine in a normal HTTP
 transfer is therefor considered an error when asking for a WebSocket transfer.
 
 ## Automatic `PONG`

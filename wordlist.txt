@@ -540,6 +540,7 @@ Warta
 WAV
 WB
 web page
+WebSocket
 whitespace
 winbuild
 WinSock

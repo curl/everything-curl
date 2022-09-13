@@ -20,7 +20,7 @@ function.
 `sendflags` - bitmask describing the data. See bit descriptions below.
 
 ### `CURLWS_TEXT`
-The buffer contains text data. Note that this makes a difference to WebSockets
+The buffer contains text data. Note that this makes a difference to WebSocket
 but libcurl itself will not make any verification of the content or
 precautions that you actually send valid UTF-8 content.
 

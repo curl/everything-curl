@@ -1,7 +1,7 @@
 # Support
 
 WebSocket is an **EXPERIMENTAL** feature present in libcurl 7.86.0 and
-later. Since it is experiental, you need to explicitly enable it in the build
+later. Since it is experimental, you need to explicitly enable it in the build
 for it to be present and available.
 
 To figure if your libcurl installation supports WebSocket, you can call

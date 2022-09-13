@@ -32,8 +32,8 @@ The `curl_ws_recv` function has this prototype:
 
 `recv` - the size in bytes of the data stored in the **buffer* on return
 
-**recvflags** - a bitmask of bits that describe the received frame. See the
-bit descriptions below.
+`recvflags` - a bitmask of bits that describe the received frame. See the bit
+descriptions below.
 
 ### `CURLWS_TEXT`
 The buffer contains text data. Note that this makes a difference to WebSocket

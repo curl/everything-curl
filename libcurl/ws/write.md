@@ -1,6 +1,6 @@
 # Write
 
-An application can receive websocket data two different ways, but there is
+An application can receive WebSocket data two different ways, but there is
 only one way for it to send off data over the connection. The `curl_ws_send()`
 function.
 
@@ -11,9 +11,9 @@ function.
 
 `curl` - transfer handle
 
-`buffer` - pointer to the fram data to send
+`buffer` - pointer to the frame data to send
 
-`buflen` - lenght of the data (in bytes) in `buffer`
+`buflen` - length of the data (in bytes) in `buffer`
 
 `sent` - number of bytes that were sent
 

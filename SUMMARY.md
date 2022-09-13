@@ -221,7 +221,7 @@
         * [Header struct](libcurl/headerapi/struct.md)
         * [Get a header](libcurl/headerapi/get.md)
         * [Iterate over headers](libcurl/headerapi/iterate.md)
-    * [WebSockets](libcurl/ws.md)
+    * [WebSocket](libcurl/ws.md)
         * [Support](libcurl/ws/support.md)
         * [URLs](libcurl/ws/urls.md)
         * [Concept](libcurl/ws/concept.md)

@@ -1,4 +1,4 @@
-# Websocket URLs
+# WebSocket URLs
 
 A client starts a WebSocket communication with libcurl by using a URL with the
 scheme `ws` or `wss`. Like in `wss://websocket.example.com/traffic-lights`.

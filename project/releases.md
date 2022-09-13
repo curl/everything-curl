@@ -21,9 +21,13 @@ weeks later and so it continues. Non-stop.
 For every release we tag the source code in the repository with "curl-release
 version" and we update the [changelog](https://curl.se/changes.html).
 
-We had done 204 curl releases by November 2021. The entire release history and
+We had done 210 curl releases by August 2022. The entire release history and
 changelog is available in our [curl release
 log](https://curl.se/docs/releases.html).
+
+## Release cycle
+
+![The curl release cycle visualized](release-cycle.png)
 
 ## Daily snapshots
 

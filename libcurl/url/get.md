@@ -1,20 +1,19 @@
 # Get a URL
 
-The `CURLU *` handle represents a URL, or at parts of a URL, and you can
-easily extract that URL at any point:
+The `CURLU *` handle represents a single URL and you can easily extract that
+full URL or its individual parts with `curl_url_get`:
 
     char *url;
     rc = curl_url_get(h, CURLUPART_URL, &url, CURLU_NO_DEFAULT_PORT);
     curl_free(url);
 
-If the handle does not have enough information to extra a full URL, it will
-return error.
+If the handle does not have enough information to return the part that is
+being asked for, it returns error.
 
-The returned string must be freed with `curl_free()` after you are done with
-it.
+A returned string must be freed with `curl_free()` after you are done with it.
 
 The zero in the function call's forth argument is a flag bitmask for changing
-specific features.
+specific behaviors. Select from the following bits:
 
 ## `CURLU_DEFAULT_PORT`
 

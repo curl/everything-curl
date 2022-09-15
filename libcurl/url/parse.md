@@ -10,9 +10,8 @@ If successful, `rc` contains `CURLUE_OK` and the different URL components are
 held in the handle. It means that the URL was valid as far as libcurl
 concerns.
 
-The function call's forth argument is a bitmask for changing specific
-features. You can set none, one more bits in that to alter the parser's
-behavior:
+The function call's forth argument is a bitmask. Set none, one or more bits in
+that to alter the parser's behavior:
 
 ## `CURLU_NON_SUPPORT_SCHEME`
 
@@ -45,8 +44,8 @@ that scheme will be used, otherwise it picks HTTP. Conflicts with the
 Skips authority checks. The RFC allows individual schemes to omit the host
 part (normally the only mandatory part of the authority), but libcurl cannot
 know whether this is permitted for custom schemes. Specifying the flag permits
-empty authority sections, similar to how file scheme is handled. Really only
-usable in combination with `CURLU_NON_SUPPORT_SCHEME`.
+empty authority sections, similar to how the file scheme is handled. Really
+only usable in combination with `CURLU_NON_SUPPORT_SCHEME`.
 
 ## `CURLU_PATH_AS_IS`
 

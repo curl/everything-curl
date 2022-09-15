@@ -43,7 +43,7 @@ Extracted parts are not URL decoded unless the user asks for it with the
 
 ## URL parts
 
-THe different parts are named from their roles in the URL. Imagine a URL that
+The different parts are named from their roles in the URL. Imagine a URL that
 looks like this:
 
     http://joe:7Hbz@example.com:8080/images?id=5445#footer

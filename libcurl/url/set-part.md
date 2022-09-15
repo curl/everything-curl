@@ -12,6 +12,7 @@ such.
     rc = curl_url_set(urlp, CURLUPART_PATH, "/index.html", 0);
     rc = curl_url_set(urlp, CURLUPART_QUERY, "name=john", 0);
     rc = curl_url_set(urlp, CURLUPART_FRAGMENT, "anchor", 0);
+    rc = curl_url_set(urlp, CURLUPART_ZONEID, "25", 0);
 
 The API always expects a null-terminated `char *` string in the third
 argument, or NULL to clear the field. Note that the port number is also

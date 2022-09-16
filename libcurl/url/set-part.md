@@ -23,7 +23,7 @@ Set parts are not URL encoded unless the user asks for it with the
 
 ## Update parts
 
-By setting an indivual part, you can for example first set a full URL, then
+By setting an individual part, you can for example first set a full URL, then
 update a single component of that URL and then extract the updated version of
 that URL.
 

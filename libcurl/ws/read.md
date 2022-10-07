@@ -8,10 +8,13 @@ these two methods:
 When the `CURLOPT_CONNECT_ONLY` option is **not** set, WebSocket data will be
 delivered to the write callback.
 
-In the default "frame mode" (as opposed to "raw mode"), libcurl delivers
-complete WebSocket frames to the callback one by one as they arrive. The
-application can then call `curl_ws_meta()` to get information about the
-specific frame that was passed to the callback.
+In the default "frame mode" (as opposed to "raw mode"), libcurl delivers parts
+of WebSocket fragments to the callback as data arrives. The application can
+then call `curl_ws_meta()` to get information about the specific frame that
+was passed to the callback.
+
+libcurl can deliver full fragments or partial ones, depending one what comes
+over the wire when. Each WebSocket fragment can be up to 63 bit in size.
 
 ## `curl_ws_recv`
 
@@ -22,7 +25,7 @@ call `curl_ws_recv()` to read WebSocket data and `curl_ws_send()` to send it.
 The `curl_ws_recv` function has this prototype:
 
     CURLcode curl_ws_recv(CURL *curl, void *buffer, size_t buflen,
-                          size_t *recv, unsigned int *recvflags);
+                          size_t *recv, struct curl_ws_frame **meta);
 
 `curl` - the handle to the transfer
  
@@ -32,23 +35,5 @@ The `curl_ws_recv` function has this prototype:
 
 `recv` - the size in bytes of the data stored in the **buffer* on return
 
-`recvflags` - a bitmask of bits that describe the received frame. See the bit
-descriptions below.
-
-### `CURLWS_TEXT`
-The buffer contains text data. Note that this makes a difference to WebSocket
-but libcurl itself will not make any verification of the content or
-precautions that you actually receive valid UTF-8 content.
-
-### `CURLWS_BINARY`
-This is binary data.
-
-### `CURLWS_FINAL`
-This is the final fragment of the message, if this is not set, it implies that
-there will be another fragment coming as part of the same message.
- 
-### `CURLWS_CLOSE`
-This transfer is now closed.
-
-### `CURLWS_PING`
-This as an incoming ping message, that expects a pong response.
+`meta` - gets a pointer to a struct with [information about the received
+frame](meta.md).

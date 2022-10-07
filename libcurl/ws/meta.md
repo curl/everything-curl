@@ -3,9 +3,9 @@
 `curl_ws_recv()` and `curl_ws_meta()` both return a pointer to a
 `curl_ws_frame` struct, which provides information about the incoming
 WebSocket data. A WebSocket "frame" in this case is a part of a WebSocket
-fragment. It *can* be a whole fragment, but it might also very well be only a
-piece of it. The `curl_ws_frame` contains information about the frame to tell
-you the details.
+fragment. It *can* be a whole fragment, but it might only be a piece of
+it. The `curl_ws_frame` contains information about the frame to tell you the
+details.
 
 ~~~c
 struct curl_ws_frame {

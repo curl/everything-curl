@@ -45,7 +45,7 @@ This as an incoming ping message, that expects a pong response.
 
 ## `offset`
 
-When the data delivered is just a part of a larger framgment, this identifies
+When the data delivered is just a part of a larger fragment, this identifies
 the offset in number of bytes into the larger fragment where this piece
 belongs.
 

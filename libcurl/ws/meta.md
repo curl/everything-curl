@@ -16,12 +16,12 @@ struct curl_ws_frame {
 };
 ~~~
 
-## Age
+## `age`
 
 This is just a number that identifies the age of this struct. It is always 0
 now, but might increase in a future and then the struct might grow.
 
-## Flags
+## `flags`
 
 The `flags' field is a bitmask describing details of data.
 
@@ -43,13 +43,15 @@ This transfer is now closed.
 ### `CURLWS_PING`
 This as an incoming ping message, that expects a pong response.
 
-## Offset
+## `offset`
 
-When the data delivered is just a part of a larger framgment, this identies
+When the data delivered is just a part of a larger framgment, this identifies
 the offset in number of bytes into the larger fragment where this piece
 belongs.
 
-## Bytesleft
+## `bytesleft`
 
 Number of outstanding payload bytes after this frame, that is left to complete
 this fragment.
+
+The maximum size of a WebSocket fragment is 63 bits.

@@ -14,4 +14,5 @@ WebSocket over that connection until it is done and the connection is closed.
 * [Concept](ws/concept.md)
 * [Options](ws/options.md)
 * [Read](ws/read.md)
+* [Meta](ws/meta.md)
 * [Write](ws/write.md)

@@ -223,6 +223,7 @@
         * [Concept](libcurl/ws/concept.md)
         * [Options](libcurl/ws/options.md)
         * [Read](libcurl/ws/read.md)
+        * [Meta](libcurl/ws/meta.md)
         * [Write](libcurl/ws/write.md)
     * [API compatibility](libcurl/api.md)
     * [--libcurl](libcurl/--libcurl.md)

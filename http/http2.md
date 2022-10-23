@@ -28,11 +28,7 @@ your machines) you can shortcut the HTTP/2 "negotiation" with
 
 ## Multiplexing
 
-One of the primary features in the HTTP/2 protocol is the ability to multiplex
-several logical stream over the same physical connection. When using the curl
-command-line tool, you cannot take advantage of that cool feature since curl
-is doing all its network requests in a strictly serial manner, one after the
-next, with the second only ever starting once the previous one has ended.
-
-Preferably, a future curl version will be enhanced to allow the use of this
-feature.
+A primary feature in the HTTP/2 protocol, is the ability to multiplex several
+logical streams over the same physical connection. The curl command-line tool
+can take advantage of this feature when [doing parallel
+transfers](../cmdline/urls/parallel.md).

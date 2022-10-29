@@ -1,6 +1,6 @@
 # Name resolve tricks
 
-curl offers many ways to make use another host than the one it normally would
+curl offers many ways to make it use another host than the one it normally would
 connect to.
 
 ## Edit the hosts file

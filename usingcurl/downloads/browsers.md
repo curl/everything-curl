@@ -59,7 +59,7 @@ remote server from what data you try to send to it, but even more so it
 introduces another software's view on how the protocol works and what the
 right things to do are.
 
-Interfering intermediaries are often the cause of lots of head aches and
+Interfering intermediaries are often the cause of lots of headaches and
 mysteries down to downright malicious modifications of content.
 
 We strongly encourage you to use HTTPS or other means to verify that the

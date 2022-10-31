@@ -48,7 +48,7 @@ A server always responds to an HTTP request unless something is wrong.
 
 So when an HTTP client is given a URL to operate on, that URL is then used,
 picked apart and those parts are used in various places in the outgoing
-request to the server. Let's take the an example URL:
+request to the server. Let's take an example URL:
 
     https://www.example.com/path/to/file
 

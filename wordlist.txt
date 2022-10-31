@@ -53,6 +53,7 @@ CharConv
 charset
 charsets
 checksums
+CIDR
 CIFS
 CLA
 CLAs

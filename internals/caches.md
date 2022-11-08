@@ -1,6 +1,6 @@
 # Caches and state in libcurl
 
-When libcurl is used for internet transfers, it stores data in caches and
+When libcurl is used for Internet transfers, it stores data in caches and
 state storage in order to do subsequent transfers faster and better.
 
 The caches are kept associated with the `CURL` or `CURLM` handles, depending
@@ -34,7 +34,7 @@ When curl creates a new connection and performs a TLS handshake, it needs to
 load and parse a *CA store* to use for verifying the certificate presented by
 the remote server. The CA store cache keeps the parsed CA store in memory for
 a period of time (default is 24 hours) so that subsequent handshakes are done
-much faster by avoiding having to reparse this potentially large data
+much faster by avoiding having to re-parse this potentially large data
 amount. This cache exists in memory only. Added in 7.87.0.
 
 ## HSTS
@@ -47,14 +47,14 @@ save it to disk as well.
 
 ## Alt-Svc
 
-`Alt-Svc:` is a HTTP response header that informs the client about alternative
-host names, port numbers and protocol versions where the same service is also
-available. curl keeps this alternative service information in memory and can
-be told to load it from and save it to disk as well.
+`Alt-Svc:` is an HTTP response header that informs the client about
+alternative host names, port numbers and protocol versions where the same
+service is also available. curl keeps this alternative service information in
+memory and can be told to load it from and save it to disk as well.
 
 ## Cookies
 
-Cookies are name value pairs sent from a HTTP server to the client, meant to
+Cookies are name value pairs sent from an HTTP server to the client, meant to
 be sent back in subsequent requests that match the conditions. curl keeps all
 cookies in memory and can be told to load them from and save them to disk as
 well.

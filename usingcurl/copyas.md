@@ -27,7 +27,10 @@ the site. On the line of the specific resource you are interested in, you
 right-click with the mouse and you select "Copy as cURL" and it will generate
 a command line for you in your clipboard. Paste that in a shell to get a curl
 command line that makes the transfer. This feature is available by default in
-all Chrome and Chromium installations.
+all Chrome and Chromium installations. *(Note: Chromium browsers in Windows may
+generate an incorrect command line that is misquoted due to a
+[bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1242803)
+in Chromium).*
 
 ![copy as curl with Chrome](chrome-copy-as-curl.png)
 

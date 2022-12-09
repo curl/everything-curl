@@ -20,7 +20,8 @@ transfer.
 The latest curl (as of this writing) supports these protocols:
 
 DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS,
-MQTT, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP
+MQTT, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP,
+WS, WSS
 
 To complicate matters further, the protocols often exist in different versions
 or flavors as well.

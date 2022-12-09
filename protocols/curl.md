@@ -162,3 +162,15 @@ terminal connection. See RFC 854. TELNET servers and clients use TCP port 23.
 The Trivial File Transfer Protocol (TFTP) is a protocol for doing simple file
 transfers over UDP to get a file from or put a file onto a remote host. TFTP
 servers and clients use UDP port 69.
+
+## WS
+
+WebSocket is a bidirectional TCP-like protocol, setup over an HTTP(S)
+request. WS is the scheme for the clear text version done over plain HTTP.
+Experimental support for this was added to curl 7.86.0.
+
+## WSS
+
+WebSocket is a bidirectional TCP-like protocol, setup over an HTTP(S)
+request. WSS is the scheme for the secure version done over HTTPS.
+Experimental support for this was added to curl 7.86.0.

@@ -540,6 +540,8 @@ vtls
 Warta
 WAV
 WB
+WS
+WSS
 web page
 WebSocket
 whitespace

@@ -269,6 +269,7 @@
     * [Protocol handler](internals/handler.md)
     * [Backends](internals/backends.md)
     * [Caches and state](internals/caches.md)
+    * [Timeouts](internals/timeouts.md)
     * [Windows vs Unix](internals/windows-vs-unix.md)
     * [Memory debugging](internals/memory-debugging.md)
     * [Content Encoding](internals/content-encoding.md)

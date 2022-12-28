@@ -46,6 +46,16 @@ using non-ASCII bytes that otherwise will be percent-encoded.
 Note that even when not asking for URL encoding, the `%` (byte 37) will be URL
 encoded in host names to make sure the host name remains valid.
 
+## `CURLU_URLDECODE`
+
+Tells `curl_url_get()` to URL decode the contents before returning it. It will
+not attempt to decode the scheme, the port number or the full URL. The query
+component will also get plus-to-space conversion as a bonus when this bit is
+set. Note that this URL decoding is charset unaware and you will get a zero
+terminated string back with data that could be intended for a particular
+encoding. If there are any byte values lower than 32 in the decoded string,
+the get operation will return an error instead.
+
 ## `CURLU_PUNYCODE`
 
 If set and `CURLU_URLENCODE` is not set, and asked to retrieve the

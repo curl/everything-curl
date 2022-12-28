@@ -41,6 +41,7 @@ Some of these variables are not available in really old curl versions.
 
 | Variable             | Description                                                                           |
 |----------------------|---------------------------------------------------------------------------------------|
+| `certs`              | Outputs the certificate chain from the most recent TLS handshake - with details. (Introduced in 7.88.0) |
 | `content_type`       | Content-Type of the requested document, if there was any.                             |
 | `errormsg`           | Error message from the transfer. Empty if no error occurred. (Introduced in 7.75.0)   |
 | `exitcode`           | Numerical exit code from the transfer. 0 if no error occurred. (Introduced in 7.75.0) |
@@ -53,6 +54,7 @@ Some of these variables are not available in really old curl versions.
 | `local_ip` | IP address of the local end of the most recently used connection - can be either IPv4 or IPv6 |
 | `local_port` | Local port number of the most recently used connection |
 | `method` | HTTP method the most recent request used | 
+| `num_certs`    | Number of the certificates in the most recent TLS handshake. (Introduced in 7.88.0) |
 | `num_connects` | Number of new connects made in the recent transfer. |
 | `num_headers` | Number of response headers in the last response |
 | `num_redirects` | Number of redirects that were followed in the request. |

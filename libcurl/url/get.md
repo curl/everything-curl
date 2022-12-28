@@ -12,8 +12,12 @@ being asked for, it returns error.
 
 A returned string must be freed with `curl_free()` after you are done with it.
 
-The zero in the function call's forth argument is a flag bitmask for changing
-specific behaviors. Select from the following bits:
+# Flags
+
+When retrieving a URL part using `curl_url_get()`, the API offers a few
+different toggles to better specify exactly how that content should be
+returned. They are set in the `flags` bitmask parameter, which is the
+function's fourth argument. You can set zero, one or more bits.
 
 ## `CURLU_DEFAULT_PORT`
 
@@ -41,3 +45,22 @@ using non-ASCII bytes that otherwise will be percent-encoded.
 
 Note that even when not asking for URL encoding, the `%` (byte 37) will be URL
 encoded in host names to make sure the host name remains valid.
+
+## `CURLU_URLDECODE`
+
+Tells `curl_url_get()` to URL decode the contents before returning it. It will
+not attempt to decode the scheme, the port number or the full URL. The query
+component will also get plus-to-space conversion as a bonus when this bit is
+set. Note that this URL decoding is charset unaware and you will get a zero
+terminated string back with data that could be intended for a particular
+encoding. If there are any byte values lower than 32 in the decoded string,
+the get operation will return an error instead.
+
+## `CURLU_PUNYCODE`
+
+If set and `CURLU_URLENCODE` is not set, and asked to retrieve the
+`CURLUPART_HOST` or `CURLUPART_URL` parts, libcurl returns the host name in
+its punycode version if it contains any non-ASCII octets (and is an IDN
+name). If libcurl is built without IDN capabilities, using this bit will make
+`curl_url_get()` return `CURLUE_LACKS_IDN` if the host name contains anything
+outside the ASCII range.

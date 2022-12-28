@@ -384,6 +384,7 @@ PSL
 pthreads
 PTR
 ptr
+punycode
 QoS
 QUIC
 Raad

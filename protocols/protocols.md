@@ -102,7 +102,7 @@ learn anything else. If popular alternative implementations act differently
 than what we think the spec says and that alternative behavior is what works
 widely on the big Internet, then chances are we will change foot and instead
 decide to act like those others. If a server refuses to talk with us when we
-think we follow the spec but works fine when we bend the rules every so
+think we follow the spec but works fine when we bend the rules ever so
 slightly, then we probably end up bending them exactly that way—if we can
 still work successfully with other implementations.
 

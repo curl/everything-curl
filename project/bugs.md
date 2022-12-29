@@ -4,7 +4,7 @@ The development team does a lot of testing. We have a whole test suite that is
 run frequently every day on numerous platforms in order to exercise all
 code and make sure everything works as expected.
 
-Still, there are times when things don't work the way they should, and we 
+Still, there are times when things do not work the way they should, and we 
 depend on people reporting it to us.
 
 ## A bug is a problem

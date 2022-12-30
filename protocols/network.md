@@ -74,8 +74,8 @@ specifies a *scheme* called `HTTP` which tells the client that it should try
 TCP port number 80 on the server by default. If the URL uses `HTTPS` instead,
 the default port number is 443.
 
-The URL can include a custom port number. If a port number isn't specified, the 
-client will use the default port for the scheme used in the URL.
+The URL can include a custom port number. If a port number is not specified, 
+the client will use the default port for the scheme used in the URL.
 
 ## Security
 

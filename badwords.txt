@@ -8,6 +8,7 @@ wild-card:wildcard
 wild card:wildcard
 i'm:I am
 you've:You have
+they've:They have
 they're:They are
 should've:should have
 don't:do not

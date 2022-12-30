@@ -59,7 +59,7 @@ string can be used to send a stream of data in both directions.
 If the client has received more than one address for the host, it will
 traverse that list of addresses when connecting, and if one address fails it
 will try to connect to the next one, repeating until either one address works 
-or they've all failed.
+or they have all failed.
 
 ## Connect to port numbers
 

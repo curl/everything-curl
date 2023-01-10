@@ -308,6 +308,7 @@ mqtt
 mqtts
 MSB
 MSGSENT
+msh
 mstate
 MSVC
 MSYS

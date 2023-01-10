@@ -128,4 +128,4 @@ when building. You select them by using the correct command-line options.
 
  - quiche: `--with-quiche`
  - ngtcp2: `--with-ngtcp2 --with-nghttp3`
-
+ - msh3: `--with-msh3`

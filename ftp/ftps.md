@@ -17,7 +17,7 @@ in the clear. If no port number is specified in the URL, curl will use port
 ## Explicit FTPS
 
 The *explicit* way of doing FTPS is to keep using an `ftp://` URL, but
-instruct curl to upgrade the connection into a secure one using the `STARTTLS`
+instruct curl to upgrade the connection into a secure one using the `AUTH TLS`
 FTP command.
 
 You can tell curl to either *attempt* an upgrade and continue as usual if the

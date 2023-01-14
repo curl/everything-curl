@@ -29,7 +29,7 @@ done - if any.
 ## Common FTPS problems
 
 The single most common problem with FTPS comes from the fact that the FTP
-protocol (that FTPS transfers still mostly uses) uses a separate connection
+protocol (that FTPS transfers still mostly use) uses a separate connection
 setup for the data transfer. This connection is done to another port and when
 FTP is done over clear text (non-FTPS), firewalls and network inspectors etc
 can figure out that this is FTP in progress and they can adapt things and

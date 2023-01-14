@@ -35,6 +35,6 @@ done over clear text (non-FTPS), firewalls and network inspectors etc can
 figure out that this is FTP in progress and they can adapt things and rules
 for the new connection.
 
-When everything is encrypted, with FTPS, firewalls cannot see what is going on
-and no outside can dynamically adapt network rules or permission based on
-this.
+When the FTP control channel is encrypted with TLS, firewalls cannot see what
+is going on and no outside can dynamically adapt network rules or permission
+based on this.

@@ -18,6 +18,8 @@ you prefix the string with '@':
 
     curl -w @- http://example.com/
 
+## Variables
+
 The variables that are available are accessed by writing `%{variable_name}` in
 the string and that variable will then be substituted by the correct value. To
 output a plain `%` you write it as `%%`. You can also output a newline by
@@ -28,14 +30,30 @@ HTTP transfer, separated with newlines and some extra text like this:
 
     curl -w "Type: %{content_type}\nCode: %{response_code}\n" http://example.com
 
-The output is sent to stdout so you probably want to make sure that you do not
-also send the downloaded content to stdout as then you might have a hard time
-to separate out the data.
+The output is sent to stdout by default so you probably want to make sure that
+you do not also send the downloaded content to stdout as then you might have a
+hard time to separate out the data; or use `%{stderr}` to send the output to
+stderr.
 
-**NOTE:** In Windows the %-symbol is a special symbol used to expand
-environment variables. In batch files all occurrences of % must be doubled when
-using this option to properly escape. If this option is used at the command
-prompt then the % cannot be escaped and unintended expansion is possible.
+## HTTP headers
+
+This option also provides an easy to use way to output the contents of HTTP
+response headers from the most recent transfer.
+
+Use `%header{name}` in the string, where `name` is the case insensitive name
+of the header (without the trailing colon). The output header contents are
+then shown exactly as was sent over the network, with leading and trailing
+whitespace trimmed. Like this:
+
+    curl -w "Server: %header{server}\n" http://example.com
+
+## Windows
+
+**NOTE:** In Windows, the `%`-symbol is a special symbol used to expand
+environment variables. In batch files all occurrences of `%` must be doubled
+when using this option to properly escape. If this option is used at the
+command prompt then the `%` cannot be escaped and unintended expansion is
+possible.
 
 ## Available --write-out variables
 

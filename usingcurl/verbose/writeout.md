@@ -20,17 +20,17 @@ you prefix the string with '@':
 
 The variables that are available are accessed by writing `%{variable_name}` in
 the string and that variable will then be substituted by the correct value. To
-output a normal '%' you just write it as '%%'. You can also output a newline
-by using '\n', a carriage return with '\r' and a tab space with '\t'.
+output a plain `%` you write it as `%%`. You can also output a newline by
+using `\n`, a carriage return with `\r` and a tab space with `\t`.
 
 As an example, we can output the Content-Type and the response code from an
 HTTP transfer, separated with newlines and some extra text like this:
 
     curl -w "Type: %{content_type}\nCode: %{response_code}\n" http://example.com
 
-This feature writes the output to stdout so you probably want to make sure
-that you do not also send the downloaded content to stdout as then you might
-have a hard time to separate out the data.
+The output is sent to stdout so you probably want to make sure that you do not
+also send the downloaded content to stdout as then you might have a hard time
+to separate out the data.
 
 **NOTE:** In Windows the %-symbol is a special symbol used to expand
 environment variables. In batch files all occurrences of % must be doubled when

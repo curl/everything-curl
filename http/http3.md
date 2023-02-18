@@ -3,18 +3,12 @@
 This feature is marked **experimental** as of this time and needs to be
 explicitly enabled in the build to function.
 
-## Drafts, not standard
-
-As of January 2022, **the HTTP/3 protocol has not yet been finalized**.
-Everything and everyone that speaks HTTP/3 at this point does it with the
-knowledge and awareness that it might change going forward.
-
 ## QUIC
 
 HTTP/3 is the HTTP version that is designed to communicate over QUIC. QUIC can
-for all particular purposes to be considered as a TCP+TLS replacement.
+for most particular purposes be considered a TCP+TLS replacement.
 
-All requests that do HTTP/3 will therefore not use TCP. They will use QUIC.
+All transfers that use HTTP/3 will therefore not use TCP. They will use QUIC.
 QUIC is a reliable transport protocol built over UDP. HTTP/3 implies use of
 QUIC.
 
@@ -48,12 +42,13 @@ it will rather store the info for use in the *next* request to the host.
 A certain amount of QUIC connection attempts will fail, partly because many
 networks and hosts block or throttle the traffic.
 
-Currently, curl features no fall-back logic but if an HTTP/3 (or QUIC rather)
-connection fails it will be reported as, yes, a failure.
+When `--http3` is used, curl will start a second transfer attempt a few
+hundred milliseconds after the QUIC connection is initiated which is using
+HTTP/2 or HTTP/1, so that if the connection attempt over QUIC fails or turns
+out to be unbearably slow, the connection using an older HTTP version can
+still succeed and perform the transfer. This allows users to use `--http3`
+with some amount of confidence that the operation will work.
 
-Web browsers will upgrade to HTTP/3 in the background and only switch over
-once they know it works, which is a smoother way that does not break things
-for users as much.
-
-Future curl versions will likely offer better fall-back and error handling for
-this.
+`--http3-only` is provided to explicitly *not* try any older version in
+parallel, but will thus make the transfer fail immediately if no QUIC
+connection can be established.

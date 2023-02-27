@@ -2,7 +2,7 @@
 
 POST is the HTTP method that was invented to send data to a receiving web
 application, and it is how most common HTML forms on the web
-works. It usually sends a chunk of relatively small amounts of data to the
+work. It usually sends a chunk of relatively small amounts of data to the
 receiver.
 
 This section describes the simple posts, for multipart formposts done with

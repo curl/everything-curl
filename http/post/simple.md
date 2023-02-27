@@ -1,20 +1,20 @@
 # Simple POST
 
-When the data is sent by a browser after data have been filled in a form, it
-will send it URL encoded, as a serialized name=value pairs separated with
-ampersand symbols (`&`). You send such data with curl's `-d` or `--data`
-option like this:
+To send form data, a browser will URL-encode it as a series of `name=value`
+pairs separated by ampersand (`&`) symbols. The resulting string is sent as
+the body of a POST request. To do the same with curl, use the `-d` (or
+`--data`) argument, like this:
 
     curl -d 'name=admin&shoesize=12' http://example.com/
 
 When specifying multiple `-d` options on the command line, curl will
 concatenate them and insert ampersands in between, so the above example could
-also be made like this:
+also be written like this:
 
     curl -d name=admin -d shoesize=12 http://example.com/
 
-If the amount of data to send is not really fit to put in a mere string on the
-command line, you can also read it off a file name in standard curl style:
+If the amount of data to send is too large for a mere string on the
+command line, you can also read it from a file name in standard curl style:
 
     curl -d @filename http://example.com
 

@@ -12,7 +12,7 @@ in the default homebrew folder, to avoid clashes with the macOS version of curl.
 
 Run the following to make brew curl the default one in your shell:
 
-    echo 'export PATH="$(brew --prefix)/opt/curl/bin:$PATH"' >> ~/.zshrc`
+    echo 'export PATH="$(brew --prefix)/opt/curl/bin:$PATH"' >> ~/.zshrc
     source ~/.zshrc
 
 

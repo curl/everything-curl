@@ -5,7 +5,7 @@
 ## /
  - /etc/hosts: [Run a local clone](source/web.md#run-a-local-clone), [Host](cmdline/urls/host.md#host), [Edit the hosts file](usingcurl/connections/name.md#edit-the-hosts-file)
 ## <
- - <curl/curl.h>: [include/curl](source/layout.md#include/curl), [Header files](libcurl/headers.md#header-files), [Include files](libcurl/url/include.md#include-files), [curl --libcurl](libcurl/--libcurl.md#curl---libcurl), [Get a simple HTML page](libcurl/examples/get.md#get-a-simple-html-page), [Get a response into memory](libcurl/examples/getinmem.md#get-a-response-into-memory), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http), [Get an FTP directory listing](libcurl/examples/ftplist.md#get-an-ftp-directory-listing), [Non-blocking HTTP form-post](libcurl/examples/http-ul-nonblock.md#non-blocking-http-form-post)
+ - <curl/curl.h>: [include/curl](source/layout.md#includecurl), [Header files](libcurl/headers.md#header-files), [Include files](libcurl/url/include.md#include-files), [curl --libcurl](libcurl/--libcurl.md#curl---libcurl), [Get a simple HTML page](libcurl/examples/get.md#get-a-simple-html-page), [Get a response into memory](libcurl/examples/getinmem.md#get-a-response-into-memory), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http), [Get an FTP directory listing](libcurl/examples/ftplist.md#get-an-ftp-directory-listing), [Non-blocking HTTP form-post](libcurl/examples/http-ul-nonblock.md#non-blocking-http-form-post)
 ## A
  - --alt-svc: [Enable](http/altsvc.md#enable)
  - --anyauth: [HTTP authentication](http/auth.md#http-authentication)

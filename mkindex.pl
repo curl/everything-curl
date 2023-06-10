@@ -40,10 +40,10 @@ sub urlify {
     $section =~ s/^[-\.]+//g;
 
     # convert some bytes to dashes
-    $section =~ s/[ \/]/-/g;
+    $section =~ s/[ \/\@]/-/g;
 
     # remove rubbish
-    $section =~ s/[*`'":\(\)@,]+//g;
+    $section =~ s/[*`'":\(\),]+//g;
 
     # < => less-than-
     $section =~ s/^\</less-than-/g;

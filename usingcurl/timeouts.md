@@ -37,6 +37,9 @@ host. All the necessary steps done before the connection is considered
 complete have to be completed within the given time frame. Failing to connect
 within the given time will cause curl to exit with a timeout exit code (28).
 
+The steps done before a connect is considered succesful include DNS lookup and
+subsequent TCP, TLS or QUIC handshakes.
+
 The given maximum connect time can be specified with a decimal precision;
 `0.5` means 500 milliseconds and `2.37` equals 2370 milliseconds:
 

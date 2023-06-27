@@ -70,7 +70,7 @@ Some of these variables are not available in really old curl versions.
 | `http_code`     | The former variable name for what is now known as `response_code`.                               |
 | `http_connect`   | the numerical code that was found in the last response (from a proxy) to a curl CONNECT request. |
 | `http_version`   | The HTTP version that was used.                                                                  |
-| `json`           | all write-out variables as a single JSON object.                                                 |
+| `json`           | all write-out variables as a single JSON object. ([Introduced in 7.72.0](https://github.com/curl/curl/pull/4870)) |
 | `local_ip` | IP address of the local end of the most recently used connection - can be either IPv4 or IPv6 |
 | `local_port` | Local port number of the most recently used connection |
 | `method` | HTTP method the most recent request used | 

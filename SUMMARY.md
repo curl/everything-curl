@@ -132,6 +132,7 @@
     * [Copy as curl](usingcurl/copyas.md)
 * [HTTP with curl](http.md)
     * [Protocol basics](http/basics.md)
+    * [Method](http/method.md)
     * [Responses](http/response.md)
     * [Authentication](http/auth.md)
     * [Ranges](http/ranges.md)

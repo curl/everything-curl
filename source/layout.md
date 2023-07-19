@@ -13,7 +13,7 @@ release scripts.
 
 Some of the more notable ones include:
 
-- `buildconf`: used to build configure and more when
+- `buildconf`: (deprecated) script used to build configure and more when
   building curl from source out of the git repository.
 - `buildconf.bat`: the Windows version of buildconf. Run this after having
   checked out the full source code from git.

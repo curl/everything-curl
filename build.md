@@ -63,7 +63,7 @@ fragile and probably requires slightly more attention to detail.
 
 If you build curl from a git checkout, you need to generate some files
 yourself before you can build. On Linux and Unix-like systems, do this by
-running `./buildconf` and on Windows, run `buildconf.bat`.
+running `autoreconf -fi` and on Windows, run `buildconf.bat`.
 
 ## On Linux and Unix-like systems
 

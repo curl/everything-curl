@@ -10,6 +10,7 @@
 --data-urlencode
 --etag-compare
 --etag-save
+--expand
 --fail
 --fail-with-body
 --ftp-method
@@ -77,6 +78,7 @@
 --trace
 --trace-ascii
 --trace-time
+--variable
 --verbose
 --version
 --write-out

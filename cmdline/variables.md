@@ -24,6 +24,9 @@ like `\{{`.
 For options specified without the `--expand-` prefix, variables will not be
 expanded.
 
+Variable content holding null bytes that are not encoded when expanded, will
+cause curl to exit with an error.
+
 ## Environment variables
 
 Import an environment variable with `--variable %name`. This import makes curl

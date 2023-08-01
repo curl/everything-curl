@@ -13,7 +13,7 @@ Different curl versions, built by different people on different platforms
 using different third party libraries with different built-time options make
 the tool to offer different features in different places. In addition, curl is
 continuously developed, so newer versions of the tool are likely to have more
-and hopefully even better features than the older ones.
+and better features than the older ones.
 
 ## Command lines, quotes and aliases
 

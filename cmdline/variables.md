@@ -42,7 +42,7 @@ To instead use `dummy` as a default value if the variable does not exist:
     --variable %USER=dummy
     --expand-url = "https://example.com/api/{{USER}}/method"
 
-## Expand variable
+## Expand `--variable`
 
 The `--variable` option itself can also be expanded, which allows variables to
 get set using contents from other variables. Examples:

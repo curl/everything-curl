@@ -1,30 +1,19 @@
 # Command line basics
 
 curl started out as a command-line tool and it has been invoked from shell
-prompts and from within scripts by thousands of users over the years. curl has
-established itself as one of those trusty tools that is there for you to help
-you get your work done.
+prompts and from within scripts by countless users over the years.
 
 ## Binaries and different platforms
 
-The command-line tool "curl" is a binary executable file. The curl project
+The command-line tool `curl` is a *binary executable file*. The curl project
 does not by itself distribute or provide binaries. Binary files are highly
 system specific and oftentimes also bound to specific system versions.
 
-To get a curl for your platform and your system, you need to get a curl
-executable from somewhere. Many people build their own from the source code
-provided by the curl project, lots of people install it using a package tool
-for their operating system and yet another portion of users download binary
-install packages from sources they trust.
-
-No matter how you do it, make sure you are getting your version from a trusted
-source and that you verify digital signatures or the authenticity of the
-packages in other ways.
-
-Also, remember that curl is often built to use third-party libraries to
-perform and unless curl is built to use them statically you must also have
-those third-party libraries installed; the exact set of libraries will
-vary depending on the particular build you get.
+Different curl versions, built by different people on different platforms
+using different third party libraries with different built-time options make
+the tool to offer different features in different places. In addition, curl is
+continuously developed, so newer versions of the tool are likely to have more
+and hopefully even better features than the older ones.
 
 ## Command lines, quotes and aliases
 

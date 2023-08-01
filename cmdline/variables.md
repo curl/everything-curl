@@ -38,12 +38,12 @@ Example: get the `USER` environment variable into the URL, which fails if
 there is no such environment variable:
 
     --variable %USER
-    --expand-url = "https://example.com/api/{{USER}}/method"
+    --expand-url "https://example.com/api/{{USER}}/method"
 
 To instead use `dummy` as a default value if the variable does not exist:
 
     --variable %USER=dummy
-    --expand-url = "https://example.com/api/{{USER}}/method"
+    --expand-url "https://example.com/api/{{USER}}/method"
 
 ## Expand `--variable`
 
@@ -81,11 +81,11 @@ Expands the variable as a valid JSON string - without the quotes. This makes
 it easier to insert a variable into an argument without risking that weird
 content makes it invalid JSON.
 
-    --expand-data “\”full name\”: \”{{first:json}} {{last:json}}\””
+    --expand-json “\”full name\”: \”{{first:json}} {{last:json}}\””
 
 To trim the variable first, apply both functions (in the right order):
 
-    --expand-data “\”full name\”: \”{{name:trim:json}}\””
+    --expand-json “\”full name\”: \”{{name:trim:json}}\””
 
 ## Function: `url`
 

@@ -53,19 +53,14 @@ get set using contents from other variables. Examples:
 
 ## Functions
 
-When expanding variables, curl supports a set of *functions* that can make the
-variable contents more convenient to use and allows for effective command
-lines.
+When expanding variables, curl offers a set of *functions* to change how they
+are expanded. Functions are applied with colon + function name after the
+variable, like this: `{{name:function}}`.
 
-When expanding a variable, functions can be applied, like this:
-`{{name:function}}`.
+Multiple functions can be applied to the variable. They are then applied in a
+left-to-right order: `{{name:func1:func2:func3}}`
 
-Multiple functions can be applied in a left-to-right order:
-`{{name:func1:func2:func3}}`
-
-Functions alter how the variable is expanded
-
-curl provides four functions: `trim`, `json`, `url` and `b64`
+These functions are available: `trim`, `json`, `url` and `b64`
 
 ## Function: trim
 

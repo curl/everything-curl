@@ -62,6 +62,7 @@
     * [URL globbing](cmdline/globbing.md)
     * [List options](cmdline/listopts.md)
     * [Config file](cmdline/configfile.md)
+    * [Variables](cmdline/variables.md)
     * [Passwords](cmdline/passwords.md)
     * [Progress meter](cmdline/progressmeter.md)
 * [Using curl](usingcurl.md)

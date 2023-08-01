@@ -45,6 +45,7 @@
     * [TLS libraries](build/tls.md)
       * [BoringSSL](build/boringssl.md)
 * [Command line basics](cmdline.md)
+    * [Differences](cmdline/differences.md)
     * [Command line options](cmdline/options.md)
     * [Options depend on version](cmdline/versions.md)
     * [URLs](cmdline/urls.md)

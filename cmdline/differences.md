@@ -36,5 +36,5 @@ PowerShell, you need to type in its full name including the extension:
 Different command-line environments will also have different maximum command
 line lengths and force the users to limit how large amount of data that can be
 put into a single line. curl adapts to this by offering a way to provide
-command-line options through a file—or from stdin—using the [-K
+command-line options through a file or stdin using the [-K
 option](configfile.md).

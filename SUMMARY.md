@@ -63,6 +63,7 @@
     * [Many options and URLs](cmdline/urls/options.md)
     * [Connection reuse](cmdline/urls/connreuse.md)
     * [Parallel transfers](cmdline/urls/parallel.md)
+    * [trurl](cmdline/urls/trurl.md)
   * [URL globbing](cmdline/globbing.md)
   * [List options](cmdline/listopts.md)
   * [Config file](cmdline/configfile.md)

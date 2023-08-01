@@ -24,3 +24,4 @@ describes how that particular URI format works.
 * [Many options and URLs](urls/options.md)
 * [Connection reuse](urls/connreuse.md)
 * [Parallel transfers](urls/parallel.md)
+* [trurl](urls/trurl.md)

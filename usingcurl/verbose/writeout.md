@@ -47,6 +47,21 @@ whitespace trimmed. Like this:
 
     curl -w "Server: %header{server}\n" http://example.com
 
+## Output
+
+By default, this option makes the selecteddata get output on stdout. If that
+is not good enough, the pseudo-variable ` %{stderr}` can be used to direct
+(the following) part to stderr and `%{stdout}` brings it back to stdout.
+
+From curl 8.3.0, there is a feature that lets users send the write-out output
+to a file: `%output{filename}`. The data following will then be written to
+that file. If you rather have curl append to that file instead of creating it
+from scratch, prefix the file name with `>>`. Like this:
+`%output{>>filename}`.
+
+A write-out argument can include output to stderr, stdout and files as the
+user sees fit.
+
 ## Windows
 
 **NOTE:** In Windows, the `%`-symbol is a special symbol used to expand

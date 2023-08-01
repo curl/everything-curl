@@ -49,7 +49,7 @@ whitespace trimmed. Like this:
 
 ## Output
 
-By default, this option makes the selecteddata get output on stdout. If that
+By default, this option makes the selected data get output on stdout. If that
 is not good enough, the pseudo-variable ` %{stderr}` can be used to direct
 (the following) part to stderr and `%{stdout}` brings it back to stdout.
 

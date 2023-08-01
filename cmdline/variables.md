@@ -64,7 +64,7 @@ These functions are available: `trim`, `json`, `url` and `b64`
 
 ## Function: trim
 
-Expands the variable without leading and trailing whitespaces. Whitespace here
+Expands the variable without leading and trailing whitespace. Whitespace here
 means: **horizontal tab, space, new line, vertical tab, form feed and carriage
 return**.
 
@@ -86,9 +86,9 @@ To trim the variable first, apply both functions (in the right order):
 
 ## Function: url
 
-Expands the variable URL encoded. Also known as “percent encoded”. It makes
-sure all output characters are legal within a URL and the rest are encode as
-%HH where HH is a two-digit hexdecimal number for the ascii value.
+Expands the variable URL encoded. Also known as *percent encoded*. It makes
+sure all output characters are legal within a URL and the rest are encoded as
+`%HH` where `HH` is a two-digit hexadecimal number for the ascii value.
 
     --expand-data “name={{name:url}}”
 

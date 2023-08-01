@@ -31,9 +31,15 @@ exit with an error if the given environment variable is not set. A user can
 also opt to set a default value if the environment variable does not exist,
 using `=content` or `@file` like shown above.
 
-Example: get the `USER` environment variable into the URL:
+Example: get the `USER` environment variable into the URL, which fails if
+there is no such environment varwiable:
 
     --variable %USER
+    --expand-url = "https://example.com/api/{{USER}}/method"
+
+To instead use `dummy` as a default value if the variable does not exist:
+
+    --variable %USER=dummy
     --expand-url = "https://example.com/api/{{USER}}/method"
 
 ## Expand variable

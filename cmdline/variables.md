@@ -32,7 +32,7 @@ also opt to set a default value if the environment variable does not exist,
 using `=content` or `@file` like shown above.
 
 Example: get the `USER` environment variable into the URL, which fails if
-there is no such environment varwiable:
+there is no such environment variable:
 
     --variable %USER
     --expand-url = "https://example.com/api/{{USER}}/method"
@@ -62,7 +62,7 @@ left-to-right order: `{{name:func1:func2:func3}}`
 
 These functions are available: `trim`, `json`, `url` and `b64`
 
-## Function: trim
+## Function: `trim`
 
 Expands the variable without leading and trailing whitespace. Whitespace here
 means: **horizontal tab, space, new line, vertical tab, form feed and carriage
@@ -72,7 +72,7 @@ Perhaps extra useful when reading data from files.
 
     --expand-url “https://example.com/{{path:trim}}”
 
-## Function: json
+## Function: `json`
 
 Expands the variable as a valid JSON string - without the quotes. This makes
 it easier to insert a variable into an argument without risking that weird
@@ -84,7 +84,7 @@ To trim the variable first, apply both functions (in the right order):
 
     --expand-data “\”full name\”: \”{{name:trim:json}}\””
 
-## Function: url
+## Function: `url`
 
 Expands the variable URL encoded. Also known as *percent encoded*. It makes
 sure all output characters are legal within a URL and the rest are encoded as
@@ -96,7 +96,7 @@ To trim the variable first, apply both functions (in the right order):
 
     --expand-data “name={{name:trim:url}}”
 
-## Function: b64
+## Function: `b64`
 
 Expands the variable base64 encoded. Base64 is an encoding for binary data
 that only uses 64 specific characters.

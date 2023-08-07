@@ -7,13 +7,12 @@ does not implement the TLS protocol itself.
 curl is written to work with a large number of TLS libraries:
 
  - AmiSSL
+ - AWS-LC
  - BearSSL
  - BoringSSL
  - GnuTLS
- - GSKit (OS/400 specific)
  - libressl
  - mbedTLS
- - NSS
  - OpenSSL
  - rustls
  - Schannel (native Windows)
@@ -54,15 +53,6 @@ optionally point configure to a custom install path prefix where it can find
 gnutls:
 
     ./configure --with-gnutls=/home/user/installed/gnutls
-
-### NSS
-
-    ./configure --with-nss
-
-configure will detect NSS in its default path by default. You can optionally
-point configure to a custom install path prefix where it can find NSS:
-
-    ./configure --with-nss=/home/user/installed/nss
 
 ### WolfSSL
 

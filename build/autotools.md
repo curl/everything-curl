@@ -75,12 +75,12 @@ command line options. Before curl 7.77.0, the configure script would
 automatically check for OpenSSL, but modern versions do not.
 
  - AmiSSL: `--with-amissl`
+ - AWS-LC: `--with-openssl`
  - BearSSL: `--with-bearssl`
  - BoringSSL: `--with-openssl`
  - GnuTLS: `--with-gnutls`
  - LibreSSL: `--with-openssl`
  - mbedTLS: `--with-mbedtls`
- - NSS: `--with-nss`
  - OpenSSL: `--with-openssl`
  - Rustls: `--with-rustls` (point to the rustls-ffi install path)
  - Schannel: `--with-schannel`

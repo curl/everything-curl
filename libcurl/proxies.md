@@ -44,9 +44,7 @@ the scheme part of the proxy host name string (`CURLOPT_PROXY`) to match it:
 `http` - means HTTP, which always lets the proxy resolve names
 
 `https` - means HTTPS **to the proxy**, which always lets the proxy resolve
-names (Note that HTTPS proxy support was added recently, in curl 7.52.0, and
-it still only works with a subset of the TLS libraries: OpenSSL, GnuTLS and
-NSS.)
+names.
 
 You can also opt to set the type of the proxy with a separate option if you
 prefer to only set the host name, using `CURLOPT_PROXYTYPE`. Similarly, you

@@ -5,7 +5,7 @@ The query part of a URL is the data that is to the right of a question mark
 (`#`).
 
 The query can be any string of characters really as long as they are URL
-encoded. It is very common to set it to a sequence of key/value pairs
+encoded. It is a common practise to use a sequence of key/value pairs
 separated by ampersands (`&`). Like in
 `https://example.com/?name=daniel&tool=curl`.
 

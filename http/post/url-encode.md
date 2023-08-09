@@ -1,4 +1,4 @@
-# URL encoding
+# URL encode data
 
 Percent-encoding, also known as URL encoding, is technically a mechanism for
 encoding data so that it can appear in URLs. This encoding is typically used

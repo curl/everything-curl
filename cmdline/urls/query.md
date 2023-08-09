@@ -15,10 +15,8 @@ a name + value pair, to the end of the query part of the provided URL.
 
 When adding query parts, curl adds ampersand separators.
 
-The syntax is identical to that used for
-[--data-urlencode](../../http/post/url-encode.md) with one extension: If the
-argument starts with a `+` (plus), the rest of the string is provided as-is
-unencoded.
+The syntax is identical to that used `--data-urlencode` with one extension:
+the `+` prefix. See below.
 
  - `content`: This will make curl URL encode the content and add that to the
    query. Just be careful so that the content does not contain any `=` or `@`
@@ -40,3 +38,5 @@ unencoded.
    The name part gets an equal sign appended, resulting in
    `name=urlencoded-file-content`. Note that the name is expected to be URL
    encoded already.
+
+ - `+content`: Add the content to the query without doing any encoding.

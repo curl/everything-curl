@@ -4,13 +4,14 @@ The query part of a URL is the data that is to the right of a question mark
 (`?`) but to the left of the [fragment](fragment.md), which begins with a hash
 (`#`).
 
-The query can be any string of characters really, but it is very common to set
-it to a sequence of key/value pairs separated by ampersands (`&`). Like in
+The query can be any string of characters really as long as they are URL
+encoded. It is very common to set it to a sequence of key/value pairs
+separated by ampersands (`&`). Like in
 `https://example.com/?name=daniel&tool=curl`.
 
-To help users create such query sets, curl offers the command line option
-`--url-query [content]`. This option adds content, usually a name + value
-pair, to the end of the query part of the provided URL.
+To help users create such query sets, properly encoded, curl offers the
+command line option `--url-query [content]`. This option adds content, usually
+a name + value pair, to the end of the query part of the provided URL.
 
 When adding query parts, curl adds ampersand separators.
 

@@ -18,6 +18,7 @@ describes how that particular URI format works.
 * [Host](urls/host.md)
 * [Port number](urls/port.md)
 * [Path](urls/path.md)
+* [Query](urls/query.md)
 * [FTP type](urls/ftptype.md)
 * [Fragment](urls/fragment.md)
 * [Browsers' address bar](urls/browsers.md)

@@ -19,11 +19,12 @@ followed by a separator and a content specification. The **data** part can be
 passed to curl using one of the following syntaxes:
 
  - `content`: This will make curl URL encode the content and pass that
-   on. Just be careful so that the content does not contain any = or @ symbols,
-   as that will then make the syntax match one of the other cases below!
+   on. Just be careful so that the content does not contain any `=` or `@`
+   symbols, as that will then make the syntax match one of the other cases
+   below!
 
  - `=content`: This will make curl URL encode the content and pass that
-   on. The initial '=' symbol is not included in the data.
+   on. The initial `=` symbol is not included in the data.
 
  - `name=content`: This will make curl URL encode the content part and pass
    that on. Note that the name part is expected to be URL encoded already.
@@ -34,7 +35,7 @@ passed to curl using one of the following syntaxes:
  - `name@filename`: This will make curl load data from the given file
    (including any newlines), URL encode that data and pass it on in the POST.
    The name part gets an equal sign appended, resulting in
-   name=urlencoded-file-content. Note that the name is expected to be URL
+   `name=urlencoded-file-content`. Note that the name is expected to be URL
    encoded already.
 
 As an example, you could POST a name to have it encoded by curl:

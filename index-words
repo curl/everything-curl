@@ -78,6 +78,7 @@
 --trace
 --trace-ascii
 --trace-time
+--url-query
 --variable
 --verbose
 --version

@@ -57,6 +57,7 @@
     * [Host](cmdline/urls/host.md)
     * [Port number](cmdline/urls/port.md)
     * [Path](cmdline/urls/path.md)
+    * [Query](cmdline/urls/query.md)
     * [FTP type](cmdline/urls/ftptype.md)
     * [Fragment](cmdline/urls/fragment.md)
     * [Browsers' address bar](cmdline/urls/browsers.md)

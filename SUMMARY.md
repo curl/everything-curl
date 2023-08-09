@@ -150,7 +150,7 @@
     * [Content-Type](http/post/content-type.md)
     * [Posting binary](http/post/binary.md)
     * [JSON](http/post/json.md)
-    * [URL encoding](http/post/url-encode.md)
+    * [URL encode data](http/post/url-encode.md)
     * [Convert to GET](http/post/convert-to-get.md)
     * [Expect 100-continue](http/post/expect100.md)
     * [Chunked encoded POSTs](http/post/chunked.md)

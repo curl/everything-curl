@@ -112,7 +112,11 @@ sub sorting {
 }
 
 sub byname {
-    return sorting($a) cmp sorting($b);
+    my $c = sorting($a) cmp sorting($b);
+    if(!$c) {
+        $c = $a cmp $b;
+    }
+    return $c;
 }
 
 my %letter;

@@ -26,8 +26,9 @@ Unfortunately, lots of servers in the world do not properly support the
 Expect: header or do not handle it correctly, so curl will only wait 1000
 milliseconds for that first response before it will continue anyway.
 
-Those are 1000 wasted milliseconds. You can then remove the use of Expect:
-from the request and avoid the waiting with `-H`:
+You can change the amount of time curl waits for a response to Expect by using
+`--expect100-timeout <seconds>`. You can avoid the wait entirely by using
+`-H Expect:` to remove the header:
 
     curl -H Expect: -d "payload to send" http://example.com
 

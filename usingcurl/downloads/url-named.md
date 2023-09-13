@@ -6,7 +6,7 @@ end. curl lets you use that as a shortcut so you do not have to repeat it with
 
     curl -o file.html http://example.com/file.html
 
-You can save the remove URL resource into the local file 'file.html' with this:
+You can save the remote URL resource into the local file 'file.html' with this:
 
     curl -O http://example.com/file.html
 

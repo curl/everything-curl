@@ -56,7 +56,7 @@ From left to right:
 | `%`                    | Percentage completed of the whole transfer                                                                                                        |
 | `Total`                | Total size of the whole expected transfer (if known)                                                                                              |
 | `%`                    | Percentage completed of the download                                                                                                              |
-| `Received`             | Currently downloaded number of bytes                                                                                                              |
+| `Received`             | Currently downloaded number of bytes (headers bytes are not included)                                                                             |
 | `%`                    | Percentage completed of the upload                                                                                                                |
 | `Xferd`                | Currently uploaded number of bytes                                                                                                                |
 | `Average Speed Dload`  | Average transfer speed of the entire download so far, in number of bytes per second                                                               |

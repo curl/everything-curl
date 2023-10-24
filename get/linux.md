@@ -80,3 +80,9 @@ instead of `zypper`. To install the curl command-line utility:
 And to install the libcurl development package:
 
     transactional-update pkg install libcurl-devel
+
+## Gentoo
+
+This package installs the tool, libcurl, headers and pkg-config files etc
+
+    emerge net-misc/curl

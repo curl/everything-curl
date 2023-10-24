@@ -49,8 +49,8 @@ user-agent option again:
 
 If the parameter contains whitespace (or starts with : or =), the parameter
 must be enclosed within quotes. Within double quotes, the following escape
-sequences are available: \\\\, \\", \t, \n, \r and \v. A backslash preceding
-any other letter is ignored.
+sequences are available: `\\`, `\"`, `\t`, `\n`, `\r` and `\v`. A backslash
+preceding any other letter is ignored.
 
 The argument to an option can be specified without double quotes and then curl
 will treat the next space or newline as the end of the argument.

@@ -25,10 +25,6 @@ prefer:
 
 or
 
-    apt install libcurl4-nss-dev
-
-or
-
     apt install libcurl4-gnutls-dev
 
 ## Redhat and CentOS

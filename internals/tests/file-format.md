@@ -315,7 +315,7 @@ about to issue.
 
 - `REPLY [command] [return value] [response string]` - Changes how the server
   responds to the [command]. [response string] is evaluated as a perl string,
-  so it can contain embedded \r\n, for example. There's a special [command]
+  so it can contain embedded `\r\n`, for example. There's a special [command]
   named "welcome" (without quotes) which is the string sent immediately on
   connect as a welcome.
 - `REPLYLF` (like above but sends the response terminated with LF-only and not

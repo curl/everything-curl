@@ -31,7 +31,7 @@ any way merge the JSON object as per JSON.
 
 Send JSON from a file and concatenate a string to the end:
 
-    curl --json @json.txt --json ", "end": "true"}' https://example.com/
+    curl --json @json.txt --json ', "end": "true"}' https://example.com/
 
 ## Crafting JSON to send
 

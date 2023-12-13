@@ -11,7 +11,7 @@ You do this by making the browser or curl tell Wireshark the encryption secrets 
 1. set the environment variable named `SSLKEYLOGFILE` to a file name of your choice before you start the browser or curl
 2. Setting the same file name path in the Master-secret field in Wireshark. Go to Preferences->Protocols->TLS and edit the path as shown in the screenshot below.
 
-![set the ssl key file name](<wireshark-ssl-master-secret (1).png>)
+![set the ssl key file name](wireshark-ssl-master-secret.png)
 
 Having done this simple operation, you can now inspect curl's or your browser's HTTPS traffic in Wireshark. Just super handy and awesome.
 

@@ -1,6 +1,6 @@
 # Future
 
-![curl future](<devgraph-800 (1).png>)
+![curl future](devgraph-800.png)
 
 There is no slowdown in sight in curl's future, bugs reported, development pace or how Internet protocols are being developed or updated.
 

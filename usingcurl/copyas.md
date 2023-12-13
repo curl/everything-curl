@@ -14,7 +14,7 @@ You get the site shown with Firefox's network tools. You then right-click on the
 
 When you pop up the More tools->Developer mode in Chrome or Edge, and you select the Network tab you see the HTTP traffic used to get the resources of the site. On the line of the specific resource you are interested in, you right-click with the mouse and you select "Copy as cURL" and it will generate a command line for you in your clipboard. Paste that in a shell to get a curl command line that makes the transfer. This feature is available by default in all Chrome and Chromium installations. _(Note: Chromium browsers in Windows may generate an incorrect command line that is misquoted due to a_ [_bug_](https://bugs.chromium.org/p/chromium/issues/detail?id=1242803) _in Chromium)._
 
-![copy as curl with Chrome](<chrome-copy-as-curl (1).png>)
+![copy as curl with Chrome](chrome-copy-as-curl.png)
 
 ## From Safari
 
@@ -22,13 +22,13 @@ In Safari, the "development" menu is not visible until you go into **preferences
 
 Select the network tab, reload the web page and then you can right click the particular resources that you want to fetch with curl, as if you did it with Safari..
 
-![copy as curl with Safari](<safari-copy-as-curl (1).png>)
+![copy as curl with Safari](safari-copy-as-curl.png)
 
 ## On Firefox, without using the devtools
 
 If this is something you would like to get done more often, you probably find using the developer tools a bit inconvenient and cumbersome to pop up just to get the command line copied. Then [cliget](https://addons.mozilla.org/en-US/firefox/addon/cliget/) is the perfect add-on for you as it gives you a new option in the right-click menu, so you can get a quick command line generated really quickly, like this example when I right-click an image in Firefox:
 
-![cliget with Firefox](<firefox-cliget (1).png>)
+![cliget with Firefox](firefox-cliget.png)
 
 ## Not perfect
 

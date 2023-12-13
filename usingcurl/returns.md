@@ -89,13 +89,13 @@ A basic Unix shell script could look like something like this:
   back. This is usually a sign that something is preventing the server from
   reaching curl successfully. Like a firewall or other network
   arrangements.
-.
+
  13. Unknown response to FTP PASV command, Curl could not parse the reply sent
   to the PASV request. This is a strange server. PASV is used to setup the
-  second data transfer connection in passive mode, see the [FTP uses two
-  connections](../ftp/twoconnections.md) section for more on that. You might
-  be able to work-around this problem by using PORT instead, with the
-  `--ftp-port` option.
+  second data transfer connection in passive mode, see the
+  [FTP uses two connections](../ftp/twoconnections.md) section for more on
+  that. You might be able to work-around this problem by using PORT instead,
+  with the `--ftp-port` option.
 
  14. Unknown FTP 227 format. Curl could not parse the 227-line the server sent.
   This is most certainly a broken server. A 227 is the FTP server's response

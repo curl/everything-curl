@@ -86,3 +86,14 @@ And to install the libcurl development package:
 This package installs the tool, libcurl, headers and pkg-config files etc
 
     emerge net-misc/curl
+
+## Void Linux
+
+With Void Linux you use `xbps-install` to install packages.
+To install the curl command-line utility:
+
+    xbps-install curl
+
+In order to install the libcurl development package:
+
+    xbps-install libcurl-devel

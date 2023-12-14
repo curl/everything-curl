@@ -17,7 +17,7 @@ wordcheck:
 fixup:
 	for i in $(MDS); do ./lang.sh $$i; done
 
-uni.md: uni.pl $(MDS)
+uni.md: uni.pl $(MDS) SUMMARY.md
 	./uni.pl SUMMARY.md >$@
 
 everything-curl.pdf:	uni.md

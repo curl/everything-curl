@@ -20,7 +20,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: install prereqs
-        run: sudo apt-get install pandoc texlive-latex-base texlive-latex-recommended
+        run: |
+          sudo apt-get update
+          sudo apt-get install pandoc texlive-latex-base texlive-latex-recommended
 
       - name: build pdf
         run: make pdf

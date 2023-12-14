@@ -39,6 +39,17 @@ etc.) with this:
 
     yum install libcurl-devel
 
+## Fedora
+
+Fedora Workstation and other Fedora based distributions use `dnf` to install packages.
+
+Install the command-line tool with:
+
+    dnf install curl
+
+To install the libcurl development package you run:
+
+    dnf install libcurl-devel
 
 ## nix
 

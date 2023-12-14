@@ -10,8 +10,6 @@ on:
   pull_request:
     branches:
       - master
-    paths:
-      - '**.md'
 
 permissions: {}
 

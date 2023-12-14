@@ -1,4 +1,4 @@
-# The source code
+# Source code
 
 The source code is, of course, the actual engine parts of this project. After
 all, it is a software project.

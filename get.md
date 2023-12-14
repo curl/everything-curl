@@ -1,4 +1,4 @@
-# Get curl
+# Install curl
 
 curl is totally free, open and available. There are numerous ways to get it
 and install it for most operating systems and architecture. This section will

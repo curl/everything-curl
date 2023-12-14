@@ -1,4 +1,4 @@
-# HTTP upload
+# Upload
 
 Uploads over HTTP can be done in many different ways and it is important to
 notice the differences. They can use different methods, like POST or PUT, and

@@ -1,4 +1,4 @@
-# FTP uses two connections
+# Two connections
 
 FTP uses two TCP connections! The first connection is setup by the client when
 it connects to an FTP server, and is called the *control connection*. As the

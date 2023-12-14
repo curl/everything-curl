@@ -1,4 +1,4 @@
-# Handling different build options
+# Handling build options
 
 The curl and libcurl source code has been carefully written to build and run
 on virtually every computer platform in existence. This can only be done

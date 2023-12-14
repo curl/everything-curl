@@ -1,4 +1,4 @@
-# Bindings for libcurl
+# Bindings
 
 Creative people have written bindings or interfaces for various environments
 and programming languages. Using one of these allows you to take advantage of

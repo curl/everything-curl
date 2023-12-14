@@ -1,4 +1,4 @@
-# Build to use a TLS library
+# TLS libraries
 
 To make curl support TLS based protocols, such as HTTPS, FTPS, SMTPS, POP3S,
 IMAPS and more, you need to build with a third-party TLS library since curl

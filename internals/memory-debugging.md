@@ -1,4 +1,4 @@
-# Memory Debugging
+# Memory debugging
 
 The file `lib/memdebug.c` contains debug-versions of a few functions.
 Functions such as `malloc()`, `free()`, `fopen()`, `fclose()`, etc that

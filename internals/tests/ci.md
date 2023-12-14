@@ -1,4 +1,4 @@
-# Continuous Integration (CI)
+# Continuous Integration
 
 For every pull request submitted to the curl project on GitHub and for every
 commit pushed to the master branch in the git repository, a vast amount of

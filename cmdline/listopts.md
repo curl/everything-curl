@@ -1,4 +1,4 @@
-# List all command-line options
+# List options
 
 curl has more than two hundred command-line options and the number of options
 keep increasing over time. Chances are the number of options will reach 250

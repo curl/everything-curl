@@ -1,4 +1,4 @@
-# Cookies with libcurl
+# Cookies
 
 By default and by design, libcurl makes transfers as basic as possible and
 features need to be enabled to get used. One such feature is HTTP cookies,

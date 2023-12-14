@@ -1,4 +1,4 @@
-# Get curl for Linux
+# Linux
 
 Linux distributions come with "packager managers" that let you install
 software that they offer. Most Linux distributions offer curl and libcurl to

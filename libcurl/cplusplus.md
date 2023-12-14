@@ -1,4 +1,4 @@
-# libcurl for C++ programmers
+# for C++ programmers
 
 libcurl provides a C API. C and C++ are similar but not the same. There are a
 few things to keep in mind when using libcurl in C++.

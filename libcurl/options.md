@@ -1,4 +1,4 @@
-# Set handle options
+# curl easy options
 
 You set options in the easy handle to control how that transfer is going to be
 done, or in some cases you can actually set options and modify the transfer's

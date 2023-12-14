@@ -1,4 +1,4 @@
-# HTTP ranges
+# Ranges
 
 What if the client only wants the first 200 bytes out of a remote resource or
 perhaps 300 bytes somewhere in the middle? The HTTP protocol allows a client

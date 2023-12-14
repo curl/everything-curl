@@ -1,4 +1,4 @@
-# SSH key callback
+# SSH key
 
 This callback is set with `CURLOPT_SSH_KEYFUNCTION`.
 

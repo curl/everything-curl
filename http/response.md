@@ -1,4 +1,4 @@
-# HTTP responses
+# Responses
 
 When an HTTP client talks HTTP to a server, the server *will* respond with an
 HTTP response message or curl will consider it an error and returns 52 with

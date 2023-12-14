@@ -1,4 +1,4 @@
-# HTTP responses
+# Responses
 
 Every HTTP request includes an HTTP response. An HTTP response is a set of
 metadata and a response body, where the body can occasionally be zero bytes

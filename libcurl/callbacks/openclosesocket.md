@@ -1,4 +1,4 @@
-# Opensocket and closesocket callbacks
+# Opensocket and closesocket
 
 Occasionally you end up in a situation where you want your application to
 control with more precision exactly what socket libcurl will use for its

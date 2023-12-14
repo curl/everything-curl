@@ -1,4 +1,4 @@
-# seek callback
+# Seek and ioctl
 
 This callback is set with `CURLOPT_SEEKFUNCTION`.
 

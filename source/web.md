@@ -1,4 +1,4 @@
-# Web site source code
+# Website
 
 Most of the curl website is also available in a public git repository,
 although separate from the source code repository since it generally is not

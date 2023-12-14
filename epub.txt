@@ -1,0 +1,6 @@
+---
+title: Everything curl
+author: Daniel Stenberg
+rights:  Creative Commons Attribution 4.0 International
+language: en-US
+...

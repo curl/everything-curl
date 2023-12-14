@@ -41,7 +41,7 @@ etc.) with this:
 
 ## Fedora
 
-Fedora Workstation and other Fedora based distributions use 'dnf' to install packages.
+Fedora Workstation and other Fedora based distributions use `dnf` to install packages.
 
 Install the command-line tool with:
 

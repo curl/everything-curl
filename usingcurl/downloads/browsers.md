@@ -1,4 +1,4 @@
-# "My browser shows something else"
+# My browser shows something else
 
 A common use case is using curl to get a URL that you can get in your browser
 when you paste the URL in the browser's address bar.

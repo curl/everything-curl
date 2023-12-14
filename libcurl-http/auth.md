@@ -1,4 +1,4 @@
-# HTTP authentication
+# Authentication
 
 libcurl supports a wide variety of HTTP authentication schemes.
 

@@ -1,4 +1,4 @@
-# Get a simple HTML page
+# Get a simple HTTP page
 
 This example just fetches the HTML from a given URL and sends it to
 stdout. Possibly the simplest libcurl program you can write.

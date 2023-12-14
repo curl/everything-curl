@@ -1,4 +1,4 @@
-# The progress meter
+# Progress meter
 
 curl has a built-in progress meter. When curl is invoked to transfer data
 (either uploading or downloading) it can show that meter in the terminal

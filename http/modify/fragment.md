@@ -1,4 +1,4 @@
-# Anchors or fragments
+# Fragment
 
 A URL may contain an "anchor", also known as a fragment, which is written with
 a pound sign and string at the end of the URL. Like for example

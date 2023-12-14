@@ -1,4 +1,4 @@
-# sockopt callback
+# sockopt
 
 The sockopt callback is set with `CURLOPT_SOCKOPTFUNCTION`:
 

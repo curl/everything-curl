@@ -1,4 +1,4 @@
-# Protocol
+# Protocols
 
 The language used to ask for data to get sent—in either direction—is
 called **the protocol**. The protocol describes exactly how to ask the server

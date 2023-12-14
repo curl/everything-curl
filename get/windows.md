@@ -1,4 +1,4 @@
-# Get curl for Windows
+# Windows
 
 Windows 10 comes with the curl tool bundled with the operating system since
 version 1804. If you have an older Windows version or just want to upgrade to

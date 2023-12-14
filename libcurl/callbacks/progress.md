@@ -1,4 +1,4 @@
-# Progress callback
+# Progress information
 
 The progress callback is what gets called regularly and repeatedly for each
 transfer during the entire lifetime of the transfer. The old callback was set

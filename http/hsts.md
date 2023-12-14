@@ -1,4 +1,4 @@
-# HTTP Strict Transport Security
+# HSTS
 
 HTTP Strict Transport Security, HSTS, is a protocol mechanism that helps to
 protect HTTPS servers against man-in-the-middle attacks such as protocol

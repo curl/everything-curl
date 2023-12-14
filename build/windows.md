@@ -1,4 +1,4 @@
-# On Windows
+# Windows
 
 You can build curl on Windows in several different ways. We recommend using
 the MSVC compiler from Microsoft or the free and open source mingw

@@ -1,4 +1,4 @@
-# How to traverse directories
+# Directory traversing
 
 When doing FTP commands to traverse the remote file system, there are a few
 different ways curl can proceed to reach the target file, the file the user

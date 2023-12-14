@@ -1,4 +1,4 @@
-# libcurl TLS options
+# TLS options
 
 At the time of writing this, there are no less than **forty** different
 options for curl_easy_setopt that are dedicated for controlling how libcurl

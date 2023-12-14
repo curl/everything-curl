@@ -1,4 +1,4 @@
-# Torture tests
+# Torture
 
 When curl is built [debug enabled](debug.md), it offers a special kind of
 testing. The tests we call **torture** tests. Do not worry, it is not quite as

@@ -1,4 +1,4 @@
-# libcurl HTTP download
+# Download
 
 The GET method is the default method libcurl uses when an HTTP URL is requested
 and no particular other method is asked for. It asks the server for a

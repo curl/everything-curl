@@ -1,4 +1,4 @@
-# Debug callback
+# Debug
 
 The debug callback is set with `CURLOPT_DEBUGFUNCTION`:
 

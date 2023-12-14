@@ -1,4 +1,4 @@
-# SSL context callback
+# SSL context
 
 libcurl offers a special TLS related callback called
 `CURLOPT_SSL_CTX_FUNCTION`. This option only works for libcurl powered by

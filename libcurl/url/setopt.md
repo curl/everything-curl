@@ -1,4 +1,4 @@
-# CURLOPT_CURLU
+# CURLOPT\_CURLU
 
 As a convenience to applications, they can pass in an already parsed URL to
 libcurl to work with, as an alternative to `CURLOPT_URL`.

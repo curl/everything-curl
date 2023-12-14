@@ -1,4 +1,4 @@
-# Passwords and snooping
+# Passwords
 
 Passwords are tricky and sensitive. Leaking a password can make someone other
 than you access the resources and the data otherwise protected.

@@ -1,4 +1,4 @@
-# RTSP interleave callback
+# RTSP interleaved data
 
 The callback with the `CURLOPT_INTERLEAVEFUNCTION` option.
 

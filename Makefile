@@ -16,3 +16,12 @@ wordcheck:
 
 fixup:
 	for i in $(MDS); do ./lang.sh $$i; done
+
+uni.md: uni.pl $(MDS)
+	./uni.pl SUMMARY.md >$@
+
+pdf:	uni.md
+	pandoc -o everything-curl.pdf pdf.txt uni.md --toc
+
+clean:
+	rm -f uni.md everything-curl.pdf

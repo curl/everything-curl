@@ -1,0 +1,13 @@
+---
+tite: everything curl
+papersize: a4
+documentclass:
+- book
+fontsize: 12pt
+geometry:
+- inner=2.5cm
+- outer=2.5cm
+- top=2.5cm
+- bottom=2cm
+---
+

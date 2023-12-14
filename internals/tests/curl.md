@@ -12,5 +12,5 @@ The `tests/log/commands.log` is handy to look at after a run, as it contains
 the full command line that was run in the test.
 
 If you want to make a test that does not invoke the curl command line tool,
-then you should consider the [libcurl tests](libcurl.md) or [unit
-tests](unit.md) instead.
+then you should consider the [libcurl tests](libcurl.md) or
+[unit tests](unit.md) instead.

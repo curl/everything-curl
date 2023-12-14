@@ -35,5 +35,4 @@ The `curl_ws_recv` function has this prototype:
 
 `recv` - the size in bytes of the data stored in the **buffer* on return
 
-`meta` - gets a pointer to a struct with [information about the received
-frame](meta.md).
+`meta` - gets a pointer to a struct with [information about the received frame](meta.md).

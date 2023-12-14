@@ -1,8 +1,8 @@
 # -d vs -F
 
-Previous chapters talked about [regular POST](post.md) and [multipart
-formpost](multipart.md), and in your typical command lines you do them with
-`-d` or `-F`.
+Previous chapters talked about [regular POST](post.md) and
+[multipart formpost](multipart.md), and in your typical command lines you do
+them with `-d` or `-F`.
 
 When do you use which of them?
 

@@ -6,11 +6,11 @@ download. In this example the URL to download is `http://example.com`:
 
     curl http://example.com
 
-The URL is broken down into its individual components ([as explained
-elsewhere](../../cmdline/urls.md)), the correct server is contacted and is
-then asked to deliver the specific resource—often a file. The server then
-delivers the data, or it refuses or perhaps the client asked for the wrong
-data and then that data is delivered.
+The URL is broken down into its individual components
+([as explained elsewhere](../../cmdline/urls.md)), the correct server is
+contacted and is then asked to deliver the specific resource—often a file. The
+server then delivers the data, or it refuses or perhaps the client asked for
+the wrong data and then that data is delivered.
 
 A request for a resource is protocol-specific so an `FTP://` URL works
 differently than an `HTTP://` URL or an `SFTP://` URL.

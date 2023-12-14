@@ -37,8 +37,7 @@ variety of things.
 
 After the transfer has completed, you can figure out if it succeeded or not
 and you can extract statistics and other information that libcurl gathered
-during the transfer from the easy handle. See [Post transfer
-information](getinfo.md).
+during the transfer from the easy handle. See [Post transfer information](getinfo.md).
 
 ## Reuse
 

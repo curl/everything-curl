@@ -23,5 +23,8 @@ uni.md: uni.pl $(MDS)
 pdf:	uni.md
 	pandoc -o everything-curl.pdf pdf.txt uni.md --toc
 
+epub:	uni.md
+	pandoc -o everything-curl.epub --epub-cover-image=cover.jpg epub.txt uni.md
+
 clean:
 	rm -f uni.md everything-curl.pdf

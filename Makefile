@@ -20,11 +20,15 @@ fixup:
 uni.md: uni.pl $(MDS)
 	./uni.pl SUMMARY.md >$@
 
-pdf:	uni.md
+everything-curl.pdf:	uni.md
 	pandoc -o everything-curl.pdf pdf.txt uni.md --toc
 
-epub:	uni.md
+pdf: everything-curl.pdf
+
+everything-curl.epub:	uni.md
 	pandoc -o everything-curl.epub --epub-cover-image=cover.jpg epub.txt uni.md
+
+epub: everything-curl.epub
 
 clean:
 	rm -f uni.md everything-curl.pdf

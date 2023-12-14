@@ -22,10 +22,9 @@ will help minimize that risk by trying to blank out passwords from process
 listings.
 
 One way to avoid passing the user name and password on the command line is to
-instead use a [.netrc file](../usingcurl/netrc.md) or a [config
-file](configfile.md). You can also use the `-u` option without
-specifying the password, and then curl will instead prompt the user for it
-when it runs.
+instead use a [.netrc file](../usingcurl/netrc.md) or a [config file](configfile.md).
+You can also use the `-u` option without specifying the password, and then
+curl will instead prompt the user for it when it runs.
 
 ## Network leakage
 

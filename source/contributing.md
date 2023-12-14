@@ -178,8 +178,7 @@ to be pushed by a trusted person.
 The core team is a small set of curl developers who have been around for
 several years and have shown they are skilled developers and that they fully
 comprehend the values and the style of development we do in this project. They
-are some of the people listed in the [The development
-team](../project/devteam.md) section.
+are some of the people listed in the [The development team](../project/devteam.md) section.
 
 You can always bring a discussion to the mailing list and argue why you think
 your changes should get accepted, or perhaps even object to other changes that

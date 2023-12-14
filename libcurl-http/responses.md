@@ -7,9 +7,8 @@ headers.
 
 ## Response body
 
-The response body will be passed to the [write
-callback](../libcurl/callbacks/write.md) and the response headers to the
-[header callback](../libcurl/callbacks/header.md).
+The response body will be passed to the [write callback](../libcurl/callbacks/write.md)
+and the response headers to the [header callback](../libcurl/callbacks/header.md).
 
 Virtually all libcurl-using applications need to set at least one of those
 callbacks instructing libcurl what to do with received headers and data.

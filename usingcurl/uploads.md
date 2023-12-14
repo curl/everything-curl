@@ -29,8 +29,8 @@ receiver.
 The upload kind is usually done with the `-d` or `--data` options, but there
 are a few additional alterations.
 
-Read the detailed description on how to do this with curl in the [HTTP POST
-with curl](../http/post.md) chapter.
+Read the detailed description on how to do this with curl in the
+[HTTP POST with curl](../http/post.md) chapter.
 
 ### multipart formpost
 
@@ -83,13 +83,12 @@ body as curl will not add any at all.
 
     curl -T mail smtp://mail.example.com/ --mail-from user@example.com
 
-Learn more about using SMTP with curl in the [Using
-curl/SMTP](smtp.md) section.
+Learn more about using SMTP with curl in the [Using curl/SMTP](smtp.md) section.
 
 ## Progress meter for uploads
 
-The general progress meter curl provides (see the [Progress
-meter](../cmdline/progressmeter.md) section) works fine for uploads as well.
+The general progress meter curl provides (see the
+[Progress meter](../cmdline/progressmeter.md) section) works fine for uploads as well.
 What needs to be remembered is that the progress meter is automatically
 disabled when you are sending output to stdout, and most protocols curl
 support can output something even for an upload.

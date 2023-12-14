@@ -5,12 +5,12 @@ translated to an Internet address. That is "name resolving". Using a numerical
 IP address directly in the URL usually avoids the name resolve phase, but in
 many cases it is not easy to manually replace the name with the IP address.
 
-libcurl tries hard to [re-use an existing
-connection](connectionreuse.md) rather than to create a new one. The
-function that checks for an existing connection to use is based purely on the
-name and is performed before any name resolving is attempted. That is one of
-the reasons the re-use is so much faster. A transfer using a reused connection
-will not resolve the host name again.
+libcurl tries hard to [re-use an existing connection](connectionreuse.md)
+rather than to create a new one. The function that checks for an existing
+connection to use is based purely on the name and is performed before any name
+resolving is attempted. That is one of the reasons the re-use is so much
+faster. A transfer using a reused connection will not resolve the host name
+again.
 
 If no connection can be reused, libcurl resolves the host name to the set of
 addresses it resolves to. Typically this means asking for both IPv4 and IPv6
@@ -68,8 +68,7 @@ cache for 60 seconds, but that value can be changed with
 
 The DNS cache is kept within the easy handle when `curl_easy_perform` is used,
 or within the multi handle when the multi interface is used. It can also be
-made shared between multiple easy handles using the [share
-interface](sharing.md).
+made shared between multiple easy handles using the [share interface](sharing.md).
 
 ## Custom addresses for hosts
 

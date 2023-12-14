@@ -1,5 +1,6 @@
 ---
-tite: everything curl
+title: Everything curl
+author: Daniel Stenberg and friends
 papersize: a4
 documentclass:
 - book
@@ -9,5 +10,6 @@ geometry:
 - outer=2.5cm
 - top=2.5cm
 - bottom=2cm
+classoption: openany       # disable empty pages in PDF
 ---
 

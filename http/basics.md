@@ -1,4 +1,4 @@
-# HTTP protocol basics
+# Protocol basics
  
 (This assumes you have read the [Network and protocols](../protocols.md)
 section or are otherwise already familiar with protocols.)

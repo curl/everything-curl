@@ -1,4 +1,4 @@
-# HTTP Requests
+# Requests
 
 An HTTP request is what curl sends to the server when it tells the server what
 to do. When it wants to get data or send data. All transfers involving HTTP

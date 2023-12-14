@@ -1,4 +1,4 @@
-# Verbose mode
+# Verbose
 
 If your curl command does not execute or return what you expected it to, your
 first gut reaction should always be to run the command with the `-v /

@@ -1,4 +1,4 @@
-# HTTP method
+# Method
 
 In every HTTP request, there is a method. Sometimes called a verb. The most
 commonly used ones are `GET`, `POST`, `HEAD` and `PUT`.

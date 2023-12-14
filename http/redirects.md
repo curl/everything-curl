@@ -1,4 +1,4 @@
-# HTTP redirects
+# Redirects
 
 The “redirect” is a fundamental part of the HTTP protocol. The concept was
 present and is documented already in the first spec (RFC 1945), published in

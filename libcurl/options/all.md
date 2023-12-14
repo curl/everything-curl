@@ -1,4 +1,4 @@
-# All easy options
+# All options
 
 This is a table of a complete list of all available options for
 `curl_easy_setopt()` as of what will be present in the 7.83.0 release, April

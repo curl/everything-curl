@@ -1,4 +1,4 @@
-# The protocols curl supports
+# curl protocols
 
 curl supports about 26 protocols. We say "about" because it depends on how you
 count and what you consider to be distinctly different protocols.

@@ -1,4 +1,4 @@
-# HTTP multipart formposts
+# Multipart formposts
 
 A multipart formpost is what an HTTP client sends when an HTML form is
 submitted with *enctype* set to "multipart/form-data". It is an HTTP POST

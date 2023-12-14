@@ -1,4 +1,4 @@
-# Caches and state in libcurl
+# Caches and state
 
 When libcurl is used for Internet transfers, it stores data in caches and
 state storage in order to do subsequent transfers faster and better.

@@ -1,4 +1,4 @@
-# Write callback
+# Write data
 
 The write callback is set with `CURLOPT_WRITEFUNCTION`:
 

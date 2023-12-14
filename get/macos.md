@@ -1,4 +1,4 @@
-# Get curl for macOS
+# macOS
 
 macOS comes with the curl tool bundled with the operating system since many
 years. If you want to upgrade to the latest version shipped by the curl

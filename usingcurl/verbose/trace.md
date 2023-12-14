@@ -1,4 +1,4 @@
-# --trace and --trace-ascii
+# Trace options
 
 There are times when `-v` is not enough. In particular, when you want to store
 the complete stream including the actual transferred data.

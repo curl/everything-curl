@@ -1,4 +1,4 @@
-# Modify the request method
+# Request method
 
 The first line of an HTTP request includes the *method* - sometimes also
 referred to as the verb. When doing a simple GET request as this command line

@@ -1,4 +1,4 @@
-# TLS ciphers
+# Ciphers
 
 When curl connects to a TLS server, it negotiates how to speak the protocol
 and that negotiation involves several parameters and variables that both

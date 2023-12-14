@@ -1,4 +1,4 @@
-# Modify request target
+# Request target
 
 When given an input URL such as `http://example.com/file`, the path section of
 the URL gets extracted and is turned into `/file` in the HTTP request line.

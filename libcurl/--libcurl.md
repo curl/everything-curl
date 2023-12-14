@@ -1,4 +1,4 @@
-# curl --libcurl
+# --libcurl
 
 We actively encourage users to first try out the transfer they want to do with
 the curl command-line tool, and once it works roughly the way you want it to,

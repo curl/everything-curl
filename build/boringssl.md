@@ -1,4 +1,4 @@
-# Build curl with boringssl
+# BoringSSL
 
 ## build boringssl
 

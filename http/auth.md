@@ -1,4 +1,4 @@
-# HTTP authentication
+# Authentication
 
 Each HTTP request can be made authenticated. If a server or a proxy want the
 user to provide proof that they have the correct credentials to access a URL

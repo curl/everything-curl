@@ -31,13 +31,11 @@ This book project started at the end of September 2015.
 ## Site
 
 [https://everything.curl.dev](https://everything.curl.dev) is the home of this
-book. It features accessible links to read the book online in a web version,
-or download a PDF version for offline reading. Unfortunately, the previously
-provided ebook formats are no longer provided by gitbook.com that we use to
-produce the book.
+book. It features the book online in a web version.
 
-(The "export PDF" option menu is only visible if the used web browser is wide
-enough.)
+The PDF version is availble at [https://daniel.haxx.se/everything-curl/](https://daniel.haxx.se/everything-curl/).
+
+The ePUB version is availble at [https://daniel.haxx.se/everything-curl/](https://daniel.haxx.se/everything-curl/).
 
 ## Content
 
@@ -57,7 +55,7 @@ All there is to know about Daniel can be found on [daniel.haxx.se](https://danie
 
 If you find mistakes, omissions, errors or blatant lies in this document,
 please send us a refreshed version of the affected paragraph and we will amend
-and update. We give credits to and recognize everyone who helps out!
+and update. We give credit to and recognize everyone who helps out!
 
 Preferably, you could submit
 [errors](https://github.com/bagder/everything-curl/issues) or [pull

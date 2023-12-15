@@ -315,7 +315,7 @@ about to issue.
 
 - `REPLY [command] [return value] [response string]` - Changes how the server
   responds to the [command]. [response string] is evaluated as a perl string,
-  so it can contain embedded `\r\n`, for example. There's a special [command]
+  so it can contain embedded `\r\n`, for example. There is a special [command]
   named "welcome" (without quotes) which is the string sent immediately on
   connect as a welcome.
 - `REPLYLF` (like above but sends the response terminated with LF-only and not
@@ -502,7 +502,7 @@ that is returned. The last slash in the URL must be followed by a number. That
 number (N) will be used by the test-server to load test case N and return the
 data that is defined within the `<reply><data></data></reply>` section.
 
-If there's no test number found above, the HTTP test server will use the
+If there is no test number found above, the HTTP test server will use the
 number following the last dot in the given hostname (made so that a CONNECT
 can still pass on test number) so that "foo.bar.123" gets treated as test case
 123. Alternatively, if an IPv6 address is provided to CONNECT, the last
@@ -510,10 +510,10 @@ hexadecimal group in the address will be used as the test number! For example
 the address "[1234::ff]" would be treated as test case 255.
 
 Set `type="perl"` to write the test case as a perl script. It implies that
-there's no memory debugging and valgrind gets shut off for this test.
+there is no memory debugging and valgrind gets shut off for this test.
 
 Set `type="shell"` to write the test case as a shell script. It implies that
-there's no memory debugging and valgrind gets shut off for this test.
+there is no memory debugging and valgrind gets shut off for this test.
 
 Set `option="no-output"` to prevent the test script to slap on the `--output`
 argument that directs the output to a file. The `--output` is also not added

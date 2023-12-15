@@ -5,7 +5,12 @@ project. Everybody else that participates or contributes in the project has
 thus arrived at a later point. Some contributors worked for a while and then
 left again. Most contributors hang around only for a short while to get their
 bug fixed or feature merged or similar. Counting all contributors we know the
-names of, we have received help from more than 2,500 individuals.
+names of, we have received help from more than 3,000 individuals.
+
+There is no formal membership or anything that needs to be done to join the
+project. If you participate in communication or development, you are part of
+the project. Every contributor decides for themselves exactly how much and in
+what ways to participate.
 
 The full list of people who ever did ten commits or more within a single year
 in the project are:
@@ -21,6 +26,7 @@ Dan Fandrich,
 Daniel Gustafsson,
 Daniel Stenberg,
 Dominick Meglio,
+Emanuele Torre,
 Emil Engler,
 Fabian Frank,
 Fabian Keil,
@@ -47,13 +53,18 @@ Max Dymond,
 Michael Kaufmann,
 Michael Osipov,
 Michal Marek,
+Michał Antoniak,
+Nicholas Nethercote,
 Nick Zitzmann,
 Nikos Mavrogiannopoulos,
 Patrick Monnerat,
 Peter Wu,
+Philip Heiduck,
 Rikard Falkeborn,
 Ruslan Baratov,
+Ryan Schmidt,
 Simon Warta,
+Stefan Eissing,
 Steinar H. Gunderson,
 Sterling Hughes,
 Steve Holme,

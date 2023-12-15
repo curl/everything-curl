@@ -21,4 +21,4 @@ isn't:is not
  url =URL
 internet=Internet
 isation:ization
-
+it's:it is

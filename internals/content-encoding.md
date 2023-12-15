@@ -8,7 +8,7 @@
  schemes include `deflate` (the zlib algorithm), `gzip`, `br` (brotli) and
  `compress`. A client requests that the server perform an encoding by
  including an `Accept-Encoding` header in the request document. The value of
- the header should be one of the recognized tokens `deflate`, ... (there's a
+ the header should be one of the recognized tokens `deflate`, ... (there is a
  way to register new schemes/tokens, see sec 3.5 of the spec). A server MAY
  honor the client's encoding request. When a response is encoded, the server
  includes a `Content-Encoding` header in the response. The value of the

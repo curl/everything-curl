@@ -15,7 +15,7 @@ no way to read the reply but to ask the one person the question. The one
 person consequently gets overloaded with mail.
 
 If you really want to contact an individual and perhaps pay for his or her
-services, by all means go ahead, but if it's just another curl question, take
+services, by all means go ahead, but if it is just another curl question, take
 it to a suitable list instead.
 
 ## Reply or new mail

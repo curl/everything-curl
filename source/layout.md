@@ -177,7 +177,7 @@ Handy scripts.
 - `contrithanks.sh`: extracts contributors from the git repository since a
   given hash/tag, filters out all the names that are already mentioned in
   `THANKS`, and then outputs `THANKS` to stdout with the list of new
-  contributors appended at the end; it's meant to allow easier updates of the
+  contributors appended at the end; it is meant to allow easier updates of the
   THANKS document. The script uses the `THANKS-filter` file to rewrite some
   names.
 - `log2changes.pl`: generates the `CHANGES` file for releases, as used by the

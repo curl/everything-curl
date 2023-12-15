@@ -15,7 +15,7 @@
  `Content-Encoding` header indicates which encodings were used to encode the
  data, in the order in which they were applied.
 
- It's also possible for a client to attach priorities to different schemes so
+ It is also possible for a client to attach priorities to different schemes so
  that the server knows which it prefers. See sec 14.3 of RFC 2616 for more
  information on the `Accept-Encoding` header. See sec [3.1.2.2 of RFC
  7231](https://datatracker.ietf.org/doc/html/rfc7231#section-3.1.2.2) for more

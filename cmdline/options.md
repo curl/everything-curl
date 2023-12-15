@@ -91,7 +91,7 @@ handles options and URLs.
 
 To make the string itself contain double quotes, which is common when you for
 example want to send a string of JSON to the server, you may need to use
-single quotes (except on Windows, where single quotes does not work the same
+single quotes (except on Windows, where single quotes do not work the same
 way). Send the JSON string `{ "name": "Darth" }`:
 
     curl -d '{ "name": "Darth" }' http://example.com

@@ -1,6 +1,6 @@
 # curl protocols
 
-curl supports about 26 protocols. We say "about" because it depends on how you
+curl supports about 28 protocols. We say *about* because it depends on how you
 count and what you consider to be distinctly different protocols.
 
 ## DICT
@@ -11,7 +11,7 @@ and clients use TCP port 2628.
 
 ## FILE
 
-FILE is not actually a "network" protocol. It is a URL scheme that allows you
+FILE is not actually a *network* protocol. It is a URL scheme that allows you
 to tell curl to get a file from the local file system instead of getting it
 over the network from a remote server. See RFC 1738.
 

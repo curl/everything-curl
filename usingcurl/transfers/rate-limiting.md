@@ -4,9 +4,9 @@ When curl transfers data, it will attempt to do that as fast as possible. It
 goes for both uploads and downloads. Exactly how fast that will be depends on
 several factors, including your computer's ability, your own network
 connection's bandwidth, the load on the remote server you are transferring
-to/from and the latency to that server. And your curl transfers are also
-likely to compete with other transfers on the networks the data travels
-over, from other users or just other apps by the same user.
+to/from and the latency to that server. Your curl transfers are also likely to
+compete with other transfers on the networks the data travels over, from other
+users or just other apps by the same user.
 
 In many setups, however, you will find that you can more or less saturate your
 own network connection with a single curl command line. If you have a 10

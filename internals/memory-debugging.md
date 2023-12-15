@@ -13,7 +13,7 @@ allocated but never freed and other kinds of errors related to resource
 management.
 
 Internally, the definition of the preprocessor symbol `DEBUGBUILD` restricts
-code which is only compiled for debug enabled builds. And symbol `CURLDEBUG`
+code which is only compiled for debug enabled builds. The symbol `CURLDEBUG`
 is used to differentiate code which is _only_ used for memory
 tracking/debugging.
 

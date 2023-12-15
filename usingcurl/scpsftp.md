@@ -79,8 +79,8 @@ host that it thinks it is communicating with. With TLS based protocols, it is
 done by the client verifying the server's certificate.
 
 With SSH protocols there are no server certificates, but instead each server
-can provide its unique key. And unlike TLS, SSH has no certificate authorities
-or anything so the client simply has to make sure that the host's key matches
+can provide its unique key. Unlike TLS, SSH has no certificate authorities or
+anything so the client simply has to make sure that the host's key matches
 what it already knows (via other means) it should look like.
 
 The matching of keys is typically done using hashes of the key and the file

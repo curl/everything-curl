@@ -6,8 +6,7 @@ certificate that it returns is still valid. This is a way to make really sure
 the server's certificate has not been revoked.
 
 If the server does not support this extension, the test will fail and curl
-returns an error. And it is still far too common that servers do not support
-this.
+returns an error. It is still common that servers do not support this.
 
 Ask for the handshake to use the status request like this:
 

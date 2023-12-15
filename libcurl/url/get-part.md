@@ -79,5 +79,4 @@ For this URL, curl extracts:
 | `eth0`               | `CURLUPART_ZONEID` |
 | `/`                  | `CURLUPART_PATH`   |
 
-... and asking for any other component will then return non-zero as they are
-missing.
+Asking for any other component will return non-zero as they are missing.

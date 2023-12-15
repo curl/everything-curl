@@ -10,7 +10,7 @@ specific data pointed to by a URL onto your machine.
 * [What exactly is downloading?](downloads/whatis.md)
 * [Storing downloads](downloads/storing.md)
 * [Download to a file named by the URL](downloads/url-named.md)
-* [Use the target file name from the server](downloads/content-disp.md)
+  * [Use the target filename from the server](downloads/content-disp.md)
 * [HTML and charsets](downloads/charsets.md)
 * [Compression](downloads/compression.md)
 * [Shell redirects](downloads/redirects.md)

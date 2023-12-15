@@ -10,7 +10,7 @@ This is a table of a complete list of all available options for
 | `CURLOPT_ACCEPTTIMEOUT_MS`          | timeout waiting for FTP server to connect back |
 | `CURLOPT_ACCEPT_ENCODING`           | automatic decompression of HTTP downloads |
 | `CURLOPT_ADDRESS_SCOPE`             | scope id for IPv6 addresses |
-| `CURLOPT_ALTSVC`                    | alt-svc cache file name |
+| `CURLOPT_ALTSVC`                    | alt-svc cache filename |
 | `CURLOPT_ALTSVC_CTRL`               | control alt-svc behavior |
 | `CURLOPT_APPEND`                    | append to the remote file |
 | `CURLOPT_AUTOREFERER`               | automatically update the referer header |
@@ -33,8 +33,8 @@ This is a table of a complete list of all available options for
 | `CURLOPT_CONV_FROM_UTF8_FUNCTION`   | convert data from UTF8 to host encoding |
 | `CURLOPT_CONV_TO_NETWORK_FUNCTION`  | convert data to network from host encoding |
 | `CURLOPT_COOKIE`                    | HTTP Cookie header |
-| `CURLOPT_COOKIEFILE`                | file name to read cookies from |
-| `CURLOPT_COOKIEJAR`                 | file name to store cookies to |
+| `CURLOPT_COOKIEFILE`                | filename to read cookies from |
+| `CURLOPT_COOKIEJAR`                 | filename to store cookies to |
 | `CURLOPT_COOKIELIST`                | add to or manipulate cookies held in memory |
 | `CURLOPT_COOKIESESSION`             | start a new cookie session |
 | `CURLOPT_COPYPOSTFIELDS`            | have libcurl copy data to POST |
@@ -87,7 +87,7 @@ This is a table of a complete list of all available options for
 | `CURLOPT_HEADERDATA`                | pointer to pass to header callback |
 | `CURLOPT_HEADERFUNCTION`            | callback that receives header data |
 | `CURLOPT_HEADEROPT`                 | send HTTP headers to both proxy and host or separately |
-| `CURLOPT_HSTS`                      | HSTS cache file name |
+| `CURLOPT_HSTS`                      | HSTS cache filename |
 | `CURLOPT_HSTSREADDATA`              | pointer passed to the HSTS read callback |
 | `CURLOPT_HSTSREADFUNCTION`          | read callback for HSTS hosts |
 | `CURLOPT_HSTSWRITEDATA`             | pointer passed to the HSTS write callback |
@@ -137,7 +137,7 @@ This is a table of a complete list of all available options for
 | `CURLOPT_MIMEPOST`                  | send data from mime structure |
 | `CURLOPT_MIME_OPTIONS`              | set MIME option flags |
 | `CURLOPT_NETRC`                     | enable use of .netrc |
-| `CURLOPT_NETRC_FILE`                | file name to read .netrc info from |
+| `CURLOPT_NETRC_FILE`                | filename to read .netrc info from |
 | `CURLOPT_NEW_DIRECTORY_PERMS`       | permissions for remotely created directories |
 | `CURLOPT_NEW_FILE_PERMS`            | permissions for remotely created files |
 | `CURLOPT_NOBODY`                    | do the download request without getting the body |
@@ -235,7 +235,7 @@ This is a table of a complete list of all available options for
 | `CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256` | SHA256 hash of SSH server public key |
 | `CURLOPT_SSH_KEYDATA`               | pointer passed to the SSH key callback |
 | `CURLOPT_SSH_KEYFUNCTION`           | callback for known host matching logic |
-| `CURLOPT_SSH_KNOWNHOSTS`            | file name holding the SSH known hosts |
+| `CURLOPT_SSH_KNOWNHOSTS`            | filename holding the SSH known hosts |
 | `CURLOPT_SSH_PRIVATE_KEYFILE`       | private key file for SSH auth |
 | `CURLOPT_SSH_PUBLIC_KEYFILE`        | public key file for SSH auth |
 | `CURLOPT_SSLCERT`                   | SSL client certificate |

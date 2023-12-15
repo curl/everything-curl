@@ -2,7 +2,7 @@
 
 libcurl supports FTP wildcard matching. You use this feature by setting
 `CURLOPT_WILDCARDMATCH` to `1L` and then use a "wildcard pattern" in the in
-the file name part of the URL.
+the filename part of the URL.
 
 ## Wildcard patterns
 
@@ -42,7 +42,7 @@ alpha, digit, print, upper, blank, graph, xdigit.
 
 `[\\[\\]\\\\]` - escape syntax. Matches `[`, `]` or `\\`.
 
-Using the rules above, a file name pattern can be constructed:
+Using the rules above, a filename pattern can be constructed:
 
     ftp://example.com/some/path/[a-z[:upper:]\\\\].jpeg
 

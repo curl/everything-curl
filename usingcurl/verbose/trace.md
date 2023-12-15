@@ -9,8 +9,8 @@ tcpdump) will not be able to do this job as easily for you.
 
 For this, curl offers two other options that you use instead of `-v`.
 
-`--trace [filename]` will save a full trace in the given file name. You can
-also use '-' (a single minus) instead of a file name to get it passed to
+`--trace [filename]` will save a full trace in the given filename. You can
+also use '-' (a single minus) instead of a filename to get it passed to
 stdout. You would use it like this:
 
     $ curl --trace dump http://example.com

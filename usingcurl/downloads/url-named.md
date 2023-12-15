@@ -1,6 +1,6 @@
 # Download to a file named by the URL
 
-Many URLs, however, already contain the file name part in the rightmost
+Many URLs, however, already contain the filename part in the rightmost
 end. curl lets you use that as a shortcut so you do not have to repeat it with
 `-o`. So instead of:
 
@@ -11,13 +11,13 @@ You can save the remote URL resource into the local file 'file.html' with this:
     curl -O http://example.com/file.html
 
 This is the `-O` (uppercase letter o) option, or `--remote-name` for the long
-name version. The -O option selects the local file name to use by picking the
-file name part of the URL that you provide. This is important. You specify the
+name version. The -O option selects the local filename to use by picking the
+filename part of the URL that you provide. This is important. You specify the
 URL and curl picks the name from this data. If the site redirects curl further
-(and if you tell curl to follow redirects), it does not change the file name
+(and if you tell curl to follow redirects), it does not change the filename
 curl will use for storing this.
 
-## Use the URL's file name part for all URLs
+## Use the URL's filename part for all URLs
 
 As a reaction to adding a hundred `-O` options when using a hundred URLs, we
 introduced an option called `--remote-name-all`. This makes `-O` the default

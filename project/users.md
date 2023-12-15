@@ -33,7 +33,7 @@ the Internet, the occasional "about box" or license agreement mentioning curl
 or that authors ask for help and tell us about their use.
 
 The curl license says users need to repeat it somewhere, like in the
-documentation, but that is not easy for us to find in many cases and it's also
+documentation, but that is not easy for us to find in many cases and it is also
 not easy for us to do anything about should they decide not to follow the
 small license requirement.
 

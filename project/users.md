@@ -1,11 +1,12 @@
 # Users of curl
 
-![ten billion installations](ten-billion.jpg)
+![twenty billion installations](20-billion.jpg)
 
-We use to say that there are around ten billion curl installations. It makes a
-good line to say but in reality we, of course, do not have any numbers that
-exact. We just estimate and guess based on observations and trends. It also
-depends on exactly what we consider "an installation". Let's elaborate.
+We estimate that there are more than twenty billion curl installations in the
+world. It makes a good line to say but in reality we, of course, do not have
+any numbers that exact. We just estimate and guess based on observations and
+trends. It also depends on exactly what we consider "an installation". Let's
+elaborate.
 
 ## Open Source
 

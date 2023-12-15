@@ -6,9 +6,9 @@ something else. Outputting data to stdout is really useful when you want to
 pipe it into another program or similar, but it is not always the optimal way
 to deal with your downloads.
 
-Give curl a specific file name to save the download in with `-o [filename]`
+Give curl a specific filename to save the download in with `-o [filename]`
 (with `--output` as the long version of the option), where filename is either
-just a file name, a relative path to a file name or a full path to the file.
+just a filename, a relative path to a filename or a full path to the file.
 
 Also note that you can put the `-o` before or after the URL; it makes no
 difference:
@@ -33,14 +33,14 @@ follow.
 
 ## Overwriting
 
-When curl downloads a remote resource into a local file name as described
+When curl downloads a remote resource into a local filename as described
 above, it will overwrite that file in case it already existed. It will
 *clobber* it.
 
 curl offers a way to avoid this clobbering: `--no-clobber`.
 
 When using this option, and curl finds that there already exists a file with
-the given name, curl instead appends a period plus a number to the file name
+the given name, curl instead appends a period plus a number to the filename
 in an attempt to find a name that is not already used. It will start with `1`
 and then continue trying until it reaches `100` and pick the first available
 one.

@@ -15,7 +15,7 @@ You tell curl to read more command-line options from a specific file with the
 
     curl -K cmdline.txt http://example.com
 
-…and in the `cmdline.txt` file (which, of course, can use any file name you
+…and in the `cmdline.txt` file (which, of course, can use any filename you
 please) you enter each command line per line:
 
     # this is a comment, we ask to follow redirects

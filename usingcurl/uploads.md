@@ -61,13 +61,13 @@ You send off an HTTP upload using the -T option with the file to upload:
 
 Working with FTP, you get to see the remote file system you will be accessing.
 You tell the server exactly in which directory you want the upload to be
-placed and which file name to use. If you specify the upload URL with a
-trailing slash, curl will append the locally used file name to the URL and
-then that will be the file name used when stored remotely:
+placed and which filename to use. If you specify the upload URL with a
+trailing slash, curl will append the locally used filename to the URL and
+then that will be the filename used when stored remotely:
 
     curl -T uploadthis ftp://example.com/this/directory/
 
-So if you prefer to select a different file name on the remote side than what
+So if you prefer to select a different filename on the remote side than what
 you have used locally, you specify it in the URL:
 
     curl -T uploadthis ftp://example.com/this/directory/remotename

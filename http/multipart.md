@@ -158,7 +158,7 @@ When the input type is set to a "file", like in:
 
     <input type="file" name="image">
 
-You provide a file for this part by specifying the file name and use `@` and
+You provide a file for this part by specifying the filename and use `@` and
 the path to the file to include:
 
     curl -F image=@funnycat.gif https://example.com/

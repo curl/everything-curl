@@ -22,12 +22,12 @@ There are two ways to switch on the cookie engine:
 
 ### Enable cookie engine with reading
 
-Ask libcurl to import cookies into the easy handle from a given file name with
+Ask libcurl to import cookies into the easy handle from a given filename with
 the `CURLOPT_COOKIEFILE` option:
 
     curl_easy_setopt(easy, CURLOPT_COOKIEFILE, "cookies.txt");
 
-A common trick is to just specify a non-existing file name or plain "" to have
+A common trick is to just specify a non-existing filename or plain "" to have
 it just activate the cookie engine with a blank cookie store to start with.
 
 This option can be set multiple times and then each of the given files will be
@@ -113,12 +113,12 @@ Erase all session cookies (cookies without expiry date) from memory:
 
     curl_easy_setopt(curl, CURLOPT_COOKIELIST, "SESS");
 
-Force a write of all cookies to the file name previously specified with
+Force a write of all cookies to the filename previously specified with
 `CURLOPT_COOKIEJAR`:
 
     curl_easy_setopt(curl, CURLOPT_COOKIELIST, "FLUSH");
 
-Force a reload of cookies from the file name previously specified with
+Force a reload of cookies from the filename previously specified with
 `CURLOPT_COOKIEFILE`:
 
     curl_easy_setopt(curl, CURLOPT_COOKIELIST, "RELOAD");

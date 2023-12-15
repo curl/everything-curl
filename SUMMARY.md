@@ -81,7 +81,7 @@
     * [What exactly is downloading?](usingcurl/downloads/whatis.md)
     * [Storing downloads](usingcurl/downloads/storing.md)
     * [Download to a file named by the URL](usingcurl/downloads/url-named.md)
-    * [Use the target file name from the server](usingcurl/downloads/content-disp.md)
+    * [Use the target filename from the server](usingcurl/downloads/content-disp.md)
     * [HTML and charsets](usingcurl/downloads/charsets.md)
     * [Compression](usingcurl/downloads/compression.md)
     * [Shell redirects](usingcurl/downloads/redirects.md)

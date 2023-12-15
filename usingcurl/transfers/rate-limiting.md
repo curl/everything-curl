@@ -30,10 +30,10 @@ To make curl not download data any faster than 200 kilobytes per second:
 
     curl https://example.com/ --limit-rate 200K
 
-The given limit is the maximum *average speed* allowed, counted during the
-entire transfer. It means that curl might use higher transfer speeds in short
-bursts, but over time it uses no more than the given rate.
+The given limit is the maximum *average speed* allowed during a period of
+several seconds. It means that curl might use higher transfer speeds in short
+bursts, but over time it averages to no more than the given rate.
 
-Also note that curl never knows what the maximum possible speed is—it will
-simply go as fast as it can and is allowed. You may know your connection's
-maximum speed, but curl does not.
+curl does not know what the maximum possible speed is — it will simply go as
+fast as it can and is allowed. You might know your connection's maximum speed,
+curl does not.

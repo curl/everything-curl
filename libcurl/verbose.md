@@ -57,3 +57,56 @@ function to get inspiration from.
 
 There are also additional details in the [CURLOPT_DEBUGFUNCTION man
 page](https://curl.se/libcurl/c/CURLOPT_DEBUGFUNCTION.html).
+
+## Transfer and connection identifiers
+
+As the trace information flow passed to the debug callback is a continuous
+stream even though your application might make libcurl use a large number of
+separate connections and different transfers, there are times when you want to
+see to which specific transfers or connections the various information belong
+to. To better understand the trace output.
+
+You can then get the transfer and connection "identifiers" from within the
+callback:
+
+    curl_off_t conn_id;
+    curl_off_t xfer_id;
+    res = curl_easy_getinfo(curl, CURLINFO_CONN_ID, &conn_id);
+    res = curl_easy_getinfo(curl, CURLINFO_XFER_ID, &xfer_id);
+
+They are two separate identifiers because connections can be reused and
+multiple transfers can use the same connection. Using these identifiers
+(numbers really), you can see which logs are associated with which transfers
+and connections.
+
+## Trace more
+
+If the default amount of tracing data passed to the debug callback is not
+enough. Like when you suspect and want to debug a problem in a more
+fundamental lower protocol level, libcurl provides the `curl_global_trace()`
+function for you.
+
+With this function you tell libcurl to also include detailed logging about
+components that it otherwise does not include by default. Such as details
+about TLS, HTTP/2 or HTTP/3 protocol bits.
+
+The `curl_global_trace()` functions takes an argument where you specify a
+string holding a comma-separated list with the areas you want it to trace. For
+example, include TLS and HTTP/2 details:
+
+    /* log details of HTTP/2 and SSL handling */
+    curl_global_trace("http/2,ssl");
+
+The exact set of ares will vary, but here are some ones to try:
+
+| area     | description                                     |
+|----------|-------------------------------------------------|
+| `all`    | show everything possible                        |
+| `tls`    | TLS protocol exchange details                   |
+| `http/2` | HTTP/2 frame information                        |
+| `http/3` | HTTP/3 frame information                        |
+| `*`      | additional ones in future versions              |
+
+Doing a quick run with `all` is often a good way to get to see which specific
+areas that are shown, as then you can do follow-up runs with more specific
+areas set.

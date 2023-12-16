@@ -1,7 +1,9 @@
 # HTTP/3
 
-This feature is marked **experimental** as of this time and needs to be
-explicitly enabled in the build to function.
+HTTP/3 is different than its predecessors in several ways. Maybe most
+noticeably, HTTP/3 cannot be negotiated on the same connection like HTTP/2
+can. Due to HTTP/3 using a different transport protocol, it has to set up and
+negotiate a dedicated connection for it.
 
 ## QUIC
 

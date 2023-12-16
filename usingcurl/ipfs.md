@@ -1,8 +1,8 @@
 # IPFS
 
-IPFS is the *Inter-Planetary File System*. curl supports IPFS only via a *HTTP
-gateway*. It means that it understands IPFS URLs when given to it, but you
-must also provide a working gateway URL for curl to use to retrieve the
+IPFS is the *Inter-Planetary File System*. curl supports IPFS only via an
+*HTTP gateway*. It means that it understands IPFS URLs when given to it, but
+you must also provide a working gateway URL for curl to use to retrieve the
 content. curl does not speak IPFS natively.
 
 ## Gateway

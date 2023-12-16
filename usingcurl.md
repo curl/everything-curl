@@ -28,4 +28,5 @@ here to help you do your file transfer tasks as conveniently as possible.
   * [TELNET](usingcurl/telnet.md)
   * [DICT](usingcurl/dict.md)
   * [TLS](usingcurl/tls.md)
+  * [IPFS](usingcurl/ipfs.md)
   * [Copy as curl](usingcurl/copyas.md)

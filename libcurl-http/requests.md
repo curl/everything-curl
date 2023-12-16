@@ -5,7 +5,7 @@ to do. When it wants to get data or send data. All transfers involving HTTP
 start with an HTTP request.
 
 An HTTP request contains a method, a path, HTTP version and a set of request
-headers. And of course a libcurl using application can tweak all those fields.
+headers. A libcurl-using application can tweak all those fields.
 
 ## Request method
 

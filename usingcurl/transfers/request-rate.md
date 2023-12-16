@@ -10,7 +10,7 @@ request rate). Without this option, curl will start the next transfer as fast
 as possible.
 
 If given several URLs and a transfer completes faster than the allowed rate,
-curl will wait until the next transfer is started to maintain the requested
+curl will delay starting the next transfer to maintain the requested
 rate. This option is for serial transfers and has no effect when
 [--parallel](../../cmdline/urls/parallel.md) is used.
 

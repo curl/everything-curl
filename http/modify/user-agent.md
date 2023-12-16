@@ -8,7 +8,7 @@ The default header value is 'curl/[version]', as in `User-Agent: curl/7.54.1`
 for curl version 7.54.1.
 
 You can set any value you like, using the option `-A` or `--user-agent` plus
-the string to use or, as it's just a header, `-H "User-Agent: foobar/2000"`.
+the string to use or, as it is just a header, `-H "User-Agent: foobar/2000"`.
 
 As comparison, a test version of Firefox on a Linux machine once sent this
 User-Agent header:

@@ -6,6 +6,7 @@ ALTSVC
 amiga
 AmigaOS
 AmiSSL
+Antoniak
 anyauth
 anycast
 API
@@ -125,7 +126,9 @@ EBCDIC
 EFnet
 eg
 EHLO
+Eissing
 else's
+Emanuele
 encodings
 enctype
 Engler
@@ -195,6 +198,7 @@ HackerOne's
 Hards
 Haxx
 haxx
+Heiduck
 HELO
 Hoersken
 Holme
@@ -229,6 +233,7 @@ init
 interoperates
 IoT
 IPCXN
+IPFS
 ipod
 IPv
 IRIs
@@ -294,6 +299,7 @@ mbedTLS
 Meglio
 memdebug
 Metalink
+Micha
 Michal
 MicroOS
 mingw
@@ -321,8 +327,10 @@ mutex
 MX
 Nagel
 NAMELOOKUP
+natively
 NATs
 Necko
+Nethercote
 netrc
 Netware
 nghttp
@@ -503,6 +511,7 @@ tlsv
 TODO
 Tomtom
 toolchains
+Torre
 TrackMemory
 trurl
 Tse
@@ -543,8 +552,6 @@ vtls
 Warta
 WAV
 WB
-WS
-WSS
 web page
 WebSocket
 whitespace
@@ -554,6 +561,8 @@ WinSSL
 Wireshark
 wolfSSH
 wolfSSL
+WS
+WSS
 www
 xdigit
 Xilinx

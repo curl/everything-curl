@@ -8,14 +8,14 @@
  schemes include `deflate` (the zlib algorithm), `gzip`, `br` (brotli) and
  `compress`. A client requests that the server perform an encoding by
  including an `Accept-Encoding` header in the request document. The value of
- the header should be one of the recognized tokens `deflate`, ... (there's a
+ the header should be one of the recognized tokens `deflate`, ... (there is a
  way to register new schemes/tokens, see sec 3.5 of the spec). A server MAY
  honor the client's encoding request. When a response is encoded, the server
  includes a `Content-Encoding` header in the response. The value of the
  `Content-Encoding` header indicates which encodings were used to encode the
  data, in the order in which they were applied.
 
- It's also possible for a client to attach priorities to different schemes so
+ It is also possible for a client to attach priorities to different schemes so
  that the server knows which it prefers. See sec 14.3 of RFC 2616 for more
  information on the `Accept-Encoding` header. See sec [3.1.2.2 of RFC
  7231](https://datatracker.ietf.org/doc/html/rfc7231#section-3.1.2.2) for more

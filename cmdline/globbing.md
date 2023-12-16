@@ -73,12 +73,12 @@ both the web server and the mail server:
 
 In all the globbing examples previously in this chapter we have selected to
 use the `-O / --remote-name` option, which makes curl save the target file
-using the file name part of the used URL.
+using the filename part of the used URL.
 
 Sometimes that is not enough. You are downloading multiple files and maybe you
-want to save them in a different subdirectory or create the saved file names
+want to save them in a different subdirectory or create the saved filenames
 differently. curl, of course, has a solution for these situations as well:
-output file name variables.
+output filename variables.
 
 Each "glob" used in a URL gets a separate variable. They are referenced as
 `#[num]` - that means the single character `#` followed by the glob number

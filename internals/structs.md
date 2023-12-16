@@ -112,8 +112,8 @@ of date at times.
   Each unique protocol that is supported by libcurl needs to provide at least
   one `Curl_handler` struct. It defines what the protocol is called and what
   functions the main code should call to deal with protocol specific issues.
-  In general, there's a source file named `[protocol].c` in which there's a
-  `struct Curl_handler Curl_handler_[protocol]` declared. In `url.c` there's
+  In general, there is a source file named `[protocol].c` in which there is a
+  `struct Curl_handler Curl_handler_[protocol]` declared. In `url.c` there is
   then the main array with all individual `Curl_handler` structs pointed to
   from a single array which is scanned through when a URL is given to libcurl
   to work with.

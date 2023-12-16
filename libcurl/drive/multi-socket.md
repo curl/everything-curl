@@ -41,13 +41,13 @@ completed.
 ## multi_socket callbacks
 
 As explained above, this event-based mechanism relies on the application to
-know which sockets are used by libcurl and what libcurl waits for on
-those sockets: if it waits for the socket to become readable, writable or
-both!
+know which sockets that are used by libcurl and what activities libcurl waits
+for on those sockets: if it waits for the socket to become readable, writable
+or both.
 
-It also needs to tell libcurl when its timeout time has expired, as it is
-control of driving everything libcurl cannot do it itself. So libcurl must tell
-the application an updated timeout value, too.
+The application also needs to tell libcurl when the timeout time has expired,
+as it is control of driving everything libcurl cannot do it itself. libcurl
+informs the application updated timeout values as soon as it needs to.
 
 ### socket_callback
 

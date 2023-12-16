@@ -103,8 +103,8 @@ with no contents on the right side of the colon, it will be treated as a
 removal instruction and it will instead completely inhibit that header from
 being sent. If you instead *truly* want to send a header with zero contents on
 the right side, you need to use a special marker. You must provide the header
-with a semicolon instead of a proper colon. Like `Header;`. So if you want to
-add a header to the outgoing HTTP request that is just `Moo:` with nothing
+with a semicolon instead of a proper colon. Like `Header;`. If you want to add
+a header to the outgoing HTTP request that is just `Moo:` with nothing
 following the colon, you could write it like:
 
     struct curl_slist *list = NULL;

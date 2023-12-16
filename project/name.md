@@ -2,8 +2,10 @@
 
 Naming things is hard.
 
-The tool was about uploading and downloading data specified with a URL. It was a client-side
-program (the 'c'), a URL client, and would show the data (by default). So 'c' for Client and URL: **cURL**.
+The tool was about uploading and downloading data specified with a URL. It was
+a client-side program (the 'c'), a URL client, and would show the data (by
+default). 'c' stands for Client and URL: **cURL**. The fact that it could also
+be read as "see URL" helped.
 
 Nothing more was needed so the name was selected and we never looked back
 again.

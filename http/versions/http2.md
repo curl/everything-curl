@@ -31,4 +31,4 @@ your machines) you can shortcut the HTTP/2 "negotiation" with
 A primary feature in the HTTP/2 protocol, is the ability to multiplex several
 logical streams over the same physical connection. The curl command-line tool
 can take advantage of this feature when
-[doing parallel transfers](../cmdline/urls/parallel.md).
+[doing parallel transfers](../../cmdline/urls/parallel.md).

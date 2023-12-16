@@ -102,7 +102,7 @@ exact file length (it will not always be present in responses).
 ## HTTP/2 and HTTP/3
 
 When doing file transfers using version two or three of the HTTP protocol,
-curl sends and receives **compressed** headers. So to display outgoing and
+curl sends and receives **compressed** headers. To display outgoing and
 incoming HTTP/2 and HTTP/3 headers in a readable and understandable way, curl
 will actually show the uncompressed versions in a style similar to how they
 appear with HTTP/1.1.

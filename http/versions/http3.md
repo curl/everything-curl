@@ -1,7 +1,9 @@
 # HTTP/3
 
-This feature is marked **experimental** as of this time and needs to be
-explicitly enabled in the build to function.
+HTTP/3 is different than its predecessors in several ways. Maybe most
+noticeably, HTTP/3 cannot be negotiated on the same connection like HTTP/2
+can. Due to HTTP/3 using a different transport protocol, it has to set up and
+negotiate a dedicated connection for it.
 
 ## QUIC
 
@@ -28,9 +30,16 @@ to the given host name and port number, use `--http3`. Like this:
 Normally, without the `--http3` option, an `HTTPS://` URL implies that a
 client needs to connect to it using TCP (and TLS).
 
+## Multiplexing
+
+A primary feature in the HTTP/3 protocol, is the ability to multiplex several
+logical streams over the same physical connection. The curl command-line tool
+can take advantage of this feature when
+[doing parallel transfers](../../cmdline/urls/parallel.md).
+
 ## Alt-svc:
 
-The [alt-svc](altsvc.md) method of changing to HTTP/3 is the official way to
+The [alt-svc](../altsvc.md) method of changing to HTTP/3 is the official way to
 bootstrap into HTTP/3 for a server.
 
 Note that you need that feature built-in and that it does not switch to HTTP/3

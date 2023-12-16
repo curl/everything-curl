@@ -62,8 +62,8 @@ therefore it can also be provided without the quotes like:
 
 Finally, if you want to provide a URL in a config file, you must do that the
 `--url` way, or just with `url`, and not like on the command line where
-everything that is not an option is assumed to be a URL. So you provide a URL
-for curl like this:
+everything that is not an option is assumed to be a URL. You provide a URL for
+curl like this:
 
     url = "http://example.com"
 

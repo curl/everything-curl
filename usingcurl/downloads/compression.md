@@ -30,3 +30,19 @@ In theory, there is nothing that prevents you from using both in the same
 command line, although in practice, you may then experience that some servers
 get a little confused when ask to compress in two different ways. It is
 generally safer to just pick one.
+
+For SCP and SFTP transfers, there is `--compressed-ssh`. It compresses all
+traffic in either direction.
+
+## HTTP headers
+
+HTTP/1.x headers cannot be compressed. HTTP/2 and HTTP/3 headers on the other
+hands are always compressed and cannot be sent uncompressed. However, as a
+convenience to users, curl will always show the headers uncompressed in a
+style similar to how they look for HTTP/1.x to make the output and look
+consistent.
+
+## Uploads
+
+For HTTP there is no standard way to do compression. The above mentioned HTTP
+compression methods only work for downloads.

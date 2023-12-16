@@ -3,6 +3,7 @@
 --anyauth
 --basic
 --compressed
+--compressed-ssh
 --connect-timeout
 --connect-to
 --data

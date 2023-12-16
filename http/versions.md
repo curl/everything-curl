@@ -2,12 +2,12 @@
 
 As any other Internet protocol, the HTTP protocol has kept evolving over the
 years and now there are clients and servers distributed over the world and
-over time that speak different versions with varying levels of success. So in
-order to get libcurl to work with the URLs you pass in libcurl offers ways for
-you to specify which HTTP version that request and transfer should
-use. libcurl is designed in a way so that it tries to use the most common, the
-most sensible if you want, default values first but sometimes that is not
-enough and then you may need to instruct libcurl on what to do.
+over time that speak different versions with varying levels of success. In
+order to get curl to work with your URLs, curl offers ways for you to specify
+which HTTP version a request and transfer should use. curl is designed in a
+way so that it tries to use the most common, the most sensible if you want,
+default values first but sometimes that is not enough and then you may need to
+instruct curl on what to do.
 
 curl defaults to HTTP/1.1 for HTTP servers but if you connect to HTTPS and you
 have a curl that has HTTP/2 abilities built-in, it attempts to negotiate

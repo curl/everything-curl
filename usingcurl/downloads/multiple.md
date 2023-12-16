@@ -27,3 +27,9 @@ The `-O` is similarly just an instruction for a single download so if you
 download multiple URLs, use more of them:
 
     curl -O -O http://example.com/1 http://example.com/2
+
+## Parallel
+
+Unless told otherwise, curl will download all given URLs in a serial fashion,
+one by one. By using `-Z` (or `--parallel`) curl can instead do the transfers
+[in parallel](../../cmdline/urls/parallel.md): several ones at once.

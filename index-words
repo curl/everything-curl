@@ -26,6 +26,7 @@
 --http2-prior-knowledge
 --http3
 --http3-only
+--ipfs-gateway
 --json
 --keepalive-time
 --libcurl
@@ -281,6 +282,7 @@ HTTP/3 backend
 HttpGet
 IDN
 Indentation
+IPFS
 IPv4
 IPv6
 IRC

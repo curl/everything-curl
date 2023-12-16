@@ -20,11 +20,12 @@ command line, you can also read it from a filename in standard curl style:
 
 While the server might assume that the data is encoded in some special way,
 curl does not encode or change the data you tell it to send. **curl sends
-exactly the bytes you give it**.
+exactly the bytes you give it** (except that when reading from a file. `-d`
+will skip over the carriage returns and newlines so you need to use
+`--data-binary` if you rather intend them to be included in the data.).
 
 To send a POST body that starts with a `@` symbol, to avoid that curl tries to
 load that as a filename, use `--data-raw` instead. This option has no file
 loading capability:
 
     curl --data-raw '@string' https://example.com
-

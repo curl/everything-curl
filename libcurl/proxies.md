@@ -80,7 +80,7 @@ specially named environment variables before it performs its transfer to see
 if a proxy is requested to get used.
 
 You can specify the proxy by setting a variable named `[scheme]_proxy` to hold
-the proxy host name (the same way you would specify the host with `-x`). So if
+the proxy host name (the same way you would specify the host with `-x`). If
 you want to tell curl to use a proxy when accessing an HTTP server, you set
 the `http_proxy` environment variable. Like this:
 

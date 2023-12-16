@@ -2,7 +2,7 @@
 
 Many URLs, however, already contain the filename part in the rightmost
 end. curl lets you use that as a shortcut so you do not have to repeat it with
-`-o`. So instead of:
+`-o`. Instead of:
 
     curl -o file.html http://example.com/file.html
 

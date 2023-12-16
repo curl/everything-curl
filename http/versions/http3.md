@@ -28,6 +28,13 @@ to the given host name and port number, use `--http3`. Like this:
 Normally, without the `--http3` option, an `HTTPS://` URL implies that a
 client needs to connect to it using TCP (and TLS).
 
+## Multiplexing
+
+A primary feature in the HTTP/3 protocol, is the ability to multiplex several
+logical streams over the same physical connection. The curl command-line tool
+can take advantage of this feature when
+[doing parallel transfers](../../cmdline/urls/parallel.md).
+
 ## Alt-svc:
 
 The [alt-svc](../altsvc.md) method of changing to HTTP/3 is the official way to

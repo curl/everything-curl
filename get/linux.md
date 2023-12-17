@@ -51,7 +51,7 @@ To install the libcurl development package you run:
 
     dnf install libcurl-devel
 
-## Immutable/Atomic Fedora distributions (i.e Silverblue, Kinoite, Sericea, Onyx, ...)
+## Immutable Fedora distributions
 
 The aforementioned distributions use `rpm-ostree` to install packages.
 Remember to restart the system after install.

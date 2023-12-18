@@ -249,6 +249,7 @@ Kaufmann
 keepalive
 Keil
 Kirei
+Kinoite
 Knauf
 kqueue
 Krb

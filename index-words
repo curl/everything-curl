@@ -296,7 +296,6 @@ JavaScript
 json
 keep-alive
 KNOWN_BUGS
-Kinoite
 libcurl version
 libidn2
 libpsl
@@ -372,8 +371,6 @@ SSH backend
 SSL context callback
 SSLKEYLOGFILE
 STARTTLS
-Silverblue
-Sericea
 TELNET
 testing
 TFTP

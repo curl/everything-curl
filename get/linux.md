@@ -51,6 +51,18 @@ To install the libcurl development package you run:
 
     dnf install libcurl-devel
 
+## Immutable Fedora distributions
+
+Distributions such as, Silverblue, Kinoite, Sericea, Onyx, ...
+use `rpm-ostree` to install packages.
+Remember to restart the system after install.
+
+    rpm-ostree install curl
+
+To install the libcurl development package you run:
+
+    rpm-ostree install libcurl-devel
+
 ## nix
 
 [Nix](https://nixos.org/nix/) is a package manager default to the NixOS

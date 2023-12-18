@@ -53,7 +53,8 @@ To install the libcurl development package you run:
 
 ## Immutable Fedora distributions
 
-The aforementioned distributions use `rpm-ostree` to install packages.
+Distributions such as, Silverblue, Kinoite, Sericea, Onyx, ...
+use `rpm-ostree` to install packages.
 Remember to restart the system after install.
 
     rpm-ostree install curl

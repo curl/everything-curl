@@ -439,12 +439,14 @@ SEK
 selectable
 Serv
 setopt
+Sericea
 SFTP
 sftp
 sha
 singlecwd
 Sintonen
 sizeof
+Silverblue
 SLE
 slist
 sln

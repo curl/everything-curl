@@ -29,7 +29,7 @@
     * [MSYS2](get/win-msys2.md)
     * [vcpkg](get/win-vcpkg.md)
   * [macOS](get/macos.md)
-  * [container](get/container.md)
+  * [Docker](get/docker.md)
 * [Source code](source.md)
   * [Open Source](source/opensource.md)
     * [License](source/opensource/license.md)

@@ -33,9 +33,7 @@ This book project started at the end of September 2015.
 [https://everything.curl.dev](https://everything.curl.dev) is the home of this
 book. It features the book online in a web version.
 
-The PDF version is availble at [https://daniel.haxx.se/everything-curl/](https://daniel.haxx.se/everything-curl/).
-
-The ePUB version is availble at [https://daniel.haxx.se/everything-curl/](https://daniel.haxx.se/everything-curl/).
+This book is also provided as a [PDF](https://daniel.haxx.se/everything-curl/everything-curl.pdf) and an [ePUB](https://daniel.haxx.se/everything-curl/everything-curl.epub).
 
 ## Content
 

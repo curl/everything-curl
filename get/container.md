@@ -7,12 +7,12 @@ You can run the latest version of curl with the following command:
 
 Command for `Docker`:
 ```
-docker run -it --rm docker.io/curlimages/curl https://example.com
+docker run -it --rm docker.io/curlimages/curl www.example.com
 ```
 
 Command for `Podman`:
 ```
-podman run -it --rm docker.io/curlimages/curl https://example.com
+podman run -it --rm docker.io/curlimages/curl www.example.com
 ```
 
 ## Running curl seamlessly in container

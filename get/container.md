@@ -1,14 +1,21 @@
 # container
 
+Both `Docker` and, `Podman` are containerization tools.
 The docker image is hosted at [https://hub.docker.com/r/curlimages/curl](https://hub.docker.com/r/curlimages/curl)
 
 You can run the latest version of curl with the following command:
 
+Command for `Docker`:
 ```
 docker run -it --rm curlimages/curl www.example.com
 ```
 
-## Running curl seamlessly in docker
+Command for `Podman`:
+```
+podman run -it --rm docker.io/curlimages/curl https://example.com
+```
+
+## Running curl seamlessly in container
 
 It is possible to make an alias to seamlessly run curl inside a container. Define an alias like the following:
 

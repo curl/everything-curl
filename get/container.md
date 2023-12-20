@@ -7,7 +7,7 @@ You can run the latest version of curl with the following command:
 
 Command for `Docker`:
 ```
-docker run -it --rm curlimages/curl www.example.com
+docker run -it --rm docker.io/curlimages/curl https://example.com
 ```
 
 Command for `Podman`:
@@ -20,10 +20,21 @@ podman run -it --rm docker.io/curlimages/curl https://example.com
 It is possible to make an alias to seamlessly run curl inside a container.
 Define an alias for your Bash (ZSH, Fish, ...) shell shell:
 
+### Bash
+(most distributions use bash)
+
+`Docker`
 ```
-# Bash alias example
-alias curl='docker run -it --rm curlimages/curl'
+echo "alias curl='docker run -it --rm curlimages/curl'" >> ~/.bashrc
 ```
+
+`Podman`
+```
+echo "alias curl='podman run -it --rm curlimages/curl'" >> ~/.bashrc
+```
+
+
+Then close your terminal and, reopen it again.
 
 And simply invoke `curl www.example.com` to make a request
 

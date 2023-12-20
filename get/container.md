@@ -17,7 +17,8 @@ podman run -it --rm docker.io/curlimages/curl https://example.com
 
 ## Running curl seamlessly in container
 
-It is possible to make an alias to seamlessly run curl inside a container. Define an alias like the following:
+It is possible to make an alias to seamlessly run curl inside a container.
+Define an alias for your Bash (ZSH, Fish, ...) shell shell:
 
 ```
 # Bash alias example

@@ -1,4 +1,4 @@
-# container
+# Container
 
 Both `Docker` and, `Podman` are containerization tools.
 The docker image is hosted at [https://hub.docker.com/r/curlimages/curl](https://hub.docker.com/r/curlimages/curl)

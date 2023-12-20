@@ -32,8 +32,31 @@ echo "alias curl='docker run -it --rm curlimages/curl'" >> ~/.bashrc
 ```
 echo "alias curl='podman run -it --rm curlimages/curl'" >> ~/.bashrc
 ```
+Then close your terminal and, reopen it again.
 
+### ZSH
+(this is the shell used by MacOS by default)
+`Docker`
+```
+echo "alias curl='docker run -it --rm curlimages/curl'" >> ~/.zshrc
+```
 
+`Podman`
+```
+echo "alias curl='podman run -it --rm curlimages/curl'" >> ~/.zshrc
+```
+Then close your terminal and, reopen it again.
+
+### Fish
+`Docker`
+```
+alias -s curl='docker run -it --rm curlimages/curl'
+```
+
+`Podman`
+```
+alias -s curl='podman run -it --rm curlimages/curl'
+```
 Then close your terminal and, reopen it again.
 
 And simply invoke `curl www.example.com` to make a request

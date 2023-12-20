@@ -1,4 +1,4 @@
-# Docker
+# container
 
 The docker image is hosted at [https://hub.docker.com/r/curlimages/curl](https://hub.docker.com/r/curlimages/curl)
 

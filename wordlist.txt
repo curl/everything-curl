@@ -259,6 +259,7 @@ kubernetes
 Kuhrt
 Largefile
 LASTSOCKET
+LD
 LDAP
 ldap
 LDAPS
@@ -282,6 +283,7 @@ libs
 libssh
 libSSH
 libssh2
+libtool
 libuv
 libz
 libzstd
@@ -416,12 +418,14 @@ Rikard
 ROADMAP
 Rockbox
 roffit
+rpath
 RTMP
 rtmp
 RTMPS
 RTP
 RTSP
 rtsp
+runpath
 runtests
 runtime
 Ruslan

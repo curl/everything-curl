@@ -62,19 +62,19 @@ It can look like this when you have installed your new curl build in
     
 ### `rpath`
 
-An often times better way to instead forcible load your separate libcurl
-instead of the system one, is to set the `rpath` of the specific `curl`
-executable you build. That gives the runtime linker a specific path to check
-for this specific executable.
+Often, a better way to forcible load your separate libcurl instead of the
+system one, is to set the `rpath` of the specific `curl` executable you
+build. That gives the runtime linker a specific path to check for this
+specific executable.
 
 This is done at link time, and if you build your own libcurl using
 application, you can make that load your custom libcurl build like this:
 
     gcc -g example.c -L$HOME/install/lib -lcurl -Wl,-rpath=$HOME/install/lib
 
-With this, the `a.out` executable linked against
-`$HOME/install/lib/libcurl.so` then uses that specific library at runtime,
-while other binaries will continue to use the system libcurl.
+With `rpath` set, the executable linked against `$HOME/install/lib/libcurl.so`
+then makes the runtime linker use that specific path and library, while other
+binaries in your system will continue to use the system libcurl.
 
 When you want to make your custom build of `curl` use its own libcurl and you
 install them into `$HOME/install`, then a configure command line for this

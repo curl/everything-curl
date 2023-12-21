@@ -240,6 +240,7 @@
  - --keepalive-time: [Keep alive](usingcurl/connections/keepalive.md#keep-alive)
 ## L
  - -L: [Short options](cmdline/options.md#short-options), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Tell curl to follow redirects](http/redirects.md#tell-curl-to-follow-redirects), [Request method](http/modify/method.md#request-method), [Cookie engine](http/cookies.md#cookie-engine), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Redirects](http/browserlike.md#redirects)
+ - LD_LIBRARY_PATH: [`LD_LIBRARY_PATH`](build/separate.md#ld_library_path)
  - --libcurl: [--libcurl](libcurl/--libcurl.md#libcurl)
  - libcurl version: [The latest version?](build.md#the-latest-version?), [Line 1: curl](usingcurl/version.md#line-1-curl), [Available exit codes](usingcurl/returns.md#available-exit-codes), [Network data conversion](libcurl/callbacks/conversions.md#network-data-conversion), [Which libcurl version](libcurl/api.md#which-libcurl-version)
  - libidn2: [libidn2](build/deps.md#libidn2)
@@ -336,6 +337,7 @@
  - RFC 854: [TELNET](protocols/curl.md#telnet)
  - RFC 959: [FTP](protocols/curl.md#ftp), [FTP with curl](ftp.md#ftp-with-curl), [Quote](ftp/cmds.md#quote)
  - roadmap: [Future](project/future.md#future)
+ - rpath: [`rpath`](build/separate.md#rpath)
  - RTMP: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [RTMP](protocols/curl.md#rtmp), [librtmp](build/deps.md#librtmp), [Supported schemes](cmdline/urls/scheme.md#supported-schemes), [Version](usingcurl/version.md#version)
  - RTSP: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [RTSP](protocols/curl.md#rtsp), [Supported schemes](cmdline/urls/scheme.md#supported-schemes), [Version](usingcurl/version.md#version), [Callbacks](libcurl/callbacks.md#callbacks), [RTSP interleaved data](libcurl/callbacks/rtsp.md#rtsp-interleaved-data), [Available information](libcurl/getinfo.md#available-information), [All options](libcurl/options/all.md#all-options), [Variables](internals/tests/file-format.md#variables)
  - rustls: [TLS libraries](build/tls.md#tls-libraries), [`<features>`](internals/tests/file-format.md#less-than-features-greater-than)

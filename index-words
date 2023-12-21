@@ -296,6 +296,7 @@ JavaScript
 json
 keep-alive
 KNOWN_BUGS
+LD_LIBRARY_PATH
 libcurl version
 libidn2
 libpsl
@@ -352,6 +353,7 @@ RFC 8446
 RFC 854
 RFC 959
 roadmap
+rpath
 RTMP
 RTSP
 rustls

@@ -282,9 +282,11 @@ libs
 libssh
 libSSH
 libssh2
+libtool
 libuv
 libz
 libzstd
+linkers
 linux
 localhost
 logfile
@@ -416,12 +418,14 @@ Rikard
 ROADMAP
 Rockbox
 roffit
+rpath
 RTMP
 rtmp
 RTMPS
 RTP
 RTSP
 rtsp
+runpath
 runtests
 runtime
 Ruslan

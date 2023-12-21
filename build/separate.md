@@ -81,3 +81,12 @@ install them into `$HOME/install`, then a configure command line for this
 looks something like this:
 
     LDFLAGS="-Wl,-rpath,$HOME/install/lib" ./configure ...
+
+If your system supports the runpath form of rpath it is often better to use
+that instead because it can be overridden by the `LD_LIBRARY_PATH` environment
+variable. It may also prevent libtool bugs when testing in-tree builds of curl,
+since then libtool can use `LD_LIBRARY_PATH`. Newer linkers may use the runpath
+form of rpath by default when rpath is specified but others need an additional
+linker flag `-Wl,--enable-new-dtags` like this:
+
+    LDFLAGS="-Wl,-rpath,$HOME/install/lib -Wl,--enable-new-dtags" ./configure ...

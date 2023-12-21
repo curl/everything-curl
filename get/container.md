@@ -25,12 +25,12 @@ Define an alias for your Bash (ZSH, Fish, ...) shell shell:
 
 `Docker`
 ```
-echo "alias curl='docker run -it --rm curlimages/curl'" >> ~/.bashrc
+echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc
 ```
 
 `Podman`
 ```
-echo "alias curl='podman run -it --rm curlimages/curl'" >> ~/.bashrc
+echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc
 ```
 Then close your terminal and, reopen it again.
 
@@ -38,24 +38,24 @@ Then close your terminal and, reopen it again.
 (this is the shell used by MacOS by default)
 `Docker`
 ```
-echo "alias curl='docker run -it --rm curlimages/curl'" >> ~/.zshrc
+echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc
 ```
 
 `Podman`
 ```
-echo "alias curl='podman run -it --rm curlimages/curl'" >> ~/.zshrc
+echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc
 ```
 Then close your terminal and, reopen it again.
 
 ### Fish
 `Docker`
 ```
-alias -s curl='docker run -it --rm curlimages/curl'
+alias -s curl='docker run -it --rm docker.io/curlimages/curl'
 ```
 
 `Podman`
 ```
-alias -s curl='podman run -it --rm curlimages/curl'
+alias -s curl='podman run -it --rm docker.io/curlimages/curl'
 ```
 Then close your terminal and, reopen it again.
 

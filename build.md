@@ -89,7 +89,7 @@ using either `nmake` or project files. See the build on
 
 * [Autotools](build/autotools.md) - build with configure
 * [CMake](build/cmake.md)
+* [Separate install](build/separate.md)
 * [On Windows](build/windows.md) - Windows-specific ways to build
 * [Dependencies](build/deps.md)
 * [TLS libraries](build/tls.md)
-

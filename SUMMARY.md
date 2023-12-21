@@ -43,6 +43,7 @@
 * [Build curl](build.md)
   * [Autotools](build/autotools.md)
   * [CMake](build/cmake.md)
+  * [Separate install](build/separate.md)
   * [Windows](build/windows.md)
   * [Dependencies](build/deps.md)
   * [TLS libraries](build/tls.md)

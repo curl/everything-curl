@@ -143,6 +143,7 @@ etag
 ETag
 ETags
 exe
+executables
 extensibility
 Falkeborn
 Fandrich

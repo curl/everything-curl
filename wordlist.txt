@@ -259,7 +259,6 @@ kubernetes
 Kuhrt
 Largefile
 LASTSOCKET
-LD
 LDAP
 ldap
 LDAPS

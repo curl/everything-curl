@@ -13,4 +13,12 @@ easy surveillance.
 When an HTTPS proxy is specified, the default port used on that host will be
 443.
 
-In all other ways, HTTPS proxies work like [HTTP proxies](http.md).
+In most other ways, HTTPS proxies work like [HTTP proxies](http.md).
+
+## HTTP/2
+
+When curl speaks with an HTTPS proxy, you have the option to use
+`--proxy-http2` to a ask curl to try using HTTP/2 with the proxy.
+
+By default, curl speaks HTTP/1.1 with HTTPS proxies, but if this option is
+used curl attempts to negotiate and use HTTP/2 instead.

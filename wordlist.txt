@@ -286,6 +286,7 @@ libtool
 libuv
 libz
 libzstd
+linkers
 linux
 localhost
 logfile

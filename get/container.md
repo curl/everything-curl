@@ -37,14 +37,13 @@ echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc &
 (this is the shell used by MacOS by default)
 `Docker`
 ```
-echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc
+echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc && source ~/.zshrc
 ```
 
 `Podman`
 ```
-echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc
+echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc && source ~/.zshrc
 ```
-Then close your terminal and, reopen it again.
 
 ### Fish
 `Docker`

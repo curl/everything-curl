@@ -25,14 +25,13 @@ Define an alias for your Bash (ZSH, Fish, ...) shell shell:
 
 `Docker`
 ```
-echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc
+echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc && source ~/.bashrc
 ```
 
 `Podman`
 ```
-echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc
+echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc && source ~/.bashrc
 ```
-Then close your terminal and, reopen it again.
 
 ### ZSH
 (this is the shell used by MacOS by default)

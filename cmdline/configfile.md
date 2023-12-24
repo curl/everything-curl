@@ -4,7 +4,7 @@ Curl commands with multiple command-line options can become cumbersome to work w
 
 To aid such situations, curl allows you to write command-line options in a plain text config file and tell curl to read options from that file when applicable. 
 
-You can also use config files to assign data to variables and transform the data with functions, making them very useful. This is discussed in the ["Variables"](https://everything.curl.dev/cmdline/variables) section.
+You can also use config files to assign data to variables and transform the data with functions, making them incredibly useful. This is discussed in the ["Variables"](https://everything.curl.dev/cmdline/variables) section.
 
 Some examples below contain multiple lines for readability. The forward slash (`\`) is used to instruct the terminal to ignore the newline.
 

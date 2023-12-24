@@ -1,4 +1,4 @@
-# Config files
+# Config file
 
 Curl commands with multiple command-line options can become cumbersome to work with. The number of characters can even exceed the maximum length allowed by your terminal application. 
 

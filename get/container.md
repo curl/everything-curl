@@ -17,35 +17,34 @@ podman run -it --rm docker.io/curlimages/curl www.example.com
 
 ## Running curl seamlessly in container
 
-It is possible to make an alias to seamlessly run curl inside a container.
-Define an alias for your Bash (ZSH, Fish, ...) shell shell:
+It is possible to make an alias to seamlessly run curl inside a container as if it is a native application installed on the host OS.
+
+Command to define curl as an alias for your containerization tool in the Bash, ZSH, Fish shell:
 
 ### Bash
 (most distributions use bash)
 
 `Docker`
 ```
-echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc
+echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc && source ~/.bashrc
 ```
 
 `Podman`
 ```
-echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc
+echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc && source ~/.bashrc
 ```
-Then close your terminal and, reopen it again.
 
 ### ZSH
-(this is the shell used by MacOS by default)
+(this is the shell used by MacOS and, Kali linux by default)
 `Docker`
 ```
-echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc
+echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc && source ~/.zshrc
 ```
 
 `Podman`
 ```
-echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc
+echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc && source ~/.zshrc
 ```
-Then close your terminal and, reopen it again.
 
 ### Fish
 `Docker`

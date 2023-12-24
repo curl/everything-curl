@@ -3,8 +3,8 @@
 This concept of variables for the command line and config files was added in
 curl 8.3.0.
 
-A user sets a *variable* to a plain string with `--variable name=content` or
-from the contents of a file with `--variable name@file` where the file can be
+A user sets a *variable* to a plain string with `--variable varName=content` or
+from the contents of a file with `--variable varName@file` where the file can be
 stdin if set to a single dash (`-`).
 
 A variable in this context is given a specific name and it holds contents. Any
@@ -13,110 +13,201 @@ will be overwritten with new content. Variable names are case sensitive, can
 be up to 128 characters long and may consist of the characters a-z, A-Z, 0-9
 and underscore.
 
+Some examples below contain multiple lines for readability. The forward slash (`\`) is used to instruct the terminal to ignore the newline.
+
+## Setting variables
+
+You can set variables at the command line with `--variable` or in config files with `variable` (no dashes):
+
+### Example 1: Command line
+
+```
+curl \
+    --variable varName=content \
+```
+
+### Example 2: Config file
+
+```
+# Curl config file
+
+variable varName=content
+```
+## Assigning contents from file
+
+You can assign the contents of a plain text file to a variable, too:
+
+### Example 1: Command line
+
+```
+curl \
+    --variable varName@filename \
+```
+
+### Example 2: Config file
+
+```
+# Curl config file
+
+variable varName@filename
+```
+
 ## Expand
 
-Variables can be expanded in option parameters using `{{name}}` - when the
+Variables can be expanded in option parameters using `{{varName}}` when the
 option name is prefixed with `--expand-`. This makes the content of the
-variable `name` get inserted, or a blank if the name does not exist as a
-variable. Insert `{{` verbatim in the string by prefixing it with a backslash,
-like `\{{`.
+variable `varName` get inserted.
+
+If you reference a name that does not exist as a variable, a blank string will be inserted.
+
+Insert `{{` verbatim in the string by escaping it with a backslash:
+
+`\{{`.
+
+### Example
+
+In the example below, the variable `host` is set and then expanded:
+
+``` 
+curl \ 
+    --variable host=example \
+    --expand-url "https://{{host}}.com" \
+```
 
 For options specified without the `--expand-` prefix, variables will not be
 expanded.
 
-Variable content holding null bytes that are not encoded when expanded, will
+Variable content holding null bytes that are not encoded when expanded will
 cause curl to exit with an error.
 
 ## Environment variables
 
-Import an environment variable with `--variable %name`. This import makes curl
+Import an environment variable with `--variable %VARNAME`. This import makes curl
 exit with an error if the given environment variable is not set. A user can
 also opt to set a default value if the environment variable does not exist,
-using `=content` or `@file` like shown above.
+using `=content` or `@file` as described above.
 
-Example: get the `USER` environment variable into the URL, which fails if
-there is no such environment variable:
+### Example 1: No default value set
 
-    --variable %USER
-    --expand-url "https://example.com/api/{{USER}}/method"
+Assign the `%USER` environment variable to a curl variable and insert it into a URL. Because no default value is specified, this operation will fail if the environment variable does not exist:
 
-To instead use `dummy` as a default value if the variable does not exist:
+``` 
+curl \ 
+    --variable %USER \
+    --expand-url "https://example.com/api/{{USER}}/method" \
+```
 
-    --variable %USER=dummy
-    --expand-url "https://example.com/api/{{USER}}/method"
+### Example 2: Default value set    
+
+Instead, let's use `dummy` as a default value if `%USER` does not exist:
+
+```
+curl \
+    --variable %USER=dummy \
+    --expand-url "https://example.com/api/{{USER}}/method" \
+```
 
 ## Expand `--variable`
 
-The `--variable` option itself can also be expanded, which allows variables to
-get set using contents from other variables. Examples:
+The `--variable` option itself can also be expanded, which allows you to assign variables to the contents of other variables.
 
-    --expand-variable var1={{var2}}
-    --expand-variable fullname=’Mrs {{first}} {{last}}’
-    --expand-variable source@{{filename}}
+### Command line examples
+
+```
+curl \
+    --expand-variable var1={{var2}} \
+    --expand-variable fullname=’Mrs {{first}} {{last}}’ \
+    --expand-variable source@{{filename}} \
+```
+
+### Config file examples
+
+```
+# curl config file
+
+variable host=example
+
+expand-variable url=https://{{host}}.com
+
+expand-variable source@{{filename}}
+```
 
 ## Functions
 
 When expanding variables, curl offers a set of *functions* to change how they
 are expanded. Functions are applied with colon + function name after the
-variable, like this: `{{name:function}}`.
+variable, like this: `{{varName:function}}`.
 
 Multiple functions can be applied to the variable. They are then applied in a
-left-to-right order: `{{name:func1:func2:func3}}`
+left-to-right order: `{{varName:func1:func2:func3}}`
 
 These functions are available: `trim`, `json`, `url` and `b64`
 
 ## Function: `trim`
 
-Expands the variable without leading and trailing whitespace. Whitespace here
-means: **horizontal tab, space, new line, vertical tab, form feed and carriage
-return**.
+Expands the variable without leading and trailing white space. White space is defined as: 
 
-Perhaps extra useful when reading data from files.
+* horizontal tabs
+* spaces
+* new lines
+* vertical tabs
+* form feed and carriage returns
 
-    --expand-url “https://example.com/{{path:trim}}”
+This is extra useful when reading data from files.
+
+```
+--expand-url “https://example.com/{{path:trim}}”
+```
 
 ## Function: `json`
 
-Expands the variable as a valid JSON string - without the quotes. This makes
-it easier to insert a variable into an argument without risking that weird
-content makes it invalid JSON.
+Expands the variable as a valid JSON string. This makes it easier to insert valid JSON into into an argument (The quotes are not included in the resulting JSON).
 
-    --expand-json “\”full name\”: \”{{first:json}} {{last:json}}\””
+```
+--expand-json “\”full name\”: \”{{first:json}} {{last:json}}\””
+```
+To trim the variable first, apply both functions (in this order):
 
-To trim the variable first, apply both functions (in the right order):
-
-    --expand-json “\”full name\”: \”{{name:trim:json}}\””
+```
+--expand-json “\”full name\”: \”{{varName:trim:json}}\””
+```
 
 ## Function: `url`
 
-Expands the variable URL encoded. Also known as *percent encoded*. It makes
-sure all output characters are legal within a URL and the rest are encoded as
-`%HH` where `HH` is a two-digit hexadecimal number for the ascii value.
+Expands the variable URL encoded. Also known as *percent encoded*. This function ensures that all output characters are legal within a URL and the rest are encoded as `%HH` where `HH` is a two-digit hexadecimal number for the ascii value.
 
-    --expand-data “name={{name:url}}”
+```
+--expand-data “varName={{varName:url}}”
+```
 
-To trim the variable first, apply both functions (in the right order):
+To trim the variable first, apply both functions (in this order):
 
-    --expand-data “name={{name:trim:url}}”
+```
+--expand-data “varName={{varName:trim:url}}”
+```
 
 ## Function: `b64`
 
-Expands the variable base64 encoded. Base64 is an encoding for binary data
-that only uses 64 specific characters.
+Expands the variable base64 encoded. Base64 is an encoding for binary data that only uses 64 specific characters.
 
-    --expand-data “content={{value:b64}}”
+```
+--expand-data “content={{value:b64}}”
+```
+    
+To trim the variable first, apply both functions (in this order):
 
-To trim the variable first, apply both functions (in the right order):
-
-    --expand-data “content={{value:trim:b64}}”
+```
+--expand-data “content={{value:trim:b64}}”
+```
 
 ## Examples
 
-Example: get the contents of a file called `$HOME/.secret` into a variable
-called `fix`. Make sure that the content is trimmed and percent-encoded sent
-as POST data:
+Example: get the contents of a file called `$HOME/.secret` into a variable called `fix`. Make sure that the content is trimmed and percent-encoded sent as POST data:
 
-    --variable %HOME=/home/default
-    --expand-variable fix@{{HOME}}/.secret
-    --expand-data "{{fix:trim:url}}"
-    https://example.com/
+```
+curl \
+    --variable %HOME=/home/default \
+    --expand-variable fix@{{HOME}}/.secret \
+    --expand-data "{{fix:trim:url}}" \
+    --url https://example.com/ \
+```

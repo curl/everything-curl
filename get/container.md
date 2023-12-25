@@ -1,69 +1,52 @@
 # Container
 
-Both `Docker` and, `Podman` are containerization tools.
-The docker image is hosted at [https://hub.docker.com/r/curlimages/curl](https://hub.docker.com/r/curlimages/curl)
+Both `docker` and, `podman` are containerization tools. The docker image is
+hosted at
+[https://hub.docker.com/r/curlimages/curl](https://hub.docker.com/r/curlimages/curl)
 
 You can run the latest version of curl with the following command:
 
-Command for `Docker`:
-```
-docker run -it --rm docker.io/curlimages/curl www.example.com
-```
+Command for `docker`:
 
-Command for `Podman`:
-```
-podman run -it --rm docker.io/curlimages/curl www.example.com
-```
+    docker run -it --rm docker.io/curlimages/curl www.example.com
+
+Command for `podman`:
+
+    podman run -it --rm docker.io/curlimages/curl www.example.com
 
 ## Running curl seamlessly in container
 
-It is possible to make an alias to seamlessly run curl inside a container as if it is a native application installed on the host OS.
+It is possible to make an alias to seamlessly run curl inside a container as
+if it is a native application installed on the host OS.
 
-Command to define curl as an alias for your containerization tool in the Bash, ZSH, Fish shell:
+Command to define curl as an alias for your containerization tool in the Bash,
+ZSH, Fish shell:
 
-### Bash
-(most distributions use bash)
+### Bash or zsh
 
-`Docker`
-```
-echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc && source ~/.bashrc
-```
+Invoke curl with `docker`:
 
-`Podman`
-```
-echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.bashrc && source ~/.bashrc
-```
+    alias curl='docker run -it --rm docker.io/curlimages/curl'
 
-### ZSH
-(this is the shell used by MacOS and, Kali linux by default)
-`Docker`
-```
-echo "alias curl='docker run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc && source ~/.zshrc
-```
+Invoke curl with `podman`:
 
-`Podman`
-```
-echo "alias curl='podman run -it --rm docker.io/curlimages/curl'" >> ~/.zshrc && source ~/.zshrc
-```
+    alias curl='podman run -it --rm docker.io/curlimages/curl'
 
 ### Fish
-`Docker`
-```
-alias -s curl='docker run -it --rm docker.io/curlimages/curl'
-```
 
-`Podman`
-```
-alias -s curl='podman run -it --rm docker.io/curlimages/curl'
-```
-Then close your terminal and, reopen it again.
+Invoke curl with `docker`:
+
+    alias -s curl='docker run -it --rm docker.io/curlimages/curl'
+
+Invoke curl with `podman`:
+
+    alias -s curl='podman run -it --rm docker.io/curlimages/curl'
 
 And simply invoke `curl www.example.com` to make a request
 
 ## Running curl in kubernetes
 
-Sometimes it can be useful to troubleshoot k8s networking with curl, just like :
+Sometimes it can be useful to troubleshoot k8s networking with curl, just like
+:
 
-```
-kubectl run -i --tty curl --image=curlimages/curl --restart=Never -- "-m 5" www.example.com
-```
+    kubectl run -i --tty curl --image=curlimages/curl --restart=Never -- "-m 5" www.example.com

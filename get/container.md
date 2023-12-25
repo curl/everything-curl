@@ -24,21 +24,21 @@ ZSH, Fish shell:
 
 ### Bash or zsh
 
-Invoke curl via docker:
+Invoke curl with `docker`:
 
     alias curl='docker run -it --rm docker.io/curlimages/curl'
 
-Invoke curl cia podman:
+Invoke curl with `podman`:
 
     alias curl='podman run -it --rm docker.io/curlimages/curl'
 
 ### Fish
 
-Invoke curl via docker:
+Invoke curl with `docker`:
 
     alias -s curl='docker run -it --rm docker.io/curlimages/curl'
 
-Invoke curl via podman:
+Invoke curl with `podman`:
 
     alias -s curl='podman run -it --rm docker.io/curlimages/curl'
 
@@ -48,6 +48,5 @@ And simply invoke `curl www.example.com` to make a request
 
 Sometimes it can be useful to troubleshoot k8s networking with curl, just like
 :
-
 
     kubectl run -i --tty curl --image=curlimages/curl --restart=Never -- "-m 5" www.example.com

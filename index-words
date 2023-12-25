@@ -52,6 +52,7 @@
 --post302
 --post303
 --proxy
+--proxy-http2
 --proxy-user
 --proxy1.0
 --proxytunnel
@@ -278,6 +279,7 @@ Header callback
 homebrew
 Host:
 HSTS
+HTTP proxy
 HTTP ranges
 HTTP redirects
 HTTP Strict Transport Security
@@ -286,6 +288,7 @@ HTTP/2
 HTTP/3
 HTTP/3 backend
 HttpGet
+HTTPS proxy
 IDN
 Indentation
 IPFS

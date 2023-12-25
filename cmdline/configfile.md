@@ -14,11 +14,9 @@ Using the `-K` or long form `--config` option tells curl to read from a config f
 
 ## Example 1
 
-```
-curl  \
-    --config configFile.txt \
-    --url https://example.com
-```
+    curl  \
+        --config configFile.txt \
+        --url https://example.com
 
 The file path specified is relative to the current directory in your terminal.
 
@@ -26,17 +24,17 @@ You can name the config file whatever you'd like. `configFile.txt` is used for s
 
 ## Syntax
 
-Enter one command per line. Use a hashtag for comments:
+Enter one command per line. Use a hash symbol for comments:
 
-```
-# curl config file
 
-# Follow redirects
---location
+    # curl config file
 
-# Do a HEAD request
---head
-```
+    # Follow redirects
+    --location
+
+    # Do a HEAD request
+    --head
+
 
 ### Command line options
 
@@ -47,15 +45,13 @@ it easier to read.
 
 ### Example 1
 
-```
-# curl config file
+    # curl config file
 
-# Follow redirects
-location
+    # Follow redirects
+    location
 
-# Do a HEAD request
-head
-```
+    # Do a HEAD request
+    head
 
 ### Arguments
 
@@ -64,11 +60,9 @@ the SAME LINE as the option.
 
 #### Example 1
 
-```
-# curl config file
+    # curl config file
 
-user-agent "Everything-is-an-agent"
-```
+    user-agent "Everything-is-an-agent"
 
 You can also use `=` or `:` between the option and its argument. As you see
 above, it is not necessary, but some like the clarity it offers. Setting the
@@ -76,22 +70,19 @@ user-agent option again:
 
 #### Example 2
 
-```
-# curl config file
+    # curl config file
 
-user-agent = "Everything-is-an-agent"
-```
+    user-agent = "Everything-is-an-agent"
 
 The user agent string example we have used above has no white spaces, so the quotes are technically not needed:
 
 #### Example 3
 
-```
-# curl config file
+    # curl config file
 
-user-agent = Everything-is-an-agent
-```
-See ["When to use quotes"](#when-to-use-quotes) for more info on when quotes should be used.
+    user-agent = Everything-is-an-agent
+
+    See ["When to use quotes"](#when-to-use-quotes) for more info on when quotes should be used.
 
 ### URLs
 
@@ -99,11 +90,9 @@ When entering URLs at the command line, everything that is not an option is assu
 
 #### Example 1
 
-```
-# curl config file
+    # curl config file
 
-url = https://example.com
-```
+    url = https://example.com
 
 ### When to use quotes
 

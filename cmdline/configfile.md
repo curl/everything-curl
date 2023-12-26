@@ -82,7 +82,7 @@ The user agent string example we have used above has no white spaces, so the quo
 
     user-agent = Everything-is-an-agent
 
-    See ["When to use quotes"](#when-to-use-quotes) for more info on when quotes should be used.
+See ["When to use quotes"](#when-to-use-quotes) for more info on when quotes should be used.
 
 ### URLs
 
@@ -99,8 +99,7 @@ When entering URLs at the command line, everything that is not an option is assu
 You'll need to use double quotes when:
 
 * the parameter contains white space, or starts with the characters `:` or `=`.
-* you need to use escape sequences 
-    * (available options: `\\`, `\"`, `\t`, `\n`, `\r` and `\v`. A backslash preceding any other letter is ignored).
+* you need to use escape sequences (available options: `\\`, `\"`, `\t`, `\n`, `\r` and `\v`. A backslash preceding any other letter is ignored).
 
 If a parameter containing white space is not enclosed in double quotes, curl will treat the next space or newline as the end of the argument.
 

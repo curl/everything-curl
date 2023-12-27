@@ -213,6 +213,7 @@
     * [Sending trailers](libcurl/callbacks/trailers.md)
     * [HSTS](libcurl/callbacks/hsts.md)
     * [Prereq](libcurl/callbacks/prereq.md)
+  * [Stop](libcurl/stop.md)
   * [Cleanup](libcurl/cleanup.md)
   * [Name resolving](libcurl/names.md)
   * [Proxies](libcurl/proxies.md)

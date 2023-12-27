@@ -16,7 +16,7 @@ section.
 
 ## HTTP proxy
 
-See [using Proxies with libcurl](libcurl/proxies.md)
+See [using Proxies with libcurl](libcurl/conn/proxies.md)
 
 ## Sections
 

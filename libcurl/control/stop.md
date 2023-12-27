@@ -20,7 +20,7 @@ end:
 1. return an error from a callback
 2. set an option that makes the transfer stop after a fixed period of time
 
-Every [callback](callbacks.md) can return an error, and when an error is
+Every [callback](../callbacks.md) can return an error, and when an error is
 returned from one of those functions the entire transfer is stopped. For
 example the read, write or progress callbacks.
 

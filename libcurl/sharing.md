@@ -8,7 +8,7 @@ you want.
 ## Multi handle
 
 All easy handles added to the same multi handle automatically share
-[connection cache](conn/reuse.md) and [dns cache](names.md).
+[connection cache](conn/reuse.md) and [dns cache](conn/names.md).
 
 ## Sharing between easy handles
 

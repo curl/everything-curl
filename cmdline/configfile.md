@@ -126,7 +126,7 @@ Curl looks for the default config file in the following locations, in this order
 7) Non-Windows: use getpwuid to find the home directory
 
 8) On Windows, if it finds no `.curlrc` file in the sequence described above,
-it checks for one in the same dir the curl executable is placed.
+it checks for one in the same directory the curl executable is placed.
 
 On Windows two filenames are checked per location: `.curlrc` and `_curlrc`,
 preferring the former. Ancient curl versions on Windows checked for `_curlrc`

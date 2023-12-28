@@ -34,22 +34,27 @@ close(F);
 sub urlify {
     my ($fname, $section)=@_;
 
+    # convert letters to lower case
     $section =~ tr/[A-Z]/[a-z]/;
 
-    # remove leading dashes amd dots
-    $section =~ s/^[-\.]+//g;
+    # Convert all '<' to '-less-than' 
+    $section =~ s/\</-less-than-/g;
 
-    # convert some bytes to dashes
-    $section =~ s/[ \/\@]/-/g;
+    # Convert all '>' to '-greater-than'
+    $section =~ s/\>/-greater-than-/g;
 
     # remove rubbish
     $section =~ s/[*`'":\(\),]+//g;
 
-    # < => less-than-
-    $section =~ s/^\</less-than-/g;
-    
-    # > => less-than-
-    $section =~ s/\>$/-greater-than/g;
+    # convert anything left that isn't a dash, underscore, number or letter
+    $section =~ s/[^_a-zA-Z0-9-]/-/g;
+
+    # Remove starting chars that aren't a letter or underscore;
+    # those aren't legal for the beginning of a section ID.
+    $section =~ s/^[^_a-zA-Z]+//g;
+
+    # strip trailing dash '-' characters from the section header
+    $section =~ s/-+$//;
 
     return "$fname#$section";
 }
@@ -59,18 +64,45 @@ sub single {
     my $depth;
     my $section;
     my $url;
+    my $in_code_section = 0;
 
     open(F, "<$fname");
     while(<F>) {
         chomp;
         my $l=$_;
-        if($_ =~ /^(#[\#]*) (.*)/) {
-            $depth = $1;
-            $section = $2;
-            $url=urlify($fname, $section);
-            # print "$fname / \"$2\"\n";
 
-            $l = $section; # use this too
+        # Track whether we are within a markdown code block that begins/ends with ```
+        if ($_ =~ /^\`\`\`.*/) {
+            if ($in_code_section) {
+                $in_code_section = 0;
+            } else {
+                $in_code_section = 1;
+            }
+        }
+
+        if (!$in_code_section) {
+            if ($_ =~ /^(#[\#]*) ([^\{]*)(\{\#(.*)\})/) {
+                # This section header has an explicit ID specified, e.g. "#Foo {#foo}"
+                $depth = $1;
+                $section = $2;
+                my $dest_id=$4;
+                # trim whitespace off end of section
+                $section =~ s/\s+$//;
+
+                $url = "$fname#$dest_id";
+                $l = $section;
+            }
+            elsif ($_ =~ /^(#[\#]*) (.*)/) {
+                # This section header has no explicit ID specified, e.g. "#Foo"
+                $depth = $1;
+                $section = $2;
+
+                # trim whitespace off end of section
+                $section =~ s/\s+$//;
+
+                $url=urlify($fname, $section);
+                $l = $section; # use this too
+            }
         }
 
         my @words = split(/[ \(\)]+/, $_);
@@ -84,6 +116,7 @@ sub single {
                 }
             }
         }
+
         # check longer words
         foreach my $w (@lwords) {
             if(folded($l) =~ /$w/) {
@@ -102,7 +135,7 @@ for my $f (@files) {
     single($f);
 }
 
-print "# Index\n\n";
+print "# Index {#everything-curl-index}\n\n";
 
 sub sorting {
     my ($s) = @_;

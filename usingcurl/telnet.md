@@ -33,16 +33,15 @@ request to it by manually entering `GET /` and press return twice:
     curl telnet://localhost:80
 
 Your web server will most probably return something like this back:
-~~~
-HTTP/1.1 400 Bad Request
-Date: Tue, 07 Dec 2021 07:41:16 GMT
-Server: softeare/7.8.9
-Content-Length: 31
-Connection: close
-Content-Type: text/html
 
-[message]
-~~~
+    HTTP/1.1 400 Bad Request
+    Date: Tue, 07 Dec 2021 07:41:16 GMT
+    Server: softeare/7.8.9
+    Content-Length: 31
+    Connection: close
+    Content-Type: text/html
+
+    [message]
 
 ## Options
 

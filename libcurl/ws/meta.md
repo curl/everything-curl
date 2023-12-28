@@ -7,14 +7,12 @@ fragment. It *can* be a whole fragment, but it might only be a piece of
 it. The `curl_ws_frame` contains information about the frame to tell you the
 details.
 
-~~~c
-struct curl_ws_frame {
-  int age;              /* zero */
-  int flags;            /* See the CURLWS_* defines */
-  curl_off_t offset;    /* the offset of this data into the frame */
-  curl_off_t bytesleft; /* number of pending bytes left of the payload */
-};
-~~~
+    struct curl_ws_frame {
+      int age;              /* zero */
+      int flags;            /* See the CURLWS_* defines */
+      curl_off_t offset;    /* the offset of this data into the frame */
+      curl_off_t bytesleft; /* number of pending bytes left of the payload */
+    };
 
 ## `age`
 

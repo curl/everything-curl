@@ -48,7 +48,7 @@ An application can ask libcurl for the name of the `CURLOPT_VERBOSE` option
 like this:
 
     const struct curl_easyoption *opt =
-      curl_easy_option_by_id(CURLOP_VERBOSE);
+      curl_easy_option_by_id(CURLOPT_VERBOSE);
     if(opt) {
       printf("This option has the name: %s\n", opt->name);
     }

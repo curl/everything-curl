@@ -16,7 +16,7 @@ control-c.
 
 Once upon the time, systems provided telnet access for login. Then you could
 connect to a server and login to it, much like how you would do it with SSH
-today. That practice have fortunately now mostly been moved into the museum
+today. That practice has fortunately now mostly been moved into the museum
 cabinets due to the insecure nature of the protocol.
 
 The default port number for telnet is 23.

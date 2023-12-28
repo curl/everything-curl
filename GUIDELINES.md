@@ -38,3 +38,7 @@ Use an English phrase instead. This is not a man page.
 ## Use backticks around libcurl constants
 
 For example, `CURLE_OK` and `CURLOPT_URL`.
+
+## Use present tense
+
+Avoid saying what will happen. Say what happens.

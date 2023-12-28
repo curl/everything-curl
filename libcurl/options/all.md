@@ -124,7 +124,6 @@ This is a table of available options for `curl_easy_setopt()`.
 | `CURLOPT_LOW_SPEED_TIME`             | low speed limit time period                                            |
 | `CURLOPT_MAIL_AUTH`                  | SMTP authentication address                                            |
 | `CURLOPT_MAIL_FROM`                  | SMTP sender address                                                    |
-| `CURLOPT_MAIL_RCPT_ALLLOWFAILS`      | allow RCPT TO command to fail for some recipients                      |
 | `CURLOPT_MAIL_RCPT_ALLOWFAILS`       | allow RCPT TO command to fail for some recipients                      |
 | `CURLOPT_MAIL_RCPT`                  | list of SMTP mail recipients                                           |
 | `CURLOPT_MAX_RECV_SPEED_LARGE`       | rate limit data download speed                                         |

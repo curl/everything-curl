@@ -18,8 +18,8 @@ set there.
 To drive a multi interface transfer, you first need to add all the individual
 easy handles that should be transferred to the multi handle. You can add them
 to the multi handle at any point and you can remove them again whenever you
-like. Removing an easy handle from a multi handle will, of course, remove the
-association and that particular transfer would stop immediately.
+like. Removing an easy handle from a multi handle removes the association and
+that particular transfer stops immediately.
 
 Adding an easy handle to the multi handle is easy:
 
@@ -43,8 +43,8 @@ like this: (*note that a real application would check return codes*)
     } while (transfers_running);
 
 The fourth argument to `curl_multi_wait`, set to 1000 in the example above, is
-a timeout in milliseconds. It is the longest time the function will wait for
-any activity before it returns anyway. You do not want to lock up for too long
+a timeout in milliseconds. It is the longest time the function waits for any
+activity before it returns anyway. You do not want to lock up for too long
 before calling `curl_multi_perform` again as there are timeouts, progress
 callbacks and more that may lose precision if you do so.
 
@@ -90,17 +90,16 @@ Both these loops let you use one or more file descriptors of your own on which
 to wait, like if you read from your own sockets or a pipe or similar.
 
 And again, you can add and remove easy handles to the multi handle at any
-point during the looping. Removing a handle mid-transfer will, of course, abort
-that transfer.
+point during the looping. Removing a handle mid-transfer aborts that transfer.
 
 ## When is a single transfer done?
 
 As the examples above show, a program can detect when an individual transfer
 completes by seeing that the `transfers_running` variable decreases.
 
-It can also call `curl_multi_info_read()`, which will return a pointer to a
-struct (a "message") if a transfer has ended and you can then find out the
-result of that transfer using that struct.
+It can also call `curl_multi_info_read()`, which returns a pointer to a struct
+(a "message") if a transfer has ended and you can then find out the result of
+that transfer using that struct.
 
 When you do multiple parallel transfers, more than one transfer can of course
 complete in the same `curl_multi_perform` invocation and then you might need

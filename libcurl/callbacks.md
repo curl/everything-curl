@@ -6,8 +6,8 @@ at some point to get a particular job done.
 
 Each callback has its specific documented purpose and it requires that you
 write it with the exact function prototype to accept the correct arguments and
-return the documented return code and return value so that libcurl will
-perform the way you want it to.
+return the documented return code and return value so that libcurl performs
+the way you want it to.
 
 Each callback option also has a companion option that sets the associated
 "user pointer". This user pointer is a pointer that libcurl does not touch or

@@ -18,25 +18,23 @@ options. To be CGI-compliant, the **data** part should begin with a name
 followed by a separator and a content specification. The **data** part can be
 passed to curl using one of the following syntaxes:
 
- - `content`: This will make curl URL encode the content and pass that
-   on. Just be careful so that the content does not contain any `=` or `@`
-   symbols, as that will then make the syntax match one of the other cases
-   below!
+ - `content`: URL encode the content and pass that on. Just be careful so that
+   the content does not contain any `=` or `@` symbols, as that then makes the
+   syntax match one of the other cases below!
 
- - `=content`: This will make curl URL encode the content and pass that
-   on. The initial `=` symbol is not included in the data.
+ - `=content`: URL encode the content and pass that on. The initial `=` symbol
+   is not included in the data.
 
- - `name=content`: This will make curl URL encode the content part and pass
-   that on. Note that the name part is expected to be URL encoded already.
+ - `name=content`: URL encode the content part and pass that on. Note that the
+   name part is expected to be URL encoded already.
 
- - `@filename`: This will make curl load data from the given file (including
-   any newlines), URL encode that data and pass it on in the POST.
+ - `@filename`: load data from the given file (including any newlines), URL
+   encode that data and pass it on in the POST.
 
- - `name@filename`: This will make curl load data from the given file
-   (including any newlines), URL encode that data and pass it on in the POST.
-   The name part gets an equal sign appended, resulting in
-   `name=urlencoded-file-content`. Note that the name is expected to be URL
-   encoded already.
+ - `name@filename`: load data from the given file (including any newlines),
+   URL encode that data and pass it on in the POST. The name part gets an
+   equal sign appended, resulting in `name=urlencoded-file-content`. Note that
+   the name is expected to be URL encoded already.
 
 As an example, you could POST a name to have it encoded by curl:
 
@@ -55,6 +53,6 @@ you can tell curl to send that contents URL encoded using the field name
 In both these examples above, the field name is not URL encoded but is passed
 on as-is. If you want to URL encode the field name as well, like if you want
 to pass on a field name called `user name`, you can ask curl to encode the
-entire string by prefixing it with an equals sign (that will not get sent):
+entire string by prefixing it with an equals sign (that does not get sent):
 
     curl --data-urlencode "=user name=John Doe (Junior)" http://example.com

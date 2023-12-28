@@ -3,11 +3,11 @@
 This example just fetches the HTML from a given URL and sends it to
 stdout. Possibly the simplest libcurl program you can write.
 
-By replacing the URL this will of course be able to get contents over other
-supported protocols as well.
+By replacing the URL this is able to get contents over other supported
+protocols as well.
 
 Getting the output sent to stdout is a default behavior and usually not what
-you actually want. Most applications will instead install a
+you actually want. Most applications instead install a
 [write callback](../callbacks/write.md) to have receive the data that arrives.
 
     #include <stdio.h>
@@ -22,7 +22,7 @@ you actually want. Most applications will instead install a
       if(curl) {
         curl_easy_setopt(curl, CURLOPT_URL, "http://example.com/");
 
-        /* Perform the request, res will get the return code */
+        /* Perform the request, 'res' holds the return code */
         res = curl_easy_perform(curl);
         /* Check for errors */
         if(res != CURLE_OK)

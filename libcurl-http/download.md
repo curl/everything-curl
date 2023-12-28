@@ -19,7 +19,7 @@ there is the `CURLOPT_HTTPGET` option:
 
 An HTTP transfer also includes a set of response headers. Response headers are
 metadata associated with the actual payload, called the response body. All
-downloads will get a set of headers too, but when using libcurl you can select
+downloads get a set of headers too, but when using libcurl you can select
 whether you want to have them downloaded (seen) or not.
 
 You can ask libcurl to pass on the headers to the same "stream" as the regular
@@ -42,7 +42,7 @@ the default behaviors of the [write](../libcurl/callbacks/write.md) and
     fclose(file);
 
 If you only want to casually browse the headers, you may even be happy enough
-with just setting verbose mode while developing as that will show both outgoing
+with just setting verbose mode while developing as that shows both outgoing
 and incoming headers sent to stderr:
 
     curl_easy_setopt(easy, CURLOPT_VERBOSE, 1L);

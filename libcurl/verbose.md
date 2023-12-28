@@ -12,10 +12,10 @@ applications or debugging libcurl itself, is to enable "verbose mode" with
 
     CURLcode ret = curl_easy_setopt(handle, CURLOPT_VERBOSE, 1L);
 
-When libcurl is told to be verbose it will mention transfer-related details
-and information to stderr while the transfer is ongoing. This is awesome to
-figure out why things fail and to learn exactly what libcurl does when you ask
-it different things. You can redirect the output elsewhere by changing stderr
+When libcurl is told to be verbose it outputs transfer-related details and
+information to stderr while the transfer is ongoing. This is awesome to figure
+out why things fail and to learn exactly what libcurl does when you ask it
+different things. You can redirect the output elsewhere by changing stderr
 with `CURLOPT_STDERR` or you can get even more info in a fancier way with the
 debug callback (explained further in a later section).
 
@@ -32,8 +32,8 @@ TLS or SSH based protocols when capturing the data off the network for
 debugging is not practical.
 
 When you set the `CURLOPT_DEBUGFUNCTION` option, you still need to have
-`CURLOPT_VERBOSE` enabled but with the trace callback set libcurl will use
-that callback instead of its internal handling.
+`CURLOPT_VERBOSE` enabled but with the trace callback set libcurl uses that
+callback instead of its internal handling.
 
 The trace callback should match a prototype like this:
 
@@ -45,10 +45,10 @@ data passed to the callback (data in/out, header in/out, TLS data in/out and
 "text"), **data** is a pointer pointing to the data being **size** number of
 bytes. **user** is the custom pointer you set with `CURLOPT_DEBUGDATA`.
 
-The data pointed to by **data** *will not* be zero terminated, but will be
-exactly of the size as told by the **size** argument.
+The data pointed to by **data** is *not* null terminated, but is exactly of
+the size as told by the **size** argument.
 
-The callback must return 0 or libcurl will consider it an error and abort the
+The callback must return 0 or libcurl considers it an error and aborts the
 transfer.
 
 On the curl website, we host an example called
@@ -97,7 +97,7 @@ example, include TLS and HTTP/2 details:
     /* log details of HTTP/2 and SSL handling */
     curl_global_trace("http/2,ssl");
 
-The exact set of ares will vary, but here are some ones to try:
+The exact set of options varies, but here are some ones to try:
 
 | area     | description                                     |
 |----------|-------------------------------------------------|

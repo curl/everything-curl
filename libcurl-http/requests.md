@@ -15,10 +15,10 @@ esoteric ones like DELETE, PATCH and OPTIONS.
 
 Usually when you use libcurl to set up and perform a transfer the specific
 request method is implied by the options you use. If you just ask for a URL,
-it means the method will be `GET` while if you set for example
-`CURLOPT_POSTFIELDS` that will make libcurl use the `POST` method. If you set
-`CURLOPT_UPLOAD` to true, libcurl will send a `PUT` method in its HTTP request
-and so on. Asking for `CURLOPT_NOBODY` will make libcurl use `HEAD`.
+it means the method is `GET` while if you set for example `CURLOPT_POSTFIELDS`
+that makes libcurl use the `POST` method. If you set `CURLOPT_UPLOAD` to true,
+libcurl sends a `PUT` method in its HTTP request and so on. Asking for
+`CURLOPT_NOBODY` makes libcurl use `HEAD`.
 
 However, sometimes those default HTTP methods are not good enough or simply
 not the ones you want your transfer to use. Then you can instruct libcurl to
@@ -35,8 +35,8 @@ request headers, see the following section.
 ## Customize HTTP request headers
 
 When libcurl issues HTTP requests as part of performing the data transfers you
-have asked it to, it will of course send them off with a set of HTTP headers
-that are suitable for fulfilling the task given to it.
+have asked it to, it sends them off with a set of HTTP headers that are
+suitable for fulfilling the task given to it.
 
 If just given the URL `http://localhost/file1.txt`, libcurl sends the
 following request to the server:
@@ -99,13 +99,13 @@ nothing to the right sight of the colon:
 ### Provide a header without contents
 
 As you may then have noticed in the above sections, if you try to add a header
-with no contents on the right side of the colon, it will be treated as a
-removal instruction and it will instead completely inhibit that header from
-being sent. If you instead *truly* want to send a header with zero contents on
-the right side, you need to use a special marker. You must provide the header
-with a semicolon instead of a proper colon. Like `Header;`. If you want to add
-a header to the outgoing HTTP request that is just `Moo:` with nothing
-following the colon, you could write it like:
+with no contents on the right side of the colon, it is treated as a removal
+instruction and it instead completely inhibits that header from being sent. If
+you instead *truly* want to send a header with zero contents on the right
+side, you need to use a special marker. You must provide the header with a
+semicolon instead of a proper colon. Like `Header;`. If you want to add a
+header to the outgoing HTTP request that is just `Moo:` with nothing following
+the colon, you could write it like:
 
     struct curl_slist *list = NULL;
     list = curl_slist_append(list, "Moo;");

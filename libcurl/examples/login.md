@@ -7,14 +7,14 @@ Once logged in, the target URL can be fetched if the proper cookies are
 used. As many login-systems work with HTTP redirects, we ask libcurl to follow
 such if they arrive.
 
-Some login forms will make it more complicated and require that you got
-cookies from the page showing the login form etc, so if you need that you may
-want to extend this code a little bit.
+Some login forms makes it more complicated and require that you got cookies
+from the page showing the login form etc, so if you need that you may want to
+extend this code a little bit.
 
-By passing in a non-existing cookie file, this example will enable the cookie
-parser so incoming cookies will be stored when the response from the login
-response arrives and then the subsequent request for the resource will use
-those and prove to the server that we are in fact correctly logged in.
+By passing in a non-existing cookie file, this example enables the cookie
+parser so incoming cookies are stored when the response from the login
+response arrives and then the subsequent request for the resource uses those
+and prove to the server that we are in fact correctly logged in.
 
     #include <stdio.h>
     #include <string.h>

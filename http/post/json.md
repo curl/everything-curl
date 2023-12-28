@@ -9,7 +9,7 @@ a single option that replaces these three:
     --header "Accept: application/json"
 
 This option does not make curl actually understand or know about the JSON data
-it sends, but it makes it easier to send it. curl will not touch or parse the
+it sends, but it makes it easier to send it. curl does not touch or parse the
 data that it sends, so you need to make sure it is valid JSON yourself.
 
 Send a basic JSON object to a server:
@@ -26,8 +26,8 @@ Send JSON passed to curl on stdin:
 
 You can use multiple `--json` options on the same command line. This makes
 curl concatenate the contents from the options and send all data in one go to
-the server. Note that the concatenation is plain text based and will not in
-any way merge the JSON object as per JSON.
+the server. Note that the concatenation is plain text based and it does not
+merge the JSON objects as per JSON.
 
 Send JSON from a file and concatenate a string to the end:
 

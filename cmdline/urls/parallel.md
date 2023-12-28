@@ -6,9 +6,9 @@ can be slow.
 
 curl offers the `-Z` (or `--parallel`) option that instead instructs curl to
 attempt to do the specified transfers in a parallel fashion. When this is
-enabled, curl will do a lot of transfers simultaneously instead of
-serially. It will do up to 50 transfers at the same time by default and as
-soon as one of them has completed, the next one will be kicked off.
+enabled, curl performs a lot of transfers simultaneously instead of
+serially. It does up to 50 transfers at the same time by default and as soon
+as one of them completes, the next one is kicked off.
 
 For cases where you want to download many files from different sources and a
 few of them might be slow, a few fast, this can speed things up tremendously.
@@ -20,7 +20,7 @@ to allow you to change that amount.
 
 Naturally, the ordinary progress meter display that shows file transfer
 progress for a single transfer is not that useful for parallel transfers so
-when curl performs parallel transfers, it will show a different progress meter
+when curl performs parallel transfers, it shows a different progress meter
 that displays information about all the current ongoing transfers in a single
 line.
 

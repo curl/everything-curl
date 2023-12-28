@@ -9,9 +9,9 @@ stdin if set to a single dash (`-`).
 
 A variable in this context is given a specific name and it holds contents. Any
 number of variables can be set. If you set the same variable name again, it
-will be overwritten with new content. Variable names are case sensitive, can
-be up to 128 characters long and may consist of the characters a-z, A-Z, 0-9
-and underscore.
+gets overwritten with new content. Variable names are case sensitive, can be
+up to 128 characters long and may consist of the characters a-z, A-Z, 0-9 and
+underscore.
 
 Some examples below contain multiple lines for readability. The forward slash (`\`) is used to instruct the terminal to ignore the newline.
 
@@ -51,7 +51,8 @@ Variables can be expanded in option parameters using `{{varName}}` when the
 option name is prefixed with `--expand-`. This makes the content of the
 variable `varName` get inserted.
 
-If you reference a name that does not exist as a variable, a blank string will be inserted.
+If you reference a name that does not exist as a variable, a blank string is
+inserted.
 
 Insert `{{` verbatim in the string by escaping it with a backslash:
 
@@ -65,11 +66,11 @@ In the example below, the variable `host` is set and then expanded:
         --variable host=example \
         --expand-url "https://{{host}}.com" \
 
-For options specified without the `--expand-` prefix, variables will not be
+For options specified without the `--expand-` prefix, variables are not
 expanded.
 
-Variable content holding null bytes that are not encoded when expanded will
-cause curl to exit with an error.
+Variable content holding null bytes that are not encoded when expanded causes
+curl to exit with an error.
 
 ## Environment variables
 
@@ -80,7 +81,9 @@ using `=content` or `@file` as described above.
 
 ### Example 1: No default value set
 
-Assign the `%USER` environment variable to a curl variable and insert it into a URL. Because no default value is specified, this operation will fail if the environment variable does not exist:
+Assign the `%USER` environment variable to a curl variable and insert it into
+a URL. Because no default value is specified, this operation fails if the
+environment variable does not exist:
 
     curl \ 
         --variable %USER \

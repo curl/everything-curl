@@ -6,11 +6,11 @@ it and check in the browser's network development tools exactly what it sent.
 A slightly different way is to save the HTML page containing the form, and
 then edit that HTML page to redirect the 'action=' part of the form to your
 own server or a test server that just outputs exactly what it gets. Completing
-that form submission will then show you exactly how a browser sends it.
+that form submission shows you exactly how a browser sends it.
 
-A third option is, of course, to use a network capture tool such as Wireshark to
-check exactly what is sent over the wire. If you are working with HTTPS, you
-cannot see form submissions in clear text on the wire but instead you need to
-make sure you can have Wireshark extract your TLS private key from your
+A third option is, of course, to use a network capture tool such as Wireshark
+to check exactly what is sent over the wire. If you are working with HTTPS,
+you cannot see form submissions in clear text on the wire but instead you need
+to make sure you can have Wireshark extract your TLS private key from your
 browser. See the Wireshark documentation for details on doing that.
 

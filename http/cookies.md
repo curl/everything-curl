@@ -26,17 +26,17 @@ differently makes it not acknowledge cookies by default. You need to switch on
 subsequently send them out on requests that have matching cookies.
 
 You enable the cookie engine by asking curl to read or write cookies. If you
-tell curl to read cookies from a non-existing file, you will only switch on
-the engine but start off with an empty internal cookie store:
+tell curl to read cookies from blank named file, you only switch on the engine
+but start off with an empty internal cookie store:
 
-    curl -b non-existing http://example.com
+    curl -b "" http://example.com
 
 Just switching on the cookie engine, getting a single resource and then
 quitting would be pointless as curl would have no chance to actually send any
 cookies it received. Assuming the site in this example would set cookies and
 then do a redirect we would do:
 
-    curl -L -b non-existing http://example.com
+    curl -L -b "" http://example.com
 
 ## Reading cookies from file
 
@@ -74,17 +74,17 @@ You point out the cookie jar output with `-c`:
 `-c` is the instruction to *write* cookies to a file, `-b` is the instruction
 to *read* cookies from a file. Oftentimes you want both.
 
-When curl writes cookies to this file, it will save all known cookies
-including those that are session cookies (without a given lifetime). curl
-itself has no notion of a session and it does not know when a session ends so
-it will not flush session cookies unless you tell it to.
+When curl writes cookies to this file, it saves all known cookies including
+those that are session cookies (without a given lifetime). curl itself has no
+notion of a session and it does not know when a session ends so it does not
+flush session cookies unless you tell it to.
 
 ## New cookie session
 
 Instead of telling curl when a session ends, curl features an option that lets
 the user decide when a new session *begins*.
 
-A new cookie session means that all the old session cookies will be thrown
+A new cookie session means that all the old session cookies are be thrown
 away. It is the equivalent of closing a browser and starting it up again.
 
 Tell curl a new cookie session starts by using `-j, --junk-session-cookies`:

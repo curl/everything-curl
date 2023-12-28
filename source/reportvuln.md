@@ -13,10 +13,10 @@ The typical process for handling a new security vulnerability is as follows.
 
 No information should be made public about a vulnerability until it is
 formally announced at the end of this process. That means, for example, that a
-bug tracker entry must NOT be created to track the issue since that will make
-the issue public and it should not be discussed on any of the project's public
-mailing lists. Also messages associated with any commits should not make
-any reference to the security nature of the commit if done prior to the public
+bug tracker entry must NOT be created to track the issue since that makes the
+issue public and it should not be discussed on any of the project's public
+mailing lists. Also messages associated with any commits should not make any
+reference to the security nature of the commit if done prior to the public
 announcement.
 
 - The person discovering the issue, the reporter, reports the vulnerability on
@@ -91,4 +91,4 @@ working. You must have been around for a good while and you should have no
 plans on vanishing in the near future.
 
 We do not make the list of participants public mostly because it tends to vary
-somewhat over time and a list somewhere will only risk getting outdated.
+somewhat over time and a list somewhere only risks getting outdated.

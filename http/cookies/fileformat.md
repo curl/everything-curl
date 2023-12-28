@@ -10,7 +10,7 @@ file with a bunch of associated meta data, each field separated with TAB. That
 file is called the cookiejar in curl terminology.
 
 When libcurl saves a cookiejar, it creates a file header of its own in which
-there is a URL mention that will link to the web version of this document.
+there is a URL mention that links to the web version of this document.
 
 ## File format
 

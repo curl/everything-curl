@@ -48,8 +48,7 @@ looks like this:
 
     http://joe:7Hbz@example.com:8080/images?id=5445#footer
 
-When this URL is parsed by curl, it will store the different components like
-this:
+When this URL is parsed by curl, it stores the different components like this:
 
 | text          | part                 |
 |---------------|----------------------|
@@ -79,4 +78,4 @@ For this URL, curl extracts:
 | `eth0`               | `CURLUPART_ZONEID` |
 | `/`                  | `CURLUPART_PATH`   |
 
-Asking for any other component will return non-zero as they are missing.
+Asking for any other component returns non-zero as they are missing.

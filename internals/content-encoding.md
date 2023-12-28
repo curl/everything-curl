@@ -39,12 +39,12 @@
  Currently, libcurl does support multiple encodings but only understands how
  to process responses that use the `deflate`, `gzip`, `zstd` and/or `br`
  content encodings, so the only values for [`CURLOPT_ACCEPT_ENCODING`][5] that
- will work (besides `identity`, which does nothing) are `deflate`, `gzip`,
- `zstd` and `br`. If a response is encoded using the `compress` or methods,
- libcurl will return an error indicating that the response could not be
- decoded. If `<string>` is NULL no `Accept-Encoding` header is generated. If
- `<string>` is a zero-length string, then an `Accept-Encoding` header
- containing all supported encodings will be generated.
+ work (besides `identity`, which does nothing) are `deflate`, `gzip`, `zstd`
+ and `br`. If a response is encoded using the `compress` or methods, libcurl
+ returns an error indicating that the response could not be decoded. If
+ `<string>` is NULL no `Accept-Encoding` header is generated. If `<string>` is
+ a zero-length string, then an `Accept-Encoding` header containing all
+ supported encodings is generated.
 
  The [`CURLOPT_ACCEPT_ENCODING`][5] must be set to any non-NULL value for
  content to be automatically decoded. If it is not set and the server still

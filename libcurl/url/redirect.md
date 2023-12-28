@@ -1,7 +1,7 @@
 # Redirect to a relative URL
 
-When the handle already has parsed a URL, setting a second relative URL will
-make it "redirect" to adapt to it.
+When the handle already has parsed a URL, setting a second relative URL makes
+it "redirect" to adapt to it.
 
 Example, first set the original URL then set the one we "redirect" to:
 

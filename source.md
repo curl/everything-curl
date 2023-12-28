@@ -21,5 +21,5 @@ repository](https://github.com/curl/curl/).
 
     git clone https://github.com/curl/curl.git
 
-This will get the latest curl code downloaded and unpacked in a directory on
-your local system.
+This gets the latest curl code downloaded and unpacked in a directory on your
+local system.

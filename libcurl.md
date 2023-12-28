@@ -22,13 +22,13 @@ information as you can and want, and then you tell libcurl to perform that
 transfer.
 
 That said, networking and protocols are areas with lots of pitfalls and
-special cases so the more you know about these things, the more you will be
-able to understand about libcurl's options and ways of working. Not to
-mention, such knowledge is invaluable when you are debugging and need to
-understand what to do next when things do not go as you intended.
+special cases so the more you know about these things, the more you are able
+to understand about libcurl's options and ways of working. Not to mention,
+such knowledge is invaluable when you are debugging and need to understand
+what to do next when things do not go as you intended.
 
 The most basic libcurl using application can be as small as just a couple of
-lines of code, but most applications will, of course, need more code than that.
+lines of code, but most applications do, of course, need more code than that.
 
 ## Simple by default, more on demand
 
@@ -37,6 +37,6 @@ want to add more advanced features, you add that by setting the correct
 options. For example, libcurl does not support HTTP cookies by default but it
 does once you tell it.
 
-This makes libcurl's behaviors easier to guess and depend on, and also it makes
-it easier to maintain old behavior and add new features. Only applications
-that actually ask for and use the new features will get that behavior.
+This makes libcurl's behaviors easier to guess and depend on, and also it
+makes it easier to maintain old behavior and add new features. Only
+applications that actually ask for and use the new features get that behavior.

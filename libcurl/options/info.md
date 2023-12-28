@@ -65,5 +65,5 @@ like this:
 There is only one bit with a defined meaning in 'flags': if
 `CURLOT_FLAG_ALIAS` is set, it means that that option is an "alias". A name
 provided for backwards compatibility that is nowadays rather served by an
-option with another name. If you lookup the ID for an alias, you will get the
-new canonical name for that option.
+option with another name. If you lookup the ID for an alias, you get the new
+canonical name for that option.

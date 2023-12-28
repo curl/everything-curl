@@ -5,13 +5,13 @@ the complete stream including the actual transferred data.
 
 For situations when curl does encrypted file transfers with protocols such as
 HTTPS, FTPS or SFTP, other network monitoring tools (like Wireshark or
-tcpdump) will not be able to do this job as easily for you.
+tcpdump) are not able to do this job as easily for you.
 
 For this, curl offers two other options that you use instead of `-v`.
 
-`--trace [filename]` will save a full trace in the given filename. You can
-also use '-' (a single minus) instead of a filename to get it passed to
-stdout. You would use it like this:
+`--trace [filename]` saves a full trace in the given filename. You can also
+use '-' (a single minus) instead of a filename to get it passed to stdout. You
+would use it like this:
 
     $ curl --trace dump http://example.com
 
@@ -35,7 +35,7 @@ this case, the 15 first lines of the dump file looks like:
     0010: 79 74 65 73 0d 0a                               ytes..
 
 Every single sent and received byte get displayed individually in hexadecimal
-numbers. Received headers will be output line by line.
+numbers. Received headers are output line by line.
 
 If you think the hexadecimals are not helping, you can try `--trace-ascii
 [filename]` instead, also this accepting '-' for stdout and that makes the 15
@@ -91,7 +91,7 @@ use a large number of separate connections and different transfers, there are
 times when you want to see to which specific transfers or connections the
 various information below to. To better understand the trace output.
 
-You can then add `--trace-ids` to the line and you will see how curl adds two
+You can then add `--trace-ids` to the line and you see how curl adds two
 numbers to all tracing: the connection number and the transfer number. They
 are two separate identifiers because connections can be reused and multiple
 transfers can use the same connection.
@@ -113,7 +113,7 @@ identifiers and show me HTTP/2 details:
 
     curl --trace-config ids,http/2 https://example.com
 
-The exact set of ares will vary, but here are some ones to try:
+The exact set of options varies, but here are some ones to try:
 
 | area     | description                                     |
 |----------|-------------------------------------------------|

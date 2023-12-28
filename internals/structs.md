@@ -1,8 +1,8 @@
 # Structs
 
-This section documents internal structs. Since they are truly internal, we can
-and will change them occasionally which might make this section slightly out
-of date at times.
+This section documents internal structs. Since they are truly internal, we
+change them occasionally which might make this section slightly out of date at
+times.
 
 ## Curl_easy
 
@@ -11,22 +11,22 @@ of date at times.
   in API documentations and examples.
 
   Information and state that is related to the actual connection is in the
-  `connectdata` struct. When a transfer is about to be made, libcurl will
-  either create a new connection or re-use an existing one. The current
-  connectdata that is used by this handle is pointed out by `Curl_easy->conn`.
+  `connectdata` struct. When a transfer is about to be made, libcurl either
+  creates a new connection or re-uses an existing one. The current connectdata
+  that is used by this handle is pointed out by `Curl_easy->conn`.
 
   Data and information that regard this particular single transfer is put in
   the `SingleRequest` sub-struct.
 
   When the `Curl_easy` struct is added to a multi handle, as it must be in
-  order to do any transfer, the `->multi` member will point to the
-  `Curl_multi` struct it belongs to. The `->prev` and `->next` members will
-  then be used by the multi code to keep a linked list of `Curl_easy` structs
-  that are added to that same multi handle. libcurl always uses multi so
-  `->multi` *will* point to a `Curl_multi` when a transfer is in progress.
+  order to do any transfer, the `->multi` member points to the `Curl_multi`
+  struct it belongs to. The `->prev` and `->next` members are then used by the
+  multi code to keep a linked list of `Curl_easy` structs that are added to
+  that same multi handle. libcurl always uses multi so `->multi` points to a
+  `Curl_multi` when a transfer is in progress.
 
   `->mstate` is the multi state of this particular `Curl_easy`. When
-  `multi_runsingle()` is called, it will act on this handle according to which
+  `multi_runsingle()` is called, it acts on this handle according to which
   state it is in. The mstate is also what tells which sockets to return for a
   specific `Curl_easy` when [`curl_multi_fdset()`][12] is called etc.
 
@@ -40,14 +40,13 @@ of date at times.
 ## connectdata
 
   A general idea in libcurl is to keep connections around in a connection
-  "cache" after they have been used in case they will be used again and then
+  "cache" after they have been used in case they are used again and then
   re-use an existing one instead of creating a new one as it creates a
   significant performance boost.
 
   Each `connectdata` struct identifies a single physical connection to a
-  server. If the connection cannot be kept alive, the connection will be
-  closed after use and then this struct can be removed from the cache and
-  freed.
+  server. If the connection cannot be kept alive, the connection is closed
+  after use and then this struct can be removed from the cache and freed.
 
   Thus, the same `Curl_easy` can be used multiple times and each time select
   another `connectdata` struct to use for the connection. Keep this in mind,
@@ -127,13 +126,13 @@ of date at times.
   - `->setup_connection` is called to allow the protocol code to allocate
     protocol specific data that then gets associated with that `Curl_easy` for
     the rest of this transfer. It gets freed again at the end of the transfer.
-    It will be called before the `connectdata` for the transfer has been
-    selected/created. Most protocols will allocate its private `struct
-    [PROTOCOL]` here and assign `Curl_easy->req.p.[protocol]` to it.
+    It gets called before the `connectdata` for the transfer has been
+    selected/created. Most protocols allocate its private `struct [PROTOCOL]`
+    here and assign `Curl_easy->req.p.[protocol]` to it.
 
   - `->connect_it` allows a protocol to do some specific actions after the TCP
     connect is done, that can still be considered part of the connection
-    phase. Some protocols will alter the `connectdata->recv[]` and
+    phase. Some protocols alter the `connectdata->recv[]` and
     `connectdata->send[]` function pointers in this function.
 
   - `->connecting` is similarly a function that keeps getting called as long
@@ -177,19 +176,19 @@ of date at times.
     "HTTP|HTTPS".
 
   - `->flags` is a bitmask with additional information about the protocol that
-    will make it get treated differently by the generic engine:
-    - `PROTOPT_SSL` - will make it connect and negotiate SSL
+    makes it get treated differently by the generic engine:
+    - `PROTOPT_SSL` - makes it connect and negotiate SSL
     - `PROTOPT_DUAL` - this protocol uses two connections
     - `PROTOPT_CLOSEACTION` - this protocol has actions to do before closing
       the connection. This flag is no longer used by code, yet still set for a
       bunch of protocol handlers.
     - `PROTOPT_DIRLOCK` - "direction lock". The SSH protocols set this bit to
-      limit which "direction" of socket actions that the main engine will
-      concern itself with.
+      limit which "direction" of socket actions that the main engine concerns
+      itself with.
     - `PROTOPT_NONETWORK` - a protocol that does not use the network (read
       `file:`)
-    - `PROTOPT_NEEDSPWD` - this protocol needs a password and will use a
-      default one unless one is provided
+    - `PROTOPT_NEEDSPWD` - this protocol needs a password and uses a default
+      one unless one is provided
     - `PROTOPT_NOURLQUERY` - this protocol cannot handle a query part on the
       URL (?foo=bar)
 
@@ -206,8 +205,7 @@ of date at times.
 
   The idea is that the struct can have a set of its own versions of caches and
   pools and then by providing this struct in the `CURLOPT_SHARE` option, those
-  specific `Curl_easy`s will use the caches/pools that this share handle
-  holds.
+  specific `Curl_easy`s use the caches/pools that this share handle holds.
 
   Then individual `Curl_easy` structs can be made to share specific things
   that they otherwise would not, such as cookies.

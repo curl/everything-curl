@@ -1,14 +1,14 @@
 # Exit status
 
 A lot of effort has gone into the project to make curl return a usable exit
-code when something goes wrong and it will always return 0 (zero) when the
+code when something goes wrong and it always returns 0 (zero) when the
 operation went as planned.
 
 If you write a shell script or batch file that invokes curl, you can always
 check the return code to detect problems in the invoked command. Below, you
-will find a list of return codes as of the time of this writing. Over time we
-tend to slowly add new ones so if you get a code back not listed here, please
-refer to more updated curl documentation for aid.
+find a list of return codes as of the time of this writing. Over time we tend
+to slowly add new ones so if you get a code back not listed here, please refer
+to more updated curl documentation for aid.
 
 A basic Unix shell script could look like something like this:
 
@@ -64,9 +64,9 @@ A basic Unix shell script could look like something like this:
  8. Unknown FTP server response. The server sent data curl could not
   parse. This is either because of a bug in curl, a bug in the server or
   because the server is using an FTP protocol extension that curl does not
-  support. The only real work-around for this is to tweak curl options to
-  try it to use other FTP commands that perhaps will not get this unknown
-  server response back.
+  support. The only real work-around for this is to tweak curl options to try
+  it to use other FTP commands that perhaps do not get this unknown server
+  response back.
 
  9. FTP access denied. The server denied login or denied access to the
   particular resource or directory you wanted to reach. Most often you tried
@@ -115,11 +115,11 @@ A basic Unix shell script could look like something like this:
   before it is started as otherwise the transfer cannot work.
 
  18. Partial file. Only a part of the file was transferred. When the transfer
-  is considered complete, curl will verify that it actually received the
-  same amount of data that it was told before-hand that it was going to
-  get. If the two numbers do not match, this is the error code. It could mean
-  that curl got fewer bytes than advertised or that it got more. curl itself
-  cannot know which number that is wrong or which is correct. If any.
+  is considered complete, curl verifies that it actually received the same
+  amount of data that it was told before-hand that it was going to get. If the
+  two numbers do not match, this is the error code. It could mean that curl
+  got fewer bytes than advertised or that it got more. curl itself cannot know
+  which number that is wrong or which is correct. If any.
 
  19. FTP could not download/access the given file. The RETR (or similar)
   command failed. curl got an error from the server when trying to download
@@ -151,9 +151,9 @@ A basic Unix shell script could look like something like this:
   constraints. This error can happen for many protocols.
 
  26. Read error. Various reading problems. The inverse to exit status 23. When
-  curl sends data to a server, it reads data chunk by chunk from a local
-  file or stdin or similar, and if that reading fails in some way this is
-  the exit status curl will return.
+  curl sends data to a server, it reads data chunk by chunk from a local file
+  or stdin or similar, and if that reading fails in some way this is the exit
+  status curl returns.
 
  27. Out of memory. A memory allocation request failed. curl needed to
   allocate more memory than what the system was willing to give it and curl
@@ -228,9 +228,9 @@ A basic Unix shell script could look like something like this:
  44. **Not used**
 
  45. Interface error. A specified outgoing network interface could not be
-  used. curl will typically decide outgoing network and IP addresses by itself
-  but when explicitly asked to use a specific one that curl cannot use, this
-  error can occur.
+  used. curl typically decides outgoing network and IP addresses by itself but
+  when explicitly asked to use a specific one that curl cannot use, this error
+  can occur.
 
  46. **Not used**
 
@@ -260,8 +260,8 @@ A basic Unix shell script could look like something like this:
   details.
 
  52. The server did not reply anything, which in this context is considered an
-  error. When an HTTP(S) server responds to an HTTP(S) request, it will always
-  return *something* as long as it is alive and sound. All valid HTTP
+  error. When an HTTP(S) server responds to an HTTP(S) request, it always
+  returns *something* as long as it is alive and sound. All valid HTTP
   responses have a status line and responses header. Not getting anything at
   all back is an indication the server is faulty or perhaps that something
   prevented curl from reaching the right server or that you are trying to
@@ -373,7 +373,7 @@ A basic Unix shell script could look like something like this:
 
  88. FTP chunk callback reported error
 
- 89. No connection available, the session will be queued
+ 89. No connection available, the session is queued
 
  90. SSL public key does not matched pinned public key. Either you provided
   a bad public key, or the server has changed.
@@ -405,10 +405,10 @@ A basic Unix shell script could look like something like this:
 
 ## Error message
 
-When curl exits with a non-zero code, it will also output an error message
-(unless `--silent` is used). That error message may add some additional
-information or circumstances to the exit status number itself so the same error
-number can get different error messages.
+When curl exits with a non-zero code, it also outputs an error message (unless
+`--silent` is used). That error message may add some additional information or
+circumstances to the exit status number itself so the same error number can
+get different error messages.
 
 ## "Not used"
 
@@ -417,6 +417,5 @@ used'. Those are exit status codes that are not used in modern versions of curl
 but that have been used or were intended to be used in the past. They may be
 used in a future version of curl.
 
-Additionally, the highest used error status in this list is 92, but there is
-no guarantee that a future curl version will not add more exit codes after
-that number.
+Additionally, the highest used error status in this list is 99, but future
+curl versions might have added more exit codes after that number.

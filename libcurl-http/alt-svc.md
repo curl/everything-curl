@@ -24,12 +24,11 @@ Tell libcurl to use a specific alt-svc cache file like this:
 
     curl_easy_setopt(curl, CURLOPT_ALTSVC, "altsvc-cache.txt");
 
-libcurl holds the list of alternatives in a memory-based cache, but will load
-all already existing alternative service entries from the alt-svc file at
-start-up and consider those when doing its subsequent HTTP requests. If
-servers responds with new or updated `Alt-Svc:` headers, libcurl will store
-those in the cache file at exit (unless the `CURLALTSVC_READONLYFILE` bit was
-set).
+libcurl holds the list of alternatives in a memory-based cache, but loads all
+already existing alternative service entries from the alt-svc file at start-up
+and consider those when doing its subsequent HTTP requests. If servers
+responds with new or updated `Alt-Svc:` headers, libcurl stores those in the
+cache file at exit (unless the `CURLALTSVC_READONLYFILE` bit was set).
 
 ## The alt-svc cache
 

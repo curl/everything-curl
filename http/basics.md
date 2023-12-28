@@ -52,11 +52,11 @@ request to the server. Let's take an example URL:
 
     https://www.example.com/path/to/file
 
- - **https** means that curl will use TLS to the remote port 443 (which is the
+ - **https** means that curl uses TLS to the remote port 443 (which is the
    default port number when no specified is used in the URL).
 
- - **www.example.com** is the host name that curl will resolve to one or more IP
-   address to connect to. This host name will also be used in the HTTP request in
+ - **www.example.com** is the host name that curl resolves to one or more IP
+   address to connect to. This host name is also used in the HTTP request in
    the `Host:` header.
 
  - **/path/to/file** is used in the HTTP request to tell the server which exact

@@ -1,8 +1,8 @@
 # Cleanup
 
 In previous sections we have discussed how to setup handles and how to drive
-the transfers. All transfers will, of course, end up at some point, either
-successfully or with a failure.
+the transfers. All transfers end up at some point, either successfully or with
+a failure.
 
 ## Multi API
 

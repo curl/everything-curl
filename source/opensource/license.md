@@ -34,4 +34,4 @@ project—but you may not claim that you wrote it.
 
 Early on in the project we iterated over a few different other licenses before
 we settled on this. We started out GPL, then tried MPL and landed on this MIT
-derivative. We will never change the license again.
+derivative. We do not intend to ever change the license again.

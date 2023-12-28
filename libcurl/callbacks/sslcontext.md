@@ -11,10 +11,10 @@ chance to an application to modify the behavior of the TLS initialization. The
 `ssl_ctx parameter` passed to the callback in the second argument is actually
 a pointer to the SSL library's `SSL_CTX` for OpenSSL or wolfSSL, and a pointer
 to `mbedtls_ssl_config` for mbedTLS. If an error is returned from the callback
-no attempt to establish a connection is made and the operation will return the
+no attempt to establish a connection is made and the operation returns the
 callback's error code. Set the `userptr` argument with the
 `CURLOPT_SSL_CTX_DATA` option.
 
 This function gets called on all new connections made to a server, during the
-TLS negotiation. The TLS context will point to a newly initialized object each
+TLS negotiation. The TLS context points to a newly initialized object each
 time.

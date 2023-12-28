@@ -65,8 +65,9 @@ a number of volunteers who also help out by running the test suite
 automatically a few times per day to make sure the latest commits are tested. 
 This way we discover the worst flaws not long after their introduction.
 
-We do not test everything, and even when we try to test things there will always
-be subtle bugs that get through, some of which are only discovered years later.
+We do not test everything, and even when we try to test things there are
+always subtle bugs that get through, some that are only discovered years
+later.
 
 Due to the nature of different systems and funny use cases on the Internet,
 eventually some of the best testing is done by users when they run the code to

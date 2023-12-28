@@ -42,6 +42,6 @@ libcurl again for a specific given easy handle for which the timeout has
 expired.
 
 There is no other special action or activity happening when a timeout expires
-than that the perform function will be called. Each state or internal function
+than that the perform function is called. Each state or internal function
 needs to know what times or states to check for and act accordingly when
 called (again).

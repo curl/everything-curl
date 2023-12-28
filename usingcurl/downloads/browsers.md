@@ -12,18 +12,18 @@ all what you see in your browser window.
 Curl only gets exactly what you ask it to get and it never parses the actual
 content—the data—that the server delivers. A browser gets data and it
 activates different parsers depending on what kind of content it thinks it
-gets. For example, if the data is HTML it will parse it to display a web page
-and possibly download other sub resources such as images, JavaScript and CSS
-files. When curl downloads HTML it will just get that single HTML resource,
-even if it, when parsed by a browser, would trigger a whole busload of more
+gets. For example, if the data is HTML it parses it to display a web page and
+possibly download other sub resources such as images, JavaScript and CSS
+files. When curl downloads HTML it just gets that single HTML resource, even
+if it, when parsed by a browser, would trigger a whole busload of more
 downloads. If you want curl to download any sub-resources as well, you need to
 pass those URLs to curl and ask it to get those, just like any other URLs.
 
 Clients also differ in how they send their requests, and some aspects of a
 request for a resource include, for example, format preferences, asking for
 compressed data, or just telling the server from which previous page we are
-"coming from". curl's requests will differ a little or a lot from how your
-browser sends its requests.
+"coming from". curl's requests differ a little or a lot from how your browser
+sends its requests.
 
 ## Server differences
 
@@ -47,10 +47,10 @@ this with permission from the server owners or admins.
 
 ## Intermediaries' fiddlings
 
-Intermediaries are proxies, explicit or implicit ones. Some environments will
-force you to use one or you may choose to use one for various reasons, but
-there are also the transparent ones that will intercept your network traffic
-silently and proxy it for you no matter what you want.
+Intermediaries are proxies, explicit or implicit ones. Some environments force
+you to use one or you may choose to use one for various reasons, but there are
+also the transparent ones that intercept your network traffic silently and
+proxy it for you no matter what you want.
 
 Proxies are "middle men" that terminate the traffic and then act on your
 behalf to the remote server. This can introduce all sorts of explicit

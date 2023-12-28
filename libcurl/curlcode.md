@@ -17,8 +17,7 @@ user:
 
 Another way to get a slightly better error text in case of errors is to set
 the `CURLOPT_ERRORBUFFER` option to point out a buffer in your program and
-then libcurl will store a related error message there before it returns an
-error:
+then libcurl stores a related error message there before it returns an error:
 
     char error[CURL_ERROR_SIZE]; /* needs to be at least this big */
     CURLcode ret = curl_easy_setopt(handle, CURLOPT_ERRORBUFFER, error);

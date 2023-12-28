@@ -5,7 +5,7 @@ supports an unlimited number of URLs. If your shell or command-line system
 supports it, there is really no limit to how long a command line you can pass
 to curl.
 
-curl will parse the entire command line first, apply the wishes from the
+curl parses the entire command line first, apply the wishes from the
 command-line options used, and then go over the URLs one by one (in a left to
 right order) to perform the operations.
 
@@ -13,7 +13,7 @@ For some options (for example `-o` or `-O` that tell curl where to store the
 transfer), you may want to specify one option for each URL on the command
 line.
 
-curl will return an exit code for its operation on the last URL used. If you
+curl returns an exit code for its operation on the last URL used. If you
 instead rather want curl to exit with an error on the first URL in the set
 that fails, use the `--fail-early` option.
 
@@ -25,10 +25,10 @@ of them. The `-o` and `-O` options instruct curl how to save the output for
 you have URLs on the command line.
 
 If you have more URLs than output options on the command line, the URL content
-without corresponding output instructions will then instead be sent to stdout.
+without a corresponding output instruction then instead gets sent to stdout.
 
-Using the `--remote-name-all` flag will automatically make curl act as if `-O`
-was used for all given URLs that do not have any output option.
+Using the `--remote-name-all` flag automatically makes curl act as if `-O` was
+used for all given URLs that do not have any output option.
 
 ## Separate options per URL
 
@@ -36,10 +36,10 @@ In previous sections we described how curl always parses all options in the
 whole command line and applies those to all the URLs that it transfers.
 
 That was a simplification: curl also offers an option (`-:`, `--next`) that
-inserts a boundary between a set of options and URLs for which it will apply
-the options. When the command-line parser finds a `--next` option, it applies
-the following options to the next set of URLs. The `--next` option thus works
-as a *divider* between a set of options and URLs. You can use as many `--next`
+inserts a boundary between a set of options and URLs for which it applies the
+options. When the command-line parser finds a `--next` option, it applies the
+following options to the next set of URLs. The `--next` option thus works as a
+*divider* between a set of options and URLs. You can use as many `--next`
 options as you please.
 
 As an example, we do an HTTP GET to a URL and follow redirects, we then make a

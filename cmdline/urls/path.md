@@ -6,7 +6,7 @@ when you use just the host name like in:
     curl https://example.com
 
 The path is sent to the specified server to identify exactly which resource
-that is requested or that will be provided.
+that is requested or that is provided.
 
 The exact use of the path is protocol dependent. For example, getting the file
 `README` from the default anonymous user from an FTP server:

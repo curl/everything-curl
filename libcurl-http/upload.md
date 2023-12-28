@@ -23,7 +23,7 @@ get the data by using the regular [read callback](../libcurl/callbacks/read.md):
     curl_easy_setopt(easy, CURLOPT_POST, 1L);
     curl_easy_setopt(easy, CURLOPT_READFUNCTION, read_callback);
 
-This "normal" POST will also set the request header `Content-Type:
+This "normal" POST also sets the request header `Content-Type:
 application/x-www-form-urlencoded`.
 
 ## HTTP multipart formposts
@@ -59,11 +59,10 @@ longer recommend using that)
 
 ## HTTP PUT
 
-A PUT with libcurl will assume you pass the data to it using the read
-callback, as that is the typical "file upload" pattern libcurl uses and
-provides. You set the callback, you ask for PUT (by asking for
-`CURLOPT_UPLOAD`), you set the size of the upload and you set the URL to the
-destination:
+A PUT with libcurl assumes you pass the data to it using the read callback, as
+that is the typical "file upload" pattern libcurl uses and provides. You set
+the callback, you ask for PUT (by asking for `CURLOPT_UPLOAD`), you set the
+size of the upload and you set the URL to the destination:
 
     curl_easy_setopt(easy, CURLOPT_UPLOAD, 1L);
     curl_easy_setopt(easy, CURLOPT_INFILESIZE_LARGE, (curl_off_t) size);
@@ -78,7 +77,7 @@ header is needed.
 
 ## Expect: headers
 
-When doing HTTP uploads using HTTP 1.1, libcurl will insert an `Expect:
+When doing HTTP uploads using HTTP 1.1, libcurl inserts an `Expect:
 100-continue` header in some circumstances. This header offers the server a
 way to reject the transfer early and save the client from having to send a lot
 of data in vain before the server gets a chance to decline.

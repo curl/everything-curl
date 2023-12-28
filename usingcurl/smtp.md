@@ -12,8 +12,8 @@ When sending SMTP with curl, there are two necessary command line options that
 **must** be used.
 
  - You need to tell the server at least one recipient with `--mail-rcpt`. You
-   can use this option several times and then curl will tell the server that
-   all those email addresses should receive the email.
+   can use this option several times and then curl tells the server that all
+   those email addresses should receive the email.
 
  - You need to tell the server which email address that is the sender of the
    email with `--mail-from`. It is important to realize that this email
@@ -74,12 +74,12 @@ You can tell curl to _require_ upgrading to using secure transfers by adding
 ## The SMTP URL
 
 The path part of a SMTP request specifies the host name to present during
-communication with the mail server. If the path is omitted then curl will
-attempt to figure out the local computer's host name and use that. However,
-this may not return the fully qualified domain name that is required by some
-mail servers and specifying this path allows you to set an alternative name,
-such as your machine's fully qualified domain name, which you might have
-obtained from an external function such as gethostname or getaddrinfo.
+communication with the mail server. If the path is omitted then curl attempts
+to figure out the local computer's host name and use that. However, this may
+not return the fully qualified domain name that is required by some mail
+servers and specifying this path allows you to set an alternative name, such
+as your machine's fully qualified domain name, which you might have obtained
+from an external function such as gethostname or getaddrinfo.
 
 To connect to the mail server at `mail.example.com` and send your local
 computer's host name in the HELO / EHLO command:
@@ -96,11 +96,10 @@ to the mail server at `mail.example.com`, use:
 
 ## No MX lookup!
 
-When you send email with an ordinary mail client, it will first check for an
-MX record for the particular domain you want to send email to. If you send an
-email to `joe@example.com`, the client will get the MX records for
-`example.com` to learn which mail server(s) to use when sending email to
-example.com users.
+When you send email with an ordinary mail client, it first checks for an MX
+record for the particular domain you want to send email to. If you send an
+email to `joe@example.com`, the client gets the MX records for `example.com`
+to learn which mail server(s) to use when sending email to example.com users.
 
 curl does no MX lookups by itself. If you want to figure out which server to
 send an email to for a particular domain, we recommend you figure that out

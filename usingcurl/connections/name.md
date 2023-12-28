@@ -28,14 +28,14 @@ your local machine and you want to have curl ask for the index html:
 
     curl -H "Host: www.example.com" http://localhost/
 
-When setting a custom `Host:` header and using cookies, curl will extract the
-custom name and use that as host when matching cookies to send off.
+When setting a custom `Host:` header and using cookies, curl extracts the
+custom name and uses that as host when matching cookies to send off.
 
 The `Host:` header is not enough when communicating with an HTTPS server. With
 HTTPS there is a separate extension field in the TLS protocol called SNI
 (Server Name Indication) that lets the client tell the server the name of the
-server it wants to talk to. curl will only extract the SNI name to send from
-the given URL.
+server it wants to talk to. curl only extracts the SNI name to send from the
+given URL.
 
 ## Provide a custom IP address for a name
 
@@ -50,16 +50,16 @@ redirects of this sort, which can be handy if the URL you work with uses HTTP
 redirects or if you just want to have your command line work with multiple
 URLs.
 
-`--resolve` inserts the address into curl's DNS cache, so it will effectively
-make curl believe that is the address it got when it resolved the name.
+`--resolve` inserts the address into curl's DNS cache, so it effectively makes
+curl believe that is the address it got when it resolved the name.
 
-When talking HTTPS, this will send SNI for the name in the URL and curl will
-verify the server's response to make sure it serves for the name in the URL.
+When talking HTTPS, this sends SNI for the name in the URL and curl verifies
+the server's response to make sure it serves for the name in the URL.
 
 The pattern you specify in the option needs be a host name and its
-corresponding port number and only if that exact pair is used in the URL will
-the address be substituted. For example, if you want to replace a host name in
-an HTTPS URL on its default port number, you need to tell curl it is for port
+corresponding port number and only if that exact pair is used in the URL is
+the address substituted. For example, if you want to replace a host name in an
+HTTPS URL on its default port number, you need to tell curl it is for port
 443, like:
 
     curl --resolve example.com:443:192.168.0.1 https://example.com/
@@ -86,8 +86,8 @@ separately, you can tell curl:
     curl --connect-to www.example.com:80:load1.example.com:80 http://www.example.com
 
 It redirects from a SOURCE NAME + SOURCE PORT to a DESTINATION NAME +
-DESTINATION PORT. curl will then resolve the `load1.example.com` name and
-connect, but in all other ways still assume it is talking to
+DESTINATION PORT. curl then resolves the `load1.example.com` name and
+connects, but in all other ways still assumes it is talking to
 `www.example.com`.
 
 ## Name resolve tricks with c-ares

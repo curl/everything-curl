@@ -14,9 +14,9 @@ of cookies.
 ## Cookie engine
 
 When you enable the "cookie engine" for a specific easy handle, it means that
-it will record incoming cookies, store them in the in-memory "cookie store"
-that is associated with the easy handle and subsequently send the proper ones
-back if an HTTP request is made that matches.
+it records incoming cookies, stores them in the in-memory "cookie store" that
+is associated with the easy handle and subsequently sends the proper ones back
+if an HTTP request is made that matches.
 
 There are two ways to switch on the cookie engine:
 
@@ -30,7 +30,7 @@ the `CURLOPT_COOKIEFILE` option:
 A common trick is to just specify a non-existing filename or plain "" to have
 it just activate the cookie engine with a blank cookie store to start with.
 
-This option can be set multiple times and then each of the given files will be
+This option can be set multiple times and then each of the given files are
 read.
 
 ### Enable cookie engine with writing
@@ -41,7 +41,7 @@ option:
     curl_easy_setopt(easy, CURLOPT_COOKIEJAR, "cookies.txt");
 
 when the easy handle is closed later with `curl_easy_cleanup()`, all known
-cookies will be written to the given file. The file format is the well-known
+cookies are stored in the given file. The file format is the well-known
 "Netscape cookie file" format that browsers also once used.
 
 ## Setting custom cookies

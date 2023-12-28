@@ -17,11 +17,11 @@ For all practical purposes and API behaviors, an application does not have
 to care about if multiplexing is done or not.
 
 libcurl enables multiplexing by default, but if you start multiple transfers
-at the same time they will prioritize short-term speed to a connection so they
-might then rather open new connections than waiting for a connection to get
-created by another transfer to be able to multiplex over. To tell libcurl to
-prioritize multiplexing, set the `CURLOPT_PIPEWAIT` option for the transfer
-with `curl_easy_setopt()`.
+at the same time they prioritize short-term speed so they might then open new
+connections rather than waiting for a connection to get created by another
+transfer to be able to multiplex over. To tell libcurl to prioritize
+multiplexing, set the `CURLOPT_PIPEWAIT` option for the transfer with
+`curl_easy_setopt()`.
 
 With `curl_multi_setopt()`'s option `CURLMOPT_PIPELINING`, you can disable
 multiplexing for a specific multi handle.

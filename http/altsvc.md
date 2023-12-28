@@ -15,9 +15,9 @@ alt-svc cache file like this:
 
     curl --alt-svc altcache.txt https://example.com/
 
-then curl will load existing alternative service entries from the file at
-start-up and consider those when doing HTTP requests, and if the servers sends
-new or updated `Alt-Svc:` headers, curl will store those in the cache at exit.
+then curl loads existing alternative service entries from the file at start-up
+and consider those when doing HTTP requests, and if the servers sends new or
+updated `Alt-Svc:` headers, curl stores those in the cache at exit.
 
 ## The alt-svc cache
 

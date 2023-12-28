@@ -97,7 +97,7 @@ For example, to insert the word hello a 100 times:
 
 Lines in the test file can be made to appear conditionally on a specific
 feature (see the "features" section below) being set or not set. If the
-specific feature is present, the following lines will be output, otherwise it
+specific feature is present, the following lines are output, otherwise it
 outputs nothing, until a following `else` or `endif` clause. Like this:
 
     %if brotli
@@ -125,7 +125,7 @@ conditional at a time and you can only check for a single feature in it.
 
 ## Variables
 
-When the test is preprocessed, a range of "variables" in the test file will be
+When the test is preprocessed, a range of variables in the test file are
 replaced by their content at that time.
 
 Available substitute variables include:
@@ -199,13 +199,13 @@ requests curl sends
 been run ended up correctly
 
 Each main section supports a number of available *sub-tags* that can be
-specified, that will be checked/used if specified.
+specified, that are checked/used if specified.
 
 ## `<info>`
 
 ### `<keywords>`
 A newline-separated list of keywords describing what this test case uses and
-tests. Try to use already used keywords. These keywords will be used for
+tests. Try to use already used keywords. These keywords are used for
 statistical/informational purposes and for choosing or skipping classes of
 tests. "Keywords" must begin with an alphabetic character, "-", "[" or "{" and
 may consist of multiple words separated by spaces which are treated together
@@ -222,30 +222,30 @@ arrived safely. Set `nocheck="yes"` to prevent the test script from verifying
 the arrival of this data.
 
 If the data contains `swsclose` anywhere within the start and end tag, and
-this is an HTTP test, then the connection will be closed by the server after
-this response is sent. If not, the connection will be kept persistent.
+this is an HTTP test, then the connection is closed by the server after this
+response is sent. If not, the connection is kept persistent.
 
 If the data contains `swsbounce` anywhere within the start and end tag, the
-HTTP server will detect if this is a second request using the same test and
-part number and will then increase the part number with one. This is useful
-for auth tests and similar.
+HTTP server detects if this is a second request using the same test and part
+number and then increases the part number with one. This is useful for auth
+tests and similar.
 
-`sendzero=yes` means that the (FTP) server will "send" the data even if the
-size is zero bytes. Used to verify curl's behavior on zero bytes transfers.
+`sendzero=yes` means that the (FTP) server "sends" the data even if the size
+is zero bytes. Used to verify curl's behavior on zero bytes transfers.
 
 `base64=yes` means that the data provided in the test-file is a chunk of data
 encoded with base64. It is the only way a test case can contain binary
 data. (This attribute can in fact be used on any section, but it does not make
 much sense for other sections than "data").
 
-`hex=yes` means that the data is a sequence of hex pairs. It will get decoded
-and used as "raw" data.
+`hex=yes` means that the data is a sequence of hex pairs. It gets decoded and
+used as "raw" data.
 
 `nonewline=yes` means that the last byte (the trailing newline character)
 should be cut off from the data before sending or comparing it.
 
-For FTP file listings, the `<data>` section will be used *only* if you make
-sure that there has been a CWD done first to a directory named `test-[number]`
+For FTP file listings, the `<data>` section is used *only* if you make sure
+that there has been a CWD done first to a directory named `test-[number]`
 where `[number]` is the test case number. Otherwise the ftp server can't know
 from which test file to load the list content.
 
@@ -280,8 +280,8 @@ Address type and address details as logged by the SOCKS proxy.
 
 ### `<datacheck [mode="text"] [nonewline="yes"]>`
 if the data is sent but this is what should be checked afterwards. If
-`nonewline=yes` is set, runtests will cut off the trailing newline from the
-data before comparing with the one actually received by the client.
+`nonewline=yes` is set, runtests cuts off the trailing newline from the data
+before comparing with the one actually received by the client.
 
 Use the `mode="text"` attribute if the output is in text mode on platforms
 that have a text/binary difference.
@@ -307,9 +307,9 @@ For HTTP/HTTPS, these are supported:
 ### `<servercmd>`
 Special-commands for the server.
 
-The first line of this file will always be set to `Testnum [number]` by the
-test script, to allow servers to read that to know what test the client is
-about to issue.
+The first line of this file is always set to `Testnum [number]` by the test
+script, to allow servers to read that to know what test the client is about to
+issue.
 
 #### For FTP/SMTP/POP/IMAP
 
@@ -341,7 +341,7 @@ about to issue.
 #### For HTTP/HTTPS
 
 - `auth_required` if this is set and a POST/PUT is made without auth, the
-  server will NOT wait for the full request body to get sent
+  server does NOT wait for the full request body to get sent
 - `idle` - do nothing after receiving the request, just "sit idle"
 - `stream` - continuously send data to the client, never-ending
 - `writedelay: [msecs]` delay this amount between reply packets
@@ -349,9 +349,9 @@ about to issue.
   from a PUT or POST request
 - `rtp: part [num] channel [num] size [num]` - stream a fake RTP packet for
   the given part on a chosen channel with the given payload size
-- `connection-monitor` - When used, this will log `[DISCONNECT]` to the
+- `connection-monitor` - When used, this logs `[DISCONNECT]` to the
   `server.input` log when the connection is disconnected.
-- `upgrade` - when an HTTP upgrade header is found, the server will upgrade to
+- `upgrade` - when an HTTP upgrade header is found, the server upgrades to
   http2
 - `swsclose` - instruct server to close connection after response
 - `no-expect` - do not read the request body if Expect: is present
@@ -395,12 +395,10 @@ Enter only one server per line. This subsection is mandatory.
 
 ### `<features>`
 A list of features that MUST be present in the client/library for this test to
-be able to run. If a required feature is not present then the test will be
-SKIPPED.
+be able to run. If a required feature is not present then the test is SKIPPED.
 
 Alternatively a feature can be prefixed with an exclamation mark to indicate a
-feature is NOT required. If the feature is present then the test will be
-SKIPPED.
+feature is NOT required. If the feature is present then the test is SKIPPED.
 
 Features testable here are:
 
@@ -471,13 +469,12 @@ restart servers.
 ### `<precheck>`
 A command line that if set gets run by the test script before the test. If an
 output is displayed by the command or if the return code is non-zero, the test
-will be skipped and the (single-line) output will be displayed as reason for
-not running the test.
+gets skipped and the (single-line) output is displayed as reason for not
+running the test.
 
 ### `<postcheck>`
-A command line that if set gets run by the test script after the test. If
-the command exists with a non-zero status code, the test will be considered
-to have failed.
+A command line that if set gets run by the test script after the test. If the
+command exists with a non-zero status code, the test is considered failed.
 
 ### `<tool>`
 Name of tool to invoke instead of "curl". This tool must be built and exist
@@ -499,15 +496,15 @@ Command line to run.
 
 Note that the URL that gets passed to the server actually controls what data
 that is returned. The last slash in the URL must be followed by a number. That
-number (N) will be used by the test-server to load test case N and return the
-data that is defined within the `<reply><data></data></reply>` section.
+number (N) is used by the test-server to load test case N and return the data
+that is defined within the `<reply><data></data></reply>` section.
 
-If there is no test number found above, the HTTP test server will use the
-number following the last dot in the given hostname (made so that a CONNECT
-can still pass on test number) so that "foo.bar.123" gets treated as test case
+If there is no test number found above, the HTTP test server uses the number
+following the last dot in the given hostname (made so that a CONNECT can still
+pass on test number) so that "foo.bar.123" gets treated as test case
 123. Alternatively, if an IPv6 address is provided to CONNECT, the last
-hexadecimal group in the address will be used as the test number! For example
-the address "[1234::ff]" would be treated as test case 255.
+hexadecimal group in the address is used as the test number! For example the
+address "[1234::ff]" would be treated as test case 255.
 
 Set `type="perl"` to write the test case as a perl script. It implies that
 there is no memory debugging and valgrind gets shut off for this test.
@@ -546,13 +543,13 @@ needed.
 This creates the named file with this content before the test case is run,
 which is useful if the test case needs a file to act on.
 
-If `nonewline="yes"` is used, the created file will have the final newline
-stripped off.
+If `nonewline="yes"` is used, the created file gets the final newline stripped
+off.
 
 ### `<stdin [nonewline="yes"]>`
 Pass this given data on stdin to the tool.
 
-If `nonewline` is set, we will cut off the trailing newline of this given data
+If `nonewline` is set, we cut off the trailing newline of this given data
 before comparing with the one actually received by the client
 
 ## `<verify>`
@@ -572,17 +569,17 @@ advanced. Example: `s/^EPRT .*/EPRT stripped/`.
 
 ### `<protocol [nonewline="yes"]>`
 
-the protocol dump curl should transmit, if `nonewline` is set, we will cut off
-the trailing newline of this given data before comparing with the one actually
+the protocol dump curl should transmit, if `nonewline` is set, we cut off the
+trailing newline of this given data before comparing with the one actually
 sent by the client The `<strip>` and `<strippart>` rules are applied before
 comparisons are made.
 
 ### `<proxy [nonewline="yes"]>`
 
 The protocol dump curl should transmit to an HTTP proxy (when the http-proxy
-server is used), if `nonewline` is set, we will cut off the trailing newline
-of this given data before comparing with the one actually sent by the client
-The `<strip>` and `<strippart>` rules are applied before comparisons are made.
+server is used), if `nonewline` is set, we cut off the trailing newline of
+this given data before comparing with the one actually sent by the client The
+`<strip>` and `<strippart>` rules are applied before comparisons are made.
 
 ### `<stderr [mode="text"] [nonewline="yes"]>`
 This verifies that this data was passed to stderr.
@@ -590,7 +587,7 @@ This verifies that this data was passed to stderr.
 Use the `mode="text"` attribute if the output is in text mode on platforms
 that have a text/binary difference.
 
-If `nonewline` is set, we will cut off the trailing newline of this given data
+If `nonewline` is set, we cut off the trailing newline of this given data
 before comparing with the one actually received by the client
 
 ### `<stdout [mode="text"] [nonewline="yes"]>`
@@ -599,7 +596,7 @@ This verifies that this data was passed to stdout.
 Use the `mode="text"` attribute if the output is in text mode on platforms
 that have a text/binary difference.
 
-If `nonewline` is set, we will cut off the trailing newline of this given data
+If `nonewline` is set, we cut off the trailing newline of this given data
 before comparing with the one actually received by the client
 
 ### `<file name="log/filename" [mode="text"]>`

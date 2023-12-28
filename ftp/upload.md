@@ -3,8 +3,8 @@
 To upload to an FTP server, you specify the entire target file path and name
 in the URL, and you specify the local filename to upload with `-T,
 --upload-file`. Optionally, you end the target URL with a slash and then the
-file component from the local path will be appended by curl and used as the
-remote filename.
+file component from the local path is appended by curl and used as the remote
+filename.
 
 Like:
 

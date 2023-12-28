@@ -14,7 +14,7 @@ infrastructure), web content, user support and more.
 
 Send your changes or suggestions to the team and by working together we can
 fix problems, improve functionality, clarify documentation, add features or
-make anything else you help out with land in the proper place. We will make sure
+make anything else you help out with land in the proper place. We make sure
 improved code and docs get merged into the source tree properly and other
 sorts of contributions are suitable received.
 
@@ -48,14 +48,14 @@ Of course, you can also add contents to the project that is not code, like
 documentation, graphics or website contents, but the general rules apply
 equally to that.
 
-If you are fixing a problem you have or a problem that others are reporting, we
-will be thrilled to receive your fix and merge it as soon as possible,
+If you are fixing a problem you have or a problem that others are reporting,
+we are thrilled to receive your fixes and merge them as soon as possible,
 
 ## What not to add
 
 There are no good rules that say what features you can or cannot add or that
-we will never accept, but let me instead try to mention a few things you
-should avoid to get less friction and to be successful, faster:
+we never accept, but let me instead try to mention a few things you should
+avoid to get less friction and to be successful, faster:
 
 - Do not write up a huge patch first and then send it to the list for
   discussion. Always start out by discussing on the list, and send your
@@ -66,7 +66,7 @@ should avoid to get less friction and to be successful, faster:
 - When introducing things in the code, you need to follow the style and
   architecture that already exists. When you add code to the ordinary transfer
   code path, it must, for example, work asynchronously in a non-blocking
-  manner. We will not accept new code that introduces blocking behaviors—we
+  manner. We do not accept new code that introduces blocking behaviors—we
   already have too many of those that we have not managed to remove yet.
 
 - Quick hacks or dirty solutions that have a high risk of not working on
@@ -88,7 +88,7 @@ While git is sometimes not the easiest tool to learn and master, all the basic
 steps a casual developer and contributor needs to know are straight-forward
 and do not take much time or effort to learn.
 
-This book will not help you learn git. All software developers in this day and
+This book does not help you learn git. All software developers in this day and
 age should learn git anyway.
 
 The curl git tree can be browsed with a web browser on our GitHub page at

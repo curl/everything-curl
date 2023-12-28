@@ -19,9 +19,9 @@
 ## `CURLRES_THREADED`
 
  is defined if libcurl is built to use threading for asynchronous name
- resolves. The name resolve will be done in a new thread, and the supported
- asynch API will be the same as for ares-builds. This is the default under
- (native) Windows.
+ resolves. The name resolve is done in a new thread, and the supported asynch
+ API is be the same as for ares-builds. This is the default under (native)
+ Windows.
 
  If any of the two previous are defined, `CURLRES_ASYNCH` is defined too. If
  libcurl is not built to use an asynchronous resolver, `CURLRES_SYNCH` is

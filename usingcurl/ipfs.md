@@ -15,9 +15,9 @@ If you opt to go for a remote gateway you should be aware that you completely
 trust the gateway. This is fine in local gateways as you host it yourself.
 With remote gateways there could potentially be a malicious actor returning
 you data that does not match the request you made, inspect or even interfere
-with the request. You will not notice this when getting IPFS using curl.
+with the request. You might not notice this when getting IPFS using curl.
 
-If the `--ipfs-gateway` option is not used, curl will check the `IPFS_GATEWAY`
+If the `--ipfs-gateway` option is not used, curl checks the `IPFS_GATEWAY`
 environment variable for guidance and if not set, the `~/.ipfs/gateway` file
 that can be used to identify the gateway.
 

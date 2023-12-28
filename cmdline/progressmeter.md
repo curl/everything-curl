@@ -27,8 +27,8 @@ transfer times, etc.
 
 The progress meter displays bytes and bytes per second.
 
-It will also use suffixes for larger amounts of bytes, using the 1024 base
-system so 1024 is one kilobyte (1K), 2048 is 2K, etc. curl supports these:
+It also uses suffixes for larger amounts of bytes, using the 1024 base system
+so 1024 is one kilobyte (1K), 2048 is 2K, etc. curl supports these:
 
 | Suffix  |  Amount | Name      |
 |---------|---------|-----------|

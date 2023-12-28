@@ -6,7 +6,7 @@ client.
 You can also see it as a middle man that sits between you and the server you
 want to work with, a middle man that you connect to instead of the actual
 remote server. You ask the proxy to perform your desired operation for you and
-then it will run off and do that and then return the data to you.
+then it runs off and do that and then it returns the data to you.
 
 There are several different types of proxies and we shall list and discuss
 them in subsections below.

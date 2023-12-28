@@ -1,7 +1,7 @@
 # API compatibility
 
 libcurl promises API stability and guarantees that your program written today
-will remain working in the future. We do not break compatibility.
+remains working in the future. We do not break compatibility.
 
 Over time, we add features, new options and new functions to the APIs but we
 do not change behavior in a non-compatible way or remove functions.
@@ -24,8 +24,8 @@ The version numbering is always built up using the same system:
 
 ## Bumping numbers
 
-One of these X.Y.Z numbers will get bumped in every new release. The numbers to
-the right of a bumped number will be reset to zero.
+One of these X.Y.Z numbers gets bumped in every new release. The numbers to
+the right of a bumped number are reset to zero.
 
 The main version number X is bumped when *really* big, world colliding changes
 are made. The release number Y is bumped when changes are performed or
@@ -67,8 +67,8 @@ This number is also available as three separate defines:
 `LIBCURL_VERSION_MAJOR`, `LIBCURL_VERSION_MINOR` and `LIBCURL_VERSION_PATCH`.
 
 These defines are, of course, only suitable to figure out the version number
-built *just now* and they will not help you figuring out which libcurl version
-that is used at runtime three years from now.
+built *just now* and do not help you figuring out which libcurl version that
+is used at runtime three years from now.
 
 ## Which libcurl version runs
 
@@ -91,8 +91,8 @@ You call the function like this:
 
     curl_version_info_data *version = curl_version_info( CURLVERSION_NOW );
 
-The data will then be pointing at struct that has or at least can have the
-following layout:
+The data then points to struct that has or at least can have the following
+layout:
 
     struct {
       CURLversion age;          /* see description below */

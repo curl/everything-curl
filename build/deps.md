@@ -7,7 +7,7 @@ code.
 
 A whole slew of features that curl provides require that it is built to use
 one or more external libraries. They are then dependencies of curl. None of
-them are *required*, but most users will want to use at least some of them.
+them are *required*, but most users want to use at least some of them.
 
 ## HTTP Compression
 
@@ -19,18 +19,18 @@ these libraries:
  - brotli compression with [brotli](https://github.com/google/brotli)
  - zstd compression with [libzstd](https://github.com/facebook/zstd)
 
-Getting compressed data over the wire will use less bandwidth, which might
-also result in shorter transfer times.
+Getting compressed data over the wire uses less bandwidth, which might also
+result in shorter transfer times.
 
 ## c-ares
 
 https://c-ares.org/
 
 curl can be built with c-ares to be able to do asynchronous name resolution.
-Another option to enable asynchronous name resolution is to build curl with the
-threaded name resolver backend, which will then instead create a separate
-helper thread for each name resolve. c-ares does it all within the
-same thread.
+Another option to enable asynchronous name resolution is to build curl with
+the threaded name resolver backend, which then instead creates a separate
+helper thread for each name resolve. c-ares does it all within the same
+thread.
 
 ## nghttp2
 
@@ -57,8 +57,8 @@ librtmp library that comes from the RTMPDump project.
 
 https://rockdaboot.github.io/libpsl/
 
-When you build curl with support for libpsl, the cookie parser will know about
-the Public Suffix List and thus handle such cookies appropriately.
+When you build curl with support for libpsl, the cookie parser knows about the
+Public Suffix List and thus handle such cookies appropriately.
 
 ## libidn2
 

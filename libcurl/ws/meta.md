@@ -25,15 +25,15 @@ The `flags' field is a bitmask describing details of data.
 
 ### `CURLWS_TEXT`
 The buffer contains text data. Note that this makes a difference to WebSocket
-but libcurl itself will not make any verification of the content or
-precautions that you actually receive valid UTF-8 content.
+but libcurl itself does make any verification of the content or precautions
+that you actually receive valid UTF-8 content.
 
 ### `CURLWS_BINARY`
 This is binary data.
 
 ### `CURLWS_FINAL`
 This is the final fragment of the message, if this is not set, it implies that
-there will be another fragment coming as part of the same message.
+there is another fragment coming as part of the same message.
  
 ### `CURLWS_CLOSE`
 This transfer is now closed.

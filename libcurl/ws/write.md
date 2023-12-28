@@ -39,16 +39,15 @@ until all pieces have been sent that constitute the whole fragment.
 
 ### `CURLWS_TEXT`
 The buffer contains text data. Note that this makes a difference to WebSocket
-but libcurl itself will not make any verification of the content or
-precautions that you actually send valid UTF-8 content.
+but libcurl itself does not perform any verification of the content or make
+any precautions that you actually send valid UTF-8 content.
 
 ### `CURLWS_BINARY`
 This is binary data.
 
 ### `CURLWS_CONT`
-This is not the final fragment of the message, which implies that there will
-be another fragment coming as part of the same message where this bit is not
-set.
+This is not the final fragment of the message, which implies that there is
+another fragment coming as part of the same message where this bit is not set.
 
 ### `CURLWS_CLOSE`
 Close this transfer.
@@ -61,10 +60,10 @@ This as a pong.
 
 ### `CURLWS_OFFSET`
 
-The provided data is only a partial fragment and there will be more in a
-following call to `curl_ws_send()`. When sending only a piece of the fragment
-like this, the `fragsize` must be provided with the total expected frame size
-in the first call and it needs to be zero in subsequent calls.
+The provided data is only a partial fragment and there is more data coming in
+a following call to `curl_ws_send()`. When sending only a piece of the
+fragment like this, the `fragsize` must be provided with the total expected
+frame size in the first call and it needs to be zero in subsequent calls.
 
 When `CURLWS_OFFSET` is set, no other flag bits should be set as this is a
 continuation of a previous send and the bits describing the fragments were set

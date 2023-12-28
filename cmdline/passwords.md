@@ -17,14 +17,13 @@ is `12345`:
 
 Several potentially bad things are going on here. First, we are entering a
 password on the command line and the command line might be readable for other
-users on the same system (assuming you have a multi-user system). curl
-will help minimize that risk by trying to blank out passwords from process
-listings.
+users on the same system (assuming you have a multi-user system). curl helps
+minimize that risk by trying to blank out passwords from process listings.
 
 One way to avoid passing the user name and password on the command line is to
 instead use a [.netrc file](../usingcurl/netrc.md) or a [config file](configfile.md).
 You can also use the `-u` option without specifying the password, and then
-curl will instead prompt the user for it when it runs.
+curl instead prompts the user for it when it runs.
 
 ## Network leakage
 

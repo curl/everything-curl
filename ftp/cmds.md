@@ -41,8 +41,8 @@ You can in fact send commands in all three different times by using multiple
 position by using more `-Q` options.
 
 By default, if any of the given commands returns an error from the server,
-curl will stop its operations, abort the transfer (if it happens before
-transfer has started) and not send any more of the custom commands.
+curl stops its operations, abort the transfer (if it happens before transfer
+has started) and not send any more of the custom commands.
 
 Example, rename a file then do a transfer:
 

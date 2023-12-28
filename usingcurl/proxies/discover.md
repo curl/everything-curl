@@ -8,8 +8,8 @@ your network for policy or technical reasons.
 In the networking space there are a few methods for the automatic detection of
 proxies and how to connect to them, but none of those methods are truly
 universal and curl supports none of them. Furthermore, when you communicate to
-the outside world through a proxy that often means that you have to put a lot of
-trust on the proxy as it will be able to see and modify all the non-secure
+the outside world through a proxy that often means that you have to put a lot
+of trust on the proxy as it is able to see and modify all the non-secure
 network traffic you send or get through it. That trust is not easy to assume
 automatically.
 

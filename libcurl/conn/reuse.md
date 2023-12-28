@@ -1,25 +1,25 @@
 # Connection reuse
 
 libcurl keeps a pool of old connections alive. When one transfer has completed
-it will keep N connections alive in a "connection pool" (sometimes also called
+it keeps N connections alive in a "connection pool" (sometimes also called
 connection cache) so that a subsequent transfer that happens to be able to
 reuse one of the existing connections can use it instead of creating a new
 one. Reusing a connection instead of creating a new one offers significant
 benefits in speed and required resources.
 
 When libcurl is about to make a new connection for the purposes of doing a
-transfer, it will first check to see if there is an existing connection in the
+transfer, it first checks to see if there is an existing connection in the
 pool that it can reuse instead. The connection re-use check is done before any
 DNS or other name resolving mechanism is used, so it is purely host name
-based. If there is an existing live connection to the right host name, a lot of
-other properties (port number, protocol, etc) are also checked to see that it
-can be used.
+based. If there is an existing live connection to the right host name, a lot
+of other properties (port number, protocol, etc) are also checked to see that
+it can be used.
 
 ## Easy API pool
 
 When you are using the easy API, or, more specifically, `curl_easy_perform()`,
-libcurl will keep the pool associated with the specific easy handle. Then
-reusing the same easy handle will ensure it can reuse its connection.
+libcurl keeps the pool associated with the specific easy handle. Then reusing
+the same easy handle ensures libcurl can reuse its connection.
 
 ## Multi API pool
 

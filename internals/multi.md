@@ -11,6 +11,6 @@ never waiting for data in loop or similar. Unless they are the "surface"
 functions that have that expressed functionality.
 
 The function `curl_easy_perform()` which performs a single transfer
-synchronously, is itself just a wrapper function that internally will setup
-and use the multi interface itself.
+synchronously, is itself just a wrapper function that internally setups and
+uses the multi interface itself.
 

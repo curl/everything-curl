@@ -32,8 +32,8 @@ If the default behavior is not good enough for your transfer, the
 ## Version 2 not mandatory
 
 When asking libcurl to use HTTP/2, it is an ask not a requirement. libcurl
-will then allow the server to select to use HTTP/1.1 or HTTP/2 and that is
-what decides which protocol that is ultimately used.
+then allows the server to select to use HTTP/1.1 or HTTP/2 and that is what
+decides which protocol that is ultimately used.
 
 ## Version 3 can be mandatory
 
@@ -43,4 +43,4 @@ so that if the HTTP/3 connection fails, it can still try and use an older HTTP
 version.
 
 Using `CURL_HTTP_VERSION_3ONLY` means that the fallback mechanism is not used
-and a failed QUIC connection will fail the transfer completely.
+and a failed QUIC connection fails the transfer completely.

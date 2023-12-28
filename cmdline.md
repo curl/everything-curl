@@ -6,9 +6,9 @@ prompts and from within scripts by countless users over the years.
 ## Garbage in gives garbage out
 
 curl has little will of its own. It tries to please you and your wishes to a
-large extent. It also means that it will try to play with what you give it. If
+large extent. It also means that it tries to play with what you give it. If
 you misspell an option, it might do something unintended. If you pass in a
-slightly illegal URL, chances are curl will still deal with it and proceed. It
+slightly illegal URL, chances are curl still deals with it and proceeds. It
 means that you can pass in crazy data in some options and you can have curl
 pass on that crazy data in its transfer operation.
 

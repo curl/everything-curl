@@ -9,8 +9,8 @@ use of -o or -O superfluous.
     curl http://example.com/ > example.html
 
 Redirecting output to a file redirects all output from curl to that file, so
-even if you ask to transfer more than one URL to stdout, redirecting the output
-will get all the URLs' output stored in that single file.
+even if you ask to transfer more than one URL to stdout, redirecting the
+output gets all the URLs' output stored in that single file.
 
     curl http://example.com/1 http://example.com/2 > files
 

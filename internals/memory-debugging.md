@@ -22,11 +22,11 @@ switched on by running configure with `--enable-curldebug`. Use
 `-DDEBUGBUILD` when compiling to enable a debug build or run configure with
 `--enable-debug`.
 
-`curl --version` will list 'Debug' feature for debug enabled builds, and will
-list 'TrackMemory' feature for curl debug memory tracking capable
-builds. These features are independent and can be controlled when running the
-configure script. When `--enable-debug` is given both features will be
-enabled, unless some restriction prevents memory tracking from being used.
+`curl --version` lists the `Debug` feature for debug enabled builds, and lists
+the `TrackMemory` feature for curl debug memory tracking capable builds. These
+features are independent and can be controlled when running the configure
+script. When `--enable-debug` is given both features get enabled, unless some
+restriction prevents memory tracking from being used.
 
 ## Track Down Memory Leaks
 
@@ -43,11 +43,11 @@ first choice.
 
   Rebuild libcurl with `-DCURLDEBUG` (usually, rerunning configure with
   `--enable-debug` fixes this). `make clean` first, then `make` so that all
-  files are actually rebuilt properly. It will also make sense to build
-  libcurl with the debug option (usually `-g` to the compiler) so that
-  debugging it will be easier if you actually do find a leak in the library.
+  files are actually rebuilt properly. It also makes sense to build libcurl
+  with the debug option (usually `-g` to the compiler) so that debugging it
+  gets easier if you actually do find a leak in the library.
 
-  This will create a library that has memory debugging enabled.
+  This builds a library that has memory debugging enabled.
 
 ### Modify Your Application
 
@@ -57,7 +57,7 @@ first choice.
   curl_dbg_memdebug("dump");
 ```
 
-  This will make the malloc debug system output a full trace of all resources
+  This makes the malloc debug system output a full trace of all resources
   using functions to the given file name. Make sure you rebuild your program
   and that you link with the same libcurl you built for this purpose as
   described above.

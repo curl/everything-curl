@@ -101,7 +101,8 @@ You'll need to use double quotes when:
 * the parameter contains white space, or starts with the characters `:` or `=`.
 * you need to use escape sequences (available options: `\\`, `\"`, `\t`, `\n`, `\r` and `\v`. A backslash preceding any other letter is ignored).
 
-If a parameter containing white space is not enclosed in double quotes, curl will treat the next space or newline as the end of the argument.
+If a parameter containing white space is not enclosed in double quotes, curl
+considers the next space or newline as the end of the argument.
 
 ## Default config file
 

@@ -10,8 +10,8 @@ The `read_callback` function must match this prototype:
 
 This callback function gets called by libcurl when it wants to send data to
 the server. This is a transfer that you have set up to upload data or
-otherwise send it off to the server. This callback will be called over and
-over until all data has been delivered or the transfer failed.
+otherwise send it off to the server. This callback is called over and over
+until all data has been delivered or the transfer failed.
 
 The **stream** pointer points to the private data set with `CURLOPT_READDATA`:
 

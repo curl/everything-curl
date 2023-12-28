@@ -1,9 +1,9 @@
 # Protocol handler
 
 libcurl is a multi-protocol transfer library. The core of the code is a set of
-generic functions that are used for transfers in general and will mostly work
-the same for all protocols. The main state machine described above for example
-is there and works for all protocols - even though some protocols may not make
+generic functions that are used for transfers in general and mostly works the
+same for all protocols. The main state machine described above for example is
+there and works for all protocols - even though some protocols may not make
 use of all states for all transfers.
 
 However, each different protocol libcurl speaks also has its unique

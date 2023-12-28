@@ -1,7 +1,7 @@
 # Opensocket and closesocket
 
 Occasionally you end up in a situation where you want your application to
-control with more precision exactly what socket libcurl will use for its
+control with more precision exactly what socket libcurl uses for its
 operations. libcurl offers this pair of callbacks that replaces libcurl's own
 call to `socket()` and the subsequent `close()` of the same file descriptor.
 
@@ -39,7 +39,7 @@ address in that struct, if you would like to offer some sort of network filter
 or translation layer.
 
 The callback should return a file descriptor or `CURL_SOCKET_BAD`, which then
-will cause an unrecoverable error within libcurl and it will eventually return
+causes an unrecoverable error within libcurl and it returns
 `CURLE_COULDNT_CONNECT` from its perform function.
 
 If you want to return a file descriptor that is *already connected* to a

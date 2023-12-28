@@ -8,8 +8,8 @@ actually having anything already locally present.
 curl supports resumed downloads on several protocols. Tell it where to start
 the transfer with the `-C, --continue-at` option that takes either a plain
 numerical byte counter offset where to start or the string `-` that asks curl
-to figure it out itself based on what it knows. When using `-`, curl will use
-the destination filename to figure out how much data that is already present
+to figure it out itself based on what it knows. When using `-`, curl uses the
+destination filename to figure out how much data that is already present
 locally and ask use that as an offset when asking for more data from the
 server.
 

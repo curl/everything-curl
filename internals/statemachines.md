@@ -15,7 +15,7 @@ One of the primary states is the main transfer "mode" the easy handle holds,
 which says if the current transfer is resolving, waiting for a resolve,
 connecting, waiting for a connect, issuing a request, doing a transfer etc
 (see the `CURLMstate` enum in `lib/multihandle.h`). Every transfer done with
-libcurl has an associated easy handle and every easy handle will exercise that
+libcurl has an associated easy handle and every easy handle exercises that
 state machine.
 
 The image below shows all states and possible state transitions. See further

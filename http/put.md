@@ -11,9 +11,8 @@ identifies the resource and you point out the local file to put there:
 
     curl -T localfile http://example.com/new/resource/file
 
-…so -T will imply a PUT and tell curl which file to send off. But the
-similarities between POST and PUT also allows you to send a PUT with a string
-by using the regular curl POST mechanism using `-d` but asking for it to use a
-PUT instead:
+`-T` implies a PUT and tell curl which file to send off. But the similarities
+between POST and PUT also allows you to send a PUT with a string by using the
+regular curl POST mechanism using `-d` but asking for it to use a PUT instead:
 
     curl -d "data to PUT" -X PUT http://example.com/new/resource/file

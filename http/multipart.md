@@ -17,9 +17,8 @@ Which could look something like this in a web browser:
 
 ![a multipart form](multipart-form.png)
 
-A user can fill in text in the 'Name' field and by pressing the 'Browse'
-button a local file can be selected that will be uploaded when 'Submit' is
-pressed.
+A user can fill in text in the 'Name' field and by pressing the `Browse`
+button a local file can be selected that is uploaded when `Submit` is pressed.
 
 ## Sending such a form with curl
 
@@ -59,10 +58,10 @@ chapter.
 The **Content-Type** header is a bit special. It tells that this is a
 multipart formpost and then it sets the "boundary" string. The boundary string
 is a line of characters with a bunch of random digits somewhere in it, that
-serves as a separator between the different parts of the form that will be
+serves as a separator between the different parts of the form that is
 submitted. The particular boundary you see in this example has the random part
-`d74496d66958873e` but you will, of course, get something different when you
-run curl (or when you submit such a form with a browser).
+`d74496d66958873e` but you, of course, get something different when you run
+curl (or when you submit such a form with a browser).
 
 So after that initial set of headers follows the request body
 
@@ -86,10 +85,10 @@ The last boundary string has two extra dashes `--` appended to signal the end.
 
 ## Content-Type
 
-POSTing with curl's -F option will make it include a default Content-Type
+POSTing with curl's `-F` option makes it include a default `Content-Type`
 header in its request, as shown in the above example. This says
 `multipart/form-data` and then specifies the MIME boundary string. That
-content-type is the default for multipart formposts but you can, of course,
+`Content-Type` is the default for multipart formposts but you can, of course,
 still modify that for your own commands and if you do, curl is clever enough
 to still append the boundary magic to the replaced header. You cannot really
 alter the boundary string, since curl needs that for producing the POST

@@ -10,8 +10,7 @@ One solution for that is to use an HTTPS proxy, speaking HTTPS to the proxy,
 which then establishes a secure and encrypted connection that is safe from
 easy surveillance.
 
-When an HTTPS proxy is specified, the default port used on that host will be
-443.
+When an HTTPS proxy is specified, the default port used on that host is 443.
 
 In most other ways, HTTPS proxies work like [HTTP proxies](http.md).
 

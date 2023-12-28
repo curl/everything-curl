@@ -31,6 +31,6 @@ transfer is therefor considered an error when asking for a WebSocket transfer.
 
 ## Automatic `PONG`
 
-If not using [raw mode](options.md), libcurl will automatically respond with
-the appropriate `PONG` response for incoming `PING` frames and not expose them
-in the API.
+If not using [raw mode](options.md), libcurl automatically responds with the
+appropriate `PONG` response for incoming `PING` frames and does not expose
+them in the API.

@@ -7,7 +7,7 @@ the option.
 
 ## Iterate over all options
 
-A modern libcurl supports nearly 300 different options. With the use of
+Modern libcurl supports over 300 different options. With the use of
 `curl_easy_option_by_next()` an application can iterate over all the known
 options and return a pointer to a `struct curl_easyoption` for them.
 

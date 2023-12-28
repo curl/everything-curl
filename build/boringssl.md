@@ -16,10 +16,10 @@ like.
 ## set up the build tree to get detected by curl's configure
 
 In the boringssl source tree root, make sure there is a `lib` and an `include`
-dir. The `lib` dir should contain the two libs (I made them symlinks into the
-build dir). The `include` dir is already present by default. Make and populate
-`lib` like this (commands issued in the source tree root, not in the `build/`
-subdirectory).
+dir. The `lib` directory should contain the two libs (I made them symlinks
+into the build dir). The `include` directory is already present by
+default. Make and populate `lib` like this (commands issued in the source tree
+root, not in the `build/` subdirectory).
 
 
     $ mkdir lib

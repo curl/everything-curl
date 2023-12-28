@@ -9,7 +9,6 @@ Return error to stop transfer
 
 ## Example
 
-~~~c
     #include <stdio.h>
     #include <curl/curl.h>
 

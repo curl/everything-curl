@@ -9,7 +9,6 @@ sending (`CURLOPT_MAX_SEND_SPEED_LARGE`).
 
 ## Example
 
-~~~c
     #include <stdio.h>
     #include <curl/curl.h>
 

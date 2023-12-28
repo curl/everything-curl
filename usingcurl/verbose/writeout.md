@@ -22,7 +22,10 @@ curl -w @- http://example.com/
 
 ## Variables
 
-The variables that are available are accessed by writing `%{variable_name}` in the string and that variable will then be substituted by the correct value. To output a plain `%` you write it as `%%`. You can also output a newline by using , a carriage return with  and a tab space with .
+The variables that are available are accessed by writing `%{variable_name}` in
+the string and that variable is substituted by the correct value. To output a
+plain `%` you write it as `%%`. You can also output a newline by using , a
+carriage return with and a tab space with .
 
 As an example, we can output the Content-Type and the response code from an HTTP transfer, separated with newlines and some extra text like this:
 
@@ -46,7 +49,10 @@ curl -w "Server: %header{server}\n" http://example.com
 
 By default, this option makes the selected data get output on stdout. If that is not good enough, the pseudo-variable `%{stderr}` can be used to direct (the following) part to stderr and `%{stdout}` brings it back to stdout.
 
-From curl 8.3.0, there is a feature that lets users send the write-out output to a file: `%output{filename}`. The data following will then be written to that file. If you rather have curl append to that file instead of creating it from scratch, prefix the file name with `>>`. Like this: `%output{>>filename}`.
+From curl 8.3.0, there is a feature that lets users send the write-out output
+to a file: `%output{filename}`. The data following is then written to that
+file. If you rather have curl append to that file instead of creating it from
+scratch, prefix the filename with `>>`. Like this: `%output{>>filename}`.
 
 A write-out argument can include output to stderr, stdout and files as the user sees fit.
 
@@ -99,7 +105,7 @@ Some of these variables are not available in really old curl versions.
 | `time_pretransfer`        | The time in seconds, it took from the start until the file transfer was just about to begin. This includes all pre-transfer commands and negotiations that are specific to the particular protocol(s) involved.                  |
 | `time_redirect`           | The time in seconds, it took for all redirection steps including name lookup, connect, pre-transfer and transfer before the final transaction was started. time\_redirect the complete execution time for multiple redirections. |
 | `time_starttransfer`      | The time in seconds, it took from the start until the first byte was just about to be transferred. This includes time\_pretransfer and also the time the server needed to calculate the result.                                  |
-| `time_total`              | The total time in seconds, that the full operation lasted. The time will be displayed with millisecond resolution.                                                                                                               |
+| `time_total`              | The total time in seconds, that the full operation lasted. The time is displayed with millisecond resolution.                                                                                                               |
 | `url`                     | The URL used in the transfer. (Introduced in 7.75.0)                                                                                                                                                                             |
 | `url_effective`           | The URL that was fetched last. This is particularly meaningful if you have told curl to follow Location: headers (with `-L`).                                                                                                    |
 | `urlnum`                  | 0-based numerical index of the URL used in the transfer. (Introduced in 7.75.0)                                                                                                                                                  |

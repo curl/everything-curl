@@ -32,7 +32,7 @@ request to it by manually entering `GET /` and press return twice:
 
     curl telnet://localhost:80
 
-Your web server will most probably return something like this back:
+Your web server most probably returns something like this back:
 
     HTTP/1.1 400 Bad Request
     Date: Tue, 07 Dec 2021 07:41:16 GMT

@@ -26,8 +26,8 @@ goes and performs the entire thing through the debugger.
 
 ## Run a specific test without valgrind
 
-The test suite will use valgrind by default if it finds it, which is an
-excellent way to find problems but it also makes the test run much
-slower. Sometimes you want to do it faster:
+The test suite uses valgrind by default if it finds it, which is an excellent
+way to find problems but it also makes the test run much slower. Sometimes you
+want to do it faster:
 
     ./runtests.pl -n 144

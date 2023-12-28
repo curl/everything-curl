@@ -9,7 +9,7 @@ Here is how you use HSTS with libcurl.
 ## In-memory cache
 
 libcurl primarily features an in-memory cache for HSTS hosts, so that
-subsequent HTTP-only requests to a host name present in the cache will get
+subsequent HTTP-only requests to a host name present in the cache gets
 internally "redirected" to the HTTPS version. Assuming you have this feature
 enabled.
 
@@ -27,5 +27,5 @@ cache is only to be read from, and not write anything back to.
 ## Set a HSTS cache file
 
 If you want to persist the HSTS cache on disk, then set a filename with the
-`CURLOPT_HSTS` option. libcurl will read from this file at start of a transfer
-and write to it (unless it was set read-only) when the easy handle is closed.
+`CURLOPT_HSTS` option. libcurl reads from this file at start of a transfer and
+writes to it (unless it was set read-only) when the easy handle is closed.

@@ -31,8 +31,8 @@ a trailing slash:
     curl sftp://example.com/ -u user
 
 Note that both these protocols work with "users" and you do not ask for a file
-anonymously or with a standard generic name. Most systems will require that
-users authenticate, as outlined below.
+anonymously or with a standard generic name. Most systems require that users
+authenticate, as outlined below.
 
 When requesting a file from an SFTP or SCP URL, the file path given is
 considered to be the absolute path on the remote server unless you
@@ -55,17 +55,17 @@ SFTP URL) is done like this:
 2. curl then tries the offered methods one by one until one works or they all
    failed
 
-curl will attempt to use your public key as found in the `.ssh` subdirectory
-in your home directory if the server offers public key authentication. When
-doing do, you still need to tell curl which user name to use on the
-server. For example, the user 'john' lists the entries in his home directory
-on the remote SFTP server called 'sftp.example.com':
+curl attempts to use your public key as found in the `.ssh` subdirectory in
+your home directory if the server offers public key authentication. When doing
+do, you still need to tell curl which user name to use on the server. For
+example, the user 'john' lists the entries in his home directory on the remote
+SFTP server called 'sftp.example.com':
 
     curl -u john: sftp://sftp.example.com/
 
-If curl cannot authenticate with the public key for any reason, it will
-instead attempt to use the user name + password if the server allows it and
-the credentials are passed on the command line.
+If curl cannot authenticate with the public key for any reason, it instead
+attempts to use the user name + password if the server allows it and the
+credentials are passed on the command line.
 
 For example, the same user from above has the password `RHvxC6wUA` on a remote
 system and can download a file via SCP like this:
@@ -88,8 +88,8 @@ that the client stores the hashes for known servers is often called
 `known_hosts` and is put in a dedicated SSH directory. On Linux systems that
 is usually called `~/.ssh`.
 
-When curl connects to a SFTP and SCP host, it will make sure that the host's
-key hash is already present in the known hosts file or it will deny continued
+When curl connects to a SFTP and SCP host, it makes sure that the host's key
+hash is already present in the known hosts file or it denies continued
 operation because it cannot trust that the server is the right one. Once the
 correct hash exists in `known_hosts` curl can perform transfers.
 

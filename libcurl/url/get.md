@@ -21,46 +21,46 @@ function's fourth argument. You can set zero, one or more bits.
 
 ## `CURLU_DEFAULT_PORT`
 
-If the URL handle has no port number stored, this option will make
+If the URL handle has no port number stored, this option makes
 `curl_url_get()` return the default port for the used scheme.
 
 ## `CURLU_DEFAULT_SCHEME`
 
-If the handle has no scheme stored, this option will make `curl_url_get()`
-return the default scheme instead of error.
+If the handle has no scheme stored, this option makes `curl_url_get()` return
+the default scheme instead of error.
 
 ## `CURLU_NO_DEFAULT_PORT`
 
 Instructs `curl_url_get()` to *not* use a port number in the generated URL if
 that port number matches the default port used for the scheme. For example, if
-port number 443 is set and the scheme is `https`, the extracted URL will not
+port number 443 is set and the scheme is `https`, the extracted URL does not
 include the port number.
 
 ## `CURLU_URLENCODE`
 
-If set, will make `curl_url_get()` URL encode the host name part when a full
-URL is retrieved. If not set (default), libcurl returns the URL with the host
-name "raw" to support IDN names to appear as-is. IDN host names are typically
-using non-ASCII bytes that otherwise will be percent-encoded.
+This flag makes `curl_url_get()` URL encode the host name part when a full URL
+is retrieved. If not set (default), libcurl returns the URL with the host name
+"raw" to support IDN names to appear as-is. IDN host names are typically using
+non-ASCII bytes that otherwise are percent-encoded.
 
-Note that even when not asking for URL encoding, the `%` (byte 37) will be URL
+Note that even when not asking for URL encoding, the `%` (byte 37) is URL
 encoded in host names to make sure the host name remains valid.
 
 ## `CURLU_URLDECODE`
 
-Tells `curl_url_get()` to URL decode the contents before returning it. It will
-not attempt to decode the scheme, the port number or the full URL. The query
-component will also get plus-to-space conversion as a bonus when this bit is
-set. Note that this URL decoding is charset unaware and you will get a zero
+Tells `curl_url_get()` to URL decode the contents before returning it. It does
+attempt to decode the scheme, the port number or the full URL. The query
+component also gets plus-to-space conversion as a bonus when this bit is
+set. Note that this URL decoding is charset unaware and you get a zero
 terminated string back with data that could be intended for a particular
 encoding. If there are any byte values lower than 32 in the decoded string,
-the get operation will return an error instead.
+the get operation instead returns error.
 
 ## `CURLU_PUNYCODE`
 
 If set and `CURLU_URLENCODE` is not set, and asked to retrieve the
 `CURLUPART_HOST` or `CURLUPART_URL` parts, libcurl returns the host name in
 its punycode version if it contains any non-ASCII octets (and is an IDN
-name). If libcurl is built without IDN capabilities, using this bit will make
+name). If libcurl is built without IDN capabilities, using this bit makes
 `curl_url_get()` return `CURLUE_LACKS_IDN` if the host name contains anything
 outside the ASCII range.

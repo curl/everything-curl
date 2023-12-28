@@ -3,8 +3,8 @@
 Security is a primary concern for us in the curl project. We take it seriously
 and we work hard on providing secure and safe implementations of all protocols
 and related code. As soon as we get knowledge about a security related problem
-or just a suspected problem, we deal with it and we will attempt to provide a
-fix and security notice no later than in the next pending release.
+or just a suspected problem, we deal with it and we attempt to provide a fix
+and security notice no later than in the next pending release.
 
 We use a responsible disclosure policy, meaning that we prefer to discuss and
 work on security fixes out of the public eye and we alert the vendors on the

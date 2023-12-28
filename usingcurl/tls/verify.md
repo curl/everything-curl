@@ -27,9 +27,9 @@ curl needs a "CA store", a collection of CA certificates, to verify the TLS
 server it talks to.
 
 If curl is built to use a TLS library that is "native" to your platform,
-chances are that library will use the native CA store as well. If not, curl
-has to either have been built to know where the local CA store is, or users
-need to provide a path to the CA store when curl is invoked.
+chances are that library uses the native CA store as well. If not, curl has to
+either have been built to know where the local CA store is, or users need to
+provide a path to the CA store when curl is invoked.
 
 You can point out a specific CA bundle to use in the TLS handshake with the
 `--cacert` command line option. That bundle needs to be in PEM format. You can
@@ -40,7 +40,7 @@ also set the environment variable `CURL_CA_BUNDLE` to the full path.
 curl built on windows that is not using the native TLS library (Schannel), have
 an extra sequence for how the CA store can be found and used.
 
-curl will search for a CA cert file named "curl-ca-bundle.crt" in these
+curl searches for a CA cert file named `curl-ca-bundle.crt` in these
 directories and in this order:
 
  1. application's directory

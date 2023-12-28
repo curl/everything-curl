@@ -13,7 +13,7 @@ already done and prepared to allow you to easily build it yourself.
 
 There are also friendly people and organizations who put together binary
 packages of curl and libcurl and make them available for download. The
-different options will be explored below.
+different options are explored below.
 
 ## The latest version?
 

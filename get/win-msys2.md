@@ -54,7 +54,10 @@ This directory contains the PKGBUILD file and patches that are used for building
 makepkg-mingw --syncdeps --skippgpcheck
 ```
 
-That is it. The `--syncdeps` parameter will automatically check and prompt to install dependencies of `mingw-w64-curl` if these are not yet installed. Once the process is complete you will have 3 new files in the current directory, for example:
+That is it. The `--syncdeps` parameter automatically checks and prompts to
+install dependencies of `mingw-w64-curl` if these are not yet installed. Once
+the process is complete you have 3 new files in the current directory, for
+example:
 
 * `pacman -U mingw-w64-x86_64-curl-7.80.0-1-any.pkg.tar.zst`
 * `pacman -U mingw-w64-x86_64-curl-gnutls-7.80.0-1-any.pkg.tar.zst`

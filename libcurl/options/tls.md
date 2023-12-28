@@ -5,20 +5,20 @@ options for curl_easy_setopt that are dedicated for controlling how libcurl
 does SSL and TLS.
 
 Transfers done using TLS use safe defaults but since curl is used in many
-different scenarios and setups, chances are you will end up in situations
-where you want to change those behaviors.
+different scenarios and setups, chances are you end up in situations where you
+want to change those behaviors.
 
 ## Protocol version
 
 With `CURLOPT_SSLVERSION' and `CURLOPT_PROXY_SSLVERSION`you can specify which
 SSL or TLS protocol range that is acceptable to you. Traditionally SSL and TLS
 protocol versions have been found detect and unsuitable for use over time and
-even if curl itself will raise its default lower version over time you might
-want to opt for only using the latest and most security protocol versions.
+even if curl itself raises its default lower version over time you might want
+to opt for only using the latest and most security protocol versions.
 
 These options take a lowest acceptable version and optionally a maximum. If
 the server cannot negotiate a connection with that condition, the transfer
-will fail.
+fails.
 
 Example:
 
@@ -38,7 +38,7 @@ A TLS-using client needs to verify that the server it speaks to is the correct
 and trusted one. This is done by verifying that the server's certificate is
 signed by a Certificate Authority (CA) for which curl has a public key for and
 that the certificate contains the server's name. Failing any of these checks
-will cause the transfer to fail.
+cause the transfer to fail.
 
 For development purposes and for experimenting, curl allows an application to
 switch off either or both of these checks for the server or for an HTTPS
@@ -55,7 +55,7 @@ proxy.
 
 Optionally, you can tell curl to verify the certificate's public key against a
 known hash using `CURLOPT_PINNEDPUBLICKEY` or `CURLOPT_PROXY_PINNEDPUBLICKEY`.
-Here too, a mismatch will cause the transfer to fail.
+Here too, a mismatch causes the transfer to fail.
 
 ## Authentication
 

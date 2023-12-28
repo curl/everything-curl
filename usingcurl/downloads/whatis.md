@@ -16,10 +16,9 @@ A request for a resource is protocol-specific so an `FTP://` URL works
 differently than an `HTTP://` URL or an `SFTP://` URL.
 
 A URL without a path part, that is a URL that has a host name part only (like
-the `http://example.com` example above) will get a slash ('/') appended to it
-internally and then that is the resource curl will ask for from the server.
+the `http://example.com` example above) gets a slash ('/') appended to it
+internally and then that is the resource curl asks for from the server.
 
-If you specify multiple URLs on the command line, curl will download each URL
-one by one. It will not start the second transfer until the first one is
+If you specify multiple URLs on the command line, curl downloads each URL one
+by one. It does not start the second transfer until the previous one is
 complete, etc.
-

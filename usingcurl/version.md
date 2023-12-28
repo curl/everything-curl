@@ -9,7 +9,7 @@ or use the shorthand version:
     curl -V
 
 The output from that command line is typically four lines, out of which some
-will be rather long and might wrap in your terminal window.
+are rather long and might wrap in your terminal window.
 
 An example output from a Debian Linux in June 2020:
 
@@ -50,9 +50,9 @@ more than one TLS library which then makes curl - at start-up - select which
 particular backend to use for this invoke.
 
 If curl supports more than one TLS library like this, the ones that are *not*
-selected by default will be listed within parentheses. Thus, if you do not
-specify which backend to use use (with the `CURL_SSL_BACKEND` environment
-variable) the one listed without parentheses will be used.
+selected by default are listed within parentheses. Thus, if you do not specify
+which backend to use use (with the `CURL_SSL_BACKEND` environment variable)
+the one listed without parentheses is used.
 
 ## Line 2: Release-Date
 
@@ -105,7 +105,7 @@ Features that can be present there:
  - **Metalink** - This curl supports Metalink. In modern curl versions this
    option is never available.
  - **MultiSSL** - This curl supports multiple TLS backends. The first line
-   will detail exactly which TLS libraries.
+    details exactly which TLS libraries.
  - **NTLM** - NTLM authentication is supported.
  - **NTLM_WB** - NTLM authentication is supported.
  - **PSL** - Public Suffix List (PSL) is available and means that this curl has

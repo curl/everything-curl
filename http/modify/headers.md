@@ -1,19 +1,18 @@
 # Customize headers
 
-In an HTTP request, after the initial request-line, there will typically
-follow a number of request headers. That is a set of `name: value` pairs that
-ends with a blank line that separates the headers from the following request
-body (that sometimes is empty).
+In an HTTP request, after the initial request-line, there typically follows a
+number of request headers. That is a set of `name: value` pairs that ends with
+a blank line that separates the headers from the following request body (that
+sometimes is empty).
 
-curl will by default and on its own account pass a few headers in requests,
-like for example `Host:`, `Accept:`, `User-Agent:` and a few others that may
-depend on what the user asks curl to do.
+curl passes on a few default headers by default on its own account in
+requests, like for example `Host:`, `Accept:`, `User-Agent:` and a few others
+that may depend on what the user asks curl to do.
 
-All headers set by curl itself can be overridden, replaced if you will, by the
-user. You just then tell curl's `-H` or `--header` the new header to use and
-it will then replace the internal one if the header field matches one of those
-headers, or it will add the specified header to the list of headers to send in
-the request.
+All headers set by curl itself can be replaced, by the user. You just then
+tell curl's `-H` or `--header` the new header to use and it then replaces the
+internal one if the header field matches one of those headers, or it adds the
+specified header to the list of headers to send in the request.
 
 To change the `Host:` header, do this:
 

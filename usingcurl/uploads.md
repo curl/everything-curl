@@ -59,11 +59,11 @@ You send off an HTTP upload using the -T option with the file to upload:
 
 ## FTP uploads
 
-Working with FTP, you get to see the remote file system you will be accessing.
+Working with FTP, you get to see the remote file system you are accessing.
 You tell the server exactly in which directory you want the upload to be
 placed and which filename to use. If you specify the upload URL with a
-trailing slash, curl will append the locally used filename to the URL and
-then that will be the filename used when stored remotely:
+trailing slash, curl appends the locally used filename to the URL and then
+that becomes the filename used when stored remotely:
 
     curl -T uploadthis ftp://example.com/this/directory/
 
@@ -78,8 +78,8 @@ Learn much more about FTPing in the [FTP with curl](../ftp.md) section.
 
 You may not consider sending an email to be "uploading", but to curl it is.
 You upload the mail body to the SMTP server. With SMTP, you also need to
-include all the mail headers you need (To:, From:, Date:, etc.) in the mail
-body as curl will not add any at all.
+include all the mail headers you need (`To:`, `From:`, `Date:`, etc.) in the mail
+body as curl does not add any at all.
 
     curl -T mail smtp://mail.example.com/ --mail-from user@example.com
 

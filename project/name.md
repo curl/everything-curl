@@ -33,9 +33,9 @@ Soon after our curl was created another "curl" appeared that created a
 programming language. That curl still [exists](https://www.curl.com).
 
 Several libcurl bindings for various programming languages use the term "curl"
-or "CURL" in part or completely to describe their bindings. Sometimes
-you will find users talking about curl but referring to neither the command-line tool
-nor the library that is made by this project.
+or "CURL" in part or completely to describe their bindings. Sometimes you find
+users talking about curl but referring to neither the command-line tool nor
+the library that is made by this project.
 
 ## As a verb
 

@@ -28,7 +28,7 @@ from that: like spaces or "control characters".
 
 If the passed in string does not use a scheme, assume that the default one was
 intended. The default scheme is HTTPS. If this is not set, a URL without a
-scheme part will not be accepted as valid. Overrides the `CURLU_GUESS_SCHEME`
+scheme part is not accepted as valid. Overrides the `CURLU_GUESS_SCHEME`
 option if both are set.
 
 ## `CURLU_GUESS_SCHEME`
@@ -36,7 +36,7 @@ option if both are set.
 Makes libcurl allow the URL to be set without a scheme and it instead
 "guesses" which scheme that was intended based on the host name. If the
 outermost sub-domain name matches DICT, FTP, IMAP, LDAP, POP3 or SMTP then
-that scheme will be used, otherwise it picks HTTP. Conflicts with the
+that scheme is used, otherwise it picks HTTP. Conflicts with the
 `CURLU_DEFAULT_SCHEME` option which takes precedence if both are set.
 
 ## `CURLU_NO_AUTHORITY`
@@ -58,8 +58,7 @@ used for transfers is called `CURLOPT_PATH_AS_IS`.
 Makes the URL parser allow space (ASCII 32) where possible. The URL syntax
 does normally not allow spaces anywhere, but they should be encoded as `%20`
 or `+`. When spaces are allowed, they are still not allowed in the
-scheme. When space is used and allowed in a URL, it will be stored as-is
-unless `CURLU_URLENCODE` is also set, which then makes libcurl URL-encode the
-space before stored. This affects how the URL will be constructed when
-`curl_url_get()` is subsequently used to extract the full URL or individual
-parts.
+scheme. When space is used and allowed in a URL, it is stored as-is unless
+`CURLU_URLENCODE` is also set, which then makes libcurl URL-encode the space
+before stored. This affects how the URL is constructed when `curl_url_get()`
+is subsequently used to extract the full URL or individual parts.

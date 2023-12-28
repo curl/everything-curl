@@ -68,10 +68,10 @@ application needs to implement such a function:
     /* set the callback in the multi handle */
     curl_multi_setopt(multi_handle, CURLMOPT_SOCKETFUNCTION, socket_callback);
 
-Using this, libcurl will set and remove sockets your application should
+Using this, libcurl sets and removes sockets your application should
 monitor. Your application tells the underlying event-based system to wait for
-the sockets. This callback will be called multiple times if there are multiple
-sockets to wait for, and it will be called again when the status changes and
+the sockets. This callback is called multiple times if there are multiple
+sockets to wait for, and it is called again when the status changes and
 perhaps you should switch from waiting for a writable socket to instead wait
 for it to become readable.
 
@@ -89,10 +89,10 @@ registered:
 
 ### timer_callback
 
-The application is in control and will wait for socket activity. But even
-without socket activity there will be things libcurl needs to do. Timeout
-things, calling the progress callback, starting over a retry or failing a transfer that
-takes too long, etc. To make that work, the application must also make sure to
+The application is in control and waits for socket activity. But even without
+socket activity there are things libcurl needs to do. Timeout things, calling
+the progress callback, starting over a retry or failing a transfer that takes
+too long, etc. To make that work, the application must also make sure to
 handle a single-shot timeout that libcurl sets.
 
 libcurl sets the timeout with the timer_callback
@@ -110,18 +110,18 @@ libcurl sets the timeout with the timer_callback
 
 There is only one timeout for the application to handle for the entire multi
 handle, no matter how many individual easy handles that have been added or
-transfers that are in progress. The timer callback will be updated with the
+transfers that are in progress. The timer callback gets updated with the
 current nearest-in-time period to wait. If libcurl gets called before the
-timeout expiry time because of socket activity, it may update the
-timeout value again before it expires.
+timeout expiry time because of socket activity, it may update the timeout
+value again before it expires.
 
 When the event system of your choice eventually tells you that the timer has
 expired, you need to tell libcurl about it:
 
     curl_multi_socket_action(multi, CURL_SOCKET_TIMEOUT, 0, &running);
 
-…in many cases, this will make libcurl call the timer_callback again and
-set a new timeout for the next expiry period.
+…in many cases, this makes libcurl call the timer_callback again and set a new
+timeout for the next expiry period.
 
 ### How to start everything
 
@@ -130,8 +130,8 @@ socket and timer callbacks in the multi handle, you are ready to start the
 transfer.
 
 To kick it all off, you tell libcurl it timed out (because all easy handles
-start out with a short timeout) which will make libcurl call the callbacks to
-set things up and from then on you can just let your event system drive:
+start out with a short timeout) which make libcurl call the callbacks to set
+things up and from then on you can just let your event system drive:
 
     /* all easy handles and callbacks are setup */
 
@@ -150,5 +150,5 @@ The 'running_handles' counter returned by `curl_multi_socket_action` holds the
 number of current transfers not completed. When that number reaches zero, we
 know there are no transfers going on.
 
-Each time the 'running_handles' counter changes, `curl_multi_info_read()` will
-return info about the specific transfers that completed.
+Each time the 'running_handles' counter changes, `curl_multi_info_read()`
+returns info about the specific transfers that completed.

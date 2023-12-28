@@ -12,7 +12,7 @@ stop.
 ## easy API
 
 As explained elsewhere, the `curl_easy_perform()` function is a synchronous
-function call. It will do the entire transfer before it returns.
+function call. It does the entire transfer before it returns.
 
 There are a few different ways to stop a transfer before it would otherwise
 end:

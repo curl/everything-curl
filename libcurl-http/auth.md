@@ -9,7 +9,7 @@ for details on how to do that.
 
 ## User name and password
 
-libcurl will not try any HTTP authentication without a given user name. Set
+libcurl does not try any HTTP authentication without a given user name. Set
 one like:
 
     curl_easy_setopt(curl, CURLOPT_USERNAME, "joe");
@@ -19,16 +19,16 @@ separately:
 
     curl_easy_setopt(curl, CURLOPT_PASSWORD, "secret");
 
-That is all you need. This will make libcurl switch on its default
-authentication method for this transfer: *HTTP Basic*.
+That is all you need. This makes libcurl switch on its default authentication
+method for this transfer: *HTTP Basic*.
 
 ## Authentication required
 
 A client does not itself decide that it wants to send an authenticated
 request. It is something the server requires. When the server has a resource
-that is protected and requires authentication, it will respond with a 401 HTTP
-response and a `WWW-Authenticate:` header. The header will include details
-about what specific authentication methods it accepts for that resource.
+that is protected and requires authentication, it responds with a 401 HTTP
+response and a `WWW-Authenticate:` header. The header includes details about
+what specific authentication methods it accepts for that resource.
 
 ## Basic
 
@@ -43,7 +43,7 @@ outgoing header looks like this:
     Authorization: Basic am9lOnNlY3JldA==
 
 This authentication method is totally insecure over HTTP as the credentials
-will then be sent in plain-text over the network.
+are sent in plain-text over the network.
 
 You can explicitly tell libcurl to use Basic method for a specific transfer
 like this:
@@ -96,10 +96,10 @@ To pass on an OAuth 2.0 Bearer Access Token in a request, use
 ## Try-first
 
 Some HTTP servers allow one out of several authentication methods, in some
-cases you will find yourself in a position where you as a client does not want
-or is not able to select a single specific method before-hand and for yet
-another subset of cases your application does not know if the requested URL
-even require authentication or not!
+cases you find yourself in a position where you as a client does not want or
+is not able to select a single specific method before-hand and for yet another
+subset of cases your application does not know if the requested URL even
+require authentication or not!
 
 libcurl covers all these situations as well.
 
@@ -107,8 +107,8 @@ You can ask libcurl to use more than one method, and when doing so, you imply
 that curl first tries the request without any authentication at all and then
 based on the HTTP response coming back, it selects one of the methods that
 both the server and your application allow. If more than one would work, curl
-will pick them in a order based on how secure the methods are considered to
-be, picking the safest of the available methods.
+picks them in a order based on how secure the methods are considered to be,
+picking the safest of the available methods.
 
 Tell libcurl to accept multiple method by bitwise ORing them like this:
 

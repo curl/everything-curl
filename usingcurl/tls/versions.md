@@ -15,7 +15,7 @@ however so new that a lot of software, tools and libraries do not yet support
 it.
 
 curl is designed to use a "safe version" of SSL/TLS by default. It means that
-it will not negotiate SSLv2 or SSLv3 unless specifically told to, and in fact
+it does not negotiate SSLv2 or SSLv3 unless specifically told to, and in fact
 several TLS libraries no longer provide support for those protocols so in many
 cases curl is not even able to speak those protocol versions unless you make a
 serious effort.

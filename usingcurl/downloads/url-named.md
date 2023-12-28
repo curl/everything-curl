@@ -15,7 +15,7 @@ name version. The -O option selects the local filename to use by picking the
 filename part of the URL that you provide. This is important. You specify the
 URL and curl picks the name from this data. If the site redirects curl further
 (and if you tell curl to follow redirects), it does not change the filename
-curl will use for storing this.
+curl uses for storing this.
 
 ## Use the URL's filename part for all URLs
 

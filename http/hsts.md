@@ -17,13 +17,13 @@ Invoke curl and tell it which file to use as a hsts cache:
 
     curl --hsts hsts.txt https://example.com
 
-curl will only update the hsts info if the header is read over a secure
-transfer, so not when done over a clear text protocol.
+curl only updates the hsts info if the header is read over a secure transfer,
+so not when done over a clear text protocol.
 
 ## Use HSTS to update insecure protocols
 
-If the cache file now contains an entry for the given host name, it will
-automatically switch over to a secure protocol even if you try to connect to
+If the cache file now contains an entry for the given host name, it
+automatically switches over to a secure protocol even if you try to connect to
 it with an insecure one:
 
     curl --hsts hsts.txt http://example.com

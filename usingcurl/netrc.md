@@ -1,6 +1,11 @@
 # .netrc
 
-Unix systems have for a long time offered a way for users to store their user name and password for remote FTP servers. ftp clients have supported this for decades and this way allowed users to quickly login to known servers without manually having to reenter the credentials each time. The `.netrc` file is typically stored in a user's home directory. (On Windows, curl will look for it with the name `_netrc`).
+Unix systems have for a long time offered a way for users to store their user
+name and password for remote FTP servers. ftp clients have supported this for
+decades and this way allowed users to quickly login to known servers without
+manually having to reenter the credentials each time. The `.netrc` file is
+typically stored in a user's home directory. (On Windows, curl looks for it
+with the name `_netrc`).
 
 This being a widespread and well used concept, curl also supports it—if you ask it to. curl does not, however, limit this feature to FTP, but can get credentials for machines for any protocol with this. See further below for how.
 
@@ -28,11 +33,17 @@ The user name string for the remote machine. You cannot use a space in the name.
 
 **password string**
 
-Supply a password. If this token is present, curl will supply the specified string if the remote server requires a password as part of the login process. Note that if this token is present in the .netrc file you really **should** make sure the file is not readable by anyone besides the user. You cannot use a space when you enter the password.
+Supply a password. If this token is present, curl supplies the specified
+string if the remote server requires a password as part of the login
+process. Note that if this token is present in the .netrc file you really
+**should** make sure the file is not readable by anyone besides the user. You
+cannot use a space when you enter the password.
 
 **macdef name**
 
-Define a macro. This is **not supported by curl**. In order for the rest of the `.netrc` to still work fine, curl will properly skip every definition done with `macdef` that it finds.
+Define a macro. This is **not supported by curl**. In order for the rest of
+the `.netrc` to still work fine, curl properly skips every definition done
+with `macdef` that it finds.
 
 ## Example
 
@@ -52,7 +63,8 @@ machine example.com login daniel password qwerty
 
 ## User name matching
 
-When a URL is provided with a user name and .netrc is used, then curl will try to find the matching password for that machine and login combination.
+When a URL is provided with a user name and .netrc is used, then curl tries to
+find the matching password for that machine and login combination.
 
 ## Enable netrc
 

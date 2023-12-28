@@ -9,8 +9,8 @@ packet). libcurl writes the interleaved header as well as the included data
 for each call. The first byte is always an ASCII dollar sign. The dollar sign
 is followed by a one byte channel identifier and then a 2 byte integer length
 in network byte order. See RFC2326 Section 10.12 for more information on how
-RTP interleaving behaves. If unset or set to NULL, curl will use the default
-write function.
+RTP interleaving behaves. If unset or set to NULL, curl uses the default write
+function.
 
 The `CURLOPT_INTERLEAVEDATA` pointer is passed in the userdata argument in the
 callback.

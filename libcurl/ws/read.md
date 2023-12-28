@@ -5,7 +5,7 @@ these two methods:
 
 ## Write callback
 
-When the `CURLOPT_CONNECT_ONLY` option is **not** set, WebSocket data will be
+When the `CURLOPT_CONNECT_ONLY` option is **not** set, WebSocket data is
 delivered to the write callback.
 
 In the default "frame mode" (as opposed to "raw mode"), libcurl delivers parts

@@ -31,9 +31,9 @@ You then set up the corresponding transfer to use this share object:
 
     curl_easy_setopt(curl, CURLOPT_SHARE, share);
 
-Transfers done with this `curl` handle will thus use and store its cookie and
-dns information in the `share` handle. You can set several easy handles to
-share the same share object.
+Transfers done with this `curl` handle uses and stores its cookie and dns
+information in the `share` handle. You can set several easy handles to share
+the same share object.
 
 ## What to share
 
@@ -48,10 +48,10 @@ resolved host names for a while to make subsequent lookups faster.
 resume information for SSL connections to be able to resume a previous
 connection faster.
 
-`CURL_LOCK_DATA_CONNECT` - when set, this handle will use a shared connection
-cache and thus will probably be more likely to find existing connections to
-re-use etc, which may result in faster performance when doing multiple
-transfers to the same host in a serial manner.
+`CURL_LOCK_DATA_CONNECT` - when set, this handle uses a shared connection
+cache and thus is more likely to find existing connections to re-use etc,
+which may result in faster performance when doing multiple transfers to the
+same host in a serial manner.
 
 ## Locking
 
@@ -89,7 +89,7 @@ With the corresponding unlock callback could look like:
 
 ## Unshare
 
-A transfer will use the share object during its transfer and share what that
+A transfer uses the share object during its transfer and share what that
 object has been specified to share with other handles sharing the same object.
 
 In a subsequent transfer, `CURLOPT_SHARE` can be set to NULL to prevent a
@@ -97,9 +97,9 @@ transfer from continuing to share. It that case, the handle may start the next
 transfer with empty caches for the data that was previously shared.
 
 Between two transfers, a share object can also get updated to share a
-different set of properties so that the handles that share that object will
-share a different set of data next time. You remove an item to share from a
-shared object with the curl_share_setopt()'s `CURLSHOPT_UNSHARE` option like
-this when unsharing DNS data:
+different set of properties so that the handles that share that object shares
+a different set of data next time. You remove an item to share from a shared
+object with the curl_share_setopt()'s `CURLSHOPT_UNSHARE` option like this
+when unsharing DNS data:
 
     curl_share_setopt(share, CURLSHOPT_UNSHARE, CURL_LOCK_DATA_DNS);

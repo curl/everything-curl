@@ -4,9 +4,9 @@ If your curl command does not execute or return what you expected it to, your
 first gut reaction should always be to run the command with the `-v /
 --verbose` option to get more information.
 
-When verbose mode is enabled, curl gets more talkative and will explain and
-show a lot more of its doings. It will add informational tests and prefix them
-with '\*'. For example, let's see what curl might say when trying a simple HTTP
+When verbose mode is enabled, curl gets more talkative and explains and shows
+a lot more of its doings. It adds informational tests and prefix them with
+'\*'. For example, let's see what curl might say when trying a simple HTTP
 example (saving the downloaded data in the file called 'saved'):
 
     $ curl -v http://example.com -o saved
@@ -19,7 +19,7 @@ and it adds a trailing slash before it moves on.
 
 This tells us curl now tries to connect to this IP address. It means the name
 'example.com' has been resolved to one or more addresses and this is the first
-(and possibly only) address curl will try to connect to.
+(and possibly only) address curl tries to connect to.
 
     * Connected to example.com (93.184.216.34) port 80 (#0)
 
@@ -30,18 +30,18 @@ in the same command line you can see it use more connections or reuse
 connections, so the connection counter may increase or not increase
 depending on what curl decides it needs to do.
 
-If we use an HTTPS:// URL instead of an HTTP one, there will also be a whole
+If we use an `HTTPS://` URL instead of an HTTP one, there are also a whole
 bunch of lines explaining how curl uses CA certs to verify the server's
 certificate and some details from the server's certificate, etc. Including
 which ciphers were selected and more TLS details.
 
-In addition to the added information given from curl internals, the -v verbose
-mode will also make curl show all headers it sends and receives. For protocols
-without headers (like FTP, SMTP, POP3 and so on), we can consider commands and
-responses as headers and they will thus also be shown with -v.
+In addition to the added information given from curl internals, the `-v`
+verbose mode also makes curl show all headers it sends and receives. For
+protocols without headers (like FTP, SMTP, POP3 and so on), we can consider
+commands and responses as headers and they thus also are shown with `-v`.
 
 If we then continue the output seen from the command above (but ignore the
-actual HTML response), curl will show:
+actual HTML response), curl shows:
 
     > GET / HTTP/1.1
     > Host: example.com
@@ -49,9 +49,9 @@ actual HTML response), curl will show:
     > Accept: */*
     >
 
-This is the full HTTP request to the site. This request is how it looks
-in a default curl 7.45.0 installation and it may, of course, differ slightly
-between different releases and in particular it will change if you add command
+This is the full HTTP request to the site. This request is how it looks in a
+default curl 7.45.0 installation and it may, of course, differ slightly
+between different releases and in particular it changes if you add command
 line options.
 
 The last line of the HTTP request headers looks empty, and it is. It
@@ -59,8 +59,8 @@ signals the separation between the headers and the body, and in this request
 there is no "body" to send.
 
 Moving on and assuming everything goes according to plan, the sent request
-will get a corresponding response from the server and that HTTP response will
-start with a set of headers before the response body:
+gets a corresponding response from the server and that HTTP response starts
+with a set of headers before the response body:
 
     < HTTP/1.1 200 OK
     < Accept-Ranges: bytes
@@ -91,22 +91,22 @@ regular -v verbose mode does not show that data but only displays
 
 That 1270 bytes should then be in the 'saved' file. You can also see that
 there was a header named Content-Length: in the response that contained the
-exact file length (it will not always be present in responses).
+exact file length (it is not always be present in responses).
 
 ## HTTP/2 and HTTP/3
 
 When doing file transfers using version two or three of the HTTP protocol,
 curl sends and receives **compressed** headers. To display outgoing and
 incoming HTTP/2 and HTTP/3 headers in a readable and understandable way, curl
-will actually show the uncompressed versions in a style similar to how they
-appear with HTTP/1.1.
+shows the uncompressed versions in a style similar to how they appear with
+HTTP/1.1.
 
 ## Silence
 
 The opposite of verbose is, of course, to make curl more silent. With the `-s`
 (or `--silent`) option you make curl switch off the progress meter and not
-output any error messages for when errors occur. It gets mute. It will still
-output the downloaded data you ask it to.
+output any error messages for when errors occur. It gets mute. It still
+outputs the downloaded data you ask it to.
 
 With silence activated, you can ask for it to still output the error message on
 failures by adding `-S` or `--show-error`.

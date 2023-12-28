@@ -4,7 +4,7 @@ libcurl offers an API for iterating over all received HTTP headers and for
 extracting the contents from specific ones.
 
 When returning header content, libcurl trims leading and trailing whitespace
-but will not modify or change content in any other way.
+but does not modify or change content in any other way.
 
 This API was made official and is provided for real starting in libcurl
 7.84.0.
@@ -47,10 +47,9 @@ where the different parts are separated by a single whitespace character.
 
 The two header API function calls are perfectly possible to call at any time
 during a transfer, both from inside and outside of callbacks. It is however
-important to remember that the API will of course only return information
-about the state of the headers at the exact moment it is called, which might
-not be the final status if you call it while the transfer is still in
-progress.
+important to remember that the API only returns information about the state of
+the headers at the exact moment it is called, which might not be the final
+status if you call it while the transfer is still in progress.
 
  - [Header struct](headerapi/struct.md)
  - [Get a header](headerapi/get.md)

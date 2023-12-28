@@ -15,9 +15,8 @@ See [curl-users](https://lists.haxx.se/listinfo/curl-users)
 ## curl-library
 
 The main development list, and also for users of libcurl. We discuss how to
-use libcurl in applications as well as development of libcurl itself. You will
-find lots of questions on libcurl behavior, debugging and documentation
-issues.
+use libcurl in applications as well as development of libcurl
+itself. Questions on libcurl behavior, debugging and documentation issues etc.
 
 See [curl-library](https://lists.haxx.se/listinfo/curl-library)
 

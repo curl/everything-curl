@@ -3,7 +3,7 @@
 When given an input URL such as `http://example.com/file`, the path section of
 the URL gets extracted and is turned into `/file` in the HTTP request line.
 That item in the protocol is called the *request target* in HTTP. That is the
-resource this request will interact with. Normally this request target is
+resource this request interacts with. Normally this request target is
 extracted from the URL and then used in the request and as a user you do not
 need to think about it.
 
@@ -28,10 +28,10 @@ The path part of the URL is the part that starts with the first slash after
 the host name and ends either at the end of the URL or at a '?' or '#'
 (roughly speaking).
 
-If you include substrings including `/../` or `/./` in the path, curl will
-automatically squash them before the path is sent to the server, as is
+If you include substrings including `/../` or `/./` in the path, curl
+automatically squashes them before the path is sent to the server, as is
 dictated by standards and how such strings tend to work in local file
-systems. The `/../` sequence will remove the previous section so that
+systems. The `/../` sequence removes the previous section so that
 `/hello/sir/../` ends up just `/hello/` and `/./` is simply removed so that
 `/hello/./sir/` becomes `/hello/sir/`.
 

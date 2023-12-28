@@ -1,9 +1,9 @@
 # HTML and charsets
 
-curl will download the exact binary data that the server sends. This might be
-of importance to you in case, for example, you download an HTML page or
-other text data that uses a certain character encoding that your browser then
-displays as expected. curl will then not translate the arriving data.
+curl downloads the exact binary data that the server sends. This might be of
+importance to you in case, for example, you download an HTML page or other
+text data that uses a certain character encoding that your browser then
+displays as expected. curl does not translate the arriving data.
 
 A common example where this causes some surprising results is when a user
 downloads a web page with something like:

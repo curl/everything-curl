@@ -31,12 +31,12 @@ and you perform one with curl's `-d` and friends.
 
 ## POST outside of HTML
 
-POST is a regular HTTP method and there is no requirement that it be
-triggered by HTML or involve a browser. Lots of services, APIs and other systems
-allow you to pass in data these days in order to get things done.
+POST is a regular HTTP method and there is no requirement that it be triggered
+by HTML or involve a browser. Lots of services, APIs and other systems allow
+you to pass in data these days in order to get things done.
 
 If these services expect plain "raw" data or perhaps data formatted as JSON or
 similar, you want the [regular POST](post.md) approach. curl's `-d` option
-does not alter or encode the data at all but will just send exactly what you
-tell it to. Just pay attention that `-d` sets a default `Content-Type:` that
-might not be what you want.
+does not alter or encode the data at all but just sends exactly what you tell
+it to. Just pay attention that `-d` sets a default `Content-Type:` that might
+not be what you want.

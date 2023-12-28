@@ -53,8 +53,8 @@ of the brackets used for the ranges:
 
 ## Combinations
 
-You can use several globs in the same URL which then will make curl iterate
-over those, too. To download the images of Ben, Alice and Frank, in both the
+You can use several globs in the same URL which then makes curl iterate over
+those, too. To download the images of Ben, Alice and Frank, in both the
 resolutions 100 x 100 and 1000 x 1000, a command line could look like:
 
     curl -O "http://example.com/{Ben,Alice,Frank}-{100x100,1000x1000}.jpg"

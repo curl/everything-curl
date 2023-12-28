@@ -10,9 +10,8 @@ negotiate a dedicated connection for it.
 HTTP/3 is the HTTP version that is designed to communicate over QUIC. QUIC can
 for most particular purposes be considered a TCP+TLS replacement.
 
-All transfers that use HTTP/3 will therefore not use TCP. They will use QUIC.
-QUIC is a reliable transport protocol built over UDP. HTTP/3 implies use of
-QUIC.
+All transfers that use HTTP/3 therefore do not use TCP. They use QUIC. QUIC is
+a reliable transport protocol built over UDP. HTTP/3 implies use of QUIC.
 
 ## HTTPS only
 
@@ -44,20 +43,20 @@ bootstrap into HTTP/3 for a server.
 
 Note that you need that feature built-in and that it does not switch to HTTP/3
 for the *current* request unless the alt-svc cache is already populated, but
-it will rather store the info for use in the *next* request to the host.
+it rather stores the info for use in the *next* request to the host.
 
 ## When QUIC is denied
 
-A certain amount of QUIC connection attempts will fail, partly because many
+A certain amount of QUIC connection attempts fail, partly because many
 networks and hosts block or throttle the traffic.
 
-When `--http3` is used, curl will start a second transfer attempt a few
-hundred milliseconds after the QUIC connection is initiated which is using
-HTTP/2 or HTTP/1, so that if the connection attempt over QUIC fails or turns
-out to be unbearably slow, the connection using an older HTTP version can
-still succeed and perform the transfer. This allows users to use `--http3`
-with some amount of confidence that the operation will work.
+When `--http3` is used, curl starts a second transfer attempt a few hundred
+milliseconds after the QUIC connection is initiated which is using HTTP/2 or
+HTTP/1, so that if the connection attempt over QUIC fails or turns out to be
+unbearably slow, the connection using an older HTTP version can still succeed
+and perform the transfer. This allows users to use `--http3` with some amount
+of confidence that the operation works.
 
 `--http3-only` is provided to explicitly *not* try any older version in
-parallel, but will thus make the transfer fail immediately if no QUIC
-connection can be established.
+parallel, but thus makes the transfer fail immediately if no QUIC connection
+can be established.

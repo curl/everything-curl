@@ -28,8 +28,8 @@ with the previously used options adjusted.
 After configure has completed, you invoke `make` to build the entire thing and
 then finally `make install` to install curl, libcurl and associated
 things. `make install` requires that you have the correct rights in your
-system to create and write files in the installation directory or you will get
-some errors.
+system to create and write files in the installation directory or you get an
+error displayed.
 
 ## Cross-compiling
 
@@ -47,8 +47,8 @@ result then can be moved over and used on the other machine.
 
 ## Static linking
 
-By default, configure will setup the build files so that the following 'make'
-command will create both shared and static versions of libcurl. You can change
+By default, configure setups the build files so that the following 'make'
+command creates both shared and static versions of libcurl. You can change
 that with the `--disable-static` or `--disable-shared` options to configure.
 
 If you instead want to build with static versions of third party libraries
@@ -87,13 +87,12 @@ automatically check for OpenSSL, but modern versions do not.
  - Secure Transport: `--with-secure-transport`
  - wolfSSL: `--with-wolfssl`
 
-If you do not specify which TLS library to use, the configure script will
-fail. If you want to build *without* TLS support, you must explicitly ask for
-that with `--without-ssl`.
+If you do not specify which TLS library to use, the configure script fails. If
+you want to build *without* TLS support, you must explicitly ask for that with
+`--without-ssl`.
 
 These `--with-*` options also allow you to provide the install prefix so that
-configure will search for the specific library where you tell it to. Like
-this:
+configure searches for the specific library where you tell it to. Like this:
 
     ./configure --with-gnutls=/home/user/custom-gnutls
 
@@ -116,8 +115,7 @@ correct command-line options.
  - wolfSSH: `--with-wolfssh`
 
 These `--with-*` options also allow you to provide the install prefix so that
-configure will search for the specific library where you tell it to. Like
-this:
+configure searches for the specific library where you tell it to. Like this:
 
     ./configure --with-libssh2=/home/user/custom-libssh2
 

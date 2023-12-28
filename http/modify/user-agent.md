@@ -1,8 +1,8 @@
 # User-agent
 
 The User-Agent is a header that each client can set in the request to inform
-the server which user-agent it is. Sometimes servers will look at this header
-and determine how to act based on its contents.
+the server which user-agent it is. Sometimes servers look at this header and
+determine how to act based on its contents.
 
 The default header value is 'curl/[version]', as in `User-Agent: curl/7.54.1`
 for curl version 7.54.1.

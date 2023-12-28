@@ -76,7 +76,7 @@ contains one or more spaces. For example you want to set the user-agent field
 curl uses to be exactly `I am your father`, including those three spaces. Then
 you need to put quotes around the string when you pass it to curl on the
 command line. The exact quotes to use varies depending on your shell/command
-prompt, but generally it will work with double quotes in most places:
+prompt, but generally it works with double quotes in most places:
 
     curl -A "I am your father" http://example.com
 
@@ -84,9 +84,9 @@ Failing to use quotes, like if you would write the command line like this:
 
     curl -A I am your father http://example.com
 
-… will make curl only use 'I' as a user-agent string, and the following
-strings, 'am', your, etc will instead all be treated as separate URLs since
-they do not start with `-` to indicate that they are options and curl only ever
+… makes curl only use 'I' as a user-agent string, and the following strings,
+`am`, `your` and `father` are instead treated as separate URLs since they do
+not start with `-` to indicate that they are options and curl only ever
 handles options and URLs.
 
 To make the string itself contain double quotes, which is common when you for

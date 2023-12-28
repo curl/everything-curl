@@ -16,11 +16,11 @@ tends to confuse users.
 ## Static linking
 
 You can avoid the problem of curl finding an older dynamic libcurl library by
-instead linking with libcurl statically. This will however instead trigger a
-slew of other challenges because linking modern libraries with several third
-party dependencies statically is hard work. When you link statically, you need
-to make sure you provide all the dependencies to the linker. This is not a
-method we recommend.
+instead linking with libcurl statically. This however instead triggers a slew
+of other challenges because linking modern libraries with several third party
+dependencies statically is hard work. When you link statically, you need to
+make sure you provide all the dependencies to the linker. This is not a method
+we recommend.
 
 ## Dynamic linking
 
@@ -74,7 +74,7 @@ application, you can make that load your custom libcurl build like this:
 
 With `rpath` set, the executable linked against `$HOME/install/lib/libcurl.so`
 then makes the runtime linker use that specific path and library, while other
-binaries in your system will continue to use the system libcurl.
+binaries in your system continue to use the system libcurl.
 
 When you want to make your custom build of `curl` use its own libcurl and you
 install them into `$HOME/install`, then a configure command line for this

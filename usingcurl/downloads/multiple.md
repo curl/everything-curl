@@ -5,9 +5,9 @@ of course, times when you want to store these downloads in nicely named local
 files.
 
 The key to understanding this is that each download URL needs its own "storage
-instruction". Without said "storage instruction", curl will default to sending
-the data to stdout. If you ask for two URLs and only tell curl where to save
-the first URL, the second one is sent to stdout. Like this:
+instruction". Without said "storage instruction", curl defaults to sending the
+data to stdout. If you ask for two URLs and only tell curl where to save the
+first URL, the second one is sent to stdout. Like this:
 
     curl -o one.html http://example.com/1 http://example.com/2
 
@@ -30,6 +30,6 @@ download multiple URLs, use more of them:
 
 ## Parallel
 
-Unless told otherwise, curl will download all given URLs in a serial fashion,
-one by one. By using `-Z` (or `--parallel`) curl can instead do the transfers
+Unless told otherwise, curl downloads all given URLs in a serial fashion, one
+by one. By using `-Z` (or `--parallel`) curl can instead do the transfers
 [in parallel](../../cmdline/urls/parallel.md): several ones at once.

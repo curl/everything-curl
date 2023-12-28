@@ -1,9 +1,9 @@
 # Port number
 
-Each protocol has a "default port" that curl will use for it, unless a
-specified port number is given. The optional port number can be provided
-within the URL after the host name part, as a colon and the port number
-written in decimal. For example, asking for an HTTP document on port 8080:
+Each protocol has a default port number that curl uses, unless a specified
+port number is given. The optional port number can be provided within the URL
+after the host name part, as a colon and the port number written in
+decimal. For example, asking for an HTTP document on port 8080:
 
     curl http://example.com:8080/
 

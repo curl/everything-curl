@@ -1,11 +1,11 @@
 # Connection timeout
 
-curl will typically make a TCP connection to the host as an initial part of
-its network transfer. This TCP connection can fail or be slow, if there are
-shaky network conditions or faulty remote servers.
+curl typically makes a TCP connection to the host as an initial part of its
+network transfer. This TCP connection can fail or be slow, if there are shaky
+network conditions or faulty remote servers.
 
-To reduce the impact on your scripts or other use, you can set the maximum time
-in seconds which curl will allow for the connection attempt. With
+To reduce the impact on your scripts or other use, you can set the maximum
+time in seconds which curl allows for the connection attempt. With
 `--connect-timeout` you tell curl the maximum time to allow for connecting,
 and if curl has not connected in that time it returns a failure.
 

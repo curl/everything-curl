@@ -1,8 +1,8 @@
 # Responses
 
-When an HTTP client talks HTTP to a server, the server *will* respond with an
-HTTP response message or curl will consider it an error and returns 52 with
-the error message "Empty reply from server".
+When an HTTP client talks HTTP to a server, the server responds with an HTTP
+response message or curl considers it an error and returns 52 with the error
+message `Empty reply from server`.
 
 ## Size of an HTTP response
 
@@ -41,8 +41,8 @@ Remember that you can use curl's `--write-out` option to extract the response
 code. See the [--write-out](../usingcurl/verbose/writeout.md) section.
 
 To make curl return an error for response codes >= 400, you need to use
-`--fail` or `--fail-with-body`. Then curl will exit with error code 22 for
-such occurrences.
+`--fail` or `--fail-with-body`. Then curl exits with error code 22 for such
+occurrences.
 
 ## CONNECT response codes
 
@@ -70,8 +70,7 @@ response has ended even though the server did not know the full size before it
 started to send it. This is usually the case when the response is dynamic and
 generated at the point when the request comes.
 
-Clients like curl will, of course, decode the chunks and not show the chunk
-sizes to users.
+Clients like curl decode the chunks and do not show the chunk sizes to users.
 
 ## Gzipped transfers
 
@@ -100,9 +99,9 @@ to allow transparent compression as a transfer encoding, and curl supports
 this feature.
 
 The client then simply asks the server to do compression transfer encoding and
-if acceptable, it will respond with a header indicating that it will and curl
-will then transparently uncompress that data on arrival. A user enables asking
-for compressed transfer encoding with `--tr-encoding`:
+if acceptable, it responds with a header indicating that it does and curl then
+transparently decompresses that data on arrival. A curl user asks for a
+compressed transfer encoding with `--tr-encoding`:
 
     curl --tr-encoding http://example.com/
 

@@ -15,7 +15,7 @@ For situations like this, you can specify which local ports curl should bind
 the connection to. You can specify a single port number to use, or a range of
 ports. We recommend using a range because ports are scarce resources and the
 exact one you want may already be in use. If you ask for a local port number
-(or range) that curl cannot obtain for you, it will exit with a failure.
+(or range) that curl cannot obtain for you, it exits with a failure.
 
 Also, on most operating systems you cannot bind to port numbers below 1024
 without having a higher privilege level (root) and we generally advise

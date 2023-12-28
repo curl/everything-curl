@@ -15,25 +15,25 @@ an associated `Proxy-Authenticate:` header that lists all the authentication
 methods that the proxy supports.
 
 It might be worth to note that most websites of today do not require HTTP
-authentication for login etc, but they will instead ask users to login on web
-pages and then the browser will issue a POST with the user and password etc,
-and then subsequently maintain cookies for the session.
+authentication for login etc, but they instead ask users to login on web pages
+and then the browser issues a POST with the user and password etc, and then
+subsequently maintain cookies for the session.
 
 To tell curl to do an authenticated HTTP request, you use the `-u, --user`
 option to provide user name and password (separated with a colon). Like this:
 
     curl --user daniel:secret http://example.com/
 
-This will make curl use the default "Basic" HTTP authentication method. Yes,
-it is actually called Basic and it is truly basic. To explicitly ask for the
-basic method, use `--basic`.
+This makes curl use the default "Basic" HTTP authentication method. Yes, it is
+actually called Basic and it is truly basic. To explicitly ask for the basic
+method, use `--basic`.
 
 The Basic authentication method sends the user name and password in clear text
 over the network (base64 encoded) and should be avoided for HTTP transport.
 
 When asking to do an HTTP transfer using a single (specified or implied),
-authentication method, curl will insert the authentication header already in
-the first request on the wire.
+authentication method, curl inserts the authentication header already in the
+first request on the wire.
 
 If you would rather have curl first *test* if the authentication is really
 required, you can ask curl to figure that out and then automatically use the

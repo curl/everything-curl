@@ -3,8 +3,8 @@
 When setting up connections to sites, curl keeps old connections around for a
 while so that if the next transfer is done using the same host as a previous
 transfer, it can reuse the same connection again and thus save a lot of
-time. We call this persistent connections. curl will always try to keep
-connections alive and reuse existing connections as far as it can.
+time. We call this persistent connections. curl always tries to keep
+connections alive and reuses existing connections as far as it can.
 
 Connections are kept in the *connection pool*, sometimes also called the
 *connection cache*.

@@ -11,8 +11,8 @@ with dictates which of these methods you can and shall use against it.
 
 The *implicit* way is when you use `ftps://` in your URL. This makes curl
 connect to the host and do a TLS handshake immediately, without doing anything
-in the clear. If no port number is specified in the URL, curl will use port
-990 for this. This is usually not how FTPS is done.
+in the clear. If no port number is specified in the URL, curl uses port 990
+for this. This is usually not how FTPS is done.
 
 ## Explicit FTPS
 

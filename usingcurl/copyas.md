@@ -12,7 +12,16 @@ You get the site shown with Firefox's network tools. You then right-click on the
 
 ## From Chrome and Edge
 
-When you pop up the More tools->Developer mode in Chrome or Edge, and you select the Network tab you see the HTTP traffic used to get the resources of the site. On the line of the specific resource you are interested in, you right-click with the mouse and you select "Copy as cURL" and it will generate a command line for you in your clipboard. Paste that in a shell to get a curl command line that makes the transfer. This feature is available by default in all Chrome and Chromium installations. _(Note: Chromium browsers in Windows may generate an incorrect command line that is misquoted due to a_ [_bug_](https://bugs.chromium.org/p/chromium/issues/detail?id=1242803) _in Chromium)._
+When you pop up the More tools->Developer mode in Chrome or Edge, and you
+select the Network tab you see the HTTP traffic used to get the resources of
+the site. On the line of the specific resource you are interested in, you
+right-click with the mouse and you select "Copy as cURL" and it generates a
+command line for you in your clipboard. Paste that in a shell to get a curl
+command line that makes the transfer. This feature is available by default in
+all Chrome and Chromium installations. _(Note: Chromium browsers in Windows
+may generate an incorrect command line that is misquoted due to a_
+[_bug_](https://bugs.chromium.org/p/chromium/issues/detail?id=1242803) _in
+Chromium)._
 
 ![copy as curl with Chrome](chrome-copy-as-curl.png)
 
@@ -32,8 +41,18 @@ If this is something you would like to get done more often, you probably find us
 
 ## Not perfect
 
-These methods all give you a command line to reproduce their HTTP transfers. You will also learn they are still often not the perfect solution to your problems. Why? Well mostly because these tools are written to rerun the _exact_ same request that you copied, while you often want to rerun the same logic but not sending an exact copy of the same cookies and file contents etc.
+These methods all give you a command line to reproduce their HTTP transfers.
+They are often not the perfect solution to your problems. Why? Well mostly
+because these tools are written to rerun the _exact_ same request that you
+copied, while you often want to rerun the same logic but not sending an exact
+copy of the same cookies and file contents etc.
 
-These tools will give you command lines with static and fixed cookie contents to send in the request, because that is the contents of the cookies that were sent in the browser's requests. You will most likely want to rewrite the command line to dynamically adapt to whatever the content is in the cookie that the server told you in a previous response. Etc.
+These tools give you command lines with static and fixed cookie contents to
+send in the request, because that is the contents of the cookies that were
+sent in the browser's requests. You most likely want to rewrite the command
+line to dynamically adapt to whatever the content is in the cookie that the
+server told you in a previous response. Etc.
 
-The copy as curl functionality is also often notoriously bad at using `-F` and instead they provide handcrafted `--data-binary` solutions including the mime separator strings etc.
+The copy as curl functionality is also often notoriously bad at using `-F` and
+instead they provide handcrafted `--data-binary` solutions including the mime
+separator strings etc.

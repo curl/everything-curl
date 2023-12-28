@@ -1,9 +1,9 @@
 # Header struct
 
 The header struct pointer the header API functions return, points to memory
-associated with the easy handle and subsequent calls to the functions will
-clobber that struct. Applications need to copy the data if they want to keep
-it around. The memory used for the struct gets freed with calling
+associated with the easy handle and subsequent calls to the functions clobber
+that struct. Applications need to copy the data if they want to keep it
+around. The memory used for the struct gets freed with calling
 `curl_easy_cleanup()`.
 
 ## The struct
@@ -17,8 +17,8 @@ it around. The memory used for the struct gets freed with calling
        void *anchor;
     };
 
-**name** is the name of header. It will use the casing used for the first
-instance of the header with this name.
+**name** is the name of header. It uses the casing used for the first instance
+of the header with this name.
 
 **value** is the content. It comes exactly as delivered over the network but
 with leading and trailing whitespace and newlines stripped off. The data is

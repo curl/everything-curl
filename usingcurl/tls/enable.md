@@ -13,7 +13,7 @@ speak TLS already from the first connection handshake while the other is to
 instructions.
 
 With curl, if you explicitly specify the TLS version of the protocol (the one
-that has a name that ends with an 'S' character) in the URL, curl will try to
+that has a name that ends with an 'S' character) in the URL, curl tries to
 connect with TLS from start, while if you specify the non-TLS version in the
 URL you can _usually_ upgrade the connection to TLS-based with the `--ssl`
 option.
@@ -30,11 +30,11 @@ The support table looks like this:
 | SMTP   | SMTPS       | **yes** |
 
 The protocols that _can_ do `--ssl` all favor that method. Using `--ssl` means
-that curl will *attempt* to upgrade the connection to TLS but if that fails,
-it will still continue with the transfer using the plain-text version of the
+that curl *attempts* to upgrade the connection to TLS but if that fails, it
+still continues with the transfer using the plain-text version of the
 protocol. To make the `--ssl` option **require** TLS to continue, there is
-instead the `--ssl-reqd` option which will make the transfer fail if curl
-cannot successfully negotiate TLS.
+instead the `--ssl-reqd` option which makes the transfer fail if curl cannot
+successfully negotiate TLS.
 
 Require TLS security for your FTP transfer:
 
@@ -44,8 +44,8 @@ Suggest TLS to be used for your FTP transfer:
 
     curl --ssl ftp://ftp.example.com/file.txt
 
-Connecting directly with TLS (to HTTPS://, LDAPS://, FTPS:// etc) means that
-TLS is mandatory and curl will return an error if TLS is not negotiated.
+Connecting directly with TLS (to `HTTPS://`, `LDAPS://`, `FTPS://` etc) means that
+TLS is mandatory and curl returns an error if TLS is not negotiated.
 
 Get a file over HTTPS:
 

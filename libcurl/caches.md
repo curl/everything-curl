@@ -1,7 +1,8 @@
 # Caches
 
 libcurl caches different information in order to help subsequent transfers to
-perform faster. There are three key caches: DNS, connections and TLS sessions.
+perform faster. There are four key caches: DNS, connections, TLS sessions and
+CA certs.
 
 When the multi interface is used, these caches are by default shared among all
 the easy handles that are added to that single multi handle, and when the easy
@@ -61,3 +62,18 @@ libcurl caches session IDs and tickets associated with host names and port
 numbers, so if a subsequent connection attempt is made to a host for which
 libcurl has a cached ID or ticket, using that can greatly decrease the TLS
 handshake process and therefore the time needed until completion.
+
+## CA cert cache
+
+With some of the TLS backends curl supports (OpenSSL and Schannel), it builds
+a CA cert store cache in memory and keeps it there for subsequent transfers to
+use. This lets transfers skip unnecessary loading and parsing time that comes
+from loading and handling the sometimes rather big CA cert bundles.
+
+Since the CA cert bundle might be updated, the life-time of the cache is by
+default set to 24 hours so that long-running applications will flush the cache
+and reload the file at least once every day - to be able to load and use a new
+version of the store.
+
+Applications can change the CA cert cache timeout with the
+`CURLOPT_CA_CACHE_TIMEOUT` option in case this default is not good enough.

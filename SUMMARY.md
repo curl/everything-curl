@@ -307,4 +307,4 @@
     * [Continuous Integration](internals/tests/ci.md)
     * [Autobuilds](internals/tests/autobuilds.md)
     * [Torture](internals/tests/torture.md)
-* [Index](bookindex.md#everything-curl-index)
+* [Index](bookindex.md)

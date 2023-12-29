@@ -313,7 +313,7 @@ A basic Unix shell script could look like something like this:
   failed to upgrade the connection to TLS when asked to.
 
  65. Sending the data requires a rewind that failed. In some situations curl
-  needs to rewind in order to send the data again and if this can't be done,
+  needs to rewind in order to send the data again and if this cannot be done,
   the operations fails.
 
  66. Failed to initialize the OpenSSL SSL Engine. This can only happen when

@@ -1,24 +1,35 @@
 # Index
 
 ## .
+
  - .netrc: [Command line leakage](cmdline/passwords.md#command-line-leakage), [Using curl](usingcurl.md#using-curl), [.netrc](usingcurl/netrc.md#netrc), [All options](libcurl/options/all.md#all-options), [`<features>`](internals/tests/file-format.md#less-than-features-greater-than)
+
 ## /
- - /etc/hosts: [Run a local clone](source/web.md#run-a-local-clone), [Host](cmdline/urls/host.md#host), [Edit the hosts file](usingcurl/connections/name.md#edit-the-hosts-file)
+
+- /etc/hosts: [Run a local clone](source/web.md#run-a-local-clone), [Host](cmdline/urls/host.md#host), [Edit the hosts file](usingcurl/connections/name.md#edit-the-hosts-file)
+
 ## <
- - <curl/curl.h>: [include/curl](source/layout.md#include-curl), [Header files](libcurl/headers.md#header-files), [Example](libcurl/control/stopslow.md#example), [Example](libcurl/control/ratelimit.md#example), [Example](libcurl/control/meter.md#example), [Include files](libcurl/url/include.md#include-files), [--libcurl](libcurl/--libcurl.md#libcurl), [Get a simple HTTP page](libcurl/examples/get.md#get-a-simple-http-page), [Get a response into memory](libcurl/examples/getinmem.md#get-a-response-into-memory), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http), [Get an FTP directory listing](libcurl/examples/ftplist.md#get-an-ftp-directory-listing), [Non-blocking HTTP form-post](libcurl/examples/http-ul-nonblock.md#non-blocking-http-form-post)
+
+- <curl/curl.h>: [include/curl](source/layout.md#include-curl), [Header files](libcurl/headers.md#header-files), [Example](libcurl/control/stopslow.md#example), [Example](libcurl/control/ratelimit.md#example), [Example](libcurl/control/meter.md#example), [Include files](libcurl/url/include.md#include-files), [--libcurl](libcurl/--libcurl.md#libcurl), [Get a simple HTTP page](libcurl/examples/get.md#get-a-simple-http-page), [Get a response into memory](libcurl/examples/getinmem.md#get-a-response-into-memory), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http), [Get an FTP directory listing](libcurl/examples/ftplist.md#get-an-ftp-directory-listing), [Non-blocking HTTP form-post](libcurl/examples/http-ul-nonblock.md#non-blocking-http-form-post)
+
 ## A
- - --alt-svc: [Enable](http/altsvc.md#enable)
+
+- --alt-svc: [Enable](http/altsvc.md#enable)
  - --anyauth: [Authentication](http/auth.md#authentication)
  - apt: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian)
  - Arch Linux: [Arch Linux](get/linux.md#arch-linux)
+
 ## B
- - -b: [Cookie engine](http/cookies.md#cookie-engine), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
+
+- -b: [Cookie engine](http/cookies.md#cookie-engine), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
  - --basic: [Authentication](http/auth.md#authentication)
  - BearSSL: [lib/vtls](source/layout.md#lib-vtls), [TLS libraries](build/tls.md#tls-libraries), [`<features>`](internals/tests/file-format.md#less-than-features-greater-than)
  - BoringSSL: [TLS libraries](build/tls.md#tls-libraries), [BoringSSL](build/boringssl.md#boringssl), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions)
  - brotli: [HTTP Compression](build/deps.md#http-compression), [Version](usingcurl/version.md#version), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs), [About content encodings](internals/content-encoding.md#about-content-encodings), [Conditional lines](internals/tests/file-format.md#conditional-lines)
+
 ## C
- - -c: [Writing cookies to file](http/cookies.md#writing-cookies-to-file), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
+
+- -c: [Writing cookies to file](http/cookies.md#writing-cookies-to-file), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
  - c-ares: [c-ares](build/deps.md#c-ares), [Line 4: Features](usingcurl/version.md#line-4-features), [Name resolve tricks with c-ares](usingcurl/connections/name.md#name-resolve-tricks-with-c-ares), [Name resolver backends](libcurl/conn/names.md#name-resolver-backends), [`CURLRES_ARES`](internals/resolving.md#curlres_ares), [`<features>`](internals/tests/file-format.md#less-than-features-greater-than)
  - C89: [Comments](source/style.md#comments), [Build curl](build.md#build-curl)
  - CA: [Verbose](usingcurl/verbose.md#verbose), [MITM proxy](usingcurl/proxies/mitm.md#mitm-proxy), [Available exit codes](usingcurl/returns.md#available-exit-codes), [Verifying server certificates](usingcurl/tls/verify.md#verifying-server-certificates), [OCSP stapling](usingcurl/tls/stapling.md#ocsp-stapling), [Verification](libcurl/options/tls.md#verification), [All options](libcurl/options/all.md#all-options), [Available information](libcurl/getinfo.md#available-information), [Caches](libcurl/caches.md#caches), [CA store cache](internals/caches.md#ca-store-cache)
@@ -170,8 +181,10 @@
  - curl_url_get: [`CURLU_ALLOW_SPACE`](libcurl/url/parse.md#curlu_allow_space), [Get a URL](libcurl/url/get.md#get-a-url), [Get individual URL parts](libcurl/url/get-part.md#get-individual-url-parts)
  - curl_url_set: [Include files](libcurl/url/include.md#include-files), [Parse a URL](libcurl/url/parse.md#parse-a-url), [Redirect to a relative URL](libcurl/url/redirect.md#redirect-to-a-relative-url), [Set individual URL parts](libcurl/url/set-part.md#set-individual-url-parts), [Append to the query](libcurl/url/append-query.md#append-to-the-query), [CURLOPT\_CURLU](libcurl/url/setopt.md#curlopt-_curlu)
  - curl_version_info: [Support](libcurl/ws/support.md#support), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs)
+
 ## D
- - -d: [Arguments to options](cmdline/options.md#arguments-to-options), [Separate options per URL](cmdline/urls/options.md#separate-options-per-url), [POST](usingcurl/uploads.md#post), [MQTT](usingcurl/mqtt.md#mqtt), [HTTP with curl](http.md#http-with-curl), [Method](http/method.md#method), [Simple POST](http/post/simple.md#simple-post), [Content-Type](http/post/content-type.md#content-type), [Posting binary](http/post/binary.md#posting-binary), [Convert to GET](http/post/convert-to-get.md#convert-to-get), [Expect 100-continue](http/post/expect100.md#expect-100-continue), [Chunked encoded POSTs](http/post/chunked.md#chunked-encoded-posts), [Hidden form fields](http/post/hiddenfields.md#hidden-form-fields), [-d vs -F](http/postvspost.md#d-vs--f), [HTTP PUT](http/put.md#http-put), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
+
+- -d: [Arguments to options](cmdline/options.md#arguments-to-options), [Separate options per URL](cmdline/urls/options.md#separate-options-per-url), [POST](usingcurl/uploads.md#post), [MQTT](usingcurl/mqtt.md#mqtt), [HTTP with curl](http.md#http-with-curl), [Method](http/method.md#method), [Simple POST](http/post/simple.md#simple-post), [Content-Type](http/post/content-type.md#content-type), [Posting binary](http/post/binary.md#posting-binary), [Convert to GET](http/post/convert-to-get.md#convert-to-get), [Expect 100-continue](http/post/expect100.md#expect-100-continue), [Chunked encoded POSTs](http/post/chunked.md#chunked-encoded-posts), [Hidden form fields](http/post/hiddenfields.md#hidden-form-fields), [-d vs -F](http/postvspost.md#d-vs--f), [HTTP PUT](http/put.md#http-put), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
  - --data: [Arguments to options](cmdline/options.md#arguments-to-options), [Separate options per URL](cmdline/urls/options.md#separate-options-per-url), [POST](usingcurl/uploads.md#post), [Simple POST](http/post/simple.md#simple-post), [JSON](http/post/json.md#json), [URL encode data](http/post/url-encode.md#url-encode-data)
  - --data-binary: [Not perfect](usingcurl/copyas.md#not-perfect), [Simple POST](http/post/simple.md#simple-post), [Posting binary](http/post/binary.md#posting-binary), [URL encode data](http/post/url-encode.md#url-encode-data)
  - --data-urlencode: [Query](cmdline/urls/query.md#query), [URL encode data](http/post/url-encode.md#url-encode-data), [Convert to GET](http/post/convert-to-get.md#convert-to-get)
@@ -179,8 +192,10 @@
  - Debug callback: [All options](libcurl/options/all.md#all-options), [Debug](libcurl/callbacks/debug.md#debug), [Verbose operations](libcurl/verbose.md#verbose-operations)
  - development: [Project communication](project/comm.md#project-communication), [curl-users](project/maillists.md#curl-users), [Reporting bugs](project/bugs.md#reporting-bugs), [Commercial support](project/support.md#commercial-support), [Development](project/devel.md#development), [The development team](project/devteam.md#the-development-team), [Future](project/future.md#future), [Ubuntu and Debian](get/linux.md#ubuntu-and-debian), [Get libcurl for macOS](get/macos.md#get-libcurl-for-macos), [Who decides what goes in?](source/contributing.md#who-decides-what-goes-in), [From Safari](usingcurl/copyas.md#from-safari), [Figure out what a browser sends](http/post/browsersends.md#figure-out-what-a-browser-sends), [Verification](libcurl/options/tls.md#verification), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs), [Tests](internals/tests.md#tests), [Debug builds](internals/tests/debug.md#debug-builds)
  - DICT: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support), [DICT](protocols/curl.md#dict), [Without scheme](cmdline/urls/scheme.md#without-scheme), [Using curl](usingcurl.md#using-curl), [Version](usingcurl/version.md#version), [DICT](usingcurl/dict.md#dict), [`CURLU_GUESS_SCHEME`](libcurl/url/parse.md#curlu_guess_scheme)
+
 ## E
- - Edge: [Copy as curl](usingcurl/copyas.md#copy-as-curl), [Ifdefs](internals/windows-vs-unix.md#ifdefs)
+
+- Edge: [Copy as curl](usingcurl/copyas.md#copy-as-curl), [Ifdefs](internals/windows-vs-unix.md#ifdefs)
  - environment variables: [Environment variables](cmdline/variables.md#environment-variables), [Windows](usingcurl/verbose/writeout.md#windows), [Proxies](usingcurl/proxies.md#proxies), [Proxy environment variables](usingcurl/proxies/env.md#proxy-environment-variables), [Proxy environment variables](libcurl/conn/proxies.md#proxy-environment-variables), [`<setenv>`](internals/tests/file-format.md#less-than-setenv-greater-than)
  - ETag: [Conditionals](http/conditionals.md#conditionals)
  - --etag-compare: [Check by modification of content](http/conditionals.md#check-by-modification-of-content)

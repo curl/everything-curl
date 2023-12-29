@@ -4,21 +4,15 @@
 
 Instruct curl to output a string by passing plain text to this option:
 
-```
-curl -w "formatted string" http://example.com/
-```
+    curl -w "formatted string" http://example.com/
 
 …and you can also have curl read that string from a given file instead if you prefix the string with '@':
 
-```
-curl -w @filename http://example.com/
-```
+    curl -w @filename http://example.com/
 
 …or even have curl read the string from stdin if you use '-' as filename:
 
-```
-curl -w @- http://example.com/
-```
+    curl -w @- http://example.com/
 
 ## Variables
 
@@ -29,9 +23,7 @@ carriage return with and a tab space with .
 
 As an example, we can output the Content-Type and the response code from an HTTP transfer, separated with newlines and some extra text like this:
 
-```
-curl -w "Type: %{content_type}\nCode: %{response_code}\n" http://example.com
-```
+    curl -w "Type: %{content_type}\nCode: %{response_code}\n" http://example.com
 
 The output is sent to stdout by default so you probably want to make sure that you do not also send the downloaded content to stdout as then you might have a hard time to separate out the data; or use `%{stderr}` to send the output to stderr.
 
@@ -41,20 +33,21 @@ This option also provides an easy to use way to output the contents of HTTP resp
 
 Use `%header{name}` in the string, where `name` is the case insensitive name of the header (without the trailing colon). The output header contents are then shown exactly as was sent over the network, with leading and trailing whitespace trimmed. Like this:
 
-```
-curl -w "Server: %header{server}\n" http://example.com
-```
+    curl -w "Server: %header{server}\n" http://example.com
 
 ## Output
 
-By default, this option makes the selected data get output on stdout. If that is not good enough, the pseudo-variable `%{stderr}` can be used to direct (the following) part to stderr and `%{stdout}` brings it back to stdout.
+By default, this option makes the selected data get output on stdout. If that
+is not good enough, the pseudo-variable `%{stderr}` can be used to direct (the
+following) part to stderr and `%{stdout}` brings it back to stdout.
 
 From curl 8.3.0, there is a feature that lets users send the write-out output
 to a file: `%output{filename}`. The data following is then written to that
 file. If you rather have curl append to that file instead of creating it from
 scratch, prefix the filename with `>>`. Like this: `%output{>>filename}`.
 
-A write-out argument can include output to stderr, stdout and files as the user sees fit.
+A write-out argument can include output to stderr, stdout and files as the
+user sees fit.
 
 ## Windows
 

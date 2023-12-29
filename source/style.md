@@ -36,22 +36,18 @@ symbols start with `Curl`.
 We use only spaces for indentation, never TABs. We use two spaces for each new
 open brace.
 
-```c
-if(something_is_true) {
-  while(second_statement == fine) {
-    moo();
-  }
-}
-```
+    if(something_is_true) {
+      while(second_statement == fine) {
+        moo();
+      }
+    }
 
 ## Comments
 
 Since we write C89 code, `//` comments are not allowed. They were not
 introduced in the C standard until C99. We use only `/* comments */`.
 
-```c
-/* this is a comment */
-```
+    /* this is a comment */
 
 ## Long lines
 
@@ -73,27 +69,21 @@ In if/while/do/for expressions, we write the open brace on the same line as
 the keyword and we then set the closing brace on the same indentation level as
 the initial keyword. Like this:
 
-```c
-if(age < 40) {
-  /* clearly a youngster */
-}
-```
+    if(age < 40) {
+      /* clearly a youngster */
+    }
 
 You may omit the braces if they would contain only a one-line statement:
 
-```c
-if(!x)
-  continue;
-```
+    if(!x)
+      continue;
 
 For functions the opening brace should be on a separate line:
 
-```c
-int main(int argc, char **argv)
-{
-  return 1;
-}
-```
+    int main(int argc, char **argv)
+    {
+      return 1;
+    }
 
 ## else on the following line
 
@@ -122,50 +112,40 @@ Rather than test a conditional value such as a bool against TRUE or FALSE, a
 pointer against NULL or != NULL and an int against zero or not zero in
 if/while conditions we prefer:
 
-```c
-result = do_something();
-if(!result) {
-  /* something went wrong */
-  return result;
+    result = do_something();
+    if(!result) {
+      /* something went wrong */
+      return result;
 }
-```
 
 ## No assignments in conditions
 
 To increase readability and reduce complexity of conditionals, we avoid
 assigning variables within if/while conditions. We frown upon this style:
 
-```c
-if((ptr = malloc(100)) == NULL)
-  return NULL;
-```
+    if((ptr = malloc(100)) == NULL)
+      return NULL;
 
-and instead we encourage the above version to be spelled out more clearly:
+Instead we encourage the above version to be spelled out more clearly:
 
-```c
-ptr = malloc(100);
-if(!ptr)
-  return NULL;
-```
+    ptr = malloc(100);
+    if(!ptr)
+      return NULL;
 
 ## New block on a new line
 
 We never write multiple statements on the same source line, even for short
 if() conditions.
 
-```c
-if(a)
-  return TRUE;
-else if(b)
-  return FALSE;
-```
+    if(a)
+      return TRUE;
+    else if(b)
+      return FALSE;
 
-and NEVER:
+Never:
 
-```c
-if(a) return TRUE;
-else if(b) return FALSE;
-```
+    if(a) return TRUE;
+    else if(b) return FALSE;
 
 ## Space around operators
 
@@ -175,39 +155,33 @@ have no space.
 
 Examples:
 
-```c
-bla = func();
-who = name[0];
-age += 1;
-true = !false;
-size += -2 + 3 * (a + b);
-ptr->member = a++;
-struct.field = b--;
-ptr = &address;
-contents = *pointer;
-complement = ~bits;
-empty = (!*string) ? TRUE : FALSE;
-```
+    bla = func();
+    who = name[0];
+    age += 1;
+    true = !false;
+    size += -2 + 3 * (a + b);
+    ptr->member = a++;
+    struct.field = b--;
+    ptr = &address;
+    contents = *pointer;
+    complement = ~bits;
+    empty = (!*string) ? TRUE : FALSE;
 
 ## No parentheses for return values
 
 We use the 'return' statement without extra parentheses around the value:
 
-```c
-int works(void)
-{
-  return TRUE;
-}
-```
+    int works(void)
+    {
+      return TRUE;
+    }
 
 ## Parentheses for sizeof arguments
 
 When using the sizeof operator in code, we prefer it to be written with
 parentheses around its argument:
 
-```c
-int size = sizeof(int);
-```
+    int size = sizeof(int);
 
 ## Column alignment
 
@@ -221,40 +195,32 @@ the statement it is. Operators should not start continuation lines. In other
 cases follow the 2-space indent guideline. Here are some examples from
 libcurl:
 
-```c
-if(Curl_pipeline_wanted(handle->multi, CURLPIPE_HTTP1) &&
-   (handle->set.httpversion != CURL_HTTP_VERSION_1_0) &&
-   (handle->set.httpreq == HTTPREQ_GET ||
-    handle->set.httpreq == HTTPREQ_HEAD))
-  /* did not ask for HTTP/1.0 and a GET or HEAD */
-  return TRUE;
-```
+    if(Curl_pipeline_wanted(handle->multi, CURLPIPE_HTTP1) &&
+       (handle->set.httpversion != CURL_HTTP_VERSION_1_0) &&
+       (handle->set.httpreq == HTTPREQ_GET ||
+        handle->set.httpreq == HTTPREQ_HEAD))
+      /* did not ask for HTTP/1.0 and a GET or HEAD */
+      return TRUE;
 
 If no parenthesis, use the default indent:
 
-```c
-data->set.http_disable_hostname_check_before_authentication =
-  (0 != va_arg(param, long)) ? TRUE : FALSE;
-```
+    data->set.http_disable_hostname_check_before_authentication =
+      (0 != va_arg(param, long)) ? TRUE : FALSE;
 
 Function invoke with an open parenthesis:
 
-```c
-if(option) {
-  result = parse_login_details(option, strlen(option),
-                               (userp ? &user : NULL),
-                               (passwdp ? &passwd : NULL),
-                               NULL);
-}
-```
+    if(option) {
+      result = parse_login_details(option, strlen(option),
+                                   (userp ? &user : NULL),
+                                   (passwdp ? &passwd : NULL),
+                                   NULL);
+    }
 
 Align with the "current open" parenthesis:
 
-```c
-DEBUGF(infof(data, "Curl_pp_readresp_ %d bytes of trailing "
-             "server response left\n",
-             (int)clipamount));
-```
+    DEBUGF(infof(data, "Curl_pp_readresp_ %d bytes of trailing "
+                 "server response left\n",
+                 (int)clipamount));
 
 ## Platform dependent code
 
@@ -268,38 +234,34 @@ to constants when libcurl is built without that feature, to make the code
 seamless. Like this example where the **magic()** function works differently
 depending on a build-time conditional:
 
-```c
-#ifdef HAVE_MAGIC
-void magic(int a)
-{
-  return a + 2;
-}
-#else
-#define magic(x) 1
-#endif
+    #ifdef HAVE_MAGIC
+    void magic(int a)
+    {
+      return a + 2;
+    }
+    #else
+    #define magic(x) 1
+    #endif
 
-int content = magic(3);
-```
+    int content = magic(3);
 
 ## No typedefed structs
 
 Use structs by all means, but do not typedef them. Use the `struct name` way
 of identifying them:
 
-```c
-struct something {
-   void *valid;
-   size_t way_to_write;
-};
-struct something instance;
-```
+    struct something {
+       void *valid;
+       size_t way_to_write;
+    };
+    struct something instance;
+
 
 **Not okay**:
 
-```c
-typedef struct {
-   void *wrong;
-   size_t way_to_write;
-} something;
-something instance;
-```
+    typedef struct {
+       void *wrong;
+       size_t way_to_write;
+    } something;
+    something instance;
+

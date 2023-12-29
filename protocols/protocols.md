@@ -78,7 +78,7 @@ TLS. They are also themselves protocols that change over time, get new
 features and get attacked so that new ways of handling security, etc., forces
 curl to adapt and change.
 
-## About adhering to standards and who's right
+## About adhering to standards and who is right
 
 Generally, there are protocol specs that tell us how to send and receive data
 for specific protocols. The protocol specs we follow are RFCs put together and

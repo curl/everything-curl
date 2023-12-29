@@ -20,7 +20,8 @@ Using the `-K` or long form `--config` option tells curl to read from a config f
 
 The file path specified is relative to the current directory in your terminal.
 
-You can name the config file whatever you'd like. `configFile.txt` is used for simplicity in the example above.
+You can name the config file whatever you like. `configFile.txt` is used for
+simplicity in the example above.
 
 ## Syntax
 
@@ -96,7 +97,7 @@ When entering URLs at the command line, everything that is not an option is assu
 
 ### When to use quotes
 
-You'll need to use double quotes when:
+You need to use double quotes when:
 
 * the parameter contains white space, or starts with the characters `:` or `=`.
 * you need to use escape sequences (available options: `\\`, `\"`, `\t`, `\n`, `\r` and `\v`. A backslash preceding any other letter is ignored).

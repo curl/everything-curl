@@ -1,6 +1,6 @@
 # Prereq
 
-"Prereq" here means immediately before the request is issued. That's the
+"Prereq" here means immediately before the request is issued. That is the
 moment where this callback is called.
 
 Set the function with `CURLOPT_PREREQFUNCTION` and it gets called and passed

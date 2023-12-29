@@ -246,7 +246,7 @@ should be cut off from the data before sending or comparing it.
 
 For FTP file listings, the `<data>` section is used *only* if you make sure
 that there has been a CWD done first to a directory named `test-[number]`
-where `[number]` is the test case number. Otherwise the ftp server can't know
+where `[number]` is the test case number. Otherwise the ftp server cannot know
 from which test file to load the list content.
 
 ### `<dataNUMBER>`

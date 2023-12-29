@@ -135,7 +135,7 @@ for my $f (@files) {
     single($f);
 }
 
-print "# Index {#everything-curl-index}\n\n";
+print "# Index\n\n";
 
 sub sorting {
     my ($s) = @_;

@@ -23,9 +23,7 @@ Identifies a remote machine name. curl searches the .netrc file for a machine to
 
 This is the same as machine name except that `default` matches any name. There can be only one default token, and it must be after all machine tokens. To provide a default anonymous login for hosts that are not otherwise matched, add a line similar to this in the end:
 
-```
-default login anonymous password user@domain
-```
+    default login anonymous password user@domain
 
 **login name**
 
@@ -49,17 +47,13 @@ with `macdef` that it finds.
 
 An example .netrc for the host example.com with a user named 'daniel', using the password 'qwerty' would look like:
 
-```
-machine example.com
-login daniel
-password qwerty
-```
+    machine example.com
+    login daniel
+    password qwerty
 
 It can also be written on a single line with the same functionality:
 
-```
-machine example.com login daniel password qwerty
-```
+    machine example.com login daniel password qwerty
 
 ## User name matching
 

@@ -35,48 +35,45 @@ first choice.
 
 ### Single-threaded
 
-  Please note that this memory leak system is not adjusted to work in more
-  than one thread. If you want/need to use it in a multi-threaded app. Please
-  adjust accordingly.
+Please note that this memory leak system is not adjusted to work in more than
+one thread. If you want/need to use it in a multi-threaded app. Please adjust
+accordingly.
 
 ### Build
 
-  Rebuild libcurl with `-DCURLDEBUG` (usually, rerunning configure with
-  `--enable-debug` fixes this). `make clean` first, then `make` so that all
-  files are actually rebuilt properly. It also makes sense to build libcurl
-  with the debug option (usually `-g` to the compiler) so that debugging it
-  gets easier if you actually do find a leak in the library.
+Rebuild libcurl with `-DCURLDEBUG` (usually, rerunning configure with
+`--enable-debug` fixes this). `make clean` first, then `make` so that all
+files are actually rebuilt properly. It also makes sense to build libcurl with
+the debug option (usually `-g` to the compiler) so that debugging it gets
+easier if you actually do find a leak in the library.
 
-  This builds a library that has memory debugging enabled.
+This builds a library that has memory debugging enabled.
 
 ### Modify Your Application
 
-  Add a line in your application code:
+Add a line in your application code:
 
-```c
-  curl_dbg_memdebug("dump");
-```
+    curl_dbg_memdebug("dump");
 
-  This makes the malloc debug system output a full trace of all resources
-  using functions to the given file name. Make sure you rebuild your program
-  and that you link with the same libcurl you built for this purpose as
-  described above.
+This makes the malloc debug system output a full trace of all resources using
+functions to the given file name. Make sure you rebuild your program and that
+you link with the same libcurl you built for this purpose as described above.
 
 ### Run Your Application
 
-  Run your program as usual. Watch the specified memory trace file grow.
+Run your program as usual. Watch the specified memory trace file grow.
 
-  Make your program exit and use the proper libcurl cleanup functions etc. So
-  that all non-leaks are returned/freed properly.
+Make your program exit and use the proper libcurl cleanup functions etc. So
+that all non-leaks are returned/freed properly.
 
 ### Analyze the Flow
 
-  Use the `tests/memanalyze.pl` perl script to analyze the dump file:
+Use the `tests/memanalyze.pl` perl script to analyze the dump file:
 
-    tests/memanalyze.pl dump
+    $ tests/memanalyze.pl dump
 
-  This now outputs a report on what resources that were allocated but never
-  freed etc. This report is fine for posting to the list.
+This now outputs a report on what resources that were allocated but never
+freed etc. This report is fine for posting to the list.
 
-  If this does not produce any output, no leak was detected in libcurl. Then
-  the leak is mostly likely to be in your code.
+If this does not produce any output, no leak was detected in libcurl. Then
+the leak is mostly likely to be in your code.

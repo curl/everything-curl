@@ -1,12 +1,18 @@
 # Index
 
+test A
+
 ## .
+
+test B
 
  - .netrc: [Command line leakage](cmdline/passwords.md#command-line-leakage), [Using curl](usingcurl.md#using-curl), [.netrc](usingcurl/netrc.md#netrc), [All options](libcurl/options/all.md#all-options), [`<features>`](internals/tests/file-format.md#less-than-features-greater-than)
 
 ## /
 
-- /etc/hosts: [Run a local clone](source/web.md#run-a-local-clone), [Host](cmdline/urls/host.md#host), [Edit the hosts file](usingcurl/connections/name.md#edit-the-hosts-file)
+test C
+
+ - /etc/hosts: [Run a local clone](source/web.md#run-a-local-clone), [Host](cmdline/urls/host.md#host), [Edit the hosts file](usingcurl/connections/name.md#edit-the-hosts-file)
 
 ## <
 
@@ -14,14 +20,16 @@
 
 ## A
 
-- --alt-svc: [Enable](http/altsvc.md#enable)
+Test A
+
+ - --alt-svc: [Enable](http/altsvc.md#enable)
  - --anyauth: [Authentication](http/auth.md#authentication)
  - apt: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian)
  - Arch Linux: [Arch Linux](get/linux.md#arch-linux)
 
 ## B
 
-- -b: [Cookie engine](http/cookies.md#cookie-engine), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
+ - -b: [Cookie engine](http/cookies.md#cookie-engine), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
  - --basic: [Authentication](http/auth.md#authentication)
  - BearSSL: [lib/vtls](source/layout.md#lib-vtls), [TLS libraries](build/tls.md#tls-libraries), [`<features>`](internals/tests/file-format.md#less-than-features-greater-than)
  - BoringSSL: [TLS libraries](build/tls.md#tls-libraries), [BoringSSL](build/boringssl.md#boringssl), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions)
@@ -29,7 +37,7 @@
 
 ## C
 
-- -c: [Writing cookies to file](http/cookies.md#writing-cookies-to-file), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
+ - -c: [Writing cookies to file](http/cookies.md#writing-cookies-to-file), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
  - c-ares: [c-ares](build/deps.md#c-ares), [Line 4: Features](usingcurl/version.md#line-4-features), [Name resolve tricks with c-ares](usingcurl/connections/name.md#name-resolve-tricks-with-c-ares), [Name resolver backends](libcurl/conn/names.md#name-resolver-backends), [`CURLRES_ARES`](internals/resolving.md#curlres_ares), [`<features>`](internals/tests/file-format.md#less-than-features-greater-than)
  - C89: [Comments](source/style.md#comments), [Build curl](build.md#build-curl)
  - CA: [Verbose](usingcurl/verbose.md#verbose), [MITM proxy](usingcurl/proxies/mitm.md#mitm-proxy), [Available exit codes](usingcurl/returns.md#available-exit-codes), [Verifying server certificates](usingcurl/tls/verify.md#verifying-server-certificates), [OCSP stapling](usingcurl/tls/stapling.md#ocsp-stapling), [Verification](libcurl/options/tls.md#verification), [All options](libcurl/options/all.md#all-options), [Available information](libcurl/getinfo.md#available-information), [Caches](libcurl/caches.md#caches), [CA store cache](internals/caches.md#ca-store-cache)

@@ -27,3 +27,7 @@ there's:there is
 file name :filename
 \. So : Rewrite without "so" ?
  dir :directory
+you'd:you would
+you'll:you will
+can't:cannot
+that's:that is

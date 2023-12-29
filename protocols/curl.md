@@ -50,15 +50,17 @@ Gopher over TLS. A recent extension to the old protocol.
 ## HTTP
 
 The Hypertext Transfer Protocol, HTTP, is the most widely used protocol for
-transferring data on the web and over the Internet. See RFC 7230 for HTTP/1.1
-and RFC 7540 for [HTTP/2](../http/versions/http2.md). HTTP servers and clients
-use TCP port 80.
+transferring data on the web and over the Internet. See RFC 9110 for general
+HTTP Semantics, RFC 9112 for HTTP/1.1, RFC 9113 for
+[HTTP/2](../http/versions/http2.md) and RFC 9114 for HTTP/3. HTTP servers and
+clients use TCP port 80.
 
 ## HTTPS
 
 Secure HTTP is HTTP done over an SSL/TLS connection. See RFC 2818. HTTPS
 servers and clients use TCP port 443, unless they speak
-[HTTP/3](../http/versions/http3.md) which then uses QUIC and is done over UDP.
+[HTTP/3](../http/versions/http3.md) which then uses QUIC (RFC 8999) and is
+done over UDP.
 
 ## IMAP
 

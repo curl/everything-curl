@@ -26,7 +26,7 @@ now, simply add the boolean flag like this:
 
 If such a command line for some reason does not provide the IP address you
 think it should pass on, you can specify the exact address yourself, using
-either an IPv4 or and IPv6 numerical address:
+either an IPv4 or an IPv6 numerical address:
 
     curl --haproxy-clientip 10.0.0.1 https://example.com/
     curl --haproxy-clientip fe80::fea3:8a22 https://example.com/

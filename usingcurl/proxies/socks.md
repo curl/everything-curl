@@ -20,13 +20,13 @@ SOCKS4a is for the version 4 with resolving done by the proxy:
     curl --socks4a proxy.example.com http://www.example.com/
 
 SOCKS5 is for the version 5 and SOCKS5-hostname is for the version 5 without
-resolving the host name locally:
+resolving the hostname locally:
 
     curl -x socks5://proxy.example.com http://www.example.com/
 
     curl --socks5 proxy.example.com http://www.example.com/
 
-The SOCKS5-hostname versions. This sends the host name to the proxy so there
+The SOCKS5-hostname versions. This sends the hostname to the proxy so there
 is no name resolving done by curl locally:
 
     curl -x socks5h://proxy.example.com http://www.example.com/

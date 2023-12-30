@@ -1,7 +1,7 @@
 # Path
 
 Every URL contains a path. If there is none given, `/` is implied. For example
-when you use just the host name like in:
+when you use just the hostname like in:
 
     curl https://example.com
 

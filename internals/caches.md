@@ -8,7 +8,7 @@ on which libcurl API is used, easy or multi.
 
 ## DNS cache
 
-When libcurl resolves the IP addresses of a host name it stores the result in
+When libcurl resolves the IP addresses of a hostname it stores the result in
 its DNS cache (with a default life-time of 60 seconds), so that subsequent
 lookups can use the cached data immediately instead of doing the (potentially
 slow) resolve operation again. This cache exists in memory only.
@@ -40,10 +40,10 @@ amount. This cache exists in memory only. Added in 7.87.0.
 ## HSTS
 
 HSTS is HTTP Strict Transport Security. HTTPS servers can inform clients that
-they want the client to connect to its host name using only HTTPS going
-forward and not HTTP, even when `HTTP://` URLs are used. curl keeps this
-connection upgrade information in memory and can be told to load it from and
-save it to disk as well.
+they want the client to connect to its hostname using only HTTPS going forward
+and not HTTP, even when `HTTP://` URLs are used. curl keeps this connection
+upgrade information in memory and can be told to load it from and save it to
+disk as well.
 
 ## Alt-Svc
 

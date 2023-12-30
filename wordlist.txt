@@ -249,8 +249,8 @@ Kamil
 Kaufmann
 keepalive
 Keil
-Kirei
 Kinoite
+Kirei
 Knauf
 kqueue
 Krb
@@ -444,16 +444,16 @@ se
 SEB
 SEK
 selectable
+Sericea
 Serv
 setopt
-Sericea
 SFTP
 sftp
 sha
+Silverblue
 singlecwd
 Sintonen
 sizeof
-Silverblue
 SLE
 slist
 sln
@@ -561,7 +561,8 @@ vtls
 Warta
 WAV
 WB
-web page
+webpage
+webpages
 WebSocket
 whitespace
 winbuild

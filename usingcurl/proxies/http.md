@@ -6,7 +6,7 @@ done. curl does by default, assume that a host you point out with `-x` or
 defaults to port 1080 (and the reason for that particular port number is
 purely historical).
 
-If you want to request the example.com web page using a proxy on 192.168.0.1
+If you want to request the example.com webpage using a proxy on 192.168.0.1
 port 8080, a command line could look like:
 
     curl -x 192.168.0.1:8080 http://example.com/

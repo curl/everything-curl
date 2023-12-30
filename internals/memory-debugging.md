@@ -56,7 +56,7 @@ Add a line in your application code:
     curl_dbg_memdebug("dump");
 
 This makes the malloc debug system output a full trace of all resources using
-functions to the given file name. Make sure you rebuild your program and that
+functions to the given filename. Make sure you rebuild your program and that
 you link with the same libcurl you built for this purpose as described above.
 
 ### Run Your Application

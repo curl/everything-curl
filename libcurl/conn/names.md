@@ -9,9 +9,9 @@ libcurl tries hard to [re-use an existing connection](reuse.md) rather than to
 create a new one. The function that checks for an existing connection to use
 is based purely on the name and is performed before any name resolving is
 attempted. That is one of the reasons the re-use is so much faster. A transfer
-using a reused connection does not resolve the host name again.
+using a reused connection does not resolve the hostname again.
 
-If no connection can be reused, libcurl resolves the host name to the set of
+If no connection can be reused, libcurl resolves the hostname to the set of
 addresses it resolves to. Typically this means asking for both IPv4 and IPv6
 addresses and there may be a whole set of those returned to libcurl. That set
 of addresses is then tried until one works, or it returns failure.
@@ -77,7 +77,7 @@ would suggest.
 With the help of the
 [CURLOPT_RESOLVE](https://curl.se/libcurl/c/CURLOPT_RESOLVE.html) option,
 an application can pre-populate libcurl's DNS cache with a custom address for
-a given host name and port number.
+a given hostname and port number.
 
 To make libcurl connect to 127.0.0.1 when example.com on port 443 is
 requested, an application can do:

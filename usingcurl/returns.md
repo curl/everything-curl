@@ -49,7 +49,7 @@ A basic Unix shell script could look like something like this:
 
  6. Couldn't resolve host. The given remote host's address was not
   resolved. The address of the given server could not be resolved. Either
-  the given host name is just wrong, or the DNS server is misbehaving and
+  the given hostname is just wrong, or the DNS server is misbehaving and
   does not know about this name when it should or perhaps even the system you
   run curl on is misconfigured so that it does not find/use the correct DNS
   server.
@@ -57,7 +57,7 @@ A basic Unix shell script could look like something like this:
  7. Failed to connect to host. curl managed to get an IP address to the
   machine and it tried to setup a TCP connection to the host but
   failed. This can be because you have specified the wrong port number,
-  entered the wrong host name, the wrong protocol or perhaps because there
+  entered the wrong hostname, the wrong protocol or perhaps because there
   is a firewall or another network equipment in between that blocks the
   traffic from getting through.
 

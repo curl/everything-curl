@@ -33,6 +33,6 @@ This is a poor-man's version of valgrind but does not at all compare with its
 features. It is however fairly portable and low-impact.
 
 In a debug build, the memdebug system is enabled by curl if the
-`CURL_MEMDEBUG` environment variable is set to a file name, which is used for
-the log. The test suite sets this variable for us (see `tests/log/memdump`) and
-verifies it after each test run, if present.
+`CURL_MEMDEBUG` environment variable is set to a filename, which is used for
+the log. The test suite sets this variable for us (see `tests/log/memdump`)
+and verifies it after each test run, if present.

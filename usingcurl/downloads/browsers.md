@@ -12,7 +12,7 @@ all what you see in your browser window.
 Curl only gets exactly what you ask it to get and it never parses the actual
 content—the data—that the server delivers. A browser gets data and it
 activates different parsers depending on what kind of content it thinks it
-gets. For example, if the data is HTML it parses it to display a web page and
+gets. For example, if the data is HTML it parses it to display a webpage and
 possibly download other sub resources such as images, JavaScript and CSS
 files. When curl downloads HTML it just gets that single HTML resource, even
 if it, when parsed by a browser, would trigger a whole busload of more

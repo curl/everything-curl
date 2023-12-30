@@ -78,7 +78,7 @@ announcement.
   the same manner we always announce releases—it gets sent to the
   curl-announce, curl-library and curl-users mailing lists.
 
-- The security web page on the website should get the new vulnerability
+- The security webpage on the website should get the new vulnerability
   mentioned.
 
 ## curl-security@haxx.se

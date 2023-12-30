@@ -16,7 +16,7 @@ data correctly. A client cannot just pick a format of its own choice.
 
 When we are talking browsers and HTML, the standard way is to offer a form to
 the user that sends off data when the form has been filled in. The `<form>`
-tag is what makes one of those appear on the web page. The tag instructs the
+tag is what makes one of those appear on the webpage. The tag instructs the
 browser how to format its POST. If the form tag includes
 `enctype=multipart/form-data`, it tells the browser to send the data as a
 [multipart formpost](multipart.md) which you make with curl's `-F`

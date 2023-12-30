@@ -12,7 +12,7 @@ TLS handshake and all public TLS-using servers have acquired that certificate
 from an established Certificate Authority.
 
 After some applied crypto magic, curl knows that the server is in fact the
-correct one that acquired that certificate for the host name that curl used to
+correct one that acquired that certificate for the hostname that curl used to
 connect to it. Failing to verify the server's certificate is a TLS handshake
 failure and curl exits with an error.
 

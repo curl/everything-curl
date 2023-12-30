@@ -21,7 +21,7 @@ using the same software instance.
 
 So, by passing in a custom modified `Host:` header you can have the
 server respond with the contents of the site even when you did not actually
-connect to that host name.
+connect to that hostname.
 
 For example, you run a test instance of your main site `www.example.com` on
 your local machine and you want to have curl ask for the index html:
@@ -56,9 +56,9 @@ curl believe that is the address it got when it resolved the name.
 When talking HTTPS, this sends SNI for the name in the URL and curl verifies
 the server's response to make sure it serves for the name in the URL.
 
-The pattern you specify in the option needs be a host name and its
+The pattern you specify in the option needs be a hostname and its
 corresponding port number and only if that exact pair is used in the URL is
-the address substituted. For example, if you want to replace a host name in an
+the address substituted. For example, if you want to replace a hostname in an
 HTTPS URL on its default port number, you need to tell curl it is for port
 443, like:
 

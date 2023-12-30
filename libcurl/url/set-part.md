@@ -37,7 +37,7 @@ could be done like this:
     CURLU *h = curl_url();
     rc = curl_url_set(h, CURLUPART_URL, url, 0);
 
-Then change the host name part:
+Then change the hostname part:
 
     rc = curl_url_set(h, CURLUPART_HOST, "example.net", 0);
 

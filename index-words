@@ -19,6 +19,8 @@
 --ftp-port
 --ftp-skip-pasv-ip
 --get
+--haproxy-clientip
+--haproxy-protocol
 --header
 --hsts
 --http0.9
@@ -280,6 +282,7 @@ Globbing
 GnuTLS
 GOPHER
 GOPHERS
+haproxy
 Header callback
 homebrew
 Host:
@@ -353,15 +356,15 @@ RFC 3986
 RFC 4217
 RFC 4511
 RFC 5321
+RFC 7838
+RFC 8314
+RFC 8446
+RFC 854
 RFC 8999
 RFC 9110
 RFC 9112
 RFC 9113
 RFC 9114
-RFC 7838
-RFC 8314
-RFC 8446
-RFC 854
 RFC 959
 roadmap
 rpath

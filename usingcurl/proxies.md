@@ -22,3 +22,4 @@ them in subsections below.
 * [HTTPS proxy](proxies/https.md)
 * [Proxy environment variables](proxies/env.md)
 * [Proxy headers](proxies/headers.md)
+* [haproxy](proxies/haproxy.md)

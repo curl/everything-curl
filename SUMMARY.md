@@ -118,6 +118,7 @@
     * [HTTPS proxy](usingcurl/proxies/https.md)
     * [Proxy environment variables](usingcurl/proxies/env.md)
     * [Proxy headers](usingcurl/proxies/headers.md)
+    * [haproxy](usingcurl/proxies/haproxy.md)
   * [Exit status](usingcurl/returns.md)
   * [TLS](usingcurl/tls.md)
     * [Ciphers](usingcurl/tls/ciphers.md)

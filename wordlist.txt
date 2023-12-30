@@ -27,6 +27,7 @@ backend
 backends
 backoff
 backticks
+balancers
 Baratov
 BDFL
 BearSSL
@@ -196,6 +197,7 @@ gzipped
 Hackerone
 hackerone
 HackerOne's
+haproxy
 Hards
 Haxx
 haxx
@@ -249,8 +251,8 @@ Kamil
 Kaufmann
 keepalive
 Keil
-Kirei
 Kinoite
+Kirei
 Knauf
 kqueue
 Krb
@@ -444,16 +446,16 @@ se
 SEB
 SEK
 selectable
+Sericea
 Serv
 setopt
-Sericea
 SFTP
 sftp
 sha
+Silverblue
 singlecwd
 Sintonen
 sizeof
-Silverblue
 SLE
 slist
 sln

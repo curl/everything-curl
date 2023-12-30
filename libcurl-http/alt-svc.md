@@ -5,7 +5,7 @@ the client that there is one or more *alternatives* for that server at
 "another place" with the use of the `Alt-Svc:` response header.
 
 The *alternatives* the server suggests can include a server running on another
-port on the same host, on another completely different host name and it can
+port on the same host, on another completely different hostname and it can
 also offer the service *over another protocol*.
 
 ## Enable

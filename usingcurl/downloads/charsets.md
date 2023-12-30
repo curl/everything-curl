@@ -6,7 +6,7 @@ text data that uses a certain character encoding that your browser then
 displays as expected. curl does not translate the arriving data.
 
 A common example where this causes some surprising results is when a user
-downloads a web page with something like:
+downloads a webpage with something like:
 
     curl https://example.com/ -o storage.html
 

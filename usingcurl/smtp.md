@@ -73,16 +73,16 @@ You can tell curl to _require_ upgrading to using secure transfers by adding
 
 ## The SMTP URL
 
-The path part of a SMTP request specifies the host name to present during
+The path part of a SMTP request specifies the hostname to present during
 communication with the mail server. If the path is omitted then curl attempts
-to figure out the local computer's host name and use that. However, this may
+to figure out the local computer's hostname and use that. However, this may
 not return the fully qualified domain name that is required by some mail
 servers and specifying this path allows you to set an alternative name, such
 as your machine's fully qualified domain name, which you might have obtained
 from an external function such as gethostname or getaddrinfo.
 
 To connect to the mail server at `mail.example.com` and send your local
-computer's host name in the HELO / EHLO command:
+computer's hostname in the `HELO` or `EHLO` command:
 
     curl smtp://mail.example.com
 

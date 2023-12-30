@@ -13,12 +13,12 @@ You can instruct libcurl to share some of the caches with the
 
 ## DNS cache
 
-When libcurl resolves a host name to one or more IP addresses, that is stored
+When libcurl resolves a hostname to one or more IP addresses, that is stored
 in the DNS cache so that subsequent transfers in the near term do not have to
 redo the same resolve again. A name resolve can easily take several hundred
 milliseconds and sometimes even much longer.
 
-By default, each such host name is stored in the cache for 60 seconds
+By default, each such hostname is stored in the cache for 60 seconds
 (changeable with `CURLOPT_DNS_CACHE_TIMEOUT`).
 
 libcurl does in fact not usually know what the TTL (Time To Live) value is for
@@ -41,9 +41,9 @@ Connections are only reused if the name is identical. Even if two different
 host names resolve to the same IP addresses, they still always use two
 separate connections with libcurl.
 
-Since the connection reuse is based on the host name and the DNS resolve phase
+Since the connection reuse is based on the hostname and the DNS resolve phase
 is entirely skipped when a connection is reused for a transfer, libcurl does
-not know the current state of the host name in DNS as it can in fact change IP
+not know the current state of the hostname in DNS as it can in fact change IP
 over time while the connection might survive and continue to get reused over
 the original IP address.
 

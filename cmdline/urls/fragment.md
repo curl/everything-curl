@@ -1,7 +1,7 @@
 # Fragment
 
 URLs offer a fragment part. That is usually seen as a hash symbol (#) and a
-name for a specific name within a web page in browsers. An example of such a
+name for a specific name within a webpage in browsers. An example of such a
 URL might look like:
 
     https://www.example.com/info.html#the-plot

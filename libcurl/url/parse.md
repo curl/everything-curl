@@ -34,7 +34,7 @@ option if both are set.
 ## `CURLU_GUESS_SCHEME`
 
 Makes libcurl allow the URL to be set without a scheme and it instead
-"guesses" which scheme that was intended based on the host name. If the
+"guesses" which scheme that was intended based on the hostname. If the
 outermost sub-domain name matches DICT, FTP, IMAP, LDAP, POP3 or SMTP then
 that scheme is used, otherwise it picks HTTP. Conflicts with the
 `CURLU_DEFAULT_SCHEME` option which takes precedence if both are set.

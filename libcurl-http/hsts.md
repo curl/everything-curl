@@ -9,7 +9,7 @@ Here is how you use HSTS with libcurl.
 ## In-memory cache
 
 libcurl primarily features an in-memory cache for HSTS hosts, so that
-subsequent HTTP-only requests to a host name present in the cache gets
+subsequent HTTP-only requests to a hostname present in the cache gets
 internally "redirected" to the HTTPS version. Assuming you have this feature
 enabled.
 

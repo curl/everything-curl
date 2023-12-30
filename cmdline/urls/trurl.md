@@ -19,7 +19,7 @@ trurl.
 
 ## trurl example command lines
 
-**Replace the host name of a URL:**
+**Replace the hostname of a URL:**
 
     $ trurl --url https://curl.se --set host=example.com
     https://example.com/

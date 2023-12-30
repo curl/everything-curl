@@ -24,7 +24,7 @@ specifically, it supports both SOCKS4 and SOCKS5 with or without remote name
 lookup, as well as both HTTP and HTTPS to the local proxy.
 
 The easiest way to specify which kind of proxy you are talking to is to set
-the scheme part of the proxy host name string (`CURLOPT_PROXY`) to match it:
+the scheme part of the proxy hostname string (`CURLOPT_PROXY`) to match it:
 
     socks4://proxy.example.com:12345/
     socks4a://proxy.example.com:12345/
@@ -47,14 +47,14 @@ the scheme part of the proxy host name string (`CURLOPT_PROXY`) to match it:
 names.
 
 You can also opt to set the type of the proxy with a separate option if you
-prefer to only set the host name, using `CURLOPT_PROXYTYPE`. Similarly, you
+prefer to only set the hostname, using `CURLOPT_PROXYTYPE`. Similarly, you
 can set the proxy port number to use with `CURLOPT_PROXYPORT`.
 
 ## Local or proxy name lookup
 
 In a section above you can see that different proxy setups allow the name
 resolving to be done by different parties involved in the transfer. You can in
-several cases either have the client resolve the server host name and pass on
+several cases either have the client resolve the server hostname and pass on
 the IP address to the proxy to connect to - which of course assumes that the
 name lookup works accurately on the client system - or you can hand
 over the name to the proxy to have the proxy resolve the name; converting it to
@@ -80,7 +80,7 @@ named environment variables before it performs its transfer to see if a proxy
 is requested to get used.
 
 You can specify the proxy by setting a variable named `[scheme]_proxy` to hold
-the proxy host name (the same way you would specify the host with `-x`). If
+the proxy hostname (the same way you would specify the host with `-x`). If
 you want to tell curl to use a proxy when accessing an HTTP server, you set
 the `http_proxy` environment variable. Like this:
 

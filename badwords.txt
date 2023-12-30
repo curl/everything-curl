@@ -31,3 +31,6 @@ you'd:you would
 you'll:you will
 can't:cannot
 that's:that is
+web page:webpage
+host name\W:hostname
+file name\W:filename

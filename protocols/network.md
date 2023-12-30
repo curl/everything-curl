@@ -29,9 +29,9 @@ a browser.
 We might use a URL like `http://example.com/index.html`, which means the
 client connects to and communicates with the host named example.com.
 
-## Host name resolving
+## Hostname resolving
 
-Once the client knows the host name, it needs to figure out which IP addresses
+Once the client knows the hostname, it needs to figure out which IP addresses
 the host with that name has so that it can contact it.
 
 Converting the name to an IP address is called 'name resolving'. The name is

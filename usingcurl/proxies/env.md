@@ -4,7 +4,7 @@ curl checks for the existence of specially named environment variables before
 it runs to see if a proxy is requested to get used.
 
 You specify the proxy by setting a variable named `[scheme]_proxy` to hold the
-proxy host name (the same way you would specify the host with `-x`). If you
+proxy hostname (the same way you would specify the host with `-x`). If you
 want to tell curl to use a proxy when access an HTTP server, you set the
 `http_proxy` environment variable. Like this:
 

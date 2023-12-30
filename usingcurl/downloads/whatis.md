@@ -15,7 +15,7 @@ the wrong data and then that data is delivered.
 A request for a resource is protocol-specific so an `FTP://` URL works
 differently than an `HTTP://` URL or an `SFTP://` URL.
 
-A URL without a path part, that is a URL that has a host name part only (like
+A URL without a path part, that is a URL that has a hostname part only (like
 the `http://example.com` example above) gets a slash ('/') appended to it
 internally and then that is the resource curl asks for from the server.
 

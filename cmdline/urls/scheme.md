@@ -26,7 +26,7 @@ hostnames that are okay to use are `localhost`, `127.0.0.1` or a blank
     file://127.0.0.1/path/to/file
     file:///path/to/file
 
-Inserting any other host name in there makes recent versions of curl return an
+Inserting any other hostname in there makes recent versions of curl return an
 error.
 
 Pay special attention to the third example above
@@ -43,11 +43,11 @@ incorrect format:
 
 As a convenience, curl also allows users to leave out the scheme part from
 URLs. Then it guesses which protocol to use based on the first part of the
-host name. That guessing is basic, as it just checks if the first part of the
-host name matches one of a set of protocols, and assumes you meant to use that
+hostname. That guessing is basic, as it just checks if the first part of the
+hostname matches one of a set of protocols, and assumes you meant to use that
 protocol. This heuristic is based on the fact that servers traditionally used
 to be named like that. The protocols that are detected this way are FTP, DICT,
-LDAP, IMAP, SMTP and POP3. Any other host name in a scheme-less URL makes curl
+LDAP, IMAP, SMTP and POP3. Any other hostname in a scheme-less URL makes curl
 default to HTTP.
 
 For example, this gets a file from an FTP site:

@@ -11,7 +11,7 @@ libcurl supports HTTP multiplexing for both HTTP/2 and HTTP/3.
 
 Make sure you do multiple transfers using the multi interface to a server that
 supports HTTP multiplexing. libcurl can only multiplex transfers when the same
-host name is used for subsequent transfers.
+hostname is used for subsequent transfers.
 
 For all practical purposes and API behaviors, an application does not have
 to care about if multiplexing is done or not.

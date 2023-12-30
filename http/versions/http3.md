@@ -22,7 +22,7 @@ definition always encrypted and secure. Therefore, curl only uses HTTP/3 for
 ## Enable
 
 As a shortcut straight to HTTP/3, to make curl attempt a QUIC connect directly
-to the given host name and port number, use `--http3`. Like this:
+to the given hostname and port number, use `--http3`. Like this:
 
     curl --http3 https://example.com/
 

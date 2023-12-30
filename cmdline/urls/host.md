@@ -1,6 +1,6 @@
 # Host
 
-The host name part of the URL is, of course, simply a name that can be resolved
+The hostname part of the URL is, of course, simply a name that can be resolved
 to an numerical IP address, or the numerical address itself.
 
     curl http://example.com
@@ -15,7 +15,7 @@ brackets:
 
     curl http://[2a04:4e42::561]/
 
-When a host name is used, the converting of the name to an IP address is
+When a hostname is used, the converting of the name to an IP address is
 typically done using the system's resolver functions. That normally lets a
 sysadmin provide local name lookups in the `/etc/hosts` file (or equivalent).
 

@@ -111,17 +111,17 @@ In curl 8.1.0, variables to output only specific URL components were added. When
 | `url.user`      | The user part of the URL that was fetched.                                                                         |
 | `url.password`  | The password part of the URL that was fetched.                                                                     |
 | `url.options`   | The options part of the URL that was fetched. Only available for some schemes.                                     |
-| `url.host`      | The host name part of the URL that was fetched.                                                                    |
+| `url.host`      | The hostname part of the URL that was fetched.                                                                    |
 | `url.path`      | The path part of the URL that was fetched.                                                                         |
 | `url.query`     | The query part of the URL that was fetched.                                                                        |
 | `url.fragment`  | The fragment part of the URL that was fetched.                                                                     |
-| `url.zoneid`    | The zone id part of the URL that was fetched. Only available if the host name is an IPv6 address.                  |
+| `url.zoneid`    | The zone id part of the URL that was fetched. Only available if the hostname is an IPv6 address.                  |
 | `urle.scheme`   | The scheme part of the effective (last) URL that was fetched.                                                      |
 | `urle.user`     | The user part of the effective (last) URL that was fetched.                                                        |
 | `urle.password` | The password part of the effective (last) URL that was fetched.                                                    |
 | `urle.options`  | The options part of the effective (last) URL that was fetched. Only available for some schemes.                    |
-| `urle.host`     | The host name part of the effective (last) URL that was fetched.                                                   |
+| `urle.host`     | The hostname part of the effective (last) URL that was fetched.                                                   |
 | `urle.path`     | The path part of the effective (last) URL that was fetched.                                                        |
 | `urle.query`    | The query part of the effective (last) URL that was fetched.                                                       |
 | `urle.fragment` | The fragment part of the effective (last) URL that was fetched.                                                    |
-| `urle.zoneid`   | The zone id part of the effective (last) URL that was fetched. Only available if the host name is an IPv6 address. |
+| `urle.zoneid`   | The zone id part of the effective (last) URL that was fetched. Only available if the hostname is an IPv6 address. |

@@ -15,7 +15,7 @@ an associated `Proxy-Authenticate:` header that lists all the authentication
 methods that the proxy supports.
 
 It might be worth to note that most websites of today do not require HTTP
-authentication for login etc, but they instead ask users to login on web pages
+authentication for login etc, but they instead ask users to login on webpages
 and then the browser issues a POST with the user and password etc, and then
 subsequently maintain cookies for the session.
 

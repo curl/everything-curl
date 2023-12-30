@@ -25,7 +25,7 @@ look like this:
 ## --path-as-is
 
 The path part of the URL is the part that starts with the first slash after
-the host name and ends either at the end of the URL or at a '?' or '#'
+the hostname and ends either at the end of the URL or at a '?' or '#'
 (roughly speaking).
 
 If you include substrings including `/../` or `/./` in the path, curl

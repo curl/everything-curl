@@ -562,7 +562,8 @@ vtls
 Warta
 WAV
 WB
-web page
+webpage
+webpages
 WebSocket
 whitespace
 winbuild

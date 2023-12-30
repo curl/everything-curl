@@ -53,7 +53,7 @@ This is a table of available options for `curl_easy_setopt()`.
 | `CURLOPT_DNS_SERVERS`                | DNS servers to use                                                     |
 | `CURLOPT_DNS_SHUFFLE_ADDRESSES`      | shuffle IP addresses for hostname                                      |
 | `CURLOPT_DNS_USE_GLOBAL_CACHE`       | global DNS cache                                                       |
-| `CURLOPT_DOH_SSL_VERIFYHOST`         | verify the host name in the DoH SSL certificate                        |
+| `CURLOPT_DOH_SSL_VERIFYHOST`         | verify the hostname in the DoH SSL certificate                        |
 | `CURLOPT_DOH_SSL_VERIFYPEER`         | verify the DoH SSL certificate                                         |
 | `CURLOPT_DOH_SSL_VERIFYSTATUS`       | verify the DoH SSL certificate's status                                |
 | `CURLOPT_DOH_URL`                    | provide the DNS-over-HTTPS URL                                         |
@@ -210,7 +210,7 @@ This is a table of available options for `curl_easy_setopt()`.
 | `CURLOPT_REDIR_PROTOCOLS`            | protocols allowed to redirect to                                       |
 | `CURLOPT_REFERER`                    | the HTTP referer header                                                |
 | `CURLOPT_REQUEST_TARGET`             | alternative target for this request                                    |
-| `CURLOPT_RESOLVE`                    | provide custom host name to IP address resolves                        |
+| `CURLOPT_RESOLVE`                    | provide custom hostname to IP address resolves                        |
 | `CURLOPT_RESOLVER_START_DATA`        | pointer passed to the resolver start callback                          |
 | `CURLOPT_RESOLVER_START_FUNCTION`    | callback called before a new name resolve is started                   |
 | `CURLOPT_RESUME_FROM_LARGE`          | offset to resume transfer from                                         |

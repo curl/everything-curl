@@ -64,6 +64,8 @@ find the matching password for that machine and login combination.
 
 `-n, --netrc` tells curl to look for and use the .netrc file.
 
-`--netrc-file [file]` is similar to `--netrc`, except that you also provide the path to the actual file to use. This is useful when you want to provide the information in another directory or with another file name.
+`--netrc-file [file]` is similar to `--netrc`, except that you also provide
+the path to the actual file to use. This is useful when you want to provide
+the information in another directory or with another filename.
 
 `--netrc-optional` is similar to `--netrc`, but this option makes the .netrc usage optional and not mandatory as the `--netrc` option.

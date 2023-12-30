@@ -54,10 +54,9 @@ options available to use:
 - `NEW_ENV=<var,val>` sets the environment variable `var` to the value `val`
   in the remote session
 
-Login to your local machine's telnet server and tell it you use a vt100
+Login to your local machine's telnet server and tell it you use a `vt100`
 terminal:
 
     curl --telnet-option TTYPE=vt100 telnet://localhost
 
 You need to manually enter your name and password when prompted.
-

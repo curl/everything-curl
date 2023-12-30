@@ -556,7 +556,6 @@ vcpkg
 VERIFYRESULT
 Viktor
 VMware
-vt
 vtls
 Warta
 WAV

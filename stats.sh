@@ -9,7 +9,7 @@ content=`echo "$titles-$tbd" | bc`
 
 words=`cat $book | wc -w`
 lines=`cat $book | wc -l`
-nonspace=`cat $book | tr -d ' #' | wc -c`
+nonspace=`cat $book | tr -d ' #\n' | wc -c`
 
 echo "Section titles: $titles"
 #echo "Sections with content: $content"

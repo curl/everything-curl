@@ -2,6 +2,7 @@
 --alt-svc
 --anyauth
 --basic
+--ca-native
 --compressed
 --compressed-ssh
 --connect-timeout
@@ -54,6 +55,7 @@
 --post302
 --post303
 --proxy
+--proxy-ca-native
 --proxy-http2
 --proxy-user
 --proxy1.0

@@ -12,7 +12,7 @@ archives. They must be downloaded and installed separately.
 | Language | Site | Author\(s\) |
 | :--- | :--- | :--- |
 | Script Basic | <https://scriptbasic.com/> | Peter Verhas |
-| C++ | <http://curlpp.org/> | Jean-Philippe, Barrette-LaPierre |
+| C++ | <https://www.curlpp.org/> | Jean-Philippe, Barrette-LaPierre |
 | C++ | <https://github.com/JosephP91/curlcpp> | Giuseppe Persico |
 | C++ | <https://github.com/libcpr/cpr> | Huu Nguyen |
 | Ch/C++ | <https://chcurl.sourceforge.io/> | Stephen Nestinger, Jonathan Rogado |
@@ -24,17 +24,16 @@ archives. They must be downloaded and installed separately.
 | Dylan | <https://opendylan.org/> | Chris Double |
 | Eiffel | <https://iron.eiffel.com/repository/20.11/package/ABEF6975-37AC-45FD-9C67-52D10BA0669B> | Eiffel Software |
 | Erlang | <https://github.com/puzza007/katipo> | Paul Oliver |
-| Falcon | <http://www.falconpl.org/> | Falcon |
+| Falcon | <http://www.falconpl.org/project_docs/curl/> | Falcon |
 | Gambas | <https://gambas.sourceforge.io/> | Gambas |
-| glib/GTK+ | <http://atterer.org/glibcurl> | Richard Atterer |
+| glib/GTK+ | <https://web.archive.org/web/20230204213618/atterer.org/glibcurl> | Richard Atterer |
 | Go | <https://github.com/andelf/go-curl> | ShuYu Wang |
-| Guile | <http://www.lonelycactus.com/guile-curl.html> | Michael L. Gran |
+| Guile | <https://web.archive.org/web/20210417020142/www.lonelycactus.com/guile-curl.html> | Michael L. Gran |
 | Harbour | <https://github.com/vszakats/harbour-core/tree/master/contrib/hbcurl> | Viktor Szakáts |
 | Haskell | <https://hackage.haskell.org/package/curl> | Galois, Inc |
 | Java | <https://github.com/pjlegato/curl-java> | Paul Legato |
 | Julia | <https://github.com/JuliaWeb/LibCURL.jl> | Amit Murthy |
 | Lisp | <https://common-lisp.net/project/cl-curl/> | Liam Healy |
-| Lua (luacurl) | <http://luacurl.luaforge.net/> | Alexander Marinov |
 | Lua-cURL | <https://github.com/Lua-cURL/Lua-cURLv3> | Jürgen Hötzel, Alexey Melnichuk |
 | .NET | <https://github.com/masroore/CurlSharp> | Masroor Ehsan Choudhury, Jeffrey Phillips |
 | Nim | <https://nimble.directory/pkg/libcurl> | Andreas Rumpf |

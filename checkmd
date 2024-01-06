@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 
 # Check the heading levels in the given markdown files
 #
@@ -16,10 +16,23 @@ sub check {
     open(F, "<$f");
     my $l = 1;
     my $lvl = 0;
+    my $next_line_should_be_blank = 0;
+
     while(<F>) {
         my $line = $_;
         chomp $line;
+
+        if($next_line_should_be_blank) {
+            if(! (($line eq "") || ($line =~ m/^[\s]*$/))) {
+                error($f, $line, $l, "The line after a '#' header should be blank.");
+            }
+
+            $next_line_should_be_blank = 0;
+        }
+
         if($line =~ /^(\#+) /) {
+            $next_line_should_be_blank = 1;
+
             # check the new used level
             my $nlvl = length($1);
             if($l==1) {

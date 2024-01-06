@@ -38,24 +38,30 @@ until all pieces have been sent that constitute the whole fragment.
 ## Flags
 
 ### `CURLWS_TEXT`
+
 The buffer contains text data. Note that this makes a difference to WebSocket
 but libcurl itself does not perform any verification of the content or make
 any precautions that you actually send valid UTF-8 content.
 
 ### `CURLWS_BINARY`
+
 This is binary data.
 
 ### `CURLWS_CONT`
+
 This is not the final fragment of the message, which implies that there is
 another fragment coming as part of the same message where this bit is not set.
 
 ### `CURLWS_CLOSE`
+
 Close this transfer.
 
 ### `CURLWS_PING`
+
 This as a ping.
 
 ### `CURLWS_PONG`
+
 This as a pong.
 
 ### `CURLWS_OFFSET`

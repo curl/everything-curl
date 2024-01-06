@@ -204,6 +204,7 @@ specified, that are checked/used if specified.
 ## `<info>`
 
 ### `<keywords>`
+
 A newline-separated list of keywords describing what this test case uses and
 tests. Try to use already used keywords. These keywords are used for
 statistical/informational purposes and for choosing or skipping classes of
@@ -213,6 +214,7 @@ as a single identifier.
 
 When using curl built with Hyper, the keywords must include HTTP or HTTPS for
 'hyper mode' to kick in and make line ending checks work for tests.
+
 ## `<reply>`
 
 ### `<data [nocheck="yes"] [sendzero="yes"] [base64="yes"] [hex="yes"] [nonewline="yes"]>`
@@ -279,6 +281,7 @@ a connect prefix.
 Address type and address details as logged by the SOCKS proxy.
 
 ### `<datacheck [mode="text"] [nonewline="yes"]>`
+
 if the data is sent but this is what should be checked afterwards. If
 `nonewline=yes` is set, runtests cuts off the trailing newline from the data
 before comparing with the one actually received by the client.
@@ -305,6 +308,7 @@ For HTTP/HTTPS, these are supported:
 `wait [secs]` - Pause for the given time
 
 ### `<servercmd>`
+
 Special-commands for the server.
 
 The first line of this file is always set to `Testnum [number]` by the test
@@ -357,12 +361,14 @@ issue.
 - `no-expect` - do not read the request body if Expect: is present
 
 #### For TFTP
+
 `writedelay: [secs]` delay this amount between reply packets (each packet
   being 512 bytes payload)
 
 ## `<client>`
 
 ### `<server>`
+
 What server(s) this test case requires/uses. Available servers:
 
 - `file`
@@ -394,6 +400,7 @@ What server(s) this test case requires/uses. Available servers:
 Enter only one server per line. This subsection is mandatory.
 
 ### `<features>`
+
 A list of features that MUST be present in the client/library for this test to
 be able to run. If a required feature is not present then the test is SKIPPED.
 
@@ -461,6 +468,7 @@ specified if it is different from the server (useful when the server is
 `none`).
 
 ### `<killserver>`
+
 Using the same syntax as in `<server>` but when mentioned here these servers
 are explicitly KILLED when this test case is completed. Only use this if there
 is no other alternatives. Using this of course requires subsequent tests to
@@ -485,6 +493,7 @@ the `unit/` directory (if the tool name starts with `unit`).
 Brief test case description, shown when the test runs.
 
 ### `<setenv>`
+
     variable1=contents1
     variable2=contents2
 
@@ -492,6 +501,7 @@ Set the given environment variables to the specified value before the actual
 command is run. They are cleared again after the command has been run.
 
 ### `<command [option="no-output/no-include/force-output/binary-trace"] [timeout="secs"][delay="secs"][type="perl/shell"]>`
+
 Command line to run.
 
 Note that the URL that gets passed to the server actually controls what data

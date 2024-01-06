@@ -204,6 +204,7 @@ specified, that are checked/used if specified.
 ## `<info>`
 
 ### `<keywords>`
+
 A newline-separated list of keywords describing what this test case uses and
 tests. Try to use already used keywords. These keywords are used for
 statistical/informational purposes and for choosing or skipping classes of
@@ -213,6 +214,7 @@ as a single identifier.
 
 When using curl built with Hyper, the keywords must include HTTP or HTTPS for
 'hyper mode' to kick in and make line ending checks work for tests.
+
 ## `<reply>`
 
 ### `<data [nocheck="yes"] [sendzero="yes"] [base64="yes"] [hex="yes"] [nonewline="yes"]>`
@@ -271,14 +273,17 @@ own data section. Validating the entire negotiation sequence can be done by
 specifying a `datacheck` section.
 
 ### `<connect>`
+
 The connect section is used instead of the 'data' for all CONNECT
 requests. The remainder of the rules for the data section then apply but with
 a connect prefix.
 
 ### `<socks>`
+
 Address type and address details as logged by the SOCKS proxy.
 
 ### `<datacheck [mode="text"] [nonewline="yes"]>`
+
 if the data is sent but this is what should be checked afterwards. If
 `nonewline=yes` is set, runtests cuts off the trailing newline from the data
 before comparing with the one actually received by the client.
@@ -287,17 +292,21 @@ Use the `mode="text"` attribute if the output is in text mode on platforms
 that have a text/binary difference.
 
 ### `<datacheckNUM [nonewline="yes"] [mode="text"]>`
+
 The contents of numbered `datacheck` sections are appended to the non-numbered
 one.
 
 ### `<size>`
+
 number to return on an ftp SIZE command (set to -1 to make this command fail)
 
 ### `<mdtm>`
+
 what to send back if the client sends an FTP `MDTM` command, set to -1 to have
 it return that the file does not exist
 
 ### `<postcmd>`
+
 special purpose server-command to control its behavior *after* the
 reply is sent
 For HTTP/HTTPS, these are supported:
@@ -305,6 +314,7 @@ For HTTP/HTTPS, these are supported:
 `wait [secs]` - Pause for the given time
 
 ### `<servercmd>`
+
 Special-commands for the server.
 
 The first line of this file is always set to `Testnum [number]` by the test
@@ -357,12 +367,14 @@ issue.
 - `no-expect` - do not read the request body if Expect: is present
 
 #### For TFTP
+
 `writedelay: [secs]` delay this amount between reply packets (each packet
   being 512 bytes payload)
 
 ## `<client>`
 
 ### `<server>`
+
 What server(s) this test case requires/uses. Available servers:
 
 - `file`
@@ -394,6 +406,7 @@ What server(s) this test case requires/uses. Available servers:
 Enter only one server per line. This subsection is mandatory.
 
 ### `<features>`
+
 A list of features that MUST be present in the client/library for this test to
 be able to run. If a required feature is not present then the test is SKIPPED.
 
@@ -461,30 +474,36 @@ specified if it is different from the server (useful when the server is
 `none`).
 
 ### `<killserver>`
+
 Using the same syntax as in `<server>` but when mentioned here these servers
 are explicitly KILLED when this test case is completed. Only use this if there
 is no other alternatives. Using this of course requires subsequent tests to
 restart servers.
 
 ### `<precheck>`
+
 A command line that if set gets run by the test script before the test. If an
 output is displayed by the command or if the return code is non-zero, the test
 gets skipped and the (single-line) output is displayed as reason for not
 running the test.
 
 ### `<postcheck>`
+
 A command line that if set gets run by the test script after the test. If the
 command exists with a non-zero status code, the test is considered failed.
 
 ### `<tool>`
+
 Name of tool to invoke instead of "curl". This tool must be built and exist
 either in the `libtest/` directory (if the tool name starts with `lib`) or in
 the `unit/` directory (if the tool name starts with `unit`).
 
 ### `<name>`
+
 Brief test case description, shown when the test runs.
 
 ### `<setenv>`
+
     variable1=contents1
     variable2=contents2
 
@@ -492,6 +511,7 @@ Set the given environment variables to the specified value before the actual
 command is run. They are cleared again after the command has been run.
 
 ### `<command [option="no-output/no-include/force-output/binary-trace"] [timeout="secs"][delay="secs"][type="perl/shell"]>`
+
 Command line to run.
 
 Note that the URL that gets passed to the server actually controls what data
@@ -540,6 +560,7 @@ parameter is the not negative integer number of seconds for the delay. This
 needed.
 
 ### `<file name="log/filename" [nonewline="yes"]>`
+
 This creates the named file with this content before the test case is run,
 which is useful if the test case needs a file to act on.
 
@@ -547,23 +568,28 @@ If `nonewline="yes"` is used, the created file gets the final newline stripped
 off.
 
 ### `<stdin [nonewline="yes"]>`
+
 Pass this given data on stdin to the tool.
 
 If `nonewline` is set, we cut off the trailing newline of this given data
 before comparing with the one actually received by the client
 
 ## `<verify>`
+
 ### `<errorcode>`
+
 numerical error code curl is supposed to return. Specify a list of accepted
 error codes by separating multiple numbers with comma. See test 237 for an
 example.
 
 ### `<strip>`
+
 One regex per line that is removed from the protocol dumps before the
 comparison is made. This is useful to remove dependencies on dynamically
 changing protocol data such as port numbers or user-agent strings.
 
 ### `<strippart>`
+
 One perl op per line that operates on the protocol dump. This is pretty
 advanced. Example: `s/^EPRT .*/EPRT stripped/`.
 
@@ -582,6 +608,7 @@ this given data before comparing with the one actually sent by the client The
 `<strip>` and `<strippart>` rules are applied before comparisons are made.
 
 ### `<stderr [mode="text"] [nonewline="yes"]>`
+
 This verifies that this data was passed to stderr.
 
 Use the `mode="text"` attribute if the output is in text mode on platforms
@@ -591,6 +618,7 @@ If `nonewline` is set, we cut off the trailing newline of this given data
 before comparing with the one actually received by the client
 
 ### `<stdout [mode="text"] [nonewline="yes"]>`
+
 This verifies that this data was passed to stdout.
 
 Use the `mode="text"` attribute if the output is in text mode on platforms
@@ -600,11 +628,13 @@ If `nonewline` is set, we cut off the trailing newline of this given data
 before comparing with the one actually received by the client
 
 ### `<file name="log/filename" [mode="text"]>`
+
 The file's contents must be identical to this after the test is complete. Use
 the `mode="text"` attribute if the output is in text mode on platforms that
 have a text/binary difference.
 
 ### `<file1>`
+
 1 to 4 can be appended to 'file' to compare more files.
 
 ### `<file2>`
@@ -614,11 +644,13 @@ have a text/binary difference.
 ### `<file4>`
 
 ### `<stripfile>`
+
 One perl op per line that operates on the output file or stdout before being
 compared with what is stored in the test file. This is pretty
 advanced. Example: "s/^EPRT .*/EPRT stripped/"
 
 ### `<stripfile1>`
+
 1 to 4 can be appended to `stripfile` to strip the corresponding <fileN>
 content
 
@@ -629,7 +661,9 @@ content
 ### `<stripfile4>`
 
 ### `<upload>`
+
 the contents of the upload data curl should have sent
 
 ### `<valgrind>`
+
 disable - disables the valgrind log check for this test

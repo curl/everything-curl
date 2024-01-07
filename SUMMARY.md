@@ -221,6 +221,7 @@
     * [HSTS](libcurl/callbacks/hsts.md)
     * [Prereq](libcurl/callbacks/prereq.md)
   * [Connection control](libcurl/conn.md)
+    * [How libcurl connects](libcurl/conn/how.md)
     * [Connection reuse](libcurl/conn/reuse.md)
     * [Name resolving](libcurl/conn/names.md)
     * [Proxies](libcurl/conn/proxies.md)

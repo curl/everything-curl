@@ -208,6 +208,7 @@
  - GOPHER: [How it started](project/started.md#how-it-started), [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support), [GOPHER](protocols/curl.md#gopher), [Supported schemes](cmdline/urls/scheme.md#supported-schemes), [Version](usingcurl/version.md#version), [Variables](internals/tests/file-format.md#variables)
  - GOPHERS: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support), [GOPHERS](protocols/curl.md#gophers), [Supported schemes](cmdline/urls/scheme.md#supported-schemes), [Variables](internals/tests/file-format.md#variables)
 ## H
+ - Happy Eyeballs: [All options](libcurl/options/all.md#all-options), [Happy Eyeballs](libcurl/conn/how.md#happy-eyeballs)
  - haproxy: [Proxies](usingcurl/proxies.md#proxies), [haproxy](usingcurl/proxies/haproxy.md#haproxy), [All options](libcurl/options/all.md#all-options)
  - --haproxy-clientip: [curl and haproxy](usingcurl/proxies/haproxy.md#curl-and-haproxy)
  - --haproxy-protocol: [curl and haproxy](usingcurl/proxies/haproxy.md#curl-and-haproxy)

@@ -1,4 +1,5 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
+
 # Build an index of words in the file index-words that are found in the text.
 # Words are compared case insensitively except for those starting with a dash
 # (i.e. program option names). "Words" may actually be phrases consisting of
@@ -6,6 +7,10 @@
 # as found in the file (i.e. using that case).
 
 use feature "fc";
+
+# import shared function
+use lib '.';
+require "urlify.pl";
 
 # Return the case-folded keyword UNLESS it appears to be an option string
 # in which case return it as-is. This makes word lookups case-insensitive
@@ -31,33 +36,6 @@ while(<F>) {
 }
 close(F);
 
-sub urlify {
-    my ($fname, $section)=@_;
-
-    # convert letters to lower case
-    $section =~ tr/[A-Z]/[a-z]/;
-
-    # Convert all '<' to '-less-than' 
-    $section =~ s/\</-less-than-/g;
-
-    # Convert all '>' to '-greater-than'
-    $section =~ s/\>/-greater-than-/g;
-
-    # remove rubbish
-    $section =~ s/[*`'":\(\),]+//g;
-
-    # convert anything left that isn't a dash, underscore, number or letter
-    $section =~ s/[^_a-zA-Z0-9-]/-/g;
-
-    # Remove starting chars that aren't a letter or underscore;
-    # those aren't legal for the beginning of a section ID.
-    $section =~ s/^[^_a-zA-Z]+//g;
-
-    # strip trailing dash '-' characters from the section header
-    $section =~ s/-+$//;
-
-    return "$fname#$section";
-}
 
 sub single {
     my ($fname)=@_;
@@ -72,16 +50,16 @@ sub single {
         my $l=$_;
 
         # Track whether we are within a markdown code block that begins/ends with ```
-        if ($_ =~ /^\`\`\`.*/) {
-            if ($in_code_section) {
+        if($_ =~ /^\`\`\`.*/) {
+            if($in_code_section) {
                 $in_code_section = 0;
             } else {
                 $in_code_section = 1;
             }
         }
 
-        if (!$in_code_section) {
-            if ($_ =~ /^(#[\#]*) ([^\{]*)(\{\#(.*)\})/) {
+        if(!$in_code_section) {
+            if($_ =~ /^(#[\#]*) ([^\{]*)(\{\#(.*)\})/) {
                 # This section header has an explicit ID specified, e.g. "#Foo {#foo}"
                 $depth = $1;
                 $section = $2;
@@ -90,9 +68,14 @@ sub single {
                 $section =~ s/\s+$//;
 
                 $url = "$fname#$dest_id";
+
+                # Use only the anchor text when a section heading has an anchor tag
+                if($section =~ m/(.*)\[(.*)\]\(.*\).*/) {
+                    $section = "$1$2";
+                }
                 $l = $section;
             }
-            elsif ($_ =~ /^(#[\#]*) (.*)/) {
+            elsif($_ =~ /^(#[\#]*) (.*)/) {
                 # This section header has no explicit ID specified, e.g. "#Foo"
                 $depth = $1;
                 $section = $2;
@@ -100,7 +83,14 @@ sub single {
                 # trim whitespace off end of section
                 $section =~ s/\s+$//;
 
-                $url=urlify($fname, $section);
+                my $url_section  = urlify($section);
+                $url = "$fname#$url_section";
+
+                # Use only the anchor text when a section heading has an anchor tag
+                if($section =~ m/(.*)\[(.*)\]\(.*\).*/) {
+                    $section = "$1$2";
+                }
+
                 $l = $section; # use this too
             }
         }
@@ -121,7 +111,6 @@ sub single {
         foreach my $w (@lwords) {
             if(folded($l) =~ /$w/) {
                 if(!$word{$w}{$fname}) {
-                    #print " $w ($url)\n";
                     $word{$w}{$fname}++;
                     $all{$w} .= ($all{$w}?", ":"")."[$section]($url)";
                 }
@@ -158,9 +147,9 @@ foreach my $w (sort byname keys %all) {
     my $l = substr(sorting($w), 0, 1);
     if(!$letter{$l}) {
         $letter{$l}++;
-        print "## $l\n";
+        # Make sure headings have blank lines before and after
+        print "\n## $l\n\n";
     }
-    
     printf " - ".$index{$w}.": ";
     print $all{$w}."\n";
 }

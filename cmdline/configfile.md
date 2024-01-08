@@ -79,7 +79,7 @@ quotes are technically not needed:
 
     user-agent = Everything-is-an-agent
 
-See ["When to use quotes"](#when-to-use-quotes) for more info on when quotes should be used.
+See "When to use quotes" below for more info on when quotes should be used.
 
 ## URLs
 

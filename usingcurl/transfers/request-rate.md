@@ -30,10 +30,8 @@ separate retry delay logic is used and not this setting.
 
 If this option is used several times, the last one is used.
 
-## Examples
-
-Make curl download 100 images but doing it no faster than 2 transfers per
-second:
+For example, make curl download 100 images but doing it no faster than 2
+transfers per second:
 
     curl --rate 2/s -O https://example.com/[1-100].jpg
     

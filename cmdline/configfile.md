@@ -1,18 +1,23 @@
 # Config file
 
-Curl commands with multiple command-line options can become cumbersome to work with. The number of characters can even exceed the maximum length allowed by your terminal application. 
+Curl commands with multiple command-line options can become cumbersome to work
+with. The number of characters can even exceed the maximum length allowed by
+your terminal application.
 
-To aid such situations, curl allows you to write command-line options in a plain text config file and tell curl to read options from that file when applicable. 
+To aid such situations, curl allows you to write command-line options in a
+plain text config file and tell curl to read options from that file when
+applicable.
 
-You can also use config files to assign data to variables and transform the data with functions, making them incredibly useful. This is discussed in the ["Variables"](https://everything.curl.dev/cmdline/variables) section.
+You can also use config files to assign data to variables and transform the
+data with functions, making them incredibly useful. This is discussed in the
+["Variables"](https://everything.curl.dev/cmdline/variables) section.
 
-Some examples below contain multiple lines for readability. The forward slash (`\`) is used to instruct the terminal to ignore the newline.
+Some examples below contain multiple lines for readability. The forward slash
+(`\`) is used to instruct the terminal to ignore the newline.
 
-## Options
+## Specify the config file to use
 
 Using the `-K` or long form `--config` option tells curl to read from a config file.
-
-## Example 1
 
     curl  \
         --config configFile.txt \
@@ -27,7 +32,6 @@ simplicity in the example above.
 
 Enter one command per line. Use a hash symbol for comments:
 
-
     # curl config file
 
     # Follow redirects
@@ -36,15 +40,12 @@ Enter one command per line. Use a hash symbol for comments:
     # Do a HEAD request
     --head
 
-
-### Command line options
+## Command line options
 
 You can use both short and long options, exactly as you would write them on a command line. 
 
 You can also write the long option WITHOUT the leading two dashes to make
 it easier to read. 
-
-### Example 1
 
     # curl config file
 
@@ -54,12 +55,10 @@ it easier to read.
     # Do a HEAD request
     head
 
-### Arguments
+## Arguments
 
 A command line option that takes an argument must have its argument provided on
 the SAME LINE as the option. 
-
-#### Example 1
 
     # curl config file
 
@@ -69,15 +68,12 @@ You can also use `=` or `:` between the option and its argument. As you see
 above, it is not necessary, but some like the clarity it offers. Setting the
 user-agent option again:
 
-#### Example 2
-
     # curl config file
 
     user-agent = "Everything-is-an-agent"
 
-The user agent string example we have used above has no white spaces, so the quotes are technically not needed:
-
-#### Example 3
+The user agent string example we have used above has no white spaces, so the
+quotes are technically not needed:
 
     # curl config file
 
@@ -85,17 +81,17 @@ The user agent string example we have used above has no white spaces, so the quo
 
 See ["When to use quotes"](#when-to-use-quotes) for more info on when quotes should be used.
 
-### URLs
+## URLs
 
-When entering URLs at the command line, everything that is not an option is assumed to be a URL. However, in a config file, you must specify a URL with `--url` or `url`.
-
-#### Example 1
+When entering URLs at the command line, everything that is not an option is
+assumed to be a URL. However, in a config file, you must specify a URL with
+`--url` or `url`.
 
     # curl config file
 
     url = https://example.com
 
-### When to use quotes
+## When to use quotes
 
 You need to use double quotes when:
 

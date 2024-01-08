@@ -43,9 +43,8 @@ Define a macro. This is **not supported by curl**. In order for the rest of
 the `.netrc` to still work fine, curl properly skips every definition done
 with `macdef` that it finds.
 
-## Example
-
-An example .netrc for the host example.com with a user named 'daniel', using the password 'qwerty' would look like:
+An example .netrc for the host example.com with a user named 'daniel', using
+the password 'qwerty' would look like:
 
     machine example.com
     login daniel

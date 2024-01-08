@@ -7,7 +7,7 @@ meter. Set it to `0L` to enable it.
 
 Return error to stop transfer
 
-## Example
+It can look something like this in code:
 
     #include <stdio.h>
     #include <curl/curl.h>

@@ -7,7 +7,7 @@ below the given threshold over a period of multiple seconds.
 There are separate options for receiving (`CURLOPT_MAX_RECV_SPEED_LARGE`) and
 sending (`CURLOPT_MAX_SEND_SPEED_LARGE`).
 
-## Example
+Here is an example source code showing it in use:
 
     #include <stdio.h>
     #include <curl/curl.h>

@@ -31,7 +31,7 @@ A basic command to send an email:
     curl smtp://mail.example.com --mail-from myself@example.com --mail-rcpt \
     receiver@example.com --upload-file email.txt
 
-## Example email.txt
+An example `email.txt` could look like this:
 
     From: John Smith <john@example.com>
     To: Joe Smith <smith@example.com>

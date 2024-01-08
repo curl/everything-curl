@@ -6,7 +6,7 @@ explains how to do effective HTTP transfers and general fiddling with curl.
 
 This mostly works the same way for HTTPS, as they are really the same thing
 under the hood, as HTTPS is HTTP with an extra security TLS layer. See also
-the specific [HTTPS](#https) section below.
+the specific HTTPS section.
 
   * [Protocol basics](http/basics.md)
   * [Method](http/method.md)

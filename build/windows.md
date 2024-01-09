@@ -16,7 +16,7 @@ Build with MSVC using the `nmake` utility like this:
     cd winbuild
 
 Decide what options to enable/disable in your build. The `README.md` file in
-that directly details them all, but an example command line could look like
+that directory details them all, but an example command line could look like
 this (split into several lines for readability):
 
     nmake WITH_SSL=dll WITH_NGHTTP2=dll ENABLE_IPV6=yes \
@@ -37,11 +37,9 @@ the solution or workspace files. The VC directory names are based on the
 version of Visual C++ that you use. Each version of Visual Studio has a
 default version of Visual C++. We offer these versions:
 
- - VC10      (Visual Studio 2010 Version 10.0)
- - VC11      (Visual Studio 2012 Version 11.0)
- - VC12      (Visual Studio 2013 Version 12.0)
  - VC14      (Visual Studio 2015 Version 14.0)
  - VC14.10   (Visual Studio 2017 Version 15.0)
+ - VC14.20   (Visual Studio 2019 Version 16.0)
  - VC14.30   (Visual Studio 2022 Version 17.0)
 
 Separate solutions are provided for both libcurl and the curl command line

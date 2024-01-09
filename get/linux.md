@@ -83,7 +83,7 @@ If curl is not installed, Arch Linux uses `pacman` to install packages:
 
 ## SUSE and openSUSE
 
-With SUSE Linux and openSUSE Linux you use `zypper` to install install
+With SUSE Linux and openSUSE Linux you use `zypper` to install
 packages. To install the curl command-line utility:
 
     zypper install curl

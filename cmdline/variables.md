@@ -67,7 +67,7 @@ exit with an error if the given environment variable is not set. A user can
 also opt to set a default value if the environment variable does not exist,
 using `=content` or `@file` as described above.
 
-As an example example, assign the `%USER` environment variable to a curl
+As an example, assign the `%USER` environment variable to a curl
 variable and insert it into a URL. Because no default value is specified, this
 operation fails if the environment variable does not exist:
 
@@ -129,7 +129,7 @@ This is extra useful when reading data from files.
 ## Function: `json`
 
 Expands the variable as a valid JSON string. This makes it easier to insert
-valid JSON into into an argument (The quotes are not included in the resulting
+valid JSON into an argument (The quotes are not included in the resulting
 JSON).
 
     --expand-json “\”full name\”: \”{{first:json}} {{last:json}}\””

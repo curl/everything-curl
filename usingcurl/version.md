@@ -51,7 +51,7 @@ particular backend to use for this invoke.
 
 If curl supports more than one TLS library like this, the ones that are *not*
 selected by default are listed within parentheses. Thus, if you do not specify
-which backend to use use (with the `CURL_SSL_BACKEND` environment variable)
+which backend to use (with the `CURL_SSL_BACKEND` environment variable)
 the one listed without parentheses is used.
 
 ## Line 2: Release-Date

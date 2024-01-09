@@ -24,7 +24,7 @@ result in shorter transfer times.
 
 ## c-ares
 
-https://c-ares.org/
+<https://c-ares.org/>
 
 curl can be built with c-ares to be able to do asynchronous name resolution.
 Another option to enable asynchronous name resolution is to build curl with
@@ -34,35 +34,35 @@ thread.
 
 ## nghttp2
 
-https://nghttp2.org/
+<https://nghttp2.org/>
 
 This is a library for handling HTTP/2 framing and is a prerequisite for curl
 to support HTTP version 2.
 
 ## openldap
 
-https://www.openldap.org/
+<https://www.openldap.org/>
 
 This library is one option to allow curl to get support for the LDAP and LDAPS
 URL schemes. On Windows, you can also opt to build curl to use the winldap library.
 
 ## librtmp
 
-https://rtmpdump.mplayerhq.hu/
+<https://rtmpdump.mplayerhq.hu/>
 
 To enable curl's support for the RTMP URL scheme, you must build curl with the
 librtmp library that comes from the RTMPDump project.
 
 ## libpsl
 
-https://rockdaboot.github.io/libpsl/
+<https://rockdaboot.github.io/libpsl/>
 
 When you build curl with support for libpsl, the cookie parser knows about the
 Public Suffix List and thus handle such cookies appropriately.
 
 ## libidn2
 
-https://www.gnu.org/software/libidn/libidn2/manual/libidn2.html
+<https://www.gnu.org/software/libidn/libidn2/manual/libidn2.html>
 
 curl handles International Domain Names (IDN) with the help of the libidn2 library.
 

@@ -12,7 +12,7 @@ mdcheck:
 	@./checkmd $(MDS)
 
 check: 
-	@proselint $(MDS)
+	@proselint --config ./proselint.cfg $(MDS)
 
 wordcheck: 
 	@./mgrep $(MDS)

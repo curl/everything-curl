@@ -79,3 +79,11 @@ libraries:
 
 There are many different TLS libraries to choose from, so they are covered in
 a [separate section](tls.md).
+
+## QUIC and HTTP/3
+
+To build curl with HTTP/3 support, you need one of these sets:
+
+- [ngtcp2](https://github.com/ngtcp2/ngtcp2) + [nghttp3](https://github.com/ngtcp2/nghttp3)
+- [quiche](https://github.com/cloudflare/quiche) (**experimental**)
+- [msquic](https://github.com/microsoft/msquic) + [msh3](https://github.com/nibanks/msh3) (**experimental**)

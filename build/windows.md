@@ -16,7 +16,7 @@ Build with MSVC using the `nmake` utility like this:
     cd winbuild
 
 Decide what options to enable/disable in your build. The `README.md` file in
-that directly details them all, but an example command line could look like
+that directory details them all, but an example command line could look like
 this (split into several lines for readability):
 
     nmake WITH_SSL=dll WITH_NGHTTP2=dll ENABLE_IPV6=yes \

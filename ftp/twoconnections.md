@@ -1,6 +1,6 @@
 # Two connections
 
-FTP uses two TCP connections! The first connection is setup by the client when
+FTP uses two TCP connections. The first connection is setup by the client when
 it connects to an FTP server, and is called the *control connection*. As the
 initial connection, it gets to handle authentication and changing to the
 correct directory on the remote server, etc. When the client then is ready to

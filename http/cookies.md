@@ -44,7 +44,7 @@ Starting off with a blank cookie store may not be desirable. Why not start off
 with cookies you stored in a previous fetch or that you otherwise acquired?
 The file format curl uses for cookies is called the Netscape cookie format
 because it was once the file format used by browsers and then you could easily
-tell curl to use the browser's cookies!
+tell curl to use the browser's cookies.
 
 As a convenience, curl also supports a cookie file being a set of HTTP headers
 that set cookies. It is an inferior format but may be the only thing you have.

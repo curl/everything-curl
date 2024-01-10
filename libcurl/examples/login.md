@@ -31,7 +31,7 @@ and prove to the server that we are in fact correctly logged in.
       if(curl) {
         curl_easy_setopt(curl, CURLOPT_URL, "https://example.com/login.cgi");
         curl_easy_setopt(curl, CURLOPT_POSTFIELDS, postthis);
-        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L); /* redirects! */
+        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L); /* redirects */
         curl_easy_setopt(curl, CURLOPT_COOKIEFILE, ""); /* no file */
         res = curl_easy_perform(curl);
         /* Check for errors */

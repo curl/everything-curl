@@ -10,7 +10,7 @@ an extended period of time without it necessarily getting noticed by the
 participants in the transfer.
 
 The result of this is that sometimes Internet transfers take a long
-time. Further, most operations in curl have no time-out by default!
+time. Further, most operations in curl have no time-out by default.
 
 ## Maximum time allowed to spend
 

@@ -17,7 +17,7 @@ Having done this simple operation, you can now inspect curl's or your browser's 
 
 Just remember that if you record TLS traffic and want to save it for analyzing later, you need to also save the file with the secrets so that you can decrypt that traffic capture at a later time as well.
 
-## libcurl-using applications too!
+## libcurl-using applications too
 
 Support for `SSLKEYLOGFILE` is provided by libcurl itself - making it possible for you to trace and inspect the TLS network data for any application built to use libcurl - not just the curl command line tool.
 

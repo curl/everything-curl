@@ -2,7 +2,7 @@
 
 When you want to make sure your curl command line does not download a
 too-large file, instruct curl to stop before doing that, if it knows the size
-before the transfer starts! Maybe that would use too much bandwidth, take too
+before the transfer starts. Maybe that would use too much bandwidth, take too
 long time or you do not have enough space on your hard drive:
 
     curl --max-filesize 100000 https://example.com/

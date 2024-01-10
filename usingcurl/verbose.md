@@ -23,12 +23,12 @@ This tells us curl now tries to connect to this IP address. It means the name
 
     * Connected to example.com (93.184.216.34) port 80 (#0)
 
-It worked! curl connected to the site and here it explains how the name maps
+It worked. curl connected to the site and here it explains how the name maps
 to the IP address and on which port it has connected to. The '(#0)' part is
 which internal number curl has given this connection. If you try multiple URLs
 in the same command line you can see it use more connections or reuse
-connections, so the connection counter may increase or not increase
-depending on what curl decides it needs to do.
+connections, so the connection counter may increase or not increase depending
+on what curl decides it needs to do.
 
 If we use an `HTTPS://` URL instead of an HTTP one, there are also a whole
 bunch of lines explaining how curl uses CA certs to verify the server's

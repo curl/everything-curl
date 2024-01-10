@@ -69,7 +69,7 @@ To tell the client “the URI you sent a POST to, is permanently redirected to B
 where you should instead send your POST now and in the future”, the server
 responds with a 308. To complicate matters, the 308 code is only recently
 defined (the [spec](https://tools.ietf.org/html/rfc7238#section-3) was
-published in June 2014) so older clients may not treat it correctly! If so,
+published in June 2014) so older clients may not treat it correctly. If so,
 then the only response code left for you is…
 
 The (older) response code to tell a client to send a POST also in the next

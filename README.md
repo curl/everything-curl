@@ -53,7 +53,7 @@ All there is to know about Daniel can be found on [daniel.haxx.se](https://danie
 
 If you find mistakes, omissions, errors or blatant lies in this document,
 please send us a refreshed version of the affected paragraph and we will amend
-and update. We give credit to and recognize everyone who helps out!
+and update. We give credit to and recognize everyone who helps out.
 
 Preferably, you could submit
 [errors](https://github.com/bagder/everything-curl/issues) or [pull

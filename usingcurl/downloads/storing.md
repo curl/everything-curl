@@ -63,4 +63,4 @@ up to the user to decide what to do with the leftovers.
 
 The `--remove-on-error` command line option changes this behavior. It tells
 curl to delete any partially saved file if curl exits with an error. No more
-leftovers!
+leftovers.

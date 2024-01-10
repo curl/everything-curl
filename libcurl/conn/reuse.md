@@ -27,7 +27,7 @@ When you are using the multi API, the connection pool is instead kept
 associated with the multi handle. This allows you to cleanup and re-create
 easy handles freely without risking losing the connection pool, and it allows
 the connection used by one easy handle to get reused by a separate one in a
-later transfer. Just reuse the multi handle!
+later transfer. Just reuse the multi handle.
 
 ## Sharing the "connection cache"
 

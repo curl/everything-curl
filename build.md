@@ -48,7 +48,7 @@ yourself, chances are that building curl from source is the easiest or perhaps
 the only way to get curl.
 
 Making it easy to build curl is a priority to the curl project, although we do
-not always necessarily succeed!
+not always necessarily succeed.
 
 ## git vs release tarballs
 

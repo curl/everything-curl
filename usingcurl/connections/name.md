@@ -40,8 +40,8 @@ given URL.
 ## Provide a custom IP address for a name
 
 Do you know better than the name resolver where curl should go? Then you can
-give an IP address to curl yourself! If you want to redirect port 80 access for
-`example.com` to instead reach your localhost:
+give an IP address to curl yourself. If you want to redirect port 80 access
+for `example.com` to instead reach your localhost:
 
     curl --resolve example.com:80:127.0.0.1 http://example.com/
 

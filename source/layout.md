@@ -127,7 +127,7 @@ converted from text to a web friendly format/look.
 - `SECURITY`: how we work on security vulnerabilities
 - `SSLCERTS`: TLS certificate handling documented
 - `SSL-PROBLEMS`: common SSL problems and their causes
-- `THANKS`: thanks to this extensive list of friendly people, curl exists today!
+- `THANKS`: thanks to this extensive list of friendly people, curl exists today.
 - `TheArtOfHttpScripting`: a tutorial into HTTP scripting with curl
 - `TODO`: things we or you can work on implementing
 - `VERSIONS`: how the version numbering of libcurl works

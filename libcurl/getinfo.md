@@ -1,6 +1,6 @@
 # Post transfer info
 
-Remember how libcurl transfers are associated with an "easy handle"! Each
+Remember how libcurl transfers are associated with *easy handles*. Each
 transfer has such a handle and when a transfer is completed, before the handle
 is cleaned or reused for another transfer, it can be used to extract
 information from the previous operation.

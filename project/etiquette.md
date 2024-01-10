@@ -102,11 +102,11 @@ Many people mail questions to the list, people spend some of their time and
 make an effort in providing good answers to these questions.
 
 If you are the one who asks, please consider responding once more in case one
-of the hints was what solved your problems. Those who write answers feel
-good to know that they provided a good answer and that you fixed the
-problem. Far too often, the person who asked the question is never heard of
-again, and we never get to know if he/she is gone because the problem was
-solved or perhaps because the problem was unsolvable!
+of the hints was what solved your problems. Those who write answers feel good
+to know that they provided a good answer and that you fixed the problem. Far
+too often, the person who asked the question is never heard of again, and we
+never get to know if he/she is gone because the problem was solved or perhaps
+because the problem was unsolvable.
 
 Getting the solution posted also helps other users that experience the same
 problem(s). They get to see (possibly in the web archives) that the suggested

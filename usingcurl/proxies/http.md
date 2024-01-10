@@ -48,7 +48,7 @@ not work:
 
     curl -x http://proxy.example.com:80 ftp://ftp.example.com/file.txt
 
-What you can do instead then, is to "tunnel through" the HTTP proxy!
+What you can do instead then, is to "tunnel through" the HTTP proxy.
 
 ## HTTP proxy tunneling
 

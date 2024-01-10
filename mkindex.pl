@@ -129,7 +129,7 @@ print "# Index\n\n";
 sub sorting {
     my ($s) = @_;
     $s = uc($s); # first uppercase
-    $s =~ s/^[-]+//; # remove initial junk
+    $s =~ s/^[-<\/.]+//; # remove initial junk
     return $s;
 }
 

@@ -96,9 +96,9 @@ there is a *connection* established between the two machines. This
 connection can then be used to exchange data. This exchange is done using
 a "protocol", as discussed in the following chapter.
 
-Traditionally, what we call a *download* is when data is transferred from a
-server to a client; conversely, an *upload* is when data is transferred from
-the client to the server. The client is "down here"; the server is "up there".
+Traditionally, a *download* is when data is transferred from a server to a
+client; conversely, an *upload* is when data is sent from the client to the
+server. The client is "down here"; the server is "up there".
 
 ## Disconnect
 

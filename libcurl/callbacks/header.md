@@ -13,7 +13,7 @@ received. *ptr* points to the delivered data, and the size of that data is
 *size* multiplied with *nmemb*. libcurl buffers headers and delivers only
 "full" headers, one by one, to this callback.
 
-The data passed to this function is not be zero terminated! You cannot, for
+The data passed to this function is not be zero terminated. You cannot, for
 example, use printf's `%s` operator to display the contents nor strcpy to copy
 it.
 

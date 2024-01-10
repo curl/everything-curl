@@ -19,7 +19,7 @@ To know what commands that are available and possible to send to a server, you
 need to know a little about the FTP protocol, and possibly read up a bit on
 RFC 959 on the details.
 
-To send a simple `NOOP` to the server (which does nothing!) **before** the
+To send a simple `NOOP` to the server (which does nothing) **before** the
 transfer starts, provide it to curl like this:
 
     curl -Q NOOP ftp://example.com/file

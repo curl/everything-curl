@@ -20,7 +20,7 @@ passed to curl using one of the following syntaxes:
 
  - `content`: URL encode the content and pass that on. Just be careful so that
    the content does not contain any `=` or `@` symbols, as that then makes the
-   syntax match one of the other cases below!
+   syntax match one of the other cases below.
 
  - `=content`: URL encode the content and pass that on. The initial `=` symbol
    is not included in the data.

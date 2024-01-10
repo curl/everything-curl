@@ -23,4 +23,4 @@ by instead reading from the input or similar.
 
 If you forward the input arguments directly to fseek(3) or lseek(3), note that
 the data type for offset is not the same as defined for `curl_off_t` on many
-systems!
+systems.

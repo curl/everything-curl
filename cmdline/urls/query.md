@@ -20,7 +20,7 @@ the `+` prefix. See below.
 
  - `content`: URL encode the content and add that to the query. Just be
    careful so that the content does not contain any `=` or `@` symbols, as
-   that makes the syntax match one of the other cases below!
+   that makes the syntax match one of the other cases below.
 
  - `=content`: URL encode the content and add that to the query. The initial
    `=` symbol is not included in the data.

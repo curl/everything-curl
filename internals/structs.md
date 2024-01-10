@@ -35,7 +35,7 @@ times.
 
   When doing multiplexed HTTP/2 transfers, each `Curl_easy` is associated with
   an individual stream, sharing the same connectdata struct. Multiplexing
-  makes it even more important to keep things associated with the right thing!
+  makes it even more important to keep things associated with the right thing.
 
 ## connectdata
 

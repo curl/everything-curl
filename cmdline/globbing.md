@@ -16,7 +16,7 @@ interfering with it. This also goes for other characters treated special, like
 for example '&', '?' and '*'.
 
 While most transfer related functionality in curl is provided by the libcurl
-library, the URL globbing feature is not!
+library, the URL globbing feature is not.
 
 ## Numerical ranges
 

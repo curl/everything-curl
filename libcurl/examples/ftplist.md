@@ -16,7 +16,7 @@ it as a directory.
       curl = curl_easy_init();
       if(curl) {
         /*
-         * Make the URL end with a trailing slash!
+         * Make the URL end with a trailing slash
          */
         curl_easy_setopt(curl, CURLOPT_URL, "ftp://ftp.example.com/");
 

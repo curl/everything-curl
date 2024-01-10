@@ -44,10 +44,10 @@ can narrow down the "suspects" and make sure your problem is properly located.
 
 A bug report that is submitted then abandoned by the submitter risks getting
 closed if the developer fails to understand it, fails to reproduce it or faces
-other problems when working on it. Do not abandon your report!
+other problems when working on it. Do not abandon your report.
 
 Report curl bugs in the [curl bug tracker on
-GitHub](https://github.com/curl/curl/issues)!
+GitHub](https://github.com/curl/curl/issues).
 
 ## Testing
 

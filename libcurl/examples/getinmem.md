@@ -84,7 +84,7 @@ from that instead.
          * Now, our chunk.memory points to a memory block that is chunk.size
          * bytes big and contains the remote file.
          *
-         * Do something nice with it!
+         * Do something nice with it
          */
 
         printf("%lu bytes retrieved\n", (long)chunk.size);

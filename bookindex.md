@@ -1,18 +1,6 @@
 # Index
 
 
-## .
-
- - .netrc: [Command line leakage](cmdline/passwords.md#command-line-leakage), [Using curl](usingcurl.md#using-curl), [.netrc](usingcurl/netrc.md#sect--dot-netrc), [All options](libcurl/options/all.md#all-options), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
-
-## /
-
- - /etc/hosts: [Run a local clone](source/web.md#run-a-local-clone), [Host](cmdline/urls/host.md#host), [Edit the hosts file](usingcurl/connections/name.md#edit-the-hosts-file)
-
-## <
-
- - <curl/curl.h>: [include/curl](source/layout.md#include-slash-curl), [Header files](libcurl/headers.md#header-files), [Stop slow transfers](libcurl/control/stopslow.md#stop-slow-transfers), [Rate limit](libcurl/control/ratelimit.md#rate-limit), [Progress meter](libcurl/control/meter.md#progress-meter), [Include files](libcurl/url/include.md#include-files), [--libcurl](libcurl/--libcurl.md#sect---libcurl), [Get a simple HTTP page](libcurl/examples/get.md#get-a-simple-http-page), [Get a response into memory](libcurl/examples/getinmem.md#get-a-response-into-memory), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http), [Get an FTP directory listing](libcurl/examples/ftplist.md#get-an-ftp-directory-listing), [Non-blocking HTTP form-post](libcurl/examples/http-ul-nonblock.md#non-blocking-http-form-post)
-
 ## A
 
  - --alt-svc: [Enable](http/altsvc.md#enable)
@@ -56,6 +44,7 @@
  - curl-announce: [curl-announce](project/maillists.md#curl-announce), [Vulnerability handling](source/reportvuln.md#vulnerability-handling)
  - curl-library: [curl-users](project/maillists.md#curl-users), [Make a patch for the mailing list](source/contributing.md#make-a-patch-for-the-mailing-list), [Vulnerability handling](source/reportvuln.md#vulnerability-handling)
  - curl-users: [curl-users](project/maillists.md#curl-users), [Vulnerability handling](source/reportvuln.md#vulnerability-handling)
+ - <curl/curl.h>: [include/curl](source/layout.md#include-slash-curl), [Header files](libcurl/headers.md#header-files), [Stop slow transfers](libcurl/control/stopslow.md#stop-slow-transfers), [Rate limit](libcurl/control/ratelimit.md#rate-limit), [Progress meter](libcurl/control/meter.md#progress-meter), [Include files](libcurl/url/include.md#include-files), [--libcurl](libcurl/--libcurl.md#sect---libcurl), [Get a simple HTTP page](libcurl/examples/get.md#get-a-simple-http-page), [Get a response into memory](libcurl/examples/getinmem.md#get-a-response-into-memory), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http), [Get an FTP directory listing](libcurl/examples/ftplist.md#get-an-ftp-directory-listing), [Non-blocking HTTP form-post](libcurl/examples/http-ul-nonblock.md#non-blocking-http-form-post)
  - CURLE_ABORTED_BY_CALLBACK: [Progress information](libcurl/callbacks/progress.md#progress-information)
  - CURLHSTS_ENABLE: [Enable HSTS for a handle](libcurl-http/hsts.md#enable-hsts-for-a-handle)
  - CURLHSTS_READONLYFILE: [Enable HSTS for a handle](libcurl-http/hsts.md#enable-hsts-for-a-handle)
@@ -202,6 +191,7 @@
  - ETag: [Conditionals](http/conditionals.md#conditionals)
  - --etag-compare: [Check by modification of content](http/conditionals.md#check-by-modification-of-content)
  - --etag-save: [Check by modification of content](http/conditionals.md#check-by-modification-of-content)
+ - /etc/hosts: [Run a local clone](source/web.md#run-a-local-clone), [Host](cmdline/urls/host.md#host), [Edit the hosts file](usingcurl/connections/name.md#edit-the-hosts-file)
  - etiquette: [Mailing list etiquette](project/etiquette.md#mailing-list-etiquette)
  - event-driven: [Drive with multi\_socket](libcurl/drive/multi-socket.md#drive-with-multi-_socket), [Everything is multi](internals/multi.md#everything-is-multi)
 
@@ -308,6 +298,7 @@
 
  - name resolving: [Hostname resolving](protocols/network.md#hostname-resolving), [Handling build options](source/options.md#handling-build-options), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Name resolve tricks with c-ares](usingcurl/connections/name.md#name-resolve-tricks-with-c-ares), [SOCKS proxy](usingcurl/proxies/socks.md#socks-proxy), [Connection control](libcurl/conn.md#connection-control), [Connection reuse](libcurl/conn/reuse.md#connection-reuse), [Name resolving](libcurl/conn/names.md#name-resolving), [Proxy types](libcurl/conn/proxies.md#proxy-types), [Available information](libcurl/getinfo.md#available-information), [Different backends](internals/backends.md#different-backends)
  - --negotiate: [Network leakage](cmdline/passwords.md#network-leakage), [Authentication](http/auth.md#authentication)
+ - .netrc: [Command line leakage](cmdline/passwords.md#command-line-leakage), [Using curl](usingcurl.md#using-curl), [.netrc](usingcurl/netrc.md#sect--dot-netrc), [All options](libcurl/options/all.md#all-options), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
  - --netrc-file: [Enable netrc](usingcurl/netrc.md#enable-netrc)
  - --netrc-optional: [Enable netrc](usingcurl/netrc.md#enable-netrc)
  - nghttp2: [nghttp2](build/deps.md#nghttp2), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs)

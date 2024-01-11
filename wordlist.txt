@@ -565,6 +565,7 @@ WB
 webpage
 webpages
 WebSocket
+WHATWG
 whitespace
 winbuild
 WinSock

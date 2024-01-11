@@ -61,7 +61,7 @@
     * [Query](cmdline/urls/query.md)
     * [FTP type](cmdline/urls/ftptype.md)
     * [Fragment](cmdline/urls/fragment.md)
-    * [Browsers' address bar](cmdline/urls/browsers.md)
+    * [Browsers](cmdline/urls/browsers.md)
     * [Many options and URLs](cmdline/urls/options.md)
     * [Connection reuse](cmdline/urls/connreuse.md)
     * [Parallel transfers](cmdline/urls/parallel.md)

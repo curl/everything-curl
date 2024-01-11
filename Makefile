@@ -33,12 +33,12 @@ everything-curl.html: uni.md $(MDS)
 
 html: everything-curl.html
 
-everything-curl.pdf:	uni.md
+everything-curl.pdf: uni.md pdf.txt
 	pandoc --lua-filter=warn_bad_links.lua  -o everything-curl.pdf pdf.txt uni.md --toc
 
 pdf: everything-curl.pdf
 
-everything-curl.epub:	uni.md
+everything-curl.epub: uni.md epub.txt
 	pandoc --lua-filter=warn_bad_links.lua -o everything-curl.epub --epub-cover-image=cover.jpg epub.txt uni.md
 
 epub: everything-curl.epub

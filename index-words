@@ -114,6 +114,7 @@ ALPN
 apt
 Arch Linux
 BearSSL
+bindings
 BoringSSL
 brotli
 bugreports
@@ -301,7 +302,9 @@ HTTP/3 backend
 HttpGet
 HTTPS proxy
 IDN
+IETF
 Indentation
+International Domain Names
 IPFS
 IPv4
 IPv6
@@ -337,6 +340,7 @@ port number
 Progress callback
 pronunciation
 proxy
+QUIC
 ranges
 Read callback
 redhat
@@ -390,6 +394,7 @@ SSH backend
 SSL context callback
 SSLKEYLOGFILE
 STARTTLS
+TCP
 TELNET
 testing
 TFTP
@@ -400,6 +405,7 @@ transfer-encoding
 trurl
 Ubuntu
 URL Globbing
+URL parser
 variables
 Vulnerability
 Wireshark

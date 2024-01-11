@@ -2,6 +2,7 @@
 title: Everything curl
 author: Daniel Stenberg and friends
 papersize: a4
+colorlinks: true
 documentclass:
 - book
 fontsize: 12pt

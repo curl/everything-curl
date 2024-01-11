@@ -21,7 +21,7 @@ describes how that particular URI format works.
 * [Query](urls/query.md)
 * [FTP type](urls/ftptype.md)
 * [Fragment](urls/fragment.md)
-* [Browsers' address bar](urls/browsers.md)
+* [Browsers](urls/browsers.md)
 * [Many options and URLs](urls/options.md)
 * [Connection reuse](urls/connreuse.md)
 * [Parallel transfers](urls/parallel.md)

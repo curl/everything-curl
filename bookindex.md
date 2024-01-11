@@ -13,6 +13,7 @@
  - -b: [Cookie engine](http/cookies.md#cookie-engine), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
  - --basic: [Authentication](http/auth.md#authentication)
  - BearSSL: [lib/vtls](source/layout.md#lib-slash-vtls), [TLS libraries](build/tls.md#tls-libraries), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
+ - bindings: [Confusions and mix-ups](project/name.md#confusions-and-mix-ups), [The library](project/does.md#the-library), [In website backends](project/users.md#in-website-backends), [docs](source/layout.md#docs), [libcurl examples](libcurl/examples.md#libcurl-examples), [Bindings](bindings.md#bindings)
  - BoringSSL: [TLS libraries](build/tls.md#tls-libraries), [BoringSSL](build/boringssl.md#boringssl), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions)
  - brotli: [HTTP Compression](build/deps.md#http-compression), [Version](usingcurl/version.md#version), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs), [About content encodings](internals/content-encoding.md#about-content-encodings), [Conditional lines](internals/tests/file-format.md#conditional-lines)
 
@@ -250,7 +251,9 @@
 ## I
 
  - IDN: [libidn2](build/deps.md#libidn2), [International Domain Names (IDN)](cmdline/urls/host.md#international-domain-names-idn), [Version](usingcurl/version.md#version), [`CURLU_URLENCODE`](libcurl/url/get.md#curlu_urlencode), [Different backends](internals/backends.md#different-backends), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
+ - IETF: [Protocols](protocols/protocols.md#protocols), [TLS versions](usingcurl/tls/versions.md#tls-versions)
  - Indentation: [Indentation](source/style.md#indentation)
+ - International Domain Names: [libidn2](build/deps.md#libidn2), [International Domain Names (IDN)](cmdline/urls/host.md#international-domain-names-idn), [Line 4: Features](usingcurl/version.md#line-4-features)
  - IPFS: [Using curl](usingcurl.md#using-curl), [IPFS](usingcurl/ipfs.md#ipfs)
  - --ipfs-gateway: [Gateway](usingcurl/ipfs.md#gateway)
  - IPv4: [Host](cmdline/urls/host.md#host), [Port number](cmdline/urls/port.md#port-number), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [curl and haproxy](usingcurl/proxies/haproxy.md#curl-and-haproxy), [All options](libcurl/options/all.md#all-options), [How libcurl connects](libcurl/conn/how.md#how-libcurl-connects), [Name resolving](libcurl/conn/names.md#name-resolving), [`host*.c` sources](internals/resolving.md#host-dot-c-sources), [Variables](internals/tests/file-format.md#variables)
@@ -341,6 +344,7 @@
 ## Q
 
  - -Q: [Quote](ftp/cmds.md#quote)
+ - QUIC: [Establish a connection](protocols/network.md#establish-a-connection), [HTTPS](protocols/curl.md#https), [QUIC and HTTP/3](build/deps.md#quic-and-http-slash-3), [Never spend more than this to connect](usingcurl/timeouts.md#never-spend-more-than-this-to-connect), [Available exit codes](usingcurl/returns.md#available-exit-codes), [QUIC](http/versions/http3.md#quic), [Connection control](libcurl/conn.md#connection-control), [HTTP/3](libcurl/conn/how.md#http-slash-3), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs), [Version 3 can be mandatory](libcurl-http/versions.md#version-3-can-be-mandatory)
  - --quote: [Quote](ftp/cmds.md#quote)
 
 ## R
@@ -422,6 +426,7 @@
 ## T
 
  - -T: [PUT](usingcurl/uploads.md#put), [Upload](usingcurl/tftp.md#upload), [Method](http/method.md#method), [HTTP PUT](http/put.md#http-put), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Uploading with FTP](ftp/upload.md#uploading-with-ftp)
+ - TCP: [Establish a connection](protocols/network.md#establish-a-connection), [How much do protocols change?](protocols/protocols.md#how-much-do-protocols-change), [DICT](protocols/curl.md#dict), [TCP vs UDP](cmdline/urls/port.md#tcp-vs-udp), [Connection reuse](cmdline/urls/connreuse.md#connection-reuse), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Connections](usingcurl/connections.md#connections), [Connection timeout](usingcurl/connections/timeout.md#connection-timeout), [Local port number](usingcurl/connections/local-port.md#local-port-number), [Keep alive](usingcurl/connections/keepalive.md#keep-alive), [Timeouts](usingcurl/timeouts.md#timeouts), [HTTP proxy tunneling](usingcurl/proxies/http.md#http-proxy-tunneling), [MITM proxy](usingcurl/proxies/mitm.md#mitm-proxy), [haproxy](usingcurl/proxies/haproxy.md#haproxy), [Available exit codes](usingcurl/returns.md#available-exit-codes), [TLS](usingcurl/tls.md#tls), [Debugging with TELNET](usingcurl/telnet.md#debugging-with-telnet), [TFTP](usingcurl/tftp.md#tftp), [QUIC](http/versions/http3.md#quic), [HTTPS](http/https.md#https), [Two connections](ftp/twoconnections.md#two-connections), [All options](libcurl/options/all.md#all-options), [Connection control](libcurl/conn.md#connection-control), [HTTP/3](libcurl/conn/how.md#http-slash-3), [Connection cache](libcurl/caches.md#connection-cache), [connectdata](internals/structs.md#connectdata)
  - TELNET: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support), [TELNET](protocols/curl.md#telnet), [Supported schemes](cmdline/urls/scheme.md#supported-schemes), [Using curl](usingcurl.md#using-curl), [Version](usingcurl/version.md#version), [Available exit codes](usingcurl/returns.md#available-exit-codes), [TELNET](usingcurl/telnet.md#telnet), [All options](libcurl/options/all.md#all-options), [Variables](internals/tests/file-format.md#variables)
  - testing: [What does curl do?](project/does.md#what-does-curl-do), [Reporting bugs](project/bugs.md#reporting-bugs), [Handling build options](source/options.md#handling-build-options), [Contributing](source/contributing.md#contributing), [Run a local clone](source/web.md#run-a-local-clone), [Separate install](build/separate.md#separate-install), [About HTTP response code "errors"](libcurl-http/responses.md#about-http-response-code-errors), [Debug builds](internals/tests/debug.md#debug-builds), [Test servers](internals/tests/servers.md#test-servers), [Torture](internals/tests/torture.md#torture)
  - TFTP: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support), [TFTP](protocols/curl.md#tftp), [Supported schemes](cmdline/urls/scheme.md#supported-schemes), [TCP vs UDP](cmdline/urls/port.md#tcp-vs-udp), [Using curl](usingcurl.md#using-curl), [Version](usingcurl/version.md#version), [Protocols allowing upload](usingcurl/uploads.md#protocols-allowing-upload), [Available exit codes](usingcurl/returns.md#available-exit-codes), [TFTP](usingcurl/tftp.md#tftp), [All options](libcurl/options/all.md#all-options), [Variables](internals/tests/file-format.md#variables), [Test servers](internals/tests/servers.md#test-servers)
@@ -446,6 +451,7 @@
  - -u: [Building libcurl on MSYS2](get/win-msys2.md#building-libcurl-on-msys2), [Passwords](cmdline/passwords.md#passwords), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [Authentication](http/auth.md#authentication), [HTTP cheat sheet](http/cheatsheet.md#http-cheat-sheet), [Authentication](ftp.md#authentication)
  - Ubuntu: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian)
  - URL Globbing: [Garbage in gives garbage out](cmdline.md#garbage-in-gives-garbage-out), [URL globbing](cmdline/globbing.md#url-globbing)
+ - URL parser: [trurl](cmdline/urls/trurl.md#trurl), [URL API](libcurl/url.md#url-api), [`CURLU_ALLOW_SPACE`](libcurl/url/parse.md#curlu_allow_space)
  - --url-query: [Query](cmdline/urls/query.md#query)
 
 ## V

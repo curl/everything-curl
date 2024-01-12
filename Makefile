@@ -27,7 +27,7 @@ everything-curl.html: uni.md $(MDS)
 	pandoc --lua-filter=warn_bad_links.lua -o everything-curl.html uni.md
 	rm -rf everything-curl
 	mkdir -p everything-curl
-	cp -p `grep -oe 'img src="[0-9a-z/.-]*' everything-curl.html | cut -c10-` everything-curl/
+	cp -p --parents `grep -oe 'img src="[0-9a-z/.-]*' everything-curl.html | cut -c10-` everything-curl/
 	cp everything-curl.html everything-curl/index.html
 	zip -r everything-curl.zip everything-curl
 

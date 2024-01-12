@@ -58,7 +58,7 @@ user sees fit.
 Some of these variables are not available in really old curl versions.
 
 | Variable                  | Description                                                                                                                                                                                                                      |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | `certs`                   | Outputs the certificate chain from the most recent TLS handshake - with details. (Introduced in 7.88.0)                                                                                                                          |
 | `content_type`            | Content-Type of the requested document, if there was any.                                                                                                                                                                        |
 | `errormsg`                | Error message from the transfer. Empty if no error occurred. (Introduced in 7.75.0)                                                                                                                                              |
@@ -106,7 +106,7 @@ Some of these variables are not available in really old curl versions.
 In curl 8.1.0, variables to output only specific URL components were added. When the `url` or `url_effective` show more than you want.
 
 | Variable        | Description                                                                                                        |
-| --------------- | ------------------------------------------------------------------------------------------------------------------ |
+| --------------- | ---------------------------------------------------------------------- |
 | `url.scheme`    | The scheme part of the URL that was fetched.                                                                       |
 | `url.user`      | The user part of the URL that was fetched.                                                                         |
 | `url.password`  | The password part of the URL that was fetched.                                                                     |

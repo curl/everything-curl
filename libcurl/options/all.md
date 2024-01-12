@@ -3,7 +3,7 @@
 This is a table of available options for `curl_easy_setopt()`.
 
 | Option                               | Purpose                                                                |
-|--------------------------------------|------------------------------------------------------------------------|
+|--------------------------------------|------------------------------------------------|
 | `CURLOPT_ABSTRACT_UNIX_SOCKET`       | abstract Unix domain socket                                            |
 | `CURLOPT_ACCEPT_ENCODING`            | automatic decompression of HTTP downloads                              |
 | `CURLOPT_ACCEPTTIMEOUT_MS`           | timeout waiting for FTP server to connect back                         |

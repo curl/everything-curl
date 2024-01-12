@@ -34,7 +34,7 @@ If you want to extract the local port number that was used in that connection:
 ## Available information
 
 | Getinfo option                       | Type                  | Description                                                                   |
-|--------------------------------------|-----------------------|-------------------------------------------------------------------------------|
+|-------------------------------------------------|-------------------|---------------------------------------------|
 | `CURLINFO_ACTIVESOCKET`              | `curl_socket_t`       | The session's active socket                                                   |
 | `CURLINFO_APPCONNECT_TIME`           | `double`              | Time from start until SSL/SSH handshake completed                             |
 | `CURLINFO_APPCONNECT_TIME_T`         | `curl_off_t`          | Time from start until SSL/SSH handshake completed (in microseconds)           |

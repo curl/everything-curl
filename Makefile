@@ -28,7 +28,7 @@ everything-curl.html: uni.md $(MDS)
 	rm -rf everything-curl
 	mkdir -p everything-curl
 	cp -p --parents `grep -oe 'img src="[0-9a-z/.-]*' everything-curl.html | cut -c10-` everything-curl/
-	cp everything-curl.html everything-curl/index.html
+	sed '/Generated Content/r everything-curl.html' template.html > everything-curl/index.html
 	zip -r everything-curl.zip everything-curl
 
 html: everything-curl.html

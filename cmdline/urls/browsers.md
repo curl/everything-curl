@@ -14,10 +14,10 @@ The WHATWG spec is also *changing* over time.
 
 Since curl is developed to be able to do the same operations a browser can,
 the curl URL parser has been slightly adjusted to cater for some of the
-differences. For example it accepts spaces in URL when read off incoming HTTP
-headers and it accepts either one, two or three slashes as separator between
-the scheme and the hostname. That is why we sometimes say that curl's parser
-is *RFC 3986+* compliant.
+differences. For example it accepts spaces in the URL when read off incoming
+HTTP headers and it accepts either one, two or three slashes as separator
+between the scheme and the hostname. That is why we sometimes say that curl's
+parser is *RFC 3986+* compliant.
 
 curl strives hard to not break existing behavior, which makes it still support
 the URLs and the URL format it supported back in 1998. The browsers do not.

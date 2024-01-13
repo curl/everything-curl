@@ -27,6 +27,10 @@ sub check {
             print STDERR "$f:$l:1: uses $1, not 4-space indent\n";
             $errors++;
         }
+        elsif(/^    / && (length($_)>79)) {
+            print STDERR "$f:$l:1: woo wide quoted line, please wrap\n";
+            $errors++;
+        }
         $l++;
     }
     close(F);

@@ -49,4 +49,5 @@ And simply invoke `curl www.example.com` to make a request
 Sometimes it can be useful to troubleshoot k8s networking with curl, just like
 :
 
-    kubectl run -i --tty curl --image=curlimages/curl --restart=Never -- "-m 5" www.example.com
+    kubectl run -i --tty curl --image=curlimages/curl --restart=Never \
+      -- "-m 5" www.example.com

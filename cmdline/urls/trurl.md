@@ -97,7 +97,8 @@ trurl.
 
 **Work with a query that uses a semicolon separator:**
 
-    $ trurl "https://curl.se?search=fool;page=5" --trim query="search" --query-separator ";"
+    $ trurl "https://curl.se?search=fool;page=5" --trim query="search" \
+      --query-separator ";"
     https://curl.se?page=5
 
 **Accept spaces in the URL path:**

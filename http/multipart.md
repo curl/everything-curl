@@ -47,7 +47,7 @@ request headers to the host example.com:
     Accept: */*
     Content-Length: 313
     Expect: 100-continue
-    Content-Type: multipart/form-data; boundary=------------------------d74496d66958873e
+    Content-Type: multipart/form-data; boundary=------------d74496d66958873e
 
 **Content-Length**, of course, tells the server how much data to expect. This
 example's 313 bytes is really small.
@@ -183,4 +183,4 @@ command line to send, including the correct URL as extracted above, would look
 like:
 
     curl -F "person=Mr Smith" -F image=@funnycat.gif -F "username=bob123" \
-    https://example.com/user/submit.cgi
+      https://example.com/user/submit.cgi

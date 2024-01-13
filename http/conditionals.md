@@ -20,7 +20,8 @@ prefixing the date with a dash:
 The date parser is liberal and accepts most formats you can write the date
 with, and you can also specify it complete with a time:
 
-    curl --time-cond "Sun, 12 Sep 2004 15:05:58 -0700" https://www.example.org/file.html
+    curl --time-cond "Sun, 12 Sep 2004 15:05:58 -0700" \
+      https://www.example.org/file.html
 
 The `-z` option can also extract and use the timestamp from a local file,
 which is handy to only download a file if it has been updated remotely:

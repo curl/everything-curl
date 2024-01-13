@@ -62,7 +62,8 @@ The corresponding callback to the open socket is of course the close
 socket. Usually when you provide a custom way to provide a file descriptor you
 want to provide your own cleanup version as well:
 
-    curl_easy_setopt(handle, CURLOPT_CLOSESOCKETFUNCTION, closesocket_callback);
+    curl_easy_setopt(handle, CURLOPT_CLOSESOCKETFUNCTION,
+                     closesocket_callback);
 
 The `closesocket_callback` function must match this prototype:
 

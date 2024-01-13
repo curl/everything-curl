@@ -82,7 +82,8 @@ trurl.
 
 **Remove tracking tuples from query:**
 
-    $ trurl "https://curl.se?search=hey&utm_source=tracker" --trim query="utm_*"
+    $ trurl "https://curl.se?search=hey&utm_source=tracker" \
+      --trim query="utm_*"
     https://curl.se/?search=hey
 
 **Show a specific query key value:**

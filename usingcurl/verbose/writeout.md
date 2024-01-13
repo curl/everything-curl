@@ -23,7 +23,8 @@ carriage return with and a tab space with .
 
 As an example, we can output the Content-Type and the response code from an HTTP transfer, separated with newlines and some extra text like this:
 
-    curl -w "Type: %{content_type}\nCode: %{response_code}\n" http://example.com
+    curl -w "Type: %{content_type}\nCode: %{response_code}\n" \
+      http://example.com
 
 The output is sent to stdout by default so you probably want to make sure that you do not also send the downloaded content to stdout as then you might have a hard time to separate out the data; or use `%{stderr}` to send the output to stderr.
 

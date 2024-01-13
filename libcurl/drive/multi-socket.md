@@ -137,8 +137,8 @@ things up and from then on you can just let your event system drive:
 
     curl_multi_socket_action(multi, CURL_SOCKET_TIMEOUT, 0, &running);
 
-    /* now the callbacks should have been called and we have sockets to wait for
-       and possibly a timeout, too. Make the event system do its magic */
+    /* now the callbacks should have been called and we have sockets to wait
+       for and possibly a timeout, too. Make the event system do its magic */
 
     event_base_dispatch(event_base); /* libevent2 has this API */
 

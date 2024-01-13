@@ -132,11 +132,11 @@ Expands the variable as a valid JSON string. This makes it easier to insert
 valid JSON into an argument (The quotes are not included in the resulting
 JSON).
 
-    --expand-json “\”full name\”: \”{{first:json}} {{last:json}}\””
+    --expand-json "\"full name\": \"{{first:json}} {{last:json}}\""
 
 To trim the variable first, apply both functions (in this order):
 
-    --expand-json “\”full name\”: \”{{varName:trim:json}}\””
+    --expand-json "\"full name\": \"{{varName:trim:json}}\""
 
 
 ## Function: `url`

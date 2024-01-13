@@ -6,7 +6,8 @@ The header callback is set with `CURLOPT_HEADERFUNCTION`:
 
 The `header_callback` function must match this prototype:
 
-    size_t header_callback(char *ptr, size_t size, size_t nmemb, void *userdata);
+    size_t header_callback(char *ptr, size_t size, size_t nmemb,
+                           void *userdata);
 
 This callback function gets called by libcurl as soon as a header has been
 received. *ptr* points to the delivered data, and the size of that data is

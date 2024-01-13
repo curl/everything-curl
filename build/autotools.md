@@ -102,7 +102,8 @@ make the default TLS backend with `--with-default-ssl-backend=[NAME]`. For
 example, build with support for both GnuTLS and OpenSSL and default to
 OpenSSL:
 
-    ./configure --with-openssl --with-gnutls --with-default-ssl-backend=openssl
+    ./configure --with-openssl --with-gnutls \
+      --with-default-ssl-backend=openssl
 
 ## Select SSH backend
 

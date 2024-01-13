@@ -6,7 +6,8 @@ The write callback is set with `CURLOPT_WRITEFUNCTION`:
 
 The `write_callback` function must match this prototype:
 
-    size_t write_callback(char *ptr, size_t size, size_t nmemb, void *userdata);
+    size_t write_callback(char *ptr, size_t size, size_t nmemb,
+                          void *userdata);
 
 This callback function gets called by libcurl as soon as there is data
 received that needs to be saved. *ptr* points to the delivered data, and the

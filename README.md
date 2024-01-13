@@ -10,18 +10,17 @@ This book is meant to be interesting and useful to both casual readers and
 somewhat more experienced developers. It offers something for everyone to pick
 and choose from. 
 
-Do not try to read it from front to back. Read the chapters or content you are
+Do not read this book from front to back. Read the chapters or content you are
 curious about and flip back and forth as you see fit.
 
-I hope to run this book project as I do all other projects I work on: in the
-open, completely free to download and read. I want it to be free for anyone to
-comment on, and available for everyone to contribute to and help out with.
+This book is an open source project in itself: open, completely free to
+download and read. Free for anyone to comment on, and available for everyone
+to contribute to and help out with. Send your bug reports, ideas, pull
+requests or critiques to us and I or someone else will work on improving the
+book accordingly.
 
-Send your bug reports, pull requests or critiques to me and I will improve
-this book accordingly.
-
-This book will never be finished. I intend to keep working on it. While I
-may at some point consider it fairly complete, covering most aspects of the
+This book will never be finished. I intend to keep working on it. While I may
+at some point consider it fairly complete, covering most aspects of the
 project (even if only that seems like an insurmountable goal), the curl
 project will continue to move so there will always be things to update in the
 book as well.

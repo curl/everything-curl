@@ -112,7 +112,8 @@ picking the safest of the available methods.
 
 Tell libcurl to accept multiple method by bitwise ORing them like this:
 
-    curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC | CURLAUTH_DIGEST);
+    curl_easy_setopt(curl, CURLOPT_HTTPAUTH,
+                     CURLAUTH_BASIC | CURLAUTH_DIGEST);
 
 If you want libcurl to only allow a single specific method but still want it
 to probe first to check if it can possibly still make the request without the
@@ -122,4 +123,5 @@ to the bitmask.
 Ask to use digest, but nothing else but digest, and only if proven really
 necessary:
 
-    curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST | CURLAUTH_ONLY);
+    curl_easy_setopt(curl, CURLOPT_HTTPAUTH,
+                     CURLAUTH_DIGEST | CURLAUTH_ONLY);

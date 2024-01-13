@@ -37,12 +37,13 @@ This creates `example.c` in the current directory, looking similar to this:
       curl_easy_setopt(hnd, CURLOPT_NOPROGRESS, 1L);
       curl_easy_setopt(hnd, CURLOPT_USERAGENT, "curl/7.45.0");
       curl_easy_setopt(hnd, CURLOPT_MAXREDIRS, 50L);
-      curl_easy_setopt(hnd, CURLOPT_SSH_KNOWNHOSTS, "/home/daniel/.ssh/known_hosts");
+      curl_easy_setopt(hnd, CURLOPT_SSH_KNOWNHOSTS,
+                       "/home/daniel/.ssh/known_hosts");
       curl_easy_setopt(hnd, CURLOPT_TCP_KEEPALIVE, 1L);
 
-      /* Here is a list of options the curl code used that cannot get generated
-         as source easily. You may select to either not use them or implement
-         them yourself.
+      /* Here is a list of options the curl code used that cannot get
+         generated as source easily. You may select to either not use them or
+         implement them yourself.
 
       CURLOPT_WRITEDATA set to a objectpointer
       CURLOPT_WRITEFUNCTION set to a functionpointer

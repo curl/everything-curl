@@ -45,9 +45,9 @@ The times are displayed using H:MM:SS for hours, minutes and seconds.
 The progress meter exists to show a user that something actually is
 happening. The different fields in the output have the following meaning:
 
-    % Total    % Received % Xferd  Average Speed          Time             Curr.
-                                   Dload  Upload Total    Current  Left    Speed
-    0  151M    0 38608    0     0   9406      0  4:41:43  0:00:04  4:41:39  9287
+    % Total  % Received % Xferd Average Speed          Time             Curr.
+                                Dload  Upload Total    Current  Left    Speed
+    0  151M  0 38608    0     0  9406      0  4:41:43  0:00:04  4:41:39  9287
 
 From left to right:
 

@@ -89,4 +89,5 @@ since then libtool can use `LD_LIBRARY_PATH`. Newer linkers may use the runpath
 form of rpath by default when rpath is specified but others need an additional
 linker flag `-Wl,--enable-new-dtags` like this:
 
-    LDFLAGS="-Wl,-rpath,$HOME/install/lib -Wl,--enable-new-dtags" ./configure ...
+    LDFLAGS="-Wl,-rpath,$HOME/install/lib -Wl,--enable-new-dtags" \
+      ./configure ...

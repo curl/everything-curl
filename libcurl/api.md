@@ -116,7 +116,7 @@ layout:
 
       /* when 'age' is 3 or higher (7.16.1 or later), the members below also
          exist  */
-      int iconv_ver_num;       /* '_libiconv_version' if iconv support enabled */
+      int iconv_ver_num;       /* '_libiconv_version' if iconv enabled */
 
       const char *libssh_version; /* human readable string */
 
@@ -133,9 +133,9 @@ layout:
                                       version or NULL */
 
       /* when 'age' is 6 or higher, the member below also exists: */
-      const char *cainfo;          /* the built-in default CURLOPT_CAINFO, might
+      const char *cainfo;          /* built-in default CURLOPT_CAINFO, might
                                       be NULL */
-      const char *capath;          /* the built-in default CURLOPT_CAPATH, might
+      const char *capath;          /* built-in default CURLOPT_CAPATH, might
                                       be NULL */
 
       /* when 'age' is 7 or higher, the member below also exists: */

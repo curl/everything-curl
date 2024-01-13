@@ -67,22 +67,22 @@ following configurations in Visual Studio 2010 might be:
 
 DLL Debug - DLL OpenSSL (Win32):
 
-    PATH=..\..\..\..\..\openssl\build\Win32\VC10\DLL Debug;C:\Windows\system32;
+    PATH=C:\openssl\build\Win32\VC10\DLL Debug;C:\Windows\system32;
     C:\Windows;C:\Windows\System32\Wbem
 
 DLL Debug - DLL OpenSSL (x64):
 
-    PATH=..\..\..\..\..\openssl\build\Win64\VC10\DLL Debug;C:\Windows\system32;
+    PATH=C:\openssl\build\Win64\VC10\DLL Debug;C:\Windows\system32;
     C:\Windows;C:\Windows\System32\Wbem
 
 DLL Debug - DLL wolfSSL (Win32):
 
-    PATH=..\..\..\..\..\wolfssl\build\Win32\VC10\DLL Debug;C:\Windows\system32;
+    PATH=C:\wolfssl\build\Win32\VC10\DLL Debug;C:\Windows\system32;
     C:\Windows;C:\Windows\System32\Wbem
 
 DLL Debug - DLL wolfSSL (x64):
 
-    PATH=..\..\..\..\..\wolfssl\build\Win64\VC10\DLL Debug;C:\Windows\system32;
+    PATH=C:\wolfssl\build\Win64\VC10\DLL Debug;C:\Windows\system32;
     C:\Windows;C:\Windows\System32\Wbem
 
 If you are using a configuration that uses multiple third-party library DLLs

@@ -6,7 +6,8 @@ The read callback is set with `CURLOPT_READFUNCTION`:
 
 The `read_callback` function must match this prototype:
 
-    size_t read_callback(char *buffer, size_t size, size_t nitems, void *stream);
+    size_t read_callback(char *buffer, size_t size, size_t nitems,
+                         void *stream);
 
 This callback function gets called by libcurl when it wants to send data to
 the server. This is a transfer that you have set up to upload data or

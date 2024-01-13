@@ -74,7 +74,8 @@ codes*):
       FD_ZERO(&fdexcep);
 
       /* get file descriptors from the transfers */
-      mc = curl_multi_fdset(multi_handle, &fdread, &fdwrite, &fdexcep, &maxfd);
+      mc = curl_multi_fdset(multi_handle, &fdread, &fdwrite,
+                            &fdexcep, &maxfd);
 
       if (maxfd == -1) {
         SHORT_SLEEP;

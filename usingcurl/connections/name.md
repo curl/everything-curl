@@ -83,7 +83,8 @@ You *can* still use `--resolve` to accomplish this if you know the specific IP
 address of load1. But without having to first resolve and fix the IP address
 separately, you can tell curl:
 
-    curl --connect-to www.example.com:80:load1.example.com:80 http://www.example.com
+    curl --connect-to www.example.com:80:load1.example.com:80 \
+      http://www.example.com
 
 It redirects from a SOURCE NAME + SOURCE PORT to a DESTINATION NAME +
 DESTINATION PORT. curl then resolves the `load1.example.com` name and

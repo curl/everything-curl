@@ -2,7 +2,7 @@
 
 Sometimes users want to avoid downloading a file again if the same file maybe
 already has been downloaded the day before. This can be done by making the
-HTTP transfer "conditioned" on something. curl supports two different
+HTTP transfer conditioned on something. curl supports two different
 conditions: the file timestamp and etag.
 
 ## Check by modification date
@@ -36,7 +36,7 @@ remote file had:
 
 ## Check by modification of content
 
-HTTP servers can return a specific "ETag" for a given resource version. If the
+HTTP servers can return a specific *ETag* for a given resource version. If the
 resource at a given URL changes, a new Etag value must be generated, so a
 client knows that as long as the ETag remains the same, the content has not
 changed.
@@ -46,8 +46,8 @@ or file dates. It also then makes the check able to detect sub-second changes,
 which the timestamp based checks cannot.
 
 Using curl you can download a remote file and save its ETag (if it provides
-any) in a separate "cache" by using the `--etag-save` command line
-option. Like this:
+any) in a separate cache by using the `--etag-save` command line option. Like
+this:
 
     curl --etag-save etags.txt https://example.com/file -o output
 

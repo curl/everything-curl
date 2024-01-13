@@ -8,7 +8,7 @@ use of all states for all transfers.
 
 However, each different protocol libcurl speaks also has its unique
 particularities and specialties. In order to not have the code littered with
-conditions in the style "if the protocol is XYZ, then do…", we instead have
+conditions in the style if the protocol is XYZ, then do…, we instead have
 the concept of `Curl_handler`. Each supported protocol defines one of those in
 `lib/url.c` there is an array of pointers to such handlers called
 `protocols[]`.
@@ -28,9 +28,9 @@ protocol to work for a transfer. Things that not all other protocols need. The
 handler struct also sets up the name of the protocol and describes its feature
 set with a bitmask.
 
-A libcurl transfer is built around a set of different "actions" and the
-handler can extend each of them. Here are some example function pointers in
-this struct and how they are used:
+A libcurl transfer is built around a set of different actions and the handler
+can extend each of them. Here are some example function pointers in this
+struct and how they are used:
 
 ## Setup connection
 
@@ -50,7 +50,7 @@ After a connection has been established, this function gets called
 
 ## Do
 
-"Do" is simply the action that issues a request for the particular resource
+*Do* is simply the action that issues a request for the particular resource
 the URL identifies. All protocol has a do action so this function must be
 provided:
 
@@ -58,7 +58,7 @@ provided:
 
 ## Done
 
-When a transfer is completed, the "done" action is taken:
+When a transfer is completed, the *done* action is taken:
 
     result = conn->handler->done(data, status, premature);
 

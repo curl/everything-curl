@@ -18,11 +18,11 @@ week cycle and unless some really serious and urgent problem shows up we stick
 to this schedule. We release on a Wednesday, and then again a Wednesday eight
 weeks later and so it continues. Non-stop.
 
-For every release we tag the source code in the repository with "curl-release
-version" and we update the [changelog](https://curl.se/changes.html).
+For every release we tag the source code in the repository with the curl
+version number and we update the [changelog](https://curl.se/changes.html).
 
-We had done 210 curl releases by August 2022. The entire release history and
-changelog is available in our [curl release
+We had done a total of 253 releases by January 2024. The entire release
+history and changelog is available in our [curl release
 log](https://curl.se/docs/releases.html).
 
 ## Release cycle

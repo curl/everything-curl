@@ -8,7 +8,7 @@ these two methods:
 When the `CURLOPT_CONNECT_ONLY` option is **not** set, WebSocket data is
 delivered to the write callback.
 
-In the default "frame mode" (as opposed to "raw mode"), libcurl delivers parts
+In the default frame mode (as opposed to raw mode), libcurl delivers parts
 of WebSocket fragments to the callback as data arrives. The application can
 then call `curl_ws_meta()` to get information about the specific frame that
 was passed to the callback.

@@ -1,7 +1,7 @@
 # Name resolving
 
 Most transfers libcurl can do involves a name that first needs to be
-translated to an Internet address. That is "name resolving". Using a numerical
+translated to an Internet address. That is name resolving. Using a numerical
 IP address directly in the URL usually avoids the name resolve phase, but in
 many cases it is not easy to manually replace the name with the IP address.
 
@@ -28,8 +28,8 @@ libcurl can be built to do name resolves in one out of these three different
 ways and depending on which backend way that is used, it gets a slightly
 different feature set and sometimes modified behavior.
 
-1. The default backend is invoking the "normal" libc resolver functions in a
-new helper-thread, so that it can still do fine-grained timeouts if wanted and
+1. The default backend is invoking the normal libc resolver functions in a new
+helper-thread, so that it can still do fine-grained timeouts if wanted and
 there is no blocking calls involved.
 
 2. On older systems, libcurl uses the standard synchronous name resolver
@@ -70,9 +70,9 @@ made shared between multiple easy handles using the [share interface](../sharing
 
 ## Custom addresses for hosts
 
-Sometimes it is handy to provide "fake" addresses to real host names so that
-libcurl connects to a different address instead of one an actual name resolve
-would suggest.
+Sometimes it is handy to provide fake, custom addresses for real host names so
+that libcurl connects to a different address instead of one an actual name
+resolve would suggest.
 
 With the help of the
 [CURLOPT_RESOLVE](https://curl.se/libcurl/c/CURLOPT_RESOLVE.html) option,
@@ -86,7 +86,7 @@ requested, an application can do:
     dns = curl_slist_append(NULL, "example.com:443:127.0.0.1");
     curl_easy_setopt(curl, CURLOPT_RESOLVE, dns);
 
-Since this puts the "fake" address into the DNS cache, it works even when
+Since this puts the fake address into the DNS cache, it works even when
 following redirects etc.
 
 ## Name server options

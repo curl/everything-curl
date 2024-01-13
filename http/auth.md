@@ -24,7 +24,7 @@ option to provide user name and password (separated with a colon). Like this:
 
     curl --user daniel:secret http://example.com/
 
-This makes curl use the default "Basic" HTTP authentication method. Yes, it is
+This makes curl use the default *Basic* HTTP authentication method. Yes, it is
 actually called Basic and it is truly basic. To explicitly ask for the basic
 method, use `--basic`.
 

@@ -2,8 +2,8 @@
 
 The file `lib/memdebug.c` contains debug-versions of a few functions.
 Functions such as `malloc()`, `free()`, `fopen()`, `fclose()`, etc that
-somehow deal with resources that might give us problems if we "leak" them.
-The functions in the memdebug system do nothing fancy, they do their normal
+somehow deal with resources that might give us problems if we leak them. The
+functions in the memdebug system do nothing fancy, they do their normal
 function and then log information about what they just did. The logged data
 can then be analyzed after a complete session,
 

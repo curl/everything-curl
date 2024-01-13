@@ -1,14 +1,14 @@
 # MQTT
 
-A plain "GET" subscribes to the topic and prints all published messages.
-Doing a "POST" publishes the post data to the topic and exits.
+A plain GET subscribes to the topic and prints all published messages.
+Doing a POST publishes the post data to the topic and exits.
 
-Subscribe to the temperature in the "home/bedroom" subject published by
+Subscribe to the temperature in the `home/bedroom` subject published by
 example.com:
 
     curl mqtt://example.com/home/bedroom/temp
 
-Send the value '75' to the "home/bedroom/dimmer" subject hosted by the
+Send the value `75` to the `home/bedroom/dimmer` subject hosted by the
 example.com server:
 
     curl -d 75 mqtt://example.com/home/bedroom/dimmer

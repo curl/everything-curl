@@ -29,7 +29,7 @@ response code would indicate that the requested document could not be
 delivered (or similar). curl considers a successful sending and receiving of
 HTTP to be good.
 
-The first digit of the HTTP response code is a kind of "error class":
+The first digit of the HTTP response code is a kind of error class:
 
  - 1xx: transient response, more is coming
  - 2xx: success
@@ -55,13 +55,13 @@ numeric range and you can use `--write-out` to extract that code as well.
 
 ## Chunked transfer encoding
 
-An HTTP 1.1 server can decide to respond with a "chunked" encoded response, a
+An HTTP 1.1 server can decide to respond with a chunked encoded response, a
 feature that was not present in HTTP 1.0.
 
 When receiving a chunked response, there is no Content-Length: for the
 response to indicate its size. Instead, there is a `Transfer-Encoding:
 chunked` header that tells curl there is chunked data coming and then in the
-response body, the data comes in a series of "chunks". Every individual chunk
+response body, the data comes in a series of chunks. Every individual chunk
 starts with the size of that particular chunk (in hexadecimal), then a newline
 and then the contents of the chunk. This is repeated over and over until the
 end of the response, which is signaled with a zero sized chunk. The point of

@@ -29,10 +29,9 @@ the FTP command with a dash:
 
     curl -Q -NOOP ftp://example.com/file
 
-The third "position in time" that curl offers to send the commands, is after
-curl has changed the working directory, just **before the commands** that kick
-off the transfer are sent. To send command then, prefix the command with a '+'
-(plus).
+curl also offers to send commands after it changes the working directory, just
+**before the commands** that kick off the transfer are sent. To send command
+then, prefix the command with a '+' (plus).
 
 ## A series of commands
 
@@ -53,7 +52,7 @@ Example, rename a file then do a transfer:
 You can opt to send individual quote commands that are allowed to fail, to get
 an error returned from the server without causing everything to stop.
 
-You make the command "fallible" by prefixing it with an asterisk (`*`). For
+You make the command fallible by prefixing it with an asterisk (`*`). For
 example, send a delete (`DELE`) after a transfer and allow it to fail:
 
     curl -Q "-*DELE file" ftp://example.com/moo

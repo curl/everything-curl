@@ -1,6 +1,6 @@
 # Fragment
 
-URLs offer a fragment part. That is usually seen as a hash symbol (#) and a
+URLs offer a fragment part. That is usually seen as a hash symbol (`#`) and a
 name for a specific name within a webpage in browsers. An example of such a
 URL might look like:
 
@@ -15,7 +15,7 @@ the fragment, make sure to pass it URL-encoded, as `%23`:
 
     curl https://www.example.com/info.html%23the-plot
 
-## The "fragment trick"
+## A fragment trick
 
 The fact that the fragment part is not actually used over the network can be
 taken advantage of when you craft command lines.

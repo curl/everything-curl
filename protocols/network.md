@@ -9,11 +9,11 @@ addresses. These computers are also called hosts.
 
 ## Client and server
 
-The computer, tablet or phone you sit in front of is usually called "the
-client" and the machine out there somewhere that you want to exchange data
-with is called "the server". The main difference between the client and the
-server is in the roles they play. There is nothing that prevents the
-roles from being reversed in a subsequent operation.
+The computer, tablet or phone you sit in front of is usually called *the
+client* and the machine out there somewhere that you want to exchange data
+with is called *the server*. The main difference between the client and the
+server is in the roles they play. There is nothing that prevents the roles
+from being reversed in a subsequent operation.
 
 A transfer initiative is always taken by the client, as the server cannot
 contact the client but the client can contact the server.
@@ -35,8 +35,8 @@ Once the client knows the hostname, it needs to figure out which IP addresses
 the host with that name has so that it can contact it.
 
 Converting the name to an IP address is called 'name resolving'. The name is
-"resolved" to one or a set of addresses. This is usually done by a "DNS
-server", DNS being like a big lookup table that can convert names to
+*resolved* to one or a set of addresses. This is usually done by a *DNS
+server*, DNS being like a big lookup table that can convert names to
 addresses—all the names on the Internet, really. The computer normally already
 knows the address of a computer that runs the DNS server as that is part of
 setting up the network.
@@ -49,7 +49,7 @@ name does not exist.
 ## Establish a connection
 
 With one or more IP addresses for the host the client wants to contact, it
-sends a "connect request". The connection it wants to establish is called a
+sends a *connect request*. The connection it wants to establish is called a
 TCP ([Transmission Control
 Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)) or
 [QUIC](https://en.wikipedia.org/wiki/QUIC) connection, which is like
@@ -91,14 +91,14 @@ in the connect phase.
 
 ## Transfer data
 
-When the connected metaphorical "string" is attached to the remote computer,
-there is a *connection* established between the two machines. This
-connection can then be used to exchange data. This exchange is done using
-a "protocol", as discussed in the following chapter.
+When the connected metaphorical *string* is attached to the remote computer,
+there is a *connection* established between the two machines. This connection
+can then be used to exchange data. This exchange is done using a *protocol*,
+as discussed in the following chapter.
 
 Traditionally, a *download* is when data is transferred from a server to a
 client; conversely, an *upload* is when data is sent from the client to the
-server. The client is "down here"; the server is "up there".
+server. The client is *down here*; the server is *up there*.
 
 ## Disconnect
 

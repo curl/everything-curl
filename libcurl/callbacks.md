@@ -9,10 +9,10 @@ write it with the exact function prototype to accept the correct arguments and
 return the documented return code and return value so that libcurl performs
 the way you want it to.
 
-Each callback option also has a companion option that sets the associated
-"user pointer". This user pointer is a pointer that libcurl does not touch or
-care about, but just passes on as an argument to the callback. This allows you
-to, for example, pass in pointers to local data all the way through to your
+Each callback option also has a companion option that sets the associated user
+pointer. This user pointer is a pointer that libcurl does not touch or care
+about, but just passes on as an argument to the callback. This allows you to,
+for example, pass in pointers to local data all the way through to your
 callback function.
 
 Unless explicitly stated in a libcurl function documentation, it is not

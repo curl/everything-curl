@@ -1,7 +1,7 @@
 # Connection reuse
 
 libcurl keeps a pool of old connections alive. When one transfer has completed
-it keeps N connections alive in a "connection pool" (sometimes also called
+it keeps N connections alive in a connection pool (sometimes also called
 connection cache) so that a subsequent transfer that happens to be able to
 reuse one of the existing connections can use it instead of creating a new
 one. Reusing a connection instead of creating a new one offers significant
@@ -29,7 +29,7 @@ easy handles freely without risking losing the connection pool, and it allows
 the connection used by one easy handle to get reused by a separate one in a
 later transfer. Just reuse the multi handle.
 
-## Sharing the "connection cache"
+## Sharing the connection cache
 
 Since libcurl 7.57.0, applications can use the [share interface](../sharing.md)
 to have otherwise independent transfers share the same connection pool.

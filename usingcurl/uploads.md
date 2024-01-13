@@ -9,7 +9,7 @@ ways of uploading data.
 You can upload data using one of these protocols: FILE, FTP, FTPS, HTTP,
 HTTPS, IMAP, IMAPS, SCP, SFTP, SMB, SMBS, SMTP, SMTPS and TFTP.
 
-## HTTP offers several "uploads"
+## HTTP offers several uploads
 
 HTTP, and its bigger brother HTTPS, offer several different ways to upload
 data to a server and curl provides easy command-line options to do it the
@@ -37,7 +37,7 @@ Read the detailed description on how to do this with curl in the
 Multipart formposts are also used in HTML forms on websites; typically when
 there is a file upload involved. This type of upload is also an HTTP POST but
 it sends the data formatted according to some special rules, which is what the
-"multipart" name means.
+multipart name means.
 
 Since it sends the data formatted completely differently, you cannot select
 which type of POST to use at your own whim but it entirely depends on what the
@@ -76,10 +76,10 @@ Learn much more about FTPing in the [FTP with curl](../ftp.md) section.
 
 ## SMTP uploads
 
-You may not consider sending an email to be "uploading", but to curl it is.
-You upload the mail body to the SMTP server. With SMTP, you also need to
-include all the mail headers you need (`To:`, `From:`, `Date:`, etc.) in the mail
-body as curl does not add any at all.
+You may not consider sending an email to be uploading, but to curl it is. You
+upload the mail body to the SMTP server. With SMTP, you also need to include
+all the mail headers you need (`To:`, `From:`, `Date:`, etc.) in the mail body
+as curl does not add any at all.
 
     curl -T mail smtp://mail.example.com/ --mail-from user@example.com
 

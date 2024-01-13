@@ -52,7 +52,7 @@ request headers to the host example.com:
 **Content-Length**, of course, tells the server how much data to expect. This
 example's 313 bytes is really small.
 
-The **Expect** header is explained in the [Expect 100 continue](post/expect100.md)
+The **Expect** header is explained in the [Expect 100 continue](expect100.md)
 chapter.
 
 The **Content-Type** header is a bit special. It tells that this is a
@@ -111,7 +111,7 @@ to submit a multipart form as seen in HTML.
 2. Use the development tools in your favorite browser and inspect the POST
    request in the network tab after you have submitted it. Then convert that
    HTTP data to a curl command line. Unfortunately, the
-   [copy as curl](../usingcurl/copyas.md) feature in the browsers usually do
+   [copy as curl](../../usingcurl/copyas.md) feature in the browsers usually do
    not actually do multipart formposts particularly well.
 
 3. Inspect the source HTML and convert into a curl command line directly from

@@ -5,9 +5,6 @@ application, and it is how most common HTML forms on the web
 work. It usually sends a chunk of relatively small amounts of data to the
 receiver.
 
-This section describes the simple posts, for multipart formposts done with
-`-F`, check out [Multipart formposts](multipart.md).
-
 * [Simple POST](post/simple.md)
 * [Content-Type](post/content-type.md)
 * [Posting binary](post/binary.md)
@@ -19,3 +16,5 @@ This section describes the simple posts, for multipart formposts done with
 * [Hidden form fields](post/hiddenfields.md)
 * [Figure out what a browser sends](post/browsersends.md)
 * [JavaScript and forms](post/javascript.md)
+* [Multipart formposts](post/multipart.md)
+* [-d vs -F](post/postvspost.md)

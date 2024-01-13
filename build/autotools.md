@@ -1,6 +1,6 @@
 # Autotools
 
-The "Autotools" are a collection of different tools that used together generate
+The Autotools are a collection of different tools that used together generate
 the `configure` script. The configure script is run by the user who wants to
 build curl and it does a whole bunch of things:
 
@@ -15,7 +15,7 @@ build curl and it does a whole bunch of things:
    built to use.
 
  - It specifies on which file path the generated installation should be placed
-   when ultimately the build is made and "make install" is invoked.
+   when ultimately the build is made and `make install` is invoked.
 
 In the most basic usage, just running `./configure` in the source directory is
 enough. When the script completes, it outputs a summary of what options it has
@@ -42,7 +42,7 @@ setup for the particular target system for which you want to build. How to get
 and install that system is not covered in this book.
 
 Once you have a cross compiler, you can instruct configure to use that
-compiler instead of the "native" compiler when it builds curl so that the end
+compiler instead of the native compiler when it builds curl so that the end
 result then can be moved over and used on the other machine.
 
 ## Static linking

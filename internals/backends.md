@@ -33,10 +33,10 @@ functionality. In these different areas there are multiple different providers:
 Applications (in the upper yellow cloud) access libcurl through the public
 API. The API is fixed and stable.
 
-Internally, the "core" of libcurl uses internal APIs to perform the different
+Internally, the core of libcurl uses internal APIs to perform the different
 duties it needs to do. Each of these internal APIs are powered by alternative
 implementations, in many times powered by different third party libraries.
 
 The image above shows the different third party libraries powering different
-internal APIs. The purple boxes are "one or more" and the dark gray ones are
+internal APIs. The purple boxes are one or more and the dark gray ones are
 "one of these".

@@ -40,9 +40,9 @@ times.
 ## connectdata
 
   A general idea in libcurl is to keep connections around in a connection
-  "cache" after they have been used in case they are used again and then
-  re-use an existing one instead of creating a new one as it creates a
-  significant performance boost.
+  cache after they have been used in case they are used again and then re-use
+  an existing one instead of creating a new one as it creates a significant
+  performance boost.
 
   Each `connectdata` struct identifies a single physical connection to a
   server. If the connection cannot be kept alive, the connection is closed
@@ -120,7 +120,7 @@ times.
   The concrete function pointer prototypes can be found in `lib/urldata.h`.
 
   - `->scheme` is the URL scheme name, usually spelled out in uppercase. That
-    is "HTTP" or "FTP" etc. SSL versions of the protocol need their own
+    is HTTP or FTP etc. SSL versions of the protocol need their own
     `Curl_handler` setup so HTTPS separate from HTTP.
 
   - `->setup_connection` is called to allow the protocol code to allocate
@@ -172,8 +172,8 @@ times.
   - `->defport` is the default report TCP or UDP port this protocol uses
 
   - `->protocol` is one or more bits in the `CURLPROTO_*` set. The SSL
-    versions have their "base" protocol set and then the SSL variation. Like
-    "HTTP|HTTPS".
+    versions have their base protocol set and then the SSL variation. Like
+    `HTTP|HTTPS`.
 
   - `->flags` is a bitmask with additional information about the protocol that
     makes it get treated differently by the generic engine:
@@ -182,8 +182,8 @@ times.
     - `PROTOPT_CLOSEACTION` - this protocol has actions to do before closing
       the connection. This flag is no longer used by code, yet still set for a
       bunch of protocol handlers.
-    - `PROTOPT_DIRLOCK` - "direction lock". The SSH protocols set this bit to
-      limit which "direction" of socket actions that the main engine concerns
+    - `PROTOPT_DIRLOCK` - direction lock. The SSH protocols set this bit to
+      limit which direction of socket actions that the main engine concerns
       itself with.
     - `PROTOPT_NONETWORK` - a protocol that does not use the network (read
       `file:`)

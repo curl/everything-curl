@@ -17,7 +17,7 @@ a URL:
 ## Callback considerations
 
 Since libcurl is a C library, it does not know anything about C++ member
-functions or objects. You can overcome this "limitation" with relative ease
+functions or objects. You can overcome this limitation with relative ease
 using for a static member function that is passed a pointer to the class.
 
 Here's an example of a write callback using a C++ method as callback:

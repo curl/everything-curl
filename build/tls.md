@@ -102,7 +102,7 @@ point configure to a custom install path prefix where it can find BearSSL:
 
     ./configure --with-rustls
 
-When told to use "rustls", curl is actually trying to find and use the
+When told to use rustls, curl is actually trying to find and use the
 rustls-ffi library - the C API for the rustls library. configure detects
 rustls-ffi in its default path by default. You can optionally point configure
 to a custom install path prefix where it can find rustls-ffi:

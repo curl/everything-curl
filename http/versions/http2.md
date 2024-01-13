@@ -20,9 +20,9 @@ To ask a server to use HTTP/2, just:
 If your curl does not support HTTP/2, that command line tool returns an error
 saying so. Running `curl -V` shows if your version of curl supports it.
 
-If you by some chance already know that your server speaks HTTP/2 (for example,
-within your own controlled environment where you know exactly what runs in
-your machines) you can shortcut the HTTP/2 "negotiation" with
+If you by some chance already know that your server speaks HTTP/2 (for
+example, within your own controlled environment where you know exactly what
+runs in your machines) you can shortcut the HTTP/2 negotiation with
 `--http2-prior-knowledge`.
 
 ## Multiplexing

@@ -10,13 +10,13 @@ transfers in a single application. It is usually the API that makes the most
 sense if you do a large number (>100 or so) of parallel transfers.
 
 Event-driven in this case means that your application uses a system level
-library or setup that "subscribes" to a number of sockets and it lets your
+library or setup that subscribes to a number of sockets and it lets your
 application know when one of those sockets are readable or writable and it
 tells you exactly which one.
 
 This setup allows clients to scale up the number of simultaneous transfers
 much higher than with other systems, and still maintain good performance. The
-"regular" APIs otherwise waste far too much time scanning through lists of all
+regular APIs otherwise waste far too much time scanning through lists of all
 the sockets.
 
 ## Pick one

@@ -1,8 +1,8 @@
 # Multipart formposts
 
 A multipart formpost is what an HTTP client sends when an HTML form is
-submitted with *enctype* set to "multipart/form-data". It is an HTTP POST
-request sent with the request body specially formatted as a series of "parts",
+submitted with *enctype* set to `multipart/form-data`. It is an HTTP POST
+request sent with the request body specially formatted as a series of parts,
 separated with MIME boundaries.
 
 An example piece of HTML would look like this:
@@ -56,7 +56,7 @@ The **Expect** header is explained in the [Expect 100 continue](post/expect100.m
 chapter.
 
 The **Content-Type** header is a bit special. It tells that this is a
-multipart formpost and then it sets the "boundary" string. The boundary string
+multipart formpost and then it sets the boundary string. The boundary string
 is a line of characters with a bunch of random digits somewhere in it, that
 serves as a separator between the different parts of the form that is
 submitted. The particular boundary you see in this example has the random part
@@ -108,7 +108,7 @@ to submit a multipart form as seen in HTML.
    instance. Submit the form and watch how `nc` shows it. Then translate into
    a curl command line.
 
-2. Use the "development tools" in your favorite browser and inspect the POST
+2. Use the development tools in your favorite browser and inspect the POST
    request in the network tab after you have submitted it. Then convert that
    HTTP data to a curl command line. Unfortunately, the
    [copy as curl](../usingcurl/copyas.md) feature in the browsers usually do
@@ -129,20 +129,20 @@ An example action looks like this:
 
 If the form is found in a webpage hosted on a URL like for example
 `https://example.com/user/login` the `action=submit.cgi` is a relative path
-within the same "directory" as the form itself. The full URL to submit this
-form thus becomes `https://example.com/user/submit.cgi`. That is the URL to
-use in the curl command line.
+within the same directory as the form itself. The full URL to submit this form
+thus becomes `https://example.com/user/submit.cgi`. That is the URL to use in
+the curl command line.
 
 Next, you must identify every `<input>` tag used within the form, including
-the ones that are marked as "hidden". Hidden just means that they are not
-shown in the webpage, but they should still be sent in the POST.
+the ones that are marked as hidden. Hidden just means that they are not shown
+in the webpage, but they should still be sent in the POST.
 
 For every `<input>` in the form there should be a corresponding `-F` in the
 command line.
 
 ### text input
 
-A regular tag using type "text" in the style like
+A regular tag using type text in the style like
 
     <input type="text" name="person">
 
@@ -152,7 +152,7 @@ should then set the field name with content like this:
 
 ### file input
 
-When the input type is set to a "file", like in:
+When the input type is set to a file, like in:
 
     <input type="file" name="image">
 

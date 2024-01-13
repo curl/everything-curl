@@ -25,4 +25,4 @@ or two CI jobs that seemingly are stuck "permafailing", that seems to be
 failing the jobs on a permanent basis.
 
 We work hard to make them not, but it is a tough job and we often see red
-builds even for changes that should otherwise be "all green".
+builds even for changes that should otherwise be all green.

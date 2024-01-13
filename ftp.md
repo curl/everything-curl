@@ -26,7 +26,7 @@ actual data transfer.
 ## Transfer mode
 
 When an FTP client is about to transfer data, it specifies to the server which
-"transfer mode" it would like the upcoming transfer to use. The two transfer
+transfer mode it would like the upcoming transfer to use. The two transfer
 modes curl supports are 'ASCII' and 'BINARY'. Ascii is for text and usually
 means that the server sends the files with converted newlines while binary
 means sending the data unaltered and assuming the file is not text.
@@ -37,10 +37,10 @@ instead with `-B, --use-ascii` or by making sure the URL ends with `;type=A`.
 ## Authentication
 
 FTP is one of the protocols you normally do not access without a user name and
-password. It just happens that for systems that allow "anonymous" FTP access
-you can login with pretty much any name and password you like. When curl is
-used on an FTP URL to do transfer without any given user name or password, it
-uses the name `anonymous` with the password `ftp@example.com`.
+password. It just happens that for systems that allow anonymous FTP access you
+can login with pretty much any name and password you like. When curl is used
+on an FTP URL to do transfer without any given user name or password, it uses
+the name `anonymous` with the password `ftp@example.com`.
 
 If you want to provide another user name and password, you can pass them on to
 curl either with the `-u, --user` option or embed the info in the URL:

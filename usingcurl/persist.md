@@ -13,7 +13,7 @@ The curl command-line tool can, however, only keep connections alive for as
 long as it runs, so as soon as it exits back to your command line it has to
 close down all currently open connections (and also free and clean up all the
 other caches it uses to decrease time of subsequent operations). We call the
-pool of alive connections the "connection cache".
+pool of alive connections the *connection cache*.
 
 If you want to perform N transfers or operations against the same host or same
 base URL, you could gain a lot of speed by trying to do them in as few curl

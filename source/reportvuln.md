@@ -42,7 +42,7 @@ announcement.
   impact of the problem and suggests a release schedule. This discussion
   should involve the reporter as much as possible.
 
-- The release of the information should be "as soon as possible" and is most
+- The release of the information should be as soon as possible and is most
   often synced with an upcoming release that contains the fix. If the
   reporter, or anyone else, thinks the next planned release is too far away
   then a separate earlier release for security reasons should be considered.
@@ -54,7 +54,7 @@ announcement.
 
 - Request a CVE number ([Common Vulnerabilities and Exposures](https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures)) using HackerOne's form for this purpose.
 
-- Update the "security advisory" with the CVE number.
+- Update the security advisory with the CVE number.
 
 - Consider informing
   [distros@openwall](https://oss-security.openwall.org/wiki/mailing-lists/distros)

@@ -24,14 +24,14 @@ Please do not reply to an existing message as a shortcut to post a message to
 the lists.
 
 Many mail programs and web archivers use information within mails to keep them
-together as "threads", as collections of posts that discuss a certain
+together as threads, as collections of posts that discuss a certain
 subject. If you do not intend to reply on the same or similar subject, do not
 just hit reply on an existing mail and change subject; create a new mail.
 
 ## Reply to the list
 
-When replying to a message from the list, make sure that you do "group reply"
-or "reply to all", and not just reply to the author of the single mail you
+When replying to a message from the list, make sure that you do group reply
+or reply to all, and not just reply to the author of the single mail you
 reply to.
 
 We are actively discouraging replying back to just a single person privately. Keep follow-ups on discussions on the list.
@@ -83,7 +83,7 @@ leave out. A lengthy description can be found
 
 ## Digest
 
-We allow subscribers to subscribe to the "digest" version of the mailing
+We allow subscribers to subscribe to the digest version of the mailing
 lists. A digest is a collection of mails lumped together in one single mail.
 
 Should you decide to reply to a mail sent out as a digest, there are two

@@ -1,7 +1,7 @@
 # Certificate pinning
 
 TLS certificate pinning is a way to verify that the public key used to sign
-the servers certificate has not changed. It is "pinned".
+the servers certificate has not changed. It is *pinned*.
 
 When negotiating a TLS or SSL connection, the server sends a certificate
 indicating its identity. A public key is extracted from this certificate and

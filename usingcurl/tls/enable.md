@@ -1,15 +1,14 @@
 # Enable TLS
 
-curl supports the TLS version of many protocols. HTTP has HTTPS,
-FTP has FTPS, LDAP has LDAPS, POP3 has POP3S, IMAP has IMAPS and SMTP has
-SMTPS.
+curl supports the TLS version of many protocols. HTTP has HTTPS, FTP has FTPS,
+LDAP has LDAPS, POP3 has POP3S, IMAP has IMAPS and SMTP has SMTPS.
 
 If the server side supports it, you can use the TLS version of these protocols
 with curl.
 
 There are two general approaches to do TLS with protocols. One of them is to
 speak TLS already from the first connection handshake while the other is to
-"upgrade" the connection from plain-text to TLS using protocol specific
+upgrade the connection from plain-text to TLS using protocol specific
 instructions.
 
 With curl, if you explicitly specify the TLS version of the protocol (the one

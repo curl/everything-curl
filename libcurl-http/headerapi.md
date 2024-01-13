@@ -37,10 +37,10 @@ request in the series, independently of the actual amount of requests used.
 
 ## Header folding
 
-HTTP/1 headers supports a deprecated format called "folding", which means that
-there is a continuation line after a header, making the line "folded".
+HTTP/1 headers supports a deprecated format called *folding*, which means that
+there is a continuation line after a header, making the line folded.
 
-The headers API supports folded headers and returns such contents "unfolded" -
+The headers API supports folded headers and returns such contents unfolded -
 where the different parts are separated by a single whitespace character.
 
 ## When

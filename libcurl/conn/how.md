@@ -37,7 +37,7 @@ time.
 
 When libcurl has multiple addresses left to try to connect to, and there is
 more than 600 millisecond left, it will at most allow half the remaining time
-for this attempt. This is to avoid a single "sink-hole address" make libcurl
+for this attempt. This is to avoid a single sink-hole address make libcurl
 spend its entire timeout on that bad entry.
 
 For example: if there are 1000 milliseconds left of the timeout and there are

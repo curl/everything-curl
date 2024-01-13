@@ -13,16 +13,17 @@ important for how long the cookie should live on.
 
 The expiry of a cookie is either set to a fixed time in the future (or to live
 a number of seconds) or it gets no expiry at all. A cookie without an expire
-time is called a "session cookie" and is meant to live during the "session" but not longer. A session in this aspect is typically thought to be the life
-time of the browser used to view a site. When you close the browser, you end
-your session. Doing HTTP operations with a command-line client that supports
+time is called a session cookie and is meant to live during the *session* but
+not longer. A session in this aspect is typically thought to be the life time
+of the browser used to view a site. When you close the browser, you end your
+session. Doing HTTP operations with a command-line client that supports
 cookies begs the question of when a session really ends…
 
 ## Cookie engine
 
 The general concept of curl only doing the bare minimum unless you tell it
 differently makes it not acknowledge cookies by default. You need to switch on
-"the cookie engine" to make curl keep track of cookies it receives and then
+the cookie engine to make curl keep track of cookies it receives and then
 subsequently send them out on requests that have matching cookies.
 
 You enable the cookie engine by asking curl to read or write cookies. If you
@@ -60,8 +61,8 @@ of the same input file would use the original cookie contents again.
 
 ## Writing cookies to file
 
-The place where cookies are stored is sometimes referred to as the "cookie
-jar". When you enable the cookie engine in curl and it has received cookies,
+The place where cookies are stored is sometimes referred to as the cookie
+jar. When you enable the cookie engine in curl and it has received cookies,
 you can instruct curl to write down all its known cookies to a file, the
 cookie jar, before it exits. It is important to remember that curl only
 updates the output cookie jar on exit and not during its lifetime, no matter

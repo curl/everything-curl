@@ -11,9 +11,9 @@ to send and so on.
 
 ## What protocols does curl support?
 
-curl supports protocols that allow "data transfers" in either or both
-directions. We usually also restrict ourselves to protocols which have a "URI
-format" described in an RFC or at least is somewhat widely used, as curl works
+curl supports protocols that allow data transfers in either or both
+directions. We usually also restrict ourselves to protocols which have a URI
+format described in an RFC or at least is somewhat widely used, as curl works
 primarily with URLs (URIs really) as the input key that specifies the
 transfer.
 
@@ -72,7 +72,7 @@ show up over time, extensions that make sense to support.
 The interpretation of a protocol sometimes changes even if the spec remains the
 same.
 
-The protocols mentioned in this chapter are all "Application Protocols", which
+The protocols mentioned in this chapter are all *Application Protocols*, which
 means they are transferred over more lower level protocols, like TCP, UDP and
 TLS. They are also themselves protocols that change over time, get new
 features and get attacked so that new ways of handling security, etc., forces

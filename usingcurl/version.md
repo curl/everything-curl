@@ -36,13 +36,12 @@ The meaning of the four lines?
 ## Line 1: curl
 
 The first line starts with `curl` and first shows the main version number of
-the tool. Then follows the "platform" the tool was built for within
-parentheses and the libcurl version. Those three fields are common for all
-curl builds.
+the tool. Then follows the platform the tool was built for within parentheses
+and the libcurl version. Those three fields are common for all curl builds.
 
 If the curl version number has `-DEV` appended to it, it means the version is
 built straight from a in-development source code and it is not an officially
-released and "blessed" version.
+released and blessed version.
 
 The rest of this line contains names of third party components this build of
 curl uses, often with their individual version number next to it with a slash
@@ -115,7 +114,7 @@ Features that can be present there:
  - **NTLM** - NTLM authentication is supported.
  - **NTLM_WB** - NTLM authentication is supported.
  - **PSL** - Public Suffix List (PSL) is available and means that this curl has
-   been built with knowledge about "public suffixes", used for cookies.
+   been built with knowledge about *public suffixes*, used for cookies.
  - **SPNEGO** - SPNEGO authentication is supported.
  - **SSL** - SSL versions of various protocols are supported, such as HTTPS,
    FTPS, POP3S and so on.

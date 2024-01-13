@@ -1,6 +1,6 @@
 # HTTPS
 
-HTTPS is in effect Secure HTTP. The "secure" part means that the TCP transport
+HTTPS is in effect Secure HTTP. The secure part means that the TCP transport
 layer is enhanced to provide authentication, privacy (encryption) and data
 integrity by the use of TLS.
 

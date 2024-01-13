@@ -9,7 +9,7 @@ performing their Internet data transfers.
 libcurl is a library of functions that are provided with a C API, for
 applications written in C. You can easily use it from C++ too, with only a few
 considerations (see [libcurl for C++ programmers](libcurl/cplusplus.md)). For
-other languages, there exist "bindings" that work as intermediate layers
+other languages, there exist *bindings* that work as intermediate layers
 between libcurl the library and corresponding functions for the particular
 language you like.
 

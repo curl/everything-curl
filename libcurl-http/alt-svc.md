@@ -2,7 +2,7 @@
 
 Alternative Services, aka alt-svc, is an HTTP header that lets a server tell
 the client that there is one or more *alternatives* for that server at
-"another place" with the use of the `Alt-Svc:` response header.
+another place with the use of the `Alt-Svc:` response header.
 
 The *alternatives* the server suggests can include a server running on another
 port on the same host, on another completely different hostname and it can
@@ -13,7 +13,7 @@ also offer the service *over another protocol*.
 To make libcurl consider any offered alternatives by serves, you must first
 enable it in the handle. You do this by setting the correct bitmask to the
 `CURLOPT_ALTSVC_CTRL` option. The bitmask allows the application to limit what
-HTTP versions to allow, and if the "cache" file on disk should only be used to
+HTTP versions to allow, and if the cache file on disk should only be used to
 read from (not write).
 
 Enable alt-svc and allow it to switch to either HTTP/1 or HTTP/2:

@@ -25,9 +25,9 @@ type=file>` tag, for file uploads.
 
 The default `enctype` used by forms, which is rarely spelled out in HTML since
 it is default, is `application/x-www-form-urlencoded`. It makes the browser
-"URL encode" the input as name=value pairs with the data encoded to avoid
-unsafe characters. We often refer to that as a [regular POST](post.md),
-and you perform one with curl's `-d` and friends.
+URL encode the input as name=value pairs with the data encoded to avoid unsafe
+characters. We often refer to that as a [regular POST](post.md), and you
+perform one with curl's `-d` and friends.
 
 ## POST outside of HTML
 
@@ -35,7 +35,7 @@ POST is a regular HTTP method and there is no requirement that it be triggered
 by HTML or involve a browser. Lots of services, APIs and other systems allow
 you to pass in data these days in order to get things done.
 
-If these services expect plain "raw" data or perhaps data formatted as JSON or
+If these services expect plain raw data or perhaps data formatted as JSON or
 similar, you want the [regular POST](post.md) approach. curl's `-d` option
 does not alter or encode the data at all but just sends exactly what you tell
 it to. Just pay attention that `-d` sets a default `Content-Type:` that might

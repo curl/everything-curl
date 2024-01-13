@@ -2,7 +2,7 @@
 
 By default and by design, libcurl makes transfers as basic as possible and
 features need to be enabled to get used. One such feature is HTTP cookies,
-more known as just plain and simply "cookies".
+more known as just plain and simply cookies.
 
 Cookies are name/value pairs sent by the server (using a `Set-Cookie:` header)
 to be stored in the client, and are then supposed to get sent back again in
@@ -13,10 +13,10 @@ of cookies.
 
 ## Cookie engine
 
-When you enable the "cookie engine" for a specific easy handle, it means that
-it records incoming cookies, stores them in the in-memory "cookie store" that
-is associated with the easy handle and subsequently sends the proper ones back
-if an HTTP request is made that matches.
+When you enable the cookie engine for a specific easy handle, it means that it
+records incoming cookies, stores them in the in-memory cookie store that is
+associated with the easy handle and subsequently sends the proper ones back if
+an HTTP request is made that matches.
 
 There are two ways to switch on the cookie engine:
 
@@ -27,8 +27,9 @@ the `CURLOPT_COOKIEFILE` option:
 
     curl_easy_setopt(easy, CURLOPT_COOKIEFILE, "cookies.txt");
 
-A common trick is to just specify a non-existing filename or plain "" to have
-it just activate the cookie engine with a blank cookie store to start with.
+A common trick is to just specify a non-existing filename or plain `""` to
+have it just activate the cookie engine with a blank cookie store to start
+with.
 
 This option can be set multiple times and then each of the given files are
 read.
@@ -42,7 +43,7 @@ option:
 
 when the easy handle is closed later with `curl_easy_cleanup()`, all known
 cookies are stored in the given file. The file format is the well-known
-"Netscape cookie file" format that browsers also once used.
+Netscape cookie file format that browsers also once used.
 
 ## Setting custom cookies
 

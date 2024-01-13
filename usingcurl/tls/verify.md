@@ -5,8 +5,8 @@ be certain that you are communicating with the **correct** host. If we do not
 know that, we could just as well be talking with an impostor that just
 *appears* to be who we think it is.
 
-To check that it communicates with the right TLS server, curl uses a "CA
-store" - a set of certificates to verify the signature of the server's
+To check that it communicates with the right TLS server, curl uses a CA
+store - a set of certificates to verify the signature of the server's
 certificate. All servers provide a certificate to the client as part of the
 TLS handshake and all public TLS-using servers have acquired that certificate
 from an established Certificate Authority.

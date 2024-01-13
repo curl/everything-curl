@@ -38,9 +38,9 @@ A good report explains what happened and what you thought was going to
 happen. Tell us exactly what versions of the different components you used and
 take us step by step through what you did to arrive at the problem.
 
-After you submit a bug report, you can expect there to be follow-up
-questions or perhaps requests that you try out various things so the developer 
-can narrow down the "suspects" and make sure your problem is properly located.
+After you submit a bug report, you can expect there to be follow-up questions
+or perhaps requests that you try out various things so the developer can
+narrow down the suspects and make sure your problem is properly located.
 
 A bug report that is submitted then abandoned by the submitter risks getting
 closed if the developer fails to understand it, fails to reproduce it or faces

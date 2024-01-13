@@ -15,7 +15,7 @@ slow) resolve operation again. This cache exists in memory only.
 
 ## connection cache
 
-Also known as the connection pool. This is where curl puts "live connections"
+Also known as the connection pool. This is where curl puts live connections
 after a transfer is complete so that a subsequent transfer might be able to
 use an already existing connection instead of having to set a new one up. When
 a connection is reused, curl avoids name lookups, TLS handshakes and more.

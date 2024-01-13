@@ -22,7 +22,7 @@ metadata associated with the actual payload, called the response body. All
 downloads get a set of headers too, but when using libcurl you can select
 whether you want to have them downloaded (seen) or not.
 
-You can ask libcurl to pass on the headers to the same "stream" as the regular
+You can ask libcurl to pass on the headers to the same stream as the regular
 body is, by using `CURLOPT_HEADER`:
 
     easy = curl_easy_init();

@@ -3,15 +3,15 @@
 These are not proxies but they are blocking the way between you and the server
 you want to access.
 
-A "captive portal" is one of these systems that are popular to use in hotels,
+A captive portal is one of these systems that are popular to use in hotels,
 airports and for other sorts of network access to a larger audience. The
-portal "captures" all network traffic and redirects you to a login webpage
+portal captures all network traffic and redirects you to a login webpage
 until you have either clicked OK and verified that you have read their
 conditions or perhaps even made sure that you have paid plenty of money for
 the right to use the network.
 
 curl's traffic is of course also captured by such portals and often the best
-way is to use a browser to accept the conditions and "get rid of" the portal
+way is to use a browser to accept the conditions and get rid of the portal
 since from then on they often allow all other traffic originating from that
 same machine (MAC address) for a period of time.
 

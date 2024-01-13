@@ -7,7 +7,7 @@ moment.
 
 The next lifesaver when writing libcurl applications that everyone needs to
 know about and needs to use extensively, at least while developing libcurl
-applications or debugging libcurl itself, is to enable "verbose mode" with
+applications or debugging libcurl itself, is to enable verbose mode with
 `CURLOPT_VERBOSE`:
 
     CURLcode ret = curl_easy_setopt(handle, CURLOPT_VERBOSE, 1L);
@@ -42,7 +42,7 @@ The trace callback should match a prototype like this:
 
 **handle** is the easy handle it concerns, **type** describes the particular
 data passed to the callback (data in/out, header in/out, TLS data in/out and
-"text"), **data** is a pointer pointing to the data being **size** number of
+text), **data** is a pointer pointing to the data being **size** number of
 bytes. **user** is the custom pointer you set with `CURLOPT_DEBUGDATA`.
 
 The data pointed to by **data** is *not* null terminated, but is exactly of
@@ -66,7 +66,7 @@ separate connections and different transfers, there are times when you want to
 see to which specific transfers or connections the various information belong
 to. To better understand the trace output.
 
-You can then get the transfer and connection "identifiers" from within the
+You can then get the transfer and connection identifiers from within the
 callback:
 
     curl_off_t conn_id;

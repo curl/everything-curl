@@ -57,8 +57,8 @@ defined as:
 
 Where `XX` , `YY` and `ZZ` are the main version, release and patch numbers in
 hexadecimal. All three number fields are always represented using two digits
-(eight bits each). 1.2.0 would appear as "0x010200" while version 9.11.7
-appears as "0x090b07".
+(eight bits each). 1.2.0 would appear as `0x010200` while version 9.11.7
+appears as `0x090b07`.
 
 This 6-digit hexadecimal number is always a greater number in a more recent
 release. It makes comparisons with greater than and less than work.
@@ -82,7 +82,7 @@ changed independent of applications.
 curl_version_info() returns a pointer to a struct with information about
 version numbers and various features and in the running version of
 libcurl. You call it by giving it a special age counter so that libcurl knows
-the "age" of the libcurl that calls it. The age is a define called
+the age of the libcurl that calls it. The age is a define called
 `CURLVERSION_NOW` and is a counter that is increased at irregular intervals
 throughout the curl development. The age number tells libcurl what struct set
 it can return.

@@ -35,24 +35,24 @@ breaking the encryption:
 
 ## Non-HTTP protocols over an HTTP proxy
 
-An "HTTP proxy" means the proxy itself speaks HTTP. HTTP proxies are primarily
+An HTTP proxy means the proxy itself speaks HTTP. HTTP proxies are primarily
 used to proxy HTTP but it is also fairly common that they support
 other protocols as well. In particular, FTP is fairly commonly supported.
 
-When talking FTP "over" an HTTP proxy, it is usually done by more or less
-pretending the other protocol works like HTTP and asking the proxy to "get
-this URL" even if the URL is not using HTTP. This distinction is important
-because it means that when sent over an HTTP proxy like this, curl does not
-really speak FTP even though given an FTP URL; thus FTP-specific features do
-not work:
+When talking FTP over an HTTP proxy, it is usually done by more or less
+pretending the other protocol works like HTTP and asking the proxy to get this
+URL even if the URL is not using HTTP. This distinction is important because
+it means that when sent over an HTTP proxy like this, curl does not really
+speak FTP even though given an FTP URL; thus FTP-specific features do not
+work:
 
     curl -x http://proxy.example.com:80 ftp://ftp.example.com/file.txt
 
-What you can do instead then, is to "tunnel through" the HTTP proxy.
+What you can do instead then, is to tunnel through the HTTP proxy.
 
 ## HTTP proxy tunneling
 
-Most HTTP proxies allow clients to "tunnel through" it to a server on the other
+Most HTTP proxies allow clients to tunnel through it to a server on the other
 side. That is exactly what's done every time you use HTTPS through the HTTP
 proxy.
 
@@ -66,7 +66,7 @@ the proxy administrators know).
 
 Still, assuming that the HTTP proxy allows it, you can ask it to tunnel
 through to a remote server on any port number so you can do other protocols
-"normally" even when tunneling. You can do FTP tunneling like this:
+normally even when tunneling. You can do FTP tunneling like this:
 
     curl -p -x http://proxy.example.com:80 ftp://ftp.example.com/file.txt
 

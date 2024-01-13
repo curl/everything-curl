@@ -1,6 +1,6 @@
 # -d vs -F
 
-Previous chapters talked about [regular POST](post.md) and
+Previous chapters talked about [regular POST](simple.md) and
 [multipart formpost](multipart.md), and in your typical command lines you do
 them with `-d` or `-F`.
 
@@ -26,7 +26,7 @@ type=file>` tag, for file uploads.
 The default `enctype` used by forms, which is rarely spelled out in HTML since
 it is default, is `application/x-www-form-urlencoded`. It makes the browser
 URL encode the input as name=value pairs with the data encoded to avoid unsafe
-characters. We often refer to that as a [regular POST](post.md), and you
+characters. We often refer to that as a [regular POST](simple.md), and you
 perform one with curl's `-d` and friends.
 
 ## POST outside of HTML
@@ -36,7 +36,7 @@ by HTML or involve a browser. Lots of services, APIs and other systems allow
 you to pass in data these days in order to get things done.
 
 If these services expect plain raw data or perhaps data formatted as JSON or
-similar, you want the [regular POST](post.md) approach. curl's `-d` option
+similar, you want the [regular POST](simple.md) approach. curl's `-d` option
 does not alter or encode the data at all but just sends exactly what you tell
 it to. Just pay attention that `-d` sets a default `Content-Type:` that might
 not be what you want.

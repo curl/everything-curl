@@ -44,7 +44,7 @@ which type of POST to use at your own whim but it entirely depends on what the
 receiving server end expects and can handle.
 
 HTTP multipart formposts are done with `-F`. See the detailed description in
-the [HTTP multipart formposts](../http/multipart.md) chapter.
+the [HTTP multipart formposts](../http/post/multipart.md) chapter.
 
 ### PUT
 

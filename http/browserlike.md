@@ -9,9 +9,10 @@ Here are some tricks and advice on how to proceed when doing this.
 
 ## Figure out what the browser does
 
-This is really a necessary first step. Second-guessing what it does risks having
-you chase down the wrong problem rat-hole. The scientific approach to this
-problem pretty much requires that you first understand what the browser does.
+This is really a necessary first step. Second-guessing what it does risks
+having you chase down the wrong problem rat-hole. The scientific approach to
+this problem pretty much requires that you first understand what the browser
+does.
 
 To learn what the browser does to perform a certain task, you can either read
 the HTML pages that you operate on and with a deep enough knowledge you can
@@ -67,7 +68,8 @@ and use that in your POST submission together with the rest of the data.
 
 Send correct contents to the fields to the correct destination URL:
 
-    curl -d user=daniel -d secret=qwerty -d id=bc76 https://example.com/login.cgi -o out
+    curl -d user=daniel -d secret=qwerty -d id=bc76 \
+      https://example.com/login.cgi -o out
 
 Many login pages even send you a session cookie already when presenting the
 login, and since you often need to extract the hidden fields from the `<form>`
@@ -80,8 +82,8 @@ id field from there and then you can proceed and login as mentioned above, but
 with the added cookie loading (I am splitting the line into two lines to make
 it more readable):
 
-    curl -d user=daniel -d secret=qwerty -d id=bc76 https://example.com/login.cgi \
-    -b cookies -c cookies -o out
+    curl -d user=daniel -d secret=qwerty -d id=bc76 \
+      https://example.com/login.cgi -b cookies -c cookies -o out
 
 You can see that it uses both `-b` for reading cookies from the file and `-c`
 to store cookies again, for when the server sends back updated cookies.
@@ -101,8 +103,8 @@ automatically. You need to instruct it to do this by adding the `-L` command
 line option. Adding that to the previous command line then makes the full one
 look like:
 
-    curl -d user=daniel -d secret=qwerty -d id=bc76 https://example.com/login.cgi \
-    -b cookies -c cookies -L -o out
+    curl -d user=daniel -d secret=qwerty -d id=bc76 \
+      https://example.com/login.cgi -b cookies -c cookies -L -o out
 
 ## Post-login
 
@@ -122,8 +124,9 @@ then inform the server from which URL you arrived by using `-e
 https://example.com/` etc. Appending that to the previous login attempt then
 makes it:
 
-    curl -d user=daniel -d secret=qwerty -d id=bc76 https://example.com/login.cgi \
-    -b cookies -c cookies -L -e "https://example.com/" -o out
+    curl -d user=daniel -d secret=qwerty -d id=bc76 \
+      https://example.com/login.cgi \
+      -b cookies -c cookies -L -e "https://example.com/" -o out
 
 ## TLS fingerprinting
 

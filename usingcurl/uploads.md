@@ -83,7 +83,7 @@ as curl does not add any at all.
 
     curl -T mail smtp://mail.example.com/ --mail-from user@example.com
 
-Learn more about using SMTP with curl in the [Using curl/SMTP](smtp.md) section.
+Learn more about using SMTP with curl in the [Sending email](smtp.md) section.
 
 ## Progress meter for uploads
 

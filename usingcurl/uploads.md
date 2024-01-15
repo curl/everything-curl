@@ -30,7 +30,7 @@ The upload kind is usually done with the `-d` or `--data` options, but there
 are a few additional alterations.
 
 Read the detailed description on how to do this with curl in the
-[HTTP POST with curl](../http/post.md) chapter.
+[HTTP POST with curl](../http/post/README.md) chapter.
 
 ### multipart formpost
 
@@ -72,7 +72,7 @@ you have used locally, you specify it in the URL:
 
     curl -T uploadthis ftp://example.com/this/directory/remotename
 
-Learn much more about FTPing in the [FTP with curl](../ftp.md) section.
+Learn much more about FTPing in the [FTP with curl](../ftp/README.md) section.
 
 ## SMTP uploads
 

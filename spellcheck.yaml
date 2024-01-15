@@ -24,4 +24,4 @@ matrix:
       - 'code'
       - 'pre'
   sources:
-  - '**/*.md|!README.md|!SUMMARY.md|!bindings.md|!bookindex.md|!libcurl/options/all.md|!build/deps.md'
+  - '**/*.md|!README.md|!SUMMARY.md|!bindings/README.md|!bookindex.md|!transfers/options/all.md|!build/deps.md'

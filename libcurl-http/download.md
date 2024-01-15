@@ -31,8 +31,8 @@ body is, by using `CURLOPT_HEADER`:
     curl_easy_perform(easy);
 
 Or you can opt to store the headers in a separate download file, by relying on
-the default behaviors of the [write](../libcurl/callbacks/write.md) and
-[header callbacks](../libcurl/callbacks/header.md):
+the default behaviors of the [write](../transfers/callbacks/write.md) and
+[header callbacks](../transfers/callbacks/header.md):
 
     easy = curl_easy_init();
     FILE *file = fopen("headers", "wb");

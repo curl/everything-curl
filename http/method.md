@@ -8,4 +8,4 @@ instead the exact method used depends on the specific options you use. `GET`
 is default, using `-d` or `-F` makes it a `POST`, `-I` generates a `HEAD` and
 `-T` sends a `PUT`.
 
-More about this in the [Modify the HTTP request](requests.md) section.
+More about this in the [Modify the HTTP request](modify/README.md) section.

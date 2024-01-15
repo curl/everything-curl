@@ -109,5 +109,5 @@ trurl.
 
 ## More
 
-Everything you want to know about trurl is found at https://curl.se/trurl. It
+Everything you want to know about trurl is found at <https://curl.se/trurl>. It
 is probably already available for your Linux distribution of choice.

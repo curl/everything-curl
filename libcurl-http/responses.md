@@ -6,8 +6,8 @@ and thus nonexistent. An HTTP response however always has response headers.
 
 ## Response body
 
-The response body is passed to the [write callback](../libcurl/callbacks/write.md)
-and the response headers to the [header callback](../libcurl/callbacks/header.md).
+The response body is passed to the [write callback](../transfers/callbacks/write.md)
+and the response headers to the [header callback](../transfers/callbacks/header.md).
 
 Virtually all libcurl-using applications need to set at least one of those
 callbacks instructing libcurl what to do with received headers and data.

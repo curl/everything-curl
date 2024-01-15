@@ -58,4 +58,5 @@ architecture and for any purpose. libcurl is also extremely liberally licensed
 to avoid that becoming an obstacle.
 
 libcurl is written in traditional and conservative C. Where other languages
-are preferred, people have created libcurl [bindings](../bindings.md) for them.
+are preferred, people have created libcurl [bindings](../bindings/README.md)
+for them.

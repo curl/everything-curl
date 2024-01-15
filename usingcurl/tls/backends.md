@@ -10,7 +10,7 @@ Sometimes features and behaviors differ slightly when curl is built with
 different TLS backends, but the developers work hard on making those
 differences as small and unnoticeable as possible.
 
-Showing the curl version information with [curl --version](../version.md)
+Showing the curl version information with [curl --version](../../cmdline/curlver.md)
 includes the TLS library and version in the first line of output.
 
 ## Multiple TLS backends

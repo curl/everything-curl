@@ -9,7 +9,7 @@ the easy handles that are added to that single multi handle, and when the easy
 interface is used they are kept within that handle.
 
 You can instruct libcurl to share some of the caches with the
-[share interface](sharing.md).
+[share interface](../helpers/sharing.md).
 
 ## DNS cache
 

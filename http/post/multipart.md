@@ -111,7 +111,7 @@ to submit a multipart form as seen in HTML.
 2. Use the development tools in your favorite browser and inspect the POST
    request in the network tab after you have submitted it. Then convert that
    HTTP data to a curl command line. Unfortunately, the
-   [copy as curl](../../usingcurl/copyas.md) feature in the browsers usually do
+   [copy as curl](../../cmdline/copyas.md) feature in the browsers usually do
    not actually do multipart formposts particularly well.
 
 3. Inspect the source HTML and convert into a curl command line directly from

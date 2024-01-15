@@ -410,6 +410,16 @@ When curl exits with a non-zero code, it also outputs an error message (unless
 circumstances to the exit status number itself so the same error number can
 get different error messages.
 
+Users can also craft their own error messages with
+[--write-out](verbose/writeout.md). The pseudo variable `%{onerror}` allows
+you to set a message that only gets displayed on errors, and it offers
+`%{errormsg}` and `%{exitcode}` among all the variables.
+
+For example:
+
+    curl --write-out "%{onerror}curl says: (%{exitcode}) %{errormsg}" \
+      https://curl.se/
+
 ## "Not used"
 
 The list of exit codes above contains a number of values marked as 'not

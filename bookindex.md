@@ -420,7 +420,7 @@
  - SSH: [SCP](protocols/curl.md#scp), [Select SSH backend](build/autotools.md#select-ssh-backend), [SSH libraries](build/deps.md#ssh-libraries), [Available exit codes](usingcurl/returns.md#available-exit-codes), [SCP and SFTP](usingcurl/scpsftp.md#scp-and-sftp), [Historic TELNET](usingcurl/telnet.md#historic-telnet), [All options](libcurl/options/all.md#all-options), [Callbacks](libcurl/callbacks.md#callbacks), [SSH key](libcurl/callbacks/sshkey.md#ssh-key), [Trace everything](libcurl/verbose.md#trace-everything), [Different backends](internals/backends.md#different-backends), [Curl_handler](internals/structs.md#curl_handler), [Variables](internals/tests/file-format.md#variables)
  - SSH backend: [Select SSH backend](build/autotools.md#select-ssh-backend)
  - SSL context callback: [All options](libcurl/options/all.md#all-options)
- - SSLKEYLOGFILE: [TLS](usingcurl/tls.md#tls), [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md#sslkeylogfile)
+ - SSLKEYLOGFILE: [TLS](usingcurl/tls.md#tls), [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md#sslkeylogfile), [Figure out what a browser sends](http/post/browsersends.md#figure-out-what-a-browser-sends)
  - STARTTLS: [IMAP](protocols/curl.md#imap), [TLS for emails](usingcurl/reademail.md#tls-for-emails), [STARTTLS](libcurl/options/tls.md#starttls)
 
 ## T
@@ -457,7 +457,7 @@
 ## V
 
  - --variable: [Variables](cmdline/variables.md#variables)
- - variables: [No assignments in conditions](source/style.md#no-assignments-in-conditions), [Garbage in gives garbage out](cmdline.md#garbage-in-gives-garbage-out), [Output variables for globbing](cmdline/globbing.md#output-variables-for-globbing), [Config file](cmdline/configfile.md#config-file), [Variables](cmdline/variables.md#variables), [Write out](usingcurl/verbose/writeout.md#write-out), [Proxies](usingcurl/proxies.md#proxies), [Proxy environment variables](usingcurl/proxies/env.md#proxy-environment-variables), [Ciphers](usingcurl/tls/ciphers.md#ciphers), [Proxy environment variables](libcurl/conn/proxies.md#proxy-environment-variables), [Preprocessed](internals/tests/file-format.md#preprocessed)
+ - variables: [No assignments in conditions](source/style.md#no-assignments-in-conditions), [Garbage in gives garbage out](cmdline.md#garbage-in-gives-garbage-out), [Output variables for globbing](cmdline/globbing.md#output-variables-for-globbing), [Config file](cmdline/configfile.md#config-file), [Variables](cmdline/variables.md#variables), [Write out](usingcurl/verbose/writeout.md#write-out), [Proxies](usingcurl/proxies.md#proxies), [Proxy environment variables](usingcurl/proxies/env.md#proxy-environment-variables), [Error message](usingcurl/returns.md#error-message), [Ciphers](usingcurl/tls/ciphers.md#ciphers), [Proxy environment variables](libcurl/conn/proxies.md#proxy-environment-variables), [Preprocessed](internals/tests/file-format.md#preprocessed)
  - --verbose: [Long options](cmdline/options.md#long-options), [Verbose](usingcurl/verbose.md#verbose), [Time stamps](usingcurl/verbose/trace.md#time-stamps)
  - --version: [Version](usingcurl/version.md#version), [TLS backends](usingcurl/tls/backends.md#tls-backends), [Memory debugging](internals/memory-debugging.md#memory-debugging)
  - Vulnerability: [Vulnerability handling](source/reportvuln.md#vulnerability-handling)
@@ -468,7 +468,7 @@
  - wolfSSH: [SSH libraries](build/deps.md#ssh-libraries), [SCP and SFTP](usingcurl/scpsftp.md#scp-and-sftp), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
  - wolfSSL: [Commercial support](project/support.md#commercial-support), [lib/vtls](source/layout.md#lib-slash-vtls), [Running DLL based configurations](build/windows.md#running-dll-based-configurations), [TLS libraries](build/tls.md#tls-libraries), [Native CA stores](usingcurl/tls/verify.md#native-ca-stores), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions), [All options](libcurl/options/all.md#all-options), [SSL context](libcurl/callbacks/sslcontext.md#ssl-context), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
  - Write callback: [All options](libcurl/options/all.md#all-options), [Write data](libcurl/callbacks/write.md#write-data), [1. The callback approach](libcurl/ws/concept.md#sect-1-dot--the-callback-approach), [Raw mode](libcurl/ws/options.md#raw-mode), [Write callback](libcurl/ws/read.md#write-callback), [make callbacks as fast as possible](libcurl/performance.md#make-callbacks-as-fast-as-possible), [Get a simple HTTP page](libcurl/examples/get.md#get-a-simple-http-page), [Get a response into memory](libcurl/examples/getinmem.md#get-a-response-into-memory), [Callback considerations](libcurl/cplusplus.md#callback-considerations), [Response body](libcurl-http/responses.md#response-body)
- - --write-out: [Write out](usingcurl/verbose/writeout.md#write-out), [Overwriting](usingcurl/downloads/storing.md#overwriting), [HTTP response codes](http/response.md#http-response-codes)
+ - --write-out: [Write out](usingcurl/verbose/writeout.md#write-out), [Overwriting](usingcurl/downloads/storing.md#overwriting), [Error message](usingcurl/returns.md#error-message), [HTTP response codes](http/response.md#http-response-codes)
 
 ## X
 

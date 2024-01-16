@@ -1,4 +1,4 @@
-# How to read this book
+# How to read
 
 Here is an overview of the main sections of this book and what they cover.
 

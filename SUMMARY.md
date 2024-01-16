@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [How to read this book](how-to-read.md)
+* [How to read](how-to-read.md)
 * [The cURL project](project/README.md)
   * [How it started](project/started.md)
   * [The name](project/name.md)

@@ -53,7 +53,7 @@ GitHub](https://github.com/curl/curl/issues).
 
 Testing software thoroughly and properly is a lot of work. Testing software
 that runs on dozens of operating systems and CPU architectures, with
-server implementations which have their owns sets of bugs and interpretations 
+server implementations which have their own sets of bugs and interpretations 
 of the specs, is even more work.
 
 The curl project has a test suite that iterates over all existing test cases, 

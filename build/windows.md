@@ -86,7 +86,7 @@ DLL Debug - DLL wolfSSL (x64):
     C:\Windows;C:\Windows\System32\Wbem
 
 If you are using a configuration that uses multiple third-party library DLLs
-(such as `DLL Debug - DLL OpenSSL - DLL LibSSH2`) then `Path to DLL` need to
+(such as `DLL Debug - DLL OpenSSL - DLL LibSSH2`) then 'Path to DLL` needs to
 contain the path to both of these.
 
 ## Notes

@@ -44,7 +44,7 @@ following) part to stderr and `%{stdout}` brings it back to stdout.
 
 From curl 8.3.0, there is a feature that lets users send the write-out output
 to a file: `%output{filename}`. The data following is then written to that
-file. If you rather have curl append to that file instead of creating it from
+file. If you would rather have curl append to that file instead of creating it from
 scratch, prefix the filename with `>>`. Like this: `%output{>>filename}`.
 
 A write-out argument can include output to stderr, stdout and files as the

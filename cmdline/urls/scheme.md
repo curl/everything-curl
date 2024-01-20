@@ -15,7 +15,7 @@ additional notes to be aware of, about the number of slashes:
 curl allows some illegal syntax and tries to correct it internally; so it also
 understands and accepts URLs with one or three slashes, even though they are
 in fact not properly formed URLs. curl does this because the browsers started
-this practice so it has lead to such URLs being used in the wild every now and
+this practice so it has led to such URLs being used in the wild every now and
 then.
 
 `file://` URLs are written as `file://<hostname>/<path>` but the only

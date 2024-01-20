@@ -16,7 +16,7 @@ directed somewhere other than the terminal.
 
 curl also features an alternative and simpler progress meter that you enable
 with `-# / --progress-bar`. As the long name implies, it instead shows the
-transfer as progress bar.
+transfer as a progress bar.
 
 At times when curl is asked to transfer data, it cannot figure out the total
 size of the requested operation and that then subsequently makes the progress

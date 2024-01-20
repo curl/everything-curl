@@ -1,7 +1,7 @@
 # Code layout
 
 The curl source code tree is neither large nor complicated. A key thing to
-remember is, that libcurl is the library and that this library is the biggest
+remember is that libcurl is the library and that this library is the biggest
 component of the curl command-line tool.
 
 ## root
@@ -47,7 +47,7 @@ The VTLS sub section within libcurl is the home of all the TLS backends
 libcurl can be built to support. The "virtual" TLS internal API is a backend
 agnostic API used internally to access TLS and crypto functions without the
 main code knowing which specific TLS library is used. This allows the person
-who builds libcurl to select from a wide variety TLS libraries to build with.
+who builds libcurl to select from a wide variety of TLS libraries to build with.
 
 We also maintain a [SSL comparison
 table](https://curl.se/docs/ssl-compared.html) on the website to aid

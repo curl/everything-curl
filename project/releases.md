@@ -34,12 +34,12 @@ log](https://curl.se/docs/releases.html).
 Every single change to the source code is committed and pushed to the source
 code repository. This repository is hosted on github.com and is using git
 these days (but has not always been this way). When building curl off the
-repository, there are a few things you need to generate and setup that
+repository, there are a few things you need to generate and set up that
 sometimes cause people some problems or just friction. To help with that, we
 provide daily snapshots.
 
 The daily snapshots are generated daily (clever naming, right?) as if a
-release had been made at that point. It produces a package of all sources code
+release had been made at that point. It produces a package of all source code
 and all files that are normally part of a release and puts it in a package and
 uploads it to [this special place](https://curl.se/snapshots/) to allow
 interested people to get the latest code to test, to experiment or whatever.

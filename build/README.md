@@ -1,6 +1,6 @@
 # Build curl and libcurl
 
-The source code for this project is written in a way that allows it to get
+The source code for this project is written in a way that allows it to be
 compiled and built on just about any operating system and platform, with as
 few restraints and requirements as possible.
 
@@ -57,7 +57,7 @@ the final release bundle. Those generated files are not present in the git
 repository, because they are generated and there is no need to store them in
 git.
 
-Of course, can also opt to build the latest version that exist in the [git
+Of course, you can also opt to build the latest version that exists in the [git
 repository](https://github.com/curl/curl). It could however be a bit more
 fragile and probably requires slightly more attention to detail.
 

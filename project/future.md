@@ -10,6 +10,6 @@ The project casually maintains a [TODO](https://curl.se/docs/todo.html) file hol
 
 There is a [ROADMAP](https://curl.se/dev/roadmap.html) document that describes
 some plans for the short-term that some of the active developers thought they
-would work on next. Of course, we can not promise that we always follow it.
+would work on next. Of course, we can not promise that we will always follow it.
 
 We are highly dependent on developers to join in and work on what they want to get done, be it bug fixes or new features.

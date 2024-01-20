@@ -1,6 +1,6 @@
 # Retry
 
-Normally curl only makes a single attempt to perform a transfer and returns
+Normally curl only makes a single attempt to perform a transfer and returns an
 error if not successful. Using the `--retry` option you can tell curl to retry
 certain failed transfers.
 

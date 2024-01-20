@@ -45,7 +45,7 @@ doubt it is used by millions every day.
 
 ## Embedded library
 
-libcurl is what makes our project reach the really large volume of users. The
+libcurl is what makes our project reach a really large volume of users. The
 ability to quickly and easily get client side file transfer abilities into
 your application is desirable for a lot of users, and then libcurl's great
 portability also helps: you can write more or less the same application on a

@@ -31,7 +31,7 @@ effectively every country on earth, so some local laws could be broken
 when using curl. That is just the nature of it and if uncertain, you should check
 your own local situation.
 
-There have been law suits involving technology that curl provides. One such
+There have been lawsuits involving technology that curl provides. One such
 case known to the author of this was a patent case in the US that insisted
 they had the rights to resumed file transfers.
 

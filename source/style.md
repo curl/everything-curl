@@ -1,8 +1,8 @@
 # Code style
 
 Source code that has a common style is easier to read than code that uses
-different styles in different places. It helps making the code feel like one
-continuous code base. Easy-to-read is a important property of code and
+different styles in different places. It helps make the code feel like one
+continuous code base. Being easy-to-read is an important property of code and
 helps make it easier to review when new things are added and it helps
 debugging code when developers are trying to figure out why things go wrong. A
 unified style is more important than individual contributors having their own

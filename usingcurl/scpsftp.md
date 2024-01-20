@@ -57,7 +57,7 @@ SFTP URL) is done like this:
 
 curl attempts to use your public key as found in the `.ssh` subdirectory in
 your home directory if the server offers public key authentication. When doing
-do, you still need to tell curl which user name to use on the server. For
+so, you still need to tell curl which user name to use on the server. For
 example, the user 'john' lists the entries in his home directory on the remote
 SFTP server called 'sftp.example.com':
 

@@ -58,7 +58,7 @@ librtmp library that comes from the RTMPDump project.
 <https://rockdaboot.github.io/libpsl/>
 
 When you build curl with support for libpsl, the cookie parser knows about the
-Public Suffix List and thus handle such cookies appropriately.
+Public Suffix List and thus handles such cookies appropriately.
 
 ## libidn2
 

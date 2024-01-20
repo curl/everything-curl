@@ -4,7 +4,7 @@ curl has more than two hundred and fifty command-line options and the number
 of options keep increasing over time. Chances are the number of options
 reaches or even surpasses three hundred in the coming years.
 
-To find out which options you need to perform as certain action, you can get
+To find out which options you need to perform a certain action, you can get
 curl to list them. First, `curl --help` or simply `curl -h` get you a list of
 the most important and frequently used options. You can then provide an
 additional "category" to `-h` to get more options listed for that specific

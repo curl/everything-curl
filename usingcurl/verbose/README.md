@@ -77,7 +77,7 @@ with a set of headers before the response body:
     < Content-Length: 1270
     <
 
-This may look mostly like mumbo jumbo to you, but this is normal set of HTTP
+This may look mostly like mumbo jumbo to you, but this is a normal set of HTTP
 headers—metadata—about the response. The first line's "200" might be the
 most important piece of information in there and means "everything is fine".
 
@@ -91,7 +91,7 @@ regular -v verbose mode does not show that data but only displays
 
 That 1270 bytes should then be in the 'saved' file. You can also see that
 there was a header named Content-Length: in the response that contained the
-exact file length (it is not always be present in responses).
+exact file length (though it may not always be present in responses).
 
 ## HTTP/2 and HTTP/3
 

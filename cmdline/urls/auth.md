@@ -8,7 +8,7 @@ listing the directory of an FTP server using a given name and password:
     curl ftp://user:password@example.com/
 
 The presence of user name and password in the URL is completely optional. curl
-also allows that information to be provide with normal command-line options,
+also allows that information to be provided with normal command-line options,
 outside of the URL.
 
 If you want a non-ASCII letter or maybe a `:` or `@` as part of the user name

@@ -44,7 +44,7 @@ The project generally approves functions that improve the support for the
 current protocols, especially features that popular clients or browsers have
 but that curl still lacks.
 
-Of course, you can also add contents to the project that is not code, like
+Of course, you can also add contents to the project that are not code, like
 documentation, graphics or website contents, but the general rules apply
 equally to that.
 

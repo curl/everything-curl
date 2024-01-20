@@ -55,7 +55,7 @@ into a published RFC document.
 
 Software developers then read the RFC specifications and deploy their code in
 the world based on their interpretations of the words in those documents. It
-sometimes turn out that some of the specifications are subject to vastly
+sometimes turns out that some of the specifications are subject to vastly
 different interpretations or sometimes the engineers are just lazy and ignore
 sound advice in the specs and deploy something that does not adhere.
 Writing software that interoperates with other implementations of the

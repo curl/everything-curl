@@ -1,8 +1,8 @@
 # Autotools
 
-The Autotools are a collection of different tools that used together generate
-the `configure` script. The configure script is run by the user who wants to
-build curl and it does a whole bunch of things:
+The Autotools are a collection of different tools that are used together to
+generate the `configure` script. The configure script is run by the user who
+wants to build curl and it does a whole bunch of things:
 
  - It checks for features and functions present in your system.
 
@@ -59,7 +59,7 @@ shared libraries.
 One of the differences between linking with a static library compared to
 linking with a shared one is in how shared libraries handle their own
 dependencies while static ones do not. In order to link with library `xyz` as
-a shared library, it is as basically a matter of adding `-lxyz` to the linker
+a shared library, it is basically a matter of adding `-lxyz` to the linker
 command line no matter which other libraries `xyz` itself was built to
 use. But, if that `xyz` is instead a static library we also need to specify
 each dependency of `xyz` on the linker command line. curl's configure cannot

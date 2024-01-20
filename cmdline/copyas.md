@@ -46,7 +46,7 @@ If this is something you would like to get done more often, you probably find us
 These methods all give you a command line to reproduce their HTTP transfers.
 They are often not the perfect solution to your problems. Why? Well mostly
 because these tools are written to rerun the _exact_ same request that you
-copied, while you often want to rerun the same logic but not sending an exact
+copied, while you often want to rerun the same logic but not send an exact
 copy of the same cookies and file contents etc.
 
 These tools give you command lines with static and fixed cookie contents to

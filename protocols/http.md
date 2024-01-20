@@ -53,7 +53,7 @@ request to the server. Let's take an example URL:
    default port number when no specified is used in the URL).
 
  - **www.example.com** is the hostname that curl resolves to one or more IP
-   address to connect to. This hostname is also used in the HTTP request in
+   addresses to connect to. This hostname is also used in the HTTP request in
    the `Host:` header.
 
  - **/path/to/file** is used in the HTTP request to tell the server which exact

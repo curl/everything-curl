@@ -13,7 +13,7 @@ as one of them completes, the next one is kicked off.
 For cases where you want to download many files from different sources and a
 few of them might be slow, a few fast, this can speed things up tremendously.
 
-If 50 parallel transfer is wrong for you, the `--parallel-max` option is there
+If 50 parallel transfers is wrong for you, the `--parallel-max` option is there
 to allow you to change that amount.
 
 ## Parallel transfer progress meter

@@ -36,8 +36,8 @@ command line option that serves the same purpose and works the same way.
 
 Since curl 7.86.0, a user can exclude an IP network using the CIDR notation:
 append a slash and number of bits to an IP address to specify the bit size of
-the network to match. For example, match the entire 16 bit network start
-starts with `192.168` by providing the pattern `192.168.0.0/16`.
+the network to match. For example, match the entire 16 bit network starting
+with `192.168` by providing the pattern `192.168.0.0/16`.
 
 ## `http_proxy` in lower case only
 

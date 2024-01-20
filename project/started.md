@@ -24,7 +24,7 @@ HttpGet 1.0 was released on April 8 1997 with brand new HTTP proxy support.
 
 We soon found and fixed support for getting currencies over GOPHER. Once FTP
 download support was added, the name of the project was changed and urlget 2.0
-was released in August 1997. The HTTP-only days were already passed.
+was released in August 1997. The HTTP-only days were already past.
 
 The project slowly grew bigger. When upload capabilities were added and the
 name once again was misleading, a second name change was made and on March 20,

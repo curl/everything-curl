@@ -24,7 +24,7 @@ use TCP port 21 plus one more port, though the second one is usually
 dynamically established during communication.
 
 See the external page [FTP vs
-HTTP](https://daniel.haxx.se/docs/ftp-vs-http.html) for how it differs to
+HTTP](https://daniel.haxx.se/docs/ftp-vs-http.html) for how it differs from
 HTTP.
 
 ## FTPS
@@ -39,7 +39,7 @@ equipment.
 ## GOPHER
 
 Designed for "distributing, searching, and retrieving documents over the
-Internet", Gopher is somewhat of the grand father to HTTP as HTTP has mostly
+Internet", Gopher is somewhat of the grandfather to HTTP as HTTP has mostly
 taken over completely for the same use cases. See RFC 1436. Gopher servers and
 clients use TCP port 70.
 
@@ -89,8 +89,8 @@ Secure LDAP is LDAP done over an SSL/TLS connection.
 ## MQTT
 
 Message Queuing Telemetry Transport, MQTT, is a protocol commonly used in IoT
-systems for interchanging data mostly involving smaller devices. It is a so
-called "publish-subscribe" protocol.
+systems for interchanging data mostly involving smaller devices. It is a
+so-called "publish-subscribe" protocol.
 
 ## POP3
 

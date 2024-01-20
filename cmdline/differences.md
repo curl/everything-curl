@@ -34,7 +34,7 @@ precedence when a command line is executed. In order to use curl properly with
 PowerShell, you need to type in its full name including the extension:
 `curl.exe` or remove the alias.
 
-Different command-line environments have different maximum command line
-lengths and force the users to limit how large amount of data that can be put
-into a single line. curl adapts to this by offering a way to provide
+Different command-line environments have different maximum command line lengths
+and force users to limit how large an amount of data is put into a single line.
+curl adapts to this by offering a way to provide
 command-line options through a file or stdin using the [-K option](configfile.md).

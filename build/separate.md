@@ -62,7 +62,7 @@ It can look like this when you have installed your new curl build in
     
 ### `rpath`
 
-Often, a better way to forcible load your separate libcurl instead of the
+Often, a better way to forcibly load your separate libcurl instead of the
 system one, is to set the `rpath` of the specific `curl` executable you
 build. That gives the runtime linker a specific path to check for this
 specific executable.

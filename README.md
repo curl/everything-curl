@@ -62,7 +62,7 @@ GitHub page.
 ## Contributors
 
 Lots of people have reported bugs, improved sections or otherwise helped
-making this book the success it is. These friends include the following:
+make this book the success it is. These friends include the following:
 
 AaronChen0 on github,
 alawvt on github,

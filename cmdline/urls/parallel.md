@@ -26,12 +26,12 @@ line.
 
 ## Connection before multiplex
 
-When curl is asked to do parallel transfers, it prioritizes to have the
-additional transfer reuse and multiplex over other already existing
+When curl is asked to do parallel transfers, it prioritizes having the
+additional transfer reuse and multiplexing happen over pre-existing
 connections. This can potentially lower the total amount of connections (and
-thereby resources) necessary but it might be slightly slower at start-up.
+thereby resources) necessary, but it might be slightly slower at start-up.
 
 With `--parallel-immediate`, curl is instructed to reverse the prioritization
 and instead prefer creating a new connection immediately rather than risk
-waiting a little to see if the transfer can be multiplexed of another
+waiting a little to see if the transfer can be multiplexed on another
 connection.

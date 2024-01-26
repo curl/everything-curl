@@ -15,7 +15,7 @@ brackets:
 
     curl http://[2a04:4e42::561]/
 
-When a hostname is used, the converting of the name to an IP address is
+When a hostname is used, the conversion of the name to an IP address is
 typically done using the system's resolver functions. That normally lets a
 sysadmin provide local name lookups in the `/etc/hosts` file (or equivalent).
 

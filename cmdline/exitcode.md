@@ -55,18 +55,18 @@ A basic Unix shell script could look like something like this:
   server.
 
  7. Failed to connect to host. curl managed to get an IP address to the
-  machine and it tried to setup a TCP connection to the host but
+  machine and it tried to set up a TCP connection to the host but
   failed. This can be because you have specified the wrong port number,
   entered the wrong hostname, the wrong protocol or perhaps because there
-  is a firewall or another network equipment in between that blocks the
+  is a firewall or other network equipment in between that blocks the
   traffic from getting through.
 
  8. Unknown FTP server response. The server sent data curl could not
   parse. This is either because of a bug in curl, a bug in the server or
   because the server is using an FTP protocol extension that curl does not
   support. The only real work-around for this is to tweak curl options to try
-  it to use other FTP commands that perhaps do not get this unknown server
-  response back.
+  to get it to use other FTP commands that perhaps do not get this unknown
+  server response back.
 
  9. FTP access denied. The server denied login or denied access to the
   particular resource or directory you wanted to reach. Most often you tried
@@ -87,11 +87,11 @@ A basic Unix shell script could look like something like this:
  12. During an active FTP session (PORT is used) while waiting for the server
   to connect, the timeout expired. It took too long for the server to get
   back. This is usually a sign that something is preventing the server from
-  reaching curl successfully. Like a firewall or other network
+  reaching curl successfully, such as a firewall or other network
   arrangements.
 
- 13. Unknown response to FTP PASV command, Curl could not parse the reply sent
-  to the PASV request. This is a strange server. PASV is used to setup the
+ 13. Unknown response to FTP PASV command. Curl could not parse the reply sent
+  to the PASV request. This is a strange server. PASV is used to set up the
   second data transfer connection in passive mode, see the
   [FTP uses two connections](../ftp/twoconnections.md) section for more on
   that. You might be able to work-around this problem by using PORT instead,
@@ -119,7 +119,7 @@ A basic Unix shell script could look like something like this:
   amount of data that it was told before-hand that it was going to get. If the
   two numbers do not match, this is the error code. It could mean that curl
   got fewer bytes than advertised or that it got more. curl itself cannot know
-  which number that is wrong or which is correct. If any.
+  which number is wrong or which is correct, if any.
 
  19. FTP could not download/access the given file. The RETR (or similar)
   command failed. curl got an error from the server when trying to download
@@ -128,10 +128,10 @@ A basic Unix shell script could look like something like this:
  20. **Not used**
 
  21. Quote error. A quote command returned an error from the server. curl
-  allows several different ways to send custom commands to a IMAP, POP3,
+  allows several different ways to send custom commands to an IMAP, POP3,
   SMTP or FTP server and features a generic check that the commands
-  work. When any of the individually issued commands fails, this is exit
-  status is returned. The advice is generally to watch the headers in the
+  work. When any of the individually issued commands fails, this is the exit
+  status returned. The advice is generally to watch the headers in the
   FTP communication to better understand exactly what failed and how.
 
  22. HTTP page not retrieved. The requested URL was not found or returned
@@ -183,7 +183,7 @@ A basic Unix shell script could look like something like this:
  32. **Not used**
 
  33. HTTP range error. The range request did not work. Resumed HTTP requests
-  are not necessary acknowledged or supported, so this exit code signals that
+  are not necessarily acknowledged or supported, so this exit code signals that
   for this resource on this server, there can be no range or resumed
   transfers.
 
@@ -205,7 +205,7 @@ A basic Unix shell script could look like something like this:
 
  38. LDAP cannot bind. LDAP "bind" operation failed, which is a necessary step
   in the LDAP operation and thus this means the LDAP query could not be
-  performed. This might happen because of wrong username or password, or for
+  performed. This might happen because of a wrong username or password, or for
   other reasons.
 
  39. LDAP search failed. The given search terms caused the LDAP search to
@@ -221,7 +221,7 @@ A basic Unix shell script could look like something like this:
 
  43. Bad function argument. A function was called with a bad parameter - this
   return code is present to help application authors to understand why
-  libcurl cannot perform certain actions and should never be return by the
+  libcurl cannot perform certain actions and should never be returned by the
   curl tool. Please file a bug report to the curl project if this happens to
   you.
 
@@ -248,8 +248,8 @@ A basic Unix shell script could look like something like this:
   make sure it does not happen: use curl and libcurl of the same version
   number.
 
- 49. Malformed telnet option. The telnet options you provide to curl was not
-  using the correct syntax.
+ 49. Malformed telnet option. The telnet option you provided to curl did not
+  use the correct syntax.
 
  50. **Not used**
 
@@ -291,7 +291,7 @@ A basic Unix shell script could look like something like this:
   so it could not be used. Permissions? The wrong pass phrase?
 
  59. Couldn't use the specified SSL cipher. The cipher names need to be
-  specified exact and they are also unfortunately specific to the
+  specified exactly and they are also unfortunately specific to the
   particular TLS backend curl has been built to use. For the current list
   of support ciphers and how to write them, see the online docs at
   [https://curl.se/docs/ssl-ciphers.html](https://curl.se/docs/ssl-ciphers.html).
@@ -314,7 +314,7 @@ A basic Unix shell script could look like something like this:
 
  65. Sending the data requires a rewind that failed. In some situations curl
   needs to rewind in order to send the data again and if this cannot be done,
-  the operations fails.
+  the operation fails.
 
  66. Failed to initialize the OpenSSL SSL Engine. This can only happen when
   OpenSSL is used and would signify a serious internal problem.
@@ -347,7 +347,7 @@ A basic Unix shell script could look like something like this:
  78. The resource (file) referenced in the URL does not exist.
 
  79. An unspecified error occurred during the SSH session. This sometimes
-  indicate an incompatibility problem between the SSH libcurl curl uses and
+  indicates an incompatibility problem between the SSH libcurl curl uses and
   the SSH version used by the server curl speaks to.
 
  80. Failed to shut down the SSL connection.
@@ -375,7 +375,7 @@ A basic Unix shell script could look like something like this:
 
  89. No connection available, the session is queued
 
- 90. SSL public key does not matched pinned public key. Either you provided
+ 90. SSL public key does not match pinned public key. Either you provided
   a bad public key, or the server has changed.
 
  91. Invalid SSL certificate status. The server did not provide a proper

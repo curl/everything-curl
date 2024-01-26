@@ -40,7 +40,7 @@ the tool. Then follows the platform the tool was built for within parentheses
 and the libcurl version. Those three fields are common for all curl builds.
 
 If the curl version number has `-DEV` appended to it, it means the version is
-built straight from a in-development source code and it is not an officially
+built straight from an in-development source code and it is not an officially
 released and blessed version.
 
 The rest of this line contains names of third party components this build of
@@ -52,7 +52,7 @@ tell you which TLS backends this curl uses.
 
 Line 1 may contain one or more TLS libraries. curl can be built to support
 more than one TLS library which then makes curl - at start-up - select which
-particular backend to use for this invoke.
+particular backend to use for this invocation.
 
 If curl supports more than one TLS library like this, the ones that are *not*
 selected by default are listed within parentheses. Thus, if you do not specify

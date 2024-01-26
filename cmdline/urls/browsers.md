@@ -8,14 +8,14 @@ This is important because the two URL standards are not the same. They are not
 completely compatible, even though in most daily use those differences rarely
 show. Sometimes, a URL interpreted according to one of the specs will be
 handled differently when interpreted by the other spec. As such, curl and
-browsers are not always treating URLs the same way.
+browsers do not always treat URLs the same way.
 
 The WHATWG spec is also *changing* over time.
 
 Since curl is developed to be able to do the same operations a browser can,
-the curl URL parser has been slightly adjusted to cater for some of the
-differences. For example it accepts spaces in the URL when read off incoming
-HTTP headers and it accepts either one, two or three slashes as separator
+the curl URL parser has been slightly adjusted to cater to some of the
+differences. For example it accepts spaces in the URL when read from incoming
+HTTP headers and it accepts either one, two or three slashes as a separator
 between the scheme and the hostname. That is why we sometimes say that curl's
 parser is *RFC 3986+* compliant.
 
@@ -35,4 +35,4 @@ The address bar is quite simply an interface for humans to enter and see
 URI-like strings.
 
 Sometimes the differences between what you see in a browser's address bar and
-what you can pass in to curl is significant.
+what you can pass into curl is significant.

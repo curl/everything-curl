@@ -4,7 +4,7 @@ The query part of a URL is the data that is to the right of a question mark
 (`?`) but to the left of the [fragment](fragment.md), which begins with a hash
 (`#`).
 
-The query can be any string of characters really as long as they are URL
+The query can be any string of characters as long as they are URL
 encoded. It is a common practice to use a sequence of key/value pairs
 separated by ampersands (`&`). Like in
 `https://example.com/?name=daniel&tool=curl`.
@@ -15,7 +15,7 @@ a name + value pair, to the end of the query part of the provided URL.
 
 When adding query parts, curl adds ampersand separators.
 
-The syntax is identical to that used `--data-urlencode` with one extension:
+The syntax is identical to that used by `--data-urlencode` with one extension:
 the `+` prefix. See below.
 
  - `content`: URL encode the content and add that to the query. Just be
@@ -29,10 +29,10 @@ the `+` prefix. See below.
    that the name part is expected to be URL encoded already.
 
  - `@filename`: load data from the given file (including any newlines), URL
-   encode that data and that to the query.
+   encode that data and add that to the query.
 
  - `name@filename`: load data from the given file (including any newlines),
-   URL encode that data and add it to the query. The name part gets an equal
+   URL encode that data and add that to the query. The name part gets an equal
    sign appended, resulting in `name=urlencoded-file-content`. Note that the
    name is expected to be URL encoded already.
 

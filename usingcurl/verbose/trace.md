@@ -34,7 +34,7 @@ this case, the 15 first lines of the dump file looks like:
     0000: 41 63 63 65 70 74 2d 52 61 6e 67 65 73 3a 20 62 Accept-Ranges: b
     0010: 79 74 65 73 0d 0a                               ytes..
 
-Every single sent and received byte get displayed individually in hexadecimal
+Every single sent and received byte gets displayed individually in hexadecimal
 numbers. Received headers are output line by line.
 
 If you think the hexadecimals are not helping, you can try `--trace-ascii
@@ -103,9 +103,9 @@ debug a problem in a more fundamental lower protocol level, curl provides the
 `--trace-config` option for you.
 
 With this option you tell curl to also include logging about components that
-it otherwise does not include by default. Such as details about TLS, HTTP/2 or
+it otherwise does not include by default, such as details about TLS, HTTP/2 or
 HTTP/3 protocol bits. It also has convenience options for adding the
-connection and transfers identifiers and time stamps.
+connection and transfer identifiers and time stamps.
 
 The `--trace-config` option accepts an argument where you specify a
 comma-separated list with the areas you want it to trace. For example, include

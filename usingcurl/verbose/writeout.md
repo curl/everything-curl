@@ -104,7 +104,7 @@ Some of these variables are not available in really old curl versions.
 | `url_effective`           | The URL that was fetched last. This is particularly meaningful if you have told curl to follow Location: headers (with `-L`).                                                                                                    |
 | `urlnum`                  | 0-based numerical index of the URL used in the transfer. (Introduced in 7.75.0)                                                                                                                                                  |
 
-In curl 8.1.0, variables to output only specific URL components were added. When the `url` or `url_effective` show more than you want.
+In curl 8.1.0, variables to output only specific URL components were added, for when the `url` or `url_effective` variables show more than you want.
 
 | Variable        | Description                                                                                                        |
 | --------------- | ---------------------------------------------------------------------- |

@@ -1,7 +1,7 @@
 # Request rate limiting
 
-When told to do multiple transfer in a single command line, there might be
-times when a user would like to rather have those multiple transfers done
+When told to do multiple transfers in a single command line, there might be
+times when a user would rather have those multiple transfers done
 slower than as fast as possible. We call that *request rate limiting*.
 
 With the `--rate` option, you specify the maximum transfer frequency you allow

@@ -56,7 +56,7 @@ curl believe that is the address it got when it resolved the name.
 When talking HTTPS, this sends SNI for the name in the URL and curl verifies
 the server's response to make sure it serves for the name in the URL.
 
-The pattern you specify in the option needs be a hostname and its
+The pattern you specify in the option needs to be a hostname and its
 corresponding port number and only if that exact pair is used in the URL is
 the address substituted. For example, if you want to replace a hostname in an
 HTTPS URL on its default port number, you need to tell curl it is for port

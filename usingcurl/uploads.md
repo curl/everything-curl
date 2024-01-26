@@ -12,10 +12,10 @@ HTTPS, IMAP, IMAPS, SCP, SFTP, SMB, SMBS, SMTP, SMTPS and TFTP.
 ## HTTP offers several uploads
 
 HTTP, and its bigger brother HTTPS, offer several different ways to upload
-data to a server and curl provides easy command-line options to do it the
+data to a server, and curl provides easy command-line options to do it the
 three most common ways, described below.
 
-An interesting detail with HTTP is also that an upload can also be a download,
+An interesting detail with HTTP is that an upload can also be a download,
 in the same operation and in fact many downloads are initiated with an HTTP
 POST.
 

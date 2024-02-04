@@ -12,7 +12,7 @@ You can also use config files to assign data to variables and transform the
 data with functions, making them incredibly useful. This is discussed in the
 ["Variables"](https://everything.curl.dev/cmdline/variables) section.
 
-Some examples below contain multiple lines for readability. The forward slash
+Some examples below contain multiple lines for readability. The backslash
 (`\`) is used to instruct the terminal to ignore the newline.
 
 ## Specify the config file to use

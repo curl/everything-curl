@@ -13,7 +13,7 @@ gets overwritten with new content. Variable names are case sensitive, can be
 up to 128 characters long and may consist of the characters a-z, A-Z, 0-9 and
 underscore.
 
-Some examples below contain multiple lines for readability. The forward slash
+Some examples below contain multiple lines for readability. The backslash
 (`\`) is used to instruct the terminal to ignore the newline.
 
 ## Setting variables

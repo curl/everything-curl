@@ -24,7 +24,6 @@ isation:ization
 it's:it is
 there's:there is
 \. And: Rewrite it somehow?
-file name :filename
 \. So : Rewrite without "so" ?
  dir :directory
 you'd:you would
@@ -32,5 +31,9 @@ you'll:you will
 can't:cannot
 that's:that is
 web page:webpage
-host name\W:hostname
-file name\W:filename
+host name\b:hostname
+file name\b:filename
+user name\b:username
+host names\b:hostnames
+file names\b:filenames
+user names\b:usernames

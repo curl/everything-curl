@@ -48,7 +48,7 @@ disk as well.
 ## Alt-Svc
 
 `Alt-Svc:` is an HTTP response header that informs the client about
-alternative host names, port numbers and protocol versions where the same
+alternative hostnames, port numbers and protocol versions where the same
 service is also available. curl keeps this alternative service information in
 memory and can be told to load it from and save it to disk as well.
 

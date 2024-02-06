@@ -39,12 +39,12 @@ include the port number.
 ## `CURLU_URLENCODE`
 
 This flag makes `curl_url_get()` URL encode the hostname part when a full URL
-is retrieved. If not set (default), libcurl returns the URL with the host name
-"raw" to support IDN names to appear as-is. IDN host names are typically using
+is retrieved. If not set (default), libcurl returns the URL with the hostname
+"raw" to support IDN names to appear as-is. IDN hostnames are typically using
 non-ASCII bytes that otherwise are percent-encoded.
 
 Note that even when not asking for URL encoding, the `%` (byte 37) is URL
-encoded in host names to make sure the hostname remains valid.
+encoded in hostnames to make sure the hostname remains valid.
 
 ## `CURLU_URLDECODE`
 

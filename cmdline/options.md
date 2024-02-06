@@ -53,7 +53,7 @@ and asking for HTTP redirects as well using the long format looks like:
 ## Arguments to options
 
 Not all options are just simple boolean flags that enable or disable
-features. For some of them you need to pass on data, like perhaps a user name
+features. For some of them you need to pass on data, like perhaps a username
 or a path to a file. You do this by writing first the option and then the
 argument, separated with a space. Like, for example, if you want to send an
 arbitrary string of data in an HTTP POST to a server:

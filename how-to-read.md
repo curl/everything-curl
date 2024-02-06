@@ -57,8 +57,8 @@ A closer look at doing and controlling HTTP specific transfers with libcurl.
 ## 13. [libcurl helpers](helpers/README.md)
 
 libcurl provides a set of additional APIs, helpers, that go a little beyond
-just transfers. These are APIs and subsystems that can make your libcurl
-using application excel. Manage URLs, extract HTTP headers and more.
+just transfers. These are APIs and subsystems that can make your libcurl using
+application excel. Manage URLs, extract HTTP headers and more.
 
 ## 14. [libcurl examples](examples/README.md)
 

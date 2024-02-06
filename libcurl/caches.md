@@ -38,8 +38,8 @@ A reused connection usually saves having to a DNS lookup, setting up a TCP
 connection, do a TLS handshake and more.
 
 Connections are only reused if the name is identical. Even if two different
-host names resolve to the same IP addresses, they still always use two
-separate connections with libcurl.
+hostnames resolve to the same IP addresses, they still always use two separate
+connections with libcurl.
 
 Since the connection reuse is based on the hostname and the DNS resolve phase
 is entirely skipped when a connection is reused for a transfer, libcurl does
@@ -58,7 +58,7 @@ TLS session IDs and tickets are special TLS mechanisms that a client can pass
 to a server to shortcut subsequent TLS handshakes to a server it previously
 established a connection to.
 
-libcurl caches session IDs and tickets associated with host names and port
+libcurl caches session IDs and tickets associated with hostnames and port
 numbers, so if a subsequent connection attempt is made to a host for which
 libcurl has a cached ID or ticket, using that can greatly decrease the TLS
 handshake process and therefore the time needed until completion.

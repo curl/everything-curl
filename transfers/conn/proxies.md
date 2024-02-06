@@ -96,11 +96,11 @@ exists. If a specific protocol variable one exists, such a one takes
 precedence.
 
 When using environment variables to set a proxy, you could easily end up in a
-situation where one or a few host names should be excluded from going through
+situation where one or a few hostnames should be excluded from going through
 the proxy. This can be done with the `NO_PROXY` variable - or the
 corresponding `CURLOPT_NOPROXY` libcurl option. Set that to a comma-separated
-list of host names that should not use a proxy when being accessed. You can
-set NO_PROXY to be a single asterisk ('\*') to match all hosts.
+list of hostnames that should not use a proxy when being accessed. You can set
+NO_PROXY to be a single asterisk ('\*') to match all hosts.
 
 ## HTTP proxy
 
@@ -144,7 +144,7 @@ is then in addition to and separate of the possible authentication or lack of
 authentication with the remote host.
 
 libcurl supports authentication with HTTP, HTTPS and SOCKS5 proxies. The key
-option is then `CURLOPT_PROXYUSERPWD` which sets the user name and password to
+option is then `CURLOPT_PROXYUSERPWD` which sets the username and password to
 use - unless you set it within the `CURLOPT_PROXY` string.
 
 ## HTTP Proxy headers

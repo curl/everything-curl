@@ -43,7 +43,7 @@ easy handle still needs to get its cookie "engine" started properly to start
 using cookies.
 
 `CURL_LOCK_DATA_DNS` - the DNS cache is where libcurl stores addresses for
-resolved host names for a while to make subsequent lookups faster.
+resolved hostnames for a while to make subsequent lookups faster.
 
 `CURL_LOCK_DATA_SSL_SESSION` - the SSL session ID cache is where libcurl store
 resume information for SSL connections to be able to resume a previous

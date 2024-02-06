@@ -10,10 +10,10 @@ benefits in speed and required resources.
 When libcurl is about to make a new connection for the purposes of doing a
 transfer, it first checks to see if there is an existing connection in the
 pool that it can reuse instead. The connection re-use check is done before any
-DNS or other name resolving mechanism is used, so it is purely host name
-based. If there is an existing live connection to the right hostname, a lot
-of other properties (port number, protocol, etc) are also checked to see that
-it can be used.
+DNS or other name resolving mechanism is used, so it is purely hostname
+based. If there is an existing live connection to the right hostname, a lot of
+other properties (port number, protocol, etc) are also checked to see that it
+can be used.
 
 ## Easy API pool
 

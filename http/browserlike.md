@@ -33,7 +33,7 @@ the verbatim request.
 
 ## Cookies
 
-A lot of the web today works with a user name and password login prompt
+A lot of the web today works with a username and password login prompt
 somewhere. In many cases you even logged in a while ago with your browser but
 it has kept the state and keeps you logged in.
 

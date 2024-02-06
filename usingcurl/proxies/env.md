@@ -21,10 +21,10 @@ precedence.
 
 ## No proxy
 
-You sometimes end up in a situation where one or a few host names should be
+You sometimes end up in a situation where one or a few hostnames should be
 excluded from going through the proxy that normally would be used. This is
 then done with the `NO_PROXY` variable. Set that to a comma- separated list of
-host names that should not use a proxy when being accessed. You can set
+hostnames that should not use a proxy when being accessed. You can set
 `NO_PROXY` to be a single asterisk ('\*') to match all hosts.
 
 If a name in the exclusion list starts with a dot (`.`), then the name matches

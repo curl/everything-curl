@@ -20,7 +20,7 @@ and then the browser issues a POST with the user and password etc, and then
 subsequently maintain cookies for the session.
 
 To tell curl to do an authenticated HTTP request, you use the `-u, --user`
-option to provide user name and password (separated with a colon). Like this:
+option to provide username and password (separated with a colon). Like this:
 
     curl --user daniel:secret http://example.com/
 
@@ -28,7 +28,7 @@ This makes curl use the default *Basic* HTTP authentication method. Yes, it is
 actually called Basic and it is truly basic. To explicitly ask for the basic
 method, use `--basic`.
 
-The Basic authentication method sends the user name and password in clear text
+The Basic authentication method sends the username and password in clear text
 over the network (base64 encoded) and should be avoided for HTTP transport.
 
 When asking to do an HTTP transfer using a single (specified or implied),

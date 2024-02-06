@@ -296,7 +296,7 @@
   * [Memory debugging](internals/memory-debugging.md)
   * [Content Encoding](internals/content-encoding.md)
   * [Structs](internals/structs.md)
-  * [Resolving host names](internals/resolving.md)
+  * [Resolving hostnames](internals/resolving.md)
   * [Tests](internals/tests/README.md)
     * [Test file format](internals/tests/file-format.md)
     * [Build tests](internals/tests/build.md)

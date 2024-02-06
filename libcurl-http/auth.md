@@ -7,9 +7,9 @@ used scheme on the web today where authentication is performed by an HTTP POST
 and then keeping state in cookies. See [Cookies with libcurl](cookies.md)
 for details on how to do that.
 
-## User name and password
+## Username and password
 
-libcurl does not try any HTTP authentication without a given user name. Set
+libcurl does not try any HTTP authentication without a given username. Set
 one like:
 
     curl_easy_setopt(curl, CURLOPT_USERNAME, "joe");
@@ -58,7 +58,7 @@ plain text. This is however an authentication method that is rarely spoken by
 browsers and consequently is not a frequently used one.
 
 You can explicitly tell libcurl to use the Digest method for a specific
-transfer like this (it still needs user name and password set as well):
+transfer like this (it still needs username and password set as well):
 
     curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST);
 
@@ -67,7 +67,7 @@ transfer like this (it still needs user name and password set as well):
 Another HTTP authentication method is called NTLM.
 
 You can explicitly tell libcurl to use the NTLM method for a specific transfer
-like this (it still needs user name and password set as well):
+like this (it still needs username and password set as well):
 
     curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_NTLM);
 
@@ -76,7 +76,7 @@ like this (it still needs user name and password set as well):
 Another HTTP authentication method is called Negotiate.
 
 You can explicitly tell libcurl to use the Negotiate method for a specific
-transfer like this (it still needs user name and password set as well):
+transfer like this (it still needs username and password set as well):
 
     curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_NEGOTIATE);
 

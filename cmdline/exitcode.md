@@ -319,7 +319,7 @@ A basic Unix shell script could look like something like this:
  66. Failed to initialize the OpenSSL SSL Engine. This can only happen when
   OpenSSL is used and would signify a serious internal problem.
 
- 67. The user name, password, or similar was not accepted and curl failed to
+ 67. The username, password, or similar was not accepted and curl failed to
   log in. Verify that the credentials are provided correctly and that they are
   encoded the right way.
 

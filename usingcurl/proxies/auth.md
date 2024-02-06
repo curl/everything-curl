@@ -9,8 +9,8 @@ Authentication for proxies is similar to "normal" HTTP authentication. It is
 separate from the server authentication to allow clients to independently use
 both normal host authentication as well as proxy authentication.
 
-With curl, you set the user name and password for the proxy authentication
-with the `-U user:password` or `--proxy-user user:password` option:
+With curl, you set the username and password for the proxy authentication with
+the `-U user:password` or `--proxy-user user:password` option:
 
     curl -U daniel:secr3t -x myproxy:80 http://example.com
 

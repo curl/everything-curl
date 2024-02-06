@@ -13,7 +13,11 @@ This being a widespread and well used concept, curl also supports it—if you as
 
 The .netrc file format is simple: you specify lines with a machine name and follow that with the login and password that are associated with that machine.
 
-Each field is provided as a sequence of letters that ends with a space or newline. Since 7.84.0, curl also supports quoted strings. They start and end with double quotes (`"`) and support the escaped special letters `\"`,  (newline),  (carriage return), and  (TAB). Quoted strings are the only way a space character can be used in a user name or password.
+Each field is provided as a sequence of letters that ends with a space or
+newline. Since 7.84.0, curl also supports quoted strings. They start and end
+with double quotes (`"`) and support the escaped special letters `\"`,
+(newline), (carriage return), and (TAB). Quoted strings are the only way a
+space character can be used in a username or password.
 
 **machine name**
 
@@ -27,7 +31,8 @@ This is the same as machine name except that `default` matches any name. There c
 
 **login name**
 
-The user name string for the remote machine. You cannot use a space in the name.
+The username string for the remote machine. You cannot use a space in the
+name.
 
 **password string**
 
@@ -54,9 +59,9 @@ It can also be written on a single line with the same functionality:
 
     machine example.com login daniel password qwerty
 
-## User name matching
+## Username matching
 
-When a URL is provided with a user name and .netrc is used, then curl tries to
+When a URL is provided with a username and .netrc is used, then curl tries to
 find the matching password for that machine and login combination.
 
 ## Enable netrc

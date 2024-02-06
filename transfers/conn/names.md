@@ -71,7 +71,7 @@ made shared between multiple easy handles using the
 
 ## Custom addresses for hosts
 
-Sometimes it is handy to provide fake, custom addresses for real host names so
+Sometimes it is handy to provide fake, custom addresses for real hostnames so
 that libcurl connects to a different address instead of one an actual name
 resolve would suggest.
 

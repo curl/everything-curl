@@ -3,7 +3,7 @@
 This is a table of available options for `curl_easy_setopt()`.
 
 | Option                               | Purpose                                                                |
-|--------------------------------------|------------------------------------------------|
+|--------------------------------------|------------------------------------------------------------------------|
 | `CURLOPT_ABSTRACT_UNIX_SOCKET`       | abstract Unix domain socket                                            |
 | `CURLOPT_ACCEPT_ENCODING`            | automatic decompression of HTTP downloads                              |
 | `CURLOPT_ACCEPTTIMEOUT_MS`           | timeout waiting for FTP server to connect back                         |
@@ -53,7 +53,7 @@ This is a table of available options for `curl_easy_setopt()`.
 | `CURLOPT_DNS_SERVERS`                | DNS servers to use                                                     |
 | `CURLOPT_DNS_SHUFFLE_ADDRESSES`      | shuffle IP addresses for hostname                                      |
 | `CURLOPT_DNS_USE_GLOBAL_CACHE`       | global DNS cache                                                       |
-| `CURLOPT_DOH_SSL_VERIFYHOST`         | verify the hostname in the DoH SSL certificate                        |
+| `CURLOPT_DOH_SSL_VERIFYHOST`         | verify the hostname in the DoH SSL certificate                         |
 | `CURLOPT_DOH_SSL_VERIFYPEER`         | verify the DoH SSL certificate                                         |
 | `CURLOPT_DOH_SSL_VERIFYSTATUS`       | verify the DoH SSL certificate's status                                |
 | `CURLOPT_DOH_URL`                    | provide the DNS-over-HTTPS URL                                         |
@@ -189,7 +189,7 @@ This is a table of available options for `curl_easy_setopt()`.
 | `CURLOPT_PROXY_TLS13_CIPHERS`        | ciphers suites for proxy TLS 1.3                                       |
 | `CURLOPT_PROXY_TLSAUTH_PASSWORD`     | password to use for proxy TLS authentication                           |
 | `CURLOPT_PROXY_TLSAUTH_TYPE`         | HTTPS proxy TLS authentication methods                                 |
-| `CURLOPT_PROXY_TLSAUTH_USERNAME`     | user name to use for proxy TLS authentication                          |
+| `CURLOPT_PROXY_TLSAUTH_USERNAME`     | username to use for proxy TLS authentication                           |
 | `CURLOPT_PROXY_TRANSFER_MODE`        | append FTP transfer mode to URL for proxy                              |
 | `CURLOPT_PROXY`                      | proxy to use                                                           |
 | `CURLOPT_PROXYAUTH`                  | HTTP proxy authentication methods                                      |
@@ -197,8 +197,8 @@ This is a table of available options for `curl_easy_setopt()`.
 | `CURLOPT_PROXYPASSWORD`              | password to use with proxy authentication                              |
 | `CURLOPT_PROXYPORT`                  | port number the proxy listens on                                       |
 | `CURLOPT_PROXYTYPE`                  | proxy protocol type                                                    |
-| `CURLOPT_PROXYUSERNAME`              | user name to use for proxy authentication                              |
-| `CURLOPT_PROXYUSERPWD`               | user name and password to use for proxy authentication                 |
+| `CURLOPT_PROXYUSERNAME`              | username to use for proxy authentication                               |
+| `CURLOPT_PROXYUSERPWD`               | username and password to use for proxy authentication                  |
 | `CURLOPT_PUT`                        | make an HTTP PUT request                                               |
 | `CURLOPT_QUICK_EXIT`                 | allow to exit quickly                                                  |
 | `CURLOPT_QUOTE`                      | (S)FTP commands to run before transfer                                 |
@@ -210,7 +210,7 @@ This is a table of available options for `curl_easy_setopt()`.
 | `CURLOPT_REDIR_PROTOCOLS`            | protocols allowed to redirect to                                       |
 | `CURLOPT_REFERER`                    | the HTTP referer header                                                |
 | `CURLOPT_REQUEST_TARGET`             | alternative target for this request                                    |
-| `CURLOPT_RESOLVE`                    | provide custom hostname to IP address resolves                        |
+| `CURLOPT_RESOLVE`                    | provide custom hostname to IP address resolves                         |
 | `CURLOPT_RESOLVER_START_DATA`        | pointer passed to the resolver start callback                          |
 | `CURLOPT_RESOLVER_START_FUNCTION`    | callback called before a new name resolve is started                   |
 | `CURLOPT_RESUME_FROM_LARGE`          | offset to resume transfer from                                         |
@@ -287,7 +287,7 @@ This is a table of available options for `curl_easy_setopt()`.
 | `CURLOPT_TLS13_CIPHERS`              | ciphers suites to use for TLS 1.3                                      |
 | `CURLOPT_TLSAUTH_PASSWORD`           | password to use for TLS authentication                                 |
 | `CURLOPT_TLSAUTH_TYPE`               | TLS authentication methods                                             |
-| `CURLOPT_TLSAUTH_USERNAME`           | user name to use for TLS authentication                                |
+| `CURLOPT_TLSAUTH_USERNAME`           | username to use for TLS authentication                                |
 | `CURLOPT_TRAILERDATA`                | pointer passed to trailing headers callback                            |
 | `CURLOPT_TRAILERFUNCTION`            | callback for sending trailing headers                                  |
 | `CURLOPT_TRANSFER_ENCODING`          | ask for HTTP Transfer Encoding                                         |
@@ -300,8 +300,8 @@ This is a table of available options for `curl_easy_setopt()`.
 | `CURLOPT_URL`                        | URL for this transfer                                                  |
 | `CURLOPT_USE_SSL`                    | request using SSL / TLS for the transfer                               |
 | `CURLOPT_USERAGENT`                  | HTTP user-agent header                                                 |
-| `CURLOPT_USERNAME`                   | user name to use in authentication                                     |
-| `CURLOPT_USERPWD`                    | user name and password to use in authentication                        |
+| `CURLOPT_USERNAME`                   | username to use in authentication                                     |
+| `CURLOPT_USERPWD`                    | username and password to use in authentication                        |
 | `CURLOPT_VERBOSE`                    | verbose mode                                                           |
 | `CURLOPT_WILDCARDMATCH`              | directory wildcard transfers                                           |
 | `CURLOPT_WRITEDATA`                  | pointer passed to the write callback                                   |

@@ -1,4 +1,4 @@
-# Resolving host names
+# Resolving hostnames
 
  Aka `hostip.c` explained
 

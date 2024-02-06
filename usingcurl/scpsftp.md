@@ -57,14 +57,14 @@ SFTP URL) is done like this:
 
 curl attempts to use your public key as found in the `.ssh` subdirectory in
 your home directory if the server offers public key authentication. When doing
-so, you still need to tell curl which user name to use on the server. For
+so, you still need to tell curl which username to use on the server. For
 example, the user 'john' lists the entries in his home directory on the remote
 SFTP server called 'sftp.example.com':
 
     curl -u john: sftp://sftp.example.com/
 
 If curl cannot authenticate with the public key for any reason, it instead
-attempts to use the user name + password if the server allows it and the
+attempts to use the username + password if the server allows it and the
 credentials are passed on the command line.
 
 For example, the same user from above has the password `RHvxC6wUA` on a remote

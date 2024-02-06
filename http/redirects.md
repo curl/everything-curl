@@ -100,17 +100,17 @@ response by using the dedicated options for that: `--post301`, `--post302` and
 `--post303`. If you are instead writing a libcurl based application, you
 control that behavior with the `CURLOPT_POSTREDIR` option.
 
-## Redirecting to other host names
+## Redirecting to other hostnames
 
-When you use curl you may provide credentials like user name and password for
+When you use curl you may provide credentials like username and password for
 a particular site, but since an HTTP redirect might move away to a different
 host curl limits what it sends away to other hosts than the original within
 the same transfer.
 
-So if you want the credentials to also get sent to the following host names
-even though they are not the same as the original—presumably because you
-trust them and know that there is no harm in doing that—you can tell curl that
-it is fine to do so by using the `--location-trusted` option.
+So if you want the credentials to also get sent to the following hostnames
+even though they are not the same as the original—presumably because you trust
+them and know that there is no harm in doing that—you can tell curl that it is
+fine to do so by using the `--location-trusted` option.
 
 # Non-HTTP redirects
 

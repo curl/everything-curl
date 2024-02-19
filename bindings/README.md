@@ -47,6 +47,7 @@ archives. They must be downloaded and installed separately.
 | PostgreSQL | <https://github.com/pramsey/pgsql-http> | Paul Ramsey |
 | PostgreSQL | <https://github.com/RekGRpth/pg_curl> | RekGRpth |
 | PureBasic | <https://www.purebasic.com/documentation/http/> | PureBasic |
+| Python (mcurl) | <https://pypi.org/project/pymcurl/>  | Ganesh Viswanathan |
 | Python (PycURL) | <https://github.com/pycurl/pycurl> | Kjetil Jacobsen |
 | R | <https://cran.r-project.org/package=curl> | Jeroen Ooms, Hadley Wickham, RStudio |
 | Rexx | <https://rexxcurl.sourceforge.io/> | Mark Hessling |

@@ -1,12 +1,16 @@
 # Write out
 
-`--write-out` or just `-w` for short, outputs text and information after a transfer is completed. It offers a large range of variables that you can include in the output, variables that have been set with values and information from the transfer.
+`--write-out` or just `-w` for short, outputs text and information after a
+transfer is completed. It offers a large range of variables that you can
+include in the output, variables that have been set with values and
+information from the transfer.
 
 Instruct curl to output a string by passing plain text to this option:
 
     curl -w "formatted string" http://example.com/
 
-…and you can also have curl read that string from a given file instead if you prefix the string with '@':
+…and you can also have curl read that string from a given file instead if you
+prefix the string with '@':
 
     curl -w @filename http://example.com/
 
@@ -18,21 +22,29 @@ Instruct curl to output a string by passing plain text to this option:
 
 The variables that are available are accessed by writing `%{variable_name}` in
 the string and that variable is substituted by the correct value. To output a
-plain `%` you write it as `%%`. You can also output a newline by using , a
-carriage return with and a tab space with .
+plain `%` you write it as `%%`. You can also output a newline by using `\n`, a
+carriage return with `\r` and a tab space with `\t`.
 
-As an example, we can output the Content-Type and the response code from an HTTP transfer, separated with newlines and some extra text like this:
+As an example, we can output the Content-Type and the response code from an
+HTTP transfer, separated with newlines and some extra text like this:
 
     curl -w "Type: %{content_type}\nCode: %{response_code}\n" \
       http://example.com
 
-The output is sent to stdout by default so you probably want to make sure that you do not also send the downloaded content to stdout as then you might have a hard time to separate out the data; or use `%{stderr}` to send the output to stderr.
+The output is sent to stdout by default so you probably want to make sure that
+you do not also send the downloaded content to stdout as then you might have a
+hard time to separate out the data; or use `%{stderr}` to send the output to
+stderr.
 
 ## HTTP headers
 
-This option also provides an easy to use way to output the contents of HTTP response headers from the most recent transfer.
+This option also provides an easy to use way to output the contents of HTTP
+response headers from the most recent transfer.
 
-Use `%header{name}` in the string, where `name` is the case insensitive name of the header (without the trailing colon). The output header contents are then shown exactly as was sent over the network, with leading and trailing whitespace trimmed. Like this:
+Use `%header{name}` in the string, where `name` is the case insensitive name
+of the header (without the trailing colon). The output header contents are
+then shown exactly as was sent over the network, with leading and trailing
+whitespace trimmed. Like this:
 
     curl -w "Server: %header{server}\n" http://example.com
 
@@ -44,15 +56,19 @@ following) part to stderr and `%{stdout}` brings it back to stdout.
 
 From curl 8.3.0, there is a feature that lets users send the write-out output
 to a file: `%output{filename}`. The data following is then written to that
-file. If you would rather have curl append to that file instead of creating it from
-scratch, prefix the filename with `>>`. Like this: `%output{>>filename}`.
+file. If you would rather have curl append to that file instead of creating it
+from scratch, prefix the filename with `>>`. Like this: `%output{>>filename}`.
 
 A write-out argument can include output to stderr, stdout and files as the
 user sees fit.
 
 ## Windows
 
-**NOTE:** In Windows, the `%`-symbol is a special symbol used to expand environment variables. In batch files all occurrences of `%` must be doubled when using this option to properly escape. If this option is used at the command prompt then the `%` cannot be escaped and unintended expansion is possible.
+**NOTE:** In Windows, the `%`-symbol is a special symbol used to expand
+environment variables. In batch files all occurrences of `%` must be doubled
+when using this option to properly escape. If this option is used at the
+command prompt then the `%` cannot be escaped and unintended expansion is
+possible.
 
 ## Available --write-out variables
 

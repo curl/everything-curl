@@ -34,6 +34,9 @@ book. It features the book online in a web version.
 
 This book is also provided as a [PDF](https://daniel.haxx.se/everything-curl/everything-curl.pdf) and an [ePUB](https://daniel.haxx.se/everything-curl/everything-curl.epub).
 
+The book website is hosted by Fastly. The book contents is rendered by
+[mdBook](https://github.com/rust-lang/mdBook) since March 18th, 2024.
+
 ## Content
 
 All book content is hosted on GitHub in the

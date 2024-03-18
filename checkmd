@@ -22,6 +22,14 @@ sub check {
         my $line = $_;
         chomp $line;
 
+        if($line =~ /\]\(([^)]*)/) {
+            my $target = $1;
+            if($target =~ /README.md$/) {
+                error($f, $line, $l, "Link to README.md: $target");
+            }
+        }
+
+        
         if($next_line_should_be_blank) {
             if(! ($line =~ m/^[\s]*$/)) {
                 error($f, $line, $l, "The line after a '#' header should be blank.");

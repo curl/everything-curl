@@ -164,7 +164,7 @@ different libcurl functions.
 Contains around 100 stand-alone examples that are meant to help readers
 understand how libcurl can be used.
 
-See also the [libcurl examples](../examples/README.md) section of this book.
+See also the [libcurl examples](../examples/) section of this book.
 
 ## scripts
 

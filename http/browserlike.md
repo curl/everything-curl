@@ -37,7 +37,7 @@ A lot of the web today works with a username and password login prompt
 somewhere. In many cases you even logged in a while ago with your browser but
 it has kept the state and keeps you logged in.
 
-The logged-in state is almost always done by using [cookies](cookies/README.md).
+The logged-in state is almost always done by using [cookies](cookies/).
 A common operation would be to first login and save the returned cookies in a
 file, and then let the site update the cookies in the subsequent command lines
 when you traverse the site with curl.
@@ -45,7 +45,7 @@ when you traverse the site with curl.
 ## Web logins and sessions
 
 The site at https://example.com/ features a login prompt. The login on the web
-site is an HTML form to which you send a [HTTP POST](post/README.md) to. Save
+site is an HTML form to which you send a [HTTP POST](post/) to. Save
 the response cookies and the response (HTML) output.
 
 Although the login page is visible (if you would use a browser) on
@@ -89,7 +89,7 @@ You can see that it uses both `-b` for reading cookies from the file and `-c`
 to store cookies again, for when the server sends back updated cookies.
 
 Always, *always*, add `-v` to the command lines when working out the
-details. See also the [verbose](../usingcurl/verbose/README.md) section for more
+details. See also the [verbose](../usingcurl/verbose/) section for more
 details on that.
 
 ## Redirects

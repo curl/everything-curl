@@ -9,14 +9,14 @@ send or retrieve data for you. You should consider all these features as
 different tools that are here to help you do your file transfer tasks as
 conveniently as possible.
 
-  * [Verbose](verbose/README.md)
-  * [Downloads](downloads/README.md)
+  * [Verbose](verbose/)
+  * [Downloads](downloads/)
   * [Uploads](uploads.md)
-  * [Transfer controls](transfers/README.md)
-  * [Connections](connections/README.md)
+  * [Transfer controls](transfers/)
+  * [Connections](connections/)
   * [Timeouts](timeouts.md)
   * [.netrc](netrc.md)
-  * [Proxies](proxies/README.md)
+  * [Proxies](proxies/)
   * [TLS](tls.md)
   * [SCP and SFTP](scpsftp.md)
   * [Reading email](reademail.md)

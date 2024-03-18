@@ -11,5 +11,5 @@ headers, and this chapter details how you can modify all of those.
 * [Referer](referer.md)
 * [User-agent](user-agent.md)
 
-Of course, changing the [HTTP version](../versions/README.md) is another way to alter
+Of course, changing the [HTTP version](../versions/) is another way to alter
 the request.

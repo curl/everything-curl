@@ -24,7 +24,7 @@ repository](https://github.com/curl/curl/).
 This gets the latest curl code downloaded and unpacked in a directory on your
 local system.
 
-  * [Open Source](opensource/README.md)
+  * [Open Source](opensource/)
   * [Code layout](layout.md)
   * [Handling build options](options.md)
   * [Code style](style.md)

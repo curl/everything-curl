@@ -21,4 +21,4 @@ library do something new.
  * [Content Encoding](content-encoding.md)
  * [Structs](structs.md)
  * [Resolving host names](resolving.md)
- * [Tests](tests/README.md)
+ * [Tests](tests/)

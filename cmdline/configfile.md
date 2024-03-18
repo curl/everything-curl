@@ -10,7 +10,7 @@ applicable.
 
 You can also use config files to assign data to variables and transform the
 data with functions, making them incredibly useful. This is discussed in the
-["Variables"](https://everything.curl.dev/cmdline/variables) section.
+[Variables](variables.md) section.
 
 Some examples below contain multiple lines for readability. The backslash
 (`\`) is used to instruct the terminal to ignore the newline.

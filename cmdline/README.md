@@ -19,7 +19,7 @@ implementations in the most creative ways.
   * [Differences](differences.md)
   * [Command line options](options.md)
   * [Options depend on version](versions.md)
-  * [URLs](urls/README.md)
+  * [URLs](urls/)
   * [URL globbing](globbing.md)
   * [List options](listopts.md)
   * [Config file](configfile.md)

@@ -45,13 +45,16 @@ transfer.
    For example by using the `Connection: close` HTTP response header or a
    HTTP/2 or HTTP/3 "go away" frame.
 
- - The HTTP response of a transfer is sent in such a way that a connection
-   close is the only way to detect the end of the body.
+ - The HTTP/1 response of a transfer is sent in such a way that a connection
+   close is the only way to detect the end of the body. Or just an HTTP/1
+   receive error that makes curl deem that it cannot safely reuse the
+   connection anymore.
 
  - The connection is deemed "dead" when libcurl tries to reuse it. It might
    happen when the server side has closed the connection after the previous
    transfer was completed. It can also happen if a stateful firewall/NAT or
-   something in the network path drops the connection.
+   something in the network path drops the connection or if there is HTTP/2 or
+   HTTP/3 traffic (like PING frames) over the connection when unattended.
 
  - The previous transfer is deemed too old to reuse. If
    `CURLOPT_MAXLIFETIME_CONN` is set, libcurl will not reuse a connection that
@@ -60,6 +63,12 @@ transfer.
  - The previous transfer is deemed having idled for too long. By default
    libcurl never attempts to reuse a connection that has been idle for more
    than 118 seconds. This time can be changed with `CURLOPT_MAXAGE_CONN`.
+
+ - If the connection pool is full when a transfer ends and a new connection is
+   about to get stored there, the oldest idle connection in the pool is closed
+   and discarded and therefore cannot be reused anymore. Increase the
+   connection pool size with `CURLMOPT_MAXCONNECTS` or `CURLOPT_MAXCONNECTS`,
+   depending on which API you are using.
 
  - When using the multi interface, if the previous transfer has not ended when
    the next transfer is started, and the previous connection cannot be used

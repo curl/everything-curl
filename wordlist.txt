@@ -137,6 +137,8 @@ enum
 epoll
 EPRT
 EPSV
+ePUB
+EPUB
 ERRNO
 errno
 ERRORBUFFER
@@ -302,6 +304,7 @@ malloc
 Marek
 Mavrogiannopoulos
 mbedTLS
+mdBook
 Meglio
 memdebug
 Metalink

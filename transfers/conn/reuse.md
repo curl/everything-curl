@@ -34,3 +34,36 @@ later transfer. Just reuse the multi handle.
 Since libcurl 7.57.0, applications can use the
 [share interface](../../helpers/sharing.md)
 to have otherwise independent transfers share the same connection pool.
+
+## When connections are not reused as you want
+
+libcurl will automatically and always try to reuse connections. There are
+however several reasons why a connection is *not* used for a subsequent
+transfer.
+
+ - The server signals that the connection will be closed after this transfer.
+   For example by using the `Connection: close` HTTP response header or a
+   HTTP/2 or HTTP/3 "go away" frame.
+
+ - The HTTP response of a transfer is sent in such a way that a connection
+   close is the only way to detect the end of the body.
+
+ - The connection is deemed "dead" when libcurl tries to reuse it. It might
+   happen when the server side has closed the connection after the previous
+   transfer was completed. It can also happen if a stateful firewall/NAT or
+   something in the network path drops the connection.
+
+ - The previous transfer is deemed too old to reuse. If
+   `CURLOPT_MAXLIFETIME_CONN` is set, libcurl will not reuse a connection that
+   is older than the set value in seconds.
+
+ - The previous transfer is deemed having idled for too long. By default
+   libcurl never attempts to reuse a connection that has been idle for more
+   than 118 seconds. This time can be changed with `CURLOPT_MAXAGE_CONN`.
+
+ - When using the multi interface, if the previous transfer has not ended when
+   the next transfer is started, and the previous connection cannot be used
+   for multiplexing.
+
+Etc. Usually you can learn about the reason by enabling `CURLOPT_VERBOSE` and
+inspecting what libcurl informs the application.

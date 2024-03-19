@@ -230,6 +230,7 @@
     * [Prereq](transfers/callbacks/prereq.md)
   * [Connection control](transfers/conn/README.md)
     * [How libcurl connects](transfers/conn/how.md)
+    * [Local address and port number](transfers/conn/local.md)
     * [Connection reuse](transfers/conn/reuse.md)
     * [Name resolving](transfers/conn/names.md)
     * [Proxies](transfers/conn/proxies.md)

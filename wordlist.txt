@@ -137,6 +137,8 @@ enum
 epoll
 EPRT
 EPSV
+ePUB
+EPUB
 ERRNO
 errno
 ERRORBUFFER

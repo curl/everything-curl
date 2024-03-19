@@ -1,7 +1,7 @@
 # Local address and port number
 
 In almost all situations you want to the system pick the default source IP
-address and default local port number when libcurl sets up a connnection.
+address and default local port number when libcurl sets up a connection.
 
 For the rare instances when that is not good enough, libcurl features
 overrides.
@@ -18,13 +18,15 @@ As the name hints, it is designed to get a named network interface as input
 and it will then attempt to use that interface's IP address for outgoing
 traffic.
 
-The name can however instad be an IP address or a hostname, even though **we
-do not recommand using those versions**.
+The name can however instead be an IP address or a hostname, even though **we
+do not recommend using those versions**.
 
-To prevent libcurl from guessing what kind of input that is provided, you can
-prefix the interface name with `if!`, like in `if!eth0`, to make sure the name
-is not mistaken for a hostname. Similarly, you can prefix it with `host!` to
-insist the address is a hostname or IP number.
+To prevent libcurl from guessing what kind of input that is provided, prefix
+the interface name with `if!`, to make sure the name is not mistaken for a
+hostname.
+
+Similarly, you prefix the provided name with `host!` to insist the address is
+a hostname or IP number.
 
 ## Local port number
 

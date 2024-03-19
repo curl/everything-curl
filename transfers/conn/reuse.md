@@ -37,9 +37,9 @@ to have otherwise independent transfers share the same connection pool.
 
 ## When connections are not reused as you want
 
-libcurl will automatically and always try to reuse connections. There are
-however several reasons why a connection is *not* used for a subsequent
-transfer.
+libcurl will automatically and always try to reuse connections unless
+explicitly told not to. There are however several reasons why a connection is
+*not* used for a subsequent transfer.
 
  - The server signals that the connection will be closed after this transfer.
    For example by using the `Connection: close` HTTP response header or a

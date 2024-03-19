@@ -22,10 +22,10 @@ The name can however instead be an IP address or a hostname, even though **we
 do not recommend using those versions**.
 
 To prevent libcurl from guessing what kind of input that is provided, prefix
-the interface name with `if!`, to make sure the name is not mistaken for a
+the interface name with "if!", to make sure the name is not mistaken for a
 hostname.
 
-Similarly, you prefix the provided name with `host!` to insist the address is
+Similarly, you prefix the provided name with "host!" to insist the address is
 a hostname or IP number.
 
 ## Local port number

@@ -302,6 +302,7 @@ malloc
 Marek
 Mavrogiannopoulos
 mbedTLS
+mdBook
 Meglio
 memdebug
 Metalink

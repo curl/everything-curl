@@ -26,7 +26,7 @@
  - CA cert cache: [CA cert cache](libcurl/caches.md#ca-cert-cache)
  - --ca-native: [Native CA stores](usingcurl/tls/verify.md#native-ca-stores)
  - Chrome: [Copy as curl](cmdline/copyas.md#copy-as-curl), [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md#sslkeylogfile)
- - clone: [Building libcurl on MSYS2](install/win-msys2.md#building-libcurl-on-msys2), [git](source/contributing.md#git), [Website](source/web.md#website), [build boringssl](build/boringssl.md#build-boringssl)
+ - clone: [Building libcurl on MSYS2](install/windows/win-msys2.md#building-libcurl-on-msys2), [git](source/contributing.md#git), [Website](source/web.md#website), [build boringssl](build/boringssl.md#build-boringssl)
  - code of conduct: [Trust](project/trust.md#trust), [Code of Conduct](project/coc.md#code-of-conduct)
  - --compressed: [Compression](usingcurl/downloads/compression.md#compression), [Gzipped transfers](http/response.md#gzipped-transfers)
  - --compressed-ssh: [Compression](usingcurl/downloads/compression.md#compression)
@@ -213,7 +213,7 @@
 ## G
 
  - --get: [trurl example command lines](cmdline/urls/trurl.md#trurl-example-command-lines), [Convert to GET](http/post/convert-to-get.md#convert-to-get)
- - git: [Daily snapshots](project/releases.md#daily-snapshots), [Building libcurl on MSYS2](install/win-msys2.md#building-libcurl-on-msys2), [root](source/layout.md#root), [git](source/contributing.md#git), [Website](source/web.md#website), [Notes](build/windows.md#notes), [build boringssl](build/boringssl.md#build-boringssl), [Continuous Integration](internals/tests/ci.md#continuous-integration), [Autobuilds](internals/tests/autobuilds.md#autobuilds)
+ - git: [Daily snapshots](project/releases.md#daily-snapshots), [Building libcurl on MSYS2](install/windows/win-msys2.md#building-libcurl-on-msys2), [root](source/layout.md#root), [git](source/contributing.md#git), [Website](source/web.md#website), [Notes](build/windows.md#notes), [build boringssl](build/boringssl.md#build-boringssl), [Continuous Integration](internals/tests/ci.md#continuous-integration), [Autobuilds](internals/tests/autobuilds.md#autobuilds)
  - Globbing: [URL globbing](cmdline/globbing.md#url-globbing), [Uploading with FTP](ftp/upload.md#uploading-with-ftp)
  - GnuTLS: [lib/vtls](source/layout.md#lib-slash-vtls), [Select TLS backend](build/autotools.md#select-tls-backend), [TLS libraries](build/tls.md#tls-libraries), [Native CA stores](usingcurl/tls/verify.md#native-ca-stores), [OCSP stapling](usingcurl/tls/stapling.md#ocsp-stapling), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
  - GOPHER: [How it started](project/started.md#how-it-started), [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support), [GOPHER](protocols/curl.md#gopher), [Supported schemes](cmdline/urls/scheme.md#supported-schemes), [Version](cmdline/curlver.md#version), [Variables](internals/tests/file-format.md#variables)
@@ -314,7 +314,7 @@
 
  - -O: [Many options and URLs](cmdline/urls/options.md#many-options-and-urls), [Numerical ranges](cmdline/globbing.md#numerical-ranges), [Download to a file named by the URL](usingcurl/downloads/url-named.md#download-to-a-file-named-by-the-url), [Use the target filename from the server](usingcurl/downloads/content-disp.md#use-the-target-filename-from-the-server), [Shell redirects](usingcurl/downloads/redirects.md#shell-redirects), [Multiple downloads](usingcurl/downloads/multiple.md#multiple-downloads), [Resuming and ranges](usingcurl/downloads/resume.md#resuming-and-ranges), [Request rate limiting](usingcurl/transfers/request-rate.md#request-rate-limiting), [Authentication](usingcurl/scpsftp.md#authentication), [Download](usingcurl/tftp.md#download), [Check by modification date](http/conditionals.md#check-by-modification-date)
  - openldap: [openldap](build/deps.md#openldap)
- - OpenSSL: [Get curl and libcurl on MSYS2](install/win-msys2.md#get-curl-and-libcurl-on-msys2), [lib/vtls](source/layout.md#lib-slash-vtls), [Select TLS backend](build/autotools.md#select-tls-backend), [Running DLL based configurations](build/windows.md#running-dll-based-configurations), [TLS libraries](build/tls.md#tls-libraries), [Available exit codes](cmdline/exitcode.md#available-exit-codes), [Native CA stores](usingcurl/tls/verify.md#native-ca-stores), [OCSP stapling](usingcurl/tls/stapling.md#ocsp-stapling), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions), [CA cert cache](libcurl/caches.md#ca-cert-cache), [All options](transfers/options/all.md#all-options), [SSL context](transfers/callbacks/sslcontext.md#ssl-context), [Available information](transfers/getinfo.md#available-information), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
+ - OpenSSL: [Get curl and libcurl on MSYS2](install/windows/win-msys2.md#get-curl-and-libcurl-on-msys2), [lib/vtls](source/layout.md#lib-slash-vtls), [Select TLS backend](build/autotools.md#select-tls-backend), [Running DLL based configurations](build/windows.md#running-dll-based-configurations), [TLS libraries](build/tls.md#tls-libraries), [Available exit codes](cmdline/exitcode.md#available-exit-codes), [Native CA stores](usingcurl/tls/verify.md#native-ca-stores), [OCSP stapling](usingcurl/tls/stapling.md#ocsp-stapling), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions), [CA cert cache](libcurl/caches.md#ca-cert-cache), [All options](transfers/options/all.md#all-options), [SSL context](transfers/callbacks/sslcontext.md#ssl-context), [Available information](transfers/getinfo.md#available-information), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
 
 ## P
 
@@ -356,7 +356,7 @@
  - releases: [curl-announce](project/maillists.md#curl-announce), [Releases](project/releases.md#releases), [scripts](source/layout.md#scripts), [Which libcurl version](libcurl/api.md#which-libcurl-version)
  - --remote-name-all: [One output for each given URL](cmdline/urls/options.md#one-output-for-each-given-url), [Use the URL's filename part for all URLs](usingcurl/downloads/url-named.md#use-the-urls-filename-part-for-all-urls)
  - --remove-on-error: [Leftovers on errors](usingcurl/downloads/storing.md#leftovers-on-errors)
- - repository: [Releases](project/releases.md#releases), [Source code on GitHub](project/devel.md#source-code-on-github), [Arch Linux](install/linux.md#arch-linux), [Building libcurl on MSYS2](install/win-msys2.md#building-libcurl-on-msys2), [root](source/layout.md#root), [What to add](source/contributing.md#what-to-add), [Website](source/web.md#website), [Notes](build/windows.md#notes), [Continuous Integration](internals/tests/ci.md#continuous-integration), [Autobuilds](internals/tests/autobuilds.md#autobuilds), [Content](README.md#content)
+ - repository: [Releases](project/releases.md#releases), [Source code on GitHub](project/devel.md#source-code-on-github), [Arch Linux](install/linux.md#arch-linux), [Building libcurl on MSYS2](install/windows/win-msys2.md#building-libcurl-on-msys2), [root](source/layout.md#root), [What to add](source/contributing.md#what-to-add), [Website](source/web.md#website), [Notes](build/windows.md#notes), [Continuous Integration](internals/tests/ci.md#continuous-integration), [Autobuilds](internals/tests/autobuilds.md#autobuilds), [Content](README.md#content)
  - --resolve: [Provide a custom IP address for a name](usingcurl/connections/name.md#provide-a-custom-ip-address-for-a-name)
  - --retry: [Retry](usingcurl/downloads/retry.md#retry), [Request rate limiting](usingcurl/transfers/request-rate.md#request-rate-limiting)
  - --retry-all-errors: [Retry on any and all errors](usingcurl/downloads/retry.md#retry-on-any-and-all-errors)
@@ -444,8 +444,8 @@
 
 ## U
 
- - -U: [Building libcurl on MSYS2](install/win-msys2.md#building-libcurl-on-msys2), [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication)
- - -u: [Building libcurl on MSYS2](install/win-msys2.md#building-libcurl-on-msys2), [Passwords](cmdline/passwords.md#passwords), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [Authentication](http/auth.md#authentication)
+ - -U: [Building libcurl on MSYS2](install/windows/win-msys2.md#building-libcurl-on-msys2), [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication)
+ - -u: [Building libcurl on MSYS2](install/windows/win-msys2.md#building-libcurl-on-msys2), [Passwords](cmdline/passwords.md#passwords), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [Authentication](http/auth.md#authentication)
  - Ubuntu: [Ubuntu and Debian](install/linux.md#ubuntu-and-debian)
  - URL Globbing: [URL globbing](cmdline/globbing.md#url-globbing)
  - URL parser: [Browsers](cmdline/urls/browsers.md#browsers), [trurl](cmdline/urls/trurl.md#trurl), [`CURLU_ALLOW_SPACE`](helpers/url/parse.md#curlu_allow_space)

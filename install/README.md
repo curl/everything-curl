@@ -13,6 +13,6 @@ there.
 Commonly, libcurl is installed at the same time as curl.
 
   * [Linux](linux.md)
-  * [Windows](windows.md)
+  * [Windows](windows/)
   * [macOS](macos.md)
   * [Container](container.md)

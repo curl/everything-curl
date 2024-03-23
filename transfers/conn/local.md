@@ -30,10 +30,10 @@ a hostname or IP number.
 
 ## Local port number
 
-Normally, a 16 bit random source port number is used for connections. An
-application can ask for a specific port range with `CURLOPT_LOCALPORT` and
-`CURLOPT_LOCALPORTRANGE`. Since port numbers are finite resources, narrowing
-the selection of ports to select from will increase the risk that the
-connection cannot be setup if none of the attempted port numbers are currently
-available to be used.
-
+By default, 16 bit random source local port numbers are used for connections,
+from the so called *ephemeral port* range. An application can ask for a
+specific port range to be used with the `CURLOPT_LOCALPORT` and
+`CURLOPT_LOCALPORTRANGE` options. Since port numbers are finite resources,
+narrowing the selection of ports to select from will increase the risk that
+the connection cannot be setup if none of the attempted port numbers are
+currently available to be used.

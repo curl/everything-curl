@@ -1,17 +1,17 @@
 # trurl
 
-In the spring of 2023, the curl project created this new tool with the sole
-purpose of parsing, manipulating and outputting URLs and parts of URLs. To
-work as a companion tool to curl for your command lines and scripting needs.
+*trurl* is a separate command line tool with the sole purpose of parsing,
+manipulating and outputting URLs and parts of URLs. A companion tool to curl
+for your command lines and scripting needs.
 
-trurl is built to use libcurl’s URL parser. This ensures that curl and trurl
-always have the same opinion about URLs and that both tools parse them
-identically and consistently.
+trurl uses libcurl’s URL parser. This ensures that curl and trurl always have
+the same opinion about URLs and that both tools parse them identically and
+consistently.
 
 ## Usage
 
-Typically you pass in one or more URLs to trurl and decide what of that you
-want output. Possibly modifying the URL as well.
+Typically you pass in one or more URLs to trurl and specify what components
+you want output. Possibly while modifying the URL(s) as well.
 
 trurl knows URLs and every URL consists of up to ten separate and independent
 *components*. These components can be extracted, removed and updated with

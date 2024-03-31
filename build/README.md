@@ -85,6 +85,28 @@ common methods are probably building with Microsoft's Visual Studio compiler
 using either `nmake` or project files. See the build on
 [windows](windows.md) section.
 
+## Building curl and libcurl using dev containers
+
+A set of curl development containers are built daily, providing the following environments: 
+* [curl-dev](https://github.com/curl/curl-container/pkgs/container/curl-container%2Fcurl-dev): alpine based development container
+* [curl-dev-debian](https://github.com/curl/curl-container/pkgs/container/curl-container%2Fcurl-dev-debian): debian based development container
+* [curl-dev-fedora](https://github.com/curl/curl-container/pkgs/container/curl-container%2Fcurl-dev-fedora): fedora based development container
+
+To setup up an _instant_ development environment: 
+```
+> podman run -it -v /home/exampleuser/src/curl:/src/curl  ghcr.io/curl/curl-container/curl-dev-debian:master zsh
+```
+
+Which uses `-v` to mount a local git checkout of curl though the container also comes embedded with the latest master branch
+source code (`/src/curl-master`).
+
+Then just build as normal:
+```
+> autoreconf -fi
+> ./configure --with-openssl
+> make
+```
+
 ## Learn more
 
 * [Autotools](autotools.md) - build with configure

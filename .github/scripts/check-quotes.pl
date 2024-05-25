@@ -1,5 +1,8 @@
 #!/usr/bin/perl -w
 
+use utf8;
+use open qw(:std :utf8);
+
 my $sum = shift @ARGV;
 
 # Figure out all files in right order
@@ -29,6 +32,10 @@ sub check {
         }
         elsif(/^    / && (length($_)>79)) {
             print STDERR "$f:$l:1: woo wide quoted line, please wrap\n";
+            $errors++;
+        }
+        if(/^    .*[“”’]/) {
+            print STDERR "$f:$l:1: unicode quotes, please change to ansi\n";
             $errors++;
         }
         $l++;

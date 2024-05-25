@@ -88,7 +88,7 @@ assign variables to the contents of other variables.
 
     curl \
         --expand-variable var1={{var2}} \
-        --expand-variable fullname=’Mrs {{first}} {{last}}’ \
+        --expand-variable fullname="Mrs {{first}} {{last}}" \
         --expand-variable source@{{filename}}
 
 Or done in a config file:

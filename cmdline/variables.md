@@ -124,7 +124,7 @@ Expands the variable without leading and trailing white space. White space is de
 
 This is extra useful when reading data from files.
 
-    --expand-url “https://example.com/{{path:trim}}”
+    --expand-url "https://example.com/{{path:trim}}"
 
 ## Function: `json`
 
@@ -146,22 +146,22 @@ function ensures that all output characters are legal within a URL and the
 rest are encoded as `%HH` where `HH` is a two-digit hexadecimal number for the
 ascii value.
 
-    --expand-data “varName={{varName:url}}”
+    --expand-data "varName={{varName:url}}"
 
 To trim the variable first, apply both functions (in this order):
 
-    --expand-data “varName={{varName:trim:url}}”
+    --expand-data "varName={{varName:trim:url}}"
 
 ## Function: `b64`
 
 Expands the variable base64 encoded. Base64 is an encoding for binary data
 that only uses 64 specific characters.
 
-    --expand-data “content={{value:b64}}”
+    --expand-data "content={{value:b64}}"
     
 To trim the variable first, apply both functions (in this order):
 
-    --expand-data “content={{value:trim:b64}}”
+    --expand-data "content={{value:trim:b64}}"
 
 Example: get the contents of a file called `$HOME/.secret` into a variable
 called `fix`. Make sure that the content is trimmed and percent-encoded sent

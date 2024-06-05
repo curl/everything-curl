@@ -2,14 +2,14 @@
 
 curl has a built-in progress meter. When curl is invoked to transfer data
 (either uploading or downloading) it can show that meter in the terminal
-screen to show how the transfer is progressing, namely the current transfer speed,
-how long it has been going on and how long it thinks it might be left until
-completion.
+screen to show how the transfer is progressing, namely the current transfer
+speed, how long it has been going on and how long it thinks it might be left
+until completion.
 
 The progress meter is inhibited if curl deems that there is output going to
-the terminal, as the progress meter would interfere with that output and
-just mess up what gets displayed. A user can also forcibly switch off the
-progress meter with the `-s / --silent` option, which tells curl to hush.
+the terminal, as the progress meter would interfere with that output and just
+mess up what gets displayed. A user can also forcibly switch off the progress
+meter with the `-s / --silent` option, which tells curl to hush.
 
 If you invoke curl and do not get the progress meter, make sure your output is
 directed somewhere other than the terminal.
@@ -42,8 +42,12 @@ The times are displayed using H:MM:SS for hours, minutes and seconds.
 
 ## Progress meter legend
 
-The progress meter exists to show a user that something actually is
-happening. The different fields in the output have the following meaning:
+This is the progress meter shown for each single transfer when doing them in a
+serial manner. When parallel transfers are enabled, curl instead uses the
+format desribed below.
+
+The progress meter exists to show a user that something actually is happening.
+The different fields in the output have the following meaning:
 
     % Total  % Received % Xferd Average Speed          Time             Curr.
                                 Dload  Upload Total    Current  Left    Speed
@@ -51,17 +55,47 @@ happening. The different fields in the output have the following meaning:
 
 From left to right:
 
-| Title                  | Meaning                                                                                                                                           |
-|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `%`                    | Percentage completed of the whole transfer                                                                                                        |
-| `Total`                | Total size of the whole expected transfer (if known)                                                                                              |
-| `%`                    | Percentage completed of the download                                                                                                              |
-| `Received`             | Currently downloaded number of bytes                                                                                                              |
-| `%`                    | Percentage completed of the upload                                                                                                                |
-| `Xferd`                | Currently uploaded number of bytes                                                                                                                |
-| `Average Speed Dload`  | Average transfer speed of the entire download so far, in number of bytes per second                                                               |
-| `Average Speed Upload` | Average transfer speed of the entire upload so far, in number of bytes per second                                                                 |
-| `Time Total`           | Expected time to complete the operation, in `HH:MM:SS` notation for hours, minutes and seconds                                                      |
-| `Time Current`         | Time passed since the start of the transfer, in `HH:MM:SS` notation for hours, minutes and seconds                                                  |
-| `Time Left`            | Expected time left to completion, in `HH:MM:SS` notation for hours, minutes and seconds                                                             |
-| `Curr. Speed`          | Average transfer speed over the last 5 seconds (the first 5 seconds of a transfer is based on less time, of course) in number of bytes per second |
+| Title                  | Meaning                                                                                            |
+|------------------------|----------------------------------------------------------------------------------------------------|
+| `%`                    | Percentage completed of the whole transfer                                                         |
+| `Total`                | Total size of the whole expected transfer (if known)                                               |
+| `%`                    | Percentage completed of the download                                                               |
+| `Received`             | Currently downloaded number of bytes                                                               |
+| `%`                    | Percentage completed of the upload                                                                 |
+| `Xferd`                | Currently uploaded number of bytes                                                                 |
+| `Average Speed Dload`  | Average transfer speed of the entire download so far, in number of bytes per second                |
+| `Average Speed Upload` | Average transfer speed of the entire upload so far, in number of bytes per second                  |
+| `Time Total`           | Expected time to complete the operation, in `HH:MM:SS` notation for hours, minutes and seconds     |
+| `Time Current`         | Time passed since the start of the transfer, in `HH:MM:SS` notation for hours, minutes and seconds |
+| `Time Left`            | Expected time left to completion, in `HH:MM:SS` notation for hours, minutes and seconds            |
+| `Curr. Speed`          | Average transfer speed over the last 5 seconds in number of bytes per second                       |
+
+## Parallel progress meter
+
+When --parallel is used, curl can do many transfers simultaneously and then
+the above mentioned progress meter does not really work as it then needs to
+tell the user the status about a large number of transfers in a single status
+line.
+
+When curl does parallel transfers, it might only have size information about a
+subset of the data until very late in the process, which makes it often show a
+few blank fields. For example it cannot tell a total expected transfer time
+until it knows the expected content size of all involved transfers.
+
+    DL% UL%  Dled  Uled  Xfers  Live Total     Current  Left    Speed
+    88  --  2682K     0    57    70  --:--:--  0:00:07 --:--:-- 1190k
+
+From left to right:
+
+| Title     | Meaning                                                                                                      |
+|-----------|--------------------------------------------------------------------------------------------------------------|
+| `DL%`     | Percentage of download completed                                                                             |
+| `UL%`     | Percentage of uploaded completed                                                                             |
+| `DLed`    | Number of bytes downloaded                                                                                   |
+| `ULed`    | Number of bytes uploaded                                                                                     |
+| `Xfers`   | Number of transfers that are completed                                                                       |
+| `Live`    | Number of live, ongoing, transfers                                                                           |
+| `Total`   | The total expected time for all transfers to complete, in `HH:MM:SS` notation for hours, minutes and seconds |
+| `Current` | How long time it has been running, in `HH:MM:SS` notation for hours, minutes and seconds                     |
+| `Left`    | Expected time left to completion, in `HH:MM:SS` notation for hours, minutes and seconds                      |
+| `Speed`   | Average transfer speed over the last 5 seconds in number of bytes per second                                 |

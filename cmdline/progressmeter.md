@@ -44,7 +44,7 @@ The times are displayed using H:MM:SS for hours, minutes and seconds.
 
 This is the progress meter shown for each single transfer when doing them in a
 serial manner. When parallel transfers are enabled, curl instead uses the
-format desribed below.
+format described below.
 
 The progress meter exists to show a user that something actually is happening.
 The different fields in the output have the following meaning:

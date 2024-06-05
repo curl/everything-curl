@@ -322,7 +322,7 @@
 ## P
 
  - PAC: [PAC](usingcurl/proxies/pac.md#pac), [Which proxy?](transfers/conn/proxies.md#which-proxy)
- - --parallel: [Parallel transfers](cmdline/urls/parallel.md#parallel-transfers), [Parallel](usingcurl/downloads/multiple.md#parallel), [Request rate limiting](usingcurl/transfers/request-rate.md#request-rate-limiting)
+ - --parallel: [Parallel transfers](cmdline/urls/parallel.md#parallel-transfers), [Parallel progress meter](cmdline/progressmeter.md#parallel-progress-meter), [Parallel](usingcurl/downloads/multiple.md#parallel), [Request rate limiting](usingcurl/transfers/request-rate.md#request-rate-limiting)
  - --parallel-immediate: [Connection before multiplex](cmdline/urls/parallel.md#connection-before-multiplex)
  - --parallel-max: [Parallel transfers](cmdline/urls/parallel.md#parallel-transfers)
  - --path-as-is: [--path-as-is](http/modify/target.md#sect---path-as-is)

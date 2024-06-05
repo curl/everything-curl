@@ -78,9 +78,9 @@ tell the user the status about a large number of transfers in a single status
 line.
 
 When curl does parallel transfers, it might only have size information about a
-subset of the data until very late in the process, which makes it often show a
-few blank fields. For example it cannot tell a total expected transfer time
-until it knows the expected content size of all involved transfers.
+subset of the data until late in the process, which makes it often show a few
+blank fields. For example it cannot tell a total expected transfer time until
+it knows the expected content size of all involved transfers.
 
     DL% UL%  Dled  Uled  Xfers  Live Total     Current  Left    Speed
     88  --  2682K     0    57    70  --:--:--  0:00:07 --:--:-- 1190k

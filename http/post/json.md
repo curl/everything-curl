@@ -43,7 +43,7 @@ one tool in particular that might help you accomplish this is [jo](https://githu
 
 Send a basic JSON object to a server with jo and `--json`
 
-    jo -p name=jo n=17 parser=false | curl --json @- https://example.com/
+    jo name=jo n=17 parser=false | curl --json @- https://example.com/
 
 ## Receiving JSON
 
@@ -60,7 +60,7 @@ Send a basic JSON object to a server, and pretty-print the JSON response:
 
 Send the JSON with `jo`, print the response with `jq`:
 
-    jo -p name=jo n=17 | curl --json @- https://example.com/ | jq
+    jo name=jo n=17 | curl --json @- https://example.com/ | jq
 
 jq is a powerful and capable tool for extracting, filtering and managing JSON
 content that goes way beyond just pretty-printing.

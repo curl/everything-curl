@@ -10,9 +10,9 @@ it.
 ## A range trick
 
 A practical way to exploit the fact that the fragment is not sent over the
-wire, is to use that field for ranges if you want to use the exact same URL
-many times on the command line.
+wire, is to use that field for ranges if you want to use the same URL many
+times on the command line.
 
-For example, download this same exact URL twenty times:
+For example, download this URL twenty times:
 
     curl "https://example.com/#[1-20]"

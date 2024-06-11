@@ -75,27 +75,32 @@ possible.
 Some of these variables are not available in really old curl versions.
 
 | Variable                  | Description                                                                                                                                                                                                                      |
-| ------------------------------------------- | --------------------------------------------------------------------------------------------- |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `certs`                   | Outputs the certificate chain from the most recent TLS handshake - with details. (Introduced in 7.88.0)                                                                                                                          |
+| `conn_id`                 | The connection identifier last used by the transfer. The connection id is unique number among all connections using the same connection cache. (Introduced in 8.2.0)                                                             |
 | `content_type`            | Content-Type of the requested document, if there was any.                                                                                                                                                                        |
 | `errormsg`                | Error message from the transfer. Empty if no error occurred. (Introduced in 7.75.0)                                                                                                                                              |
 | `exitcode`                | Numerical exit code from the transfer. 0 if no error occurred. (Introduced in 7.75.0)                                                                                                                                            |
-| `filename_effective`      | The ultimate filename that curl writes out to. Practical if curl is told to write to a file with the `--remote-name` or `--output` option. It is most useful in combination with the `--remote-header-name` option.               |
+| `filename_effective`      | The ultimate filename that curl writes out to. Practical if curl is told to write to a file with the `--remote-name` or `--output` option. It is most useful in combination with the `--remote-header-name` option.              |
 | `ftp_entry_path`          | The initial path curl ended up in when logging on to the remote FTP server.                                                                                                                                                      |
+| `header_json`             | A JSON object with all HTTP response headers from the recent transfer. Values  are provided as arrays, since in the case of multiple headers there can be multiple values. (Introduced in 7.83.0)                                |
 | `http_code`               | The former variable name for what is now known as `response_code`.                                                                                                                                                               |
 | `http_connect`            | the numerical code that was found in the last response (from a proxy) to a curl CONNECT request.                                                                                                                                 |
 | `http_version`            | The HTTP version that was used.                                                                                                                                                                                                  |
 | `json`                    | all write-out variables as a single JSON object. (Introduced in 7.72.0)                                                                                                                                                          |
 | `local_ip`                | IP address of the local end of the most recently used connection - can be either IPv4 or IPv6                                                                                                                                    |
 | `local_port`              | Local port number of the most recently used connection                                                                                                                                                                           |
-| `method`                  | HTTP method the most recent request used. (Introduced in 7.72.0)                                                                                                                                                                                         |
+| `method`                  | HTTP method the most recent request used. (Introduced in 7.72.0)                                                                                                                                                                 |
 | `num_certs`               | Number of the certificates in the most recent TLS handshake. (Introduced in 7.88.0)                                                                                                                                              |
 | `num_connects`            | Number of new connects made in the recent transfer.                                                                                                                                                                              |
 | `num_headers`             | Number of response headers in the last response                                                                                                                                                                                  |
 | `num_redirects`           | Number of redirects that were followed in the request.                                                                                                                                                                           |
+| `num_retries`             | Number of retries actually performed when `--retry` has been used. (Introduced in 8.9.0)                                                                                                                                         |
 | `onerror`                 | If the transfer ended with an error, show the rest of the string, otherwise stop here. (Introduced in 7.75.0)                                                                                                                    |
 | `proxy_ssl_verify_result` | The result of the SSL peer certificate verification that was requested when communicating with a proxy. 0 means the verification was successful.                                                                                 |
+| `proxy_used`              | Returns 1 if the previous transfer used a proxy, otherwise 0. Useful to for example determine if a `NOPROXY` pattern matched the hostname or not. (Introduced in 8.7.0)                                                          |
 | `redirect_url`            | The actual URL a redirect _would_ take you to when an HTTP request was made without `-L` to follow redirects.                                                                                                                    |
+| `referer`                 | The Referer: header, if there was any. (Introduced in 7.76.0)                                                                                                                                                                    |
 | `remote_ip`               | The remote IP address of the most recently used connection — can be either IPv4 or IPv6.                                                                                                                                         |
 | `remote_port`             | The remote port number of the most recently made connection.                                                                                                                                                                     |
 | `response_code`           | The numerical response code that was found in the last transfer.                                                                                                                                                                 |
@@ -115,30 +120,33 @@ Some of these variables are not available in really old curl versions.
 | `time_pretransfer`        | The time in seconds, it took from the start until the file transfer was just about to begin. This includes all pre-transfer commands and negotiations that are specific to the particular protocol(s) involved.                  |
 | `time_redirect`           | The time in seconds, it took for all redirection steps including name lookup, connect, pre-transfer and transfer before the final transaction was started. time\_redirect the complete execution time for multiple redirections. |
 | `time_starttransfer`      | The time in seconds, it took from the start until the first byte was just about to be transferred. This includes time\_pretransfer and also the time the server needed to calculate the result.                                  |
-| `time_total`              | The total time in seconds, that the full operation lasted. The time is displayed with millisecond resolution.                                                                                                               |
+| `time_total`              | The total time in seconds, that the full operation lasted. The time is displayed with millisecond resolution.                                                                                                                    |
 | `url`                     | The URL used in the transfer. (Introduced in 7.75.0)                                                                                                                                                                             |
 | `url_effective`           | The URL that was fetched last. This is particularly meaningful if you have told curl to follow Location: headers (with `-L`).                                                                                                    |
 | `urlnum`                  | 0-based numerical index of the URL used in the transfer. (Introduced in 7.75.0)                                                                                                                                                  |
+| `xfer_id`                 | The numerical identifier of the last transfer done. -1 if no transfer has been started yet for the handle. The transfer id is unique among all transfers performed using the same connection cache. (Introduced in 8.2.0)        |
 
 In curl 8.1.0, variables to output only specific URL components were added, for when the `url` or `url_effective` variables show more than you want.
 
-| Variable        | Description                                                                                                        |
-| --------------- | ---------------------------------------------------------------------- |
-| `url.scheme`    | The scheme part of the URL that was fetched.                                                                       |
-| `url.user`      | The user part of the URL that was fetched.                                                                         |
-| `url.password`  | The password part of the URL that was fetched.                                                                     |
-| `url.options`   | The options part of the URL that was fetched. Only available for some schemes.                                     |
+| Variable        | Description                                                                                                       |
+|-----------------|-------------------------------------------------------------------------------------------------------------------|
+| `url.fragment`  | The fragment part of the URL that was fetched.                                                                    |
 | `url.host`      | The hostname part of the URL that was fetched.                                                                    |
-| `url.path`      | The path part of the URL that was fetched.                                                                         |
-| `url.query`     | The query part of the URL that was fetched.                                                                        |
-| `url.fragment`  | The fragment part of the URL that was fetched.                                                                     |
+| `url.options`   | The options part of the URL that was fetched. Only available for some schemes.                                    |
+| `url.password`  | The password part of the URL that was fetched.                                                                    |
+| `url.path`      | The path part of the URL that was fetched.                                                                        |
+| `url.port`      | The port number of the URL that was fetched.                                                                      |
+| `url.query`     | The query part of the URL that was fetched.                                                                       |
+| `url.scheme`    | The scheme part of the URL that was fetched.                                                                      |
+| `url.user`      | The user part of the URL that was fetched.                                                                        |
 | `url.zoneid`    | The zone id part of the URL that was fetched. Only available if the hostname is an IPv6 address.                  |
-| `urle.scheme`   | The scheme part of the effective (last) URL that was fetched.                                                      |
-| `urle.user`     | The user part of the effective (last) URL that was fetched.                                                        |
-| `urle.password` | The password part of the effective (last) URL that was fetched.                                                    |
-| `urle.options`  | The options part of the effective (last) URL that was fetched. Only available for some schemes.                    |
+| `urle.fragment` | The fragment part of the effective (last) URL that was fetched.                                                   |
 | `urle.host`     | The hostname part of the effective (last) URL that was fetched.                                                   |
-| `urle.path`     | The path part of the effective (last) URL that was fetched.                                                        |
-| `urle.query`    | The query part of the effective (last) URL that was fetched.                                                       |
-| `urle.fragment` | The fragment part of the effective (last) URL that was fetched.                                                    |
+| `urle.options`  | The options part of the effective (last) URL that was fetched. Only available for some schemes.                   |
+| `urle.password` | The password part of the effective (last) URL that was fetched.                                                   |
+| `urle.path`     | The path part of the effective (last) URL that was fetched.                                                       |
+| `urle.port`     | The port number of the effective (last) URL that was fetched.                                                     |
+| `urle.query`    | The query part of the effective (last) URL that was fetched.                                                      |
+| `urle.scheme`   | The scheme part of the effective (last) URL that was fetched.                                                     |
+| `urle.user`     | The user part of the effective (last) URL that was fetched.                                                       |
 | `urle.zoneid`   | The zone id part of the effective (last) URL that was fetched. Only available if the hostname is an IPv6 address. |

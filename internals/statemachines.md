@@ -34,5 +34,3 @@ All transfers start in **INIT** and they end in **MSGSENT**
 **white**: the transfer
 
 **red**: post-transfer
-
-All states within the striped area have an associated connection.

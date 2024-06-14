@@ -31,7 +31,7 @@ archives. They must be downloaded and installed separately.
 | Guile | <https://web.archive.org/web/20210417020142/www.lonelycactus.com/guile-curl.html> | Michael L. Gran |
 | Harbour | <https://github.com/vszakats/harbour-core/tree/master/contrib/hbcurl> | Viktor Szakáts |
 | Haskell | <https://hackage.haskell.org/package/curl> | Galois, Inc |
-| Java | <https://github.com/pjlegato/curl-java> | Paul Legato |
+| Java | <https://github.com/covers1624/curl4j> |  |
 | Julia | <https://github.com/JuliaWeb/LibCURL.jl> | Amit Murthy |
 | Lisp | <https://common-lisp.net/project/cl-curl/> | Liam Healy |
 | Lua-cURL | <https://github.com/Lua-cURL/Lua-cURLv3> | Jürgen Hötzel, Alexey Melnichuk |

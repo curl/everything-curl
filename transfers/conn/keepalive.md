@@ -48,29 +48,27 @@ libcurl option was added in 8.9.0, long after the previous options.
 
 A tiny example of libcurl application doing a transfer using TCP keep alive.
 
-~~~c
-int main(void)
-{
-  CURL *curl = curl_easy_init();
-  if(curl) {
-    curl_easy_setopt(curl, CURLOPT_URL, "https://example.com");
+    int main(void)
+    {
+      CURL *curl = curl_easy_init();
+      if(curl) {
+        curl_easy_setopt(curl, CURLOPT_URL, "https://example.com");
 
-    /* enable TCP keep-alive for this transfer */
-    curl_easy_setopt(curl, CURLOPT_TCP_KEEPALIVE, 1L);
+        /* enable TCP keep-alive for this transfer */
+        curl_easy_setopt(curl, CURLOPT_TCP_KEEPALIVE, 1L);
 
-    /* keep-alive idle time to 120 seconds */
-    curl_easy_setopt(curl, CURLOPT_TCP_KEEPIDLE, 120L);
+        /* keep-alive idle time to 120 seconds */
+        curl_easy_setopt(curl, CURLOPT_TCP_KEEPIDLE, 120L);
 
-    /* interval time between keep-alive probes: 60 seconds */
-    curl_easy_setopt(curl, CURLOPT_TCP_KEEPINTVL, 60L);
+        /* interval time between keep-alive probes: 60 seconds */
+        curl_easy_setopt(curl, CURLOPT_TCP_KEEPINTVL, 60L);
 
-    /* maximum number of keep-alive probes: 3 */
-    curl_easy_setopt(curl, CURLOPT_TCP_KEEPCNT, 3L);
+        /* maximum number of keep-alive probes: 3 */
+        curl_easy_setopt(curl, CURLOPT_TCP_KEEPCNT, 3L);
 
-    curl_easy_perform(curl);
-  }
-}
-~~~
+        curl_easy_perform(curl);
+      }
+    }
 
 ## HTTP `Keep-Alive`
 

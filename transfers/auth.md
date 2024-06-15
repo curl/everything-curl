@@ -15,13 +15,12 @@ method to use. Each protocol typically have their own sets.
 Depending on the authentication method and if the transmission is perhaps not
 using an authenticated security layer (such as TLS, QUIC or SSH) there is a
 risk that sensitive information leaks over the network. The easiest way to
-avoid this risk is to never use authentication with un-authenticated
-protocols.
+avoid this risk is to never use authentication with unauthenticated protocols.
 
 For some protocols or methods, authentication is done per connection, for
 others it is done per transfer. libcurl keeps track of that and makes sure
 that connections are reused correctly. Meaning that sometimes it cannot reuse
-connections for tranfers done using different credentials but sometimes it
+connections for transfers done using different credentials but sometimes it
 can.
 
 ## Username

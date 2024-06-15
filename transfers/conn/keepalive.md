@@ -29,12 +29,12 @@ or QUIC, those connections will not be affected.
 You set the `CURLOPT_TCP_KEEPIDLE` long to the number of seconds you want the
 connection to be idle before sending the first keep alive probe. The default
 value is 60 seconds. It makes sense to try to set this to a time slightly
-lower than the timit limit in your strictest middle box.
+lower than the time limit in your strictest middle box.
 
 ## Probe interval
 
 Set `CURLOPT_TCP_KEEPINTVL` to a long for the number of seconds to wait
-between subsequent keep alive probes. The propes that follow once the first
+between subsequent keep alive probes. The probes that follow once the first
 keep alive probe has been sent. Default is 60 seconds.
 
 ## Probe count

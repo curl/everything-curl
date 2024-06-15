@@ -8,5 +8,6 @@ concepts for connections and options to control how it works with them.
   * [How libcurl connects](how.md)
   * [Local address and port number](local.md)
   * [Connection reuse](reuse.md)
+  * [Keep alive](keepalive.md)
   * [Name resolving](names.md)
   * [Proxies](proxies.md)

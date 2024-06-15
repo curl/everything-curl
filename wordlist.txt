@@ -421,6 +421,7 @@ Referer
 referer
 repo
 RETR
+retransmissions
 Rikard
 ROADMAP
 Rockbox

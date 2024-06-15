@@ -241,6 +241,7 @@
     * [Rate limit](transfers/control/ratelimit.md)
     * [Progress meter](transfers/control/meter.md)
     * [Progress callback](transfers/control/progress-callback.md)
+  * [Authentication](transfers/auth.md)
   * [Cleanup](transfers/cleanup.md)
   * [Post transfer info](transfers/getinfo.md)
 * [libcurl HTTP](libcurl-http/README.md)

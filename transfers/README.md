@@ -9,5 +9,6 @@ libcurl. The core function.
   * [Callbacks](callbacks/)
   * [Connection control](conn/)
   * [Transfer control](control/)
+  * [Authentication](auth.md)
   * [Cleanup](cleanup.md)
   * [Post transfer info](getinfo.md)

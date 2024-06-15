@@ -232,6 +232,7 @@
     * [How libcurl connects](transfers/conn/how.md)
     * [Local address and port number](transfers/conn/local.md)
     * [Connection reuse](transfers/conn/reuse.md)
+    * [Keep alive](transfers/conn/keepalive.md)
     * [Name resolving](transfers/conn/names.md)
     * [Proxies](transfers/conn/proxies.md)
   * [Transfer control](transfers/control/README.md)

@@ -134,7 +134,11 @@ proxy as `CURLOPT_CAINFO` is for the remote
 host. `CURLOPT_PROXY_SSL_VERIFYPEER` is the proxy version of
 `CURLOPT_SSL_VERIFYPEER` and so on.
 
-HTTPS proxies are still today fairly unusual in organizations and companies.
+libcurl speaks HTTP/1 to a HTTPS by default. You can make it try using HTTP/2
+by setting `CURLOPT_PROXYTYPE` to `CURLPROXY_HTTPS2` when the proxy is also
+set to use a `https://` scheme. When using HTTP/2 to the proxy, libcurl can
+reuse the proxy connection and do multiplexed transfers over that when talking
+to different remote server as long as the remote protocol is not TLS based.
 
 ## Proxy authentication
 

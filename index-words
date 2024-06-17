@@ -1,6 +1,7 @@
 %{json}
 --alt-svc
 --anyauth
+--append
 --basic
 --ca-native
 --compressed

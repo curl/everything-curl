@@ -57,11 +57,11 @@ You send off an HTTP upload using the -T option with the file to upload:
 
     curl -T uploadthis http://example.com/
 
-## FTP uploads
+## FTP and SFTP uploads
 
-Working with FTP, you get to see the remote file system you are accessing.
-You tell the server exactly in which directory you want the upload to be
-placed and which filename to use. If you specify the upload URL with a
+Working with FTP and SFTP, you get to see the remote file system you are
+accessing. You tell the server exactly in which directory you want the upload
+to be placed and which filename to use. If you specify the upload URL with a
 trailing slash, curl appends the locally used filename to the URL and then
 that becomes the filename used when stored remotely:
 
@@ -71,6 +71,11 @@ So if you prefer to select a different filename on the remote side than what
 you have used locally, you specify it in the URL:
 
     curl -T uploadthis ftp://example.com/this/directory/remotename
+
+FTP and SFTP also support *appending* to the target file when uploading
+instead of overwriting, with the `--append` option:
+
+    curl -T uploadthis --append ftp://example.com/directory/remotename
 
 Learn much more about FTPing in the [FTP with curl](../ftp/) section.
 

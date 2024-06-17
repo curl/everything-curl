@@ -14,6 +14,11 @@ or to use the local filename as the remote name:
 
     curl -T localfile ftp://ftp.example.com/dir/path/
 
+Append the local file to the target file when uploading instead of
+overwriting, with the `--append` option:
+
+    curl -T uploadthis --append ftp://example.com/directory/remotename
+
 curl also supports [globbing](../cmdline/globbing.md) in the `-T` argument so
 you can opt to easily upload a range of files:
 

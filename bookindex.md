@@ -5,6 +5,7 @@
 
  - --alt-svc: [Enable](http/altsvc.md#enable)
  - --anyauth: [Authentication](http/auth.md#authentication)
+ - --append: [trurl example command lines](cmdline/urls/trurl.md#trurl-example-command-lines), [FTP and SFTP uploads](usingcurl/uploads.md#ftp-and-sftp-uploads), [Uploading with FTP](ftp/upload.md#uploading-with-ftp)
  - apt: [Ubuntu and Debian](install/linux.md#ubuntu-and-debian)
  - Arch Linux: [Arch Linux](install/linux.md#arch-linux)
 
@@ -321,6 +322,7 @@
  - -O: [Many options and URLs](cmdline/urls/options.md#many-options-and-urls), [Numerical ranges](cmdline/globbing.md#numerical-ranges), [Download to a file named by the URL](usingcurl/downloads/url-named.md#download-to-a-file-named-by-the-url), [Use the target filename from the server](usingcurl/downloads/content-disp.md#use-the-target-filename-from-the-server), [Shell redirects](usingcurl/downloads/redirects.md#shell-redirects), [Multiple downloads](usingcurl/downloads/multiple.md#multiple-downloads), [Resuming and ranges](usingcurl/downloads/resume.md#resuming-and-ranges), [Request rate limiting](usingcurl/transfers/request-rate.md#request-rate-limiting), [Authentication](usingcurl/scpsftp.md#authentication), [Download](usingcurl/tftp.md#download), [Check by modification date](http/conditionals.md#check-by-modification-date)
  - openldap: [openldap](build/deps.md#openldap)
  - OpenSSL: [Get curl and libcurl on MSYS2](install/windows/win-msys2.md#get-curl-and-libcurl-on-msys2), [lib/vtls](source/layout.md#lib-slash-vtls), [Select TLS backend](build/autotools.md#select-tls-backend), [TLS libraries](build/tls.md#tls-libraries), [Available exit codes](cmdline/exitcode.md#available-exit-codes), [Native CA stores](usingcurl/tls/verify.md#native-ca-stores), [OCSP stapling](usingcurl/tls/stapling.md#ocsp-stapling), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions), [CA cert cache](libcurl/caches.md#ca-cert-cache), [All options](transfers/options/all.md#all-options), [SSL context](transfers/callbacks/sslcontext.md#ssl-context), [Available information](transfers/getinfo.md#available-information), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
+ - --output-dir: [Store in another directory](usingcurl/downloads/url-named.md#store-in-another-directory)
 
 ## P
 

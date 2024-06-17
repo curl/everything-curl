@@ -47,6 +47,7 @@
 --no-eprt
 --no-epsv
 --ntlm
+--output-dir
 --parallel
 --parallel-immediate
 --parallel-max

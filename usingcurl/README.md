@@ -18,7 +18,7 @@ conveniently as possible.
   * [.netrc](netrc.md)
   * [Proxies](proxies/)
   * [TLS](tls.md)
-  * [SCP and SFTP](scpsftp.md)
+  * [SCP and SFTP](ssh/)
   * [Reading email](reademail.md)
   * [Sending email](smtp.md)
   * [DICT](dict.md)

@@ -1,17 +1,19 @@
 # HSTS
 
+*Automatic use of HTTPS*.
+
 HTTP Strict Transport Security, HSTS, is a protocol mechanism that helps to
 protect HTTPS servers against man-in-the-middle attacks such as protocol
 downgrade attacks and cookie hijacking. It allows an HTTPS server to declare
-that clients should automatically interact with this hostname using only
-HTTPS connections going forward - and explicitly not use clear text protocols
-with it.
+that clients should automatically interact with this hostname using only HTTPS
+connections going forward - and explicitly not use clear text protocols with
+it.
 
 ## HSTS cache
 
 The HSTS status for a certain server name is set in a response header and has
-an expire time. The status for every HSTS hostname needs to be saved
-in a file for curl to pick it up and to update the status and expire time.
+an expire time. The status for every HSTS hostname needs to be saved in a file
+for curl to pick it up and to update the status and expire time.
 
 Invoke curl and tell it which file to use as a hsts cache:
 

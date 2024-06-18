@@ -2,7 +2,7 @@
 
 As described earlier, each HTTP transfer starts with curl sending a *request*.
 This request consists of a request line and a number of request headers, and
-this chapter details how you can custommized and modify those.
+this chapter details how you can customize those.
 
 * [Request method](method.md)
 * [Request target](target.md)

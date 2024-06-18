@@ -31,9 +31,6 @@ command line, although in practice, you may experience that some servers
 get a little confused when asked to compress in two different ways. It is
 generally safer to just pick one.
 
-For SCP and SFTP transfers, there is `--compressed-ssh`. It compresses all
-traffic in either direction.
-
 ## HTTP headers
 
 HTTP/1.x headers cannot be compressed. HTTP/2 and HTTP/3 headers on the other

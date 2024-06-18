@@ -12,6 +12,7 @@ this chapter details how you can customize those.
 * [User-agent](user-agent.md)
 * [Ranges](ranges.md)
 * [Conditionals](conditionals.md)
+* [Compression](compression.md)
 
 Of course, changing the [HTTP version](../versions/) is another way to alter
 the request.

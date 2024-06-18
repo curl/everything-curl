@@ -7,3 +7,4 @@ multiple transfers.
  * [Stop slow transfers](tooslow.md)
  * [Rate limiting](rate-limiting.md)
  * [Request rate limiting](request-rate.md)
+ * [Compression](compression.md)

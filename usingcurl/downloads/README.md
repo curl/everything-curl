@@ -12,7 +12,6 @@ specific data pointed to by a URL onto your machine.
 * [Download to a file named by the URL](url-named.md)
   * [Use the target filename from the server](content-disp.md)
 * [HTML and charsets](charsets.md)
-* [Compression](compression.md)
 * [Shell redirects](redirects.md)
 * [Multiple downloads](multiple.md)
 * [My browser shows something else](browsers.md)

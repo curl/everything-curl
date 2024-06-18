@@ -34,14 +34,17 @@ generally safer to just pick one.
 For SCP and SFTP transfers, there is `--compressed-ssh`. It compresses all
 traffic in either direction.
 
-### HTTP headers
+## HTTP headers
 
 HTTP/1.x headers cannot be compressed. HTTP/2 and HTTP/3 headers on the other
 hands are always compressed and cannot be sent uncompressed. However, as a
 convenience to users, curl always shows the headers uncompressed in a style
 similar to how they look for HTTP/1.x to make the output and look consistent.
 
-### HTTP uploads
+## HTTP uploads
 
 For HTTP uploads with POST or PUT there is no standard way to do compression.
 The above mentioned HTTP compression methods only work for downloads.
+
+You can of course still compress the data locally before sending it to the
+server.

@@ -82,7 +82,7 @@
     * [Trace options](usingcurl/verbose/trace.md)
     * [Write out](usingcurl/verbose/writeout.md)
   * [Downloads](usingcurl/downloads/README.md)
-    * [What exactly is downloading?](usingcurl/downloads/whatis.md)
+    * [What is downloading?](usingcurl/downloads/whatis.md)
     * [Storing downloads](usingcurl/downloads/storing.md)
     * [Download to a file named by the URL](usingcurl/downloads/url-named.md)
     * [Use the target filename from the server](usingcurl/downloads/content-disp.md)

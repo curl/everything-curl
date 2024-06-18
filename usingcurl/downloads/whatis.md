@@ -1,4 +1,4 @@
-# What exactly is downloading?
+# What is downloading?
 
 You specify the resource to download by giving curl a URL. curl defaults to
 downloading a URL unless told otherwise, and the URL identifies what to

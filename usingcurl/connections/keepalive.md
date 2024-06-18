@@ -28,3 +28,9 @@ switch off keepalive with:
 or change the interval to 5 minutes (300 seconds) with:
 
     curl --keepalive-time 300 https://example.com/
+
+Starting in curl 8.9.0 you can set the number of keepalive probes curl sends
+but not getting a response to before it gives up, with `--keepalive-cnt`. Like
+this:
+
+    curl --keepalive-cnt 3 https://example.com

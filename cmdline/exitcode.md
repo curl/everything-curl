@@ -255,9 +255,8 @@ A basic Unix shell script could look like something like this:
 
  51. The server's SSL/TLS certificate or SSH fingerprint failed verification.
   curl can then not be sure of the server being who it claims to be. See the
-  [using TLS with curl](../usingcurl/tls.md) and
-  [using SCP and SFTP with curl](../usingcurl/scpsftp.md) sections for more
-  details.
+  [using TLS with curl](../usingcurl/tls.md) and [using SCP and SFTP with
+  curl](../usingcurl/ssh/) sections for more details.
 
  52. The server did not reply anything, which in this context is considered an
   error. When an HTTP(S) server responds to an HTTP(S) request, it always

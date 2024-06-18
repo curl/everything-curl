@@ -275,6 +275,7 @@
 
  - -K: [Command lines, quotes and aliases](cmdline/differences.md#command-lines-quotes-and-aliases), [Specify the config file to use](cmdline/configfile.md#specify-the-config-file-to-use)
  - keep-alive: [All options](transfers/options/all.md#all-options), [Example](transfers/conn/keepalive.md#example)
+ - --keepalive-cnt: [Keep alive](usingcurl/connections/keepalive.md#keep-alive)
  - --keepalive-time: [Keep alive](usingcurl/connections/keepalive.md#keep-alive)
 
 ## L
@@ -314,6 +315,7 @@
  - --no-clobber: [Overwriting](usingcurl/downloads/storing.md#overwriting), [Use the target filename from the server](usingcurl/downloads/content-disp.md#use-the-target-filename-from-the-server)
  - --no-eprt: [Active connections](ftp/twoconnections.md#active-connections)
  - --no-epsv: [Passive connections](ftp/twoconnections.md#passive-connections)
+ - --no-keepalive: [Keep alive](usingcurl/connections/keepalive.md#keep-alive)
  - NPN: [All options](transfers/options/all.md#all-options)
  - --ntlm: [Network leakage](cmdline/passwords.md#network-leakage), [Authentication](http/auth.md#authentication)
 

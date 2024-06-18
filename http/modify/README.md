@@ -1,8 +1,8 @@
-# Modify the HTTP request
+# Customize your HTTP
 
-As described earlier, each HTTP transfer starts with curl sending an HTTP
-request. That request consists of a request line and a number of request
-headers, and this chapter details how you can modify all of those.
+As described earlier, each HTTP transfer starts with curl sending a *request*.
+This request consists of a request line and a number of request headers, and
+this chapter details how you can customize those.
 
 * [Request method](method.md)
 * [Request target](target.md)
@@ -10,6 +10,8 @@ headers, and this chapter details how you can modify all of those.
 * [Customize headers](headers.md)
 * [Referer](referer.md)
 * [User-agent](user-agent.md)
+* [Ranges](ranges.md)
+* [Conditionals](conditionals.md)
 
 Of course, changing the [HTTP version](../versions/) is another way to alter
 the request.

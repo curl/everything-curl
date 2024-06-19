@@ -1,14 +1,21 @@
 # Connection reuse
 
-Setting up a TCP connection and especially a TLS connection can be a slow
-process, even on high bandwidth networks.
+When setting up connections to sites, curl keeps old connections around for a
+while so that if the next transfer is done using the same host as a previous
+transfer, it can reuse the same connection again and thus save a lot of
+time. We call this persistent connections. curl always tries to keep
+connections alive and reuses existing connections as far as it can.
 
-It can be useful to remember that curl has a connection pool internally which
-keeps previously used connections alive and around for a while after they were
-used so that subsequent requests to the same hosts can reuse an already
-established connection.
+Connections are kept in the *connection pool*, sometimes also called the
+*connection cache*.
 
-Of course, they can only be kept alive for as long as the curl tool is
-running. It is a good reason for trying to get several transfers done
-within the same command line instead of running several independent curl
-command line invocations.
+The curl command-line tool can, however, only keep connections alive for as
+long as it runs, so as soon as it exits back to your command line it has to
+close down all currently open connections (and also free and clean up all the
+other caches it uses to decrease time of subsequent operations). We call the
+pool of alive connections the *connection cache*.
+
+If you want to perform N transfers or operations against the same host or same
+base URL, you could gain a lot of speed by trying to do them in as few curl
+command lines as possible instead of repeatedly invoking curl with one URL at
+a time.

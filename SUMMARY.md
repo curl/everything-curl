@@ -78,7 +78,6 @@
   * [Passwords](cmdline/passwords.md)
   * [Progress meter](cmdline/progressmeter.md)
   * [Version](cmdline/curlver.md)
-  * [Persistent connections](cmdline/persist.md)
   * [Exit code](cmdline/exitcode.md)
   * [Copy as curl](cmdline/copyas.md)
 * [Command line transfers](usingcurl/README.md)

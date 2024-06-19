@@ -17,7 +17,7 @@ protocol communications and you can have curl massage your server
 implementations in the most creative ways.
 
   * [Differences](differences.md)
-  * [Command line options](options.md)
+  * [Command line options](options/)
   * [Options depend on version](versions.md)
   * [URLs](urls/)
   * [URL globbing](globbing.md)

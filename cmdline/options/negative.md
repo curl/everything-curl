@@ -1,4 +1,4 @@
-## Negative options
+# Negative options
 
 For options that switch on something, boolean options, there is also a way to
 switch them off. You then use the long form of the option with an initial

@@ -67,11 +67,6 @@ that becomes the filename used when stored remotely:
 
     curl -T uploadthis ftp://example.com/this/directory/
 
-So if you prefer to select a different filename on the remote side than what
-you have used locally, you specify it in the URL:
-
-    curl -T uploadthis ftp://example.com/this/directory/remotename
-
 FTP and SFTP also support *appending* to the target file when uploading
 instead of overwriting, with the `--append` option:
 
@@ -101,3 +96,18 @@ support can output something even for an upload.
 Therefore, you may need to explicitly redirect the downloaded data to a file
 (using shell redirect '>', `-o` or similar) to get the progress meter
 displayed for upload.
+
+## Globbing
+
+curl also supports [globbing](../cmdline/urls/globbing.md) in the `-T`
+argument so you can opt to easily upload a range of files:
+
+    curl -T 'image[1-99].jpg' ftp://ftp.example.com/upload/
+
+or a series of files:
+
+    curl -T '{file1,file2}' https://example.com/upload/
+
+or
+
+    curl -T '{Huey,Dewey,Louie}.jpg' ftp://ftp.example.com/nephews/

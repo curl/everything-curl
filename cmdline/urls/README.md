@@ -23,6 +23,7 @@ describes how that particular URI format works.
 * [Fragment](fragment.md)
 * [Browsers](browsers.md)
 * [Many options and URLs](options.md)
+* [URL globbing](globbing.md)
 * [Connection reuse](connreuse.md)
 * [Parallel transfers](parallel.md)
 * [trurl](trurl.md)

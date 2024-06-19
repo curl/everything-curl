@@ -19,8 +19,8 @@ overwriting, with the `--append` option:
 
     curl -T uploadthis --append ftp://example.com/directory/remotename
 
-curl also supports [globbing](../cmdline/globbing.md) in the `-T` argument so
-you can opt to easily upload a range of files:
+curl also supports [globbing](../cmdline/urls/globbing.md) in the `-T`
+argument so you can opt to easily upload a range of files:
 
     curl -T 'image[1-99].jpg' ftp://ftp.example.com/upload/
 

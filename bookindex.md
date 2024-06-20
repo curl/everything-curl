@@ -221,7 +221,7 @@
 
  - --get: [trurl example command lines](cmdline/urls/trurl.md#trurl-example-command-lines), [Convert to GET](http/post/convert-to-get.md#convert-to-get)
  - git: [Daily snapshots](project/releases.md#daily-snapshots), [Building libcurl on MSYS2](install/windows/win-msys2.md#building-libcurl-on-msys2), [root](source/layout.md#root), [git](source/contributing.md#git), [Website](source/web.md#website), [build boringssl](build/boringssl.md#build-boringssl), [Continuous Integration](internals/tests/ci.md#continuous-integration), [Autobuilds](internals/tests/autobuilds.md#autobuilds)
- - Globbing: [URL globbing](cmdline/urls/globbing.md#url-globbing), [Uploading with FTP](ftp/upload.md#uploading-with-ftp)
+ - Globbing: [URL globbing](cmdline/urls/globbing.md#url-globbing), [Globbing](usingcurl/uploads.md#globbing), [Uploading with FTP](ftp/upload.md#uploading-with-ftp)
  - GnuTLS: [lib/vtls](source/layout.md#lib-slash-vtls), [Select TLS backend](build/autotools.md#select-tls-backend), [TLS libraries](build/tls.md#tls-libraries), [Native CA stores](usingcurl/tls/verify.md#native-ca-stores), [OCSP stapling](usingcurl/tls/stapling.md#ocsp-stapling), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
  - GOPHER: [How it started](project/started.md#how-it-started), [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support), [GOPHER](protocols/curl.md#gopher), [Supported schemes](cmdline/urls/scheme.md#supported-schemes), [Version](cmdline/curlver.md#version), [Variables](internals/tests/file-format.md#variables)
  - GOPHERS: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support), [GOPHERS](protocols/curl.md#gophers), [Supported schemes](cmdline/urls/scheme.md#supported-schemes), [Variables](internals/tests/file-format.md#variables)
@@ -479,7 +479,7 @@
 
 ## X
 
- - -X: [Request method](http/modify/method.md#request-method), [Request target](http/modify/target.md#request-target), [HTTP PUT](http/put.md#http-put)
+ - -X: [HTTP PUT](http/put.md#http-put), [Request method](http/modify/method.md#request-method), [Request target](http/modify/target.md#request-target)
  - -x: [HTTP proxy](usingcurl/proxies/http.md#http-proxy), [SOCKS proxy](usingcurl/proxies/socks.md#socks-proxy), [Proxy authentication](usingcurl/proxies/auth.md#proxy-authentication), [Proxy environment variables](usingcurl/proxies/env.md#proxy-environment-variables), [Proxy headers](usingcurl/proxies/headers.md#proxy-headers), [Proxy environment variables](transfers/conn/proxies.md#proxy-environment-variables)
 
 ## Y

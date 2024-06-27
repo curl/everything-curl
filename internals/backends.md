@@ -50,11 +50,11 @@ picture.
 
 The same data in a table, where each line is a specific backend build:
 
-| status       | HTTP/3 library | QUIC library   | TLS libraries (one of)          |
-|--------------|----------------|----------------|---------------------------------|
-| recommended  | nghttp3        | ngtcp2         | fork family, GnutTLS or wolfSSL |
-| experimental | quiche         | quiche         | BoringSSL or quictls            |
-| experimental | msh3           | msquic         | fork family or Schannel         |
-| experimental | nghttp3        | OpenSSL 3.3.0+ | OpenSSL 3.3.0+                  |
+| status       | HTTP/3 library | QUIC library   | TLS libraries (one of)         |
+|--------------|----------------|----------------|--------------------------------|
+| recommended  | nghttp3        | ngtcp2         | fork family, GnuTLS or wolfSSL |
+| experimental | quiche         | quiche         | BoringSSL or quictls           |
+| experimental | msh3           | msquic         | fork family or Schannel        |
+| experimental | nghttp3        | OpenSSL 3.3.0+ | OpenSSL 3.3.0+                 |
 
 *fork family* means BoringSSL, LibreSSL, quictls and AWS-LC

@@ -589,3 +589,5 @@ Zakrzewski
 Zitzmann
 zlib
 zsh
+msquic
+quictls

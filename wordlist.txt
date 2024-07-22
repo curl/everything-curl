@@ -221,7 +221,6 @@ http
 HTTPAUTH
 httpget
 HttpGet
-HTTPHEADER
 HTTPS
 https
 Huawei
@@ -296,6 +295,7 @@ linux
 localhost
 logfile
 lookups
+lowercase
 LSB
 lseek
 macdef
@@ -325,6 +325,7 @@ mqtts
 MSB
 MSGSENT
 msh
+msquic
 mstate
 MSVC
 MSYS
@@ -407,6 +408,7 @@ ptr
 punycode
 QoS
 QUIC
+quictls
 Raad
 RBS
 READFUNCTION
@@ -581,6 +583,7 @@ wolfSSL
 WS
 WSS
 www
+HTTPHEADER
 xdigit
 Xilinx
 XYZ
@@ -589,5 +592,3 @@ Zakrzewski
 Zitzmann
 zlib
 zsh
-msquic
-quictls

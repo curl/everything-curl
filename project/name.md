@@ -24,7 +24,7 @@ were not aware of them by the time our curl came to be.
 
 The project can be spelled with mixed case like `cURL`, even if we also often
 just write it in all lowercase: `curl`. You are free to use the version you
-like.. We tend to write about the command line tool and the library with all
+like. We tend to write about the command line tool and the library with all
 lowercase: curl and libcurl.
 
 ## Pronunciation

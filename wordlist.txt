@@ -583,7 +583,7 @@ wolfSSL
 WS
 WSS
 www
-x1HTTPHEADER
+HTTPHEADER
 xdigit
 Xilinx
 XYZ

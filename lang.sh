@@ -21,7 +21,7 @@ sed -i -e "s/hasn't/has not/gi" \
     -e "s/We're/We are/g" \
     -e "s/we're/we are/g" \
     -e "s/he's/he is/gi" \
-    -e "s/is's/is is/gi" \
+    -e "s/it's/it is/gi" \
     -e "s/That's/That is/g" \
     -e "s/that's/that is/g" \
     -e "s/There's/There is/g" \
@@ -40,10 +40,21 @@ sed -i -e "s/hasn't/has not/gi" \
     -e "s/I'm/I am/g" \
     -e "s/I've/I have/g" \
     -e "s/I'd/I would/g" \
+    -e "s/we'd/we would/g" \
     -e "s/could've/could have/g" \
     -e "s/couldn't/could not/g" \
     -e "s/would've/would have/g" \
     -e "s/wouldn't/would not/g" \
     -e "s/it'll/it will/gi" \
-    -e "s/shouldn't/should not/gi" $1
+    -e "s/shouldn't/should not/gi" \
+    -e "s/host name/hostname/gi" \
+    -e "s/file name/filename/gi" \
+    -e "s/man page/manpage/gi" \
+    -e "s/web site/website/gi" \
+    -e "s/run-time/runtime/gi" \
+    -e "s/set-up/setup/gi" \
+    -e "s/back-end/backend/gi" \
+    -e "s/\.  \b/. /g" \
+    -e "s/\ba HTTP/an HTTP/g" \
+    -e "s/user name/username/gi" $1
 echo "did $1"

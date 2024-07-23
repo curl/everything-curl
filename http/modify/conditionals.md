@@ -49,7 +49,7 @@ Using curl you can download a remote file and save its ETag (if it provides
 any) in a separate cache by using the `--etag-save` command line option. Like
 this:
 
-    curl --etag-save etags.txt https://example.com/file -o output
+    curl --etag-save etag.txt https://example.com/file -o output
 
 A subsequent command line can then use that previously saved etag and make
 sure to only download the file again if it has changed, like this:

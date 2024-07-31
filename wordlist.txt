@@ -23,6 +23,8 @@ autobuild
 autobuilds
 Autotools
 autotools
+Backdoor
+Backdoors
 backend
 backends
 backoff
@@ -169,6 +171,7 @@ FreeBSD
 Frexx
 fseek
 FTPing
+fuzzers
 fwrite
 gcc
 gdb
@@ -221,6 +224,7 @@ http
 HTTPAUTH
 httpget
 HttpGet
+HTTPHEADER
 HTTPS
 https
 Huawei
@@ -583,7 +587,6 @@ wolfSSL
 WS
 WSS
 www
-HTTPHEADER
 xdigit
 Xilinx
 XYZ

@@ -70,5 +70,5 @@ To mitigate such risks, we apply established procedures and techniques:
   vulnerability report, we create and ship a fix in the next pending release.
   Sometimes sooner than previously planned. With every fixed security
   vulnerability we release a detailed description of the flaw including exact
-  commit that introduced the problem, recommendations for users and more. And
-  we announce them to the world.
+  commit that introduced the problem, recommendations for users and more.
+  Further, the security advisories get announced to the world.

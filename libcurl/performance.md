@@ -33,6 +33,14 @@ your application uses connections, but if it for example iterates over N
 hostnames in a short period of time, it could make sense for you to make sure
 that libcurl can keep all those connections alive.
 
+## CA store caching
+
+For every new connection done using TLS, libcurl needs to access the CA store
+to verify the remote server's certificate. If your applications do many
+connections, make sure you take advantage of libcurl's CA caching so that
+libcurl can avoid loading and parsing several hundred kilobytes from disk over
+and over. This is however not yet supported by all TLS backends.
+
 ## make callbacks as fast as possible
 
 In high speed data downloads, the write callback is called many times. If this

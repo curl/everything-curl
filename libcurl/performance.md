@@ -19,7 +19,7 @@ sessions, use its DNS cache as much as possible and more.
 
 If you download data, set the `CURLOPT_BUFFERSIZE` to a suitable size. It is
 on the smaller size from start and especially on high speed transfers, you
-might be able to get more out of libcurl by increase its size. We encourage
+might be able to get more out of libcurl by increasing its size. We encourage
 you to try out a few sizes in a benchmark with your use case.
 
 Similarly, if you upload data you might want to adjust the

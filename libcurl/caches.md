@@ -65,10 +65,10 @@ handshake process and therefore the time needed until completion.
 
 ## CA cert cache
 
-With some of the TLS backends curl supports (OpenSSL and Schannel), it builds
-a CA cert store cache in memory and keeps it there for subsequent transfers to
-use. This lets transfers skip unnecessary loading and parsing time that comes
-from loading and handling the sometimes rather big CA cert bundles.
+With some of the TLS backends curl supports, it builds a CA cert store cache
+in memory and keeps it there for subsequent transfers to use. This lets
+transfers skip unnecessary loading and parsing time that comes from loading
+and handling the sometimes rather big CA cert bundles.
 
 Since the CA cert bundle might be updated, the life-time of the cache is by
 default set to 24 hours so that long-running applications will flush the cache

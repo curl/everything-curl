@@ -43,7 +43,7 @@ To mitigate such risks, we apply established procedures and techniques:
 - **2FA required**. We require all maintainers with push access to git to have
   two-factor authentication enabled, to reduce the risk that attackers can
   impersonate them and use their credentials to push source code changes. We
-  rely on GitHub's 2fa setup.
+  rely on GitHub's 2FA setup.
 - **Reviews**. Every contribution that are proposed for inclusion in the
   project is reviewed by a maintainer. All changes are always done publicly in
   the open to allow all interested parties to participate. No invitation

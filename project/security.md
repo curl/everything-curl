@@ -71,7 +71,7 @@ To mitigate such risks, we apply established procedures and techniques:
   correct and properly generated contents.
 - **Signed commits**. Over 90% - not all - of recent commits were signed to
   help prove provenance. Signing commits is not yet a mandatory requirement
-  for committers but we hope to voluntarily increase the share over time and
+  for committers but we hope to gradually increase the share over time and
   make it mandatory soon.
 - **Signed releases**. Every release, every uploaded tarball, is signed by
   Daniel. This helps to prove that the files have not been tampered with since

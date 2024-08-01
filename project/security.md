@@ -77,6 +77,9 @@ To mitigate such risks, we apply established procedures and techniques:
   Daniel. This helps to prove that the files have not been tampered with since
   they were produced. We have opted to not sign them by multiple persons only
   because of the added complexity for the relatively small extra protection.
+- **Signed tags**. Every release is generated from the exact state of the git
+  tree where a corresponding *signed* tag is set. The name of the release tag
+  is the same as the release version.
 - **Fix all vulnerabilities quickly**. Whenever we receive a security
   vulnerability report, we create and ship a fix in the next pending release.
   Sometimes sooner than previously planned. Only in extremely rare cases does

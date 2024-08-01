@@ -37,12 +37,18 @@ innocent and well-meaning but has a disguised malicious intent.
 
 To mitigate such risks, we apply established procedures and techniques:
 
+- **GitHub**. The curl project uses <https://github.com/curl/curl> as its main
+  source code git repository since 2010. We rely on their hosting to secure
+  access as per our configuration.
 - **2FA required**. We require all maintainers with push access to git to have
   two-factor authentication enabled, to reduce the risk that attackers can
-  impersonate them and use their credentials to push source code changes.
+  impersonate them and use their credentials to push source code changes. We
+  rely on GitHub's 2fa setup.
 - **Reviews**. Every contribution that are proposed for inclusion in the
-  project is reviewed by a maintainer. It is also automatically checked,
-  tested and scanned by numerous tools.
+  project is reviewed by a maintainer. All changes are always done publicly in
+  the open to allow all interested parties to participate. No invitation
+  needed. All changes are also automatically checked, tested and scanned by
+  numerous tools before accepted.
 - **Readable code**. We believe in readable code that follows our code style.
   Easy to read makes it easy to debug. If code is hard to read it should be
   improved until it gets easy to read. With easy to read code, smuggling
@@ -61,14 +67,20 @@ To mitigate such risks, we apply established procedures and techniques:
   to generate identical images - proving that what we ship is only contents
   taken from the git repository plus other correct and properly generated
   contents.
-- **Signed commits**. Some - not all - of the committers sign commits to help
-  prove provenance.
+- **Signed commits**. Over 90% - not all - of recent commits were signed to
+  help prove provenance. Signing commits is not yet a mandatory requirement
+  for committers but we hope to voluntarily increase the share over time and
+  make it mandatory soon.
 - **Signed releases**. Every release, every uploaded tarball, is signed by
   Daniel. This helps to prove that the files have not been tampered with since
-  they were produced.
+  they were produced. We have opted to not sign them by multiple persons only
+  because of the added complexity for the relatively small extra protection.
 - **Fix all vulnerabilities quickly**. Whenever we receive a security
   vulnerability report, we create and ship a fix in the next pending release.
-  Sometimes sooner than previously planned. With every fixed security
-  vulnerability we release a detailed description of the flaw including exact
-  commit that introduced the problem, recommendations for users and more.
-  Further, the security advisories get announced to the world.
+  Sometimes sooner than previously planned. Only in extremely rare cases does
+  it take longer than a release cycle, but in the name of accuracy and
+  correctness we do reserve the right to spend time on research to get it
+  right. With every fixed security vulnerability we release a detailed
+  description of the flaw including exact commit that introduced the problem,
+  recommendations for users and more. Further, the security advisories get
+  announced to the world.

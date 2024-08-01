@@ -43,7 +43,7 @@ To mitigate such risks, we apply established procedures and techniques:
 - **2FA required**. We require all maintainers with push access to git to have
   two-factor authentication enabled, to reduce the risk that attackers can
   impersonate them and use their credentials to push source code changes. We
-  rely on GitHub's 2fa setup.
+  rely on GitHub's 2FA setup.
 - **Reviews**. Every contribution that are proposed for inclusion in the
   project is reviewed by a maintainer. All changes are always done publicly in
   the open to allow all interested parties to participate. No invitation
@@ -71,12 +71,15 @@ To mitigate such risks, we apply established procedures and techniques:
   correct and properly generated contents.
 - **Signed commits**. Over 90% - not all - of recent commits were signed to
   help prove provenance. Signing commits is not yet a mandatory requirement
-  for committers but we hope to voluntarily increase the share over time and
+  for committers but we hope to gradually increase the share over time and
   make it mandatory soon.
 - **Signed releases**. Every release, every uploaded tarball, is signed by
   Daniel. This helps to prove that the files have not been tampered with since
   they were produced. We have opted to not sign them by multiple persons only
   because of the added complexity for the relatively small extra protection.
+- **Signed tags**. Every release is generated from the exact state of the git
+  tree where a corresponding *signed* tag is set. The name of the release tag
+  is the same as the release version.
 - **Fix all vulnerabilities quickly**. Whenever we receive a security
   vulnerability report, we create and ship a fix in the next pending release.
   Sometimes sooner than previously planned. Only in extremely rare cases does

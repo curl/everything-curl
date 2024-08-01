@@ -64,7 +64,7 @@ To mitigate such risks, we apply established procedures and techniques:
   files on every change to detect binary files and the few files that need to
   remain looking binary are manually vetted and verified against a checksum.
 - **Reproducible builds**. curl releases are shipped as tarballs that are
-  hosted on the curl website (<https://curl.se). We provide documentation,
+  hosted on the curl website (<https://curl.se>). We provide documentation,
   docker setups and configurations etc to allow anyone wanting to easily
   reproduce our release builds to generate identical images - proving that
   what we ship is only contents taken from the git repository plus other

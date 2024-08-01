@@ -63,10 +63,10 @@ To mitigate such risks, we apply established procedures and techniques:
   place anywhere for any hidden encrypted payload.
 - **Reproducible builds**. curl releases are shipped as tarballs that are
   hosted on the curl website. We provide documentation, docker setups and
-  setups etc that allows anyone wanting to easily reproduce our release builds
-  to generate identical images - proving that what we ship is only contents
-  taken from the git repository plus other correct and properly generated
-  contents.
+  configurations etc that allows anyone wanting to easily reproduce our
+  release builds to generate identical images - proving that what we ship is
+  only contents taken from the git repository plus other correct and properly
+  generated contents.
 - **Signed commits**. Over 90% - not all - of recent commits were signed to
   help prove provenance. Signing commits is not yet a mandatory requirement
   for committers but we hope to voluntarily increase the share over time and

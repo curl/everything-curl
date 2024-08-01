@@ -60,7 +60,9 @@ To mitigate such risks, we apply established procedures and techniques:
   This includes fuzzers, static code analyzers, fault injectors and more.
 - **No binary blobs**. All files stored in version control, in the git
   repository is readable or is otherwise small and documented. There is no
-  place anywhere for any hidden encrypted payload.
+  place anywhere for any hidden encrypted payload. We run a scanner on all
+  files on every change to detect binary files and the few files that need to
+  remain looking binary are manually vetted and verified against a checksum.
 - **Reproducible builds**. curl releases are shipped as tarballs that are
   hosted on the curl website (<https://curl.se). We provide documentation,
   docker setups and configurations etc to allow anyone wanting to easily

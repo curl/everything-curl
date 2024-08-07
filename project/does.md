@@ -84,7 +84,7 @@ security vulnerabilities.
 
 ## wcurl, a URL downloader
 
-For many years it has been said and people have repored that using curl to
+For many years it has been said and people have reported that using curl to
 download URLs is difficult because they can never remember the exact command
 line options to make curl do just that: download a single URL or two into a
 local file. People would cite that as the primary reason they still use

@@ -123,6 +123,7 @@ DLLs
 DNS
 dns
 DoH
+downloader
 Dudka
 Dymond
 EBCDIC

@@ -77,7 +77,7 @@ details from URLs safely, update URLs or create URLs without having to figure
 out the intricacies of the URL standards.
 
 An extra reason for using trurl in combination with curl, is that trurl is
-built using libcurl, meaning that both tools use the exact same URL parser and
+built using libcurl, meaning that both tools use the same URL parser and
 therefore understand and treat URLs exactly the same way. This is important
 because using mixed URL parsers on the same URL is a common reason for
 security vulnerabilities.

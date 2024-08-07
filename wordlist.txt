@@ -573,6 +573,7 @@ vtls
 Warta
 WAV
 WB
+wcurl
 webpage
 webpages
 WebSocket

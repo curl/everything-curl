@@ -123,6 +123,7 @@ DLLs
 DNS
 dns
 DoH
+downloader
 Dudka
 Dymond
 EBCDIC
@@ -573,6 +574,7 @@ vtls
 Warta
 WAV
 WB
+wcurl
 webpage
 webpages
 WebSocket

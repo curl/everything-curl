@@ -21,6 +21,7 @@
 --ftp-port
 --ftp-skip-pasv-ip
 --get
+--happy-eyeballs-timeout-ms
 --haproxy-clientip
 --haproxy-protocol
 --header

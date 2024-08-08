@@ -11,6 +11,7 @@ you might find yourself wanting to tweak the specifics…
 
 * [Name resolve tricks](name.md)
 * [Connection timeout](timeout.md)
+* [Happy Eyeballs](happy.md)
 * [Network interface](interface.md)
 * [Local port number](local-port.md)
 * [Keep alive](keepalive.md)

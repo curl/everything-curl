@@ -107,6 +107,7 @@
   * [Connections](usingcurl/connections/README.md)
     * [Name resolve tricks](usingcurl/connections/name.md)
     * [Connection timeout](usingcurl/connections/timeout.md)
+    * [Happy Eyeballs](usingcurl/connections/happy.md)
     * [Network interface](usingcurl/connections/interface.md)
     * [Local port number](usingcurl/connections/local-port.md)
     * [Keep alive](usingcurl/connections/keepalive.md)

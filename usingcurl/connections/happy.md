@@ -33,10 +33,12 @@ that are running, wins. The "losers" are then simply discarded.
 
 ## Tweak
 
-The two hundred milliseconds delay is sometimes making your connections slower
-than you want to. For example if the host is just silently swallowing the TCP
-packets over IPv6 making the timeout always expire. Or vice versa, maybe you
-feel you need to allow it a slightly longer time.
+The two hundred milliseconds may delay your connects longer than you might
+want. For example when TCP packets over IPv6 are never getting any response on
+a certain network path or server.
+
+Or vice versa, you may need to communicate to a server with high latency, in
+which case the default timeout would strike too early.
 
 For moments and scenarios like that, curl provides the
 `--happy-eyeballs-timeout-ms` command line option. It changes the default two

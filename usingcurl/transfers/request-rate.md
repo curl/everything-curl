@@ -46,8 +46,8 @@ Make curl download 200 images but not faster than 14 transfers per minute:
 ## Number of units
 
 Starting in curl 8.10.0 this option accepts an optional *number of units*. The
-request rate is then provided as **N/**Z** **U** where **N** is a number,
-**Z** is a number of time units and **U** is a time unit.
+request rate is then provided as **N** / **Z** **U** (with no spaces) where
+**N** is a number, **Z** is a number of time units and **U** is a time unit.
 
 The number and the units are the same as mentioned above, but now you can also
 specify a number of time units. **N** requests per **Z** number of **N**

@@ -31,6 +31,10 @@ files:
 
 Once generated, you import them and build with Visual Studio like normally.
 
+You can even generate them for 32-bit Windows with:
+
+    cmake -B build -G 'Visual Studio 17 2022' -DCMAKE_GENERATOR_PLATFORM=x86
+
 ## Mingw
 
 You can build curl with the mingw compiler suite. Use [CMake](cmake.md) to

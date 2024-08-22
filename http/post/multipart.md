@@ -63,7 +63,7 @@ submitted. The particular boundary you see in this example has the random part
 `d74496d66958873e` but you, of course, get something different when you run
 curl (or when you submit such a form with a browser).
 
-So after that initial set of headers follows the request body
+After that initial set of headers follows the request body
 
     --------------------------d74496d66958873e
     Content-Disposition: form-data; name="person"

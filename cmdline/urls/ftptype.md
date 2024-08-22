@@ -13,8 +13,8 @@ ASCII could then be made with:
 
     curl "ftp://example.com/foo;type=A"
 
-And while curl defaults to binary transfers for FTP, the URL format allows you
-to also specify the binary type with type=I:
+curl defaults to binary transfers for FTP, but the URL format allows you to
+specify the binary type with `type=I`:
 
     curl "ftp://example.com/foo;type=I"
 

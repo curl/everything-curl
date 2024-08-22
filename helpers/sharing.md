@@ -62,10 +62,9 @@ run its own thread and transfer data, but you still want the different
 transfers to share data. Then you need to set the mutex callbacks.
 
 If you do not use threading and you *know* you access the shared object in a
-serial one-at-a-time manner you do not need to set any locks. But if there is
-ever more than one transfer that access share object at a time, it needs to
-get mutex callbacks setup to prevent data destruction and possibly even
-crashes.
+serial one-at-a-time manner you do not need to set any locks. If there is ever
+more than one transfer that access share object at a time, it needs to get
+mutex callbacks setup to prevent data destruction and possibly even crashes.
 
 Since libcurl itself does not know how to lock things or even what threading
 model you are using, you must make sure to do mutex locks that only allows one

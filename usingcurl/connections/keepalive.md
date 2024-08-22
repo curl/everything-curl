@@ -18,10 +18,10 @@ frames" back and forth when it would otherwise be totally idle. It helps idle
 connections to detect breakage even when no traffic is moving over it, and
 helps intermediate systems not consider the connection dead.
 
-curl uses TCP keepalive by default for the reasons mentioned here. But there
-might be times when you want to *disable* keepalive or you may want to change
-the interval between the TCP "pings" (curl defaults to 60 seconds). You can
-switch off keepalive with:
+curl uses TCP keepalive by default for the reasons mentioned here. There might
+be times when you want to *disable* keepalive or you may want to change the
+interval between the TCP "pings" (curl defaults to 60 seconds). You can switch
+off keepalive with:
 
     curl --no-keepalive https://example.com/
 

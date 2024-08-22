@@ -19,11 +19,11 @@ debugging or whatever.
 In this day, mailing lists may be considered the old style of communication —
 no fancy web forums or similar. Using a mailing list is therefore becoming an
 art that is not practiced everywhere and may be a bit strange and unusual to
-you. But fear not. It is just about sending emails to an address that then
-sends that email out to all the subscribers. Our mailing lists have at most a
-few thousand subscribers. If you are mailing for the first time, it might be
-good to read a few old mails first to get to learn the culture and what's
-considered good practice.
+you. It is just about sending emails to an address that then sends that email
+out to all the subscribers. Our mailing lists have at most a few thousand
+subscribers. If you are mailing for the first time, it might be good to read a
+few old mails first to get to learn the culture and what's considered good
+practice.
 
 The mailing lists and the bug tracker have changed hosting providers a few
 times and there are reasons to suspect it might happen again in the future. It

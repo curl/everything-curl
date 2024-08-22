@@ -11,10 +11,10 @@ global state so you should only call it once, and once your program is
 completely done using libcurl you can call `curl_global_cleanup()` to
 free and clean up the associated global resources the init call allocated.
 
-libcurl is built to handle the situation where you skip the `curl_global_init()` call, but
-it does so by calling it itself instead (if you did not do it before any actual
-file transfer starts) and it then uses its own defaults. But beware that it is
-still not thread safe even then, so it might cause some "interesting" side
-effects for you. It is much better to call curl_global_init() yourself in a
-controlled manner.
+libcurl is built to handle the situation where you skip the
+`curl_global_init()` call, but it does so by calling it itself instead (if you
+did not do it before any actual file transfer starts) and it then uses its own
+defaults. Beware that it is still not thread safe even then, so it might cause
+some "interesting" side effects for you. It is much better to call
+curl_global_init() yourself in a controlled manner.
 

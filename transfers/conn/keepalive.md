@@ -2,8 +2,8 @@
 
 Once a TCP connection has been established, that connection is defined to be
 valid until one side closes it. Once the connection has entered the connected
-state, it will remain connected indefinitely. But, in reality, the connection
-will not last indefinitely. Many firewalls or NAT systems close connections if
+state, it will remain connected indefinitely. In reality, the connection will
+not last indefinitely. Many firewalls or NAT systems close connections if
 there has been no activity in some time period. The Keep Alive signal can be
 used to refrain intermediate hosts from closing idle connection due to
 inactivity.

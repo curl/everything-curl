@@ -90,8 +90,8 @@ codes*):
 Both these loops let you use one or more file descriptors of your own on which
 to wait, like if you read from your own sockets or a pipe or similar.
 
-And again, you can add and remove easy handles to the multi handle at any
-point during the looping. Removing a handle mid-transfer aborts that transfer.
+Again: you can add and remove easy handles to the multi handle at any point
+during the looping. Removing a handle mid-transfer aborts that transfer.
 
 ## When is a single transfer done?
 

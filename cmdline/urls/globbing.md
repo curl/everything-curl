@@ -64,8 +64,8 @@ Or download all the images of a chess board, indexed by two coordinates ranged
 
     curl -O "http://example.com/chess-[0-7]x[0-7].jpg"
 
-And you can, of course, mix ranges and series. Get a week's worth of logs for
-both the web server and the mail server:
+You can, of course, mix ranges and series. Get a week's worth of logs for both
+the web server and the mail server:
 
     curl -O "http://example.com/{web,mail}-log[0-6].txt"
 

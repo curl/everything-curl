@@ -42,7 +42,7 @@ Invoke curl with `podman`:
 
     alias -s curl='podman run -it --rm docker.io/curlimages/curl'
 
-And simply invoke `curl www.example.com` to make a request
+Simply invoke `curl www.example.com` to make a request
 
 ## Running curl in kubernetes
 

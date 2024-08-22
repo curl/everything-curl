@@ -27,7 +27,10 @@ Chromium)._
 
 ## From Safari
 
-In Safari, the "development" menu is not visible until you go into **preferences->Advanced** and enable it. But once you have done that, you can select **Show web inspector** in that development menu and get to see a new console pop up that is similar to the development tools of Firefox and Chrome.
+In Safari, the "development" menu is not visible until you go into
+**preferences->Advanced** and enable it. Once you have done that, you can
+select **Show web inspector** in that development menu and get to see a new
+console pop up that is similar to the development tools of Firefox and Chrome.
 
 Select the network tab, reload the webpage and then you can right click the
 particular resources that you want to fetch with curl, as if you did it with

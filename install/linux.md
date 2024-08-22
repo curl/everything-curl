@@ -100,7 +100,7 @@ instead of `zypper`. To install the curl command-line utility:
 
     transactional-update pkg install curl
 
-And to install the libcurl development package:
+To install the libcurl development package:
 
     transactional-update pkg install libcurl-devel
 

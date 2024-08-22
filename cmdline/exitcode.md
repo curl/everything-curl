@@ -41,18 +41,17 @@ A basic Unix shell script could look like something like this:
   not enabled or was explicitly disabled at build-time. To make curl able
   to do this, you probably need another build of libcurl.
 
- 5. Couldn't resolve proxy. The address of the given proxy host could not be
+ 5. Could not resolve proxy. The address of the given proxy host could not be
   resolved. Either the given proxy name is just wrong, or the DNS server is
-  misbehaving and does not know about this name when it should or perhaps
-  even the system you run curl on is misconfigured so that it does not
-  find/use the correct DNS server.
+  misbehaving and does not know about this name when it should or perhaps even
+  the system you run curl on is misconfigured so that it does not find/use the
+  correct DNS server.
 
- 6. Couldn't resolve host. The given remote host's address was not
-  resolved. The address of the given server could not be resolved. Either
-  the given hostname is just wrong, or the DNS server is misbehaving and
-  does not know about this name when it should or perhaps even the system you
-  run curl on is misconfigured so that it does not find/use the correct DNS
-  server.
+ 6. Could not resolve host. The given remote host's address was not resolved.
+  The address of the given server could not be resolved. Either the given
+  hostname is just wrong, or the DNS server is misbehaving and does not know
+  about this name when it should or perhaps even the system you run curl on is
+  misconfigured so that it does not find/use the correct DNS server.
 
  7. Failed to connect to host. curl managed to get an IP address to the
   machine and it tried to set up a TCP connection to the host but
@@ -103,15 +102,15 @@ A basic Unix shell script could look like something like this:
   passive mode. You might be able to work-around this problem by using PORT
   instead, with the `--ftp-port` option.
 
- 15. FTP cannot get host. Couldn't use the host IP address we got in the
+ 15. FTP cannot get host. Could not use the host IP address we got in the
   227-line. This is most likely an internal error.
 
  16. HTTP/2 error. A problem was detected in the HTTP2 framing layer. This is
   somewhat generic and can be one out of several problems, see the error
   message for details.
 
- 17. FTP could not set binary. Couldn't change transfer method to binary. This
-  server is broken. curl needs to set the transfer to the correct mode
+ 17. FTP could not set binary. Could not change transfer method to binary.
+  This server is broken. curl needs to set the transfer to the correct mode
   before it is started as otherwise the transfer cannot work.
 
  18. Partial file. Only a part of the file was transferred. When the transfer
@@ -199,9 +198,9 @@ A basic Unix shell script could look like something like this:
   asking to resume a transfer that then ends up not possible to do, this
   error can get returned. For FILE, FTP or SFTP.
 
- 37. Couldn't read the given file when using the FILE:// scheme. Failed to
-  open the file. The file could be non-existing or is it a permission
-  problem perhaps?
+ 37. Could not read the given file when using the FILE:// scheme. Failed to
+  open the file. The file could be non-existing or is it a permission problem
+  perhaps?
 
  38. LDAP cannot bind. LDAP "bind" operation failed, which is a necessary step
   in the LDAP operation and thus this means the LDAP query could not be
@@ -287,12 +286,12 @@ A basic Unix shell script could look like something like this:
  57. **Not used**
 
  58. Problem with the local certificate. The client certificate had a problem
-  so it could not be used. Permissions? The wrong pass phrase?
+  so it could not be used. Permissions? The wrong passphrase?
 
- 59. Couldn't use the specified SSL cipher. The cipher names need to be
-  specified exactly and they are also unfortunately specific to the
-  particular TLS backend curl has been built to use. For the current list
-  of support ciphers and how to write them, see the online docs at
+ 59. Could not use the specified SSL cipher. The cipher names need to be
+  specified exactly and they are also unfortunately specific to the particular
+  TLS backend curl has been built to use. For the current list of support
+  ciphers and how to write them, see the online docs at
   [https://curl.se/docs/ssl-ciphers.html](https://curl.se/docs/ssl-ciphers.html).
 
  60. Peer certificate cannot be authenticated with known CA certificates. This

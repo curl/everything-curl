@@ -60,8 +60,8 @@ One of the differences between linking with a static library compared to
 linking with a shared one is in how shared libraries handle their own
 dependencies while static ones do not. In order to link with library `xyz` as
 a shared library, it is basically a matter of adding `-lxyz` to the linker
-command line no matter which other libraries `xyz` itself was built to
-use. But, if that `xyz` is instead a static library we also need to specify
+command line no matter which other libraries `xyz` itself was built to use.
+However, if that `xyz` is instead a static library we also need to specify
 each dependency of `xyz` on the linker command line. curl's configure cannot
 keep up with or know all possible dependencies for all the libraries it can be
 made to build with, so users wanting to build with static libs mostly need to

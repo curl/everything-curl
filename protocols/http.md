@@ -43,7 +43,7 @@ A server always responds to an HTTP request unless something is wrong.
 
 ## The URL converted to a request
 
-So when an HTTP client is given a URL to operate on, that URL is then used,
+When an HTTP client is given a URL to operate on, that URL is then used,
 picked apart and those parts are used in various places in the outgoing
 request to the server. Let's take an example URL:
 

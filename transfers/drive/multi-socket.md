@@ -89,7 +89,7 @@ registered:
 
 ### timer_callback
 
-The application is in control and waits for socket activity. But even without
+The application is in control and waits for socket activity. Even without
 socket activity there are things libcurl needs to do. Timeout things, calling
 the progress callback, starting over a retry or failing a transfer that takes
 too long, etc. To make that work, the application must also make sure to

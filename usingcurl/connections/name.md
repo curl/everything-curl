@@ -80,7 +80,7 @@ want to send a test request to one specific server out of the load balanced
 set (`load1.example.com` for example) you can instruct curl to do that.
 
 You *can* still use `--resolve` to accomplish this if you know the specific IP
-address of load1. But without having to first resolve and fix the IP address
+address of load1. Without having to first resolve and fix the IP address
 separately, you can tell curl:
 
     curl --connect-to www.example.com:80:load1.example.com:80 \
@@ -110,6 +110,6 @@ end of the DNS communication to a specific IP address and with
 use for its DNS requests.
 
 These `--dns-*` options are advanced and are only meant for people who know
-what they are doing and understand what these options do. But they offer
+what they are doing and understand what these options do. They offer
 customizable DNS name resolution operations.
 

@@ -30,7 +30,7 @@ root, not in the `build/` subdirectory).
 
 ## configure curl
 
-`LIBS=-lpthread ./configure --with-ssl=$HOME/src/boringssl` (where I point out
+`LIBS="-lpthread -lstdc++" ./configure --with-ssl=$HOME/src/boringssl` (where I point out
 the root of the boringssl tree)
 
 Verify that at the end of the configuration, it says it detected

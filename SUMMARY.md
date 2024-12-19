@@ -105,6 +105,7 @@
     * [Request rate limiting](usingcurl/transfers/request-rate.md)
     * [Compression](usingcurl/transfers/compression.md)
   * [Connections](usingcurl/connections/README.md)
+    * [VLAN](usingcurl/connections/vlan.md)
     * [Name resolve tricks](usingcurl/connections/name.md)
     * [Connection timeout](usingcurl/connections/timeout.md)
     * [Happy Eyeballs](usingcurl/connections/happy.md)

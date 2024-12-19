@@ -1,6 +1,6 @@
 # Skip download if already done
 
-Sometimes when writing a script or similar to do internet transfers every now
+Sometimes when writing a script or similar to do Internet transfers every now
 and then you end up in a situation when you rather have curl skip doing the
 transfer if indeed the target file is already present locally. Maybe after the
 previous invoke, maybe for another reason.

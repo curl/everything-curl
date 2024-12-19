@@ -81,6 +81,12 @@ Instead, let's use `dummy` as a default value if `%USER` does not exist:
         --variable %USER=dummy \
         --expand-url "https://example.com/api/{{USER}}/method"
 
+Or get the default contents from a local file:
+
+    curl \
+        --variable %USER@file \
+        --expand-url "https://example.com/api/{{USER}}/method"
+
 ## Expand `--variable`
 
 The `--variable` option itself can also be expanded, which allows you to

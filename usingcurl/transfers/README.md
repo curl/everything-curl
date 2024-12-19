@@ -8,3 +8,4 @@ multiple transfers.
  * [Rate limiting](rate-limiting.md)
  * [Request rate limiting](request-rate.md)
  * [Compression](compression.md)
+ * [Skip download if already done](skip.md)

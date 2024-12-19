@@ -104,6 +104,7 @@
     * [Rate limiting](usingcurl/transfers/rate-limiting.md)
     * [Request rate limiting](usingcurl/transfers/request-rate.md)
     * [Compression](usingcurl/transfers/compression.md)
+    * [Skip download if already done](usingcurl/transfers/skip.md)
   * [Connections](usingcurl/connections/README.md)
     * [VLAN](usingcurl/connections/vlan.md)
     * [Name resolve tricks](usingcurl/connections/name.md)

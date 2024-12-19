@@ -18,9 +18,9 @@ implementations in the most creative ways.
 
   * [Differences](differences.md)
   * [Command line options](options/)
+  * [Help](help.md)
   * [Options depend on version](versions.md)
   * [URLs](urls/)
-  * [List options](listopts.md)
   * [Config file](configfile.md)
   * [Variables](variables.md)
   * [Passwords](passwords.md)

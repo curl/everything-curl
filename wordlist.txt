@@ -569,6 +569,7 @@ VC
 vcpkg
 VERIFYRESULT
 Viktor
+VLAN
 VMware
 vtls
 Warta

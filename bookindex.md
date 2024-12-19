@@ -382,6 +382,7 @@
  - RFC 2246: [TLS versions](usingcurl/tls/versions.md#tls-versions)
  - RFC 2326: [RTSP](protocols/curl.md#rtsp)
  - RFC 2595: [IMAP](protocols/curl.md#imap)
+ - RFC 2616: [About content encodings](internals/content-encoding.md#about-content-encodings)
  - RFC 2818: [HTTPS](protocols/curl.md#https)
  - RFC 3207: [SMTP](protocols/curl.md#smtp)
  - RFC 3501: [IMAP](protocols/curl.md#imap)

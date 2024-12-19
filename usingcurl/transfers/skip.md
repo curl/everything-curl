@@ -7,7 +7,7 @@ previous invoke, maybe for another reason.
 
 This kind of extra logic can certainly be added in common shell script logic
 before curl is invoked in many cases but not all. For example things get
-complicated when you ask curl to do [globbed download
+complicated when you ask curl to use [globbing download
 ranges](../../cmdline/urls/globbing.md).
 
 For example, download one thousand images from a site but skip the ones that

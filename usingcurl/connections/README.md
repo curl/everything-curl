@@ -9,6 +9,7 @@ For ordinary command line usage, operating on a URL, these are details which
 are taken care of under the hood, and which you can mostly ignore. But at times
 you might find yourself wanting to tweak the specifics…
 
+* [VLAN](vlan.md)
 * [Name resolve tricks](name.md)
 * [Connection timeout](timeout.md)
 * [Happy Eyeballs](happy.md)

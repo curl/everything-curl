@@ -35,6 +35,14 @@ You can assign the contents of a plain text file to a variable, too:
 
     curl --variable varName@filename
 
+Starting in curl 8.12.0, you can get a byte range from a given file by
+appending `;[N-M]` to the file name, where `N` and `M` are numerical byte
+offsets into the file where the second number can be omitted to mean until end
+of file. For example, get the contents from a file from byte offset 100 to and
+including byte offset 200:
+
+    curl --variable "varName@filename;[100-200]"
+
 ## Expand
 
 Variables can be expanded in option parameters using `{{varName}}` when the

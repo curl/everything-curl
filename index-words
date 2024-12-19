@@ -77,6 +77,7 @@
 --retry-max-time
 --show-error
 --silent
+--skip-existing
 --socks4
 --socks4a
 --socks5
@@ -96,6 +97,7 @@
 --variable
 --verbose
 --version
+--vlan-priority
 --write-out
 -b
 -c

@@ -94,7 +94,7 @@ to the mail server at `mail.example.com`, use:
 
     curl smtp://mail.example.com/client.example.com
 
-## No MX lookup!
+## No MX lookup
 
 When you send email with an ordinary mail client, it first checks for an MX
 record for the particular domain you want to send email to. If you send an

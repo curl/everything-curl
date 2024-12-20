@@ -16,9 +16,9 @@ we already have downloaded previously:
     curl --skip-existing -O https://example.com/image[0-999].jpg
 
 It should be noted that this only checks the *presence* of the local file, it
-makes not attempts to verify that it actually has the correct content and it
+makes no attempts to verify that it actually has the correct content and it
 has no way to do any such checks.
 
 curl offers other options to do [conditional
 transfers](../../http/modify/conditionals.md) based on modified date or
-contents.
+contents for HTTP transfers.

@@ -60,9 +60,8 @@ the semicolon separator.
 ## Import export
 
 The cookie in-memory store can hold a bunch of cookies, and libcurl offers
-very powerful ways for an application to play with them. You can set new
-cookies, you can replace an existing cookie and you can extract existing
-cookies.
+powerful ways for an application to play with them. You can set new cookies,
+you can replace an existing cookie and you can extract existing cookies.
 
 ### Add a cookie to the cookie store
 

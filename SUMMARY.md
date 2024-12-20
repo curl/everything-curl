@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Everything curl](README.md)
 * [How to read](how-to-read.md)
 * [The cURL project](project/README.md)
   * [How it started](project/started.md)

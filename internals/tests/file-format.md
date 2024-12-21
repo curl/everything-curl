@@ -212,9 +212,6 @@ tests. "Keywords" must begin with an alphabetic character, "-", "[" or "{" and
 may consist of multiple words separated by spaces which are treated together
 as a single identifier.
 
-When using curl built with Hyper, the keywords must include HTTP or HTTPS for
-'hyper mode' to kick in and make line ending checks work for tests.
-
 ## `<reply>`
 
 ### `<data [nocheck="yes"] [sendzero="yes"] [base64="yes"] [hex="yes"] [nonewline="yes"]>`
@@ -429,7 +426,6 @@ Features testable here are:
 - `HSTS`
 - `HTTP-auth`
 - `http/2`
-- `hyper`
 - `idn`
 - `ipv6`
 - `Kerberos`

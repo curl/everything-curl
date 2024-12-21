@@ -2,7 +2,7 @@
 
 ## About content encodings
 
- [HTTP/1.1][4] specifies that a client may request that a server encode its
+ HTTP/1.1 specifies that a client may request that a server encode its
  response. This is usually used to compress a response using one (or more)
  encodings from a set of commonly available compression techniques. These
  schemes include `deflate` (the zlib algorithm), `gzip`, `br` (brotli) and
@@ -30,28 +30,28 @@
 
 ## The libcurl interface
 
- To cause libcurl to request a content encoding use:
+ To ask libcurl make a request using content encoding, use:
 
-  [`curl_easy_setopt`][1](curl, [`CURLOPT_ACCEPT_ENCODING`][5], string)
+     curl_easy_setopt(curl, CURLOPT_ACCEPT_ENCODING, string);
 
  where string is the intended value of the `Accept-Encoding` header.
 
- Currently, libcurl does support multiple encodings but only understands how
- to process responses that use the `deflate`, `gzip`, `zstd` and/or `br`
- content encodings, so the only values for [`CURLOPT_ACCEPT_ENCODING`][5] that
- work (besides `identity`, which does nothing) are `deflate`, `gzip`, `zstd`
- and `br`. If a response is encoded using the `compress` or methods, libcurl
+ libcurl supports multiple encodings but only understands how to process
+ responses that use the `deflate`, `gzip`, `zstd` and/or `br` content
+ encodings, so the only values for `CURLOPT_ACCEPT_ENCODING` that work
+ (besides `identity`, which does nothing) are `deflate`, `gzip`, `zstd` and
+ `br`. If a response is encoded using the `compress` or methods, libcurl
  returns an error indicating that the response could not be decoded. If
  `<string>` is NULL no `Accept-Encoding` header is generated. If `<string>` is
  a zero-length string, then an `Accept-Encoding` header containing all
  supported encodings is generated.
 
- The [`CURLOPT_ACCEPT_ENCODING`][5] must be set to any non-NULL value for
- content to be automatically decoded. If it is not set and the server still
- sends encoded content (despite not having been asked), the data is returned
- in its raw form and the `Content-Encoding` type is not checked.
+ The `CURLOPT_ACCEPT_ENCODING` must be set to any non-NULL value for content
+ to be automatically decoded. If it is not set and the server still sends
+ encoded content (despite not having been asked), the data is returned in its
+ raw form and the `Content-Encoding` type is not checked.
 
 ## The curl interface
 
- Use the [`--compressed`][6] option with curl to cause it to ask servers to
+ Use the `--compressed` option with curl to cause it to ask servers to
  compress responses using any format supported by curl.

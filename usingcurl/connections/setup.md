@@ -22,9 +22,10 @@ The IPv4 protocol header has a "Type of Service (TOS)" field. It is called
 to either a numerical value between zero and 255, or by using one of the
 recognized names:
 
-CS0, CS1, CS2, CS3, CS4, CS5, CS6, CS7, AF11, AF12, AF13, AF21, AF22, AF23,
-AF31, AF32, AF33, AF41, AF42, AF43, EF, VOICE-ADMIT, ECT1, ECT0, CE, LE,
-LOWCOST, LOWDELAY, THROUGHPUT, RELIABILITY, MINCOST
+    CS0, CS1, CS2, CS3, CS4, CS5, CS6, CS7, AF11, AF12, AF13,
+    AF21, AF22, AF23, AF31, AF32, AF33, AF41, AF42, AF43, EF,
+    VOICE-ADMIT, ECT1, ECT0, CE, LE, LOWCOST, LOWDELAY,
+    THROUGHPUT, RELIABILITY, MINCOST
 
 Example:
 

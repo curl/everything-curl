@@ -58,8 +58,8 @@ ask for those methods too specifically:
 
 ## AWS sigv4
 
-The defacto authentication standard *AWS sigv4* is a little different than the
-other HTTP authentication mechnisms and thus you also use it differently.
+The de facto authentication standard *AWS sigv4* is a little different than
+the other HTTP authentication mechanisms and thus you also use it differently.
 
 This option takes an additional string argument where you provide one or more
 data fields for the operation, separated by colons: *provider 1*, *provider

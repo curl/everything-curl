@@ -464,6 +464,7 @@ setopt
 SFTP
 sftp
 sha
+sigv
 Silverblue
 singlecwd
 Sintonen

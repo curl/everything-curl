@@ -8,6 +8,8 @@
  - --append: [trurl example command lines](cmdline/urls/trurl.md#trurl-example-command-lines), [FTP and SFTP uploads](usingcurl/uploads.md#ftp-and-sftp-uploads), [Uploading with FTP](ftp/upload.md#uploading-with-ftp)
  - apt: [Ubuntu and Debian](install/linux.md#ubuntu-and-debian)
  - Arch Linux: [Arch Linux](install/linux.md#arch-linux)
+ - AWS sigv4: [AWS sigv4](http/auth.md#aws-sigv4)
+ - --aws-sigv4: [AWS sigv4](http/auth.md#aws-sigv4)
 
 ## B
 

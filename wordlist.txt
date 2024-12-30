@@ -108,6 +108,7 @@ CWD
 daniel
 DEBUGFUNCTION
 decrypt
+defacto
 deselectable
 detections
 dev
@@ -599,3 +600,4 @@ Zakrzewski
 Zitzmann
 zlib
 zsh
+

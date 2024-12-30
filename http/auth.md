@@ -55,3 +55,29 @@ ask for those methods too specifically:
     curl --digest --user daniel:secret http://example.com/
     curl --negotiate --user daniel:secret http://example.com/
     curl --ntlm --user daniel:secret http://example.com/
+
+## AWS sigv4
+
+The defacto authentication standard *AWS sigv4* is a little different than the
+other HTTP authentication mechanisms and thus you also use it differently.
+
+This option takes an additional string argument where you provide one or more
+data fields for the operation, separated by colons: *provider 1*, *provider
+2*, *region* and *service*.
+
+- *provider* are strings used by the algorithm when creating outgoing
+  authentication headers.
+
+- *region* is a name that points to a geographic area of a resource collection
+(region-code) when the region name is omitted from the endpoint.
+
+- *service* is a string that points to a function provided by a cloud
+(service-code) when the service name is omitted from the endpoint.
+
+Only the *provider 1* is mandatory to provide. The others are otherwise
+extracted from the hostname used in the URL.
+
+Example:
+
+    curl --aws-sigv4 "aws:amz:us-east-2:es" --user "key:secret" \
+        https://example.com

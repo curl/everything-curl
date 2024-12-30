@@ -108,6 +108,7 @@ CWD
 daniel
 DEBUGFUNCTION
 decrypt
+defacto
 deselectable
 detections
 dev
@@ -464,6 +465,7 @@ setopt
 SFTP
 sftp
 sha
+sigv
 Silverblue
 singlecwd
 Sintonen
@@ -598,3 +600,4 @@ Zakrzewski
 Zitzmann
 zlib
 zsh
+

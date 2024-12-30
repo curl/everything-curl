@@ -106,7 +106,7 @@
     * [Compression](usingcurl/transfers/compression.md)
     * [Skip download if already done](usingcurl/transfers/skip.md)
   * [Connections](usingcurl/connections/README.md)
-    * [VLAN](usingcurl/connections/vlan.md)
+    * [Setup](usingcurl/connections/setup.md)
     * [Name resolve tricks](usingcurl/connections/name.md)
     * [Connection timeout](usingcurl/connections/timeout.md)
     * [Happy Eyeballs](usingcurl/connections/happy.md)

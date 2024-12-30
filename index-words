@@ -2,6 +2,7 @@
 --alt-svc
 --anyauth
 --append
+--aws-sigv4
 --basic
 --ca-native
 --compressed
@@ -120,6 +121,7 @@
 ALPN
 apt
 Arch Linux
+AWS sigv4
 BearSSL
 bindings
 BoringSSL

@@ -6,7 +6,7 @@ full:
 
     COPYRIGHT AND PERMISSION NOTICE
 
-    Copyright © 1996 - 2024, Daniel Stenberg, <daniel@haxx.se>, and many
+    Copyright © 1996 - 2025, Daniel Stenberg, <daniel@haxx.se>, and many
     contributors, see the THANKS file.
 
     All rights reserved.

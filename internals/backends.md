@@ -22,7 +22,6 @@ functionality. In these different areas there are multiple different providers:
 2. Name resolving
 3. TLS
 4. SSH
-5. HTTP/1
 6. HTTP/3
 7. HTTP content encoding
 

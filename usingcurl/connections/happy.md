@@ -40,7 +40,7 @@ a certain network path or server.
 Or vice versa, you may need to communicate to a server with high latency, in
 which case the default timeout would strike too early.
 
-For moments and scenarios like that, curl provides the
+For moments and scenarios like these, curl provides the
 `--happy-eyeballs-timeout-ms` command line option. It changes the default two
 hundred milliseconds to whatever you specify. Setting it to zero makes curl
 start the connection attempts at exactly the same time.

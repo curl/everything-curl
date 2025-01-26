@@ -11,7 +11,7 @@ and if curl has not connected in that time it returns a failure.
 
 The connection timeout only limits the time curl is allowed to spend up until
 the moment it connects, so once the TCP connection has been established it can
-take longer time. See the [Timeouts](../timeouts.md) section for more on
+take a longer time. See the [Timeouts](../timeouts.md) section for more on
 generic curl timeouts.
 
 If you specify a low timeout, you effectively disable curl's ability to

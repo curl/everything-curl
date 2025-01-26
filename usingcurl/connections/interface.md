@@ -19,7 +19,7 @@ We discourage use of a hostname in there, because how that forces curl to do a
 name resolve to figure out an IP address. If you cannot specify an interface
 name, consider using a fixed IP address.
 
-In addition, you can ask to explicitly use and IP address or interface name to
+In addition, you can ask to explicitly use an IP address or interface name to
 prevent curl from having to guess. Do this by prefix the string with `if!` for
 interface name or `host!` for an IP address. Like this:
 

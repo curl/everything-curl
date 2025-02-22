@@ -4,7 +4,7 @@ curl 7.82.0 introduced the `--json` option as a new way to send JSON formatted
 data to HTTP servers using POST. This option works as a shortcut and provides
 a single option that replaces these three:
 
-    --data [arg]
+    --data-binary [arg]
     --header "Content-Type: application/json"
     --header "Accept: application/json"
 

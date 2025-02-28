@@ -1,11 +1,19 @@
 # The development team
 
-Daniel Stenberg is the founder and self-proclaimed leader of the
-project. Everybody else that participates or contributes in the project has
-thus arrived at a later point. Some contributors worked for a while and then
-left again. Most contributors hang around only for a short while to get their
-bug fixed or feature merged or similar. Counting all contributors we know the
-names of, we have received help from more than 3,000 individuals.
+Daniel Stenberg is the founder and self-proclaimed leader of the project.
+Everybody else that participates or contributes in the project has thus
+arrived at a later point. Some contributors worked for a while and then left
+again. Most contributors hang around only for a short while to get their bug
+fixed or feature merged or similar. Counting all contributors we know the
+names of, we have received help from more than 3,300 individuals.
+
+![curl contributors](contributors-over-time.svg)
+
+More than 1,300 individuals have authored commits that have been merged into
+the source code repository. Of course, many of those authors only ever
+contributed a single commit so far.
+
+![curl authors](authors.svg)
 
 There is no formal membership or anything that needs to be done to join the
 project. If you participate in communication or development, you are part of
@@ -13,7 +21,7 @@ the project. Every contributor decides for themselves exactly how much and in
 what ways to participate.
 
 The full list of people who ever did ten commits or more within a single year
-in the project are:
+in the project are in alphabetical order:
 
 Alessandro Ghedini,
 Ben Greear,

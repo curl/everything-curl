@@ -21,7 +21,7 @@ weeks later and so it continues. Non-stop.
 For every release we tag the source code in the repository with the curl
 version number and we update the [changelog](https://curl.se/changes.html).
 
-We had done a total of 253 releases by January 2024. The entire release
+We had done a total of 265 releases by February 2025. The entire release
 history and changelog is available in our [curl release
 log](https://curl.se/docs/releases.html).
 

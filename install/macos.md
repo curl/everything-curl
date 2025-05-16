@@ -9,7 +9,7 @@ software package manager) and then install the curl package from them:
     
 Note that when installing curl, brew does not create a `curl` symlink
 in the default homebrew folder. This was once used to avoid clashes with
-the macOS version, but this is entirely pointless because it's too old.
+the macOS version, but this is entirely pointless because it is too old.
 
 Run the following to make brew curl the default:
 

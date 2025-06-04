@@ -1,6 +1,6 @@
 # The cURL project
 
-![curl logo](curl-logo.jpg)
+![curl logo](curl-logo.png)
 
 A funny detail about Open Source projects is that they are called *projects*,
 as if they were somehow limited in time or ever can get done. The cURL project

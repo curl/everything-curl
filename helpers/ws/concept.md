@@ -27,7 +27,7 @@ data over the connection.
 Doing a transfer with a `ws://` or `wss://` URL implies that libcurl makes a
 successful upgrade to the WebSocket protocol or an error is returned. An HTTP
 200 response code which for example is considered fine in a normal HTTP
-transfer is therefor considered an error when asking for a WebSocket transfer.
+transfer is therefore considered an error when asking for a WebSocket transfer.
 
 ## Automatic `PONG`
 

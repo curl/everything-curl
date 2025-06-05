@@ -7,7 +7,7 @@ does not by itself distribute or provide binaries. Binary files are highly
 system specific and oftentimes also bound to specific system versions.
 
 Different curl versions, built by different people on different platforms
-using different third party libraries with different built-time options makes
+using different third party libraries with different build-time options makes
 the tool offer different features in different places. In addition, curl is
 continuously developed, so newer versions of the tool are likely to have more
 and better features than the older ones.

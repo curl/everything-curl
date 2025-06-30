@@ -57,7 +57,7 @@ same host in a serial manner. It is not supported to use this option with
 multiple concurrent threads.
 
 `CURL_LOCK_DATA_PSL` - this bit shares the Public Suffix List between handles.
-The list of public suffixes, aka top-level internet domains, is used to help
+The list of public suffixes, aka top-level Internet domains, is used to help
 manage the security of cookies. Sharing the list prevents overhead from having
 to work with multiple copies of the list.
 

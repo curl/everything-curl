@@ -59,7 +59,7 @@ multiple concurrent threads.
 `CURL_LOCK_DATA_PSL` - this bit shares the Public Suffix List between handles.
 The list of public suffixes, aka top-level Internet domains, is used to help
 manage the security of cookies. Sharing the list prevents overhead from having
-to work with multiple copies of the list.
+to process multiple copies of the list.
 
 `CURL_LOCK_DATA_HSTS` - this bit shares the in-memory HSTS (HTTP Strict
 Transport Security) cache. HSTS is used by websites to indicate that HTTP

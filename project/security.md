@@ -58,8 +58,8 @@ To mitigate such risks, we apply established procedures and techniques:
   new tests for the new functionality. We run *several hundred thousands*
   tests on each proposed changed to make sure existing functionality remains.
   This includes fuzzers, static code analyzers, fault injectors and more.
-- **No binary blobs**. All files stored in version control, in the git
-  repository is readable or is otherwise small and documented. There is no
+- **No binary blobs**. Any file stored in version control in the git
+  repository is readable or is otherwise a small and documented binary. There is no
   place anywhere for any hidden encrypted payload. We run a scanner on all
   files on every change to detect binary files and the few files that need to
   remain looking binary are manually vetted and verified against a checksum.

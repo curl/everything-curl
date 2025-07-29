@@ -55,9 +55,10 @@ To mitigate such risks, we apply established procedures and techniques:
   malicious payloads or hiding nefarious functionality is excruciatingly hard.
 - **Tests**. We have a large test suite that is always growing and we do not
   accept changes that break existing tests and new functionality need to bring
-  new tests for the new functionality. We run *several hundred thousands*
-  tests on each proposed changed to make sure existing functionality remains.
-  This includes fuzzers, static code analyzers, fault injectors and more.
+  new tests for the new functionality. We run *several hundred thousand*
+  tests on each proposed change to make sure existing functionality remains
+  unaffected. This includes fuzzers, static code analyzers, fault injectors
+  and more.
 - **No binary blobs**. All files stored in version control, in the git
   repository is readable or is otherwise small and documented. There is no
   place anywhere for any hidden encrypted payload. We run a scanner on all

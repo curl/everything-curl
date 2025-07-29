@@ -68,7 +68,7 @@ game consoles.
 
 The libcurl binding for PHP was one of, if not the, first bindings for libcurl
 to really catch on and get used widely. It quickly got adopted as a default
-way for PHP users to transfer data and as it has now been in that position for
+way for PHP users to transfer data: it has now been in that position for
 over a decade and PHP has turned out to be a fairly popular technology on the
 Internet (recent numbers indicated that something like a quarter of all sites on
 the Internet uses PHP).
@@ -79,7 +79,7 @@ backend. Facebook and Yahoo are two such sites.
 ## Famous users
 
 Nothing forces users to tell us they use curl or libcurl in their services or
-in the products. We usually only find out they do by accident, by reading
+in their products. We usually only find out they do by accident, by reading
 about dialogues, documentation and license agreements. Of course some
 companies also just flat out tell us.
 
@@ -97,7 +97,7 @@ Chevrolet, Cisco, Comcast, Facebook, Google, Hitachi, Honeywell, HP, Huawei,
 HTC, IBM, Intel, LG, Mazda, Mercedes-Benz, Microsoft, Motorola, NASA, Netflix,
 Nintendo, Oracle, Panasonic, Philips, Pioneer, RBS, Samsung, SanDisk, SAP, SAS
 Institute, SEB, Sharp, Siemens, Sony, Spotify, Sun, Swisscom, Tomtom, Toshiba,
-VMware, Xilinx, Yahoo, Yamaha
+VMware, Xilinx, Yahoo, Yamaha.
 
 ## Famous high volume apps using curl
 

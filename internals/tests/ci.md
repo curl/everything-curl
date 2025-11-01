@@ -12,7 +12,7 @@ Windows, Solaris and FreeBSD.
 We run jobs that build and test many different (combinations of) backends.
 
 We have jobs that use different ways of building: autotools, cmake,
-winbuild, Visual Studio, etc.
+Visual Studio, etc.
 
 We verify that the distribution tarball works.
 

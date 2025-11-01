@@ -586,7 +586,6 @@ webpages
 WebSocket
 WHATWG
 whitespace
-winbuild
 WinSock
 WinSSL
 Wireshark

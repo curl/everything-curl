@@ -318,7 +318,7 @@
  - --netrc-optional: [Enable netrc](usingcurl/netrc.md#enable-netrc)
  - nghttp2: [nghttp2](build/deps.md#nghttp2), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs)
  - nix: [nix](install/linux.md#nix)
- - --no-clobber: [Overwriting](usingcurl/downloads/storing.md#overwriting), [Use the target filename from the server](usingcurl/downloads/content-disp.md#use-the-target-filename-from-the-server)
+ - --no-clobber: [Overwriting](usingcurl/downloads/storing.md#overwriting)
  - --no-eprt: [Active connections](ftp/twoconnections.md#active-connections)
  - --no-epsv: [Passive connections](ftp/twoconnections.md#passive-connections)
  - --no-keepalive: [Keep alive](usingcurl/connections/keepalive.md#keep-alive)

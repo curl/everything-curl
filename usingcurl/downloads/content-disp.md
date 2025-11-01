@@ -14,9 +14,9 @@ aware of:
 1. It only uses the rightmost part of the suggested filename, so any path or
 directories the server suggests are stripped out.
 
-2. Since the filename is entirely selected by the server, curl might overwrite
-any preexisting local file in your current directory if the server happens to
-provide such a filename (unless you use `--no-clobber`).
+2. Since the filename is provided by the server, curl does not overwrite any
+preexisting local file in your current directory if the server happens to
+provide such a filename (unless you use `--clobber`).
 
 3. filename encoding and character sets issues. curl does not decode the name
 in any way, so you may end up with a URL-encoded filename where a browser

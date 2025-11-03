@@ -25,4 +25,3 @@ jobs:
 
       - name: check quotes
         run: .github/scripts/check-quotes.pl SUMMARY.md
-

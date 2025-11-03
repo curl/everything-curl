@@ -25,4 +25,3 @@ jobs:
 
       - name: build pdf
         run: .github/scripts/verify-titles.pl SUMMARY.md
-

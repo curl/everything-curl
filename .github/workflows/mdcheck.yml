@@ -19,5 +19,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: check 
+    - name: check
       run: make mdcheck

@@ -41,4 +41,4 @@ jobs:
           source ~/venv/bin/activate
           aspell --version
           pyspelling --version
-          pyspelling --verbose --jobs 5 --config spellcheck.yaml
+          pyspelling --verbose --jobs 5 --config pyspelling.yaml

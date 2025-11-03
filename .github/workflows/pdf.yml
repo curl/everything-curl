@@ -28,8 +28,11 @@ jobs:
 
       - name: install prereqs
         run: |
-          sudo apt-get update
-          sudo apt-get install pandoc texlive-latex-base texlive-latex-recommended
+          sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list
+          sudo apt-get -o Dpkg::Use-Pty=0 update
+          sudo rm -f /var/lib/man-db/auto-update
+          sudo apt-get -o Dpkg::Use-Pty=0 install \
+            pandoc texlive-latex-base texlive-latex-recommended
 
       - name: build pdf
         run: make pdf

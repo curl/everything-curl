@@ -26,7 +26,12 @@ jobs:
           persist-credentials: false
 
       - name: install prereqs
-        run: sudo apt-get install python3-proselint
+        run: |
+          sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list
+          sudo apt-get -o Dpkg::Use-Pty=0 update
+          sudo rm -f /var/lib/man-db/auto-update
+          sudo apt-get -o Dpkg::Use-Pty=0 install \
+            python3-proselint
 
       - name: trim off quoted parts
         run: find . -name "*.md" -print0 | xargs -0 -n1 .github/scripts/cleanmd.pl

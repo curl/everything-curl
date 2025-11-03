@@ -23,24 +23,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: install prereqs
-      run: sudo apt-get install python3-proselint
+      - name: install prereqs
+        run: sudo apt-get install python3-proselint
 
-    - name: trim off quoted parts
-      run: find . -name "*.md" -print0 | xargs -0 -n1 .github/scripts/cleanmd.pl
+      - name: trim off quoted parts
+        run: find . -name "*.md" -print0 | xargs -0 -n1 .github/scripts/cleanmd.pl
 
-    # config file help: https://github.com/amperser/proselint/
-    - name: store proselint config
-      run: |
-        echo '{' > $HOME/.proselintrc
-        echo '   "checks": {' >> $HOME/.proselintrc
-        echo '     "typography.diacritical_marks": false,' >> $HOME/.proselintrc
-        echo '     "typography.symbols": false,' >> $HOME/.proselintrc
-        echo '     "annotations.misc": false' >> $HOME/.proselintrc
-        echo '   }' >> $HOME/.proselintrc
-        echo '}' >> $HOME/.proselintrc
+      # config file help: https://github.com/amperser/proselint/
+      - name: store proselint config
+        run: |
+          echo '{' > $HOME/.proselintrc
+          echo '   "checks": {' >> $HOME/.proselintrc
+          echo '     "typography.diacritical_marks": false,' >> $HOME/.proselintrc
+          echo '     "typography.symbols": false,' >> $HOME/.proselintrc
+          echo '     "annotations.misc": false' >> $HOME/.proselintrc
+          echo '   }' >> $HOME/.proselintrc
+          echo '}' >> $HOME/.proselintrc
 
-    - name: check prose
-      run: make check
+      - name: check prose
+        run: make check

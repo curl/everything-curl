@@ -1,6 +1,6 @@
 # Copyright (C) Daniel Stenberg, <daniel@haxx.se>, et al.
 
-name: spell
+name: pyspelling
 
 on:
   push:

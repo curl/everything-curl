@@ -28,3 +28,29 @@ jobs:
 
       - name: Check Spelling
         uses: UnicornGlobal/spellcheck-github-actions@d79092bf8a9f8e89f04b22a65bfd67e045a1f8d5
+
+  pyspelling:
+    name: 'pyspelling'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: 'install'
+        run: |
+          sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list
+          sudo apt-get -o Dpkg::Use-Pty=0 update
+          sudo rm -f /var/lib/man-db/auto-update
+          sudo apt-get -o Dpkg::Use-Pty=0 install aspell aspell-en
+          python3 -m venv ~/venv
+          ~/venv/bin/pip --disable-pip-version-check --no-input --no-cache-dir install --progress-bar off --prefer-binary pyspelling==2.11
+
+      - name: 'check spelling'
+        run: |
+          source ~/venv/bin/activate
+          # setup the custom wordlist
+          grep -v '^#' .github/scripts/pyspelling.words > wordlist.txt
+          aspell --version
+          pyspelling --version
+          pyspelling --verbose --jobs 5 --config spellcheck.yaml

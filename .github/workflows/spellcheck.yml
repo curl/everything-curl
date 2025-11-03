@@ -2,12 +2,12 @@ name: spell
 on:
   push:
     branches:
-    - master
+      - master
     paths:
-    - '**.md'
+      - '**.md'
   pull_request:
     branches:
-    - master
+      - master
 
 jobs:
   check:

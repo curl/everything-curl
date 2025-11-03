@@ -27,4 +27,4 @@ jobs:
           persist-credentials: false
 
       - name: Check Spelling
-        uses: UnicornGlobal/spellcheck-github-actions@master
+        uses: UnicornGlobal/spellcheck-github-actions@d79092bf8a9f8e89f04b22a65bfd67e045a1f8d5

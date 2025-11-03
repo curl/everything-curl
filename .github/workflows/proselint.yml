@@ -39,13 +39,15 @@ jobs:
       # config file help: https://github.com/amperser/proselint/
       - name: store proselint config
         run: |
-          echo '{' > $HOME/.proselintrc
-          echo '   "checks": {' >> $HOME/.proselintrc
-          echo '     "typography.diacritical_marks": false,' >> $HOME/.proselintrc
-          echo '     "typography.symbols": false,' >> $HOME/.proselintrc
-          echo '     "annotations.misc": false' >> $HOME/.proselintrc
-          echo '   }' >> $HOME/.proselintrc
-          echo '}' >> $HOME/.proselintrc
+          {
+            echo '{'
+            echo '   "checks": {'
+            echo '     "typography.diacritical_marks": false,'
+            echo '     "typography.symbols": false,'
+            echo '     "annotations.misc": false'
+            echo '   }'
+            echo '}'
+          } >> $HOME/.proselintrc.json
 
       - name: check prose
         run: make check

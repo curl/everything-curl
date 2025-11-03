@@ -2,7 +2,7 @@
 
 name: verify-titles
 
-on:
+'on':
   push:
     branches:
       - master

@@ -2,7 +2,7 @@
 
 name: proselint
 
-on:
+'on':
   push:
     branches:
       - master

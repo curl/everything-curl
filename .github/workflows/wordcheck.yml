@@ -2,7 +2,7 @@
 
 name: wordcheck
 
-on:
+'on':
   push:
     branches:
       - master

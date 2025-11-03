@@ -2,7 +2,7 @@
 
 name: pdf
 
-on:
+'on':
   push:
     branches:
       - master

@@ -2,7 +2,7 @@
 
 name: pyspelling
 
-on:
+'on':
   push:
     branches:
       - master

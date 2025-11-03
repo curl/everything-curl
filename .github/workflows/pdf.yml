@@ -1,7 +1,8 @@
 # Copyright (C) Daniel Stenberg, <daniel@haxx.se>, et al.
 
 name: pdf
-on:
+
+'on':
   push:
     branches:
       - master
@@ -11,18 +12,28 @@ on:
     branches:
       - master
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
 permissions: {}
 
 jobs:
   build:
+    name: 'build'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - name: install prereqs
         run: |
-          sudo apt-get update
-          sudo apt-get install pandoc texlive-latex-base texlive-latex-recommended
+          sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list
+          sudo apt-get -o Dpkg::Use-Pty=0 update
+          sudo rm -f /var/lib/man-db/auto-update
+          sudo apt-get -o Dpkg::Use-Pty=0 install \
+            pandoc texlive-latex-base texlive-latex-recommended
 
       - name: build pdf
         run: make pdf

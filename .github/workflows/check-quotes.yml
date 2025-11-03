@@ -1,7 +1,8 @@
 # Copyright (C) Daniel Stenberg, <daniel@haxx.se>, et al.
 
 name: bad-quote
-on:
+
+'on':
   push:
     branches:
       - master
@@ -11,14 +12,20 @@ on:
     branches:
       - master
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
 permissions: {}
 
 jobs:
   detector:
+    name: 'check'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - name: check quotes
         run: .github/scripts/check-quotes.pl SUMMARY.md
-

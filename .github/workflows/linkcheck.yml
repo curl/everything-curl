@@ -1,24 +1,30 @@
+# Copyright (C) Daniel Stenberg, <daniel@haxx.se>, et al.
+
 name: Markdown links
 
-on:
-  # Trigger the workflow on push or pull requests, but only for the
-  # master branch
+'on':
   push:
     branches:
-    - master
-    - '*/ci'
+      - master
+      - '*/ci'
   pull_request:
     branches:
-    - master
+      - master
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
+permissions: {}
 
 jobs:
   check:
+    name: 'check'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false
-        name: checkout
 
       - name: Run mdlinkcheck
         run: ./.github/scripts/mdlinkcheck

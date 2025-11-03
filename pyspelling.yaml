@@ -1,0 +1,27 @@
+# https://github.com/marketplace/actions/check-spelling-js-vue-html-markdown-text
+#
+matrix:
+  - name: Markdown
+    expect_match: false
+    apsell:
+      mode: en
+    dictionary:
+      wordlists:
+        - wordlist.txt
+      output: wordlist.dic
+      encoding: utf-8
+    pipeline:
+      - pyspelling.filters.markdown:
+          markdown_extensions:
+            - markdown.extensions.extra:
+      - pyspelling.filters.html:
+          comments: true
+          attributes:
+            - title
+            - alt
+          ignores:
+            - ':matches(code, pre)'
+            - 'code'
+            - 'pre'
+    sources:
+      - '**/*.md|!README.md|!SUMMARY.md|!bindings/README.md|!bookindex.md|!transfers/options/all.md|!build/deps.md|!project/devteam.md'

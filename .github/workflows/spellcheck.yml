@@ -1,21 +1,44 @@
-name: spell
-on:
+# Copyright (C) Daniel Stenberg, <daniel@haxx.se>, et al.
+
+name: pyspelling
+
+'on':
   push:
     branches:
-    - master
+      - master
     paths:
-    - '**.md'
+      - '**.md'
   pull_request:
     branches:
-    - master
+      - master
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
+permissions: {}
 
 jobs:
   check:
-
+    name: 'check'
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
-    - name: Check Spelling
-      uses: UnicornGlobal/spellcheck-github-actions@master
+      - name: 'install'
+        run: |
+          sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list
+          sudo apt-get -o Dpkg::Use-Pty=0 update
+          sudo rm -f /var/lib/man-db/auto-update
+          sudo apt-get -o Dpkg::Use-Pty=0 install aspell aspell-en
+          python3 -m venv ~/venv
+          ~/venv/bin/pip --disable-pip-version-check --no-input --no-cache-dir install --progress-bar off --prefer-binary pyspelling==2.11
+
+      - name: 'check spelling'
+        run: |
+          source ~/venv/bin/activate
+          aspell --version
+          pyspelling --version
+          pyspelling --verbose --jobs 5 --config pyspelling.yaml

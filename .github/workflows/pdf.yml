@@ -1,6 +1,7 @@
 # Copyright (C) Daniel Stenberg, <daniel@haxx.se>, et al.
 
 name: pdf
+
 on:
   push:
     branches:

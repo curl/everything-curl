@@ -49,8 +49,6 @@ jobs:
       - name: 'check spelling'
         run: |
           source ~/venv/bin/activate
-          # setup the custom wordlist
-          grep -v '^#' .github/scripts/pyspelling.words > wordlist.txt
           aspell --version
           pyspelling --version
           pyspelling --verbose --jobs 5 --config spellcheck.yaml

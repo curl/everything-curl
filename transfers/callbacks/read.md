@@ -28,4 +28,3 @@ return a few "magic" return codes to cause libcurl to return failure
 immediately or to pause the particular transfer. See the [CURLOPT_READFUNCTION
 man page](https://curl.se/libcurl/c/CURLOPT_READFUNCTION.html) for
 details.
-

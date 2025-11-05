@@ -8,7 +8,7 @@ reports and why millions of existing users use it.
 
 This book is meant to be interesting and useful to both casual readers and
 somewhat more experienced developers. It offers something for everyone to pick
-and choose from. 
+and choose from.
 
 Do not read this book from front to back. Read the chapters or content you are
 curious about and flip back and forth as you see fit.

@@ -37,7 +37,7 @@ This is binary data.
 
 This is the final fragment of the message, if this is not set, it implies that
 there is another fragment coming as part of the same message.
- 
+
 ### `CURLWS_CLOSE`
 
 This transfer is now closed.

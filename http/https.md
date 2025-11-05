@@ -8,4 +8,3 @@ See the [Using TLS](../usingcurl/tls.md) section for in-depth details on how
 to modify and tweak the TLS details in an HTTPS transfer.
 
 * [HSTS](https/hsts.md)
-

@@ -22,4 +22,3 @@ The connection timeout can be specified as a decimal value for sub-second
 precision. For example, to allow 2781 milliseconds to connect:
 
     curl --connect-timeout 2.781 https://example.com/
-

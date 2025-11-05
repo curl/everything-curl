@@ -66,7 +66,7 @@ Insert `{{` verbatim in the string by escaping it with a backslash:
 
 In the example below, the variable `host` is set and then expanded:
 
-    curl \ 
+    curl \
         --variable host=example \
         --expand-url "https://{{host}}.com"
 
@@ -87,7 +87,7 @@ As an example, assign the `%USER` environment variable to a curl
 variable and insert it into a URL. Because no default value is specified, this
 operation fails if the environment variable does not exist:
 
-    curl \ 
+    curl \
         --variable %USER \
         --expand-url "https://example.com/api/{{USER}}/method"
 
@@ -136,7 +136,7 @@ These functions are available: `trim`, `json`, `url` and `b64`
 
 ## Function: `trim`
 
-Expands the variable without leading and trailing white space. White space is defined as: 
+Expands the variable without leading and trailing white space. White space is defined as:
 
 * horizontal tabs
 * spaces
@@ -180,7 +180,7 @@ Expands the variable base64 encoded. Base64 is an encoding for binary data
 that only uses 64 specific characters.
 
     --expand-data "content={{value:b64}}"
-    
+
 To trim the variable first, apply both functions (in this order):
 
     --expand-data "content={{value:trim:b64}}"

@@ -136,4 +136,3 @@ environment and most likely is different from those of browsers. Curl's CLI
 does not have options to change all the various parts of the fingerprint,
 however an advanced user can customize the fingerprint through the use of
 libcurl and by compiling curl from source themselves.
-

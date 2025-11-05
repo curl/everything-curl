@@ -83,6 +83,6 @@ You implement the callback in a manner similar to:
 
       /* we pass our 'chunk' to the callback function */
       curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *)&chunk);
-    
+
       free(chunk.memory);
     }

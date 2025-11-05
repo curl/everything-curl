@@ -59,7 +59,7 @@ It can look like this when you have installed your new curl build in
 
     export LD_LIBRARY_PATH=$HOME/install/lib
     $HOME/install/bin/curl https://example.com/
-    
+
 ### `rpath`
 
 Often, a better way to forcibly load your separate libcurl instead of the

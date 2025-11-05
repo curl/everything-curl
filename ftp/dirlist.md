@@ -20,4 +20,3 @@ the special formatting of the regular directory listings is to tell curl to
 
 NLST has its own quirks though, as some FTP servers list only actual *files*
 in their response to NLST; they do not include directories and symbolic links.
-

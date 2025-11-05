@@ -55,4 +55,3 @@ important that curl does not treat that as a proxy to use.
 
 Accepting the upper case version of this environment variable has been the
 source for many security problems in lots of software through times.
-

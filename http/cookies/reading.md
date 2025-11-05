@@ -17,4 +17,3 @@ Remember that this only *reads* from the file. If the server would update the
 cookies in its response, curl would update that cookie in its in-memory store
 but then eventually throw them all away when it exits and a subsequent invocation
 of the same input file would use the original cookie contents again.
-

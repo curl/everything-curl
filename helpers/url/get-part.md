@@ -10,25 +10,25 @@ pass a pointer to such a variable.
 
     char *host;
     rc = curl_url_get(h, CURLUPART_HOST, &host, 0);
-    
+
     char *scheme;
     rc = curl_url_get(h, CURLUPART_SCHEME, &scheme, 0);
-    
+
     char *user;
     rc = curl_url_get(h, CURLUPART_USER, &user, 0);
-    
+
     char *password;
     rc = curl_url_get(h, CURLUPART_PASSWORD, &password, 0);
-    
+
     char *port;
     rc = curl_url_get(h, CURLUPART_PORT, &port, 0);
-    
+
     char *path;
     rc = curl_url_get(h, CURLUPART_PATH, &path, 0);
-    
+
     char *query;
     rc = curl_url_get(h, CURLUPART_QUERY, &query, 0);
-    
+
     char *fragment;
     rc = curl_url_get(h, CURLUPART_FRAGMENT, &fragment, 0);
 

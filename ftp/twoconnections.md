@@ -56,4 +56,3 @@ Using either active or passive transfers, any existing firewalls in the
 network path pretty much have to have stateful inspection of the FTP traffic
 to figure out the new port to open that up and accept it for the second
 connection.
-

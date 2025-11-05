@@ -161,7 +161,7 @@ sub include {
                 $item =~ s/ (\[ [^]]*\]) \( ([^)]*?) \) /update_anchor($1 , $2, $dir, $f) /xge;
             }
             $complete_line = join('', @line_items);
-            
+
             #
             # Check for section H1, H2, etc, definitions (starting with #, ##, etc)
             #
@@ -184,7 +184,7 @@ sub include {
                 $section =~ s/\s+$//;
 
                 $section_id = "$file_target" . "-_-_-" . $section_id;
-                
+
                 $final_section_line = "$depth $section \{\#$section_id\}\n";
             }
             elsif($complete_line =~ /^(#[\#]*) (.*)/) {
@@ -212,7 +212,7 @@ sub include {
             }
         } else {
             # in a code section, print lines as-is.
-            
+
             if($complete_line =~ /谭/) {
                 # skip unicode letter pandoc does not like
             }

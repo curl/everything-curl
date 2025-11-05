@@ -28,7 +28,7 @@ The `curl_ws_recv` function has this prototype:
                           size_t *recv, struct curl_ws_frame **meta);
 
 `curl` - the handle to the transfer
- 
+
 `buffer` - pointer to a buffer to receive the WebSocket data in
 
 `buflen` - the size in bytes of the **buffer**

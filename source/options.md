@@ -30,4 +30,3 @@ Both TLS handling and name resolving are handled with an internal API that
 hides the specific implementation and choice of 3rd party software
 library. That way, most of the internals work the same independent of which
 TLS library or name resolving system libcurl is told to use.
-

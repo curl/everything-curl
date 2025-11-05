@@ -28,4 +28,3 @@ round-trips) using `--proxy-anyauth`. Asking curl to use any method the proxy
 wants is then like this:
 
     curl -U daniel:secr3t -x myproxy:80 http://example.com --proxy-anyauth
-

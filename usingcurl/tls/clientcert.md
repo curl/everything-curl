@@ -25,4 +25,3 @@ different types:
 
     curl --cert mycert:mypassword --cert-type PEM \
          --key mykey --key-type PEM https://example.com
-

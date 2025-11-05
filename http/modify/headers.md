@@ -34,4 +34,3 @@ side of the colon (which is a rare thing), the magic marker for that is to
 instead end the header field name with a *semicolon*. Like this:
 
     curl -H "Empty;" http://example.com
-

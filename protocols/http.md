@@ -1,5 +1,5 @@
 # HTTP basics
- 
+
 HTTP is a protocol that is easy to learn the basics of. A client connects to a
 server—and it is always the client that takes the initiative—sends a
 request and receives a response. Both the request and the response consist of

@@ -27,7 +27,7 @@ log](https://curl.se/docs/releases.html).
 
 ## Release cycle
 
-![The curl release cycle visualized](release-cycle.png)
+![The curl release cycle visualized](release-cycle.jpg)
 
 ## Daily snapshots
 

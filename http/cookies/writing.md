@@ -18,4 +18,3 @@ When curl writes cookies to this file, it saves all known cookies including
 those that are session cookies (without a given lifetime). curl itself has no
 notion of a session and it does not know when a session ends so it does not
 flush session cookies unless you tell it to.
-

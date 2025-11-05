@@ -14,4 +14,3 @@ you cannot see form submissions in clear text on the wire but instead you need
 to make sure you can have Wireshark extract your TLS private key from your
 browser. See the [SSLKEYLOGFILE section](../../usingcurl/tls/sslkeylogfile.md)
 for details on doing that.
-

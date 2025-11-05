@@ -52,4 +52,3 @@ retry.
 For example: retry up to 12 times for all errors:
 
     curl --retry 12 --retry-all-errors https://example.com
-

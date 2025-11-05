@@ -34,9 +34,9 @@ For example, make curl download 100 images but doing it no faster than 2
 transfers per second:
 
     curl --rate 2/s -O https://example.com/[1-100].jpg
-    
+
 Make curl download 10 images but doing it no faster than 3 transfers per hour:
-  
+
     curl --rate 3/h -O https://example.com/[1-10].jpg
 
 Make curl download 200 images but not faster than 14 transfers per minute:

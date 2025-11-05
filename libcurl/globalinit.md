@@ -17,4 +17,3 @@ did not do it before any actual file transfer starts) and it then uses its own
 defaults. Beware that it is still not thread safe even then, so it might cause
 some "interesting" side effects for you. It is much better to call
 curl_global_init() yourself in a controlled manner.
-

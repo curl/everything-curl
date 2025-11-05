@@ -17,4 +17,3 @@ cookies it received. Assuming the site in this example would set cookies and
 then do a redirect we would do:
 
     curl -L -b "" http://example.com
-

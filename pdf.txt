@@ -13,4 +13,3 @@ geometry:
 - bottom=2cm
 classoption: openany       # disable empty pages in PDF
 ---
-

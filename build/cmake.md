@@ -27,4 +27,3 @@ To create a subdirectory for the build and run make in there:
     cd build
     cmake ..
     make
-

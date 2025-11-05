@@ -22,4 +22,3 @@ provide such a filename (unless you use `--clobber`).
 in any way, so you may end up with a URL-encoded filename where a browser
 would otherwise decode it to something more readable using a sensible
 character set.
-

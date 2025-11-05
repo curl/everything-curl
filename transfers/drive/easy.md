@@ -17,4 +17,3 @@ If you want your application to do something else while libcurl is transferring
 with the easy interface, you need to use multiple threads. If you want to do
 multiple simultaneous transfers when using the easy interface, you need to perform
 each of the transfers in its own thread.
-

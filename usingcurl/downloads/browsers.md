@@ -66,4 +66,3 @@ We strongly encourage you to use HTTPS or other means to verify that the
 contents you are downloading or uploading are really the data that the remote
 server has sent to you and that your precious bytes end up verbatim at the
 intended destination.
-

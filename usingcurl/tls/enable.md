@@ -49,4 +49,3 @@ TLS is mandatory and curl returns an error if TLS is not negotiated.
 Get a file over HTTPS:
 
     curl https://www.example.com/
-

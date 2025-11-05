@@ -264,4 +264,3 @@ of identifying them:
        size_t way_to_write;
     } something;
     something instance;
-

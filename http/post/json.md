@@ -19,9 +19,9 @@ Send a basic JSON object to a server:
 Send JSON from a local file:
 
     curl --json @json.txt https://example.com/
-    
+
 Send JSON passed to curl on stdin:
-    
+
     echo '{"a":"b"}' | curl --json @- https://example.com/
 
 You can use multiple `--json` options on the same command line. This makes

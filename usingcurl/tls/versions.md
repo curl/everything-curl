@@ -29,4 +29,3 @@ serious effort.
 | --tlsv1.1 | TLS >= version 1.1 |
 | --tlsv1.2 | TLS >= version 1.2 |
 | --tlsv1.3 | TLS >= version 1.3 |
-

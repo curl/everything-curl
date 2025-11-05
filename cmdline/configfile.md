@@ -42,10 +42,10 @@ Enter one command per line. Use a hash symbol for comments:
 
 ## Command line options
 
-You can use both short and long options, exactly as you would write them on a command line. 
+You can use both short and long options, exactly as you would write them on a command line.
 
 You can also write the long option WITHOUT the leading two dashes to make
-it easier to read. 
+it easier to read.
 
     # curl config file
 
@@ -58,7 +58,7 @@ it easier to read.
 ## Arguments
 
 A command line option that takes an argument must have its argument provided on
-the SAME LINE as the option. 
+the SAME LINE as the option.
 
     # curl config file
 

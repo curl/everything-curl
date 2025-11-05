@@ -29,4 +29,3 @@ on the option so you should only rarely have to explicitly ask for it with
 `-X`. It should also be noted that when curl follows redirects like asked to
 with `-L`, the request method set with `-X` is sent even on the subsequent
 redirects.
-

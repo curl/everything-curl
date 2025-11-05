@@ -13,4 +13,3 @@ For example, if a transfer speed goes below 1000 bytes per second during 15
 seconds, stop it:
 
     curl --speed-time 15 --speed-limit 1000 https://example.com/
-

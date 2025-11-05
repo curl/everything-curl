@@ -29,7 +29,6 @@ sub check {
             }
         }
 
-        
         if($next_line_should_be_blank) {
             if(! ($line =~ m/^[\s]*$/)) {
                 error($f, $line, $l, "The line after a '#' header should be blank.");

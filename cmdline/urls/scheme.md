@@ -53,7 +53,7 @@ default to HTTP.
 For example, this gets a file from an FTP site:
 
     curl ftp.funet.fi/README
-    
+
 While this gets data from an HTTP server:
 
     curl example.com

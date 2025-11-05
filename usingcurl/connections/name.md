@@ -112,4 +112,3 @@ use for its DNS requests.
 These `--dns-*` options are advanced and are only meant for people who know
 what they are doing and understand what these options do. They offer
 customizable DNS name resolution operations.
-

@@ -140,4 +140,3 @@ separated with TAB characters.
 | 4     | 1462299217  | Expires at – seconds since Jan 1st 1970, or 0 |
 | 5     | person      | Name of the cookie                            |
 | 6     | daniel      | Value of the cookie                           |
-

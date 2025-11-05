@@ -8,13 +8,13 @@ $(OUT): mkindex.pl Makefile index-words $(IMDS)
 	@echo "generates $(OUT)"
 	@perl mkindex.pl $(IMDS) > $(OUT)
 
-mdcheck: 
+mdcheck:
 	@./checkmd $(MDS)
 
-check: 
+check:
 	@proselint $(MDS)
 
-wordcheck: 
+wordcheck:
 	@./mgrep $(MDS)
 
 fixup:

@@ -25,8 +25,8 @@ Support for `SSLKEYLOGFILE` is provided by libcurl itself - making it possible f
 
 The support for `SSLKEYLOGFILE` requires that curl was built with a TLS
 backend that supports this feature. The backends that support SSLKEYLOGFILE
-are: OpenSSL, AWS-LC, BoringSSL, GnuTLS and wolfSSL. (Note that this list does
-not include LibreSSL in spite of it being an OpenSSL fork.)
+are: OpenSSL, AWS-LC, BoringSSL, GnuTLS and wolfSSL. LibreSSL (a fork of
+OpenSSL) only supports it for TLS <= 1.2
 
 If curl was built to use another backend, you cannot record your curl TLS
 traffic this way.

@@ -4,8 +4,9 @@ Unix systems have for a long time offered a way for users to store their user
 name and password for remote FTP servers. ftp clients have supported this for
 decades and this way allowed users to quickly login to known servers without
 manually having to reenter the credentials each time. The `.netrc` file is
-typically stored in a user's home directory. (On Windows, curl looks for it
-with the name `_netrc`).
+typically stored in a user's home directory. (On Windows, two filenames in
+the home directory are checked: *.netrc* and *_netrc*, preferring the former. 
+Older versions on Windows checked for *_netrc* only.)
 
 This being a widespread and well used concept, curl also supports it—if you ask it to. curl does not, however, limit this feature to FTP, but can get credentials for machines for any protocol with this. See further below for how.
 

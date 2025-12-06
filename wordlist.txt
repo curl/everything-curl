@@ -551,6 +551,7 @@ typedefed
 UDP
 UI
 UID
+UIDs
 Unary
 uncompress
 unencrypted

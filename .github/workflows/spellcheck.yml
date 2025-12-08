@@ -34,7 +34,8 @@ jobs:
           sudo rm -f /var/lib/man-db/auto-update
           sudo apt-get -o Dpkg::Use-Pty=0 install aspell aspell-en
           python3 -m venv ~/venv
-          ~/venv/bin/pip --disable-pip-version-check --no-input --no-cache-dir install --progress-bar off --prefer-binary pyspelling==2.11
+          ~/venv/bin/pip --disable-pip-version-check --no-input --no-cache-dir install --progress-bar off --prefer-binary \
+            -r .github/workflows/requirements.txt
 
       - name: 'check spelling'
         run: |

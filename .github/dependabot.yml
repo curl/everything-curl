@@ -1,0 +1,35 @@
+# Copyright (C) Viktor Szakats. See LICENSE.md
+# SPDX-License-Identifier: curl
+
+# https://docs.github.com/code-security/dependabot/working-with-dependabot/dependabot-options-reference
+
+version: 2
+updates:
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'yearly'
+    cooldown:
+      default-days: 7
+    groups:
+      gha-dependencies:
+        patterns:
+          - '*'
+    commit-message:
+      prefix: 'GHA:'
+
+  - package-ecosystem: 'pip'
+    directory: '.github/workflows'
+    schedule:
+      interval: 'yearly'
+    cooldown:
+      default-days: 7
+      semver-major-days: 15
+      semver-minor-days: 7
+      semver-patch-days: 3
+    groups:
+      pip-dependencies:
+        patterns:
+          - '*'
+    commit-message:
+      prefix: 'GHA:'

@@ -27,11 +27,11 @@ sub check {
     my $l = 1;
     while(<F>) {
         if(/^(~~~|```)/) {
-            print STDERR "$f:$l:1: uses $1, not 4-space indent\n";
+            print STDERR "$f:$l:1: code block uses $1, not 4-space indent\n";
             $errors++;
         }
         elsif(/^    / && (length($_)>79)) {
-            print STDERR "$f:$l:1: woo wide quoted line, please wrap\n";
+            print STDERR "$f:$l:1: code block >79 cols, please wrap\n";
             $errors++;
         }
         if(/^    .*[“”’]/) {

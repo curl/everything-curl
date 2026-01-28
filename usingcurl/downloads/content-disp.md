@@ -32,10 +32,10 @@ character set.
 ## Location: too
 
 The above approach mentioned works pretty well, but has limitations. One of
-them being that the obvious that if the site instead of providing a
-`Content-Disposition` header perhaps only redirects the client to a new URL to
-the download from, curl does not pick up the new name but instead keeps using
-the one from the originally provided URL.
+them being that if the site instead of providing a `Content-Disposition`
+header only redirects the client to a new URL to the download from, curl does
+not pick up the new name but instead keeps using the one from the originally
+provided URL.
 
 Since curl 8.19.0, -J also picks up the filename from `Location:` headers and
 uses that filename if no `Content-Disposition` header arrives.

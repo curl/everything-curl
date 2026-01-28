@@ -64,7 +64,7 @@ contents of a header passed from the server, using this option in a scripting
 scenario introduces the challenge: what filename did curl actually use?
 
 A user can easily extract this information with curl’s [-w
-option](/usingcurl/verbose/writeout.md). Like this:
+option](../verbose/writeout.md). Like this:
 
     curl -w '%{filename_effective}' -O -J -L \
       https://example.com/download?id=6347d

@@ -40,7 +40,7 @@ the one from the originally provided URL.
 Since curl 8.19.0, -J also picks up the filename from `Location:` headers and
 uses that filename if no `Content-Disposition` header arrives.
 
-If you now a commannd line like:
+If you run a command line like:
 
     curl -L -O -J https://example.com/download?id=6347d
 

@@ -38,7 +38,7 @@ and verification only.
 
 ## Release cycle
 
-![The curl release cycle visualized](release-cycle.jpg)
+![The curl release cycle visualized](release-cycle.png)
 
 ## Daily snapshots
 

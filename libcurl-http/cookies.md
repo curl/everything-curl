@@ -2,7 +2,7 @@
 
 By default and by design, libcurl makes transfers as basic as possible and
 features need to be enabled to get used. One such feature is HTTP cookies,
-more known plain and simply as cookies.
+more commonly known as cookies.
 
 Cookies are name/value pairs sent by the server (using a `Set-Cookie:` header)
 to be stored in the client, and are then supposed to get sent back again in

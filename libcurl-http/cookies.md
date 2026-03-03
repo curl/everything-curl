@@ -2,7 +2,7 @@
 
 By default and by design, libcurl makes transfers as basic as possible and
 features need to be enabled to get used. One such feature is HTTP cookies,
-more known as just plain and simply cookies.
+more commonly known as cookies.
 
 Cookies are name/value pairs sent by the server (using a `Set-Cookie:` header)
 to be stored in the client, and are then supposed to get sent back again in
@@ -27,9 +27,8 @@ the `CURLOPT_COOKIEFILE` option:
 
     curl_easy_setopt(easy, CURLOPT_COOKIEFILE, "cookies.txt");
 
-A common trick is to just specify a non-existing filename or plain `""` to
-have it just activate the cookie engine with a blank cookie store to start
-with.
+A common trick is to specify a non-existing filename or plain `""` to have it
+activate the cookie engine with a blank cookie store to start with.
 
 This option can be set multiple times and then each of the given files are
 read.
@@ -47,7 +46,7 @@ Netscape cookie file format that browsers also once used.
 
 ## Setting custom cookies
 
-A simpler and more direct way to just pass on a set of specific cookies in a
+A simpler and more direct way to pass on a set of specific cookies in a
 request that does not add any cookies to the cookie store and does not even
 activate the cookie engine, is to set the set with `CURLOPT_COOKIE`:
 

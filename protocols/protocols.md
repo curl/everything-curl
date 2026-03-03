@@ -34,9 +34,9 @@ the situation changes from day to day and year to year. You can rest assured
 that there will be new protocols added in the list above in the future and that
 there will be new versions of the protocols already listed.
 
-There are, of course, already other protocols in existence that curl does not yet
-support. We are open to supporting more protocols that suit the general curl
-paradigms, we just need developers to write the necessary code adjustments for
+There are, of course, already other protocols in existence that curl does not
+yet support. We are open to supporting more protocols that suit the general
+curl paradigms, we need developers to write the necessary code adjustments for
 them.
 
 ## How are protocols developed?
@@ -56,10 +56,10 @@ into a published RFC document.
 Software developers then read the RFC specifications and deploy their code in
 the world based on their interpretations of the words in those documents. It
 sometimes turns out that some of the specifications are subject to vastly
-different interpretations or sometimes the engineers are just lazy and ignore
-sound advice in the specs and deploy something that does not adhere.
-Writing software that interoperates with other implementations of the
-specifications can therefore end up being hard work.
+different interpretations or sometimes the engineers are lazy and ignore sound
+advice in the specs and deploy something that does not adhere. Writing
+software that interoperates with other implementations of the specifications
+can therefore end up being hard work.
 
 ## How much do protocols change?
 
@@ -92,10 +92,9 @@ Protocols are, however, spoken by two parties and like in any given
 conversation, there are then two sides of understanding something or
 interpreting the given instructions in a spec. Also, lots of network software
 is written without the authors paying close attention to the spec so they end
-up taking some shortcuts, or perhaps they just interpreted the text
-differently. Sometimes even mistakes and bugs make software behave in ways
-that are not mandated by the spec and sometimes even downright forbidden in
-the specs.
+up taking some shortcuts, or perhaps they interpreted the text differently.
+Sometimes even mistakes and bugs make software behave in ways that are not
+mandated by the spec and sometimes even downright forbidden in the specs.
 
 In the curl project we use the published specs as rules on how to act until we
 learn anything else. If popular alternative implementations act differently

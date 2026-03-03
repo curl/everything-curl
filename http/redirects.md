@@ -17,10 +17,10 @@ ask for, which can be absolute or relative.
 
 ## Permanent and temporary
 
-Is the redirect meant to last or just remain valid for now? If you want a GET
-to permanently redirect users to resource B with another GET, send back
-a 301. It also means that the user-agent (browser) is meant to cache this and
-keep going to the new URI from now on when the original URI is requested.
+Is the redirect meant to last or is it temporary? If you want a GET to
+permanently redirect users to resource B with another GET, send back a 301. It
+also means that the user-agent (browser) is meant to cache this and keep going
+to the new URI from now on when the original URI is requested.
 
 The temporary alternative is 302. Right now the server wants the client to
 send a GET request to B, but it should not cache this but keep trying the
@@ -35,7 +35,7 @@ of the public web behaves this way.
 In practice, the 303 code is similar to 302. It is not be cached and it makes
 the client issue a GET in the next request. The differences between a 302 and
 303 are subtle, but 303 seems to be more designed for an “indirect response”
-to the original request rather than just a redirect.
+to the original request rather than a redirect.
 
 These three codes were the only redirect codes in the HTTP/1.0 spec.
 

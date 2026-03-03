@@ -12,8 +12,8 @@ Our C code has a few style rules. Most of them are verified and upheld by the
 `checksrc.pl` script. Invoked with `make checksrc` or even by default by the
 build system when built after `./configure --enable-debug` has been used.
 
-It is normally not a problem for anyone to follow the guidelines as you just
-need to copy the style already used in the source code, and there are no
+It is normally not a problem for anyone to follow the guidelines as you simply
+need to mimic the style already used in the source code, and there are no
 particularly unusual rules in our set of rules.
 
 We also work hard on writing code that is warning-free on all the major
@@ -24,7 +24,7 @@ causes warnings is not accepted as-is.
 
 Try using a non-confusing naming scheme for your new functions and variable
 names. It does not necessarily have to mean that you should use the same as in
-other places of the code, just that the names should be logical,
+other places of the code, only that the names should be logical,
 understandable and be named according to what they are used for. File-local
 functions should be made static. We like lower case names.
 

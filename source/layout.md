@@ -75,7 +75,7 @@ options into the corresponding libcurl options or set of options and then makes
 sure to issue them correctly to drive the network transfer according to the
 user's wishes.
 
-This code uses libcurl just as any other application would.
+This code uses libcurl as any other application would.
 
 ## include/curl
 

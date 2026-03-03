@@ -1,6 +1,6 @@
 # Config file
 
-Curl commands with multiple command-line options can become cumbersome to work
+curl commands with multiple command-line options can become cumbersome to work
 with. The number of characters can even exceed the maximum length allowed by
 your terminal application.
 
@@ -106,7 +106,8 @@ considers the next space or newline as the end of the argument.
 When curl is invoked, it always (unless `-q` is used), checks for a default
 config file and uses it if found.
 
-Curl looks for the default config file in the following locations, in this order:
+curl looks for the default config file in the following locations, in this
+order:
 
 1) `$CURL_HOME/.curlrc`
 

@@ -27,9 +27,9 @@ to ask for Transfer-Encoded compression with `--tr-encoding`:
     curl --tr-encoding http://example.com/
 
 In theory, there is nothing that prevents you from using both in the same
-command line, although in practice, you may experience that some servers
-get a little confused when asked to compress in two different ways. It is
-generally safer to just pick one.
+command line, although in practice, you may experience that some servers get a
+little confused when asked to compress in two different ways. It is generally
+safer to pick one.
 
 ## HTTP headers
 

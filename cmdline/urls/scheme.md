@@ -43,7 +43,7 @@ incorrect format:
 
 As a convenience, curl also allows users to leave out the scheme part from
 URLs. Then it guesses which protocol to use based on the first part of the
-hostname. That guessing is basic, as it just checks if the first part of the
+hostname. That guessing is basic, as it checks if the first part of the
 hostname matches one of a set of protocols, and assumes you meant to use that
 protocol. This heuristic is based on the fact that servers traditionally used
 to be named like that. The protocols that are detected this way are FTP, DICT,

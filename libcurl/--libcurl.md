@@ -7,10 +7,10 @@ again.
 
 The `--libcurl` command-line option creates a C program in the provided file
 name. That C program is an application that uses libcurl to run the transfer
-you just had the curl command-line tool do. There are some exceptions and it
-is not always a 100% match, but you might find that it can serve as an
-excellent inspiration source for what libcurl options you want or can use and
-what additional arguments to provide to them.
+you had the curl command-line tool do. There are some exceptions and it is not
+always a 100% match, but you might find that it can serve as an excellent
+inspiration source for what libcurl options you want or can use and what
+additional arguments to provide to them.
 
 If you specify the filename as a single dash, as in `--libcurl -` you get the
 program written to stdout instead of a file.

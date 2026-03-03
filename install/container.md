@@ -46,8 +46,7 @@ Simply invoke `curl www.example.com` to make a request
 
 ## Running curl in kubernetes
 
-Sometimes it can be useful to troubleshoot k8s networking with curl, just like
-:
+Sometimes it can be useful to troubleshoot k8s networking with curl, like:
 
     kubectl run -i --tty curl --image=curlimages/curl --restart=Never \
       -- "-m 5" www.example.com

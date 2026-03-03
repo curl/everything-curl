@@ -15,7 +15,7 @@ With the name given as an IPv6 address:
 
     curl http://[fdea::1]:8080/
 
-The port number is an unsigned 16 bit number, so it has to be within the range
+The port number is an unsigned 16-bit number, so it has to be within the range
 0 to 65535.
 
 ## TCP vs UDP

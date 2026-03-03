@@ -17,8 +17,8 @@ callbacks instructing libcurl what to do with received headers and data.
 libcurl offers the `curl_easy_getinfo()` function that allows an application
 to query libcurl for information from the previously performed transfer.
 
-Sometimes an application just want to know the size of the data. The size of
-a response *as told by the server headers* can be extracted with
+Sometimes an application wants to know the size of the data. The size of a
+response *as told by the server headers* can be extracted with
 `curl_easy_getinfo()` like this:
 
     curl_off_t size;

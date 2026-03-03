@@ -2,8 +2,8 @@
 
 Having a secure connection to a server is not worth a lot if you cannot also
 be certain that you are communicating with the **correct** host. If we do not
-know that, we could just as well be talking with an impostor that just
-*appears* to be who we think it is.
+know that, we could be talking with an impostor that *appears* to be who we
+think it is.
 
 To check that it communicates with the right TLS server, curl uses a CA
 store - a set of certificates to verify the signature of the server's

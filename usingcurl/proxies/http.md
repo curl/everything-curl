@@ -61,8 +61,8 @@ You tunnel through an HTTP proxy with curl using `-p` or `--proxytunnel`.
 When you do HTTPS through a proxy you normally connect through to the default
 HTTPS remote TCP port number 443. Most HTTP proxies white list and allow
 connections only to hosts on that port number and perhaps a few others. Most
-proxies deny clients from connecting to just any random port (for reasons only
-the proxy administrators know).
+proxies deny clients from connecting to any random port (for reasons only the
+proxy administrators know).
 
 Still, assuming that the HTTP proxy allows it, you can ask it to tunnel
 through to a remote server on any port number so you can do other protocols

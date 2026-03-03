@@ -21,7 +21,7 @@ Continue downloading a previously interrupted download:
 
     curl --continue-at - http://example.com/bigfile -O
 
-If you instead just want a specific byte range from the remote resource
+If you instead want a specific byte range from the remote resource
 transferred, you can ask for only that. For example, when you only want 1000
 bytes from offset 100 to avoid having to download the entire huge remote file:
 

@@ -1,8 +1,8 @@
 # Networking simplified
 
 Networking means communicating between two endpoints on the Internet. The
-Internet is just a bunch of interconnected machines (computers really), each
-using its own individual addresses (called [IP
+Internet is a bunch of interconnected machines (computers really), each using
+its own individual addresses (called [IP
 addresses](https://en.wikipedia.org/wiki/IP_address)). The addresses each
 machine has can be of different types and machines can even have temporary
 addresses. These computers are also called hosts.
@@ -64,9 +64,9 @@ all failed.
 ## Connect to port numbers
 
 When connecting with TCP or QUIC to a remote server, a client selects which
-port number to do that on. A port number is just a dedicated place for a
-particular service, which allows that same server to listen to other services
-on other port numbers at the same time.
+port number to do that on. A port number is a dedicated place for a particular
+service, which allows that same server to listen to other services on other
+port numbers at the same time.
 
 Most common protocols have default port numbers that clients and servers
 use. For example, when using the `http://example.com/index.html` URL, that URL

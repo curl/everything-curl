@@ -29,9 +29,9 @@ Completion.
 
 ## Many easy handles
 
-Just like with the regular multi interface, you add easy handles to a multi
-handle with `curl_multi_add_handle()`. One easy handle for each transfer you
-want to perform.
+Like with the regular multi interface, you add easy handles to a multi handle
+with `curl_multi_add_handle()`. One easy handle for each transfer you want to
+perform.
 
 You can add them at any time while the transfers are running and you can also
 similarly remove easy handles at any time using the `curl_multi_remove_handle`
@@ -131,7 +131,7 @@ transfer.
 
 To kick it all off, you tell libcurl it timed out (because all easy handles
 start out with a short timeout) which make libcurl call the callbacks to set
-things up and from then on you can just let your event system drive:
+things up and from then on you can let your event system drive:
 
     /* all easy handles and callbacks are setup */
 

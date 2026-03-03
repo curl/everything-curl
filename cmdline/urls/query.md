@@ -18,9 +18,9 @@ When adding query parts, curl adds ampersand separators.
 The syntax is identical to that used by `--data-urlencode` with one extension:
 the `+` prefix. See below.
 
- - `content`: URL encode the content and add that to the query. Just be
-   careful so that the content does not contain any `=` or `@` symbols, as
-   that makes the syntax match one of the other cases below.
+ - `content`: URL encode the content and add that to the query. Be careful so
+   that the content does not contain any `=` or `@` symbols, as that makes the
+   syntax match one of the other cases below.
 
  - `=content`: URL encode the content and add that to the query. The initial
    `=` symbol is not included in the data.

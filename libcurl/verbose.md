@@ -1,9 +1,9 @@
 # Verbose operations
 
-Okay, we just showed how to get the error as a human readable text as that is
-an excellent help to figure out what went wrong in a particular transfer and
-often explains why it can be done like that or what the problem is for the
-moment.
+Okay, we previously showed how to get the error as a human readable text as
+that is an excellent help to figure out what went wrong in a particular
+transfer and often explains why it can be done like that or what the problem
+is for the moment.
 
 The next lifesaver when writing libcurl applications that everyone needs to
 know about and needs to use extensively, at least while developing libcurl

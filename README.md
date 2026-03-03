@@ -45,9 +45,9 @@ repository.
 
 ## Author
 
-With the hope of becoming just a co-author of this material, I am Daniel
-Stenberg. I founded the curl project and I am a developer at heart—for fun and
-profit. I live and work in Stockholm, Sweden.
+With the hope of becoming a co-author of this material, I am Daniel Stenberg.
+I founded the curl project and I am a developer at heart—for fun and profit. I
+live and work in Stockholm, Sweden.
 
 All there is to know about Daniel can be found on [daniel.haxx.se](https://daniel.haxx.se/).
 

@@ -1,11 +1,11 @@
 # Timeouts
 
-All internals need to be written non-blocking and cannot just hang around and
-wait for things to occur. At the same time, the multi interface allows users
-to call libcurl to perform virtually at any time, even if no action has
-happened or a timeout has triggered.
+All internals need to be written non-blocking and cannot hang around and wait
+for things to occur. At the same time, the multi interface allows users to
+call libcurl to perform virtually at any time, even if no action has happened
+or a timeout has triggered.
 
-## Exposes just a single timeout to apps
+## Exposes a single timeout to apps
 
 In the external API libcurl provides a single timeout at a time, no matter how
 many concurrent transfers and what options are set. An application can get the

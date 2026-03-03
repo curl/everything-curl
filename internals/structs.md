@@ -54,13 +54,12 @@ times.
   connection or the `Curl_easy`.
 
   As a special complexity, some protocols supported by libcurl require a
-  special disconnect procedure that is more than just shutting down the
-  socket. It can involve sending one or more commands to the server before
-  doing so. Since connections are kept in the connection cache after use, the
-  original `Curl_easy` may no longer be around when the time comes to shut
-  down a particular connection. For this purpose, libcurl holds a special
-  dummy `closure_handle` `Curl_easy` in the `Curl_multi` struct to use when
-  needed.
+  special disconnect procedure that is more than shutting down the socket. It
+  can involve sending one or more commands to the server before doing so.
+  Since connections are kept in the connection cache after use, the original
+  `Curl_easy` may no longer be around when the time comes to shut down a
+  particular connection. For this purpose, libcurl holds a special dummy
+  `closure_handle` `Curl_easy` in the `Curl_multi` struct to use when needed.
 
   FTP uses two TCP connections for a typical transfer but it keeps both in
   this single struct and thus can be considered a single connection for most

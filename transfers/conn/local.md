@@ -9,9 +9,9 @@ overrides.
 ## Local address
 
 A connection created by libcurl needs to have a source IP that routes back to
-this host. An application can not just randomly pick whatever IP address it
-wants to use and expect that to work. A network interface in the machine needs
-to have the IP address assigned.
+this host. An application can not randomly pick whatever IP address it wants
+to use and expect that to work. A network interface in the machine needs to
+have the IP address assigned.
 
 You can ask libcurl to use a non-default IP address with `CURLOPT_INTERFACE`.
 As the name hints, it is designed to get a named network interface as input
@@ -30,7 +30,7 @@ a hostname or IP number.
 
 ## Local port number
 
-By default, 16 bit random source local port numbers are used for connections,
+By default, 16-bit random source local port numbers are used for connections,
 from the so called *ephemeral port* range. An application can ask for a
 specific port range to be used with the `CURLOPT_LOCALPORT` and
 `CURLOPT_LOCALPORTRANGE` options. Since port numbers are finite resources,

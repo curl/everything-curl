@@ -23,9 +23,9 @@ The default port number for telnet is 23.
 
 ## Debugging with TELNET
 
-The fact that TELNET is basically just a simple clear-text TCP connection to
-the target host and port makes it somewhat useful to debug other protocols and
-services at times.
+The fact that TELNET is a simple clear-text TCP connection to the target host
+and port makes it somewhat useful to debug other protocols and services at
+times.
 
 Example, connect to your local HTTP server on port 80 and send a (broken)
 request to it by manually entering `GET /` and press return twice:

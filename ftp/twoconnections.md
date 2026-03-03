@@ -13,15 +13,14 @@ several reasons.
 ## Active connections
 
 The client can opt to ask the server to connect to the client to set it up, a
-so-called *active* connection. This is done with the PORT or EPRT
-commands. Allowing a remote host to connect back to a client on a port that
-the client opens up requires that there is no firewall or other network
-appliance in between that refuses that to go through and that is far from
-always the case. You ask for an active transfer using `curl -P [arg]` (also
-known as `--ftp-port` in long form) and while the option allows you to specify
-exactly which address to use, just setting the same as you come from is almost
-always the correct choice and you do that with `-P -`, like this way to ask
-for a file:
+so-called *active* connection. This is done with the PORT or EPRT commands.
+Allowing a remote host to connect back to a client on a port that the client
+opens up requires that there is no firewall or other network appliance in
+between that refuses that to go through and that is far from always the case.
+You ask for an active transfer using `curl -P [arg]` (also known as
+`--ftp-port` in long form) and while the option allows you to specify exactly
+which address to use, setting the same as you come from is almost always the
+correct choice and you do that with `-P -`, like this way to ask for a file:
 
     curl -P - ftp://example.com/foobar.txt
 
@@ -30,7 +29,7 @@ command than PORT) with the `--no-eprt` command-line option.
 
 ## Passive connections
 
-Curl defaults to asking for a *passive* connection, which means it sends a
+curl defaults to asking for a *passive* connection, which means it sends a
 PASV or EPSV command to the server and then the server opens up a new port for
 the second connection that then curl connects to. Outgoing connections to a
 new port are generally easier and less restricted for end users and clients

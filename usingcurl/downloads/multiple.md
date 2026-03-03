@@ -23,8 +23,8 @@ These examples all work the same way:
     curl -o 1.txt http://example.com/1 http://example.com/2 -o 2.txt
     curl -o 1.txt http://example.com/1 -o 2.txt http://example.com/2
 
-The `-O` is similarly just an instruction for a single download so if you
-download multiple URLs, use more of them:
+The `-O` is similarly an instruction for a single download so if you download
+multiple URLs, use more of them:
 
     curl -O -O http://example.com/1 http://example.com/2
 

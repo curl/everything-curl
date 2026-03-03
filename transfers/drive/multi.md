@@ -25,7 +25,7 @@ Adding an easy handle to the multi handle is easy:
 
     curl_multi_add_handle( multi_handle, easy_handle );
 
-Removing one is just as easily done:
+Removing one is as easily done:
 
     curl_multi_remove_handle( multi_handle, easy_handle );
 

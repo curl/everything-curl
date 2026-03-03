@@ -21,7 +21,7 @@ sysadmin provide local name lookups in the `/etc/hosts` file (or equivalent).
 
 ## International Domain Names (IDN)
 
-curl knows how to deal with IDN names and you just pass them on like you would
-a normal name:
+curl knows how to deal with IDN names and you pass them on like you would a
+normal name:
 
     curl https://räksmörgås.se

@@ -13,13 +13,18 @@ You do this by making the browser or curl tell Wireshark the encryption secrets 
 
 ![set the ssl key filename](wireshark-ssl-master-secret.png)
 
-Having done this simple operation, you can now inspect curl's or your browser's HTTPS traffic in Wireshark. Just super handy and awesome.
+Having done this simple operation, you can now inspect curl's or your
+browser's HTTPS traffic in Wireshark. Super handy and awesome.
 
-Just remember that if you record TLS traffic and want to save it for analyzing later, you need to also save the file with the secrets so that you can decrypt that traffic capture at a later time as well.
+Remember that if you record TLS traffic and want to save it for analyzing
+later, you need to also save the file with the secrets so that you can decrypt
+that traffic capture at a later time as well.
 
 ## libcurl-using applications too
 
-Support for `SSLKEYLOGFILE` is provided by libcurl itself - making it possible for you to trace and inspect the TLS network data for any application built to use libcurl - not just the curl command line tool.
+Support for `SSLKEYLOGFILE` is provided by libcurl itself - making it possible
+for you to trace and inspect the TLS network data for any application built to
+use libcurl - not only the curl command line tool.
 
 ## Restrictions
 

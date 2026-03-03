@@ -15,6 +15,6 @@ When you are done with it, clean it up:
 
     curl_url_cleanup(h);
 
-When you need a copy of a handle, just duplicate it:
+When you need a copy of a handle, duplicate it:
 
     CURLU *nh = curl_url_dup(h);

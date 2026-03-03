@@ -155,8 +155,8 @@ use - unless you set it within the `CURLOPT_PROXY` string.
 ## HTTP Proxy headers
 
 With an HTTP or HTTP proxy, libcurl issues a request to the proxy that
-includes a set of headers. An application can of course modify the headers,
-just like for requests sent to servers.
+includes a set of headers. An application can of course modify the headers
+sent to proxies similar to requests sent to servers.
 
 libcurl offers the `CURLOPT_PROXYHEADER` for controlling the headers that are
 sent to a proxy **when there is a separate request sent to the server**. This

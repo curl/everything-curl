@@ -15,7 +15,7 @@ check:
 	@proselint $(MDS)
 
 wordcheck:
-	@./mgrep $(MDS)
+	@./mgrep $(MDS) < badwords.txt
 
 fixup:
 	for i in $(MDS); do ./lang.sh $$i; done

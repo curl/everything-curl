@@ -18,10 +18,10 @@ to? That is a problem and we should fix it.
 ## Problems must be known to get fixed
 
 This may sound easy and uncomplicated but is a fundamental truth in our and
-other projects. Just because it is an old project and has thousands of users
-does not mean the development team knows about the problem you just stumbled
-into. Maybe users have not paid attention to details as much as you have, or
-perhaps it just never triggered for anyone else.
+other projects. Even if it is an old project that has thousands of users does
+not mean the development team knows about the exact problem you stumbled over.
+Maybe users have not paid attention to details as much as you have, or perhaps
+it never triggered for anyone else.
 
 We rely on users experiencing problems to report them. We need to know of
 their existence in order to fix them.

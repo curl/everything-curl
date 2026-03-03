@@ -2,7 +2,7 @@
 
 Here is an overview of the main sections of this book and what they cover.
 
-## 1. [The cURL project](project/)
+## 1. [The curl project](project/)
 
 How the project started, how we work and how often releases are made and more.
 
@@ -57,8 +57,8 @@ A closer look at doing and controlling HTTP specific transfers with libcurl.
 ## 13. [libcurl helpers](helpers/)
 
 libcurl provides a set of additional APIs, helpers, that go a little beyond
-just transfers. These are APIs and subsystems that can make your libcurl using
-application excel. Manage URLs, extract HTTP headers and more.
+plain transfers. These are APIs and subsystems that can make your libcurl
+using application excel. Manage URLs, extract HTTP headers and more.
 
 ## 14. [libcurl examples](examples/)
 

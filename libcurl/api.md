@@ -11,7 +11,7 @@ The last time we changed the API in an non-compatible way was for 7.16.0 in
 
 ## Version numbers
 
-Curl and libcurl are individually versioned, but they mostly follow each other
+curl and libcurl are individually versioned, but they mostly follow each other
 rather closely.
 
 The version numbering is always built up using the same system:
@@ -67,8 +67,8 @@ This number is also available as three separate defines:
 `LIBCURL_VERSION_MAJOR`, `LIBCURL_VERSION_MINOR` and `LIBCURL_VERSION_PATCH`.
 
 These defines are, of course, only suitable to figure out the version number
-built *just now* and do not help you figuring out which libcurl version that
-is used at runtime three years from now.
+built *now* and do not help you figuring out which libcurl version that is
+used at runtime three years from now.
 
 ## Which libcurl version runs
 

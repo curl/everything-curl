@@ -12,7 +12,7 @@ again.
 
 Later on, someone suggested that curl could actually be a clever recursive
 acronym (where the first letter in the acronym refers back to the same word):
-*Curl URL Request Library*.
+*curl URL Request Library*.
 
 While that is awesome, it was actually not the original thought. We wish we
 were that clever…
@@ -22,16 +22,16 @@ were not aware of them by the time our curl came to be.
 
 ## Uppercase or lowercase
 
-The project can be spelled with mixed case like `cURL`, even if we also often
-just write it in all lowercase: `curl`. You are free to use the version you
-like. We tend to write about the command line tool and the library with all
-lowercase: curl and libcurl.
+The project can be spelled with mixed case like `cURL`, even if we often write
+it in all lowercase: `curl`. You are free to use the version you like. We tend
+to write about the command line tool and the library with all lowercase: curl
+and libcurl.
 
 ## Pronunciation
 
-Most of us pronounce curl with an initial k sound, just like the English word
-curl. It rhymes with words like girl and earl. Merriam Webster has a [short
-WAV file](https://media.merriam-webster.com/soundc11/c/curl0001.wav) to help.
+Most of us pronounce curl with an initial k sound, like the English word curl.
+It rhymes with words like girl and earl. Merriam Webster has a [short WAV
+file](https://media.merriam-webster.com/soundc11/c/curl0001.wav) to help.
 
 ## Confusions and mix-ups
 

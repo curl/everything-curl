@@ -86,9 +86,9 @@ security vulnerabilities.
 
 For many years it has been said and people have reported that using curl to
 download URLs is difficult because they can never remember the exact command
-line options to make curl do just that: download a single URL or two into a
-local file. People would cite that as the primary reason they still use
-alternative command line tools for that use case.
+line options to make curl do that: download a single URL or two into a local
+file. People would cite that as the primary reason they still use alternative
+command line tools for that use case.
 
 wcurl is the command line tool that simply downloads URLs without the user
 having to remember any parameter at all.

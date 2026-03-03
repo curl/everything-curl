@@ -11,7 +11,7 @@ is being used when the traffic ends up in the server, making it impossible for
 the server to figure out the IP address of the client by itself.
 
 The haproxy protocol is simple. It needs to be supported by the server,
-meaning a user cannot just decide to use it with an unwilling or uncooperative
+meaning a user cannot decide to use it with an unwilling or uncooperative
 server. If it *does* support it, you can tell curl to use it to pass on its
 own IP address to the server.
 

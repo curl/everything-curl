@@ -2,10 +2,10 @@
 
 Contributing means helping out.
 
-When you contribute anything to the project—code, documentation, bug fixes,
-suggestions or just good advice—we assume you do this with permission and you
-are not breaking any contracts or laws by providing that to us. If you do not
-have permission, do not contribute it to us.
+When you contribute anything to the project - code, documentation, bug fixes,
+suggestions or good advice - we assume you do this with permission and you are
+not breaking any contracts or laws by providing that to us. If you do not have
+permission, do not contribute it to us.
 
 Contributing to a project like curl could be many different things. While
 source code is the stuff that is needed to build the products, we are also
@@ -113,9 +113,9 @@ a pull request based on your changes done to your local repository clone of
 the original curl repository.
 
 We recommend doing your work meant for a pull request in a dedicated separate
-branch and not in master, just to make it easier for you to update a pull
-request, like after review, for example, or if you realize it was a dead end and
-you decide to just throw it away.
+branch and not in master, to make it easier for you to update a pull request,
+like after review, for example, or if you realize it was a dead end and you
+decide to throw it away.
 
 ## Make a patch for the mailing list
 
@@ -128,9 +128,9 @@ A branch makes it easy to edit and rebase when you need to change things and
 it makes it easy to keep syncing to the master branch when things are updated
 upstream.
 
-Once your commits are fine enough to get sent to the mailing list, you just
-create patches with `git format-patch` and send them away. Even more fancy
-users go directly to `git send-email` and have git send the email itself.
+Once your commits are fine enough to get sent to the mailing list, you create
+patches with `git format-patch` and send them away. Even more fancy users go
+directly to `git send-email` and have git send the email itself.
 
 ## git commit style
 

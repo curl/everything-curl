@@ -9,7 +9,7 @@ installed if they are not installed by default.
 `apt` is a tool to install prebuilt packages on Debian Linux and Ubuntu Linux
 distributions and derivatives.
 
-To install the curl command-line tool, you usually just
+To install the curl command-line tool, you usually invoke
 
     apt install curl
 

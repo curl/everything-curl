@@ -8,7 +8,7 @@ your downloads.
 
 Give curl a specific filename to save the download in with `-o [filename]`
 (with `--output` as the long version of the option), where filename is either
-just a filename, a relative path to a filename or a full path to the file.
+a filename, a relative path to a filename or a full path to the file.
 
 Also note that you can put the `-o` before or after the URL; it makes no
 difference:

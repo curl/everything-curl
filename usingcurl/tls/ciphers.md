@@ -9,6 +9,6 @@ phased out over time.
 
 Using the verbose option, `-v`, you can get information about which cipher and
 TLS version are negotiated. By using the `--ciphers` option, you can change
-what cipher to prefer in the negotiation, but mind you, this is a power feature
-that takes knowledge to know how to use in ways that do not just make things
-worse.
+what cipher to prefer in the negotiation, but mind you, this is a power
+feature that takes knowledge to know how to use in ways that do not make
+things worse.

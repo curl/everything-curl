@@ -17,7 +17,7 @@ ask for, which can be absolute or relative.
 
 ## Permanent and temporary
 
-Is the redirect meant to last or it temporary? If you want a GET to
+Is the redirect meant to last or is it temporary? If you want a GET to
 permanently redirect users to resource B with another GET, send back a 301. It
 also means that the user-agent (browser) is meant to cache this and keep going
 to the new URI from now on when the original URI is requested.

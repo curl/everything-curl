@@ -137,7 +137,7 @@ Available substitute variables include:
 - `%FTP6PORT` - IPv6 port number of the FTP server
 - `%FTPPORT` - Port number of the FTP server
 - `%FTPSPORT` - Port number of the FTPS server
-- `%FTPTIME2` - Timeout in seconds that should be just sufficient to receive a
+- `%FTPTIME2` - Timeout in seconds that should be sufficient to receive a
   response from the test FTP server
 - `%FTPTIME3` - Even longer than `%FTPTIME2`
 - `%GOPHER6PORT` - IPv6 port number of the Gopher server
@@ -349,7 +349,7 @@ issue.
 
 - `auth_required` if this is set and a POST/PUT is made without auth, the
   server does NOT wait for the full request body to get sent
-- `idle` - do nothing after receiving the request, just "sit idle"
+- `idle` - do nothing after receiving the request, "sit idle"
 - `stream` - continuously send data to the client, never-ending
 - `writedelay: [msecs]` delay this amount between reply packets
 - `skip: [number]` - instructs the server to ignore reading this many bytes

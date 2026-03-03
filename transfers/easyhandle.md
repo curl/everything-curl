@@ -17,9 +17,9 @@ If `curl_easy_setopt()` returns `CURLE_OK`, we know it stored the option fine.
 Creating the easy handle and setting options on it does not make any transfer
 happen, and usually do not even make much more happen other than libcurl
 storing your wish to be used later when the transfer actually occurs. Lots of
-syntax checking and validation of the input may also be postponed, so just
-because `curl_easy_setopt` did not complain, it does not mean that the input
-was correct and valid; you may get an error returned later.
+syntax checking and validation of the input may also be postponed, so because
+`curl_easy_setopt` did not complain, it does not mean that the input was
+correct and valid; you may get an error returned later.
 
 Read more on [easy options](options/) in its separate section.
 

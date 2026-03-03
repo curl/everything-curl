@@ -42,7 +42,7 @@ the default behaviors of the [write](../transfers/callbacks/write.md) and
     fclose(file);
 
 If you only want to casually browse the headers, you may even be happy enough
-with just setting verbose mode while developing as that shows both outgoing
-and incoming headers sent to stderr:
+with setting verbose mode while developing as that shows both outgoing and
+incoming headers sent to stderr:
 
     curl_easy_setopt(easy, CURLOPT_VERBOSE, 1L);

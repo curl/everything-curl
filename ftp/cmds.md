@@ -29,7 +29,7 @@ the FTP command with a dash:
 
     curl -Q -NOOP ftp://example.com/file
 
-curl also offers to send commands after it changes the working directory, just
+curl also offers to send commands after it changes the working directory,
 **before the commands** that kick off the transfer are sent. To send command
 then, prefix the command with a '+' (plus).
 

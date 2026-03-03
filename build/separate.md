@@ -38,9 +38,9 @@ list of directories to search. Remember to run `ldconfig` after an update.
 
 ## Temporary installs
 
-If you build a libcurl and install it somewhere and you just want to use it
-for a single application or maybe just to test something out for a bit,
-editing and changing the dynamic library path might be a bit too intrusive.
+If you build a libcurl and install it somewhere and you want to use it for a
+single application or maybe to test something out for a bit, editing and
+changing the dynamic library path might be a bit too intrusive.
 
 A normal unix offers a few other alternative takes that we recommend.
 

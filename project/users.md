@@ -4,14 +4,14 @@
 
 We estimate that there are more than twenty billion curl installations in the
 world. It makes a good line to say but in reality we, of course, do not have
-any numbers that exact. We just estimate and guess based on observations and
+any numbers that exact. We estimate and guess based on observations and
 trends. It also depends on exactly what we consider "an installation". Let's
 elaborate.
 
 ## Open Source
 
-The project being Open Source and liberally licensed means that just about
-anyone can redistribute curl in source format or built into binary form.
+The project being Open Source and liberally licensed means that anyone can
+redistribute curl in source format or built into binary form.
 
 ## Counting downloads
 
@@ -51,8 +51,8 @@ your application is desirable for a lot of users, and then libcurl's great
 portability also helps: you can write more or less the same application on a
 wide variety of platforms and you can still keep using libcurl for transfers.
 
-libcurl being written in C with no or just a few required dependencies also
-help to get it used in embedded systems.
+libcurl being written in C with no or a few required dependencies also help to
+get it used in embedded systems.
 
 libcurl is popularly used in smartphone operating systems, in car infotainment
 setups, in television sets, in set-top boxes, in audio and video equipment such
@@ -81,11 +81,11 @@ backend. Facebook and Yahoo are two such sites.
 Nothing forces users to tell us they use curl or libcurl in their services or
 in their products. We usually only find out they do by accident, by reading
 about dialogues, documentation and license agreements. Of course some
-companies also just flat out tell us.
+companies actually tell us.
 
 We used to collect names of companies and products on our website of users
 that use the project's products "in commercial environments". We did this
-mostly just to show-off to other big brands that if these other guys can build
+mostly to show-off to other big brands that if these other guys can build
 products that depend on us, maybe you can, too?
 
 The list of companies contains hundreds of names, but extracting some of the

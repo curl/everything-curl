@@ -13,7 +13,7 @@ It should also be noted that some (most?) servers that support HTTP/2 for
 `HTTP://` (which in itself is not all servers) do not acknowledge the
 `Upgrade:` header on POST, for example.
 
-To ask a server to use HTTP/2, just:
+To ask a server to use HTTP/2:
 
     curl --http2 http://example.com/
 

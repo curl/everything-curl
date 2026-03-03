@@ -27,7 +27,7 @@ When you are using the multi API, the connection pool is instead kept
 associated with the multi handle. This allows you to cleanup and re-create
 easy handles freely without risking losing the connection pool, and it allows
 the connection used by one easy handle to get reused by a separate one in a
-later transfer. Just reuse the multi handle.
+later transfer. Reuse the multi handle.
 
 ## Sharing the connection cache
 
@@ -46,9 +46,9 @@ explicitly told not to. There are however several reasons why a connection is
    HTTP/2 or HTTP/3 "go away" frame.
 
  - The HTTP/1 response of a transfer is sent in such a way that a connection
-   close is the only way to detect the end of the body. Or just an HTTP/1
-   receive error that makes curl deem that it cannot safely reuse the
-   connection anymore.
+   close is the only way to detect the end of the body. Or an HTTP/1 receive
+   error that makes curl deem that it cannot safely reuse the connection
+   anymore.
 
  - The connection is deemed "dead" when libcurl tries to reuse it. It might
    happen when the server side has closed the connection after the previous

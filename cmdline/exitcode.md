@@ -42,15 +42,15 @@ A basic Unix shell script could look like something like this:
   to do this, you probably need another build of libcurl.
 
  5. Could not resolve proxy. The address of the given proxy host could not be
-  resolved. Either the given proxy name is just wrong, or the DNS server is
+  resolved. Either the given proxy name is wrong, or the DNS server is
   misbehaving and does not know about this name when it should or perhaps even
   the system you run curl on is misconfigured so that it does not find/use the
   correct DNS server.
 
  6. Could not resolve host. The given remote host's address was not resolved.
   The address of the given server could not be resolved. Either the given
-  hostname is just wrong, or the DNS server is misbehaving and does not know
-  about this name when it should or perhaps even the system you run curl on is
+  hostname is wrong, or the DNS server is misbehaving and does not know about
+  this name when it should or perhaps even the system you run curl on is
   misconfigured so that it does not find/use the correct DNS server.
 
  7. Failed to connect to host. curl managed to get an IP address to the
@@ -76,7 +76,7 @@ A basic Unix shell script could look like something like this:
   active FTP session is used, an error code was sent over the control
   connection or similar.
 
- 11. FTP weird PASS reply. Curl could not parse the reply sent to the PASS
+ 11. FTP weird PASS reply. curl could not parse the reply sent to the PASS
   request. PASS in the command curl sends the password to the server with,
   and even anonymous connections to FTP server actually sends a password - a
   fixed anonymous string. Getting a response back from this command that
@@ -89,17 +89,17 @@ A basic Unix shell script could look like something like this:
   reaching curl successfully, such as a firewall or other network
   arrangements.
 
- 13. Unknown response to FTP PASV command. Curl could not parse the reply sent
+ 13. Unknown response to FTP PASV command. curl could not parse the reply sent
   to the PASV request. This is a strange server. PASV is used to set up the
   second data transfer connection in passive mode, see the
   [FTP uses two connections](../ftp/twoconnections.md) section for more on
   that. You might be able to work-around this problem by using PORT instead,
   with the `--ftp-port` option.
 
- 14. Unknown FTP 227 format. Curl could not parse the 227-line the server sent.
-  This is most certainly a broken server. A 227 is the FTP server's response
-  when sending back information on how curl should connect back to it in
-  passive mode. You might be able to work-around this problem by using PORT
+ 14. Unknown FTP 227 format. curl could not parse the 227-line the server
+  sent. This is most certainly a broken server. A 227 is the FTP server's
+  response when sending back information on how curl should connect back to it
+  in passive mode. You might be able to work-around this problem by using PORT
   instead, with the `--ftp-port` option.
 
  15. FTP cannot get host. Could not use the host IP address we got in the
@@ -137,7 +137,7 @@ A basic Unix shell script could look like something like this:
   another error with the HTTP error code being 400 or above. This return
   code only appears if `-f, --fail` is used.
 
- 23. Write error. Curl could not write data to a local filesystem or
+ 23. Write error. curl could not write data to a local filesystem or
   similar. curl receives data chunk by chunk from the network and it stores
   it like at (or writes it to stdout), one piece at a time. If that write
   action gets an error, this is the exit status.

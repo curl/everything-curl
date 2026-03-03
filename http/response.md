@@ -13,7 +13,7 @@ specify the exact number of bytes in the response body.
 
 Some early HTTP server implementations had problems with file sizes greater
 than 2GB and wrongly managed to send Content-Length: headers with negative
-sizes or otherwise just plain wrong data. curl can be told to ignore the
+sizes or otherwise simply plain wrong data. curl can be told to ignore the
 Content-Length: header completely with `--ignore-content-length`. Doing so may
 have some other negative side-effects but should at least let you get the
 data.

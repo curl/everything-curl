@@ -14,7 +14,7 @@ then call `curl_ws_meta()` to get information about the specific frame that
 was passed to the callback.
 
 libcurl can deliver full fragments or partial ones, depending on what comes
-over the wire when. Each WebSocket fragment can be up to 63 bit in size.
+over the wire when. Each WebSocket fragment can be up to 63-bit in size.
 
 ## `curl_ws_recv`
 

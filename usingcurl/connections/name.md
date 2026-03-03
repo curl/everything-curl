@@ -47,8 +47,7 @@ for `example.com` to instead reach your localhost:
 
 You can even specify multiple `--resolve` switches to provide multiple
 redirects of this sort, which can be handy if the URL you work with uses HTTP
-redirects or if you just want to have your command line work with multiple
-URLs.
+redirects or if you want to have your command line work with multiple URLs.
 
 `--resolve` inserts the address into curl's DNS cache, so it effectively makes
 curl believe that is the address it got when it resolved the name.
@@ -71,11 +70,11 @@ provides a minor variation. It allows you to specify a replacement name and
 port number for curl to use under the hood when a specific name and port
 number is used to connect.
 
-For example, suppose you have a single site called `www.example.com` that in turn
-is actually served by three different individual HTTP servers: load1, load2
-and load3, for load balancing purposes. In a typical normal procedure, curl
-resolves the main site and gets to speak to one of the load balanced servers
-(as it gets a list back and just picks one of them) and all is well. If you
+For example, suppose you have a single site called `www.example.com` that in
+turn is actually served by three different individual HTTP servers: load1,
+load2 and load3, for load balancing purposes. In a typical normal procedure,
+curl resolves the main site and gets to speak to one of the load balanced
+servers (as it gets a list back and picks one of them) and all is well. If you
 want to send a test request to one specific server out of the load balanced
 set (`load1.example.com` for example) you can instruct curl to do that.
 

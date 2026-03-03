@@ -42,8 +42,8 @@ with `CURLOPT_WRITEDATA`:
 ## Store in memory
 
 A popular demand is to store the retrieved response in memory, and the
-callback explained above supports that. When doing this, just be careful as
-the response can potentially be enormous.
+callback explained above supports that. When doing this, recall that the
+response can potentially be enormous.
 
 You implement the callback in a manner similar to:
 

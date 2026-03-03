@@ -4,8 +4,8 @@ What if the client only wants the first 200 bytes out of a remote resource or
 perhaps 300 bytes somewhere in the middle? The HTTP protocol allows a client
 to ask for only a specific data range. The client asks the server for the
 specific range with a start offset and an end offset. It can even combine
-things and ask for several ranges in the same request by just listing a bunch
-of pieces next to each other. When a server sends back multiple independent
+things and ask for several ranges in the same request by listing a bunch of
+pieces next to each other. When a server sends back multiple independent
 pieces to answer such a request, you get them separated with mime boundary
 strings and it is up to the user application to handle that accordingly. curl
 does not further separate such a response.

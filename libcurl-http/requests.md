@@ -14,8 +14,8 @@ is usually something like GET, HEAD, POST or PUT but there are also more
 esoteric ones like DELETE, PATCH and OPTIONS.
 
 Usually when you use libcurl to set up and perform a transfer the specific
-request method is implied by the options you use. If you just ask for a URL,
-it means the method is `GET` while if you set for example `CURLOPT_POSTFIELDS`
+request method is implied by the options you use. If you ask for a URL, it
+means the method is `GET` while if you set for example `CURLOPT_POSTFIELDS`
 that makes libcurl use the `POST` method. If you set `CURLOPT_UPLOAD` to true,
 libcurl sends a `PUT` method in its HTTP request and so on. Asking for
 `CURLOPT_NOBODY` makes libcurl use `HEAD`.
@@ -38,8 +38,8 @@ When libcurl issues HTTP requests as part of performing the data transfers you
 have asked it to, it sends them off with a set of HTTP headers that are
 suitable for fulfilling the task given to it.
 
-If just given the URL `http://localhost/file1.txt`, libcurl sends the
-following request to the server:
+When given the URL `http://localhost/file1.txt`, libcurl sends the following
+request to the server:
 
     GET /file1.txt HTTP/1.1
     Host: localhost
@@ -86,9 +86,9 @@ derived from the URL you give libcurl), you can tell libcurl your own:
 ### Remove a header
 
 When you think libcurl uses a header in a request that you really think it
-should not, you can easily tell it to just remove it from the request. Like if
-you want to take away the `Accept:` header. Just provide the header name with
-nothing to the right sight of the colon:
+should not, you can easily tell it to remove it from the request. Like if you
+want to take away the `Accept:` header. Provide the header name with nothing
+to the right sight of the colon:
 
     struct curl_slist *list = NULL;
     list = curl_slist_append(list, "Accept:");
@@ -104,8 +104,8 @@ instruction and it instead completely inhibits that header from being sent. If
 you instead *truly* want to send a header with zero contents on the right
 side, you need to use a special marker. You must provide the header with a
 semicolon instead of a proper colon. Like `Header;`. If you want to add a
-header to the outgoing HTTP request that is just `Moo:` with nothing following
-the colon, you could write it like:
+header to the outgoing HTTP request that is `Moo:` with nothing following the
+colon, you could write it like:
 
     struct curl_slist *list = NULL;
     list = curl_slist_append(list, "Moo;");

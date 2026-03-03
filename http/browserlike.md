@@ -28,8 +28,8 @@ record a browser's request and easily convert that to a curl command line.
 
 Those copied curl command lines are often not good enough though since they
 tend to copy *exactly* that request, while you probably want to be a tad bit
-more dynamic so that you can reproduce the same operation and not just resend
-the verbatim request.
+more dynamic so that you can reproduce the same operation and not resend the
+verbatim request.
 
 ## Cookies
 
@@ -98,10 +98,9 @@ It is common for servers to use [redirects](redirects.md) when responding
 to a login POST. It is so common I would probably say it is rare that it is
 not solved with a redirect.
 
-You then just need to remember that curl does not follow redirects
-automatically. You need to instruct it to do this by adding the `-L` command
-line option. Adding that to the previous command line then makes the full one
-look like:
+You then need to remember that curl does not follow redirects automatically.
+You need to instruct it to do this by adding the `-L` command line option.
+Adding that to the previous command line then makes the full one look like:
 
     curl -d user=daniel -d secret=qwerty -d id=bc76 \
       https://example.com/login.cgi -b cookies -c cookies -L -o out
@@ -131,8 +130,8 @@ makes it:
 ## TLS fingerprinting
 
 Anti-bot detections nowadays use TLS fingerprinting to figure out whether a
-request is coming from a browser. Curl's fingerprint can vary depending on your
-environment and most likely is different from those of browsers. Curl's CLI
+request is coming from a browser. curl's fingerprint can vary depending on your
+environment and most likely is different from those of browsers. curl's CLI
 does not have options to change all the various parts of the fingerprint,
 however an advanced user can customize the fingerprint through the use of
 libcurl and by compiling curl from source themselves.

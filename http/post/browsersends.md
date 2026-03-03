@@ -5,8 +5,8 @@ it and check in the browser's network development tools exactly what it sent.
 
 A slightly different way is to save the HTML page containing the form, and
 then edit that HTML page to redirect the 'action=' part of the form to your
-own server or a test server that just outputs exactly what it gets. Completing
-that form submission shows you exactly how a browser sends it.
+own server or a test server that outputs exactly what it gets. Completing that
+form submission shows you exactly how a browser sends it.
 
 A third option is, of course, to use a network capture tool such as Wireshark
 to check exactly what is sent over the wire. If you are working with HTTPS,

@@ -16,8 +16,8 @@ details.
 
 ## `age`
 
-This is just a number that identifies the age of this struct. It is always 0
-now, but might increase in a future and then the struct might grow.
+This is a number that identifies the age of this struct. It is always 0 now,
+but might increase in a future and then the struct might grow.
 
 ## `flags`
 
@@ -48,9 +48,8 @@ This is an incoming ping message, that expects a pong response.
 
 ## `offset`
 
-When the data delivered is just a part of a larger fragment, this identifies
-the offset in number of bytes into the larger fragment where this piece
-belongs.
+When the data delivered as a part of a larger fragment, this identifies the
+offset in number of bytes into the larger fragment where this piece belongs.
 
 ## `bytesleft`
 

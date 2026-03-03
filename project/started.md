@@ -12,8 +12,8 @@ In order to have the provided exchange rates as accurate as possible, the bot
 would download the rates daily from a website that was hosting them. A small
 tool to download data over HTTP was needed for this task. A quick look-around
 at the time had Daniel find a tiny tool named httpget (written by the
-Brazilian developer Rafael Sagula). It did the job, almost, just needed a few
-little tweaks here and there.
+Brazilian developer Rafael Sagula). It did the job, almost, it only needed a
+few little tweaks.
 
 Rafael released HttpGet 0.1 on November 11, 1996 and already in the next
 release, called 0.2 released in December that year, Daniel had his first

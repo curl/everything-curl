@@ -7,10 +7,10 @@ them with `-d` or `-F`.
 When do you use which of them?
 
 As described in the chapters mentioned above, both these options send the
-specified data to the server. The difference is in how the data is
-formatted over the wire. Most of the time, the receiving end is written to
-expect a specific format and it expects that the sender formats and sends the
-data correctly. A client cannot just pick a format of its own choice.
+specified data to the server. The difference is in how the data is formatted
+over the wire. Most of the time, the receiving end is written to expect a
+specific format and it expects that the sender formats and sends the data
+correctly. A client cannot pick a format of its own choice.
 
 ## HTML web forms
 
@@ -37,6 +37,6 @@ you to pass in data these days in order to get things done.
 
 If these services expect plain raw data or perhaps data formatted as JSON or
 similar, you want the [regular POST](simple.md) approach. curl's `-d` option
-does not alter or encode the data at all but just sends exactly what you tell
-it to. Just pay attention that `-d` sets a default `Content-Type:` that might
-not be what you want.
+does not alter or encode the data at all but sends exactly what you tell it
+to. Pay attention that `-d` sets a default `Content-Type:` that might not be
+what you want.

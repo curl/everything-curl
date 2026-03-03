@@ -67,8 +67,8 @@ If you want to extract the local port number that was used in that connection:
 | `CURLINFO_NAMELOOKUP_TIME_T`         | `curl_off_t`          | Time from start until name resolving completed (in microseconds)              |
 | `CURLINFO_NUM_CONNECTS`              | `long`                | Number of new successful connections used for previous transfer               |
 | `CURLINFO_OS_ERRNO`                  | `long`                | The errno from the last failure to connect                                    |
-| `CURLINFO_PRETRANSFER_TIME`          | `double`              | Time from start until just before the transfer begins                         |
-| `CURLINFO_PRETRANSFER_TIME_T`        | `curl_off_t`          | Time from start until just before the transfer begins (in microseconds)       |
+| `CURLINFO_PRETRANSFER_TIME`          | `double`              | Time from start until the transfer begins                         |
+| `CURLINFO_PRETRANSFER_TIME_T`        | `curl_off_t`          | Time from start until the transfer begins (in microseconds)       |
 | `CURLINFO_PRIMARY_IP`                | `char *`              | IP address of the last connection                                             |
 | `CURLINFO_PRIMARY_PORT`              | `long`                | Port of the last connection                                                   |
 | `CURLINFO_PRIVATE`                   | `char *`              | User's private data pointer                                                   |
@@ -100,8 +100,8 @@ If you want to extract the local port number that was used in that connection:
 | `CURLINFO_SPEED_UPLOAD_T`            | `curl_off_t`          | Average upload speed                                                          |
 | `CURLINFO_SSL_ENGINES`               | `struct curl_slist *` | A list of OpenSSL crypto engines                                              |
 | `CURLINFO_SSL_VERIFYRESULT`          | `long`                | Certificate verification result                                               |
-| `CURLINFO_STARTTRANSFER_TIME`        | `double`              | Time from start until just when the first byte is received                    |
-| `CURLINFO_STARTTRANSFER_TIME_T`      | `curl_off_t`          | Time from start until just when the first byte is received (in microseconds)  |
+| `CURLINFO_STARTTRANSFER_TIME`        | `double`              | Time from start until the first byte is received                    |
+| `CURLINFO_STARTTRANSFER_TIME_T`      | `curl_off_t`          | Time from start until the first byte is received (in microseconds)  |
 | `CURLINFO_TLS_SSL_PTR`               | `struct curl_slist *` | TLS session info that can be used for further processing                      |
 | `CURLINFO_TOTAL_TIME`                | `double`              | Total time of previous transfer                                               |
 | `CURLINFO_TOTAL_TIME_T`              | `curl_off_t`          | Total time of previous transfer (in microseconds)                             |

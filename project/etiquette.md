@@ -15,8 +15,8 @@ no way to read the reply but to ask the one person the question. The one
 person consequently gets overloaded with mail.
 
 If you really want to contact an individual and perhaps pay for his or her
-services, by all means go ahead, but if it is just another curl question, take
-it to a suitable list instead.
+services, by all means go ahead, but if it is another curl question, take it
+to a suitable list instead.
 
 ## Reply or new mail
 
@@ -24,17 +24,17 @@ Please do not reply to an existing message as a shortcut to post a message to
 the lists.
 
 Many mail programs and web archivers use information within mails to keep them
-together as threads, as collections of posts that discuss a certain
-subject. If you do not intend to reply on the same or similar subject, do not
-just hit reply on an existing mail and change the subject; create a new mail.
+together as threads, as collections of posts that discuss a certain subject.
+If you do not intend to reply on the same or similar subject, do not hit reply
+on an existing mail and change the subject; create a new mail.
 
 ## Reply to the list
 
-When replying to a message from the list, make sure that you do group reply
-or reply to all, and not just reply to the author of the single mail you
-reply to.
+When replying to a message from the list, make sure that you do group reply or
+reply to all, and not reply to the author of the single mail you reply to.
 
-We are actively discouraging replying back to just a single person privately. Keep follow-ups on discussions on the list.
+We are actively discouraging replying back to a single person privately. Keep
+follow-ups on discussions on the list.
 
 ## Use a sensible subject
 
@@ -77,8 +77,8 @@ mails to your friends. We speak plain text mails.
 
 ## Quoting
 
-Quote as little as possible. Just enough to provide the context you cannot
-leave out. A lengthy description can be found
+Quote as little as possible. Enough to provide the context you cannot leave
+out. A lengthy description can be found
 [here](https://www.netmeister.org/news/learn2quote.html).
 
 ## Digest

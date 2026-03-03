@@ -17,7 +17,7 @@ wants to build curl and it does a whole bunch of things:
  - It specifies on which file path the generated installation should be placed
    when ultimately the build is made and `make install` is invoked.
 
-In the most basic usage, just running `./configure` in the source directory is
+In the most basic usage, running `./configure` in the source directory is
 enough. When the script completes, it outputs a summary of what options it has
 detected/enabled and what features that are still disabled, some of which
 possibly because it failed to detect the presence of necessary third-party

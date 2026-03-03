@@ -134,8 +134,8 @@ thus becomes `https://example.com/user/submit.cgi`. That is the URL to use in
 the curl command line.
 
 Next, you must identify every `<input>` tag used within the form, including
-the ones that are marked as hidden. Hidden just means that they are not shown
-in the webpage, but they should still be sent in the POST.
+the ones that are marked as hidden. The *hidden* property on tags means that
+they are not shown in the webpage, but they should still be sent in the POST.
 
 For every `<input>` in the form there should be a corresponding `-F` in the
 command line.

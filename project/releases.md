@@ -25,9 +25,20 @@ We had done a total of 265 releases by February 2025. The entire release
 history and changelog is available in our [curl release
 log](https://curl.se/docs/releases.html).
 
+## Release candidates
+
+Since March 2025, we have been shipping release candidates for upcoming releases.
+Release candidates are tagged with the version number followed by `-rc` and a number.
+Before every release, we ship three release candidates to allow for testing and
+verification by the community and distributions.
+
+The release candidates are available for download from [curl.se/rc](https://curl.se/rc/).
+Do not use release candidates in production, as they are intended for testing
+and verification only.
+
 ## Release cycle
 
-![The curl release cycle visualized](release-cycle.jpg)
+![The curl release cycle visualized](release-cycle.png)
 
 ## Daily snapshots
 

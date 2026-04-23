@@ -70,6 +70,7 @@
     * [Browsers](cmdline/urls/browsers.md)
     * [Many options and URLs](cmdline/urls/options.md)
     * [URL globbing](cmdline/urls/globbing.md)
+    * [Reading URLs from a file](cmdline/urls/fromfile.md)
     * [Connection reuse](cmdline/urls/connreuse.md)
     * [Parallel transfers](cmdline/urls/parallel.md)
     * [trurl](cmdline/urls/trurl.md)

@@ -89,9 +89,11 @@
 --socks5-hostname
 --speed-limit
 --speed-time
+--ssl-sessions
 --tftp-blksize
 --tftp-no-options
 --time-cond
+--tls-earlydata
 --tr-encoding
 --trace
 --trace-ascii

@@ -141,6 +141,7 @@
     * [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md)
     * [ECH](usingcurl/tls/ech.md)
     * [Built-in certificate store](usingcurl/tls/embedded-ca.md)
+    * [TLS sessions and early data](usingcurl/tls/session.md)
   * [SCP and SFTP](usingcurl/ssh/README.md)
     * [URLs](usingcurl/ssh/url.md)
     * [Authentication](usingcurl/ssh/auth.md)

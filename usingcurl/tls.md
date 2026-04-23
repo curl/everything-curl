@@ -21,3 +21,4 @@ cryptography and digital signatures.
 * [SSLKEYLOGFILE](tls/sslkeylogfile.md)
 * [ECH](tls/ech.md)
 * [Built-in certificate store](tls/embedded-ca.md)
+* [TLS sessions and early data](tls/session.md)

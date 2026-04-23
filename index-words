@@ -12,6 +12,7 @@
 --data
 --data-binary
 --data-urlencode
+--dump-ca-embed
 --ech
 --etag-compare
 --etag-save

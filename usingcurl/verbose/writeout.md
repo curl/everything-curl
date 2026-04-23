@@ -62,11 +62,11 @@ By default, this option makes the selected data get output on stdout. If that
 is not good enough, the pseudo-variable `%{stderr}` can be used to direct (the
 following) part to stderr and `%{stdout}` brings it back to stdout.
 
-Send the write-out output to a specific file instead of stderr or stdout by
-using `%output{filename}` instruction. The data following is then written to
-that file. If you would rather have curl append data to that file instead of
-creating it from scratch, prefix the filename with `>>`. Like this:
-`%output{>>filename}`.
+Send the write-out output to a specific file instead of stdout (or the
+currently selected output stream) by using the `%output{filename}`
+instruction. The data following is then written to that file. If you would
+rather have curl append data to that file instead of creating it from
+scratch, prefix the filename with `>>`. Like this: `%output{>>filename}`.
 
 A write-out argument can include output to stderr, stdout and files as the
 user sees fit.

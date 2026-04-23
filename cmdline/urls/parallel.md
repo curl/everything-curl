@@ -16,6 +16,24 @@ few of them might be slow, a few fast, this can speed things up tremendously.
 If 50 parallel transfers is wrong for you, the `--parallel-max` option is there
 to allow you to change that amount.
 
+## Reduce load on individual hosts
+
+When executing high-volume transfers in parallel, it is easy to inadvertently
+"hammer" a single server. To prevent your script from acting like a DDoS
+attack - and to avoid getting your IP blacklisted - curl provides the
+`--parallel-max-host` option. This flag allows you to cap the number of
+concurrent connections made to any single *origin*.
+
+In this context, an *origin* is defined as the unique combination of the
+protocol, hostname, and port number. By setting a limit, you ensure that even
+if you are downloading hundreds of files, curl will only open a specific
+number of "pipes" to any individual server at once.
+
+For example, to perform a parallel download while ensuring no more than 4
+connections are active to the same host at any time, use:
+
+    curl --parallel --parallel-max-host 4 --urls @download_list.txt
+
 ## Parallel transfer progress meter
 
 Naturally, the ordinary progress meter display that shows file transfer

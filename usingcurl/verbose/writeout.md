@@ -48,16 +48,25 @@ whitespace trimmed. Like this:
 
     curl -w "Server: %header{server}\n" http://example.com
 
+Starting in curl 8.17.0, you can output the contents of all occurrences of a
+header field with a specific name - even for a whole redirect "chain" - by
+appending `:all:[separator]` to the header name. The `[separator]` string (if
+not blank) is a text that gets output between each header if there are more
+than one to display. When more than one header is shown, they are output in
+the chronological order of appearance over the wire. To include a close brace
+(`}`) in the separator, escape it with a backslash: `\}`.
+
 ## Output
 
 By default, this option makes the selected data get output on stdout. If that
 is not good enough, the pseudo-variable `%{stderr}` can be used to direct (the
 following) part to stderr and `%{stdout}` brings it back to stdout.
 
-From curl 8.3.0, there is a feature that lets users send the write-out output
-to a file: `%output{filename}`. The data following is then written to that
-file. If you would rather have curl append to that file instead of creating it
-from scratch, prefix the filename with `>>`. Like this: `%output{>>filename}`.
+Send the write-out output to a specific file instead of stdout (or the
+currently selected output stream) by using the `%output{filename}`
+instruction. The data following is then written to that file. If you would
+rather have curl append data to that file instead of creating it from
+scratch, prefix the filename with `>>`. Like this: `%output{>>filename}`.
 
 A write-out argument can include output to stderr, stdout and files as the
 user sees fit.

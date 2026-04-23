@@ -44,6 +44,7 @@ output:
 
 * **Time sensitive**: While embedding certificates makes the binary more
   portable, it also means the certificates are "frozen" at the time of the
-  build. To update the set of trusted CAs, you would typically need to replace
-  the entire curl binary or override the embedded bundle using the standard
-  `--cacert` or `--ca-native` options.
+  build. To update the set of certificates for trusted certificate
+  authorities, you would typically need to replace the entire curl binary or
+  override the embedded bundle using the standard `--cacert` or `--ca-native`
+  options.

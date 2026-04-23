@@ -1,4 +1,4 @@
-# Discard recveived data
+# Discard received data
 
 Sometimes it is convenient to run a transfer but not actually store the data
 anywhere. This can be done in several ways.

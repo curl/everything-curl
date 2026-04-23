@@ -65,7 +65,8 @@ might be easier to do it with [callbacks](ws-callback.md).
                   same ? "same" : "different");
         }
         else if(meta->flags & CURLWS_TEXT) {
-          fprintf(stderr, "ws: received TEXT frame '%.*s'\n", (int)rlen, buffer);
+          fprintf(stderr, "ws: received TEXT frame '%.*s'\n",
+                  (int)rlen, buffer);
         }
         else if(meta->flags & CURLWS_BINARY) {
           fprintf(stderr, "ws: received BINARY frame of %u bytes\n",
@@ -129,7 +130,7 @@ might be easier to do it with [callbacks](ws-callback.md).
         else
           curl_easy_setopt(curl, CURLOPT_URL, "wss://example.com");
 
-        curl_easy_setopt(curl, CURLOPT_CONNECT_ONLY, 2L); /* websocket style */
+        curl_easy_setopt(curl, CURLOPT_CONNECT_ONLY, 2L);
 
         /* Perform the request, result gets the return code */
         result = curl_easy_perform(curl);

@@ -40,8 +40,8 @@ any question about whether curl should support multiple URLs on the command
 line.
 
 The command-line tool is designed to work perfectly from scripts or other
-automatic means. It does not feature any other GUI or UI other than mere text
-in and text out.
+automatic means. It does not feature any other GUI or UI than mere text in and
+text out.
 
 ## libcurl, the library
 

@@ -139,6 +139,7 @@
     * [TLS auth](usingcurl/tls/auth.md)
     * [TLS backends](usingcurl/tls/backends.md)
     * [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md)
+    * [ECH](usingcurl/tls/ech.md)
   * [SCP and SFTP](usingcurl/ssh/README.md)
     * [URLs](usingcurl/ssh/url.md)
     * [Authentication](usingcurl/ssh/auth.md)

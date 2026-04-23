@@ -12,6 +12,7 @@
 --data
 --data-binary
 --data-urlencode
+--ech
 --etag-compare
 --etag-save
 --expand
@@ -287,6 +288,7 @@ debian
 Debug callback
 development
 DICT
+ECH
 Edge
 environment variables
 ephemeral port

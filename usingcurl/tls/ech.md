@@ -45,7 +45,7 @@ accordingly, but as the DNS traffic is then not encrypted the security
 properties are weaker.
 
 Finally, your version of `curl` must be built against a TLS library that
-supports ECH, such as **OpenSSL**, **BoringSSL**, or **wolfSSL**. You can
-check if your build supports it by running `curl -V` and looking for `ECH` in
-the features list. Since it is still considered an experimental feature, you
-may need a custom-built version of the tool.
+supports ECH, such as **OpenSSL**, **BoringSSL**, **AWS-LC**, or **wolfSSL**.
+You can check if your build supports it by running `curl -V` and looking for
+`ECH` in the features list. Since it is still considered an experimental
+feature, you may need a custom-built version of the tool.

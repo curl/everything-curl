@@ -24,6 +24,7 @@ describes how that particular URI format works.
 * [Browsers](browsers.md)
 * [Many options and URLs](options.md)
 * [URL globbing](globbing.md)
+* [Reading URLs from a file](fromfile.md)
 * [Connection reuse](connreuse.md)
 * [Parallel transfers](parallel.md)
 * [trurl](trurl.md)

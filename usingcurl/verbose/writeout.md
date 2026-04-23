@@ -48,12 +48,12 @@ whitespace trimmed. Like this:
 
     curl -w "Server: %header{server}\n" http://example.com
 
-Starting in curl 8.17.0, you can output the contents of *all* header fields
-using a specific name - even for a whole redirect "chain" - by appending
-`:all:[separator]` to the header name. The `[separator]` string (if not blank)
-is a text that gets output between each header if there are more than one to
-display. When more than one header is shown, they are output in the
-chronological order of appearance over the wire. To include a close brace
+Starting in curl 8.17.0, you can output the contents of all occurrences of a
+header field with a specific name - even for a whole redirect "chain" - by
+appending `:all:[separator]` to the header name. The `[separator]` string (if
+not blank) is a text that gets output between each header if there are more
+than one to display. When more than one header is shown, they are output in
+the chronological order of appearance over the wire. To include a close brace
 (`}`) in the separator, escape it with a backslash: `\}`.
 
 ## Output

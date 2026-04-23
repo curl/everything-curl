@@ -13,6 +13,7 @@ specific data pointed to by a URL onto your machine.
   * [Use the target filename from the server](content-disp.md)
 * [HTML and charsets](charsets.md)
 * [Shell redirects](redirects.md)
+* [Discard received data](discard.md)
 * [Multiple downloads](multiple.md)
 * [My browser shows something else](browsers.md)
 * [Maximum file size](max-filesize.md)

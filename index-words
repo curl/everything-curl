@@ -56,6 +56,7 @@
 --no-epsv
 --no-keepalive
 --ntlm
+--out-null
 --output-dir
 --parallel
 --parallel-immediate

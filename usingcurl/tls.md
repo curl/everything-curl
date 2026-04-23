@@ -20,4 +20,4 @@ cryptography and digital signatures.
 * [TLS backends](tls/backends.md)
 * [SSLKEYLOGFILE](tls/sslkeylogfile.md)
 * [ECH](tls/ech.md)
-* [Built-in certificate store](embedded-ca.md)
+* [Built-in certificate store](tls/embedded-ca.md)

@@ -69,13 +69,12 @@ Combined with a session cache:
 
     curl --tls-earlydata --ssl-sessions tls-cache.txt https://example.com
 
-When this flag is active, curl will attempt to use a saved TLS session
-ticket (if one exists in its cache or if you are using a session-saving
-feature) to send the request headers immediately. If the server accepts the
-early data, the response returns much faster. If the server rejects it (which
-is a standard security fallback), curl will automatically retry the request
-using a normal handshake, so there is no risk of the connection failing
-entirely because you used the flag.
+When this flag is active, curl will attempt to use a saved TLS session ticket
+(if one exists in its cache) to send the request headers immediately. If the
+server accepts the early data, the response returns much faster. If the server
+rejects it (which is a standard security fallback), curl will automatically
+retry the request using a normal handshake, so there is no risk of the
+connection failing entirely because you used the flag.
 
 ## Security and idempotency
 

@@ -15,3 +15,14 @@ anywhere. This can be done in several ways.
 Example to view the verbose output for a full transfer:
 
     curl -v https://download.example/ --out-null
+
+If you use an older curl version that does not support `--out-null`, use the
+platform-specific null device instead:
+
+Unix-like systems:
+
+    curl -v https://download.example/ -o /dev/null
+
+Windows:
+
+    curl -v https://download.example/ -o NUL

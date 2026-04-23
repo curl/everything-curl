@@ -91,7 +91,7 @@
     * [Use the target filename from the server](usingcurl/downloads/content-disp.md)
     * [HTML and charsets](usingcurl/downloads/charsets.md)
     * [Shell redirects](usingcurl/downloads/redirects.md)
-    * [Discard received data](usingcurl/download/discard.md)
+    * [Discard received data](usingcurl/downloads/discard.md)
     * [Multiple downloads](usingcurl/downloads/multiple.md)
     * [My browser shows something else](usingcurl/downloads/browsers.md)
     * [Maximum filesize](usingcurl/downloads/max-filesize.md)

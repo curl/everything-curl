@@ -300,6 +300,8 @@
   * [Submit a login form over HTTP](examples/login.md)
   * [Get an FTP directory listing](examples/ftplist.md)
   * [Non-blocking HTTP form-post](examples/http-ul-nonblock.md)
+  * [Websocket with CONNECT_ONLY](examples/websocket.md)
+  * [Websocket using callback](examples/ws-callback.md)
 * [libcurl bindings](bindings/README.md)
 * [libcurl internals](internals/README.md)
   * [Easy handles and connections](internals/easy.md)

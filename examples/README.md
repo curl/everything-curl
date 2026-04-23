@@ -10,3 +10,5 @@ interesting and educational for users of other languages, too.
  * [Submit a login form over HTTP](login.md)
  * [Get an FTP directory listing](ftplist.md)
  * [Non-blocking HTTP form-post](http-ul-nonblock.md)
+ * [Websocket with CONNECT_ONLY](websocket.md)
+ * [Websocket using callback](ws-callback.md)

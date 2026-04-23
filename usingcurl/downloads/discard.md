@@ -11,3 +11,7 @@ anywhere. This can be done in several ways.
 
 - Use `--out-null` as a portable option to silently discard the received data
   without storing it anywhere.
+
+Example to just view the verbose output for a full transfer:
+
+    curl -v https://download.example/ --out-null

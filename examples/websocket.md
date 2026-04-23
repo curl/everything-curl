@@ -1,4 +1,4 @@
-# Basic WebSocket
+# WebSocket with CONNECT_ONLY
 
 This example sets up a WebSocket stream with libcurl, then does the rest of
 the communication using `curl_ws_recv()` and `curl_ws_send()`.

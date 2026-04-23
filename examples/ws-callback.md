@@ -1,4 +1,4 @@
-# WebSocket with callback
+# WebSocket using callback
 
 This example sets up a WebSocket download and handles all the incoming data in
 the standard write callback.

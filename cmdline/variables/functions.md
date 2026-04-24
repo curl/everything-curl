@@ -7,9 +7,9 @@ variable, like this: `{{varName:function}}`.
 Multiple functions can be applied to the variable. They are then applied in a
 left-to-right order: `{{varName:func1:func2:func3}}`
 
-These functions are available: `trim`, `json`, `url` and `b64`
+These available functions are: `trim`, `json`, `url`, `b64` and `64dec`.
 
-## Function: `trim`
+## `trim`
 
 Expands the variable without leading and trailing white space. White space is
 defined as:
@@ -24,7 +24,7 @@ This is extra useful when reading data from files.
 
     --expand-url "https://example.com/{{path:trim}}"
 
-## Function: `json`
+## `json`
 
 Expands the variable as a valid JSON string. This makes it easier to insert
 valid JSON into an argument (the quotes are not included in the resulting
@@ -37,7 +37,7 @@ To trim the variable first, apply both functions (in this order):
     --expand-json "\"full name\": \"{{varName:trim:json}}\""
 
 
-## Function: `url`
+## `url`
 
 Expands the variable URL encoded. Also known as *percent encoded*. This
 function ensures that all output characters are legal within a URL and the
@@ -50,7 +50,7 @@ To trim the variable first, apply both functions (in this order):
 
     --expand-data "varName={{varName:trim:url}}"
 
-## Function: `b64`
+## `b64`
 
 Expands the variable base64 encoded. Base64 is an encoding for binary data
 that only uses 64 specific characters.
@@ -70,3 +70,22 @@ as POST data:
         --expand-variable fix@{{HOME}}/.secret \
         --expand-data "{{fix:trim:url}}" \
         --url https://example.com/
+
+## `64dec`
+
+The opposite to `b64`: this decodes base64-encoded content. Base64 is an
+encoding for binary data that only uses 64 specific characters.
+
+    --expand-data "content={{value:64dec}}"
+
+Example: you get content using base64 encoding in the environment variable
+`FILE`, but you want to pass it on in the curl invoke as part of the URL in
+decoded form:
+
+    curl \
+        --variable %FILE \
+        --expand-url https://example.com/{{FILE:64dec}}
+
+**Note:** if `64dec` is used on content that is not valid Base64, for example
+if it contains invalid characters not part of the Base64 set, the function
+unconditionally returns the string `64dec-fail`.

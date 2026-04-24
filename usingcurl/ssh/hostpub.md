@@ -2,7 +2,7 @@
 
 The `--hostpubsha256` and `--hostpubmd5` options in curl are security features
 used specifically for **SFTP** or **SCP** transfers to verify the identity of
-the remote host. As an alternative to using [known_hosts](knownhosts.md).
+the remote host, as an alternative to using [known_hosts](knownhosts.md).
 
 When you connect to a server via SSH-based protocols, the server presents a
 public key to identify itself. These option allow you to provide a

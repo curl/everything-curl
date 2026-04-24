@@ -1,25 +1,11 @@
-# Reading email
+# IMAP
 
 There are two dominant protocols on the Internet for reading/downloading email
-from servers (at least if we do not count web based reading), and they are IMAP
-and POP3. The former being the slightly more modern alternative. curl supports
-both.
+from servers (at least if we do not count web based reading), and they are
+IMAP and [POP3](pop3.md). The former being the slightly more modern
+alternative. curl supports both.
 
-## POP3
-
-To list message numbers and sizes:
-
-    curl pop3://mail.example.com/
-
-To download message 1:
-
-    curl pop3://mail.example.com/1
-
-To delete message 1:
-
-    curl --request DELE pop3://mail.example.com/1
-
-## IMAP
+## Basics
 
 Get the mail using the UID 57 from mailbox 'stuff':
 
@@ -37,31 +23,24 @@ List the mails in the mailbox 'boring' and provide user and password:
 
     curl imap://server.example.com/boring -u user:password
 
-## TLS for emails
+## TLS for IMAP
 
-POP3 and IMAP can both be done over a secure connection and both can be done
-using either explicit or implicit TLS. The "explicit" method is probably the
-most common approach and it means that the client connects to the server using
-an insecure connection and *upgrades* it to TLS as it goes, using the
-`STARTTLS` command. You tell curl to attempt this with `--ssl` or if you want
-to *insist* on a secure connection you use `--ssl-reqd`. Like this:
+IMAP can be done over a secure connection and it can be done using either
+explicit or implicit TLS. The *explicit* method is probably the most common
+approach and it means that the client connects to the server using an insecure
+connection and *upgrades* it to TLS as it goes, using the `STARTTLS` command.
 
-    curl pop3://mail.example.com/ --ssl-reqd
+You tell curl to use this upgrade approach with `--ssl-reqd`. It says that the
+upgrade is required to work or curl will fail the transfer. There is also the
+not-recommended insecure alternative `--ssl` that *attempts* to use TLS but
+that continues even if the upgrade fails.
 
-or
-
-    curl --ssl imap://mail.example.com/inbox
-
-"Implicit" SSL means that the connection gets secured already at first
+*Implicit SSL* means that the connection gets secured already at first
 connect, which you make curl attempt by specifying a scheme in the URL that
-uses SSL. In this case either `pop3s://` or `imaps://`. For such connections,
-curl insists on connecting and negotiating a TLS connection already from the
-start, or it fails its operation.
+uses SSL. In the case of secure IMAP that means `imaps://`. For such
+connections, curl insists on connecting and negotiating a TLS connection
+already from the start, or it fails its operation.
 
 The previous explicit examples done with implicit SSL:
-
-    curl pop3s://mail.example.com/
-
-or
 
     curl imaps://mail.example.com/inbox

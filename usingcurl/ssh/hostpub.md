@@ -21,12 +21,12 @@ backend, only the **libssh2** version supports this.
 
 The primary purpose of thes flags is to prevent **Man-in-the-Middle (MITM)
 attacks**. In a typical SSH environment, host verification usually relies on a
-`known_hosts` file. However, in automated scripts or environments where you
-don't want to maintain a persistent state or a `known_hosts` file, the
+`known_hosts` file. However, in automated scripts or environments where you do
+not want to maintain a persistent state or a `known_hosts` file, the
 `--hostpub*` options allow you to "pin" the expected fingerprint directly
 within the command. This ensures that you are communicating with the specific
-server you intended, even if you've never connected to it from that particular
-machine before.
+server you intended, even if you have never connected to it from that
+particular machine before.
 
 ## Usage
 

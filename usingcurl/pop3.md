@@ -37,7 +37,7 @@ Like this:
 
 or the insecure and opportunistic approach:
 
-    curl --ssl imap://mail.example.com/inbox
+    curl --ssl pop3://mail.example.com/
 
 *Implicit SSL* means that the connection gets secured already at first
 connect, which you make curl do by specifying a scheme in the URL that uses

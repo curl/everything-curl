@@ -17,3 +17,4 @@ since it is not portable and usually only works between Unix systems.
  * [URL](url.md)
  * [Authentication](auth.md)
  * [Known hosts](knownhosts.md)
+ * [Public key verification](hostpub.md)

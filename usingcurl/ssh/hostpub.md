@@ -40,9 +40,6 @@ For SHA256:
 
     curl --hostpubsha256 "[base64 text]" sftp://example.com/file.txt
 
-While effective for legacy systems or specific compatibility requirements, it
-is important to note:
-
 ## Protocol
 
 These options only work for SFTP and SCP transfers.

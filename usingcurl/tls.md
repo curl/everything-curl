@@ -22,3 +22,4 @@ cryptography and digital signatures.
 * [ECH](tls/ech.md)
 * [Built-in certificate store](tls/embedded-ca.md)
 * [TLS sessions and early data](tls/session.md)
+* [Post-quantum](tls/post-quantum.md)

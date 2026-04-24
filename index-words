@@ -9,6 +9,7 @@
 --compressed-ssh
 --connect-timeout
 --connect-to
+--curves
 --data
 --data-binary
 --data-urlencode
@@ -364,6 +365,8 @@ PAC
 Percent-encoding
 pop3
 port number
+Post-quantum
+PQC
 Progress callback
 pronunciation
 proxy

@@ -5,9 +5,9 @@ used specifically for **SFTP** or **SCP** transfers to verify the identity of
 the remote host, as an alternative to using [known_hosts](knownhosts.md).
 
 When you connect to a server via SSH-based protocols, the server presents a
-public key to identify itself. These option allow you to provide a
+public key to identify itself. These options allow you to provide a
 **fingerprint** of that public key. curl then calculates the hash of the key
-received from the server and compare it against the string you provided; if
+received from the server and compares it against the string you provided; if
 they do not match, the connection is terminated immediately.
 
 `--hostpubmd5` is the older legacy option for this, which uses the known weak

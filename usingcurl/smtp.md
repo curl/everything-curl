@@ -1,4 +1,4 @@
-# Sending email
+# SMTP
 
 Sending email with curl is done with the SMTP protocol. SMTP stands for
 [Simple Mail Transfer

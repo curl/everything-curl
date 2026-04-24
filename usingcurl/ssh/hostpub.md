@@ -19,7 +19,7 @@ backend, only the **libssh2** version supports this.
 
 ## Why Use It?
 
-The primary purpose of thes flags is to prevent **Man-in-the-Middle (MITM)
+The primary purpose of these flags is to prevent **Man-in-the-Middle (MITM)
 attacks**. In a typical SSH environment, host verification usually relies on a
 `known_hosts` file. However, in automated scripts or environments where you do
 not want to maintain a persistent state or a `known_hosts` file, the

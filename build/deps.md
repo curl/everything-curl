@@ -46,13 +46,6 @@ to support HTTP version 2.
 This library is one option to allow curl to get support for the LDAP and LDAPS
 URL schemes. On Windows, you can also opt to build curl to use the winldap library.
 
-## librtmp
-
-<https://rtmpdump.mplayerhq.hu/>
-
-To enable curl's support for the RTMP URL scheme, you must build curl with the
-librtmp library that comes from the RTMPDump project.
-
 ## libpsl
 
 <https://rockdaboot.github.io/libpsl/>
@@ -73,7 +66,6 @@ libraries:
 
 - [libssh2](https://libssh2.org/)
 - [libssh](https://www.libssh.org/)
-- [wolfSSH](https://www.wolfssl.com/products/wolfssh/)
 
 ## TLS libraries
 

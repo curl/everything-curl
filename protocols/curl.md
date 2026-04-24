@@ -106,11 +106,6 @@ Secure POP3 is POP3 done over an SSL/TLS connection. Such connections
 implicitly start out using SSL/TLS and as such servers and clients use TCP
 port 995 to communicate with each other. See RFC 8314.
 
-## RTMP
-
-The Real-Time Messaging Protocol (RTMP) is a protocol for streaming audio,
-video and data. RTMP servers and clients use TCP port 1935.
-
 ## RTSP
 
 The Real Time Streaming Protocol (RTSP) is a network control protocol to

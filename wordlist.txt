@@ -294,7 +294,6 @@ Libre
 libre
 LibreSSL
 libressl
-librtmp
 libs
 libssh
 libSSH
@@ -450,9 +449,6 @@ Rockbox
 roffit
 rpath
 RSA
-RTMP
-rtmp
-RTMPS
 RTP
 RTSP
 rtsp

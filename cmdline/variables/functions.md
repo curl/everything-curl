@@ -73,14 +73,14 @@ as POST data:
 
 ## `64dec`
 
-The opposite to `b64`: this decodes base64-encoded content. Base64 is an
+The opposite of `b64`: this decodes base64-encoded content. Base64 is an
 encoding for binary data that only uses 64 specific characters.
 
     --expand-data "content={{value:64dec}}"
 
 Example: you get content using base64 encoding in the environment variable
-`FILE`, but you want to pass it on in the curl invoke as part of the URL in
-decoded form:
+`FILE`, but you want to pass it on in the curl invocation as part of the URL
+in decoded form:
 
     curl \
         --variable %FILE \

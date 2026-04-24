@@ -600,7 +600,6 @@ whitespace
 WinSock
 WinSSL
 Wireshark
-wolfSSH
 wolfSSL
 WS
 WSS

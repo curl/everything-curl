@@ -113,7 +113,6 @@ correct command-line options.
 
  - libssh2: `--with-libssh2`
  - libssh: `--with-libssh`
- - wolfSSH: `--with-wolfssh`
 
 These `--with-*` options also allow you to provide the install prefix so that
 configure searches for the specific library where you tell it to. Like this:

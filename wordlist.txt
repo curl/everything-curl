@@ -126,9 +126,11 @@ DNS
 dns
 DoH
 downloader
+DSA
 Dudka
 Dymond
 EBCDIC
+ECC
 ECH
 EFnet
 eg
@@ -262,6 +264,7 @@ Kamil
 Kaufmann
 keepalive
 Keil
+KEM
 Kinoite
 Kirei
 Knauf
@@ -270,6 +273,7 @@ Krb
 krb
 kubernetes
 Kuhrt
+Kyber
 Largefile
 LASTSOCKET
 LDAP
@@ -360,6 +364,7 @@ Netware
 nghttp
 ngtcp
 Nikos
+NIST
 nitems
 NixOS
 NLST
@@ -401,6 +406,7 @@ Postfix
 POSTing
 POSTs
 PowerShell
+PQC
 pre
 prebuilt
 precompiled
@@ -443,6 +449,7 @@ ROADMAP
 Rockbox
 roffit
 rpath
+RSA
 RTMP
 rtmp
 RTMPS

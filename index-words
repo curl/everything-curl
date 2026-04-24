@@ -345,7 +345,6 @@ libcurl version
 libidn2
 libpsl
 libressl
-librtmp
 libssh
 libssh2
 license
@@ -406,7 +405,6 @@ RFC 9114
 RFC 959
 roadmap
 rpath
-RTMP
 RTSP
 rustls
 rustls-ffi
@@ -443,8 +441,6 @@ variables
 Vulnerability
 wcurl
 Wireshark
-wolfssh
-wolfSSH
 wolfSSL
 Write callback
 yum

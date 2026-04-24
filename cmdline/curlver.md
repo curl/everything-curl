@@ -77,7 +77,7 @@ order that this curl build supports. All names are shown in lowercase letters.
 This list can contain these protocols:
 
 dict, file, ftp, ftps, gopher, http, https, imap, imaps, ldap, ldaps, mqtt,
-pop3, pop3s, rtmp, rtsp, scp, sftp, smb, smbs, smtp, smtps, telnet and tftp
+pop3, pop3s, rtsp, scp, sftp, smb, smbs, smtp, smtps, telnet and tftp
 
 ## Line 4: Features
 

@@ -462,7 +462,6 @@ Features testable here are:
 - `verbose-strings`
 - `wakeup`
 - `win32`
-- `wolfssh`
 - `wolfssl`
 
 in addition to all protocols that curl supports. A protocol only needs to be

@@ -22,7 +22,7 @@ implementations in the most creative ways.
   * [Options depend on version](versions.md)
   * [URLs](urls/)
   * [Config file](configfile.md)
-  * [Variables](variables.md)
+  * [Variables](variables/README.md)
   * [Passwords](passwords.md)
   * [Progress meter](progressmeter.md)
   * [Version](curlver.md)

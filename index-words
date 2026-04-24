@@ -28,6 +28,8 @@
 --haproxy-clientip
 --haproxy-protocol
 --header
+--hostpubmd5
+--hostpubsha256
 --hsts
 --http0.9
 --http1.1

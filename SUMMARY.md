@@ -148,6 +148,7 @@
     * [URLs](usingcurl/ssh/url.md)
     * [Authentication](usingcurl/ssh/auth.md)
     * [Known hosts](usingcurl/ssh/knownhosts.md)
+    * [Public key verification](usingcurl/ssh/hostpub.md)
   * [Reading email](usingcurl/reademail.md)
   * [Sending email](usingcurl/smtp.md)
   * [DICT](usingcurl/dict.md)

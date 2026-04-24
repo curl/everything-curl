@@ -5,11 +5,11 @@ Everybody else that participates or contributes in the project has thus
 arrived at a later point. Some contributors worked for a while and then left
 again. Most contributors hang around only for a short while to get their bug
 fixed or feature merged or similar. Counting all contributors we know the
-names of, we have received help from more than 3,300 individuals.
+names of, we have received help from more than 3,600 individuals.
 
 ![curl contributors](contributors-over-time.svg)
 
-More than 1,300 individuals have authored commits that have been merged into
+More than 1,450 individuals have authored commits that have been merged into
 the source code repository. Of course, many of those authors only ever
 contributed a single commit so far.
 

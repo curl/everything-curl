@@ -2,8 +2,8 @@
 
 There are two dominant protocols on the Internet for reading/downloading email
 from servers (at least if we do not count web based reading), and they are
-[IMAP](imap.md) and POP3. The former being the slightly more modern
-alternative. curl supports both.
+[IMAP](imap.md) and POP3. The former is the slightly more modern alternative.
+curl supports both.
 
 ## Basics
 

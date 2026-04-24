@@ -7,7 +7,7 @@ variable, like this: `{{varName:function}}`.
 Multiple functions can be applied to the variable. They are then applied in a
 left-to-right order: `{{varName:func1:func2:func3}}`
 
-These available functions are: `trim`, `json`, `url`, `b64` and `64dec`.
+The available functions are: `trim`, `json`, `url`, `b64` and `64dec`.
 
 ## `trim`
 

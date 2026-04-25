@@ -3,12 +3,14 @@
 
 ## A
 
+ - Accept-Encoding: [About content encodings](internals/content-encoding.md#about-content-encodings), [Conditional lines](internals/tests/file-format.md#conditional-lines)
  - --alt-svc: [Enable](http/https/altsvc.md#enable)
  - --anyauth: [Authentication](http/auth.md#authentication)
  - --append: [trurl example command lines](cmdline/urls/trurl.md#trurl-example-command-lines), [FTP and SFTP uploads](usingcurl/uploads.md#ftp-and-sftp-uploads), [Uploading with FTP](ftp/upload.md#uploading-with-ftp)
  - apt: [Ubuntu and Debian](install/linux.md#ubuntu-and-debian)
  - Arch Linux: [Arch Linux](install/linux.md#arch-linux)
  - AWS sigv4: [AWS sigv4](http/auth.md#aws-sigv4)
+ - AWS-LC: [TLS libraries](build/tls.md#tls-libraries), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions), [HTTP/3 backends](internals/backends.md#http-slash-3-backends)
  - --aws-sigv4: [AWS sigv4](http/auth.md#aws-sigv4)
 
 ## B
@@ -39,6 +41,7 @@
  - connection cache: [Connection reuse](cmdline/urls/connreuse.md#connection-reuse), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Connection cache](libcurl/caches.md#connection-cache), [All options](transfers/options/all.md#all-options), [Connection reuse](transfers/conn/reuse.md#connection-reuse), [Multi handle](helpers/sharing.md#multi-handle), [connection cache](internals/caches.md#connection-cache), [connectdata](internals/structs.md#connectdata)
  - connection pool: [Connection reuse](cmdline/urls/connreuse.md#connection-reuse), [Connection cache](libcurl/caches.md#connection-cache), [pool size](libcurl/performance.md#pool-size), [Connection reuse](transfers/conn/reuse.md#connection-reuse), [connection cache](internals/caches.md#connection-cache)
  - Connection reuse: [Connection reuse](cmdline/urls/connreuse.md#connection-reuse), [Connection cache](libcurl/caches.md#connection-cache), [threads](libcurl/performance.md#threads), [Connection reuse](transfers/conn/reuse.md#connection-reuse)
+ - Content-Disposition: [Use the target filename from the server](usingcurl/downloads/content-disp.md#use-the-target-filename-from-the-server)
  - content-encoding: [Transfer encoding](http/response.md#transfer-encoding), [Compression](http/modify/compression.md#compression), [About content encodings](internals/content-encoding.md#about-content-encodings)
  - contribute: [Code of Conduct](project/coc.md#code-of-conduct), [Contributing](source/contributing.md#contributing), [Everything curl](README.md#everything-curl)
  - Contributing: [docs](source/layout.md#docs), [Contributing](source/contributing.md#contributing)
@@ -296,17 +299,19 @@
  - libcurl version: [Line 1: curl](cmdline/curlver.md#line-1-curl), [Available exit codes](cmdline/exitcode.md#available-exit-codes), [Which libcurl version](libcurl/api.md#which-libcurl-version), [Network data conversion](transfers/callbacks/conversions.md#network-data-conversion)
  - libidn2: [libidn2](build/deps.md#libidn2)
  - libpsl: [libpsl](build/deps.md#libpsl)
- - libressl: [TLS libraries](build/tls.md#tls-libraries), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions), [HTTP/3 backends](internals/backends.md#http-slash-3-backends)
+ - LibreSSL: [TLS libraries](build/tls.md#tls-libraries), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions), [HTTP/3 backends](internals/backends.md#http-slash-3-backends)
  - libssh: [SSH libraries](build/deps.md#ssh-libraries), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
  - libssh2: [SSH libraries](build/deps.md#ssh-libraries), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
  - license: [Finding users](project/users.md#finding-users), [License](source/opensource/license.md#license), [root](source/layout.md#root), [License](README.md#license)
  - --limit-rate: [Rate limiting](usingcurl/transfers/rate-limiting.md#rate-limiting)
  - --location: [Long options](cmdline/options/long.md#long-options), [Separate options per URL](cmdline/urls/options.md#separate-options-per-url), [Syntax](cmdline/configfile.md#syntax), [Tell curl to follow redirects](http/redirects.md#tell-curl-to-follow-redirects)
+ - Location: [docs](source/layout.md#docs), [Command line options](cmdline/configfile.md#command-line-options), [Options](usingcurl/telnet.md#options)
 
 ## M
 
  - --max-filesize: [Maximum filesize](usingcurl/downloads/max-filesize.md#maximum-filesize)
  - --max-time: [Tweak your retries](usingcurl/downloads/retry.md#tweak-your-retries), [Maximum time allowed to spend](usingcurl/timeouts.md#maximum-time-allowed-to-spend)
+ - mbedTLS: [lib/vtls](source/layout.md#lib-slash-vtls), [TLS libraries](build/tls.md#tls-libraries), [All options](transfers/options/all.md#all-options), [SSL context](transfers/callbacks/sslcontext.md#ssl-context)
  - MIT: [License](source/opensource/license.md#license)
  - --mptcp: [Multipath TCP](usingcurl/connections/setup.md#multipath-tcp)
  - MQTT: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support), [MQTT](protocols/curl.md#mqtt), [Supported schemes](cmdline/urls/scheme.md#supported-schemes), [Line 3: Protocols](cmdline/curlver.md#line-3-protocols), [MQTT](usingcurl/mqtt.md#mqtt), [Variables](internals/tests/file-format.md#variables), [Test servers](internals/tests/servers.md#test-servers)

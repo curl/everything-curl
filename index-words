@@ -129,10 +129,12 @@
 .netrc
 /etc/hosts
 <curl/curl.h>
+Accept-Encoding
 ALPN
 apt
 Arch Linux
 AWS sigv4
+AWS-LC
 BearSSL
 bindings
 BoringSSL
@@ -149,6 +151,7 @@ configure
 connection cache
 connection pool
 Connection reuse
+Content-Disposition
 content-encoding
 contribute
 Contributing
@@ -344,10 +347,12 @@ LD_LIBRARY_PATH
 libcurl version
 libidn2
 libpsl
-libressl
+LibreSSL
 libssh
 libssh2
 license
+Location
+mbedTLS
 MIT
 MITM-proxies
 MQTT

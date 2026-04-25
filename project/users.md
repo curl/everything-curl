@@ -101,5 +101,5 @@ VMware, Xilinx, Yahoo, Yamaha.
 
 ## Famous high volume apps using curl
 
-The Google Youtube app, the Google Photos app, Spotify, Instagram, Skype (on
+The Google YouTube app, the Google Photos app, Spotify, Instagram, Skype (on
 Android), bundled with iOS, Grand Theft Auto V, Fortnite.

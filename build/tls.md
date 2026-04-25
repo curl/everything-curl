@@ -16,7 +16,6 @@ curl is written to work with a large number of TLS libraries:
  - OpenSSL
  - rustls
  - Schannel (native Windows)
- - Secure Transport (native macOS)
  - WolfSSL
 
 When you build curl and libcurl to use one of these libraries, it is important
@@ -69,16 +68,6 @@ configure detects mbedTLS in its default path by default. You can optionally
 point configure to a custom install path prefix where it can find mbedTLS:
 
     ./configure --with-mbedtls=/home/user/installed/mbedtls
-
-### Secure Transport
-
-    ./configure --with-secure-transport
-
-configure detects Secure Transport in its default path by default. You can
-optionally point configure to a custom install path prefix where it can find
-Secure Transport:
-
-    ./configure --with-secure-transport=/home/user/installed/darwinssl
 
 ### Schannel
 

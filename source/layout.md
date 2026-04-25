@@ -62,7 +62,6 @@ users.
 - OpenSSL
 - rustls: a TLS library written in rust
 - Schannel: the native TLS library on Windows.
-- Secure Transport: the native TLS library on macOS
 - wolfSSL
 
 ## src

@@ -84,7 +84,6 @@ automatically check for OpenSSL, but modern versions do not.
  - OpenSSL: `--with-openssl`
  - Rustls: `--with-rustls` (point to the rustls-ffi install path)
  - Schannel: `--with-schannel`
- - Secure Transport: `--with-secure-transport`
  - wolfSSL: `--with-wolfssl`
 
 If you do not specify which TLS library to use, the configure script fails. If

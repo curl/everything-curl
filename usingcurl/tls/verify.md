@@ -28,23 +28,20 @@ Operating systems like Windows and macOS tend to have their own CA stores.
 If you run curl with Schannel on Windows, curl uses Windows' own CA store by
 default.
 
-If you run curl with Secure Transport on macOS, curl uses macOS' own CA store
-by default.
-
-If you use curl with any other TLS backend than Schannel or Secure Transport,
-it uses a CA store provided in a separate file or directory, independently of
-the native CA store. However, for some of them you can still ask curl to
-instead prefer the native CA store using the `--ca-native` command line
-option. This option is supported with OpenSSL (and forks), wolfSSL and GnuTLS.
+If you use curl with any other TLS backend than Schannel, it uses a CA store
+provided in a separate file or directory, independently of the native CA
+store. However, for some of them you can still ask curl to instead prefer the
+native CA store using the `--ca-native` command line option. This option is
+supported with OpenSSL (and forks), wolfSSL and GnuTLS.
 
 For HTTPS proxies, the corresponding option is called `--proxy-ca-native`.
 
 ## CA store in file(s)
 
 If curl is not built to use a TLS library that is native to your platform
-(like Schannel or Secure Transport), it has to either have been built to know
-where the local CA store is, or users need to provide a path to the CA store
-when curl is invoked.
+(like Schannel), it has to either have been built to know where the local CA
+store is, or users need to provide a path to the CA store when curl is
+invoked.
 
 You can point out a specific CA bundle to use in the TLS handshake with the
 `--cacert` command line option. That bundle needs to be in PEM format. You can

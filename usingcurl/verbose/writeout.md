@@ -71,6 +71,17 @@ scratch, prefix the filename with `>>`. Like this: `%output{>>filename}`.
 A write-out argument can include output to stderr, stdout and files as the
 user sees fit.
 
+## Time
+
+Using `%time{format}`, you can output the current UTC time in your selected
+format. The characters within `{}` create a format string that may contain
+special character sequences called conversion specifications. Each conversion
+specification starts with `%` and is followed by a character that instructs
+curl to output a particular time detail. All other characters used are
+displayed as-is.
+
+The [list of time conversion specifiers](time-specifiers.md).
+
 ## Windows
 
 **NOTE:** In Windows, the `%`-symbol is a special symbol used to expand

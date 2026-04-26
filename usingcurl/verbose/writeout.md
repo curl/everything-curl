@@ -92,5 +92,5 @@ possible.
 
 ## Available --write-out variables
 
-[Available --write-out variables](all-variables.md)
+See the [list of available --write-out variables](all-variables.md).
 

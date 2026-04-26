@@ -89,6 +89,7 @@
   * [Verbose](usingcurl/verbose/README.md)
     * [Trace options](usingcurl/verbose/trace.md)
     * [Write out](usingcurl/verbose/writeout.md)
+      * [Available --write-out variables](usingcurl/verbose/all-variables.md)
       * [Time specifiers](usingcurl/verbose/time-specifiers.md)
   * [Downloads](usingcurl/downloads/README.md)
     * [What is downloading?](usingcurl/downloads/whatis.md)

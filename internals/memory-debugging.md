@@ -63,7 +63,7 @@ you link with the same libcurl you built for this purpose as described above.
 
 Run your program as usual. Watch the specified memory trace file grow.
 
-Make your program exit and use the proper libcurl cleanup functions etc. So
+Make your program exit and use the proper libcurl cleanup functions etc, so
 that all non-leaks are returned/freed properly.
 
 ### Analyze the Flow

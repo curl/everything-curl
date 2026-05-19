@@ -22,9 +22,10 @@ When sending SMTP with curl, there are two necessary command line options that
 
 Then, you need to provide the actual email data. This is a (text) file
 formatted according to [RFC
-5322](https://tools.ietf.org/html/rfc5322.html). It is a set of headers and a
-body. Both the headers and the body need to be correctly encoded. The headers
-typically include `To:`, `From:`, `Subject:`, `Date:` etc.
+5322](https://datatracker.ietf.org/doc/html/rfc5322.html). It is a set of
+headers and a body. Both the headers and the body need to be correctly
+encoded. The headers typically include `To:`, `From:`, `Subject:`, `Date:`
+etc.
 
 A basic command to send an email:
 

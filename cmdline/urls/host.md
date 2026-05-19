@@ -1,7 +1,7 @@
 # Host
 
-The hostname part of the URL is, of course, simply a name that can be resolved
-to a numerical IP address, or the numerical address itself.
+The hostname part of the URL is, of course, a name that can be resolved to a
+numerical IP address, or the numerical address itself.
 
     curl http://example.com
 

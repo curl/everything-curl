@@ -1,6 +1,6 @@
 # What does curl do?
 
-cURL is a project and its primary purpose and focus is to make Internet
+curl is a project and its primary purpose and focus is to make Internet
 transfer related Open Source products:
 
 - curl, the command-line tool
@@ -68,8 +68,7 @@ boxes, printers, routers, game systems, etc.
 
 Managing, parsing and handling URLs is tricky. Not only because URLs are
 insufficiently standardized so that different parsers tend to parse the same
-URL differently, but also simply because the syntax of them are hard to get
-right.
+URL differently, but also because the syntax of them are hard to get right.
 
 trurl is a command line tool to help users parse, generate and manipulate URLs
 in scripts and on command lines. By using trurl, scripts can get extract
@@ -90,5 +89,5 @@ line options to make curl do that: download a single URL or two into a local
 file. People would cite that as the primary reason they still use alternative
 command line tools for that use case.
 
-wcurl is the command line tool that simply downloads URLs without the user
-having to remember any parameter at all.
+wcurl is the command line tool that downloads URLs without the user having to
+remember any parameter at all.

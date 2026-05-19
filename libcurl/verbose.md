@@ -45,7 +45,7 @@ data passed to the callback (data in/out, header in/out, TLS data in/out and
 text), **data** is a pointer pointing to the data being **size** number of
 bytes. **user** is the custom pointer you set with `CURLOPT_DEBUGDATA`.
 
-The data pointed to by **data** is *not* null terminated, but is exactly of
+The data pointed to by **data** is *not* null-terminated, but is exactly of
 the size as told by the **size** argument.
 
 The callback must return 0 or libcurl considers it an error and aborts the

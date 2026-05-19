@@ -79,8 +79,8 @@ port 993 to communicate with each other. See RFC 8314.
 ## LDAP
 
 The Lightweight Directory Access Protocol, LDAP, is a protocol for accessing
-and maintaining distributed directory information. Basically a database
-lookup. See RFC 4511. LDAP servers and clients use TCP port 389.
+and maintaining distributed directory information. A database lookup. See RFC
+4511. LDAP servers and clients use TCP port 389.
 
 ## LDAPS
 

@@ -14,6 +14,6 @@ See [HTTP compression](../../http/modify/compression.md) for the details.
 ## For SFTP/SCP
 
 Provide the `--compressed-ssh` option on the command line and the transfer
-will automatically and transparently use compression if it can. Like:
+automatically and transparently uses compression if it can. Like:
 
     curl -O --compressed-ssh sftp://example.com/bigfile

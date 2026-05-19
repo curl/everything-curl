@@ -6,8 +6,8 @@ done by the client verifying the server's certificate.
 
 With SSH protocols there are no server certificates, but instead each server
 can provide its unique key. Unlike TLS, SSH has no certificate authorities or
-anything so the client simply has to make sure that the host's key matches
-what it already knows (via other means) it should look like.
+anything so the client has to make sure that the host's key matches what it
+already knows (via other means) it should look like.
 
 The matching of keys is typically done using hashes of the key and the file
 that the client stores the hashes for known servers is often called

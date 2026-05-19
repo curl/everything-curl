@@ -31,7 +31,7 @@ approach and it means that the client connects to the server using an insecure
 connection and *upgrades* it to TLS as it goes, using the `STARTTLS` command.
 
 You tell curl to use this upgrade approach with `--ssl-reqd`. It says that the
-upgrade is required to work or curl will fail the transfer. There is also the
+upgrade is required to work or curl fails the transfer. There is also the
 not-recommended insecure alternative `--ssl` that *attempts* to use TLS but
 that continues even if the upgrade fails.
 

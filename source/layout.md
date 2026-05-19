@@ -180,6 +180,6 @@ Handy scripts.
   THANKS document. The script uses the `THANKS-filter` file to rewrite some
   names.
 - `log2changes.pl`: generates the `CHANGES` file for releases, as used by the
-  release script. It simply converts git log output.
+  release script. It converts git log output.
 - `zsh.pl`: helper script to provide curl command-line completions to users of
   the zsh shell.

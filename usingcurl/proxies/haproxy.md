@@ -20,7 +20,7 @@ own IP address to the server.
 curl only supports the haproxy protocol v1.
 
 To pass on the actual IP address of the connection that is being used right
-now, simply add the boolean flag like this:
+now, add the boolean flag like this:
 
     curl --haproxy-protocol https://example.com/
 

@@ -1,7 +1,7 @@
 # Figure out what a browser sends
 
-A common shortcut is to simply fill in the form with your browser and submit
-it and check in the browser's network development tools exactly what it sent.
+A common shortcut is to fill in the form with your browser and submit it and
+check in the browser's network development tools exactly what it sent.
 
 A slightly different way is to save the HTML page containing the form, and
 then edit that HTML page to redirect the 'action=' part of the form to your

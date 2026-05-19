@@ -20,7 +20,7 @@ This command-line option only changes the text in the outgoing request, it
 does not change any behavior. This is particularly important if you, for
 example, ask curl to send a HEAD with `-X`, as HEAD is specified to send all
 the headers a GET response would get but *never* send a response body, even if
-the headers otherwise imply that one would come. So, adding `-X HEAD` to a
+the headers otherwise imply that one would come. Thus, adding `-X HEAD` to a
 command line that would otherwise do a GET causes curl to hang, waiting for a
 response body that does not come.
 

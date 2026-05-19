@@ -2,11 +2,10 @@
 
 Once a TCP connection has been established, that connection is defined to be
 valid until one side closes it. Once the connection has entered the connected
-state, it will remain connected indefinitely. In reality, the connection will
-not last indefinitely. Many firewalls or NAT systems close connections if
-there has been no activity in some time period. The Keep Alive signal can be
-used to refrain intermediate hosts from closing idle connection due to
-inactivity.
+state, it remains connected indefinitely. In reality, the connection does not
+last indefinitely. Many firewalls or NAT systems close connections if there
+has been no activity in some time period. The Keep Alive signal can be used to
+refrain intermediate hosts from closing idle connection due to inactivity.
 
 libcurl offers several options to enable and control TCP Keep alive for
 connections it creates. There is one main boolean option to switch the feature
@@ -14,15 +13,15 @@ on/off, and there are *three* separate options for the counters and timeouts
 involved.
 
 It can be noted that while this method tries to defeat middle boxes closing
-down idle connections, there are also such boxes that plain simply ignore keep
-alive probes. There are no guarantees that this actually works.
+down idle connections, there are also such boxes that plain ignore keep alive
+probes. There are no guarantees that this actually works.
 
 ## Enable keep alive
 
 Set the `CURLOPT_TCP_KEEPALIVE` long to 1 to enable, 0 to disable. If enabled,
-libcurl will set TCP Keep Alive options on any new TCP connection it creates
-using this handle. If it creates connections using other protocols, like UDP
-or QUIC, those connections will not be affected.
+libcurl sets TCP Keep Alive options on any new TCP connection it creates using
+this handle. If it creates connections using other protocols, like UDP or
+QUIC, those connections are not affected.
 
 ## Idle time
 

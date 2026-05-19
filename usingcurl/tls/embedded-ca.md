@@ -21,7 +21,7 @@ version of curl is trusting or extract that bundle for use with other tools.
 
 ## See what is built-in
 
-To use it, simply call curl with the flag. By default, it prints the entire
+To use it, call curl with the flag. By default, it prints the entire
 PEM-formatted CA bundle to your terminal's standard output (stdout):
 
     curl --dump-ca-embed

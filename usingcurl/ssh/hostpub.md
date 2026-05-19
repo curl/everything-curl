@@ -30,7 +30,7 @@ particular machine before.
 
 ## Usage
 
-To use it, you simply pass the hash as a string:
+To use it, you pass the hash as a string:
 
 For MD5:
 

@@ -1,6 +1,6 @@
 # Project communication
 
-cURL is an Open Source project consisting of voluntary members from all over
+curl is an Open Source project consisting of voluntary members from all over
 the world, living and working in a large number of the world's time zones. To
 make such a setup actually work, communication and openness is key. We keep
 all communication public and we use open communication channels. Most

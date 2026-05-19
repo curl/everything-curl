@@ -33,6 +33,6 @@ The given limit is the maximum *average speed* allowed during a period of
 several seconds. It means that curl might use higher transfer speeds in short
 bursts, but over time it averages to no more than the given rate.
 
-curl does not know what the maximum possible speed is — it simply goes as fast
-as it can and is allowed. You might know your connection's maximum speed, curl
-does not.
+curl does not know what the maximum possible speed is — it goes as fast as it
+can and is allowed. You might know your connection's maximum speed, curl does
+not.

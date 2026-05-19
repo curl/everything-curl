@@ -36,7 +36,7 @@ connect procedure is deemed failed if no connect has succeeded within that
 time.
 
 When libcurl has multiple addresses left to try to connect to, and there is
-more than 600 millisecond left, it will at most allow half the remaining time
+more than 600 millisecond left, it does at most allow half the remaining time
 for this attempt. This is to avoid a single sink-hole address make libcurl
 spend its entire timeout on that bad entry.
 

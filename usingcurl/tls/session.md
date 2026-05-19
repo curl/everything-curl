@@ -27,10 +27,10 @@ cookie handling (--cookie-jar), allowing you to save session tickets to a file
 and reload them later.
 
 To use it, you provide a filename where curl should read and write the session
-data. If the file exists, curl will attempt to "resume" a previous session
-with the server using the tickets stored in that file. If the file does not
-exist, curl performs a full handshake and then saves the resulting session
-ticket to the file for future use.
+data. If the file exists, curl attempts to "resume" a previous session with
+the server using the tickets stored in that file. If the file does not exist,
+curl performs a full handshake and then saves the resulting session ticket to
+the file for future use.
 
 Example:
 
@@ -69,12 +69,12 @@ Combined with a session cache:
 
     curl --tls-earlydata --ssl-sessions tls-cache.txt https://example.com
 
-When this flag is active, curl will attempt to use a saved TLS session ticket
-(if one exists in its cache) to send the request headers immediately. If the
+When this flag is active, curl attempts to use a saved TLS session ticket (if
+one exists in its cache) to send the request headers immediately. If the
 server accepts the early data, the response returns much faster. If the server
-rejects it (which is a standard security fallback), curl will automatically
-retry the request using a normal handshake, so there is no risk of the
-connection failing entirely because you used the flag.
+rejects it (which is a standard security fallback), curl automatically retries
+the request using a normal handshake, so there is no risk of the connection
+failing entirely because you used the flag.
 
 ## Security and idempotency
 

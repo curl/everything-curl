@@ -18,8 +18,8 @@ The `opensocket_callback` function must match this prototype:
                                       curlsocktype purpose,
                                       struct curl_sockaddr *address);
 
-The callback gets the *clientp* as first argument, which is simply an opaque
-pointer you set with `CURLOPT_OPENSOCKETDATA`.
+The callback gets the *clientp* as first argument, which is an opaque pointer
+you set with `CURLOPT_OPENSOCKETDATA`.
 
 The other two arguments pass in data that identifies for what *purpose* and
 *address* the socket is to be used. The *purpose* is a typedef with a value of

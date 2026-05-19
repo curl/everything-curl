@@ -21,7 +21,7 @@ curl uses for storing this.
 ## Store in another directory
 
 When the correct filename to use has been selected as explained above, you can
-still change the directory in which that file will be saved by using
+still change the directory in which that file is saved by using
 `--output-dir`. It is especially useful in combination with `-O` of course, as
 that option otherwise implies saving the file in the current directory.
 

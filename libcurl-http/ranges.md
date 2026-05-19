@@ -12,8 +12,8 @@ does not further separate such a response.
 
 However, a byte range is only a request to the server. It does not have to
 respect the request and in many cases, like when the server automatically
-generates the contents on the fly when it is being asked, it simply refuses to
-do it and it then instead respond with the full contents anyway.
+generates the contents on the fly when it is being asked, it refuses to do it
+and it then instead respond with the full contents anyway.
 
 You can make libcurl ask for a range with `CURLOPT_RANGE`. Like if you want
 the first 200 bytes out of something:

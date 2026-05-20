@@ -1,9 +1,9 @@
 # Write out
 
-`--write-out` or just `-w` for short, outputs text and information after a
-transfer is completed. It offers a large range of variables that you can
-include in the output, variables that have been set with values and
-information from the transfer.
+`--write-out` or `-w` for short, outputs text and information after a transfer
+is completed. It offers a large range of variables that you can include in the
+output, variables that have been set with values and information from the
+transfer.
 
 Instruct curl to output a string by passing plain text to this option:
 

@@ -35,7 +35,7 @@ sticks out, as no other option does...
 
 If you use libcurl from a C++ program, it is important to remember that you
 cannot pass in a string object where libcurl expects a string. It has to be a
-null terminated C string. Usually you can make this happen with the `c_str()`
+null-terminated C string. Usually you can make this happen with the `c_str()`
 method.
 
 For example, keep the URL in a string object and set that in the handle:

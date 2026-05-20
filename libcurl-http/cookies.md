@@ -64,7 +64,7 @@ you can replace an existing cookie and you can extract existing cookies.
 
 ### Add a cookie to the cookie store
 
-Add a new cookie to the cookie store by simply passing it into curl with
+Add a new cookie to the cookie store by passing it into curl with
 `CURLOPT_COOKIELIST` with a new cookie. The format of the input is a single
 line in the cookie file format, or formatted as a `Set-Cookie:` response
 header, but we recommend the cookie file style:

@@ -37,11 +37,11 @@ to have otherwise independent transfers share the same connection pool.
 
 ## When connections are not reused as you want
 
-libcurl will automatically and always try to reuse connections unless
-explicitly told not to. There are however several reasons why a connection is
+libcurl automatically and always tries to reuse connections unless explicitly
+told not to. There are however several reasons why a connection is
 *not* used for a subsequent transfer.
 
- - The server signals that the connection will be closed after this transfer.
+ - The server signals that the connection is closed after this transfer.
    For example by using the `Connection: close` HTTP response header or a
    HTTP/2 or HTTP/3 "go away" frame.
 
@@ -57,7 +57,7 @@ explicitly told not to. There are however several reasons why a connection is
    HTTP/3 traffic (like PING frames) over the connection when unattended.
 
  - The previous transfer is deemed too old to reuse. If
-   `CURLOPT_MAXLIFETIME_CONN` is set, libcurl will not reuse a connection that
+   `CURLOPT_MAXLIFETIME_CONN` is set, libcurl does not reuse a connection that
    is older than the set value in seconds.
 
  - The previous transfer is deemed having idled for too long. By default

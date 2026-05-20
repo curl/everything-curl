@@ -26,8 +26,8 @@ concurrent connections made to any single *origin*.
 
 In this context, an *origin* is defined as the unique combination of the
 protocol, hostname, and port number. By setting a limit, you ensure that even
-if you are downloading hundreds of files, curl will only open a specific
-number of "pipes" to any individual server at once.
+if you are downloading hundreds of files, curl only opens a specific number of
+"pipes" to any individual server at once.
 
 For example, to perform a parallel download while ensuring no more than 4
 connections are active to the same host at any time, use:

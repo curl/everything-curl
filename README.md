@@ -16,14 +16,13 @@ curious about and flip back and forth as you see fit.
 This book is an open source project in itself: open, completely free to
 download and read. Free for anyone to comment on, and available for everyone
 to contribute to and help out with. Send your bug reports, ideas, pull
-requests or critiques to us and I or someone else will work on improving the
-book accordingly.
+requests or critiques to us and I or someone else is going to work on improving
+the book accordingly.
 
-This book will never be finished. I intend to keep working on it. While I may
-at some point consider it fairly complete, covering most aspects of the
-project (even if only that seems like an insurmountable goal), the curl
-project will continue to move so there will always be things to update in the
-book as well.
+This book is never finished. I intend to keep working on it. While I may at some
+point consider it fairly complete, covering most aspects of the project (even if
+only that seems like an insurmountable goal), the curl project continues to move
+so there are always things to update in the book as well.
 
 This book project started at the end of September 2015.
 
@@ -54,7 +53,7 @@ All there is to know about Daniel can be found on [daniel.haxx.se](https://danie
 ## Contribute
 
 If you find mistakes, omissions, errors or blatant lies in this document,
-please send us a refreshed version of the affected paragraph and we will amend
+please send us a refreshed version of the affected paragraph and we amend
 and update. We give credit to and recognize everyone who helps out.
 
 Preferably, you could submit

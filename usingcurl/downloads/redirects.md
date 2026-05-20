@@ -25,7 +25,7 @@ redirect stderr with `2>file` like this:
 ## Mix
 
 If you specify more URLs to transfer data from than you provide storage
-options on the command line, the remaining URLs will be sent to stdout.
+options on the command line, the remaining URLs are sent to stdout.
 
 For example, getting one URL saved to a file and the next to stdout:
 

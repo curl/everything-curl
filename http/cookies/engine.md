@@ -11,9 +11,9 @@ but start off with an empty internal cookie store:
 
     curl -b "" http://example.com
 
-Simply switching on the cookie engine, getting a single resource and then
-quitting would be pointless as curl would have no chance to actually send any
-cookies it received. Assuming the site in this example would set cookies and
-then do a redirect we would do:
+Switching on the cookie engine, getting a single resource and then quitting
+would be pointless as curl would have no chance to actually send any cookies
+it received. Assuming the site in this example would set cookies and then do a
+redirect we would do:
 
     curl -L -b "" http://example.com

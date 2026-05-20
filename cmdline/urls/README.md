@@ -7,7 +7,7 @@ starting with www.
 
 URL is, strictly speaking, the former name for these. URI (Uniform Resource
 Identifier) is the more modern and correct name for them. The syntax is
-defined in [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
+defined in [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986).
 
 Where curl accepts a “URL” as input, it is then really a “URI”. Most of the
 protocols curl understands also have a corresponding URI syntax document that

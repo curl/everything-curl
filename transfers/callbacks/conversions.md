@@ -5,7 +5,7 @@ work on non-ASCII platforms. **The support for these callbacks have since been
 removed.**
 
 The documentation below is kept here for a while and describes how they used
-to work. It will be removed from this book at a future date.
+to work. It is removed from this book at a future date.
 
 ## Convert to and from network callbacks
 

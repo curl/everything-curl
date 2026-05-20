@@ -29,7 +29,7 @@ milliseconds by default), curl starts a *second* Happy Eyeballs scenario for
 TCP - first IPv6 TCP and then IPv4 TCP after the timeout.
 
 The first connect attempt that succeeds out of the up to four parallel ones
-that are running, wins. The "losers" are then simply discarded.
+that are running, wins. The "losers" are then discarded.
 
 ## Tweak
 

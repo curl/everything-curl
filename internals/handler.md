@@ -50,9 +50,8 @@ After a connection has been established, this function gets called
 
 ## Do
 
-*Do* is simply the action that issues a request for the particular resource
-the URL identifies. All protocol has a do action so this function must be
-provided:
+*Do* is the action that issues a request for the particular resource the URL
+identifies. All protocol has a do action so this function must be provided:
 
     result = conn->handler->do_it(data, &done);
 

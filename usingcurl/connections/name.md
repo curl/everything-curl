@@ -19,9 +19,9 @@ The `Host:` header is the normal way an HTTP client tells the HTTP server which
 server it speaks to, as typically an HTTP server serves many different names
 using the same software instance.
 
-So, by passing in a custom modified `Host:` header you can have the
-server respond with the contents of the site even when you did not actually
-connect to that hostname.
+Thus, by passing in a custom modified `Host:` header you can have the server
+respond with the contents of the site even when you did not actually connect
+to that hostname.
 
 For example, you run a test instance of your main site `www.example.com` on
 your local machine and you want to have curl ask for the index html:

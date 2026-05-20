@@ -38,7 +38,7 @@ bugs were fixed.
 
 Bumping, as in increasing the number with 1, is unconditionally only affecting
 one of the numbers (and the ones to the right of it are set to zero). 1
-becomes 2, 3 becomes 4, 9 becomes 10, 88 becomes 89 and 99 becomes 100. So,
+becomes 2, 3 becomes 4, 9 becomes 10, 88 becomes 89 and 99 becomes 100. Thus,
 after 1.2.9 comes 1.2.10. After 3.99.3, 3.100.0 might come.
 
 All original curl source release archives are named according to the libcurl

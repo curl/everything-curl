@@ -13,7 +13,7 @@ specify the exact number of bytes in the response body.
 
 Some early HTTP server implementations had problems with file sizes greater
 than 2GB and wrongly managed to send Content-Length: headers with negative
-sizes or otherwise simply plain wrong data. curl can be told to ignore the
+sizes or otherwise plain wrong data. curl can be told to ignore the
 Content-Length: header completely with `--ignore-content-length`. Doing so may
 have some other negative side-effects but should at least let you get the
 data.
@@ -98,8 +98,8 @@ in the section above. HTTP was originally intended and specified to allow
 transparent compression as a transfer encoding, and curl supports this
 feature.
 
-The client then simply asks the server to do compression transfer encoding and
-if acceptable, it responds with a header indicating that it does and curl then
+The client then asks the server to do compression transfer encoding and if
+acceptable, it responds with a header indicating that it does and curl then
 transparently decompresses that data on arrival. A curl user asks for a
 compressed transfer encoding with `--tr-encoding`:
 

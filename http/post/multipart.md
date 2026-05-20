@@ -164,9 +164,9 @@ the path to the file to include:
 ### hidden input
 
 A common technique to pass on state from a form is to set a number of
-`<input>` tags as `type="hidden"`. This is basically the same thing as an
-already filled in form field, so you convert this to a command line by using
-the name and value. For example:
+`<input>` tags as `type="hidden"`. This is the same thing as an already filled
+in form field, so you convert this to a command line by using the name and
+value. For example:
 
     <input type="hidden" name="username" value="bob123">
 

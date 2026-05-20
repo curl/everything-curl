@@ -30,10 +30,10 @@ the hostname and ends either at the end of the URL or at a '?' or '#'
 
 If you include substrings including `/../` or `/./` in the path, curl
 automatically squashes them before the path is sent to the server, as is
-dictated by standards and how such strings tend to work in local file
-systems. The `/../` sequence removes the previous section so that
-`/hello/sir/../` ends up just `/hello/` and `/./` is simply removed so that
-`/hello/./sir/` becomes `/hello/sir/`.
+dictated by standards and how such strings tend to work in local file systems.
+The `/../` sequence removes the previous section so that `/hello/sir/../` ends
+up `/hello/` and `/./` is removed so that `/hello/./sir/` becomes
+`/hello/sir/`.
 
 To *prevent* curl from squashing those magic sequences before they are sent to
 the server and thus allow them through, the `--path-as-is` option exists.

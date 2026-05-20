@@ -25,7 +25,7 @@ of header data passed into it. This usually means 100KB.
 
 This function may be called with zero bytes data if the transferred file is empty.
 
-The data passed to this function is not be zero terminated. You cannot, for
+The data passed to this function is not be null-terminated. You cannot, for
 example, use printf's `%s` operator to display the contents nor strcpy to copy
 it.
 

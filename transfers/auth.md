@@ -5,8 +5,8 @@ providing any credentials at all. You could perhaps call it *anonymously*.
 
 For FTP transfers, libcurl then uses a default user and password as the
 convention tells us, while with some other protocols like SFTP and SCP the
-transfer is most likely to simply fail. Authentication is simply mandatory for
-some transfers.
+transfer is most likely to fail. Authentication is mandatory for some
+transfers.
 
 Authentication for libcurl means credentials (user + password) and in some
 cases an additional method: letting the application select what authentication
@@ -25,16 +25,16 @@ can.
 
 ## Username
 
-Set the username with `CURLOPT_USERNAME`, as a plain null terminated C string.
+Set the username with `CURLOPT_USERNAME`, as a plain null-terminated C string.
 
 The older option called `CURLOPT_USERPWD` is better avoided, for the simple
 reason that it wants username and password in the same string, colon
 separated, which easily cause problems if either the name or the password
-contain a colon. Which can be tricky to guarantee never will happen.
+contain a colon. Which can be tricky to guarantee to never happen.
 
 ## Password
 
-Set the password to use with `CURLOPT_PASSWORD`, as a plain null terminated C
+Set the password to use with `CURLOPT_PASSWORD`, as a plain null-terminated C
 string.
 
 ## Method

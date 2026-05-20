@@ -1,9 +1,9 @@
 # Drive with easy
 
-The name 'easy' was picked simply because this is really the easy way to use
-libcurl, and with easy, of course, comes a few limitations. Like, for example,
-that it can only do one transfer at a time and that it does the entire transfer in
-a single function call and returns once it is completed:
+The name 'easy' was picked because this is really the easy way to use libcurl,
+and with easy, of course, comes a few limitations. Like, for example, that it
+can only do one transfer at a time and that it does the entire transfer in a
+single function call and returns once it is completed:
 
     res = curl_easy_perform( easy_handle );
 

@@ -1,7 +1,7 @@
 # Expect 100-continue
 
 HTTP/1 has no proper way to stop an ongoing transfer (in any direction) and
-still maintain the connection. So, if we figure out that the transfer had
+still maintain the connection. Thus, if we figure out that the transfer had
 better stop after the transfer has started, there are only two ways to
 proceed: cut the connection and pay the price of reestablishing the connection
 again for the next request, or keep the transfer going and waste bandwidth but

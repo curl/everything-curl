@@ -6,9 +6,9 @@ Specification](https://url.spec.whatwg.org/).
 
 This is important because the two URL standards are not the same. They are not
 completely compatible, even though in most daily use those differences rarely
-show. Sometimes, a URL interpreted according to one of the specs will be
-handled differently when interpreted by the other spec. As such, curl and
-browsers do not always treat URLs the same way.
+show. Sometimes, a URL interpreted according to one of the specs are handled
+differently when interpreted by the other spec. As such, curl and browsers do
+not always treat URLs the same way.
 
 The WHATWG spec is also *changing* over time.
 
@@ -31,8 +31,7 @@ like non-Latin symbols and more, but it usually goes beyond that, too, as they
 tend to, for example, handle spaces and do magic things on percent encoding in
 ways none of these mentioned specifications say a client should do.
 
-The address bar is quite simply an interface for humans to enter and see
-URI-like strings.
+The address bar is an interface for humans to enter and see URI-like strings.
 
 Sometimes the differences between what you see in a browser's address bar and
 what you can pass into curl is significant.

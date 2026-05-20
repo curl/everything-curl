@@ -23,7 +23,7 @@ completely inappropriate as a means of measurement.
 
 ## Finding users
 
-So, we cannot count downloads and anyone may redistribute it and nobody is
+Thus, we cannot count downloads and anyone may redistribute it and nobody is
 forced to tell us they use curl. How can we figure out the numbers? How can we
 figure out the users? The answer is that we really cannot with any decent
 level of accuracy.

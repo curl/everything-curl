@@ -15,8 +15,7 @@ have the IP address assigned.
 
 You can ask libcurl to use a non-default IP address with `CURLOPT_INTERFACE`.
 As the name hints, it is designed to get a named network interface as input
-and it will then attempt to use that interface's IP address for outgoing
-traffic.
+and it then attempts to use that interface's IP address for outgoing traffic.
 
 The name can however instead be an IP address or a hostname, even though **we
 do not recommend using those versions**.
@@ -34,6 +33,6 @@ By default, 16-bit random source local port numbers are used for connections,
 from the so called *ephemeral port* range. An application can ask for a
 specific port range to be used with the `CURLOPT_LOCALPORT` and
 `CURLOPT_LOCALPORTRANGE` options. Since port numbers are finite resources,
-narrowing the selection of ports to select from will increase the risk that
-the connection cannot be setup if none of the attempted port numbers are
-currently available to be used.
+narrowing the selection of ports to select from increases the risk that the
+connection cannot be setup if none of the attempted port numbers are currently
+available to be used.

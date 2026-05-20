@@ -14,7 +14,7 @@ servers can return the listing using slightly different layouts.
 
 One way to get a listing of all the names in a directory and thus to avoid the
 special formatting of the regular directory listings is to tell curl to
-`--list-only` (or just `-l`). curl then issues the `NLST` FTP command instead:
+`--list-only` (or `-l`). curl then issues the `NLST` FTP command instead:
 
     curl --list-only ftp://ftp.example.com/directory/
 

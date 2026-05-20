@@ -71,8 +71,8 @@ transfers skip unnecessary loading and parsing time that comes from loading
 and handling the sometimes rather big CA cert bundles.
 
 Since the CA cert bundle might be updated, the life-time of the cache is by
-default set to 24 hours so that long-running applications will flush the cache
-and reload the file at least once every day - to be able to load and use a new
+default set to 24 hours so that long-running applications flush the cache and
+reload the file at least once every day - to be able to load and use a new
 version of the store.
 
 Applications can change the CA cert cache timeout with the

@@ -81,8 +81,8 @@ times.
   `->easyp` and `->num_easy` is a counter of added `Curl_easy`s.
 
   `->msglist` is a linked list of messages to send back when
-  [`curl_multi_info_read()`][14] is called. Basically a node is added to that
-  list when an individual `Curl_easy`'s transfer has completed.
+  [`curl_multi_info_read()`][14] is called. A node is added to that list when
+  an individual `Curl_easy`'s transfer has completed.
 
   `->hostcache` points to the name cache. It is a hash table for looking up
   name to IP. The nodes have a limited lifetime in there and this cache is

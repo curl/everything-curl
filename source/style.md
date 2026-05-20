@@ -12,8 +12,8 @@ Our C code has a few style rules. Most of them are verified and upheld by the
 `checksrc.pl` script. Invoked with `make checksrc` or even by default by the
 build system when built after `./configure --enable-debug` has been used.
 
-It is normally not a problem for anyone to follow the guidelines as you simply
-need to mimic the style already used in the source code, and there are no
+It is normally not a problem for anyone to follow the guidelines as you need
+to mimic the style already used in the source code, and there are no
 particularly unusual rules in our set of rules.
 
 We also work hard on writing code that is warning-free on all the major

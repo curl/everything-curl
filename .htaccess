@@ -1,0 +1,16 @@
+RedirectMatch "^/.git" https://everything.curl.dev/
+
+Header set Content-Security-Policy: "upgrade-insecure-requests; block-all-mixed-content; default-src 'none'; img-src 'self'; script-src 'unsafe-inline' 'self'; style-src 'unsafe-inline' 'self'; form-action 'self'; frame-ancestors 'none'; require-trusted-types-for 'script';"
+Header set Cross-Origin-Embedder-Policy: "require-corp"
+Header set Cross-Origin-Opener-Policy: "same-origin"
+Header set Cross-Origin-Resource-Policy: "same-origin"
+Header set Permissions-Policy: "accelerometer=(), ambient-light-sensor=(), aria-notify=(), autoplay=(), bluetooth=(), camera=(), captured-surface-control=(), ch-ua-high-entropy-values=(), compute-pressure=(), cross-origin-isolated=(), deferred-fetch=(), deferred-fetch-minimal=(), display-capture=(), encrypted-media=(), fullscreen=(), gamepad=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), language-detector=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), on-device-speech-recognition=(), otp-credentials=(), payment=(), picture-in-picture=(), private-state-token-issuance=(), private-state-token-redemption=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), speaker-selection=(), storage-access=(), summarizer=(), translator=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()"
+Header set Referrer-Policy: "strict-origin"
+Header set X-Content-Type-Options: "nosniff"
+Header set X-Frame-Options: "deny"
+
+# Don't set CSP and CORP on CSS files because they are also loaded from other domains
+<FilesMatch ".+\.(css|jpg|png|gif|txt|zip|mp3)$">
+Header unset Content-Security-Policy:
+Header unset Cross-Origin-Resource-Policy:
+</FilesMatch>

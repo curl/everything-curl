@@ -16,6 +16,6 @@ because the server sent the characters using charset X, while your editor and
 environment use charset Y. In an ideal world, we would all use UTF-8
 everywhere but unfortunately, that is still not the case.
 
-A common work-around for this issue that works decently is to use the
+A common workaround for this issue that works decently is to use the
 common `iconv` utility to translate a text file to and from different
 charsets.

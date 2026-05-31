@@ -63,7 +63,7 @@ A basic Unix shell script could look like something like this:
  8. Unknown FTP server response. The server sent data curl could not
   parse. This is either because of a bug in curl, a bug in the server or
   because the server is using an FTP protocol extension that curl does not
-  support. The only real work-around for this is to tweak curl options to try
+  support. The only real workaround for this is to tweak curl options to try
   to get it to use other FTP commands that perhaps do not get this unknown
   server response back.
 
@@ -93,13 +93,13 @@ A basic Unix shell script could look like something like this:
   to the PASV request. This is a strange server. PASV is used to set up the
   second data transfer connection in passive mode, see the
   [FTP uses two connections](../ftp/twoconnections.md) section for more on
-  that. You might be able to work-around this problem by using PORT instead,
+  that. You might be able to work around this problem by using PORT instead,
   with the `--ftp-port` option.
 
  14. Unknown FTP 227 format. curl could not parse the 227-line the server
   sent. This is most certainly a broken server. A 227 is the FTP server's
   response when sending back information on how curl should connect back to it
-  in passive mode. You might be able to work-around this problem by using PORT
+  in passive mode. You might be able to work around this problem by using PORT
   instead, with the `--ftp-port` option.
 
  15. FTP cannot get host. Could not use the host IP address we got in the
@@ -177,7 +177,7 @@ A basic Unix shell script could look like something like this:
  31. FTP could not use REST. The REST command failed. This command is used for
   resumed FTP transfers. curl needs to issue the REST command to do range or
   resumed transfers. The server is broken, try the same operation without
-  range/resume as a crude work-around.
+  range/resume as a crude workaround.
 
  32. **Not used**
 

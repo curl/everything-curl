@@ -32,7 +32,7 @@ the Windows way. Perhaps the four most notable details are:
   destroying binary data, although you do want that conversion if it is text
   coming through... (sigh)
 
-  We set stdout to binary under windows
+  We set stdout to binary under Windows
 
 ## Ifdefs
 

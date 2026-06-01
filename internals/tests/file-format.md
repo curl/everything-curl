@@ -133,7 +133,7 @@ Available substitute variables include:
 - `%CLIENT6IP` - IPv6 address of the client running curl
 - `%CLIENTIP` - IPv4 address of the client running curl
 - `%CURL` - Path to the curl executable
-- `%FILE_PWD` - Current directory, on windows prefixed with a slash
+- `%FILE_PWD` - Current directory, on Windows prefixed with a slash
 - `%FTP6PORT` - IPv6 port number of the FTP server
 - `%FTPPORT` - Port number of the FTP server
 - `%FTPSPORT` - Port number of the FTPS server

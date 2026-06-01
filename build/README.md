@@ -83,7 +83,7 @@ mentioned ways, [the CMake approach](cmake.md) and using
 [configure](autotools.md) with msys work, but the more popular and
 common methods are probably building with Microsoft's Visual Studio compiler
 using either `nmake` or project files. See the build on
-[windows](windows.md) section.
+[Windows](windows.md) section.
 
 ## Learn more
 

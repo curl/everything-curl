@@ -47,9 +47,9 @@ You can point out a specific CA bundle to use in the TLS handshake with the
 `--cacert` command line option. That bundle needs to be in PEM format. You can
 also set the environment variable `CURL_CA_BUNDLE` to the full path.
 
-## CA store on windows
+## CA store on Windows
 
-curl built on windows that is not using the native TLS library (Schannel),
+curl built on Windows that is not using the native TLS library (Schannel),
 have an extra sequence for how the CA store can be found and used.
 
 curl searches for a CA cert file named `curl-ca-bundle.crt` in these

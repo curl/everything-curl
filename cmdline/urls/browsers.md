@@ -25,7 +25,7 @@ the URLs and the URL format it supported back in 1998. The browsers do not.
 ## Browsers' address bar
 
 When you use a modern web browser, the address bar they tend to feature at the
-top of their main windows are not using URLs or even URIs. They are in fact
+top of their main Windows are not using URLs or even URIs. They are in fact
 mostly using IRIs, which is a superset of URIs to allow internationalization
 like non-Latin symbols and more, but it usually goes beyond that, too, as they
 tend to, for example, handle spaces and do magic things on percent encoding in

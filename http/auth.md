@@ -56,9 +56,9 @@ ask for those methods too specifically:
     curl --negotiate --user daniel:secret http://example.com/
     curl --ntlm --user daniel:secret http://example.com/
 
-## AWS sigv4
+## AWS SigV4
 
-The defacto authentication standard *AWS sigv4* is a little different than the
+The defacto authentication standard *AWS SigV4* is a little different than the
 other HTTP authentication mechanisms and thus you also use it differently.
 
 This option takes an additional string argument where you provide one or more

@@ -53,4 +53,4 @@ status if you call it while the transfer is still in progress.
 
  - [Header struct](struct.md)
  - [Get a header](get.md)
- - [Iterate of headers](iterate.md)
+ - [Iterate over headers](iterate.md)

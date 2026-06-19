@@ -69,6 +69,8 @@ find the matching password for that machine and login combination.
 
 `-n, --netrc` tells curl to look for and use the .netrc file.
 
+If the `NETRC` environment variable is set, that filename is used as the netrc file.
+
 `--netrc-file [file]` is similar to `--netrc`, except that you also provide
 the path to the actual file to use. This is useful when you want to provide
 the information in another directory or with another filename.

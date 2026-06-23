@@ -3,12 +3,12 @@
 A plain GET subscribes to the topic and prints all published messages.
 Doing a POST publishes the post data to the topic and exits.
 
-Subscribe to the temperature in the `home/bedroom` subject published by
+Subscribe to the temperature in the `home/bedroom` topic published by
 example.com:
 
     curl mqtt://example.com/home/bedroom/temp
 
-Send the value `75` to the `home/bedroom/dimmer` subject hosted by the
+Send the value `75` to the `home/bedroom/dimmer` topic hosted by the
 example.com server:
 
     curl -d 75 mqtt://example.com/home/bedroom/dimmer
@@ -20,7 +20,7 @@ payload.
 
 ## Caveats
 
-Remaining limitations in curl's MQTT support as of September 2022:
+Remaining limitations in curl's MQTT support:
 
  - Only QoS level 0 is implemented for publish
  - No way to set retain flag for publish

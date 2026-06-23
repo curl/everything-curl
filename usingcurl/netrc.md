@@ -16,9 +16,9 @@ The .netrc file format is simple: you specify lines with a machine name and foll
 
 Each field is provided as a sequence of letters that ends with a space or
 newline. Since 7.84.0, curl also supports quoted strings. They start and end
-with double quotes (`"`) and support the escaped special letters `\"`,
-(newline), (carriage return), and (TAB). Quoted strings are the only way a
-space character can be used in a username or password.
+with double quotes (`"`) and support the escaped special letters `\"`, `\n`,
+`\r`, and `\t`. Quoted strings are the only way a space character can be used
+in a username or password.
 
 **machine name**
 
@@ -32,16 +32,16 @@ This is the same as machine name except that `default` matches any name. There c
 
 **login name**
 
-The username string for the remote machine. You cannot use a space in the
-name.
+The username string for the remote machine. You cannot use a space in an
+unquoted name but spaces are supported when using a name as a quoted string.
 
 **password string**
 
 Supply a password. If this token is present, curl supplies the specified
-string if the remote server requires a password as part of the login
-process. Note that if this token is present in the .netrc file you really
-**should** make sure the file is not readable by anyone besides the user. You
-cannot use a space when you enter the password.
+string if the remote server requires a password as part of the login process.
+Note that if this token is present in the .netrc file you really **should**
+make sure the file is not readable by anyone besides the user. You cannot use
+a space in an unquoted password; use a quote string to include spaces.
 
 **macdef name**
 

@@ -24,4 +24,3 @@ Remaining limitations in curl's MQTT support as of September 2022:
 
  - Only QoS level 0 is implemented for publish
  - No way to set retain flag for publish
- - No TLS (mqtts) support

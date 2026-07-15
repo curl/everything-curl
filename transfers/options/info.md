@@ -1,14 +1,14 @@
 # Get option information
 
 libcurl offers an API, a set of functions really, that allow applications to
-get information about all currently support *easy options*. It does not return
+get information about all currently supported *easy options*. It does not return
 *the values* for the options, but it rather informs about name, ID and type of
 the option.
 
 ## Iterate over all options
 
 Modern libcurl supports over 300 different options. With the use of
-`curl_easy_option_by_next()` an application can iterate over all the known
+`curl_easy_option_next()` an application can iterate over all the known
 options and return a pointer to a `struct curl_easyoption` for them.
 
 This function only returns information about options that this exact libcurl
@@ -18,10 +18,10 @@ builds that enable/disable options differently at build-time.
 Example, iterate over all available options:
 
     const struct curl_easyoption *opt;
-    opt = curl_easy_option_by_next(NULL);
+    opt = curl_easy_option_next(NULL);
     while(opt) {
       printf("Name: %s\n", opt->name);
-      opt = curl_easy_option_by_next(opt);
+      opt = curl_easy_option_next(opt);
     }
 
 ## Find a specific option by name

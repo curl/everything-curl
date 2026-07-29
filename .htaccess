@@ -1,6 +1,6 @@
 RedirectMatch "^/.git" https://everything.curl.dev/
 
-Header set Content-Security-Policy: "upgrade-insecure-requests; default-src 'none'; connect-src 'self' https://everything.curl.dev; img-src 'self'; script-src 'unsafe-inline' 'self'; style-src 'unsafe-inline' 'self'; font-src 'self'; form-action 'self'; frame-ancestors 'none'; require-trusted-types-for 'script';"
+Header set Content-Security-Policy: "upgrade-insecure-requests; default-src 'none'; connect-src 'self'; img-src 'self'; script-src 'unsafe-inline' 'self'; style-src 'unsafe-inline' 'self'; font-src 'self'; form-action 'self'; frame-ancestors 'none'; require-trusted-types-for 'script';"
 Header set Cross-Origin-Embedder-Policy: "require-corp"
 Header set Cross-Origin-Opener-Policy: "same-origin"
 Header set Cross-Origin-Resource-Policy: "same-origin"

@@ -9,6 +9,27 @@ Header set Referrer-Policy: "strict-origin"
 Header set X-Content-Type-Options: "nosniff"
 Header set X-Frame-Options: "deny"
 
+<ifmodule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 10 seconds"
+ExpiresByType text/html "access plus 30 minutes"
+ExpiresByType image/gif "access plus 6 months"
+ExpiresByType image/jpeg "access plus 6 months"
+ExpiresByType image/png "access plus 6 months"
+ExpiresByType image/svg+xml "access plus 6 months"
+ExpiresByType image/vnd.microsoft.icon "access plus 6 months"
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType text/javascript "access plus 7 days"
+ExpiresByType application/javascript "access plus 7 days"
+ExpiresByType application/xml "access plus 7 days"
+ExpiresByType text/xml "access plus 7 days"
+ExpiresByType application/x-gzip "access plus 1 year"
+ExpiresByType application/x-bzip2 "access plus 1 year"
+ExpiresByType application/zip "access plus 1 year"
+ExpiresByType application/x-tar "access plus 1 year"
+ExpiresByType application/x-pem-file "access plus 30 minutes"
+</ifmodule>
+
 # Don't set CSP and CORP on CSS files because they are also loaded from other domains
 <FilesMatch ".+\.(css|jpg|png|gif|txt|zip|mp3)$">
 Header unset Content-Security-Policy:

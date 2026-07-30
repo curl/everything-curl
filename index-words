@@ -45,6 +45,7 @@
 --json
 --keepalive-cnt
 --keepalive-time
+--knownhosts
 --libcurl
 --limit-rate
 --location

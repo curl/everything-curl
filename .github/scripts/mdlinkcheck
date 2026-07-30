@@ -68,6 +68,10 @@ my %whitelist = (
     'https://github.com/curl/curl/labels/help%20wanted' => 1,
     'https://github.com/curl/curl/pulls' => 1,
 
+    'https://lists.haxx.se/listinfo/curl-announce' => 1,
+    'https://lists.haxx.se/listinfo/curl-library' => 1,
+    'https://lists.haxx.se/listinfo/curl-users' => 1,
+
     );
 
 # list all .md files in the repo

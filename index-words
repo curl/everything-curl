@@ -106,6 +106,7 @@
 --trace-config
 --trace-ids
 --trace-time
+--upload-flags
 --url-query
 --variable
 --verbose
@@ -331,6 +332,7 @@ HttpGet
 HTTPS proxy
 IDN
 IETF
+IMAP
 Indentation
 International Domain Names
 IPFS

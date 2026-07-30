@@ -3,7 +3,8 @@
 There are two dominant protocols on the Internet for reading/downloading email
 from servers (at least if we do not count web based reading), and they are
 IMAP and [POP3](pop3.md). The former is the slightly more modern alternative.
-curl supports both.
+curl supports both. IMAP also allows emails to get uploaded, which POP3 does
+not.
 
 ## Basics
 
@@ -35,6 +36,10 @@ upgrade is required to work or curl fails the transfer. There is also the
 not-recommended insecure alternative `--ssl` that *attempts* to use TLS but
 that continues even if the upgrade fails.
 
+Example:
+
+    curl --ssl-reqd imap://server.example.com/boring
+
 *Implicit SSL* means that the connection gets secured already at first
 connect, which you make curl attempt by specifying a scheme in the URL that
 uses SSL. In the case of secure IMAP that means `imaps://`. For such
@@ -44,3 +49,23 @@ already from the start, or it fails its operation.
 The previous explicit examples done with implicit SSL:
 
     curl imaps://mail.example.com/inbox
+
+## Upload
+
+Uploading data to an IMAP server means putting an email into a specific remote
+"mailbox".
+
+    curl imap://imap.example/mailbox -T email.txt -u user:secret --ssl-reqd
+
+When curl uploads an email to an IMAP mailbox, it will by default flag that
+email as already read. In IMAP terms, it is marked as *seen*.
+
+You can alter the default flags for IMAP uploads using the `--upload-flags`
+option. Make the newly uploaded email appear as `answered`, `deleted`,
+`draft`, `flagged` or `seen` by providing your set in a comma-separated list.
+
+Negate a flag by prefixing it with a minus (`-`).
+
+For example, mark the upload as not seen and a draft:
+
+    curl imap://imap.example/mailbox -T email.txt --upload-flags "-seen,draft"

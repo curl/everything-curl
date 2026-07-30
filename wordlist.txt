@@ -132,6 +132,7 @@ Dymond
 EBCDIC
 ECC
 ECH
+ech
 EFnet
 eg
 EHLO
@@ -198,6 +199,7 @@ gnutls
 Golemon
 GPL
 Greear
+gsasl
 GSKit
 GSS
 Guenter
@@ -265,6 +267,7 @@ Kaufmann
 keepalive
 Keil
 KEM
+Kerberos
 Kinoite
 Kirei
 Knauf
@@ -288,6 +291,7 @@ libcurls
 libera
 libev
 libevent
+libgsasl
 libidn
 libpsl
 Libre
@@ -611,3 +615,4 @@ Zakrzewski
 Zitzmann
 zlib
 zsh
+zstd

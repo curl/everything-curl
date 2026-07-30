@@ -87,27 +87,27 @@ not enabled.
 
 Features that can be present there and their meaning:
 
- - **alt-svc** - Support for the `Alt-Svc:` header. See [--alt-svc](/http/https/altsvc.md)
+ - **alt-svc** - Support for the `Alt-Svc:` header. See [--alt-svc](../http/https/altsvc.md)
  - **AsynchDNS** - This curl uses asynchronous name resolves. Asynchronous
    name resolves can be done using either the c-ares or the threaded resolver
    backends.
- - **brotli** - support for automatic brotli decompression over HTTP(S). See [--compress](/http/modify/compression.md)
+ - **brotli** - support for automatic brotli decompression over HTTP(S). See [--compress](../http/modify/compression.md)
  - **CharConv** - curl was built with support for character set conversions
    (like EBCDIC)
  - **Debug** - This curl uses a libcurl built with Debug. This enables more
    error-tracking and memory debugging etc. For curl-developers only. Never use a debug
    build in production.
  - **ECH** - Encrypted Client Hello (ECH) support is present. See
-   [--ech](/usingcurl/tls/ech.md)
+   [--ech](../usingcurl/tls/ech.md)
  - **gsasl** - The built-in SASL authentication includes extensions to support
    SCRAM because libcurl was built with libgsasl.
  - **GSS-API** - GSS-API authentication is enabled
  - **HSTS** - HTTP Strict Transport Security (HSTS) is supported. See
-   [--hsts](/http/https/hsts.md)
- - **HTTP2** - HTTP/2 support has been built-in. See [--http2](/http/versions/http2.md)
- - **HTTP3** - HTTP/3 support has been built-in. See [--http3](/http/versions/http3.md)
+   [--hsts](../http/https/hsts.md)
+ - **HTTP2** - HTTP/2 support has been built-in. See [--http2](../http/versions/http2.md)
+ - **HTTP3** - HTTP/3 support has been built-in. See [--http3](../http/versions/http3.md)
  - **HTTPS-proxy** - This curl is built to support HTTPS proxy. See
-   [--proxy](/usingcurl/proxies/https.md)
+   [--proxy](../usingcurl/proxies/https.md)
  - **IDN** - This curl supports IDN - international domain names.
  - **IPv6** - You can use IPv6 with this tool.
  - **Kerberos** - Kerberos V5 authentication is supported.
@@ -130,4 +130,4 @@ Features that can be present there and their meaning:
    TLS. This feature was removed in curl 8.22.0.
  - **Unicode** - Unicode support enabled on Windows.
  - **UnixSockets** - Unix sockets support is provided.
- - **zstd** - support for automatic zstd decompression over HTTP(S). See [--compress](/http/modify/compression.md)
+ - **zstd** - support for automatic zstd decompression over HTTP(S). See [--compress](../http/modify/compression.md)

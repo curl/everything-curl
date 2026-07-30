@@ -385,6 +385,7 @@ openldap
 Opensocket
 OpenSSF
 OpenSSF's
+OpenSSH
 OpenSSL
 openSUSE
 openwall

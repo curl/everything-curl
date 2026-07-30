@@ -85,40 +85,49 @@ The list of features this build of curl supports. If the name is present in
 the list, that feature is enabled. If the name is not present, that feature is
 not enabled.
 
-Features that can be present there:
+Features that can be present there and their meaning:
 
- - **alt-svc** - Support for the alt-svc: header
+ - **alt-svc** - Support for the `Alt-Svc:` header. See [--alt-svc](../http/https/altsvc.md)
  - **AsynchDNS** - This curl uses asynchronous name resolves. Asynchronous
    name resolves can be done using either the c-ares or the threaded resolver
    backends.
- - **brotli** - support for automatic brotli compression over HTTP(S)
+ - **brotli** - support for automatic brotli decompression over HTTP(S). See [--compress](../http/modify/compression.md)
  - **CharConv** - curl was built with support for character set conversions
    (like EBCDIC)
  - **Debug** - This curl uses a libcurl built with Debug. This enables more
-   error-tracking and memory debugging etc. For curl-developers only.
+   error-tracking and memory debugging etc. For curl-developers only. Never use a debug
+   build in production.
+ - **ECH** - Encrypted Client Hello (ECH) support is present. See
+   [--ech](../usingcurl/tls/ech.md)
+ - **gsasl** - The built-in SASL authentication includes extensions to support
+   SCRAM because libcurl was built with libgsasl.
  - **GSS-API** - GSS-API authentication is enabled
- - **HTTP2** - HTTP/2 support has been built-in.
- - **HTTP3** - HTTP/3 support has been built-in.
- - **HTTPS-proxy** - This curl is built to support HTTPS proxy.
+ - **HSTS** - HTTP Strict Transport Security (HSTS) is supported. See
+   [--hsts](../http/https/hsts.md)
+ - **HTTP2** - HTTP/2 support has been built-in. See [--http2](../http/versions/http2.md)
+ - **HTTP3** - HTTP/3 support has been built-in. See [--http3](../http/versions/http3.md)
+ - **HTTPS-proxy** - This curl is built to support HTTPS proxy. See
+   [--proxy](../usingcurl/proxies/https.md)
  - **IDN** - This curl supports IDN - international domain names.
- - **IPv6** - You can use IPv6 with this.
- - **krb4** - Krb4 for FTP is supported
+ - **IPv6** - You can use IPv6 with this tool.
+ - **Kerberos** - Kerberos V5 authentication is supported.
  - **Largefile** - This curl supports transfers of large files, files larger
    than 2GB.
  - **libz** - Automatic gzip decompression of compressed files over HTTP is
    supported.
- - **Metalink** - This curl supports Metalink. In modern curl versions this
-   option is never available.
  - **MultiSSL** - This curl supports multiple TLS backends. The first line
     details exactly which TLS libraries.
  - **NTLM** - NTLM authentication is supported.
- - **NTLM_WB** - NTLM authentication is supported.
- - **PSL** - Public Suffix List (PSL) is available and means that this curl has
-   been built with knowledge about *public suffixes*, used for cookies.
+ - **NTLM_WB** - NTLM authentication is supported. This feature was removed
+   from curl in 8.8.0.
+ - **PSL** - Public Suffix List (PSL) is available and means that this curl
+   has been built with knowledge about *public suffixes*, used for cookies.
  - **SPNEGO** - SPNEGO authentication is supported.
  - **SSL** - SSL versions of various protocols are supported, such as HTTPS,
    FTPS, POP3S and so on.
  - **SSPI** - SSPI is supported
  - **TLS-SRP** - SRP (Secure Remote Password) authentication is supported for
-   TLS.
+   TLS. This feature was removed in curl 8.22.0.
+ - **Unicode** - Unicode support enabled on Windows.
  - **UnixSockets** - Unix sockets support is provided.
+ - **zstd** - support for automatic zstd decompression over HTTP(S). See [--compress](../http/modify/compression.md)

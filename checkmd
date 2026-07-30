@@ -62,7 +62,7 @@ sub check {
             $lvl = $nlvl;
         }
 
-        if(/^    / && (length($_) > 75)) {
+        if(/^    / && (length($line) > 74)) {
             error($f, $line, $l, "Too wide 4-space quoted line");
         }
         $l++;

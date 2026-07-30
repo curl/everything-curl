@@ -50,7 +50,7 @@ directory there already are two files called `picture.png` and
 
     curl --no-clobber https://example.com/image -o picture.png
 
-A user can use the [--write-out](../verbose/writeout.md) option's
+A user can use the [`--write-out`](../verbose/writeout.md) option's
 `%filename_effective` variable to figure out which name that was eventually
 used.
 

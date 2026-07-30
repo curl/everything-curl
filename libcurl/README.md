@@ -44,7 +44,7 @@ applications that actually ask for and use the new features get that behavior.
   * [Header files](headers.md)
   * [Global initialization](globalinit.md)
   * [API compatibility](api.md)
-  * [--libcurl](--libcurl.md)
+  * [`--libcurl`](--libcurl.md)
   * [multi-threading](threading.md)
   * [CURLcode return codes](curlcode.md)
   * [Verbose operations](verbose.md)

@@ -49,12 +49,12 @@ The application also needs to tell libcurl when the timeout time has expired,
 as it is control of driving everything libcurl cannot do it itself. libcurl
 informs the application updated timeout values as soon as it needs to.
 
-### socket_callback
+### socket callback
 
 libcurl informs the application about socket activity to wait for with a
 callback called
-[CURLMOPT_SOCKETFUNCTION](https://curl.se/libcurl/c/CURLMOPT_SOCKETFUNCTION.html). Your
-application needs to implement such a function:
+[CURLMOPT_SOCKETFUNCTION](https://curl.se/libcurl/c/CURLMOPT_SOCKETFUNCTION.html).
+Your application needs to implement such a function:
 
     int socket_cb(CURL *easy,      /* easy handle */
                   curl_socket_t s, /* socket */
@@ -87,7 +87,7 @@ registered:
                                    ev_bitmask, /* the specific activity */
                                    &running_handles);
 
-### timer_callback
+### timer callback
 
 The application is in control and waits for socket activity. Even without
 socket activity there are things libcurl needs to do. Timeout things, calling

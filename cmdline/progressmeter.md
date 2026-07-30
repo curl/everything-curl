@@ -49,9 +49,9 @@ format described below.
 The progress meter exists to show a user that something actually is happening.
 The different fields in the output have the following meaning:
 
-    % Total  % Received % Xferd Average Speed          Time             Curr.
-                                Dload  Upload Total    Current  Left    Speed
-    0  151M  0 38608    0     0  9406      0  4:41:43  0:00:04  4:41:39  9287
+    % Total  % Received % Xferd Average Speed Time    Time   Time    Curr.
+                                Dload  Upload Total   Spent  Left    Speed
+    0  151M  0 38608    0     0  9406      0  1:29:10 00:02  1:29:08 24.9k
 
 From left to right:
 
@@ -65,9 +65,9 @@ From left to right:
 | `Xferd`                | Currently uploaded number of bytes                                                                 |
 | `Average Speed Dload`  | Average transfer speed of the entire download so far, in number of bytes per second                |
 | `Average Speed Upload` | Average transfer speed of the entire upload so far, in number of bytes per second                  |
-| `Time Total`           | Expected time to complete the operation, in `HH:MM:SS` notation for hours, minutes and seconds     |
-| `Time Current`         | Time passed since the start of the transfer, in `HH:MM:SS` notation for hours, minutes and seconds |
-| `Time Left`            | Expected time left to completion, in `HH:MM:SS` notation for hours, minutes and seconds            |
+| `Time Total`           | Expected time to complete the operation
+| `Time Spent  `         | Time passed since the start of the transfer
+| `Time Left`            | Expected time left to completion
 | `Curr. Speed`          | Average transfer speed over the last 5 seconds in number of bytes per second                       |
 
 ## Parallel progress meter

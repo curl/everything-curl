@@ -38,7 +38,8 @@ fetch a public key from DNS before the handshake even begins, it is almost
 always used in conjunction with **DNS over HTTPS (DoH)**. A typical command
 might look like this:
 
-    curl --ech hard --doh-url https://1.1.1.1/dns-query https://example.com
+    curl --ech hard --doh-url https://1.1.1.1/dns-query \
+      https://example.com
 
 curl can also get the necessary public key over clear-text DNS if built
 accordingly, but as the DNS traffic is then not encrypted the security

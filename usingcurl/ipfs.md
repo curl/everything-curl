@@ -9,7 +9,8 @@ content. curl does not speak IPFS natively.
 
 The `--ipfs-gateway` lets the user specify the IPFS HTTP gateway URL. Like this:
 
-    curl --ipfs-gateway http://localhost:8080 ipfs://bafybeigagd5nmnn2iys2f3d/
+    curl --ipfs-gateway http://localhost:8080 \
+      ipfs://bafybeigagd5nmnn2iys2f3d/
 
 If you opt to go for a remote gateway you should be aware that you completely
 trust the gateway. This is fine in local gateways as you host it yourself.

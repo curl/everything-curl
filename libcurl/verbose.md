@@ -37,8 +37,8 @@ callback instead of its internal handling.
 
 The trace callback should match a prototype like this:
 
-    int my_trace(CURL *handle, curl_infotype type, char *data, size_t size,
-                 void *user);
+    int my_trace(CURL *handle, curl_infotype type, char *data,
+                 size_t size, void *user);
 
 **handle** is the easy handle it concerns, **type** describes the particular
 data passed to the callback (data in/out, header in/out, TLS data in/out and

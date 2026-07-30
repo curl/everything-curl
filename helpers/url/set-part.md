@@ -29,7 +29,8 @@ that URL.
 
 For example, let's say we have this URL
 
-    const char *url="http://joe:7Hbz@example.com:8080/images?id=5445#footer";
+    const char url[] =
+      "http://joe:7Hbz@example.com:8080/images?id=5445#footer";
 
 and we want change the host in that URL to instead become `example.net`, it
 could be done like this:

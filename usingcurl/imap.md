@@ -55,7 +55,8 @@ The previous explicit examples done with implicit SSL:
 Uploading data to an IMAP server means putting an email into a specific remote
 "mailbox".
 
-    curl imap://imap.example/mailbox -T email.txt -u user:secret --ssl-reqd
+    curl imap://imap.example/mailbox -T email.txt -u user:secret \
+      --ssl-reqd
 
 When curl uploads an email to an IMAP mailbox, it will by default flag that
 email as already read. In IMAP terms, it is marked as *seen*.
@@ -68,4 +69,5 @@ Negate a flag by prefixing it with a minus (`-`).
 
 For example, mark the upload as not seen and a draft:
 
-    curl imap://imap.example/mailbox -T email.txt --upload-flags "-seen,draft"
+    curl imap://imap.example/mailbox -T email.txt \
+      --upload-flags "-seen,draft"

@@ -1,9 +1,10 @@
 # Iterate over headers
 
-    struct curl_header *curl_easy_nextheader(CURL *easy,
-                                             unsigned int origin,
-                                             int request,
-                                             struct curl_header *previous);
+    struct curl_header *
+    curl_easy_nextheader(CURL *easy,
+                         unsigned int origin,
+                         int request,
+                         struct curl_header *previous);
 
 This function lets the application iterate over all available headers from
 within the given **origins** that arrived in the **request**.

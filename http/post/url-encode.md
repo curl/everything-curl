@@ -55,4 +55,5 @@ on as-is. If you want to URL encode the field name as well, like if you want
 to pass on a field name called `user name`, you can ask curl to encode the
 entire string by prefixing it with an equals sign (that does not get sent):
 
-    curl --data-urlencode "=user name=John Doe (Junior)" http://example.com
+    curl --data-urlencode "=user name=John Doe (Junior)" \
+      https://example.com

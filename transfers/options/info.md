@@ -33,7 +33,8 @@ a `struct curl_easyoption` for it. The name should be provided without the
 As an example, an application can ask libcurl about the `CURLOPT_VERBOSE`
 option like this:
 
-    const struct curl_easyoption *opt = curl_easy_option_by_name("VERBOSE");
+    const struct curl_easyoption *opt =
+      curl_easy_option_by_name("VERBOSE");
     if(opt) {
       printf("This option wants CURLoption %x\n", (int)opt->id);
     }

@@ -70,7 +70,8 @@ specific executable.
 This is done at link time, and if you build your own libcurl using
 application, you can make that load your custom libcurl build like this:
 
-    gcc -g example.c -L$HOME/install/lib -lcurl -Wl,-rpath=$HOME/install/lib
+    gcc -g example.c -L$HOME/install/lib -lcurl \
+      -Wl,-rpath=$HOME/install/lib
 
 With `rpath` set, the executable linked against `$HOME/install/lib/libcurl.so`
 then makes the runtime linker use that specific path and library, while other

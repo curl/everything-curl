@@ -1,6 +1,8 @@
 #!/usr/bin/perl -w
 
-# Check the heading levels in the given markdown files
+# Check:
+# 1. the heading levels in the given markdown files
+# 2. the width of 4-space indented lines
 #
 my @f = @ARGV;
 my $ecount; # error counter
@@ -58,6 +60,10 @@ sub check {
                 }
             }
             $lvl = $nlvl;
+        }
+
+        if(/^    / && (length($line) > 74)) {
+            error($f, $line, $l, "Too wide 4-space quoted line");
         }
         $l++;
         if(($l > 1) && !$lvl) {

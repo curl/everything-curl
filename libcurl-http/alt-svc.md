@@ -18,7 +18,8 @@ read from (not write).
 
 Enable alt-svc and allow it to switch to either HTTP/1 or HTTP/2:
 
-    curl_easy_setopt(curl, CURLOPT_ALTSVC_CTRL, CURLALTSVC_H1|CURLALTSVC_H2);
+    curl_easy_setopt(curl, CURLOPT_ALTSVC_CTRL,
+                     CURLALTSVC_H1|CURLALTSVC_H2);
 
 Tell libcurl to use a specific alt-svc cache file like this:
 

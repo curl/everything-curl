@@ -42,3 +42,9 @@ For example, `CURLE_OK` and `CURLOPT_URL`.
 ## Use present tense
 
 Avoid saying what will happen. Say what happens.
+
+## Use space-indented quotes
+
+All quotes (used for examples and source code snippets etc) should be done
+with leading 4 spaces on each line and *not* using the form with three tildes
+or backticks. For consistency and for easier parsing.

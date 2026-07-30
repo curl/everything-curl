@@ -16,7 +16,7 @@ Send your changes or suggestions to the team and by working together we can
 fix problems, improve functionality, clarify documentation, add features or
 make anything else you help out with land in the proper place. We make sure
 improved code and docs get merged into the source tree properly and other
-sorts of contributions are suitable received.
+sorts of contributions are suitably received.
 
 Send your contributions on a [mailing list](../project/comm.md), file an issue
 or submit a pull request.
@@ -44,18 +44,18 @@ The project generally approves functions that improve the support for the
 current protocols, especially features that popular clients or browsers have
 but that curl still lacks.
 
-Of course, you can also add contents to the project that are not code, like
-documentation, graphics or website contents, but the general rules apply
+Of course, you can also add content to the project that is not code, like
+documentation, graphics or website content, but the general rules apply
 equally to that.
 
 If you are fixing a problem you have or a problem that others are reporting,
-we are thrilled to receive your fixes and merge them as soon as possible,
+we are thrilled to receive your fixes and merge them as soon as possible.
 
 ## What not to add
 
 There are no good rules that say what features you can or cannot add or that
 we never accept, but let me instead try to mention a few things you should
-avoid to get less friction and to be successful, faster:
+avoid in order to reduce friction and be successful, faster:
 
 - Do not write up a huge patch first and then send it to the list for
   discussion. Always start out by discussing on the list, and send your
@@ -85,7 +85,7 @@ avoid to get less friction and to be successful, faster:
 Our preferred source control tool is [git](https://git-scm.com/).
 
 While git is sometimes not the easiest tool to learn and master, all the basic
-steps a casual developer and contributor needs to know are straight-forward
+steps a casual developer and contributor needs to know are straightforward
 and do not take much time or effort to learn.
 
 This book does not help you learn git. All software developers in this day and
@@ -104,11 +104,11 @@ A popular and convenient way to make your own changes and contribute them back
 to the project is by doing a so-called pull request on GitHub.
 
 First, you create your own version of the source tree, called a fork, on the
-Github website. That way you get your own version of the curl git tree that
+GitHub website. That way you get your own version of the curl git tree that
 you can clone to a local copy.
 
 You edit your own local copy, commit the changes, push them to the git
-repository on Github and then on the Github website you can select to create
+repository on GitHub and then on the GitHub website you can select to create
 a pull request based on your changes done to your local repository clone of
 the original curl repository.
 
@@ -119,7 +119,7 @@ decide to throw it away.
 
 ## Make a patch for the mailing list
 
-Even if you opt to not make a pull request but prefer the old fashioned and
+Even if you opt to not make a pull request but prefer the old-fashioned and
 trusted method of sending a patch to the curl-library mailing list, it is
 still a good practice to work in a local git branch and commit your changes
 there.
@@ -151,8 +151,8 @@ ask you to use:
     [whatever-else-by: credit all helpers, finders, doers]
 
 Do not forget to use `git commit --author="Jane Doe <jane@example.com>"` if
-you commit someone else's work, and make sure that you have your own Github
-username and email setup correctly in git before you commit via commands
+you commit someone else's work, and make sure that you have your own GitHub
+username and email set up correctly in git before you commit via commands
 below:
 
     git config --global user.name "johndoe"
@@ -172,18 +172,19 @@ git repository. Let's call them the core team.
 
 Everyone else can fork off their own curl repository to which they can commit
 and push changes and host them online and build their own curl versions from
-and so on, but in order to get changes into the *official* repository they need
-to be pushed by a trusted person.
+and so on, but in order to get changes into the *official* repository they
+need to be pushed by a trusted person.
 
 The core team is a small set of curl developers who have been around for
 several years and have shown they are skilled developers and that they fully
 comprehend the values and the style of development we do in this project. They
-are some of the people listed in the [The development team](../project/devteam.md) section.
+are some of the people listed in the [The development
+team](../project/devteam.md) section.
 
 You can always bring a discussion to the mailing list and argue why you think
 your changes should get accepted, or perhaps even object to other changes that
-are getting in and so forth. You can even suggest yourself or someone else to
-be given "push rights" and become one of the selected few in that team.
+are getting in and so forth. You can even suggest that you or someone else be
+given "push rights" and become one of the selected few in that team.
 
 Daniel remains the project leader and while it is rarely needed, he has the
 final say in debates that do not seem to sway in either direction or fail to

@@ -54,7 +54,6 @@ table](https://curl.se/docs/ssl-compared.html) on the website to aid
 users.
 
 - AmiSSL: an OpenSSL fork made for AmigaOS (uses `openssl.c`)
-- BearSSL
 - BoringSSL: an OpenSSL fork maintained by Google. (uses `openssl.c`)
 - GnuTLS
 - LibreSSL: an OpenSSL fork maintained by the OpenBSD team. (uses `openssl.c`)

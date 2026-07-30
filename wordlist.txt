@@ -32,7 +32,6 @@ backticks
 balancers
 Baratov
 BDFL
-BearSSL
 Benoit
 bitmask
 bitwise

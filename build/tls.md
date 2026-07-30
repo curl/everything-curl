@@ -8,7 +8,6 @@ curl is written to work with a large number of TLS libraries:
 
  - AmiSSL
  - AWS-LC
- - BearSSL
  - BoringSSL
  - GnuTLS
  - libressl
@@ -77,15 +76,6 @@ configure detects Schannel in its default path by default.
 
 (WinSSL was previously an alternative name for Schannel, and earlier curl
 versions instead needed `--with-winssl`)
-
-### BearSSL
-
-    ./configure --with-bearssl
-
-configure detects BearSSL in its default path by default. You can optionally
-point configure to a custom install path prefix where it can find BearSSL:
-
-    ./configure --with-bearssl=/home/user/installed/bearssl
 
 ### Rustls
 

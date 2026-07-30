@@ -17,7 +17,6 @@
 
  - -b: [Cookie engine](http/cookies/engine.md#cookie-engine), [Reading cookies from file](http/cookies/reading.md#reading-cookies-from-file), [Writing cookies to file](http/cookies/writing.md#writing-cookies-to-file), [New cookie session](http/cookies/newsession.md#new-cookie-session), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
  - --basic: [Authentication](http/auth.md#authentication)
- - BearSSL: [lib/vtls](source/layout.md#lib-slash-vtls), [TLS libraries](build/tls.md#tls-libraries), [`<features>`](internals/tests/file-format.md#sect--less-than-features-greater-than)
  - bindings: [Confusions and mix-ups](project/name.md#confusions-and-mix-ups), [libcurl, the library](project/does.md#libcurl-the-library), [In website backends](project/users.md#in-website-backends), [docs](source/layout.md#docs)
  - BoringSSL: [TLS libraries](build/tls.md#tls-libraries), [BoringSSL](build/boringssl.md#boringssl), [Restrictions](usingcurl/tls/sslkeylogfile.md#restrictions), [HTTP/3 backends](internals/backends.md#http-slash-3-backends)
  - brotli: [HTTP Compression](build/deps.md#http-compression), [Version](cmdline/curlver.md#version), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs), [About content encodings](internals/content-encoding.md#about-content-encodings), [Conditional lines](internals/tests/file-format.md#conditional-lines)

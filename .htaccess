@@ -35,3 +35,5 @@ ExpiresByType application/x-pem-file "access plus 30 minutes"
 Header unset Content-Security-Policy:
 Header unset Cross-Origin-Resource-Policy:
 </FilesMatch>
+
+ErrorDocument 404 /404.html

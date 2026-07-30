@@ -39,6 +39,8 @@
 --http3
 --http3-only
 --ip-tos
+--ipv6
+--ipv4
 --ipfs-gateway
 --json
 --keepalive-cnt

@@ -3,6 +3,22 @@
 There are several options that let the user control different aspects of how
 connections are setup.
 
+## IP version
+
+curl uses Happy Eyeballs when connecting to a host, as described in [the Happy
+Eyeballs section](happy.md): it typically starts an IPv6 connection attempt
+first and then starts IPv4 in parallel after a short timeout, using whichever
+connect succeeds first. At times you might want to force the tool to use a
+specific IP version instead of letting it race them.
+
+Tell curl to only use IPv6:
+
+    curl --ipv6 https://example.com/
+
+Tell curl to only use IPv4:
+
+    curl --ipv4 https://example.com/
+
 ## VLAN
 
 With the `--vlan-priority` command line option you set a priority value

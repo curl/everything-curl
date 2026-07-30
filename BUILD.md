@@ -24,15 +24,13 @@ target directory gets updated.
 
 ## `book.toml`
 
-~~~
-[book]
-authors = ["Daniel Stenberg"]
-language = "en"
-multilingual = false
-src = "src"
-title = "everything curl"
+    [book]
+    authors = ["Daniel Stenberg"]
+    language = "en"
+    multilingual = false
+    src = "src"
+    title = "everything curl"
 
-[output.html.fold]
-enable = true     # whether or not to enable section folding
-level = 0         # the depth to start folding
-~~~
+    [output.html.fold]
+    enable = true     # whether or not to enable section folding
+    level = 0         # the depth to start folding

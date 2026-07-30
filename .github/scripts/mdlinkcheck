@@ -68,6 +68,10 @@ my %whitelist = (
     'https://github.com/curl/curl/labels/help%20wanted' => 1,
     'https://github.com/curl/curl/pulls' => 1,
 
+    'https://lists.haxx.se/listinfo/curl-announce' => 1,
+    'https://lists.haxx.se/listinfo/curl-library' => 1,
+    'https://lists.haxx.se/listinfo/curl-users' => 1,
+
     );
 
 # list all .md files in the repo
@@ -90,14 +94,19 @@ sub storelink {
     }
 
     # a file link
-    my $dir = $f;
-    $dir =~ s:([^/]*\z)::;
-
-    while($link =~ s:^\.\.\/::) {
-        $dir =~ s:([^/]*)\/\z::;
+    if($link =~ /^\//) {
+        # absolute path,
+        $flink{".$link"} .= "$f:$line ";
     }
+    else {
+        my $dir = $f;
+        $dir =~ s:([^/]*\z)::;
 
-    $flink{"./$dir$link"} .= "$f:$line ";
+        while($link =~ s:^\.\.\/::) {
+            $dir =~ s:([^/]*)\/\z::;
+        }
+        $flink{"./$dir$link"} .= "$f:$line ";
+    }
 }
 
 sub findlinks {

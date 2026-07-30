@@ -36,7 +36,7 @@ upgrade is required to work or curl fails the transfer. There is also the
 not-recommended insecure alternative `--ssl` that *attempts* to use TLS but
 that continues even if the upgrade fails.
 
-Example use:
+Example:
 
     curl --ssl-reqd imap://server.example.com/boring
 
@@ -52,15 +52,15 @@ The previous explicit examples done with implicit SSL:
 
 ## Upload
 
-Uploading data to an IMAP server means putting an email into a remote specific
+Uploading data to an IMAP server means putting an email into a specific remote
 "mailbox".
 
-    curl imap://imap.example/mailbox -T file.txt -u user:secret --ssl-reqd
+    curl imap://imap.example/mailbox -T email.txt -u user:secret --ssl-reqd
 
 When curl uploads an email to an IMAP mailbox, it will by default flag that
-email as already read. As already *seen* to use IMAP language.
+email as already read. In IMAP terms, it is marked as *seen*.
 
-You can alter the default flags for IMAP uploads using the --upload-flags
+You can alter the default flags for IMAP uploads using the `--upload-flags`
 option. Make the newly uploaded email appear as `answered`, `deleted`,
 `draft`, `flagged` or `seen` by providing your set in a comma-separated list.
 

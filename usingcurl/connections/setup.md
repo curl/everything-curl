@@ -5,10 +5,7 @@ connections are setup.
 
 ## IP version
 
-curl always tries to use either IPv6 or IPv4 when connecting to a host, as
-described in [the Happy Eyeballs section](happy.md), but at times you might
-want to force the tool to use a specific IP version instead of letting it
-dynamically pick one.
+curl uses Happy Eyeballs when connecting to a host, as described in [the Happy Eyeballs section](happy.md): it typically starts an IPv6 connection attempt first and then starts IPv4 in parallel after a short timeout, using whichever connect succeeds first. At times you might want to force the tool to use a specific IP version instead of letting it race them.
 
 Tell curl to only use IPv6:
 

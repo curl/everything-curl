@@ -55,7 +55,7 @@ we are thrilled to receive your fixes and merge them as soon as possible.
 
 There are no good rules that say what features you can or cannot add or that
 we never accept, but let me instead try to mention a few things you should
-avoid in order to reduce friction and be successful, faster:
+avoid in order to reduce friction and be successful faster:
 
 - Do not write up a huge patch first and then send it to the list for
   discussion. Always start out by discussing on the list, and send your

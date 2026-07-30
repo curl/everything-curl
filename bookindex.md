@@ -237,7 +237,7 @@
 
 ## H
 
- - Happy Eyeballs: [Happy Eyeballs](usingcurl/connections/happy.md#happy-eyeballs), [All options](transfers/options/all.md#all-options), [Happy Eyeballs](transfers/conn/how.md#happy-eyeballs)
+ - Happy Eyeballs: [IP version](usingcurl/connections/setup.md#ip-version), [Happy Eyeballs](usingcurl/connections/happy.md#happy-eyeballs), [All options](transfers/options/all.md#all-options), [Happy Eyeballs](transfers/conn/how.md#happy-eyeballs)
  - --happy-eyeballs-timeout-ms: [Tweak](usingcurl/connections/happy.md#tweak)
  - haproxy: [haproxy](usingcurl/proxies/haproxy.md#haproxy), [All options](transfers/options/all.md#all-options)
  - --haproxy-clientip: [curl and haproxy](usingcurl/proxies/haproxy.md#curl-and-haproxy)
@@ -274,8 +274,10 @@
  - --ip-tos: [Type of Service](usingcurl/connections/setup.md#type-of-service)
  - IPFS: [IPFS](usingcurl/ipfs.md#ipfs)
  - --ipfs-gateway: [Gateway](usingcurl/ipfs.md#gateway)
- - IPv4: [Host](cmdline/urls/host.md#host), [Port number](cmdline/urls/port.md#port-number), [Available --write-out variables](usingcurl/verbose/all-variables.md#available---write-out-variables), [Type of Service](usingcurl/connections/setup.md#type-of-service), [Happy Eyeballs](usingcurl/connections/happy.md#happy-eyeballs), [curl and haproxy](usingcurl/proxies/haproxy.md#curl-and-haproxy), [All options](transfers/options/all.md#all-options), [How libcurl connects](transfers/conn/how.md#how-libcurl-connects), [Name resolving](transfers/conn/names.md#name-resolving), [`host*.c` sources](internals/resolving.md#host-dot-c-sources), [Variables](internals/tests/file-format.md#variables)
- - IPv6: [Host](cmdline/urls/host.md#host), [Port number](cmdline/urls/port.md#port-number), [URL globbing](cmdline/urls/globbing.md#url-globbing), [Version](cmdline/curlver.md#version), [Available --write-out variables](usingcurl/verbose/all-variables.md#available---write-out-variables), [Type of Service](usingcurl/connections/setup.md#type-of-service), [Happy Eyeballs](usingcurl/connections/happy.md#happy-eyeballs), [SOCKS proxy](usingcurl/proxies/socks.md#socks-proxy), [curl and haproxy](usingcurl/proxies/haproxy.md#curl-and-haproxy), [All options](transfers/options/all.md#all-options), [How libcurl connects](transfers/conn/how.md#how-libcurl-connects), [Name resolving](transfers/conn/names.md#name-resolving), [Zone ID](helpers/url/get-part.md#zone-id), [`CURLRES_IPV6`](internals/resolving.md#curlres_ipv6), [Variables](internals/tests/file-format.md#variables)
+ - --ipv4: [IP version](usingcurl/connections/setup.md#ip-version)
+ - IPv4: [Host](cmdline/urls/host.md#host), [Port number](cmdline/urls/port.md#port-number), [Available --write-out variables](usingcurl/verbose/all-variables.md#available---write-out-variables), [IP version](usingcurl/connections/setup.md#ip-version), [Happy Eyeballs](usingcurl/connections/happy.md#happy-eyeballs), [curl and haproxy](usingcurl/proxies/haproxy.md#curl-and-haproxy), [All options](transfers/options/all.md#all-options), [How libcurl connects](transfers/conn/how.md#how-libcurl-connects), [Name resolving](transfers/conn/names.md#name-resolving), [`host*.c` sources](internals/resolving.md#host-dot-c-sources), [Variables](internals/tests/file-format.md#variables)
+ - --ipv6: [IP version](usingcurl/connections/setup.md#ip-version)
+ - IPv6: [Host](cmdline/urls/host.md#host), [Port number](cmdline/urls/port.md#port-number), [URL globbing](cmdline/urls/globbing.md#url-globbing), [Version](cmdline/curlver.md#version), [Available --write-out variables](usingcurl/verbose/all-variables.md#available---write-out-variables), [IP version](usingcurl/connections/setup.md#ip-version), [Happy Eyeballs](usingcurl/connections/happy.md#happy-eyeballs), [SOCKS proxy](usingcurl/proxies/socks.md#socks-proxy), [curl and haproxy](usingcurl/proxies/haproxy.md#curl-and-haproxy), [All options](transfers/options/all.md#all-options), [How libcurl connects](transfers/conn/how.md#how-libcurl-connects), [Name resolving](transfers/conn/names.md#name-resolving), [Zone ID](helpers/url/get-part.md#zone-id), [`CURLRES_IPV6`](internals/resolving.md#curlres_ipv6), [Variables](internals/tests/file-format.md#variables)
  - IRC: [How it started](project/started.md#how-it-started), [Project communication](project/comm.md#project-communication)
 
 ## J

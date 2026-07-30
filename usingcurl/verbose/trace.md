@@ -67,7 +67,7 @@ An example could look like this:
 
     $ curl -v --trace-time http://example.com
     23:38:56.837164 * Rebuilt URL to: http://example.com/
-    23:38:56.841456 *   Trying 93.184.216.34...
+    23:38:56.841456 *   Trying 93.184.21.34...
     23:38:56.935155 * Connected to example.com (93.184.21.34) port 80 (#0)
     23:38:56.935296 > GET / HTTP/1.1
     23:38:56.935296 > Host: example.com

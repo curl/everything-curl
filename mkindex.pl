@@ -155,6 +155,6 @@ foreach my $w (sort byname keys %all) {
         # a command line option, quote it
         $o = "`$o`";
     }
-    printf " - $o: ";
+    print " - $o: ";
     print $all{$w}."\n";
 }

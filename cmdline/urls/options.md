@@ -54,5 +54,5 @@ Trying something like that _without_ the `--next` options on the command line
 would generate an illegal command line since curl would attempt to combine
 both a POST and a HEAD:
 
-    Warning: You can only select one HTTP request method! You asked for both
-    Warning: POST (-d, --data) and HEAD (-I, --head).
+    Warning: You can only select one HTTP request method! You asked for
+    Warning: both POST (-d, --data) and HEAD (-I, --head).

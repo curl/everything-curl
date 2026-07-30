@@ -28,8 +28,8 @@ headers typically include `To:`, `From:`, `Subject:`, `Date:` etc.
 
 A basic command to send an email:
 
-    curl smtp://mail.example.com --mail-from myself@example.com --mail-rcpt \
-    receiver@example.com --upload-file email.txt
+    curl smtp://mail.example.com --mail-from myself@example.com \
+      --mail-rcpt receiver@example.com --upload-file email.txt
 
 An example `email.txt` could look like this:
 
@@ -67,8 +67,10 @@ adding `--ssl` to the command:
 You can tell curl to _require_ upgrading to using secure transfers by adding
 `--ssl-reqd` to the command:
 
-    curl --ssl-reqd smtp://mail.example.com --mail-from myself@example.com \
-         --mail-rcpt receiver@example.com --upload-file email.txt \
+    curl --ssl-reqd smtp://mail.example.com \
+         --mail-from myself@example.com \
+         --mail-rcpt receiver@example.com \
+         --upload-file email.txt \
          --user 'user@your-account.com:your-account-password'
 
 ## The SMTP URL

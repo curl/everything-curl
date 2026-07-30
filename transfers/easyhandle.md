@@ -10,7 +10,8 @@ You then set options in that handle to control the upcoming transfer.
 This example sets the URL:
 
     /* set URL to operate on */
-    res = curl_easy_setopt(easy_handle, CURLOPT_URL, "http://example.com/");
+    res = curl_easy_setopt(easy_handle, CURLOPT_URL,
+                           "http://example.com/");
 
 If `curl_easy_setopt()` returns `CURLE_OK`, we know it stored the option fine.
 

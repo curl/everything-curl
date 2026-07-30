@@ -12,4 +12,4 @@ remote server.
 
 Set a specific different `User-Agent:` only to the proxy:
 
-    curl --proxy-header "User-Agent: magic/3000" -x proxy https://example.com/
+    curl --proxy-header "User-Agent: magic" -x proxy https://example.com/

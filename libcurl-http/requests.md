@@ -121,7 +121,8 @@ arrived at the URL it now requests. It is a normal header so you can set it
 yourself with the `CURLOPT_HEADER` approach as shown above, or you can use the
 shortcut known as `CURLOPT_REFERER`. Like this:
 
-    curl_easy_setopt(curl, CURLOPT_REFERER, "https://example.com/fromhere/");
+    curl_easy_setopt(curl, CURLOPT_REFERER,
+                     "https://example.com/fromhere/");
     curl_easy_perform(curl);
 
 ### Automatic referrer
@@ -133,5 +134,6 @@ ask libcurl to set that by itself:
 
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
     curl_easy_setopt(curl, CURLOPT_AUTOREFERER, 1L);
-    curl_easy_setopt(curl, CURLOPT_URL, "https://example.com/redirected.cgi");
+    curl_easy_setopt(curl, CURLOPT_URL,
+                     "https://example.com/redirected.cgi");
     curl_easy_perform(curl);

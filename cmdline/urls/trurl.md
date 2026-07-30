@@ -56,7 +56,8 @@ trurl.
 
 **Append a query segment to a URL:**
 
-    $ trurl --url "https://curl.se?name=hello" --append query=search=string
+    $ trurl --url "https://curl.se?name=hello" \
+       --append query=search=string
     https://curl.se/?name=hello&search=string
 
 **Read URLs from stdin:**

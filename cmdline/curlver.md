@@ -17,8 +17,8 @@ An example output from a Debian Linux in June 2020:
     zlib/1.2.11 brotli/1.0.7 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0)
     libssh2/1.8.0 nghttp2/1.41.0 librtmp/2.3
     Release-Date: 2020-01-08
-    Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3
-    pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp
+    Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps
+    pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp
     Features: AsynchDNS brotli GSS-API HTTP2 HTTPS-proxy IDN IPv6 Kerberos
     Largefile libz NTLM NTLM_WB PSL SPNEGO SSL TLS-SRP UnixSockets
 
@@ -27,8 +27,8 @@ looks like:
 
     curl 7.55.1 (Windows) libcurl/7.55.1 WinSSL
     Release-Date: [unreleased]
-    Protocols: dict file ftp ftps http https imap imaps pop3 pop3s smtp smtps
-    telnet tftp
+    Protocols: dict file ftp ftps http https imap imaps pop3 pop3s smtp
+    smtps telnet tftp
     Features: AsynchDNS IPv6 Largefile SSPI Kerberos SPNEGO NTLM SSL
 
 The meaning of the four lines?

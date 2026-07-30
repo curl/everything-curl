@@ -56,17 +56,17 @@ callback called
 [CURLMOPT_SOCKETFUNCTION](https://curl.se/libcurl/c/CURLMOPT_SOCKETFUNCTION.html). Your
 application needs to implement such a function:
 
-    int socket_callback(CURL *easy,      /* easy handle */
-                        curl_socket_t s, /* socket */
-                        int what,        /* what to wait for */
-                        void *userp,     /* private callback pointer */
-                        void *socketp)   /* private socket pointer */
+    int socket_cb(CURL *easy,      /* easy handle */
+                  curl_socket_t s, /* socket */
+                  int what,        /* what to wait for */
+                  void *userp,     /* private callback pointer */
+                  void *socketp)   /* private socket pointer */
     {
        /* told about the socket 's' */
     }
 
     /* set the callback in the multi handle */
-    curl_multi_setopt(multi_handle, CURLMOPT_SOCKETFUNCTION, socket_callback);
+    curl_multi_setopt(multi_handle, CURLMOPT_SOCKETFUNCTION, socket_cb);
 
 Using this, libcurl sets and removes sockets your application should
 monitor. Your application tells the underlying event-based system to wait for
@@ -98,15 +98,15 @@ handle a single-shot timeout that libcurl sets.
 libcurl sets the timeout with the timer_callback
 [CURLMOPT_TIMERFUNCTION](https://curl.se/libcurl/c/CURLMOPT_TIMERFUNCTION.html):
 
-    int timer_callback(multi_handle,   /* multi handle */
-                       timeout_ms,     /* milliseconds to wait */
-                       userp)          /* private callback pointer */
+    int timer_cb(multi_handle,   /* multi handle */
+                 timeout_ms,     /* milliseconds to wait */
+                 userp)          /* private callback pointer */
     {
       /* the new time-out value to wait for is in 'timeout_ms' */
     }
 
     /* set the callback in the multi handle */
-    curl_multi_setopt(multi_handle, CURLMOPT_TIMERFUNCTION, timer_callback);
+    curl_multi_setopt(multi_handle, CURLMOPT_TIMERFUNCTION, timer_cb);
 
 There is only one timeout for the application to handle for the entire multi
 handle, no matter how many individual easy handles that have been added or
@@ -137,8 +137,9 @@ things up and from then on you can let your event system drive:
 
     curl_multi_socket_action(multi, CURL_SOCKET_TIMEOUT, 0, &running);
 
-    /* now the callbacks should have been called and we have sockets to wait
-       for and possibly a timeout, too. Make the event system do its magic */
+    /* now the callbacks should have been called and we have sockets to
+       wait for and possibly a timeout, too. Make the event system do
+       its magic */
 
     event_base_dispatch(event_base); /* libevent2 has this API */
 

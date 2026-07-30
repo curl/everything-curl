@@ -10,13 +10,13 @@ call to `socket()` and the subsequent `close()` of the same file descriptor.
 By setting the `CURLOPT_OPENSOCKETFUNCTION` callback, you can provide a custom
 function to return a file descriptor for libcurl to use:
 
-    curl_easy_setopt(handle, CURLOPT_OPENSOCKETFUNCTION, opensocket_callback);
+    curl_easy_setopt(handle, CURLOPT_OPENSOCKETFUNCTION, opensocket_cb);
 
-The `opensocket_callback` function must match this prototype:
+The `opensocket_cb` function must match this prototype:
 
-    curl_socket_t opensocket_callback(void *clientp,
-                                      curlsocktype purpose,
-                                      struct curl_sockaddr *address);
+    curl_socket_t opensocket_cb(void *clientp,
+                                curlsocktype purpose,
+                                struct curl_sockaddr *address);
 
 The callback gets the *clientp* as first argument, which is an opaque pointer
 you set with `CURLOPT_OPENSOCKETDATA`.

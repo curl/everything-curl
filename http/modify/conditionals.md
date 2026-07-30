@@ -32,7 +32,8 @@ It is often useful to combine the use of `-z` with the `--remote-time` flag,
 which sets the time of the locally created file to the same timestamp as the
 remote file had:
 
-    curl -z file.html -o file.html --remote-time https://example.com/file.html
+    curl -z file.html -o file.html --remote-time \
+      https://example.com/file.html
 
 ## Check by modification of content
 

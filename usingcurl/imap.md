@@ -66,6 +66,6 @@ option. Make the newly uploaded email appear as `answered`, `deleted`,
 
 Negate a flag by prefixing it with a minus (`-`).
 
-For exmaple, mark the upload as not seen and a draft:
+For example, mark the upload as not seen and a draft:
 
     curl imap://imap.example/mailbox -T email.txt --upload-flags "-seen,draft"

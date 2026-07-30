@@ -150,6 +150,11 @@ foreach my $w (sort byname keys %all) {
         # Make sure headings have blank lines before and after
         print "\n## $l\n\n";
     }
-    printf " - ".$index{$w}.": ";
+    my $o = $index{$w};
+    if($o =~ /^-/) {
+        # a command line option, quote it
+        $o = "`$o`";
+    }
+    printf " - $o: ";
     print $all{$w}."\n";
 }

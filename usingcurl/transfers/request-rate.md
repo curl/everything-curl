@@ -12,7 +12,7 @@ possible.
 If given several URLs and a transfer completes faster than the allowed rate,
 curl delays starting the next transfer to maintain the requested rate. This
 option is for serial transfers and has no effect when
-[--parallel](../../cmdline/urls/parallel.md) is used.
+[`--parallel`](../../cmdline/urls/parallel.md) is used.
 
 The request rate is provided as **N/U** where N is an integer number and U is
 a time unit. Supported units are `s` (second), `m` (minute), `h` (hour) and
@@ -25,7 +25,7 @@ request until 6 seconds have elapsed since the previous transfer was started.
 This function uses millisecond resolution. If the allowed frequency is set
 more than 1000 per second, it instead runs unrestricted.
 
-When retrying transfers, enabled with [--retry](../downloads/retry.md), the
+When retrying transfers, enabled with [`--retry`](../downloads/retry.md), the
 separate retry delay logic is used and not this setting.
 
 If this option is used several times, the last one is used.

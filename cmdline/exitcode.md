@@ -409,7 +409,7 @@ circumstances to the exit status number itself so the same error number can
 get different error messages.
 
 Users can also craft their own error messages with
-[--write-out](../usingcurl/verbose/writeout.md). The pseudo variable
+[`--write-out`](../usingcurl/verbose/writeout.md). The pseudo variable
 `%{onerror}` allows you to set a message that only gets displayed on errors,
 and it offers `%{errormsg}` and `%{exitcode}` among all the variables.
 

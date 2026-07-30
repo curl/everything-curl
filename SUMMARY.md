@@ -219,7 +219,7 @@
   * [Header files](libcurl/headers.md)
   * [Global initialization](libcurl/globalinit.md)
   * [API compatibility](libcurl/api.md)
-  * [--libcurl](libcurl/--libcurl.md)
+  * [`--libcurl`](libcurl/--libcurl.md)
   * [multi-threading](libcurl/threading.md)
   * [CURLcode return codes](libcurl/curlcode.md)
   * [Verbose operations](libcurl/verbose.md)

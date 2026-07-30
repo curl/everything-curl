@@ -76,7 +76,6 @@ automatically check for OpenSSL, but modern versions do not.
 
  - AmiSSL: `--with-amissl`
  - AWS-LC: `--with-openssl`
- - BearSSL: `--with-bearssl`
  - BoringSSL: `--with-openssl`
  - GnuTLS: `--with-gnutls`
  - LibreSSL: `--with-openssl`

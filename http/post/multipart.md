@@ -66,16 +66,16 @@ curl (or when you submit such a form with a browser).
 
 After that initial set of headers follows the request body
 
-    --------------------------d74496d66958873e
+    -----------------------d74496d66958873e
     Content-Disposition: form-data; name="person"
 
     anonymous
-    --------------------------d74496d66958873e
+    -----------------------d74496d66958873e
     Content-Disposition: form-data; name="secret"; filename="file.txt"
     Content-Type: text/plain
 
     contents of the file
-    --------------------------d74496d66958873e--
+    -----------------------d74496d66958873e--
 
 Here you clearly see the two parts sent, separated with the boundary
 strings. Each part starts with one or more headers describing the individual

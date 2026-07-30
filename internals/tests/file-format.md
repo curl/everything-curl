@@ -250,7 +250,7 @@ from which test file to load the list content.
 
 ### `<dataNUMBER>`
 
-Send back this contents instead of the <data> one. The number `NUMBER` is set
+Send back this content instead of the `<data>` one. The number `NUMBER` is set
 by:
 
  - The test number in the request line is >10000 and this is the remainder
@@ -646,7 +646,7 @@ advanced. Example: "s/^EPRT .*/EPRT stripped/"
 
 ### `<stripfile1>`
 
-1 to 4 can be appended to `stripfile` to strip the corresponding <fileN>
+1 to 4 can be appended to `stripfile` to strip the corresponding `<fileN>`
 content
 
 ### `<stripfile2>`

@@ -1,4 +1,4 @@
-# Create, cleanup, duplicate
+# Create
 
 The first step when using this API is to create a `CURLU *` handle that holds
 URL info and resources. The handle is a reference to an associated data object
@@ -11,10 +11,5 @@ Create a URL handle like this:
 
     CURLU *h = curl_url();
 
-When you are done with it, clean it up:
-
-    curl_url_cleanup(h);
-
-When you need a copy of a handle, duplicate it:
-
-    CURLU *nh = curl_url_dup(h);
+You can also create a new handle by [duplicating](duplicate.md) an existing
+one.

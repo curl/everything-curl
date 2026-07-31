@@ -6,7 +6,9 @@ purposes. By using the same parser, security problems due to different
 interpretations can be avoided.
 
 * [Include files](include.md)
-* [Create, cleanup, duplicate](init.md)
+* [Create](init.md)
+* [Cleanup](cleanup.md)
+* [Duplicate](duplicate.md)
 * [Parse a URL](parse.md)
 * [Redirect to URL](redirect.md)
 * [Get a URL](get.md)

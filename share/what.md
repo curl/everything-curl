@@ -8,7 +8,7 @@ threads.
 `CURL_LOCK_DATA_DNS` - the DNS cache is where libcurl stores addresses for
 resolved hostnames for a while to make subsequent lookups faster.
 
-`CURL_LOCK_DATA_SSL_SESSION` - the SSL session ID cache is where libcurl store
+`CURL_LOCK_DATA_SSL_SESSION` - the SSL session ID cache is where libcurl stores
 resume information for SSL connections to be able to resume a previous
 connection faster.
 

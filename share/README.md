@@ -8,5 +8,5 @@ you want.
 * [Multi handle](multi.md)
 * [Sharing between easy handles](easy.md)
 * [What to share](what.md)
-* [Locking](locking,md)
+* [Locking](locking.md)
 * [Unshare](unshare.md)

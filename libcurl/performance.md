@@ -56,7 +56,7 @@ Avoid doing complicated logic or use locks/mutexes in your libcurl callbacks.
 
 If you use multiple easy handles, you can still share data and caches between
 them in order to increase performance. Take a closer look at
-[the share API](../helpers/sharing.md).
+[the share API](../share/).
 
 ## threads
 

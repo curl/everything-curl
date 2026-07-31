@@ -1,4 +1,4 @@
-# WebSocket
+# libcurl WebSocket
 
 WebSocket is a transfer protocol done *on top* of HTTP that offers a general
 purpose bidirectional byte-stream. The protocol was created for more than just

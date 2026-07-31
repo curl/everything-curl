@@ -1,4 +1,4 @@
-# URL API
+# libcurl URL API
 
 libcurl offers an API for parsing, updating and generating URLs. Using this,
 applications can take advantage of using libcurl's URL parser for its own

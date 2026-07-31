@@ -1,4 +1,4 @@
-# Headers API
+# libcurl headers API
 
 libcurl offers an API for iterating over all received HTTP headers and for
 extracting the contents from specific ones.

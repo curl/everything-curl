@@ -1,4 +1,4 @@
-# Share data between handles
+# libcurl share API
 
 Sometimes applications need to share data between transfers. All easy handles
 added to the same multi handle automatically get a lot of sharing done between

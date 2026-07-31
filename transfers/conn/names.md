@@ -66,8 +66,8 @@ name is kept in the DNS cache. By default, each entry is kept in the cache for
 
 The DNS cache is kept within the easy handle when `curl_easy_perform` is used,
 or within the multi handle when the multi interface is used. It can also be
-made shared between multiple easy handles using the
-[share interface](../../helpers/sharing.md).
+made shared between multiple easy handles using the [share
+interface](../../share/).
 
 ## Custom addresses for hosts
 

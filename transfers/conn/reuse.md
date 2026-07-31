@@ -31,8 +31,7 @@ later transfer. Reuse the multi handle.
 
 ## Sharing the connection cache
 
-Since libcurl 7.57.0, applications can use the
-[share interface](../../helpers/sharing.md)
+Since libcurl 7.57.0, applications can use the [share interface](../../share/)
 to have otherwise independent transfers share the same connection pool.
 
 ## When connections are not reused as you want

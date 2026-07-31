@@ -35,7 +35,7 @@ pass a pointer to such a variable.
     char *zoneid;
     rc = curl_url_get(h, CURLUPART_ZONEID, &zoneid, 0);
 
-Remember to free the returned string with `curl_free` when you are done with
+Remember to free the returned string with `curl_free()` when you are done with
 it.
 
 Extracted parts are not URL decoded unless the user asks for it with the

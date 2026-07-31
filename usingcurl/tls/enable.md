@@ -19,14 +19,14 @@ option.
 
 The support table looks like this:
 
-| Clear  | TLS version | --ssl   |
-|--------|-------------|---------|
-| HTTP   | HTTPS       | no      |
-| LDAP   | LDAPS       | no      |
-| FTP    | FTPS        | **yes** |
-| POP3   | POP3S       | **yes** |
-| IMAP   | IMAPS       | **yes** |
-| SMTP   | SMTPS       | **yes** |
+| Clear | TLS version | `--ssl` |
+|-------|-------------|---------|
+| HTTP  | HTTPS       | no      |
+| LDAP  | LDAPS       | no      |
+| FTP   | FTPS        | **yes** |
+| POP3  | POP3S       | **yes** |
+| IMAP  | IMAPS       | **yes** |
+| SMTP  | SMTPS       | **yes** |
 
 The protocols that _can_ do `--ssl` all favor that method. Using `--ssl` means
 that curl *attempts* to upgrade the connection to TLS but if that fails, it

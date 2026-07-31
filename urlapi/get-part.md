@@ -79,3 +79,25 @@ For this URL, curl extracts:
 | `/`                  | `CURLUPART_PATH`   |
 
 Asking for any other component returns non-zero as they are missing.
+
+## Empty parts
+
+When asked to retrieve the query or the fragment from a URL, `curl_url_get()`
+by default treats those parts as missing when there is no content after the
+separator character itself.
+
+For example if the URL looks like this:
+
+    http://example.com?#
+
+By using the flag `CURLU_GET_EMPTY`, `curl_url_get()` instead returns a
+zero-length string to indicate that the separator was present but that there
+was no data immediately following it.
+
+The path component is treated differently. It will always return at least
+`"/"`, even if not present in the original URL (for example in
+`https://example.com`). It is therefore never missing.
+
+When parsing a full URL, the hostname cannot be missing unless explicitly
+permitted with `CURLU_NO_AUTHORITY`. If this option is set, the host component
+may be missing.

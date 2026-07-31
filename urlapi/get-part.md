@@ -99,5 +99,5 @@ The path component is treated differently. It will always return at least
 `https://example.com`). It is therefore never missing.
 
 When parsing a full URL, the hostname cannot be missing unless explicitly
-permitted wih `CURLU_NO_AUTHORITY`. If instead this option is set, the host
+permitted with `CURLU_NO_AUTHORITY`. If instead this option is set, the host
 component might be missing.

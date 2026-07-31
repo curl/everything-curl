@@ -90,7 +90,7 @@ when using this option to properly escape. If this option is used at the
 command prompt then the `%` cannot be escaped and unintended expansion is
 possible.
 
-## Available --write-out variables
+## Available `--write-out` variables
 
-See the [list of available --write-out variables](all-variables.md).
+See the [list of available `--write-out` variables](all-variables.md).
 

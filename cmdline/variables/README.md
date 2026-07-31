@@ -16,5 +16,5 @@ underscore.
  * [Assign variables](assign.md)
  * [Expand variables](expand.md)
  * [Environment variables](env.md)
- * [Expand --variable](expand-variable.md)
+ * [Expand `--variable`](expand-variable.md)
  * [Expand functions](functions.md)

@@ -1,4 +1,4 @@
-# Available --write-out variables
+# Available `--write-out` variables
 
 Some of these variables are not available in really old curl versions.
 

@@ -19,9 +19,10 @@ a URL:
 libcurl is written in C and is unaware of C++ class instances or member
 functions, which require an implicit `this` pointer. You can work around this
 by using a static member function (or a standalone C-style function) as the
-callback and passing the object instance via libcurl's context user pointer
-(e.g., `CURLOPT_WRITEDATA`). Inside the static callback, cast the context
-pointer back to your class type to invoke non-static member functions.
+callback and passing the object instance via the user data pointer you set
+with libcurl (for example, `CURLOPT_WRITEDATA` for the write callback). Inside
+the static callback, cast that `void *` back to your class type to invoke
+non-static member functions.
 
 Here's an example of a write callback using a C++ method as callback:
 

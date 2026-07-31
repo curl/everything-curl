@@ -11,5 +11,5 @@ Create a URL handle like this:
 
     CURLU *h = curl_url();
 
-You can also create a new handle by [duplicating](duplicate.md) an existing
-one.
+When you are done with it, [clean it up](cleanup.md). You can also create a
+new handle by [duplicating](duplicate.md) an existing one.

@@ -2,10 +2,9 @@
 
 When you need a copy of a handle, duplicate it:
 
-    CURLU *copy = curl_url_dup(source);
+    CURLU *copy = curl_url_dup(h);
 
-This makes a new handle that holds an identical URL that the source handle
-has. The URL parts set in the source URL will be set exactly the same in the
+This makes a new handle that holds an identical URL to the source handle.
 duplicate.
 
 Both URL handles need to be [cleaned up](cleanup.md) separately.

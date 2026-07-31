@@ -8,5 +8,5 @@ resources associated with this URL.
 All created URL handles must be freed with a call to this function, including
 handles created with `curl_url_dup()`.
 
-The URL handle that is cleaned up this way may then not be used anymore as it
+The URL handle that is cleaned up this way may then no longer be used as it
 is gone.

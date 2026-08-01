@@ -83,7 +83,7 @@ Asking for any other component returns non-zero as they are missing.
 ## Empty parts
 
 When asked to retrieve the query or the fragment from a URL, `curl_url_get()`
-by default returns nothing if there was no content for those parts except the
+by default treats those parts as missing when there is no content after the
 separator character itself.
 
 For example if the URL looks like this:
@@ -99,5 +99,5 @@ The path component is treated differently. It will always return at least
 `https://example.com`). It is therefore never missing.
 
 When parsing a full URL, the hostname cannot be missing unless explicitly
-permitted with `CURLU_NO_AUTHORITY`. If instead this option is set, the host
-component might be missing.
+permitted with `CURLU_NO_AUTHORITY`. If this option is set, the host component
+may be missing.

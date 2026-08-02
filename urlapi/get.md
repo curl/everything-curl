@@ -50,17 +50,31 @@ encoded in hostnames to make sure the hostname remains valid.
 
 Tells `curl_url_get()` to URL decode the contents before returning it. It does
 attempt to decode the scheme, the port number or the full URL. The query
-component also gets plus-to-space conversion as a bonus when this bit is
-set. Note that this URL decoding is charset unaware and you get a zero
-terminated string back with data that could be intended for a particular
-encoding. If there are any byte values lower than 32 in the decoded string,
-the get operation instead returns error.
+component also gets plus-to-space conversion as a bonus when this bit is set.
+Note that this URL decoding is charset unaware and you get a zero terminated
+string back with data that could be intended for a particular encoding. If
+there are any byte values lower than 32 in the decoded string, the get
+operation instead returns error.
 
 ## `CURLU_PUNYCODE`
 
 If set and `CURLU_URLENCODE` is not set, and asked to retrieve the
-`CURLUPART_HOST` or `CURLUPART_URL` parts, libcurl returns the hostname in
-its punycode version if it contains any non-ASCII octets (and is an IDN
-name). If libcurl is built without IDN capabilities, using this bit makes
+`CURLUPART_HOST` or `CURLUPART_URL` parts, libcurl returns the hostname in its
+punycode version if it contains any non-ASCII octets (and is an IDN name). If
+libcurl is built without IDN capabilities, using this bit makes
 `curl_url_get()` return `CURLUE_LACKS_IDN` if the hostname contains anything
 outside the ASCII range.
+
+## `CURLU_NO_GUESS_SCHEME`
+
+When this flag is used for `curl_url_get()`, it treats the scheme as
+non-existing if it was set as a result of a previous guess; when
+`CURLU_GUESS_SCHEME` was used parsing a URL.
+
+Using this flag when getting `CURLUPART_SCHEME` if the scheme was set as the
+result of a guess makes `curl_url_get()` return `CURLUE_NO_SCHEME`.
+
+Using this flag when getting `CURLUPART_URL` if the scheme was set as the
+result of a guess makes `curl_url_get()` return the full URL without the
+scheme component. Such a URL can then only be parsed with `curl_url_set()` if
+`CURLU_GUESS_SCHEME` is used.

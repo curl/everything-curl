@@ -48,7 +48,7 @@ encoded in hostnames to make sure the hostname remains valid.
 
 ## `CURLU_URLDECODE`
 
-Tells `curl_url_get()` to URL decode the contents before returning it. It does
+Tells `curl_url_get()` to URL decode the contents before returning it. It does not
 attempt to decode the scheme, the port number or the full URL. The query
 component also gets plus-to-space conversion as a bonus when this bit is set.
 Note that this URL decoding is charset unaware and you get a zero terminated
@@ -68,8 +68,8 @@ outside the ASCII range.
 ## `CURLU_NO_GUESS_SCHEME`
 
 When this flag is used for `curl_url_get()`, it treats the scheme as
-non-existing if it was set as a result of a previous guess; when
-`CURLU_GUESS_SCHEME` was used parsing a URL.
+non-existing if it was set as a result of a previous guess, i.e. when
+`CURLU_GUESS_SCHEME` was used when parsing a URL.
 
 Using this flag when getting `CURLUPART_SCHEME` if the scheme was set as the
 result of a guess makes `curl_url_get()` return `CURLUE_NO_SCHEME`.

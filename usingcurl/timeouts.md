@@ -14,11 +14,10 @@ time. Further, most operations in curl have no time-out by default.
 
 ## Maximum time allowed to spend
 
-Tell curl with `-m / --max-time` the maximum time, in seconds, that you allow
-the command line to spend before curl exits with a timeout error code
-(28). When the set time has elapsed, curl exits no matter what is going on at
-that moment—including if it is transferring data. It really is the maximum
-time allowed.
+Tell curl with `-m / --max-time` the maximum time, in seconds, that you allow a single transfer attempt to take 
+before the transfer is aborted with a timeout error code (28). When the set time has elapsed, the transfer is
+ aborted no matter what is going on at that moment—including if it is transferring data.
+Note that the limit applies to each retry separately. See `--retry-max-time` for the way to limit the time allowed for retries.
 
 The given maximum time can be specified with a decimal precision; `0.5` means
 500 milliseconds and `2.37` equals 2370 milliseconds.
@@ -27,8 +26,8 @@ Example:
 
     curl --max-time 5.5 https://example.com/
 
-(Your locale may use another symbol than a dot for expressing numerical
-fractions.)
+The decimal value needs to be provided using a dot (`.`) as decimal separator - not
+ the local version even if it might be using another separator.
 
 ## Never spend more than this to connect
 

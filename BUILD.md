@@ -27,7 +27,6 @@ target directory gets updated.
     [book]
     authors = ["Daniel Stenberg"]
     language = "en"
-    multilingual = false
     src = "src"
     title = "everything curl"
 

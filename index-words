@@ -20,6 +20,7 @@
 --expand
 --fail
 --fail-with-body
+--follow
 --ftp-method
 --ftp-pasv
 --ftp-port

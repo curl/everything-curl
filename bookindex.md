@@ -202,7 +202,7 @@
 ## D
 
  - `-d`: [Arguments to options](cmdline/options/args.md#arguments-to-options), [Separate options per URL](cmdline/urls/options.md#separate-options-per-url), [POST](usingcurl/uploads.md#post), [MQTT](usingcurl/mqtt.md#mqtt), [Method](http/method.md#method), [Simple POST](http/post/simple.md#simple-post), [Content-Type](http/post/content-type.md#content-type), [Posting binary](http/post/binary.md#posting-binary), [Convert to GET](http/post/convert-to-get.md#convert-to-get), [Expect 100-continue](http/post/expect100.md#expect-100-continue), [Chunked encoded POSTs](http/post/chunked.md#chunked-encoded-posts), [Hidden form fields](http/post/hiddenfields.md#hidden-form-fields), [-d vs -F](http/post/postvspost.md#sect--d-vs--f), [HTTP PUT](http/put.md#http-put), [Web logins and sessions](http/browserlike.md#web-logins-and-sessions)
- - `--data`: [Arguments to options](cmdline/options/args.md#arguments-to-options), [Separate options per URL](cmdline/urls/options.md#separate-options-per-url), [POST](usingcurl/uploads.md#post), [Simple POST](http/post/simple.md#simple-post), [URL encode data](http/post/url-encode.md#url-encode-data)
+ - `--data`: [Arguments to options](cmdline/options/args.md#arguments-to-options), [Separate options per URL](cmdline/urls/options.md#separate-options-per-url), [POST](usingcurl/uploads.md#post), [Simple POST](http/post/simple.md#simple-post), [URL encode data](http/post/url-encode.md#url-encode-data), [Tell curl to follow redirects](http/redirects.md#tell-curl-to-follow-redirects)
  - `--data-binary`: [Not perfect](cmdline/copyas.md#not-perfect), [Simple POST](http/post/simple.md#simple-post), [Posting binary](http/post/binary.md#posting-binary), [JSON](http/post/json.md#json), [URL encode data](http/post/url-encode.md#url-encode-data)
  - `--data-urlencode`: [Query](cmdline/urls/query.md#query), [URL encode data](http/post/url-encode.md#url-encode-data), [Convert to GET](http/post/convert-to-get.md#convert-to-get)
  - debian: [Ubuntu and Debian](install/linux.md#ubuntu-and-debian), [Version](cmdline/curlver.md#version)
@@ -231,6 +231,7 @@
  - `--fail`: [Available exit codes](cmdline/exitcode.md#available-exit-codes), [HTTP response codes](http/response.md#http-response-codes)
  - `--fail-with-body`: [HTTP response codes](http/response.md#http-response-codes)
  - Firefox: [Copy as curl](cmdline/copyas.md#copy-as-curl), [Discover your proxy](usingcurl/proxies/discover.md#discover-your-proxy), [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md#sslkeylogfile), [User-agent](http/modify/user-agent.md#user-agent)
+ - `--follow`: [Tell curl to follow redirects](http/redirects.md#tell-curl-to-follow-redirects)
  - Fragment: [Query](cmdline/urls/query.md#query), [Fragment](cmdline/urls/fragment.md#fragment), [Available `--write-out` variables](usingcurl/verbose/all-variables.md#available---write-out-variables), [Fragment](http/modify/fragment.md#fragment), [Write callback](ws/read.md#write-callback), [Meta](ws/meta.md#meta), [`curl_ws_send()`](ws/write.md#curl_ws_send), [Empty parts](urlapi/get-part.md#empty-parts)
  - `--ftp-method`: [multicwd](ftp/traversedir.md#multicwd)
  - `--ftp-pasv`: [Passive connections](ftp/twoconnections.md#passive-connections)

@@ -53,6 +53,21 @@ default. There is a maximum limit mostly to avoid the risk of getting caught
 in endless loops. If 30 is not sufficient for you, you can change the maximum
 number of redirects to follow with the `--max-redirs` option.
 
+When you set a custom request method with `--request`, `--location` uses that
+method in all subsequent requests, regardless of the redirect response code.
+The `--follow` option instead makes curl handle the custom method according to
+the response code. For 301, 302 and 303 responses, the method may be changed to
+GET. For 307 and 308 responses, curl keeps the custom method. `--follow` was
+added in curl 8.16.0.
+
+For example, if this request receives a 302 response, curl sends POST to the
+initial URL and GET to the redirect target:
+
+    curl --data "name=value" --request POST --follow https://example.com
+
+Replacing `--follow` with `--location` makes curl use the custom POST method at
+the redirect target as well.
+
 ## GET or POST?
 
 All three of these response codes, 301 and 302/303, assume that the client
